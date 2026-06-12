@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slowbuild — 业余建造，慢慢打磨</title>
+  <meta name="description" content="一个业余爱好者的脚本工坊。写小工具，分享给需要的人。慢工出细活。">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #e87d4b;
+      --card-bg: #fff;
+      --border: #e5e0d8;
+      --code-bg: #f3f0eb;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Layout ── */
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Header ── */
+    header {
+      padding: 48px 0 32px;
+    }
+    .logo {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo-dot {
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 40px 0 56px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--muted);
+      max-width: 480px;
+    }
+
+    /* ── Badge ── */
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--code-bg);
+      color: var(--muted);
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+
+    /* ── Cards ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 48px 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card-icon { font-size: 1.5rem; margin-bottom: 12px; }
+    .card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
+    .card p { font-size: 0.85rem; color: var(--muted); }
+
+    /* ── Code snippet ── */
+    .code-example {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 40px 0 16px;
+      overflow-x: auto;
+    }
+    .code-example pre {
+      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    .code-example .comment { color: #999; }
+    .code-example .keyword { color: #c45c3a; }
+    .code-example .string { color: #4a8c5c; }
+    .code-example .func { color: #3a6bc5; }
+
+    /* ── Subscribe ── */
+    .subscribe-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .subscribe-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+    .subscribe-box p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .subscribe-form {
+      display: flex;
+      gap: 8px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .subscribe-form input {
+      flex: 1;
+      padding: 10px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .subscribe-form input:focus { border-color: var(--accent); }
+    .subscribe-form button {
+      padding: 10px 20px;
+      background: var(--text);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .subscribe-form button:hover { opacity: 0.85; }
+    .subscribe-msg {
+      font-size: 0.85rem;
+      margin-top: 12px;
+      min-height: 20px;
+    }
+    .subscribe-msg.success { color: #3a8c5c; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 40px 0 48px;
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    footer p {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .subscribe-form { flex-direction: column; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span class="logo-dot"></span> slowbuild
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badge">🚧 正在建造中</div>
+      <h1>业余建造，<br>慢慢打磨。</h1>
+      <h2>一个属于业余爱好者的脚本工坊。自己写的实用小工具，分享给需要的人。没有 deadline，没有 KPI。</h2>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">📜</div>
+        <h3>上传你的脚本</h3>
+        <p>Python、Bash、JS、AHK…… 任何你写的实用小工具，配上说明和标签。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>发现别人的妙招</h3>
+        <p>搜索、浏览、收藏。看别人怎么用一个脚本解决麻烦事。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⭐</div>
+        <h3>给喜欢的点个赞</h3>
+        <p>最好的工具靠口碑浮现。没有算法，只有真实的人。</p>
+      </div>
+    </div>
+
+    <div class="code-example">
+      <pre><span class="comment"># 一个用户上传的脚本大概长这样：</span>
+
+<span class="comment"># batch-rename-dates.sh</span>
+<span class="comment"># 批量给照片文件名加上拍摄日期</span>
+
+<span class="keyword">for</span> f <span class="keyword">in</span> *.jpg; <span class="keyword">do</span>
+  date=$(exiftool -d <span class="string">"%Y%m%d"</span> -DateTimeOriginal <span class="string">"$f"</span> | cut -d<span class="string">' '</span> -f2)
+  mv <span class="string">"$f"</span> <span class="string">"${date}_${f}"</span>
+<span class="keyword">done</span>
+
+<span class="func">echo</span> <span class="string">"✓ 搞定"</span></pre>
+    </div>
+    <p style="font-size:0.82rem;color:var(--muted);">这就是 slowbuild——不炫技，不工程化，就是好用。</p>
+
+    <div class="subscribe-box" id="subscribe">
+      <h3>想知道什么时候上线？</h3>
+      <p>留个邮箱，上线那天我通知你。不群发别的。</p>
+      <form class="subscribe-form" id="subscribeForm">
+        <input type="email" id="email" placeholder="your@email.com" required>
+        <button type="submit">通知我</button>
+      </form>
+      <div class="subscribe-msg" id="subscribeMsg"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 slowbuild · 慢工出细活</p>
+      <p style="margin-top:4px;">
+        <a href="#">Terms</a> · <a href="#">Privacy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = document.getElementById('email').value;
+      var msg = document.getElementById('subscribeMsg');
+      if (email) {
+        msg.textContent = '✓ 收到！上线时我会通知 ' + email;
+        msg.className = 'subscribe-msg success';
+        document.getElementById('email').value = '';
+        // TODO: 接入邮件服务（如 Buttondown / ConvertKit）
+      }
+    });
+  </script>
+</body>
+</html>
