@@ -24,14 +24,12 @@ for d in ["work/temp", "work/output"]:
 
 TEMP_DIR = WORK_DIR / "temp"
 OUTPUT_DIR = WORK_DIR / "output"
-LIBREOFFICE = r"C:\Program Files\LibreOffice\program\soffice.exe"
-
 
 def find_libreoffice():
-    for path in [LIBREOFFICE, r"C:\LibreOfficePortable\App\libreoffice\program\soffice.exe"]:
-        if os.path.exists(path): return path
-    for root, dirs, files in os.walk(r"C:\Program Files"):
-        if "soffice.exe" in files: return os.path.join(root, "soffice.exe")
+    path = r"C:\Program Files\LibreOffice\program\soffice.exe"
+    if os.path.exists(path): return path
+    path = r"C:\LibreOfficePortable\App\libreoffice\program\soffice.exe"
+    if os.path.exists(path): return path
     return None
 
 
