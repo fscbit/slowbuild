@@ -111,6 +111,27 @@
     </div>
   </section>
 
+  <section class="section" id="scripts">
+    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">Scripts</span></h2>
+    <p class="sec-sub" data-i18n="scripts_desc">Download & run Python scripts on your own machine.</p>
+    <div class="tool-grid">
+      <div class="tool-card" style="cursor:default">
+        <div class="icon">📄</div>
+        <h3><span data-i18n="script_word2pdf">Word → PDF Converter</span></h3>
+        <p class="desc" data-i18n="script_word2pdf_desc">Batch convert all .docx files in a folder to PDF. Recursive search.</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="script_requires">Requires</span>: Python + docx2pdf + Microsoft Word</p>
+        <div style="margin-top:10px"><a href="/scripts/word2pdf.py" download class="btn primary small" data-i18n="script_download">Download</a></div>
+      </div>
+      <div class="tool-card" style="cursor:default">
+        <div class="icon">🧹</div>
+        <h3><span data-i18n="script_dedup">Duplicate File Remover</span></h3>
+        <p class="desc" data-i18n="script_dedup_desc">Find and remove duplicate files by content comparison. Safe & fast.</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="script_requires">Requires</span>: Python 3+</p>
+        <div style="margin-top:10px"><a href="/scripts/dedup.py" download class="btn primary small" data-i18n="script_download">Download</a></div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="tools">
     <h2 class="sec-title">🛠️ <span data-i18n="sec_tools">Tools</span></h2>
     <p class="sec-sub" data-i18n="tools_desc">Click any tool — runs in your browser. Nothing uploaded.</p>
@@ -179,6 +200,10 @@ var I18N = {
     footer_about: 'About', footer_privacy: 'Privacy',
     about_content: '<h2>About slowbuild</h2><p>slowbuild is a collection of free, no-sign-up micro tools. Built one at a time, with care. No tracking, no ads (yet), no nonsense.</p><p>Every tool runs entirely in your browser. Your data never leaves your device.</p><p>I\'m an indie maker who writes scripts to solve real problems. slowbuild is where I share them with the world.</p><p>Got a tool idea? <a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">Request it →</a></p>',
     privacy_content: '<h2>Privacy Policy</h2><p><strong>Last updated:</strong> June 2026</p><p>slowbuild does not collect, store, or share any personal data. All tools run locally in your browser.</p><ul><li><strong>No cookies</strong> — except localStorage to remember your language preference.</li><li><strong>No analytics</strong> — we don\'t track you.</li><li><strong>No data upload</strong> — everything stays on your device.</li><li><strong>No third-party scripts</strong> — this site loads nothing external.</li></ul><p>If this changes in the future, this page will be updated. Questions? Contact: hello@slowbuild.top</p>',
+    sec_scripts: '📦 Scripts', scripts_desc: 'Download & run Python scripts on your own machine.',
+    script_word2pdf: 'Word → PDF Converter', script_word2pdf_desc: 'Batch convert all .docx files in a folder to PDF. Recursive search.',
+    script_dedup: 'Duplicate File Remover', script_dedup_desc: 'Find and remove duplicate files by content comparison. Safe & fast.',
+    script_download: 'Download', script_requires: 'Requires',
     tools: [
       {id:'json',icon:'{ }',name:'JSON Formatter',desc:'Pretty-print, validate, and minify JSON. Error highlights included.'},
       {id:'case',icon:'Aa',name:'Case Converter',desc:'lowercase, UPPERCASE, snake_case, camelCase, PascalCase.'},
@@ -198,6 +223,10 @@ var I18N = {
     hero_sub: '实用的在线小工具。无广告，无需注册。需要什么？告诉我。',
     tag_more: '还有更多',
     sec_tools: '工具', tools_desc: '点开即用 — 全部在浏览器本地运行，不上传数据。',
+    sec_scripts: '📦 脚本下载', scripts_desc: '下载 Python 脚本，在自己的电脑上运行。',
+    script_word2pdf: 'Word → PDF 转换器', script_word2pdf_desc: '批量将文件夹内所有 .docx 文件转换为 PDF。递归搜索。',
+    script_dedup: '重复文件删除器', script_dedup_desc: '按内容比对查找并删除重复文件。安全快速。',
+    script_download: '下载', script_requires: '需要',
     req_title: '💡 需要什么工具？', req_desc: '告诉我你的需求，我来造。不保证工期 — 但我确实会做。',
     req_placeholder: '比如 "一个支持 JS 语法的正则表达式测试器"',
     req_btn: '提交需求', req_ok: '✓ 收到！收藏本站关注更新。',
@@ -224,6 +253,10 @@ var I18N = {
     hero_sub: '實用的線上小工具。無廣告，無需註冊。需要什麼？告訴我。',
     tag_more: '還有更多',
     sec_tools: '工具', tools_desc: '點開即用 — 全部在瀏覽器本機運行，不上傳資料。',
+    sec_scripts: '📦 指令碼下載', scripts_desc: '下載 Python 指令碼，在自己的電腦上執行。',
+    script_word2pdf: 'Word → PDF 轉換器', script_word2pdf_desc: '批量將資料夾內所有 .docx 檔案轉換為 PDF。支援遞迴搜尋。',
+    script_dedup: '重複檔案刪除器', script_dedup_desc: '按內容比對尋找並刪除重複檔案。安全快速。',
+    script_download: '下載', script_requires: '需要',
     req_title: '💡 需要什麼工具？', req_desc: '告訴我你的需求，我來造。不保證工期 — 但我確實會做。',
     req_placeholder: '比如 "一個支援 JS 語法的正則表達式測試器"',
     req_btn: '提交需求', req_ok: '✓ 收到！收藏本站關注更新。',
