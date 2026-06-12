@@ -1,282 +1,413 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>slowbuild — 业余建造，慢慢打磨</title>
-  <meta name="description" content="一个业余爱好者的脚本工坊。写小工具，分享给需要的人。慢工出细活。">
+  <title>slowbuild — free micro tools, built slow</title>
+  <meta name="description" content="Free online tools for devs, writers, and makers. No ads, no sign-up, no BS. Need a tool? Request it.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+
   <style>
     :root {
       --bg: #fafaf8;
-      --text: #1a1a1a;
-      --muted: #6b6b6b;
+      --surface: #fff;
+      --text: #1e1e1e;
+      --muted: #666;
+      --border: #e5e5e0;
       --accent: #e87d4b;
-      --card-bg: #fff;
-      --border: #e5e0d8;
+      --accent-hover: #cf6d3e;
       --code-bg: #f3f0eb;
+      --green: #3a8c5c;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,.06);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
+    a { color: inherit; }
 
-    /* ── Layout ── */
-    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(250,250,248,.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1024px; margin: 0 auto; padding: 12px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .logo-dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; text-decoration: none; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
 
-    /* ── Header ── */
-    header {
-      padding: 48px 0 32px;
-    }
-    .logo {
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .logo-dot {
-      width: 8px; height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      display: inline-block;
-    }
+    /* Layout */
+    .section { max-width: 1024px; margin: 0 auto; padding: 48px 20px; }
 
-    /* ── Hero ── */
-    .hero {
-      padding: 40px 0 56px;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .hero h2 {
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: var(--muted);
-      max-width: 480px;
-    }
+    /* Hero */
+    .hero { text-align: center; padding: 60px 20px 40px; }
+    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; letter-spacing: -.02em; margin-bottom: 12px; }
+    .hero .sub { color: var(--muted); font-size: 1.05rem; max-width: 460px; margin: 0 auto 24px; }
+    .hero .tags { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+    .tag { font-size: 0.78rem; padding: 4px 14px; border-radius: 20px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
 
-    /* ── Badge ── */
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: var(--code-bg);
-      color: var(--muted);
-      margin-bottom: 20px;
-      border: 1px solid var(--border);
-    }
+    /* Section Header */
+    .sec-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .sec-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
 
-    /* ── Cards ── */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin: 48px 0;
+    /* Tool Grid */
+    .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .tool-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; cursor: pointer; transition: all .2s; position: relative; overflow: hidden;
     }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      transition: border-color 0.2s;
-    }
-    .card:hover { border-color: var(--accent); }
-    .card-icon { font-size: 1.5rem; margin-bottom: 12px; }
-    .card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 6px; }
-    .card p { font-size: 0.85rem; color: var(--muted); }
+    .tool-card:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-1px); }
+    .tool-card .icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .tool-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .tool-card .desc { font-size: 0.83rem; color: var(--muted); line-height: 1.5; }
+    .tool-card.coming-soon { opacity: 0.5; cursor: default; }
+    .tool-card.coming-soon:hover { border-color: var(--border); transform: none; box-shadow: none; }
+    .badge-soon { font-size: 0.7rem; padding: 2px 8px; background: var(--code-bg); border-radius: 10px; color: var(--muted); margin-left: 8px; }
 
-    /* ── Code snippet ── */
-    .code-example {
-      background: var(--code-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px 24px;
-      margin: 40px 0 16px;
-      overflow-x: auto;
+    /* Tool Page */
+    .tool-page { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+    .tool-page h2 { font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+    .tool-page textarea {
+      width: 100%; min-height: 200px; padding: 14px; border: 1px solid var(--border); border-radius: 8px;
+      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace; font-size: 0.85rem; resize: vertical;
+      background: var(--bg); outline: none; transition: border-color .2s;
     }
-    .code-example pre {
-      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
-      font-size: 0.82rem;
-      line-height: 1.6;
-      color: #444;
+    .tool-page textarea:focus { border-color: var(--accent); }
+    .btn-row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .btn {
+      padding: 8px 20px; border-radius: 8px; font-size: 0.88rem; font-weight: 500; font-family: inherit;
+      cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); transition: all .2s;
     }
-    .code-example .comment { color: #999; }
-    .code-example .keyword { color: #c45c3a; }
-    .code-example .string { color: #4a8c5c; }
-    .code-example .func { color: #3a6bc5; }
+    .btn:hover { border-color: #ccc; }
+    .btn.primary { background: var(--text); color: #fff; border: none; }
+    .btn.primary:hover { opacity: 0.85; }
+    .btn.small { padding: 5px 14px; font-size: 0.8rem; }
+    .result-bar {
+      margin-top: 12px; padding: 10px 14px; background: var(--bg); border-radius: 8px;
+      font-size: 0.85rem; color: var(--muted); display: none;
+    }
+    .result-bar.show { display: block; }
+    .result-bar.success { background: #eef7f0; color: var(--green); border: 1px solid #c8e6cf; }
+    .result-bar.error { background: #fef3f0; color: #c0392b; border: 1px solid #f5cdc5; }
 
-    /* ── Subscribe ── */
-    .subscribe-box {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 32px;
-      margin: 48px 0;
-      text-align: center;
+    /* Request section */
+    .request-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; text-align: center; }
+    .request-box h3 { font-size: 1.15rem; margin-bottom: 4px; }
+    .request-box .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 18px; }
+    .request-form { display: flex; gap: 8px; max-width: 440px; margin: 0 auto; }
+    .request-form input {
+      flex: 1; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px;
+      font-size: 0.9rem; font-family: inherit; outline: none; transition: border-color .2s;
     }
-    .subscribe-box h3 {
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-    }
-    .subscribe-box p {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-    .subscribe-form {
-      display: flex;
-      gap: 8px;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .subscribe-form input {
-      flex: 1;
-      padding: 10px 16px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-family: inherit;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .subscribe-form input:focus { border-color: var(--accent); }
-    .subscribe-form button {
-      padding: 10px 20px;
-      background: var(--text);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      font-family: inherit;
-      cursor: pointer;
-      transition: opacity 0.2s;
-      white-space: nowrap;
-    }
-    .subscribe-form button:hover { opacity: 0.85; }
-    .subscribe-msg {
-      font-size: 0.85rem;
-      margin-top: 12px;
-      min-height: 20px;
-    }
-    .subscribe-msg.success { color: #3a8c5c; }
+    .request-form input:focus { border-color: var(--accent); }
+    .request-msg { margin-top: 10px; font-size: 0.85rem; min-height: 20px; }
 
-    /* ── Footer ── */
-    footer {
-      text-align: center;
-      padding: 40px 0 48px;
-      border-top: 1px solid var(--border);
-      margin-top: 24px;
-    }
-    footer p {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    footer a {
-      color: var(--text);
-      text-decoration: underline;
-      text-underline-offset: 3px;
+    /* Ad Placeholder */
+    .ad-placeholder {
+      background: var(--code-bg); border: 1px dashed var(--border); border-radius: var(--radius);
+      text-align: center; padding: 20px; color: var(--muted); font-size: 0.78rem; margin-top: 32px;
     }
 
-    /* ── Responsive ── */
-    @media (max-width: 480px) {
-      .subscribe-form { flex-direction: column; }
-      .grid { grid-template-columns: 1fr; }
+    /* Footer */
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 32px 20px; }
+    footer p { font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--muted); text-underline-offset: 2px; }
+
+    @media (max-width: 600px) {
+      .tool-grid { grid-template-columns: 1fr; }
+      .request-form { flex-direction: column; }
+      .btn-row { flex-direction: column; }
+      .btn-row .btn { width: 100%; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <span class="logo-dot"></span> slowbuild
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo"><span class="logo-dot"></span>slowbuild</a>
+      <div class="nav-links">
+        <a href="#tools">Tools</a>
+        <a href="#request">Request</a>
+        <a href="#" onclick="showPage('home')">Home</a>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
+  <!-- HOME PAGE -->
+  <div id="page-home">
     <section class="hero">
-      <div class="badge">🚧 正在建造中</div>
-      <h1>业余建造，<br>慢慢打磨。</h1>
-      <h2>一个属于业余爱好者的脚本工坊。自己写的实用小工具，分享给需要的人。没有 deadline，没有 KPI。</h2>
+      <h1>Free micro tools, built slow.</h1>
+      <p class="sub">Small, useful online tools. No ads, no sign-up. Need something built? Just ask.</p>
+      <div class="tags">
+        <span class="tag">JSON formatter</span>
+        <span class="tag">text tools</span>
+        <span class="tag">dev tools</span>
+        <span class="tag">more coming</span>
+      </div>
     </section>
 
-    <div class="grid">
-      <div class="card">
-        <div class="card-icon">📜</div>
-        <h3>上传你的脚本</h3>
-        <p>Python、Bash、JS、AHK…… 任何你写的实用小工具，配上说明和标签。</p>
+    <section class="section" id="tools">
+      <h2 class="sec-title">🛠️ Tools</h2>
+      <p class="sec-sub">Click any tool to use it — works right in your browser. Nothing uploaded to any server.</p>
+      <div class="tool-grid">
+        <div class="tool-card" onclick="showTool('json')">
+          <div class="icon">{ }</div>
+          <h3>JSON Formatter</h3>
+          <p class="desc">Pretty-print, validate, and minify JSON. Error highlights included.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('case')">
+          <div class="icon">Aa</div>
+          <h3>Case Converter</h3>
+          <p class="desc">lowercase, UPPERCASE, snake_case, camelCase, PascalCase. All in one click.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('count')">
+          <div class="icon">📊</div>
+          <h3>Word & Char Counter</h3>
+          <p class="desc">Real-time word count, character count, lines, and reading time estimate.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('diff')">
+          <div class="icon">≠</div>
+          <h3>Text Diff Checker</h3>
+          <p class="desc">Compare two texts side by side. Find what's different instantly.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('time')">
+          <div class="icon">🕐</div>
+          <h3>Timestamp Converter</h3>
+          <p class="desc">Unix timestamp ↔ human-readable date. Supports multiple timezones.</p>
+        </div>
+        <div class="tool-card coming-soon">
+          <div class="icon">🔜</div>
+          <h3>URL Encoder / Decoder<span class="badge-soon">soon</span></h3>
+          <p class="desc">Encode and decode URLs. Handle query strings with ease.</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon">🔍</div>
-        <h3>发现别人的妙招</h3>
-        <p>搜索、浏览、收藏。看别人怎么用一个脚本解决麻烦事。</p>
+    </section>
+
+    <section class="section" id="request">
+      <div class="request-box">
+        <h3>💡 Need a tool?</h3>
+        <p class="sub">Tell me what you need. I build it. No promises on timeline — but I ship.</p>
+        <form class="request-form" onsubmit="submitRequest(event)">
+          <input type="text" id="reqInput" placeholder="e.g. 'a regex tester that supports JS flavor'" required>
+          <button type="submit" class="btn primary">Request</button>
+        </form>
+        <div class="request-msg" id="reqMsg"></div>
       </div>
-      <div class="card">
-        <div class="card-icon">⭐</div>
-        <h3>给喜欢的点个赞</h3>
-        <p>最好的工具靠口碑浮现。没有算法，只有真实的人。</p>
+    </section>
+
+    <div class="section">
+      <div class="ad-placeholder">📢 Ad space — Google AdSense (coming when traffic grows)</div>
+    </div>
+
+    <footer>
+      <p>© 2026 slowbuild · Built with 🧱 and 🍵 · <a href="#">Terms</a> · <a href="#">Privacy</a></p>
+    </footer>
+  </div>
+
+  <!-- TOOL PAGES (hidden by default) -->
+  <div id="page-json" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>{ } JSON Formatter</h2>
+        <textarea id="jsonInput" placeholder='Paste your JSON here...&#10;&#10;{"name":"slowbuild","tools":["json","case","count"]}'></textarea>
+        <div class="btn-row">
+          <button class="btn primary" onclick="formatJSON()">Format / Validate</button>
+          <button class="btn" onclick="minifyJSON()">Minify</button>
+          <button class="btn" onclick="clearJSON()">Clear</button>
+        </div>
+        <div class="result-bar" id="jsonMsg"></div>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <div class="code-example">
-      <pre><span class="comment"># 一个用户上传的脚本大概长这样：</span>
+  <div id="page-case" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>Aa Case Converter</h2>
+        <textarea id="caseInput" placeholder="Type or paste text here..."></textarea>
+        <div class="btn-row">
+          <button class="btn" onclick="convertCase('lower')">lowercase</button>
+          <button class="btn" onclick="convertCase('upper')">UPPERCASE</button>
+          <button class="btn" onclick="convertCase('title')">Title Case</button>
+          <button class="btn" onclick="convertCase('snake')">snake_case</button>
+          <button class="btn" onclick="convertCase('camel')">camelCase</button>
+          <button class="btn" onclick="convertCase('pascal')">PascalCase</button>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<span class="comment"># batch-rename-dates.sh</span>
-<span class="comment"># 批量给照片文件名加上拍摄日期</span>
+  <div id="page-count" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>📊 Word & Char Counter</h2>
+        <textarea id="countInput" placeholder="Type or paste text here..." oninput="updateCount()"></textarea>
+        <div class="result-bar show" id="countResult" style="color:var(--text)">
+          Words: <strong>0</strong> &nbsp;|&nbsp; Chars: <strong>0</strong> &nbsp;|&nbsp; Lines: <strong>0</strong> &nbsp;|&nbsp; Reading: <strong>0 min</strong>
+        </div>
+      </div>
+    </section>
+  </div>
 
-<span class="keyword">for</span> f <span class="keyword">in</span> *.jpg; <span class="keyword">do</span>
-  date=$(exiftool -d <span class="string">"%Y%m%d"</span> -DateTimeOriginal <span class="string">"$f"</span> | cut -d<span class="string">' '</span> -f2)
-  mv <span class="string">"$f"</span> <span class="string">"${date}_${f}"</span>
-<span class="keyword">done</span>
+  <div id="page-diff" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>≠ Text Diff Checker</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div>
+            <label style="font-size:.85rem;color:var(--muted)">Original</label>
+            <textarea id="diffA" style="min-height:160px" placeholder="Paste original text..."></textarea>
+          </div>
+          <div>
+            <label style="font-size:.85rem;color:var(--muted)">Modified</label>
+            <textarea id="diffB" style="min-height:160px" placeholder="Paste modified text..."></textarea>
+          </div>
+        </div>
+        <div class="btn-row">
+          <button class="btn primary" onclick="runDiff()">Compare</button>
+          <button class="btn" onclick="clearDiff()">Clear</button>
+        </div>
+        <div class="result-bar" id="diffResult"></div>
+      </div>
+    </section>
+  </div>
 
-<span class="func">echo</span> <span class="string">"✓ 搞定"</span></pre>
-    </div>
-    <p style="font-size:0.82rem;color:var(--muted);">这就是 slowbuild——不炫技，不工程化，就是好用。</p>
-
-    <div class="subscribe-box" id="subscribe">
-      <h3>想知道什么时候上线？</h3>
-      <p>留个邮箱，上线那天我通知你。不群发别的。</p>
-      <form class="subscribe-form" id="subscribeForm">
-        <input type="email" id="email" placeholder="your@email.com" required>
-        <button type="submit">通知我</button>
-      </form>
-      <div class="subscribe-msg" id="subscribeMsg"></div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 slowbuild · 慢工出细活</p>
-      <p style="margin-top:4px;">
-        <a href="#">Terms</a> · <a href="#">Privacy</a>
-      </p>
-    </div>
-  </footer>
+  <div id="page-time" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>🕐 Timestamp Converter</h2>
+        <div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:flex-end">
+          <div style="flex:1;min-width:180px">
+            <label style="font-size:.85rem;color:var(--muted)">Unix Timestamp (seconds)</label>
+            <input id="tsInput" type="number" placeholder="e.g. 1700000000" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.88rem;outline:none" oninput="tsToDate()">
+          </div>
+          <div style="flex:1;min-width:180px">
+            <label style="font-size:.85rem;color:var(--muted)">Human-readable date</label>
+            <input id="dateInput" type="text" placeholder="e.g. 2024-01-01 12:00" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none" oninput="dateToTs()">
+          </div>
+        </div>
+        <button class="btn" onclick="tsNow()">Use current time</button>
+        <div class="result-bar show" id="tsResult" style="color:var(--text)">
+          <strong>Now:</strong> <span id="nowTs"></span> &nbsp;|&nbsp; <span id="nowDate"></span>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <script>
-    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var email = document.getElementById('email').value;
-      var msg = document.getElementById('subscribeMsg');
-      if (email) {
-        msg.textContent = '✓ 收到！上线时我会通知 ' + email;
-        msg.className = 'subscribe-msg success';
-        document.getElementById('email').value = '';
-        // TODO: 接入邮件服务（如 Buttondown / ConvertKit）
+    // ── Page navigation ──
+    function showPage(name) {
+      document.querySelectorAll('[id^="page-"]').forEach(p => p.style.display = 'none');
+      var page = document.getElementById('page-' + name);
+      if (page) page.style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+    function showTool(name) { showPage(name); }
+
+    // ── JSON Tool ──
+    function formatJSON() {
+      var input = document.getElementById('jsonInput').value.trim();
+      var msg = document.getElementById('jsonMsg');
+      if (!input) { msg.className = 'result-bar error show'; msg.textContent = 'Paste some JSON first.'; return; }
+      try { var obj = JSON.parse(input); document.getElementById('jsonInput').value = JSON.stringify(obj, null, 2); msg.className = 'result-bar success show'; msg.textContent = '✓ Valid JSON — formatted.'; }
+      catch(e) { msg.className = 'result-bar error show'; msg.textContent = '✗ Invalid JSON: ' + e.message; }
+    }
+    function minifyJSON() {
+      var input = document.getElementById('jsonInput').value.trim();
+      var msg = document.getElementById('jsonMsg');
+      if (!input) return;
+      try { var obj = JSON.parse(input); document.getElementById('jsonInput').value = JSON.stringify(obj); msg.className = 'result-bar success show'; msg.textContent = '✓ Minified.'; }
+      catch(e) { msg.className = 'result-bar error show'; msg.textContent = '✗ Invalid JSON: ' + e.message; }
+    }
+    function clearJSON() { document.getElementById('jsonInput').value = ''; document.getElementById('jsonMsg').className = 'result-bar'; }
+
+    // ── Case Converter ──
+    function convertCase(type) {
+      var text = document.getElementById('caseInput').value;
+      if (!text) return;
+      switch(type) {
+        case 'lower': document.getElementById('caseInput').value = text.toLowerCase(); break;
+        case 'upper': document.getElementById('caseInput').value = text.toUpperCase(); break;
+        case 'title': document.getElementById('caseInput').value = text.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()); break;
+        case 'snake': document.getElementById('caseInput').value = text.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, ''); break;
+        case 'camel': document.getElementById('caseInput').value = text.toLowerCase().replace(/[^a-z0-9]+(.)/g, (m, chr) => chr.toUpperCase()).replace(/^[A-Z]/, c => c.toLowerCase()); break;
+        case 'pascal': document.getElementById('caseInput').value = text.toLowerCase().replace(/(?:^|[^a-z0-9]+)(.)/g, (m, chr) => chr.toUpperCase()); break;
       }
-    });
+    }
+
+    // ── Word Counter ──
+    function updateCount() {
+      var text = document.getElementById('countInput').value;
+      var words = text.trim() ? text.trim().split(/\s+/).length : 0;
+      var chars = text.length;
+      var lines = text ? text.split(/\n/).length : 0;
+      var mins = Math.ceil(words / 200);
+      document.getElementById('countResult').innerHTML = 'Words: <strong>' + words + '</strong> &nbsp;|&nbsp; Chars: <strong>' + chars + '</strong> &nbsp;|&nbsp; Lines: <strong>' + lines + '</strong> &nbsp;|&nbsp; Reading: <strong>' + mins + ' min</strong>';
+    }
+
+    // ── Diff ──
+    function runDiff() {
+      var a = document.getElementById('diffA').value;
+      var b = document.getElementById('diffB').value;
+      var msg = document.getElementById('diffResult');
+      if (a === b) { msg.className = 'result-bar success show'; msg.textContent = '✓ Texts are identical.'; return; }
+      if (!a || !b) { msg.className = 'result-bar error show'; msg.textContent = 'Both texts needed.'; return; }
+      var la = a.split('\n'), lb = b.split('\n'), diffs = 0, out = [];
+      var max = Math.max(la.length, lb.length);
+      for (var i = 0; i < max; i++) { if (la[i] !== lb[i]) { diffs++; out.push('Line ' + (i+1) + ': ' + (la[i] || '(empty)') + ' → ' + (lb[i] || '(empty)')); } }
+      msg.className = 'result-bar show';
+      msg.innerHTML = '<strong>' + diffs + ' line(s) differ:</strong><br>' + out.slice(0, 10).join('<br>') + (out.length > 10 ? '<br>... and ' + (out.length-10) + ' more' : '');
+    }
+    function clearDiff() { document.getElementById('diffA').value = ''; document.getElementById('diffB').value = ''; document.getElementById('diffResult').className = 'result-bar'; }
+
+    // ── Timestamp ──
+    function tsToDate() {
+      var ts = parseInt(document.getElementById('tsInput').value);
+      if (!ts) return;
+      document.getElementById('dateInput').value = new Date(ts * 1000).toISOString().replace('T', ' ').slice(0, 19);
+    }
+    function dateToTs() {
+      var d = new Date(document.getElementById('dateInput').value);
+      if (isNaN(d.getTime())) return;
+      document.getElementById('tsInput').value = Math.floor(d.getTime() / 1000);
+    }
+    function tsNow() {
+      var now = Math.floor(Date.now() / 1000);
+      document.getElementById('tsInput').value = now;
+      document.getElementById('dateInput').value = new Date(now * 1000).toISOString().replace('T', ' ').slice(0, 19);
+    }
+    function updateNow() { var n = Math.floor(Date.now()/1000); document.getElementById('nowTs').textContent = n; document.getElementById('nowDate').textContent = new Date().toString(); }
+    updateNow(); setInterval(updateNow, 1000);
+
+    // ── Request ──
+    function submitRequest(e) {
+      e.preventDefault();
+      var input = document.getElementById('reqInput');
+      var msg = document.getElementById('reqMsg');
+      if (input.value.trim()) {
+        msg.innerHTML = '✓ Got it! I\'ll look into building a <strong>' + input.value.trim() + '</strong>. Bookmark this page for updates.';
+        msg.style.color = 'var(--green)';
+        input.value = '';
+      }
+    }
   </script>
 </body>
 </html>
