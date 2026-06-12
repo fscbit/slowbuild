@@ -4,677 +4,539 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>slowbuild — free micro tools, built slow</title>
-  <meta name="description" content="Free online tools for devs, writers, and makers. No ads, no sign-up, no BS. Need a tool? Request it.">
+  <meta name="description" content="Free online tools for devs, writers, and makers. No ads, no sign-up. Need a tool? Request it.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
-
   <style>
-    :root {
-      --bg: #fafaf8;
-      --surface: #fff;
-      --text: #1e1e1e;
-      --muted: #666;
-      --border: #e5e5e0;
-      --accent: #e87d4b;
-      --accent-hover: #cf6d3e;
-      --code-bg: #f3f0eb;
-      --green: #3a8c5c;
-      --radius: 10px;
-      --shadow: 0 1px 3px rgba(0,0,0,.06);
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; }
+    :root{--bg:#fafaf8;--surface:#fff;--text:#1e1e1e;--muted:#666;--border:#e5e5e0;--accent:#e87d4b;--code-bg:#f3f0eb;--green:#3a8c5c;--radius:10px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans TC",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
 
-    /* Nav */
-    nav {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(250,250,248,.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-inner {
-      max-width: 1024px; margin: 0 auto; padding: 12px 20px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .logo { font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; text-decoration: none; }
-    .logo-dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a { font-size: 0.9rem; font-weight: 500; text-decoration: none; color: var(--muted); transition: color .2s; }
-    .nav-links a:hover { color: var(--text); }
+    nav{position:sticky;top:0;z-index:10;background:rgba(250,250,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:1024px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .logo{font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:8px;text-decoration:none}
+    .logo-dot{width:7px;height:7px;background:var(--accent);border-radius:50%}
+    .nav-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .nav-links{display:flex;gap:20px}
+    .nav-links a{font-size:.88rem;font-weight:500;text-decoration:none;color:var(--muted);transition:color .2s}
+    .nav-links a:hover{color:var(--text)}
 
-    /* Layout */
-    .section { max-width: 1024px; margin: 0 auto; padding: 48px 20px; }
+    .lang-switch{display:flex;gap:2px;background:var(--code-bg);border-radius:8px;padding:2px}
+    .lang-switch button{font-size:.75rem;padding:4px 10px;border:none;border-radius:6px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s}
+    .lang-switch button.active{background:var(--surface);color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 
-    /* Hero */
-    .hero { text-align: center; padding: 60px 20px 40px; }
-    .hero h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 700; letter-spacing: -.02em; margin-bottom: 12px; }
-    .hero .sub { color: var(--muted); font-size: 1.05rem; max-width: 460px; margin: 0 auto 24px; }
-    .hero .tags { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
-    .tag { font-size: 0.78rem; padding: 4px 14px; border-radius: 20px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+    .section{max-width:1024px;margin:0 auto;padding:48px 20px}
+    .hero{text-align:center;padding:60px 20px 40px}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
+    .hero .sub{color:var(--muted);font-size:1.05rem;max-width:500px;margin:0 auto 24px}
+    .tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+    .tag{font-size:.78rem;padding:4px 14px;border-radius:20px;background:var(--surface);border:1px solid var(--border);color:var(--muted)}
 
-    /* Section Header */
-    .sec-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-    .sec-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+    .sec-title{font-size:1.3rem;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+    .sec-sub{color:var(--muted);font-size:.9rem;margin-bottom:28px}
 
-    /* Tool Grid */
-    .tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-    .tool-card {
-      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 24px; cursor: pointer; transition: all .2s; position: relative; overflow: hidden;
-    }
-    .tool-card:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-1px); }
-    .tool-card .icon { font-size: 1.6rem; margin-bottom: 10px; }
-    .tool-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
-    .tool-card .desc { font-size: 0.83rem; color: var(--muted); line-height: 1.5; }
-    .tool-card.coming-soon { opacity: 0.5; cursor: default; }
-    .tool-card.coming-soon:hover { border-color: var(--border); transform: none; box-shadow: none; }
-    .badge-soon { font-size: 0.7rem; padding: 2px 8px; background: var(--code-bg); border-radius: 10px; color: var(--muted); margin-left: 8px; }
+    .tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+    .tool-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;cursor:pointer;transition:all .2s}
+    .tool-card:hover{border-color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.06);transform:translateY(-1px)}
+    .tool-card .icon{font-size:1.5rem;margin-bottom:10px}
+    .tool-card h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
+    .tool-card .desc{font-size:.82rem;color:var(--muted);line-height:1.5}
 
-    /* Tool Page */
-    .tool-page { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
-    .tool-page h2 { font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
-    .tool-page textarea {
-      width: 100%; min-height: 200px; padding: 14px; border: 1px solid var(--border); border-radius: 8px;
-      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace; font-size: 0.85rem; resize: vertical;
-      background: var(--bg); outline: none; transition: border-color .2s;
-    }
-    .tool-page textarea:focus { border-color: var(--accent); }
-    .btn-row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-    .btn {
-      padding: 8px 20px; border-radius: 8px; font-size: 0.88rem; font-weight: 500; font-family: inherit;
-      cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); transition: all .2s;
-    }
-    .btn:hover { border-color: #ccc; }
-    .btn.primary { background: var(--text); color: #fff; border: none; }
-    .btn.primary:hover { opacity: 0.85; }
-    .btn.small { padding: 5px 14px; font-size: 0.8rem; }
-    .result-bar {
-      margin-top: 12px; padding: 10px 14px; background: var(--bg); border-radius: 8px;
-      font-size: 0.85rem; color: var(--muted); display: none;
-    }
-    .result-bar.show { display: block; }
-    .result-bar.success { background: #eef7f0; color: var(--green); border: 1px solid #c8e6cf; }
-    .result-bar.error { background: #fef3f0; color: #c0392b; border: 1px solid #f5cdc5; }
+    .tool-page{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+    .tool-page h2{font-size:1.3rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
+    .tool-page textarea{width:100%;min-height:200px;padding:14px;border:1px solid var(--border);border-radius:8px;font-family:"SF Mono","Fira Code","Cascadia Code","Noto Sans Mono",monospace;font-size:.85rem;resize:vertical;background:var(--bg);outline:none;transition:border-color .2s}
+    .tool-page textarea:focus{border-color:var(--accent)}
+    .tool-page input[type=text],.tool-page input[type=number]{padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none;transition:border-color .2s}
+    .tool-page input:focus{border-color:var(--accent)}
+    .btn-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .btn{padding:8px 20px;border-radius:8px;font-size:.87rem;font-weight:500;font-family:inherit;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text);transition:all .2s}
+    .btn:hover{border-color:#ccc}
+    .btn.primary{background:var(--text);color:#fff;border:none}
+    .btn.primary:hover{opacity:.85}
+    .btn.small{padding:5px 14px;font-size:.78rem}
+    .result-bar{margin-top:12px;padding:10px 14px;background:var(--bg);border-radius:8px;font-size:.84rem;color:var(--muted);display:none;max-height:300px;overflow-y:auto}
+    .result-bar.show{display:block}
+    .result-bar.success{background:#eef7f0;color:var(--green);border:1px solid #c8e6cf}
+    .result-bar.error{background:#fef3f0;color:#c0392b;border:1px solid #f5cdc5}
 
-    /* Request section */
-    .request-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; text-align: center; }
-    .request-box h3 { font-size: 1.15rem; margin-bottom: 4px; }
-    .request-box .sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 18px; }
-    .request-form { display: flex; gap: 8px; max-width: 440px; margin: 0 auto; }
-    .request-form input {
-      flex: 1; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px;
-      font-size: 0.9rem; font-family: inherit; outline: none; transition: border-color .2s;
-    }
-    .request-form input:focus { border-color: var(--accent); }
-    .request-msg { margin-top: 10px; font-size: 0.85rem; min-height: 20px; }
+    .request-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;text-align:center}
+    .request-box h3{font-size:1.15rem;margin-bottom:4px}
+    .request-box .sub{color:var(--muted);font-size:.85rem;margin-bottom:18px}
+    .request-form{display:flex;gap:8px;max-width:440px;margin:0 auto}
+    .request-form input{flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none;transition:border-color .2s}
+    .request-form input:focus{border-color:var(--accent)}
+    .request-msg{margin-top:10px;font-size:.85rem;min-height:20px}
+    .ad-placeholder{background:var(--code-bg);border:1px dashed var(--border);border-radius:var(--radius);text-align:center;padding:20px;color:var(--muted);font-size:.78rem;margin-top:32px}
 
-    /* Ad Placeholder */
-    .ad-placeholder {
-      background: var(--code-bg); border: 1px dashed var(--border); border-radius: var(--radius);
-      text-align: center; padding: 20px; color: var(--muted); font-size: 0.78rem; margin-top: 32px;
-    }
+    .about-page{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;max-width:720px}
+    .about-page h2{font-size:1.3rem;margin-bottom:16px}
+    .about-page p,.about-page ul{font-size:.9rem;color:var(--muted);margin-bottom:14px;line-height:1.7}
+    .about-page ul{padding-left:20px}
+    .about-page li{margin-bottom:4px}
 
-    /* Footer */
-    footer { border-top: 1px solid var(--border); text-align: center; padding: 32px 20px; }
-    footer p { font-size: 0.8rem; color: var(--muted); }
-    footer a { color: var(--muted); text-underline-offset: 2px; }
+    footer{border-top:1px solid var(--border);text-align:center;padding:28px 20px}
+    footer p{font-size:.78rem;color:var(--muted)}
+    footer a{color:var(--muted)}
 
-    @media (max-width: 600px) {
-      .tool-grid { grid-template-columns: 1fr; }
-      .request-form { flex-direction: column; }
-      .btn-row { flex-direction: column; }
-      .btn-row .btn { width: 100%; }
-    }
+    @media(max-width:600px){.tool-grid{grid-template-columns:1fr}.request-form{flex-direction:column}.btn-row{flex-direction:column}.btn-row .btn{width:100%}.nav-right{width:100%;justify-content:space-between}}
   </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-inner">
-      <a href="#" class="logo"><span class="logo-dot"></span>slowbuild</a>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showPage('home');return false"><span class="logo-dot"></span>slowbuild</a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button data-lang="en" class="active" onclick="setLang('en')">EN</button>
+        <button data-lang="zh-CN" onclick="setLang('zh-CN')">简</button>
+        <button data-lang="zh-TW" onclick="setLang('zh-TW')">繁</button>
+      </div>
       <div class="nav-links">
-        <a href="#tools">Tools</a>
-        <a href="#request">Request</a>
-        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#tools" data-i18n="nav_tools">Tools</a>
+        <a href="#request" data-i18n="nav_request">Request</a>
+        <a href="#" data-i18n="nav_about" onclick="showPage('about');return false">About</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- HOME PAGE -->
-  <div id="page-home">
-    <section class="hero">
-      <h1>Free micro tools, built slow.</h1>
-      <p class="sub">Small, useful online tools. No ads, no sign-up. Need something built? Just ask.</p>
-      <div class="tags">
-        <span class="tag">JSON formatter</span>
-        <span class="tag">text tools</span>
-        <span class="tag">dev tools</span>
-        <span class="tag">more coming</span>
-      </div>
-    </section>
-
-    <section class="section" id="tools">
-      <h2 class="sec-title">🛠️ Tools</h2>
-      <p class="sec-sub">Click any tool to use it — works right in your browser. Nothing uploaded to any server.</p>
-      <div class="tool-grid">
-        <div class="tool-card" onclick="showTool('json')">
-          <div class="icon">{ }</div>
-          <h3>JSON Formatter</h3>
-          <p class="desc">Pretty-print, validate, and minify JSON. Error highlights included.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('case')">
-          <div class="icon">Aa</div>
-          <h3>Case Converter</h3>
-          <p class="desc">lowercase, UPPERCASE, snake_case, camelCase, PascalCase. All in one click.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('count')">
-          <div class="icon">📊</div>
-          <h3>Word & Char Counter</h3>
-          <p class="desc">Real-time word count, character count, lines, and reading time estimate.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('diff')">
-          <div class="icon">≠</div>
-          <h3>Text Diff Checker</h3>
-          <p class="desc">Compare two texts side by side. Find what's different instantly.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('time')">
-          <div class="icon">🕐</div>
-          <h3>Timestamp Converter</h3>
-          <p class="desc">Unix timestamp ↔ human-readable date. Supports multiple timezones.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('filename')">
-          <div class="icon">📁</div>
-          <h3>Filename Extractor</h3>
-          <p class="desc">Paste a file list or paths — extract only filenames. Filter by extension.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('url')">
-          <div class="icon">🔗</div>
-          <h3>URL Encoder / Decoder</h3>
-          <p class="desc">URL-encode or decode strings. Handle query params, percent-encoding.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('base64')">
-          <div class="icon">🔐</div>
-          <h3>Base64 Encoder / Decoder</h3>
-          <p class="desc">Encode text to Base64 or decode back. Works with Unicode too.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('uuid')">
-          <div class="icon">🎲</div>
-          <h3>UUID Generator</h3>
-          <p class="desc">Generate random UUIDs. v4 standard. Batch generate up to 100.</p>
-        </div>
-        <div class="tool-card" onclick="showTool('password')">
-          <div class="icon">🔑</div>
-          <h3>Password Generator</h3>
-          <p class="desc">Strong random passwords. Customize length, symbols, numbers.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="request">
-      <div class="request-box">
-        <h3>💡 Need a tool?</h3>
-        <p class="sub">Tell me what you need. I build it. No promises on timeline — but I ship.</p>
-        <form class="request-form" onsubmit="submitRequest(event)">
-          <input type="text" id="reqInput" placeholder="e.g. 'a regex tester that supports JS flavor'" required>
-          <button type="submit" class="btn primary">Request</button>
-        </form>
-        <div class="request-msg" id="reqMsg"></div>
-      </div>
-    </section>
-
-    <div class="section">
-      <div class="ad-placeholder">📢 Ad space — Google AdSense (coming when traffic grows)</div>
+<!-- HOME -->
+<div id="page-home">
+  <section class="hero">
+    <h1 data-i18n="hero_title">Free micro tools, built slow.</h1>
+    <p class="sub" data-i18n="hero_sub">Small, useful online tools. No ads, no sign-up. Need something built? Just ask.</p>
+    <div class="tags">
+      <span class="tag">JSON</span><span class="tag">URL</span><span class="tag">Base64</span><span class="tag">UUID</span><span class="tag" data-i18n="tag_more">+ more</span>
     </div>
+  </section>
 
-    <footer>
-      <p>© 2026 slowbuild · Built with 🧱 and 🍵 · <a href="#">Terms</a> · <a href="#">Privacy</a></p>
-    </footer>
-  </div>
+  <section class="section" id="tools">
+    <h2 class="sec-title">🛠️ <span data-i18n="sec_tools">Tools</span></h2>
+    <p class="sec-sub" data-i18n="tools_desc">Click any tool — runs in your browser. Nothing uploaded.</p>
+    <div class="tool-grid" id="toolGrid">
+      <!-- filled by JS -->
+    </div>
+  </section>
 
-  <!-- TOOL PAGES (hidden by default) -->
-  <div id="page-json" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>{ } JSON Formatter</h2>
-        <textarea id="jsonInput" placeholder='Paste your JSON here...&#10;&#10;{"name":"slowbuild","tools":["json","case","count"]}'></textarea>
-        <div class="btn-row">
-          <button class="btn primary" onclick="formatJSON()">Format / Validate</button>
-          <button class="btn" onclick="minifyJSON()">Minify</button>
-          <button class="btn" onclick="clearJSON()">Clear</button>
-        </div>
-        <div class="result-bar" id="jsonMsg"></div>
-      </div>
-    </section>
-  </div>
+  <section class="section" id="request">
+    <div class="request-box">
+      <h3 data-i18n="req_title">💡 Need a tool?</h3>
+      <p class="sub" data-i18n="req_desc">Tell me what you need. I build it. No promises — but I ship.</p>
+      <form class="request-form" onsubmit="submitRequest(event)">
+        <input type="text" id="reqInput" data-i18n-placeholder="req_placeholder" required>
+        <button type="submit" class="btn primary" data-i18n="req_btn">Request</button>
+      </form>
+      <div class="request-msg" id="reqMsg"></div>
+    </div>
+  </section>
 
-  <div id="page-case" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>Aa Case Converter</h2>
-        <textarea id="caseInput" placeholder="Type or paste text here..."></textarea>
-        <div class="btn-row">
-          <button class="btn" onclick="convertCase('lower')">lowercase</button>
-          <button class="btn" onclick="convertCase('upper')">UPPERCASE</button>
-          <button class="btn" onclick="convertCase('title')">Title Case</button>
-          <button class="btn" onclick="convertCase('snake')">snake_case</button>
-          <button class="btn" onclick="convertCase('camel')">camelCase</button>
-          <button class="btn" onclick="convertCase('pascal')">PascalCase</button>
-        </div>
-      </div>
-    </section>
-  </div>
+  <div class="section"><div class="ad-placeholder" data-i18n="ad_placeholder">📢 Ad space — coming when traffic grows</div></div>
+  <footer>
+    <p>© 2026 slowbuild · <a href="#" onclick="showPage('about');return false" data-i18n="footer_about">About</a> · <a href="#" onclick="showPage('privacy');return false" data-i18n="footer_privacy">Privacy</a></p>
+  </footer>
+</div>
 
-  <div id="page-count" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>📊 Word & Char Counter</h2>
-        <textarea id="countInput" placeholder="Type or paste text here..." oninput="updateCount()"></textarea>
-        <div class="result-bar show" id="countResult" style="color:var(--text)">
-          Words: <strong>0</strong> &nbsp;|&nbsp; Chars: <strong>0</strong> &nbsp;|&nbsp; Lines: <strong>0</strong> &nbsp;|&nbsp; Reading: <strong>0 min</strong>
-        </div>
-      </div>
-    </section>
-  </div>
+<!-- TOOL PAGES (JS-rendered) -->
+<div id="page-tool" style="display:none">
+  <section class="section">
+    <button class="btn" onclick="showPage('home')" style="margin-bottom:16px" data-i18n="back">← Back to tools</button>
+    <div id="toolContent"></div>
+  </section>
+</div>
 
-  <div id="page-diff" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>≠ Text Diff Checker</h2>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-          <div>
-            <label style="font-size:.85rem;color:var(--muted)">Original</label>
-            <textarea id="diffA" style="min-height:160px" placeholder="Paste original text..."></textarea>
-          </div>
-          <div>
-            <label style="font-size:.85rem;color:var(--muted)">Modified</label>
-            <textarea id="diffB" style="min-height:160px" placeholder="Paste modified text..."></textarea>
-          </div>
-        </div>
-        <div class="btn-row">
-          <button class="btn primary" onclick="runDiff()">Compare</button>
-          <button class="btn" onclick="clearDiff()">Clear</button>
-        </div>
-        <div class="result-bar" id="diffResult"></div>
-      </div>
-    </section>
-  </div>
+<!-- ABOUT -->
+<div id="page-about" style="display:none">
+  <section class="section">
+    <button class="btn" onclick="showPage('home')" style="margin-bottom:16px" data-i18n="back">← Back</button>
+    <div class="about-page" data-i18n-html="about_content"></div>
+  </section>
+</div>
 
-  <div id="page-time" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>🕐 Timestamp Converter</h2>
-        <div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:flex-end">
-          <div style="flex:1;min-width:180px">
-            <label style="font-size:.85rem;color:var(--muted)">Unix Timestamp (seconds)</label>
-            <input id="tsInput" type="number" placeholder="e.g. 1700000000" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.88rem;outline:none" oninput="tsToDate()">
-          </div>
-          <div style="flex:1;min-width:180px">
-            <label style="font-size:.85rem;color:var(--muted)">Human-readable date</label>
-            <input id="dateInput" type="text" placeholder="e.g. 2024-01-01 12:00" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none" oninput="dateToTs()">
-          </div>
-        </div>
-        <button class="btn" onclick="tsNow()">Use current time</button>
-        <div class="result-bar show" id="tsResult" style="color:var(--text)">
-          <strong>Now:</strong> <span id="nowTs"></span> &nbsp;|&nbsp; <span id="nowDate"></span>
-        </div>
-      </div>
-    </section>
-  </div>
+<!-- PRIVACY -->
+<div id="page-privacy" style="display:none">
+  <section class="section">
+    <button class="btn" onclick="showPage('home')" style="margin-bottom:16px" data-i18n="back">← Back</button>
+    <div class="about-page" data-i18n-html="privacy_content"></div>
+  </section>
+</div>
 
-  <div id="page-filename" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>📁 Filename Extractor</h2>
-        <textarea id="filenameInput" placeholder='Paste file paths, directory listing, or any text containing filenames...&#10;&#10;e.g.:&#10;/home/user/docs/report.pdf&#10;C:\Projects\src\main.js&#10;photo_2024.jpg (2.3MB)&#10;tree output, ls -la, anything'></textarea>
-        <div class="btn-row">
-          <button class="btn primary" onclick="extractFilenames()">Extract Filenames</button>
-          <button class="btn" onclick="copyFilenames()">Copy</button>
-          <button class="btn" onclick="clearFilenames()">Clear</button>
-        </div>
-        <div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-          <span style="font-size:.85rem;color:var(--muted)">Filter:</span>
-          <input id="filenameFilter" placeholder=".jpg .png .js (space separated)" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;font-size:.83rem;font-family:inherit;outline:none;flex:1;min-width:200px" oninput="applyFilenameFilter()">
-        </div>
-        <div class="result-bar show" id="filenameResult" style="color:var(--text);max-height:300px;overflow-y:auto">
-          <em style="color:var(--muted)">Extracted filenames will appear here...</em>
-        </div>
-      </div>
-    </section>
-  </div>
+<script>
+// ═══════════════════════════════════════════
+//  i18n
+// ═══════════════════════════════════════════
+var I18N = {
+  'en': {
+    nav_tools: 'Tools', nav_request: 'Request', nav_about: 'About',
+    hero_title: 'Free micro tools, built slow.',
+    hero_sub: 'Small, useful online tools. No ads, no sign-up. Need something built? Just ask.',
+    tag_more: '+ more',
+    sec_tools: 'Tools', tools_desc: 'Click any tool — runs in your browser. Nothing uploaded.',
+    req_title: '💡 Need a tool?', req_desc: 'Tell me what you need. I build it. No promises — but I ship.',
+    req_placeholder: 'e.g. "a regex tester with JS flavor"',
+    req_btn: 'Request', req_ok: '✓ Got it! Bookmark for updates.',
+    back: '← Back', ad_placeholder: '📢 Ad space — coming when traffic grows',
+    footer_about: 'About', footer_privacy: 'Privacy',
+    about_content: '<h2>About slowbuild</h2><p>slowbuild is a collection of free, no-sign-up micro tools. Built one at a time, with care. No tracking, no ads (yet), no nonsense.</p><p>Every tool runs entirely in your browser. Your data never leaves your device.</p><p>I\'m an indie maker who writes scripts to solve real problems. slowbuild is where I share them with the world.</p><p>Got a tool idea? <a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">Request it →</a></p>',
+    privacy_content: '<h2>Privacy Policy</h2><p><strong>Last updated:</strong> June 2026</p><p>slowbuild does not collect, store, or share any personal data. All tools run locally in your browser.</p><ul><li><strong>No cookies</strong> — except localStorage to remember your language preference.</li><li><strong>No analytics</strong> — we don\'t track you.</li><li><strong>No data upload</strong> — everything stays on your device.</li><li><strong>No third-party scripts</strong> — this site loads nothing external.</li></ul><p>If this changes in the future, this page will be updated. Questions? Contact: hello@slowbuild.top</p>',
+    tools: [
+      {id:'json',icon:'{ }',name:'JSON Formatter',desc:'Pretty-print, validate, and minify JSON. Error highlights included.'},
+      {id:'case',icon:'Aa',name:'Case Converter',desc:'lowercase, UPPERCASE, snake_case, camelCase, PascalCase.'},
+      {id:'count',icon:'📊',name:'Word & Char Counter',desc:'Real-time word count, characters, lines, reading time.'},
+      {id:'diff',icon:'≠',name:'Text Diff Checker',desc:'Compare two texts side by side. Find differences instantly.'},
+      {id:'time',icon:'🕐',name:'Timestamp Converter',desc:'Unix timestamp ↔ human date. Multiple formats.'},
+      {id:'filename',icon:'📁',name:'Filename Extractor',desc:'Paste file paths — extract only filenames. Filter by extension.'},
+      {id:'url',icon:'🔗',name:'URL Encoder / Decoder',desc:'Encode or decode URL strings. Handle percent-encoding.'},
+      {id:'base64',icon:'🔐',name:'Base64 Encoder / Decoder',desc:'Encode text to Base64 or decode. Works with Unicode.'},
+      {id:'uuid',icon:'🎲',name:'UUID Generator',desc:'Generate random UUIDs v4. Batch up to 100.'},
+      {id:'password',icon:'🔑',name:'Password Generator',desc:'Strong random passwords. Custom length, symbols, numbers.'}
+    ]
+  },
+  'zh-CN': {
+    nav_tools: '工具', nav_request: '提需求', nav_about: '关于',
+    hero_title: '免费小工具，慢慢打磨。',
+    hero_sub: '实用的在线小工具。无广告，无需注册。需要什么？告诉我。',
+    tag_more: '还有更多',
+    sec_tools: '工具', tools_desc: '点开即用 — 全部在浏览器本地运行，不上传数据。',
+    req_title: '💡 需要什么工具？', req_desc: '告诉我你的需求，我来造。不保证工期 — 但我确实会做。',
+    req_placeholder: '比如 "一个支持 JS 语法的正则表达式测试器"',
+    req_btn: '提交需求', req_ok: '✓ 收到！收藏本站关注更新。',
+    back: '← 返回', ad_placeholder: '📢 广告位 — 流量起来后接入',
+    footer_about: '关于', footer_privacy: '隐私政策',
+    about_content: '<h2>关于 slowbuild</h2><p>slowbuild 是一系列免费、无需注册的微型工具集合。一个接一个地打磨，用心建造。</p><p>所有工具都在你的浏览器本地运行，数据不会离开你的设备。无追踪、无广告（暂时）、无废话。</p><p>我是一个写脚本解决实际问题的独立创作者。slowbuild 是我将它们分享给世界的地方。</p><p>有工具想法？<a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">点这里提需求 →</a></p>',
+    privacy_content: '<h2>隐私政策</h2><p><strong>更新日期：</strong>2026年6月</p><p>slowbuild 不收集、不存储、不分享任何个人数据。所有工具都在您的浏览器本地运行。</p><ul><li><strong>无 Cookie</strong> — 仅用 localStorage 记住您的语言偏好。</li><li><strong>无分析追踪</strong> — 不追踪您的使用行为。</li><li><strong>无数据上传</strong> — 所有内容都在您的设备上处理。</li><li><strong>无第三方脚本</strong> — 本网站不加载任何外部资源。</li></ul><p>如果未来有变化，本页面会更新。有问题请联系：hello@slowbuild.top</p>',
+    tools: [
+      {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校验、压缩 JSON。错误自动标注。'},
+      {id:'case',icon:'Aa',name:'大小写转换',desc:'全小写、全大写、蛇形、驼峰、帕斯卡，一键切换。'},
+      {id:'count',icon:'📊',name:'字数统计',desc:'实时统计字数、字符数、行数、预估阅读时间。'},
+      {id:'diff',icon:'≠',name:'文本对比',desc:'两段文本逐行比较，快速找出差异。'},
+      {id:'time',icon:'🕐',name:'时间戳转换',desc:'Unix 时间戳 ↔ 日期互转，支持多种格式。'},
+      {id:'filename',icon:'📁',name:'文件名提取',desc:'粘贴文件路径 — 提取纯文件名，支持按扩展名过滤。'},
+      {id:'url',icon:'🔗',name:'URL 编解码',desc:'URL 编码与解码，处理百分号编码字符串。'},
+      {id:'base64',icon:'🔐',name:'Base64 编解码',desc:'文本 ↔ Base64 互转，支持 Unicode。'},
+      {id:'uuid',icon:'🎲',name:'UUID 生成器',desc:'随机生成 UUID v4，批量最多 100 个。'},
+      {id:'password',icon:'🔑',name:'密码生成器',desc:'高强度随机密码，可自定义长度和字符类型。'}
+    ]
+  },
+  'zh-TW': {
+    nav_tools: '工具', nav_request: '提需求', nav_about: '關於',
+    hero_title: '免費小工具，慢慢打磨。',
+    hero_sub: '實用的線上小工具。無廣告，無需註冊。需要什麼？告訴我。',
+    tag_more: '還有更多',
+    sec_tools: '工具', tools_desc: '點開即用 — 全部在瀏覽器本機運行，不上傳資料。',
+    req_title: '💡 需要什麼工具？', req_desc: '告訴我你的需求，我來造。不保證工期 — 但我確實會做。',
+    req_placeholder: '比如 "一個支援 JS 語法的正則表達式測試器"',
+    req_btn: '提交需求', req_ok: '✓ 收到！收藏本站關注更新。',
+    back: '← 返回', ad_placeholder: '📢 廣告位 — 流量起來後接入',
+    footer_about: '關於', footer_privacy: '隱私政策',
+    about_content: '<h2>關於 slowbuild</h2><p>slowbuild 是一系列免費、無需註冊的微型工具集合。一個接一個地打磨，用心建造。</p><p>所有工具都在你的瀏覽器本機運行，資料不會離開你的裝置。無追蹤、無廣告（暫時）、無廢話。</p><p>我是一個寫腳本解決實際問題的獨立創作者。slowbuild 是我將它們分享給世界的地方。</p><p>有工具想法？<a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">點這裡提需求 →</a></p>',
+    privacy_content: '<h2>隱私政策</h2><p><strong>更新日期：</strong>2026年6月</p><p>slowbuild 不收集、不儲存、不分享任何個人資料。所有工具都在您的瀏覽器本機運行。</p><ul><li><strong>無 Cookie</strong> — 僅用 localStorage 記住您的語言偏好。</li><li><strong>無分析追蹤</strong> — 不追蹤您的使用行為。</li><li><strong>無資料上傳</strong> — 所有內容都在您的裝置上處理。</li><li><strong>無第三方腳本</strong> — 本網站不加載任何外部資源。</li></ul><p>如果未來有變化，本頁面會更新。有問題請聯繫：hello@slowbuild.top</p>',
+    tools: [
+      {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校驗、壓縮 JSON。錯誤自動標註。'},
+      {id:'case',icon:'Aa',name:'大小寫轉換',desc:'全小寫、全大寫、蛇形、駝峰、帕斯卡，一鍵切換。'},
+      {id:'count',icon:'📊',name:'字數統計',desc:'即時統計字數、字元數、行數、預估閱讀時間。'},
+      {id:'diff',icon:'≠',name:'文字對比',desc:'兩段文字逐行比較，快速找出差異。'},
+      {id:'time',icon:'🕐',name:'時間戳轉換',desc:'Unix 時間戳 ↔ 日期互轉，支援多種格式。'},
+      {id:'filename',icon:'📁',name:'檔名提取',desc:'貼上檔案路徑 — 提取純檔名，支援按副檔名過濾。'},
+      {id:'url',icon:'🔗',name:'URL 編解碼',desc:'URL 編碼與解碼，處理百分號編碼字串。'},
+      {id:'base64',icon:'🔐',name:'Base64 編解碼',desc:'文字 ↔ Base64 互轉，支援 Unicode。'},
+      {id:'uuid',icon:'🎲',name:'UUID 產生器',desc:'隨機產生 UUID v4，批量最多 100 個。'},
+      {id:'password',icon:'🔑',name:'密碼產生器',desc:'高強度隨機密碼，可自訂長度和字元類型。'}
+    ]
+  }
+};
 
-  <div id="page-url" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>🔗 URL Encoder / Decoder</h2>
-        <textarea id="urlInput" placeholder="Paste URL or text to encode/decode..."></textarea>
-        <div class="btn-row">
-          <button class="btn primary" onclick="urlEncode()">Encode</button>
-          <button class="btn" onclick="urlDecode()">Decode</button>
-          <button class="btn" onclick="document.getElementById('urlInput').value = '';document.getElementById('urlMsg').className='result-bar'">Clear</button>
-        </div>
-        <div class="result-bar" id="urlMsg"></div>
-      </div>
-    </section>
-  </div>
+var lang = localStorage.getItem('slowbuild_lang') || 'en';
+function setLang(l) {
+  lang = l; localStorage.setItem('slowbuild_lang', l);
+  document.querySelectorAll('[data-lang]').forEach(function(b){ b.classList.toggle('active', b.dataset.lang === l); });
+  document.documentElement.lang = l;
+  applyI18n();
+  renderToolCards();
+  if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
+}
+function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N['en'][key]) || key; }
+function applyI18n() {
+  document.querySelectorAll('[data-i18n]').forEach(function(el){ el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){ el.placeholder = t(el.dataset.i18nPlaceholder); });
+  document.querySelectorAll('[data-i18n-html]').forEach(function(el){ el.innerHTML = t(el.dataset.i18nHtml); });
+  document.title = 'slowbuild — ' + (lang==='zh-CN'?'免费小工具，慢慢打磨':lang==='zh-TW'?'免費小工具，慢慢打磨':'free micro tools, built slow');
+  document.querySelector('meta[name=description]').content = lang==='zh-CN'?'免费在线小工具集合。无需注册，本地运行，无追踪。':lang==='zh-TW'?'免費線上小工具集合。無需註冊，本地運行，無追蹤。':'Free online micro tools. No sign-up, local processing, no tracking.';
+}
+function renderToolCards() {
+  var tools = I18N[lang].tools, html = '';
+  tools.forEach(function(t){ html += '<div class="tool-card" onclick="showTool(\'' + t.id + '\')"><div class="icon">' + t.icon + '</div><h3>' + t.name + '</h3><p class="desc">' + t.desc + '</p></div>'; });
+  document.getElementById('toolGrid').innerHTML = html;
+}
 
-  <div id="page-base64" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>🔐 Base64 Encoder / Decoder</h2>
-        <textarea id="base64Input" placeholder="Paste text to encode or Base64 string to decode..."></textarea>
-        <div class="btn-row">
-          <button class="btn primary" onclick="base64Encode()">Encode</button>
-          <button class="btn" onclick="base64Decode()">Decode</button>
-          <button class="btn" onclick="document.getElementById('base64Input').value = '';document.getElementById('base64Msg').className='result-bar'">Clear</button>
-        </div>
-        <div class="result-bar" id="base64Msg"></div>
-      </div>
-    </section>
-  </div>
+// init
+setLang(lang);
+renderToolCards();
 
-  <div id="page-uuid" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>🎲 UUID Generator</h2>
-        <div style="display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
-          <span style="font-size:.85rem;color:var(--muted)">Count:</span>
-          <input id="uuidCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">
-          <button class="btn primary" onclick="generateUUIDs()">Generate</button>
-          <button class="btn small" onclick="copyUUIDs()">Copy All</button>
-        </div>
-        <div class="result-bar show" id="uuidResult" style="color:var(--text);max-height:300px;overflow-y:auto">
-          <em style="color:var(--muted)">Click Generate to create UUIDs...</em>
-        </div>
-      </div>
-    </section>
-  </div>
+// ═══════════════════════════════════════════
+//  Page nav
+// ═══════════════════════════════════════════
+function showPage(name) {
+  document.querySelectorAll('[id^="page-"]').forEach(function(p){ p.style.display = 'none'; });
+  var page = document.getElementById('page-' + name);
+  if (page) { page.style.display = 'block'; window.scrollTo(0, 0); }
+}
+function showTool(id) {
+  window._currentTool = id;
+  showPage('tool');
+  renderToolContent(id);
+}
 
-  <div id="page-password" style="display:none">
-    <section class="section">
-      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
-      <div class="tool-page">
-        <h2>🔑 Password Generator</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px">
-          <div>
-            <label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">Length</label>
-            <input id="pwLength" type="number" value="16" min="4" max="128" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">
-          </div>
-          <div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem">
-            <label><input type="checkbox" id="pwUpper" checked> A-Z</label>
-            <label><input type="checkbox" id="pwLower" checked> a-z</label>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem">
-            <label><input type="checkbox" id="pwDigits" checked> 0-9</label>
-            <label><input type="checkbox" id="pwSymbols" checked> !@#$</label>
-          </div>
-          <button class="btn primary" onclick="generatePW()">Generate</button>
-          <button class="btn small" onclick="copyPW()">Copy</button>
-        </div>
-        <div class="result-bar show" id="pwResult" style="color:var(--text)">
-          <input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="Click Generate">
-        </div>
-      </div>
-    </section>
-  </div>
+// ═══════════════════════════════════════════
+//  Tool content renderer
+// ═══════════════════════════════════════════
+function makeToolPage(title, innerHTML) {
+  return '<div class="tool-page"><h2>' + title + '</h2>' + innerHTML + '</div>';
+}
+function txt(id,hint){ return '<textarea id="' + id + '" placeholder="' + hint + '"></textarea>'; }
+function bar(id){ return '<div class="result-bar" id="' + id + '"></div>'; }
+function btn(label, fn, cls){ return '<button class="btn ' + (cls||'') + '" onclick="' + fn + '">' + label + '</button>'; }
+function optRow(items){ return '<div class="btn-row">' + items.join('') + '</div>'; }
 
-  <script>
-    // ── Page navigation ──
-    function showPage(name) {
-      document.querySelectorAll('[id^="page-"]').forEach(p => p.style.display = 'none');
-      var page = document.getElementById('page-' + name);
-      if (page) page.style.display = 'block';
-      window.scrollTo(0, 0);
-    }
-    function showTool(name) { showPage(name); }
+function renderToolContent(id) {
+  var L = I18N[lang];
+  var tc = document.getElementById('toolContent'), html = '';
+  switch(id) {
+    case 'json':
+      html = makeToolPage('{ } ' + L.tools[0].name,
+        txt('jsonInput','{"name":"slowbuild","tools":["json","url","base64"]}') +
+        optRow([btn('Format / Validate','formatJSON()','primary'), btn('Minify','minifyJSON()'), btn('Clear','clearJSON()')]) +
+        bar('jsonMsg'));
+      break;
+    case 'case':
+      html = makeToolPage('Aa ' + L.tools[1].name,
+        txt('caseInput','') +
+        optRow([btn('lowercase','convertCase("lower")'),btn('UPPERCASE','convertCase("upper")'),btn('Title Case','convertCase("title")'),btn('snake_case','convertCase("snake")'),btn('camelCase','convertCase("camel")'),btn('PascalCase','convertCase("pascal")')]));
+      break;
+    case 'count':
+      html = makeToolPage('📊 ' + L.tools[2].name,
+        txt('countInput','') + '<div class="result-bar show" id="countResult" style="color:var(--text)">'+(lang==='zh-CN'?'字数':'Words')+': <strong>0</strong> | '+(lang==='zh-CN'?'字符':'Chars')+': <strong>0</strong> | '+(lang==='zh-CN'?'行':'Lines')+': <strong>0</strong> | '+(lang==='zh-CN'?'阅读':'Reading')+': <strong>0 min</strong></div>');
+      tc.innerHTML = html;
+      document.getElementById('countInput').oninput = updateCount;
+      break;
+    case 'diff':
+      html = makeToolPage('≠ ' + L.tools[3].name,
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'原文':'Original')+'</label><textarea id="diffA" style="min-height:160px"></textarea></div><div><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'修改后':'Modified')+'</label><textarea id="diffB" style="min-height:160px"></textarea></div></div>' +
+        optRow([btn(lang==='zh-CN'?'对比':'Compare','runDiff()','primary'), btn(lang==='zh-CN'?'清空':'Clear','clearDiff()')]) +
+        bar('diffResult'));
+      break;
+    case 'time':
+      html = makeToolPage('🕐 ' + L.tools[4].name,
+        '<div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:flex-end"><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">Unix '+(lang==='zh-CN'?'时间戳(秒)':'Timestamp (s)')+'</label><input id="tsInput" type="number" placeholder="1700000000" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.88rem;outline:none" oninput="tsToDate()"></div><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'日期':'Date')+'</label><input id="dateInput" type="text" placeholder="2024-01-01 12:00" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none" oninput="dateToTs()"></div></div>' +
+        optRow([btn(lang==='zh-CN'?'当前时间':'Now','tsNow()')]) +
+        '<div class="result-bar show" id="tsResult" style="color:var(--text)"><strong>'+(lang==='zh-CN'?'现在':'Now')+':</strong> <span id="nowTs"></span> | <span id="nowDate"></span></div>');
+      tc.innerHTML = html;
+      updateNow2(); setInterval(updateNow2, 1000);
+      break;
+    case 'filename':
+      html = makeToolPage('📁 ' + L.tools[5].name,
+        txt('filenameInput','') +
+        '<div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'过滤':'Filter')+':</span><input id="filenameFilter" placeholder=".jpg .png .js" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;font-size:.83rem;font-family:inherit;outline:none;flex:1;min-width:200px" oninput="applyFilenameFilter()"></div>' +
+        optRow([btn(lang==='zh-CN'?'提取文件名':'Extract','extractFilenames()','primary'), btn(lang==='zh-CN'?'复制':'Copy','copyFilenames()'), btn(lang==='zh-CN'?'清空':'Clear','clearFilenames()')]) +
+        '<div class="result-bar show" id="filenameResult" style="color:var(--text)"><em style="color:var(--muted)">'+(lang==='zh-CN'?'提取的文件名将显示在此处...':'Extracted filenames will appear here...')+'</em></div>');
+      break;
+    case 'url':
+      html = makeToolPage('🔗 ' + L.tools[6].name,
+        txt('urlInput','') +
+        optRow([btn('Encode','urlEncode()','primary'), btn('Decode','urlDecode()'), btn(lang==='zh-CN'?'清空':'Clear',"document.getElementById('urlInput').value = '';document.getElementById('urlMsg').className='result-bar'")]) +
+        bar('urlMsg'));
+      break;
+    case 'base64':
+      html = makeToolPage('🔐 ' + L.tools[7].name,
+        txt('base64Input','') +
+        optRow([btn('Encode','base64Encode()','primary'), btn('Decode','base64Decode()'), btn(lang==='zh-CN'?'清空':'Clear',"document.getElementById('base64Input').value = '';document.getElementById('base64Msg').className='result-bar'")]) +
+        bar('base64Msg'));
+      break;
+    case 'uuid':
+      html = makeToolPage('🎲 ' + L.tools[8].name,
+        '<div style="display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'数量':'Count')+':</span><input id="uuidCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">' +
+        btn(lang==='zh-CN'?'生成':'Generate','generateUUIDs()','primary') +
+        btn(lang==='zh-CN'?'复制全部':'Copy All','copyUUIDs()','small') + '</div>' +
+        '<div class="result-bar show" id="uuidResult" style="color:var(--text)"><em style="color:var(--muted)">'+(lang==='zh-CN'?'点击生成按钮创建 UUID...':'Click Generate to create UUIDs...')+'</em></div>');
+      break;
+    case 'password':
+      html = makeToolPage('🔑 ' + L.tools[9].name,
+        '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px"><div><label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">'+(lang==='zh-CN'?'长度':'Length')+'</label><input id="pwLength" type="number" value="16" min="4" max="128" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace"></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwUpper" checked> A-Z</label><label><input type="checkbox" id="pwLower" checked> a-z</label></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwDigits" checked> 0-9</label><label><input type="checkbox" id="pwSymbols" checked> !@#$</label></div>' +
+        btn(lang==='zh-CN'?'生成':'Generate','generatePW()','primary') +
+        btn(lang==='zh-CN'?'复制':'Copy','copyPW()','small') + '</div>' +
+        '<div class="result-bar show" id="pwResult" style="color:var(--text)"><input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="'+(lang==='zh-CN'?'点击生成':'Click Generate')+'"></div>');
+      break;
+  }
+  tc.innerHTML = html;
+}
 
-    // ── JSON Tool ──
-    function formatJSON() {
-      var input = document.getElementById('jsonInput').value.trim();
-      var msg = document.getElementById('jsonMsg');
-      if (!input) { msg.className = 'result-bar error show'; msg.textContent = 'Paste some JSON first.'; return; }
-      try { var obj = JSON.parse(input); document.getElementById('jsonInput').value = JSON.stringify(obj, null, 2); msg.className = 'result-bar success show'; msg.textContent = '✓ Valid JSON — formatted.'; }
-      catch(e) { msg.className = 'result-bar error show'; msg.textContent = '✗ Invalid JSON: ' + e.message; }
-    }
-    function minifyJSON() {
-      var input = document.getElementById('jsonInput').value.trim();
-      var msg = document.getElementById('jsonMsg');
-      if (!input) return;
-      try { var obj = JSON.parse(input); document.getElementById('jsonInput').value = JSON.stringify(obj); msg.className = 'result-bar success show'; msg.textContent = '✓ Minified.'; }
-      catch(e) { msg.className = 'result-bar error show'; msg.textContent = '✗ Invalid JSON: ' + e.message; }
-    }
-    function clearJSON() { document.getElementById('jsonInput').value = ''; document.getElementById('jsonMsg').className = 'result-bar'; }
+// ═══════════════════════════════════════════
+//  Tool logic
+// ═══════════════════════════════════════════
+function formatJSON(){
+  var v=document.getElementById('jsonInput').value.trim(),m=document.getElementById('jsonMsg');
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴 JSON。':'Paste JSON first.';return}
+  try{var o=JSON.parse(v);document.getElementById('jsonInput').value=JSON.stringify(o,null,2);m.className='result-bar success show';m.textContent='✓ Valid JSON — formatted.'}
+  catch(e){m.className='result-bar error show';m.textContent='✗ Invalid: '+e.message}
+}
+function minifyJSON(){
+  var v=document.getElementById('jsonInput').value.trim(),m=document.getElementById('jsonMsg');
+  if(!v)return;
+  try{var o=JSON.parse(v);document.getElementById('jsonInput').value=JSON.stringify(o);m.className='result-bar success show';m.textContent='✓ Minified.'}
+  catch(e){m.className='result-bar error show';m.textContent='✗ Invalid: '+e.message}
+}
+function clearJSON(){document.getElementById('jsonInput').value='';document.getElementById('jsonMsg').className='result-bar'}
 
-    // ── Case Converter ──
-    function convertCase(type) {
-      var text = document.getElementById('caseInput').value;
-      if (!text) return;
-      switch(type) {
-        case 'lower': document.getElementById('caseInput').value = text.toLowerCase(); break;
-        case 'upper': document.getElementById('caseInput').value = text.toUpperCase(); break;
-        case 'title': document.getElementById('caseInput').value = text.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()); break;
-        case 'snake': document.getElementById('caseInput').value = text.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, ''); break;
-        case 'camel': document.getElementById('caseInput').value = text.toLowerCase().replace(/[^a-z0-9]+(.)/g, (m, chr) => chr.toUpperCase()).replace(/^[A-Z]/, c => c.toLowerCase()); break;
-        case 'pascal': document.getElementById('caseInput').value = text.toLowerCase().replace(/(?:^|[^a-z0-9]+)(.)/g, (m, chr) => chr.toUpperCase()); break;
-      }
-    }
+function convertCase(type){
+  var v=document.getElementById('caseInput').value;if(!v)return;
+  switch(type){
+    case'lower':document.getElementById('caseInput').value=v.toLowerCase();break;
+    case'upper':document.getElementById('caseInput').value=v.toUpperCase();break;
+    case'title':document.getElementById('caseInput').value=v.replace(/\w\S*/g,function(w){return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()});break;
+    case'snake':document.getElementById('caseInput').value=v.toLowerCase().replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');break;
+    case'camel':document.getElementById('caseInput').value=v.toLowerCase().replace(/[^a-z0-9]+(.)/g,function(m,chr){return chr.toUpperCase()}).replace(/^[A-Z]/,function(c){return c.toLowerCase()});break;
+    case'pascal':document.getElementById('caseInput').value=v.toLowerCase().replace(/(?:^|[^a-z0-9]+)(.)/g,function(m,chr){return chr.toUpperCase()});break;
+  }
+}
 
-    // ── Word Counter ──
-    function updateCount() {
-      var text = document.getElementById('countInput').value;
-      var words = text.trim() ? text.trim().split(/\s+/).length : 0;
-      var chars = text.length;
-      var lines = text ? text.split(/\n/).length : 0;
-      var mins = Math.ceil(words / 200);
-      document.getElementById('countResult').innerHTML = 'Words: <strong>' + words + '</strong> &nbsp;|&nbsp; Chars: <strong>' + chars + '</strong> &nbsp;|&nbsp; Lines: <strong>' + lines + '</strong> &nbsp;|&nbsp; Reading: <strong>' + mins + ' min</strong>';
-    }
+function updateCount(){
+  var v=document.getElementById('countInput').value;
+  var w=v.trim()?v.trim().split(/\s+/).length:0,c=v.length,l=v?v.split(/\n/).length:0,m=Math.ceil(w/200);
+  var words=lang==='zh-CN'?'字数':'Words',chars=lang==='zh-CN'?'字符':'Chars',lines=lang==='zh-CN'?'行':'Lines',reading=lang==='zh-CN'?'阅读':'Reading';
+  document.getElementById('countResult').innerHTML=words+': <strong>'+w+'</strong> | '+chars+': <strong>'+c+'</strong> | '+lines+': <strong>'+l+'</strong> | '+reading+': <strong>'+m+' min</strong>';
+}
 
-    // ── Diff ──
-    function runDiff() {
-      var a = document.getElementById('diffA').value;
-      var b = document.getElementById('diffB').value;
-      var msg = document.getElementById('diffResult');
-      if (a === b) { msg.className = 'result-bar success show'; msg.textContent = '✓ Texts are identical.'; return; }
-      if (!a || !b) { msg.className = 'result-bar error show'; msg.textContent = 'Both texts needed.'; return; }
-      var la = a.split('\n'), lb = b.split('\n'), diffs = 0, out = [];
-      var max = Math.max(la.length, lb.length);
-      for (var i = 0; i < max; i++) { if (la[i] !== lb[i]) { diffs++; out.push('Line ' + (i+1) + ': ' + (la[i] || '(empty)') + ' → ' + (lb[i] || '(empty)')); } }
-      msg.className = 'result-bar show';
-      msg.innerHTML = '<strong>' + diffs + ' line(s) differ:</strong><br>' + out.slice(0, 10).join('<br>') + (out.length > 10 ? '<br>... and ' + (out.length-10) + ' more' : '');
-    }
-    function clearDiff() { document.getElementById('diffA').value = ''; document.getElementById('diffB').value = ''; document.getElementById('diffResult').className = 'result-bar'; }
+function runDiff(){
+  var a=document.getElementById('diffA').value,b=document.getElementById('diffB').value,m=document.getElementById('diffResult');
+  if(a===b){m.className='result-bar success show';m.textContent='✓ '+(lang==='zh-CN'?'文本相同。':'Texts are identical.');return}
+  if(!a||!b){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请填写两段文本。':'Both texts needed.';return}
+  var la=a.split('\n'),lb=b.split('\n'),d=0,out=[],max=Math.max(la.length,lb.length);
+  for(var i=0;i<max;i++){if(la[i]!==lb[i]){d++;out.push('Line '+(i+1)+': '+(la[i]||'(empty)')+' → '+(lb[i]||'(empty)'))}}
+  m.className='result-bar show';
+  m.innerHTML='<strong>'+d+' '+(lang==='zh-CN'?'行不同':'line(s) differ')+':</strong><br>'+out.slice(0,10).join('<br>')+(out.length>10?'<br>...'+(lang==='zh-CN'?'还有 ':'and ')+(out.length-10)+(lang==='zh-CN'?' 行':' more'):'');
+}
+function clearDiff(){document.getElementById('diffA').value='';document.getElementById('diffB').value='';document.getElementById('diffResult').className='result-bar'}
 
-    // ── Timestamp ──
-    function tsToDate() {
-      var ts = parseInt(document.getElementById('tsInput').value);
-      if (!ts) return;
-      document.getElementById('dateInput').value = new Date(ts * 1000).toISOString().replace('T', ' ').slice(0, 19);
-    }
-    function dateToTs() {
-      var d = new Date(document.getElementById('dateInput').value);
-      if (isNaN(d.getTime())) return;
-      document.getElementById('tsInput').value = Math.floor(d.getTime() / 1000);
-    }
-    function tsNow() {
-      var now = Math.floor(Date.now() / 1000);
-      document.getElementById('tsInput').value = now;
-      document.getElementById('dateInput').value = new Date(now * 1000).toISOString().replace('T', ' ').slice(0, 19);
-    }
-    function updateNow() { var n = Math.floor(Date.now()/1000); document.getElementById('nowTs').textContent = n; document.getElementById('nowDate').textContent = new Date().toString(); }
-    updateNow(); setInterval(updateNow, 1000);
+function tsToDate(){
+  var ts=parseInt(document.getElementById('tsInput').value);
+  if(!ts)return;
+  document.getElementById('dateInput').value=new Date(ts*1000).toISOString().replace('T',' ').slice(0,19);
+}
+function dateToTs(){
+  var d=new Date(document.getElementById('dateInput').value);
+  if(isNaN(d.getTime()))return;
+  document.getElementById('tsInput').value=Math.floor(d.getTime()/1000);
+}
+function tsNow(){
+  var now=Math.floor(Date.now()/1000);
+  document.getElementById('tsInput').value=now;
+  document.getElementById('dateInput').value=new Date(now*1000).toISOString().replace('T',' ').slice(0,19);
+}
+function updateNow2(){var n=Math.floor(Date.now()/1000);var nE=document.getElementById('nowTs'),nD=document.getElementById('nowDate');if(nE)nE.textContent=n;if(nD)nD.textContent=new Date().toString()}
 
-    // ── Filename Extractor ──
-    var _filenames = [];
-    function extractFilenames() {
-      var input = document.getElementById('filenameInput').value;
-      var result = document.getElementById('filenameResult');
-      if (!input.trim()) { result.innerHTML = '<em style="color:var(--muted)">Paste some text first.</em>'; return; }
-      // Match common path patterns: /path/to/file.ext, C:\path\to\file.ext, or bare filenames
-      var paths = input.split('\n');
-      _filenames = [];
-      for (var i = 0; i < paths.length; i++) {
-        var line = paths[i].trim();
-        if (!line) continue;
-        // Extract last segment of a path (Unix or Windows)
-        var parts = line.split(/[\\/]/);
-        var last = parts[parts.length - 1];
-        // Remove anything after a space that starts with ( or [  (like (2.3MB) or [dir])
-        var name = last.replace(/\s*[\(\[][^)\]]*[\)\]]\s*$/, '').trim();
-        // Heuristic: only keep entries that look like filenames (contain a dot extension or are known common names)
-        if (name && name.length > 0 && name !== '.') {
-          _filenames.push(name);
-        }
-      }
-      renderFilenames();
-    }
-    function applyFilenameFilter() {
-      renderFilenames();
-    }
-    function renderFilenames() {
-      var result = document.getElementById('filenameResult');
-      var filter = (document.getElementById('filenameFilter').value || '').trim().toLowerCase();
-      var exts = filter ? filter.split(/\s+/) : [];
-      var filtered = _filenames;
-      if (exts.length > 0) {
-        filtered = _filenames.filter(function(f) {
-          return exts.some(function(e) { return f.toLowerCase().endsWith(e); });
-        });
-      }
-      if (_filenames.length === 0) {
-        result.innerHTML = '<em style="color:var(--muted)">Extracted filenames will appear here...</em>';
-      } else if (filtered.length === 0) {
-        result.innerHTML = '<em style="color:var(--muted)">No filenames match filter. Total extracted: ' + _filenames.length + '</em>';
-      } else {
-        var html = '<div style="font-size:.83rem;color:var(--muted);margin-bottom:8px">' + filtered.length + ' file(s)' + (_filenames.length !== filtered.length ? ' (filtered from ' + _filenames.length + ')' : '') + '</div>';
-        for (var i = 0; i < filtered.length; i++) {
-          html += '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + filtered[i] + '</div>';
-        }
-        result.innerHTML = html;
-      }
-    }
-    function copyFilenames() {
-      var filter = (document.getElementById('filenameFilter').value || '').trim().toLowerCase();
-      var exts = filter ? filter.split(/\s+/) : [];
-      var filtered = _filenames;
-      if (exts.length > 0) {
-        filtered = _filenames.filter(function(f) { return exts.some(function(e) { return f.toLowerCase().endsWith(e); }); });
-      }
-      if (filtered.length === 0) return;
-      navigator.clipboard.writeText(filtered.join('\n')).then(function() {
-        var result = document.getElementById('filenameResult');
-        var old = result.innerHTML;
-        result.innerHTML = '<span style="color:var(--green)">✓ Copied ' + filtered.length + ' filenames!</span>';
-        setTimeout(function() { result.innerHTML = old; renderFilenames(); }, 1500);
-      });
-    }
-    function clearFilenames() {
-      document.getElementById('filenameInput').value = '';
-      document.getElementById('filenameFilter').value = '';
-      _filenames = [];
-      document.getElementById('filenameResult').innerHTML = '<em style="color:var(--muted)">Extracted filenames will appear here...</em>';
-    }
+var _filenames=[];
+function extractFilenames(){
+  var v=document.getElementById('filenameInput').value,r=document.getElementById('filenameResult');
+  if(!v.trim()){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'请先粘贴文本。':'Paste some text first.')+'</em>';return}
+  var paths=v.split('\n');_filenames=[];
+  for(var i=0;i<paths.length;i++){
+    var line=paths[i].trim();if(!line)continue;
+    var parts=line.split(/[\\/]/),last=parts[parts.length-1];
+    var name=last.replace(/\s*[\(\[][^)\]]*[\)\]]\s*$/,'').trim();
+    if(name&&name.length>0&&name!=='.')_filenames.push(name);
+  }
+  renderFilenames();
+}
+function applyFilenameFilter(){renderFilenames()}
+function renderFilenames(){
+  var r=document.getElementById('filenameResult'),f=(document.getElementById('filenameFilter').value||'').trim().toLowerCase(),exts=f?f.split(/\s+/):[],filtered=_filenames;
+  if(exts.length>0)filtered=_filenames.filter(function(x){return exts.some(function(e){return x.toLowerCase().endsWith(e)})});
+  if(_filenames.length===0){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'提取的文件名将显示在此处...':'Extracted filenames will appear here...')+'</em>'}
+  else if(filtered.length===0){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'无匹配文件名。共提取 ':'No filenames match. Total: ')+_filenames.length+'</em>'}
+  else{
+    var h='<div style="font-size:.83rem;color:var(--muted);margin-bottom:8px">'+filtered.length+' '+(lang==='zh-CN'?'个文件':'file(s)')+(filtered.length!==_filenames.length?' '+(lang==='zh-CN'?'(从 ':'(filtered from ')+_filenames.length+')':'')+'</div>';
+    for(var i=0;i<filtered.length;i++)h+='<div style="padding:3px 0;font-family:monospace;font-size:.83rem">'+filtered[i]+'</div>';
+    r.innerHTML=h;
+  }
+}
+function copyFilenames(){
+  var f=(document.getElementById('filenameFilter').value||'').trim().toLowerCase(),exts=f?f.split(/\s+/):[],filtered=_filenames;
+  if(exts.length>0)filtered=_filenames.filter(function(x){return exts.some(function(e){return x.toLowerCase().endsWith(e)})});
+  if(filtered.length===0)return;
+  navigator.clipboard.writeText(filtered.join('\n')).then(function(){
+    var r=document.getElementById('filenameResult'),old=r.innerHTML;
+    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':'Copied ')+filtered.length+(lang==='zh-CN'?' 个文件名!':' filenames!')+'</span>';
+    setTimeout(function(){renderFilenames()},1500);
+  });
+}
+function clearFilenames(){document.getElementById('filenameInput').value='';document.getElementById('filenameFilter').value='';_filenames=[];renderFilenames()}
 
-    // ── URL Encoder / Decoder ──
-    function urlEncode() {
-      var v = document.getElementById('urlInput').value, m = document.getElementById('urlMsg');
-      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
-      document.getElementById('urlInput').value = encodeURIComponent(v);
-      m.className = 'result-bar success show'; m.textContent = '✓ Encoded.';
-    }
-    function urlDecode() {
-      var v = document.getElementById('urlInput').value, m = document.getElementById('urlMsg');
-      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
-      try { document.getElementById('urlInput').value = decodeURIComponent(v); m.className = 'result-bar success show'; m.textContent = '✓ Decoded.'; }
-      catch(e) { m.className = 'result-bar error show'; m.textContent = '✗ Invalid URL encoding.'; }
-    }
+function urlEncode(){
+  var v=document.getElementById('urlInput').value,m=document.getElementById('urlMsg');
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  document.getElementById('urlInput').value=encodeURIComponent(v);m.className='result-bar success show';m.textContent='✓ Encoded.';
+}
+function urlDecode(){
+  var v=document.getElementById('urlInput').value,m=document.getElementById('urlMsg');
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  try{document.getElementById('urlInput').value=decodeURIComponent(v);m.className='result-bar success show';m.textContent='✓ Decoded.'}
+  catch(e){m.className='result-bar error show';m.textContent='✗ Invalid.'}
+}
 
-    // ── Base64 ──
-    function base64Encode() {
-      var v = document.getElementById('base64Input').value, m = document.getElementById('base64Msg');
-      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
-      try { document.getElementById('base64Input').value = btoa(unescape(encodeURIComponent(v))); m.className = 'result-bar success show'; m.textContent = '✓ Encoded.'; }
-      catch(e) { m.className = 'result-bar error show'; m.textContent = 'Encode failed.'; }
-    }
-    function base64Decode() {
-      var v = document.getElementById('base64Input').value, m = document.getElementById('base64Msg');
-      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste Base64 first.'; return; }
-      try { document.getElementById('base64Input').value = decodeURIComponent(escape(atob(v))); m.className = 'result-bar success show'; m.textContent = '✓ Decoded.'; }
-      catch(e) { m.className = 'result-bar error show'; m.textContent = '✗ Invalid Base64.'; }
-    }
+function base64Encode(){
+  var v=document.getElementById('base64Input').value,m=document.getElementById('base64Msg');
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  try{document.getElementById('base64Input').value=btoa(unescape(encodeURIComponent(v)));m.className='result-bar success show';m.textContent='✓ Encoded.'}
+  catch(e){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'编码失败':'Encode failed'}
+}
+function base64Decode(){
+  var v=document.getElementById('base64Input').value,m=document.getElementById('base64Msg');
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴 Base64。':'Paste Base64 first.';return}
+  try{document.getElementById('base64Input').value=decodeURIComponent(escape(atob(v)));m.className='result-bar success show';m.textContent='✓ Decoded.'}
+  catch(e){m.className='result-bar error show';m.textContent='✗ Invalid Base64.'}
+}
 
-    // ── UUID ──
-    function generateUUIDs() {
-      var c = Math.min(Math.max(parseInt(document.getElementById('uuidCount').value) || 1, 1), 100);
-      var uuids = [];
-      for (var i = 0; i < c; i++) {
-        uuids.push('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-          var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
-          return v.toString(16);
-        }));
-      }
-      var r = document.getElementById('uuidResult');
-      r.innerHTML = uuids.map(function(u) { return '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + u + '</div>'; }).join('');
-      r.classList.add('show');
-      window._uuids = uuids;
-    }
-    function copyUUIDs() {
-      if (!window._uuids || window._uuids.length === 0) return;
-      navigator.clipboard.writeText(window._uuids.join('\n')).then(function() {
-        var r = document.getElementById('uuidResult');
-        r.innerHTML = '<span style="color:var(--green)">✓ Copied ' + window._uuids.length + ' UUIDs!</span>';
-        setTimeout(function() { if (window._uuids) { var uuids = window._uuids; r.innerHTML = uuids.map(function(u) { return '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + u + '</div>'; }).join(''); } }, 1500);
-      });
-    }
+function generateUUIDs(){
+  var c=Math.min(Math.max(parseInt(document.getElementById('uuidCount').value)||1,1),100),uuids=[];
+  for(var i=0;i<c;i++)uuids.push('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0,v=c==='x'?r:(r&0x3|0x8);return v.toString(16)}));
+  var r=document.getElementById('uuidResult');
+  r.innerHTML=uuids.map(function(u){return '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">'+u+'</div>'}).join('');
+  r.classList.add('show');window._uuids=uuids;
+}
+function copyUUIDs(){
+  if(!window._uuids||window._uuids.length===0)return;
+  navigator.clipboard.writeText(window._uuids.join('\n')).then(function(){
+    var r=document.getElementById('uuidResult');
+    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':'Copied ')+window._uuids.length+' UUIDs!</span>';
+    setTimeout(function(){if(window._uuids)generateUUIDs()},1500);
+  });
+}
 
-    // ── Password ──
-    function generatePW() {
-      var len = Math.min(Math.max(parseInt(document.getElementById('pwLength').value) || 16, 4), 128);
-      var chars = '';
-      if (document.getElementById('pwUpper').checked) chars += 'ABCDEFGHJKLMNPQRSTUVWXYZ';
-      if (document.getElementById('pwLower').checked) chars += 'abcdefghjkmnpqrstuvwxyz';
-      if (document.getElementById('pwDigits').checked) chars += '23456789';
-      if (document.getElementById('pwSymbols').checked) chars += '!@#$%^&*()-_=+';
-      if (!chars) chars = 'abcdefghjkmnpqrstuvwxyz';
-      var pw = '';
-      var array = new Uint32Array(len);
-      crypto.getRandomValues(array);
-      for (var i = 0; i < len; i++) pw += chars[array[i] % chars.length];
-      document.getElementById('pwOutput').value = pw;
-    }
-    function copyPW() {
-      var pw = document.getElementById('pwOutput').value;
-      if (!pw || pw === 'Click Generate') return;
-      navigator.clipboard.writeText(pw).then(function() {
-        document.getElementById('pwOutput').value = '✓ Copied!';
-        setTimeout(function() { document.getElementById('pwOutput').value = pw; }, 1200);
-      });
-    }
+function generatePW(){
+  var len=Math.min(Math.max(parseInt(document.getElementById('pwLength').value)||16,4),128),chars='';
+  if(document.getElementById('pwUpper').checked)chars+='ABCDEFGHJKLMNPQRSTUVWXYZ';
+  if(document.getElementById('pwLower').checked)chars+='abcdefghjkmnpqrstuvwxyz';
+  if(document.getElementById('pwDigits').checked)chars+='23456789';
+  if(document.getElementById('pwSymbols').checked)chars+='!@#$%^&*()-_=+';
+  if(!chars)chars='abcdefghjkmnpqrstuvwxyz';
+  var pw='',array=new Uint32Array(len);crypto.getRandomValues(array);
+  for(var i=0;i<len;i++)pw+=chars[array[i]%chars.length];
+  document.getElementById('pwOutput').value=pw;
+}
+function copyPW(){
+  var pw=document.getElementById('pwOutput').value;
+  if(!pw||pw===(lang==='zh-CN'?'点击生成':'Click Generate'))return;
+  navigator.clipboard.writeText(pw).then(function(){
+    var el=document.getElementById('pwOutput');el.value=lang==='zh-CN'?'✓ 已复制!':'✓ Copied!';
+    setTimeout(function(){el.value=pw},1200);
+  });
+}
 
-    // ── Request ──
-    function submitRequest(e) {
-      e.preventDefault();
-      var input = document.getElementById('reqInput');
-      var msg = document.getElementById('reqMsg');
-      if (input.value.trim()) {
-        msg.innerHTML = '✓ Got it! I\'ll look into building a <strong>' + input.value.trim() + '</strong>. Bookmark this page for updates.';
-        msg.style.color = 'var(--green)';
-        input.value = '';
-      }
-    }
-  </script>
+function submitRequest(e){
+  e.preventDefault();
+  var v=document.getElementById('reqInput').value.trim(),m=document.getElementById('reqMsg');
+  if(v){m.textContent='✓ '+(lang==='zh-CN'?'收到！收藏本站关注更新。':'Got it! Bookmark for updates.');m.style.color='var(--green)';document.getElementById('reqInput').value=''}
+}
+</script>
 </body>
 </html>
