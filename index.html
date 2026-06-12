@@ -193,6 +193,26 @@
           <h3>Filename Extractor</h3>
           <p class="desc">Paste a file list or paths — extract only filenames. Filter by extension.</p>
         </div>
+        <div class="tool-card" onclick="showTool('url')">
+          <div class="icon">🔗</div>
+          <h3>URL Encoder / Decoder</h3>
+          <p class="desc">URL-encode or decode strings. Handle query params, percent-encoding.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('base64')">
+          <div class="icon">🔐</div>
+          <h3>Base64 Encoder / Decoder</h3>
+          <p class="desc">Encode text to Base64 or decode back. Works with Unicode too.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('uuid')">
+          <div class="icon">🎲</div>
+          <h3>UUID Generator</h3>
+          <p class="desc">Generate random UUIDs. v4 standard. Batch generate up to 100.</p>
+        </div>
+        <div class="tool-card" onclick="showTool('password')">
+          <div class="icon">🔑</div>
+          <h3>Password Generator</h3>
+          <p class="desc">Strong random passwords. Customize length, symbols, numbers.</p>
+        </div>
       </div>
     </section>
 
@@ -329,6 +349,84 @@
         </div>
         <div class="result-bar show" id="filenameResult" style="color:var(--text);max-height:300px;overflow-y:auto">
           <em style="color:var(--muted)">Extracted filenames will appear here...</em>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="page-url" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>🔗 URL Encoder / Decoder</h2>
+        <textarea id="urlInput" placeholder="Paste URL or text to encode/decode..."></textarea>
+        <div class="btn-row">
+          <button class="btn primary" onclick="urlEncode()">Encode</button>
+          <button class="btn" onclick="urlDecode()">Decode</button>
+          <button class="btn" onclick="document.getElementById('urlInput').value = '';document.getElementById('urlMsg').className='result-bar'">Clear</button>
+        </div>
+        <div class="result-bar" id="urlMsg"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="page-base64" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>🔐 Base64 Encoder / Decoder</h2>
+        <textarea id="base64Input" placeholder="Paste text to encode or Base64 string to decode..."></textarea>
+        <div class="btn-row">
+          <button class="btn primary" onclick="base64Encode()">Encode</button>
+          <button class="btn" onclick="base64Decode()">Decode</button>
+          <button class="btn" onclick="document.getElementById('base64Input').value = '';document.getElementById('base64Msg').className='result-bar'">Clear</button>
+        </div>
+        <div class="result-bar" id="base64Msg"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="page-uuid" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>🎲 UUID Generator</h2>
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
+          <span style="font-size:.85rem;color:var(--muted)">Count:</span>
+          <input id="uuidCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">
+          <button class="btn primary" onclick="generateUUIDs()">Generate</button>
+          <button class="btn small" onclick="copyUUIDs()">Copy All</button>
+        </div>
+        <div class="result-bar show" id="uuidResult" style="color:var(--text);max-height:300px;overflow-y:auto">
+          <em style="color:var(--muted)">Click Generate to create UUIDs...</em>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="page-password" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>🔑 Password Generator</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px">
+          <div>
+            <label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">Length</label>
+            <input id="pwLength" type="number" value="16" min="4" max="128" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem">
+            <label><input type="checkbox" id="pwUpper" checked> A-Z</label>
+            <label><input type="checkbox" id="pwLower" checked> a-z</label>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem">
+            <label><input type="checkbox" id="pwDigits" checked> 0-9</label>
+            <label><input type="checkbox" id="pwSymbols" checked> !@#$</label>
+          </div>
+          <button class="btn primary" onclick="generatePW()">Generate</button>
+          <button class="btn small" onclick="copyPW()">Copy</button>
+        </div>
+        <div class="result-bar show" id="pwResult" style="color:var(--text)">
+          <input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="Click Generate">
         </div>
       </div>
     </section>
@@ -488,6 +586,82 @@
       document.getElementById('filenameFilter').value = '';
       _filenames = [];
       document.getElementById('filenameResult').innerHTML = '<em style="color:var(--muted)">Extracted filenames will appear here...</em>';
+    }
+
+    // ── URL Encoder / Decoder ──
+    function urlEncode() {
+      var v = document.getElementById('urlInput').value, m = document.getElementById('urlMsg');
+      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
+      document.getElementById('urlInput').value = encodeURIComponent(v);
+      m.className = 'result-bar success show'; m.textContent = '✓ Encoded.';
+    }
+    function urlDecode() {
+      var v = document.getElementById('urlInput').value, m = document.getElementById('urlMsg');
+      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
+      try { document.getElementById('urlInput').value = decodeURIComponent(v); m.className = 'result-bar success show'; m.textContent = '✓ Decoded.'; }
+      catch(e) { m.className = 'result-bar error show'; m.textContent = '✗ Invalid URL encoding.'; }
+    }
+
+    // ── Base64 ──
+    function base64Encode() {
+      var v = document.getElementById('base64Input').value, m = document.getElementById('base64Msg');
+      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste text first.'; return; }
+      try { document.getElementById('base64Input').value = btoa(unescape(encodeURIComponent(v))); m.className = 'result-bar success show'; m.textContent = '✓ Encoded.'; }
+      catch(e) { m.className = 'result-bar error show'; m.textContent = 'Encode failed.'; }
+    }
+    function base64Decode() {
+      var v = document.getElementById('base64Input').value, m = document.getElementById('base64Msg');
+      if (!v) { m.className = 'result-bar error show'; m.textContent = 'Paste Base64 first.'; return; }
+      try { document.getElementById('base64Input').value = decodeURIComponent(escape(atob(v))); m.className = 'result-bar success show'; m.textContent = '✓ Decoded.'; }
+      catch(e) { m.className = 'result-bar error show'; m.textContent = '✗ Invalid Base64.'; }
+    }
+
+    // ── UUID ──
+    function generateUUIDs() {
+      var c = Math.min(Math.max(parseInt(document.getElementById('uuidCount').value) || 1, 1), 100);
+      var uuids = [];
+      for (var i = 0; i < c; i++) {
+        uuids.push('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+          var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+          return v.toString(16);
+        }));
+      }
+      var r = document.getElementById('uuidResult');
+      r.innerHTML = uuids.map(function(u) { return '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + u + '</div>'; }).join('');
+      r.classList.add('show');
+      window._uuids = uuids;
+    }
+    function copyUUIDs() {
+      if (!window._uuids || window._uuids.length === 0) return;
+      navigator.clipboard.writeText(window._uuids.join('\n')).then(function() {
+        var r = document.getElementById('uuidResult');
+        r.innerHTML = '<span style="color:var(--green)">✓ Copied ' + window._uuids.length + ' UUIDs!</span>';
+        setTimeout(function() { if (window._uuids) { var uuids = window._uuids; r.innerHTML = uuids.map(function(u) { return '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + u + '</div>'; }).join(''); } }, 1500);
+      });
+    }
+
+    // ── Password ──
+    function generatePW() {
+      var len = Math.min(Math.max(parseInt(document.getElementById('pwLength').value) || 16, 4), 128);
+      var chars = '';
+      if (document.getElementById('pwUpper').checked) chars += 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+      if (document.getElementById('pwLower').checked) chars += 'abcdefghjkmnpqrstuvwxyz';
+      if (document.getElementById('pwDigits').checked) chars += '23456789';
+      if (document.getElementById('pwSymbols').checked) chars += '!@#$%^&*()-_=+';
+      if (!chars) chars = 'abcdefghjkmnpqrstuvwxyz';
+      var pw = '';
+      var array = new Uint32Array(len);
+      crypto.getRandomValues(array);
+      for (var i = 0; i < len; i++) pw += chars[array[i] % chars.length];
+      document.getElementById('pwOutput').value = pw;
+    }
+    function copyPW() {
+      var pw = document.getElementById('pwOutput').value;
+      if (!pw || pw === 'Click Generate') return;
+      navigator.clipboard.writeText(pw).then(function() {
+        document.getElementById('pwOutput').value = '✓ Copied!';
+        setTimeout(function() { document.getElementById('pwOutput').value = pw; }, 1200);
+      });
     }
 
     // ── Request ──
