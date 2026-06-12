@@ -188,10 +188,10 @@
           <h3>Timestamp Converter</h3>
           <p class="desc">Unix timestamp ↔ human-readable date. Supports multiple timezones.</p>
         </div>
-        <div class="tool-card coming-soon">
-          <div class="icon">🔜</div>
-          <h3>URL Encoder / Decoder<span class="badge-soon">soon</span></h3>
-          <p class="desc">Encode and decode URLs. Handle query strings with ease.</p>
+        <div class="tool-card" onclick="showTool('filename')">
+          <div class="icon">📁</div>
+          <h3>Filename Extractor</h3>
+          <p class="desc">Paste a file list or paths — extract only filenames. Filter by extension.</p>
         </div>
       </div>
     </section>
@@ -312,6 +312,28 @@
     </section>
   </div>
 
+  <div id="page-filename" style="display:none">
+    <section class="section">
+      <button class="btn" onclick="showPage('home')" style="margin-bottom:16px">← Back to tools</button>
+      <div class="tool-page">
+        <h2>📁 Filename Extractor</h2>
+        <textarea id="filenameInput" placeholder='Paste file paths, directory listing, or any text containing filenames...&#10;&#10;e.g.:&#10;/home/user/docs/report.pdf&#10;C:\Projects\src\main.js&#10;photo_2024.jpg (2.3MB)&#10;tree output, ls -la, anything'></textarea>
+        <div class="btn-row">
+          <button class="btn primary" onclick="extractFilenames()">Extract Filenames</button>
+          <button class="btn" onclick="copyFilenames()">Copy</button>
+          <button class="btn" onclick="clearFilenames()">Clear</button>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <span style="font-size:.85rem;color:var(--muted)">Filter:</span>
+          <input id="filenameFilter" placeholder=".jpg .png .js (space separated)" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;font-size:.83rem;font-family:inherit;outline:none;flex:1;min-width:200px" oninput="applyFilenameFilter()">
+        </div>
+        <div class="result-bar show" id="filenameResult" style="color:var(--text);max-height:300px;overflow-y:auto">
+          <em style="color:var(--muted)">Extracted filenames will appear here...</em>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <script>
     // ── Page navigation ──
     function showPage(name) {
@@ -396,6 +418,77 @@
     }
     function updateNow() { var n = Math.floor(Date.now()/1000); document.getElementById('nowTs').textContent = n; document.getElementById('nowDate').textContent = new Date().toString(); }
     updateNow(); setInterval(updateNow, 1000);
+
+    // ── Filename Extractor ──
+    var _filenames = [];
+    function extractFilenames() {
+      var input = document.getElementById('filenameInput').value;
+      var result = document.getElementById('filenameResult');
+      if (!input.trim()) { result.innerHTML = '<em style="color:var(--muted)">Paste some text first.</em>'; return; }
+      // Match common path patterns: /path/to/file.ext, C:\path\to\file.ext, or bare filenames
+      var paths = input.split('\n');
+      _filenames = [];
+      for (var i = 0; i < paths.length; i++) {
+        var line = paths[i].trim();
+        if (!line) continue;
+        // Extract last segment of a path (Unix or Windows)
+        var parts = line.split(/[\\/]/);
+        var last = parts[parts.length - 1];
+        // Remove anything after a space that starts with ( or [  (like (2.3MB) or [dir])
+        var name = last.replace(/\s*[\(\[][^)\]]*[\)\]]\s*$/, '').trim();
+        // Heuristic: only keep entries that look like filenames (contain a dot extension or are known common names)
+        if (name && name.length > 0 && name !== '.') {
+          _filenames.push(name);
+        }
+      }
+      renderFilenames();
+    }
+    function applyFilenameFilter() {
+      renderFilenames();
+    }
+    function renderFilenames() {
+      var result = document.getElementById('filenameResult');
+      var filter = (document.getElementById('filenameFilter').value || '').trim().toLowerCase();
+      var exts = filter ? filter.split(/\s+/) : [];
+      var filtered = _filenames;
+      if (exts.length > 0) {
+        filtered = _filenames.filter(function(f) {
+          return exts.some(function(e) { return f.toLowerCase().endsWith(e); });
+        });
+      }
+      if (_filenames.length === 0) {
+        result.innerHTML = '<em style="color:var(--muted)">Extracted filenames will appear here...</em>';
+      } else if (filtered.length === 0) {
+        result.innerHTML = '<em style="color:var(--muted)">No filenames match filter. Total extracted: ' + _filenames.length + '</em>';
+      } else {
+        var html = '<div style="font-size:.83rem;color:var(--muted);margin-bottom:8px">' + filtered.length + ' file(s)' + (_filenames.length !== filtered.length ? ' (filtered from ' + _filenames.length + ')' : '') + '</div>';
+        for (var i = 0; i < filtered.length; i++) {
+          html += '<div style="padding:3px 0;font-family:monospace;font-size:.83rem">' + filtered[i] + '</div>';
+        }
+        result.innerHTML = html;
+      }
+    }
+    function copyFilenames() {
+      var filter = (document.getElementById('filenameFilter').value || '').trim().toLowerCase();
+      var exts = filter ? filter.split(/\s+/) : [];
+      var filtered = _filenames;
+      if (exts.length > 0) {
+        filtered = _filenames.filter(function(f) { return exts.some(function(e) { return f.toLowerCase().endsWith(e); }); });
+      }
+      if (filtered.length === 0) return;
+      navigator.clipboard.writeText(filtered.join('\n')).then(function() {
+        var result = document.getElementById('filenameResult');
+        var old = result.innerHTML;
+        result.innerHTML = '<span style="color:var(--green)">✓ Copied ' + filtered.length + ' filenames!</span>';
+        setTimeout(function() { result.innerHTML = old; renderFilenames(); }, 1500);
+      });
+    }
+    function clearFilenames() {
+      document.getElementById('filenameInput').value = '';
+      document.getElementById('filenameFilter').value = '';
+      _filenames = [];
+      document.getElementById('filenameResult').innerHTML = '<em style="color:var(--muted)">Extracted filenames will appear here...</em>';
+    }
 
     // ── Request ──
     function submitRequest(e) {
