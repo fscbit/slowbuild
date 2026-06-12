@@ -667,13 +667,17 @@ function uploadConvert(tool) {
   }
   
   resultDiv.className = 'result-bar show';
-  resultDiv.innerHTML = '<span style="color:var(--muted)">⏳ ' + (lang === 'zh-CN' ? '处理中...' : 'Processing...') + '</span>';
+  resultDiv.innerHTML = '<span style="color:var(--muted)">⏳ ' + (lang === 'zh-CN' ? '转换中（可能需要30秒）...' : 'Converting (may take 30s)...') + '</span>';
   
   var formData = new FormData();
   formData.append('file', file);
   if (endpoint === '/api/convert') formData.append('type', 'word2pdf');
+
+  // 60秒超时
+  var controller = new AbortController();
+  var timeout = setTimeout(function() { controller.abort(); }, 60000);
   
-  fetch(BACKEND + endpoint, { method: 'POST', body: formData })
+  fetch(BACKEND + endpoint, { method: 'POST', body: formData, signal: controller.signal })
     .then(function(resp) {
       if (!resp.ok && method === 'POST_FORM_PDF') {
         return resp.json().then(function(err) { throw new Error(err.error || 'Failed'); });
@@ -710,7 +714,11 @@ function uploadConvert(tool) {
     })
     .catch(function(err) {
       resultDiv.className = 'result-bar error show';
-      resultDiv.textContent = '✗ ' + (lang === 'zh-CN' ? '上传失败。服务器可能离线，请稍后重试。' : 'Failed. Server may be offline. Try again later.');
+      if (err.name === 'AbortError') {
+        resultDiv.textContent = '✗ ' + (lang === 'zh-CN' ? '转换超时。文件可能太大，请用下载版脚本本地转换。' : 'Timed out. File may be too large. Try the download script instead.');
+      } else {
+        resultDiv.textContent = '✗ ' + (lang === 'zh-CN' ? '上传失败。服务器可能离线，请稍后重试。' : 'Failed. Server may be offline. Try again later.');
+      }
       console.error(err);
     });
 }
