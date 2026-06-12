@@ -9,7 +9,7 @@ slowbuild 后端服务（完整版）
 测试：浏览器打开 http://localhost:5000
 """
 
-import os, shutil, subprocess, filecmp, uuid, time, hashlib, json, csv, io, re, base64
+import os, shutil, subprocess, filecmp, uuid, time, hashlib, json, csv, io, re, base64, tempfile
 from pathlib import Path
 from datetime import datetime
 from flask import Flask, request, jsonify, send_file
@@ -386,6 +386,20 @@ if __name__ == "__main__":
     if libre:
         print("  🟡 文档转换（LibreOffice）:")
         print("     word2pdf / excel2pdf / ppt2pdf / excel2csv / html2pdf")
+        # 预热 LibreOffice：后台做一次空转换，后续请求秒转
+        print()
+        print("  🔥 正在预热 LibreOffice（约15秒，仅首次）...")
+        try:
+            import tempfile
+            tmpdir = tempfile.mkdtemp()
+            dummy = os.path.join(tmpdir, "warmup.txt")
+            with open(dummy, "w") as f: f.write("warmup")
+            subprocess.run([libre, "--headless", "--convert-to", "pdf", "--outdir", tmpdir, dummy],
+                          capture_output=True, timeout=30, cwd=tmpdir)
+            shutil.rmtree(tmpdir, ignore_errors=True)
+            print("  ✅ 预热完成，后续转换秒出！")
+        except Exception as e:
+            print(f"  ⚠️ 预热失败: {e}")
     else:
         print("  ❌ 文档转换不可用 — 请安装 LibreOffice")
     print("  🟢 文件比对:")
