@@ -340,6 +340,7 @@ var I18N = {
     usage_split: 'Place Excel next to EXE → run → split by date column',
     usage_xls: 'Run in folder with .xls files → converts + finds duplicates',
     no_req: 'No dependencies', buy_now: 'Buy', buy_bundle: 'Buy Bundle',
+    get_in_bundle: 'Get in Bundle',
     bundle_title: '🔥 All 6 Tools — Complete Bundle',
     bundle_desc: 'Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.',
     bundle_save: 'Save 27% — $29.94 value for $22.00',
@@ -412,6 +413,7 @@ var I18N = {
     usage_split: '将Excel放在EXE旁边 → 运行 → 按日期列拆分',
     usage_xls: '放在有.xls的文件夹中运行 → 转换并查重',
     no_req: '无需安装依赖', buy_now: '购买', buy_bundle: '购买套装',
+    get_in_bundle: '打包获取',
     bundle_title: '🔥 全部6款 — 打包套装',
     bundle_desc: 'Word→PDF + 去重 + 图片查找 + 文件名导出 + Excel拆分 + XLS转换。',
     bundle_save: '省27% — $29.94价值仅售$22.00',
@@ -492,6 +494,7 @@ var I18N = {
     usage_split: '將Excel放在EXE旁邊 → 執行 → 按日期列拆分',
     usage_xls: '放在有.xls的資料夾中執行 → 轉換並查重',
     no_req: '無需安裝依賴', buy_now: '購買', buy_bundle: '購買套裝',
+    get_in_bundle: '套裝獲取',
     bundle_title: '🔥 全部6款 — 打包套裝',
     bundle_desc: 'Word→PDF + 去重 + 圖片查找 + 檔名匯出 + Excel拆分 + XLS轉換。',
     bundle_save: '省27% — $29.94價值僅售$22.00',
@@ -545,16 +548,16 @@ function renderToolCards() {
 function renderScriptCards() {
   var L = I18N[lang];
   var tools = [
-    {id:'word2pdf',icon:'📄',exe:'Word2PDF.exe',price:'$4.99',desc:L.script_word2pdf_desc||'',scene:L.scene_word2pdf||'',usage:L.usage_word2pdf||''},
-    {id:'dedup',icon:'🧹',exe:'DupeKiller.exe',price:'$4.99',desc:L.script_dedup_desc||'',scene:L.scene_dedup||'',usage:L.usage_dedup||''},
-    {id:'images',icon:'🖼️',exe:'ImageFinder.exe',price:'$4.99',desc:L.script_images_desc||'',scene:L.scene_images||'',usage:L.usage_images||''},
-    {id:'file2excel',icon:'📊',exe:'File2Excel.exe',price:'$4.99',desc:L.script_f2e_desc||'',scene:L.scene_f2e||'',usage:L.usage_f2e||''},
-    {id:'split',icon:'✂️',exe:'ExcelSplitter.exe',price:'$4.99',desc:L.script_split_desc||'',scene:L.scene_split||'',usage:L.usage_split||''},
-    {id:'xlsconv',icon:'🔄',exe:'XLS2XLSX.exe',price:'$4.99',desc:L.script_xls_desc||'',scene:L.scene_xls||'',usage:L.usage_xls||''}
+    {id:'word2pdf',icon:'📄',exe:'Word2PDF.exe',desc:L.script_word2pdf_desc||'',scene:L.scene_word2pdf||'',usage:L.usage_word2pdf||''},
+    {id:'dedup',icon:'🧹',exe:'DupeKiller.exe',desc:L.script_dedup_desc||'',scene:L.scene_dedup||'',usage:L.usage_dedup||''},
+    {id:'images',icon:'🖼️',exe:'ImageFinder.exe',desc:L.script_images_desc||'',scene:L.scene_images||'',usage:L.usage_images||''},
+    {id:'file2excel',icon:'📊',exe:'File2Excel.exe',desc:L.script_f2e_desc||'',scene:L.scene_f2e||'',usage:L.usage_f2e||''},
+    {id:'split',icon:'✂️',exe:'ExcelSplitter.exe',desc:L.script_split_desc||'',scene:L.scene_split||'',usage:L.usage_split||''},
+    {id:'xlsconv',icon:'🔄',exe:'XLS2XLSX.exe',desc:L.script_xls_desc||'',scene:L.scene_xls||'',usage:L.usage_xls||''}
   ];
   var html = '';
   tools.forEach(function(t){
-    html += '<div class="tool-card" style="cursor:default"><div class="icon">'+t.icon+'</div><h3><span>'+L['script_'+t.id]+'</span></h3><p class="desc">'+t.desc+'</p><p style="font-size:.78rem;color:var(--accent);margin:8px 0 4px">🎯 <strong>'+L.scene_label+'</strong>: '+t.scene+'</p><p style="font-size:.78rem;color:var(--muted)">📖 <strong>'+L.usage_label+'</strong>: '+t.usage+'</p><p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+L.no_req+' · '+t.exe+'</p><div style="margin-top:12px;display:flex;align-items:center;gap:10px"><span style="font-weight:700;font-size:1.1rem">'+t.price+'</span><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small">'+L.buy_now+'</a></div></div>';
+    html += '<div class="tool-card" style="cursor:default"><div class="icon">'+t.icon+'</div><h3><span>'+L['script_'+t.id]+'</span></h3><p class="desc">'+t.desc+'</p><p style="font-size:.78rem;color:var(--accent);margin:8px 0 4px">🎯 <strong>'+L.scene_label+'</strong>: '+t.scene+'</p><p style="font-size:.78rem;color:var(--muted)">📖 <strong>'+L.usage_label+'</strong>: '+t.usage+'</p><p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+L.no_req+' · '+t.exe+'</p><div style="margin-top:12px"><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small">'+L.get_in_bundle+'</a></div></div>';
   });
   var grid = document.getElementById('scriptGrid');
   if (grid) grid.innerHTML = html;
