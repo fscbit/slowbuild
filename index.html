@@ -154,7 +154,28 @@
         <div class="icon">🖼️</div>
         <h3><span data-i18n="script_extract_images">Image File Extractor</span></h3>
         <p class="desc" data-i18n="script_extract_images_desc">Recursively find all images in a folder. Save the list to a text file.</p>
-        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="script_requires">Requires</span>: Python 3+</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="no_req">No dependencies — just download and run</span></p>
+        <div style="margin-top:10px;display:flex;align-items:center;gap:10px"><span style="font-weight:700;font-size:1.1rem">$4.99</span><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small" data-i18n="buy_now">Buy Now</a></div>
+      </div>
+      <div class="tool-card" style="cursor:default">
+        <div class="icon">📊</div>
+        <h3><span data-i18n="script_list_files">Filename to Excel</span></h3>
+        <p class="desc" data-i18n="script_list_files_desc">Export all filenames in current folder to an Excel spreadsheet. One click.</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="no_req">No dependencies — just download and run</span></p>
+        <div style="margin-top:10px;display:flex;align-items:center;gap:10px"><span style="font-weight:700;font-size:1.1rem">$4.99</span><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small" data-i18n="buy_now">Buy Now</a></div>
+      </div>
+      <div class="tool-card" style="cursor:default">
+        <div class="icon">✂️</div>
+        <h3><span data-i18n="script_split_excel">Excel Date Splitter</span></h3>
+        <p class="desc" data-i18n="script_split_excel_desc">Split an Excel file by date. One file per day. Auto-detects the date column.</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="no_req">No dependencies — just download and run</span></p>
+        <div style="margin-top:10px;display:flex;align-items:center;gap:10px"><span style="font-weight:700;font-size:1.1rem">$4.99</span><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small" data-i18n="buy_now">Buy Now</a></div>
+      </div>
+      <div class="tool-card" style="cursor:default">
+        <div class="icon">🔄</div>
+        <h3><span data-i18n="script_excel_tools">Excel Converter + Dedup</span></h3>
+        <p class="desc" data-i18n="script_excel_tools_desc">Batch .xls → .xlsx + find duplicate rows by any column. Two tools in one.</p>
+        <p style="font-size:.75rem;color:var(--muted);margin-top:10px"><span data-i18n="no_req">No dependencies — just download and run</span></p>
         <div style="margin-top:10px;display:flex;align-items:center;gap:10px"><span style="font-weight:700;font-size:1.1rem">$4.99</span><a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="btn primary small" data-i18n="buy_now">Buy Now</a></div>
       </div>
     </div>
@@ -332,6 +353,9 @@ var I18N = {
     no_req: 'No dependencies — just download and run',
     script_dedup: 'Duplicate File Remover', script_dedup_desc: 'Find and remove duplicate files by content comparison. Safe & fast.',
     script_extract_images: 'Image File Extractor', script_extract_images_desc: 'Recursively find all images in a folder. Save the list to a text file.',
+    script_list_files: 'Filename to Excel', script_list_files_desc: 'Export all filenames in current folder to an Excel spreadsheet. One click.',
+    script_split_excel: 'Excel Date Splitter', script_split_excel_desc: 'Split an Excel file by date. One file per day. Auto-detects the date column.',
+    script_excel_tools: 'Excel Converter + Dedup', script_excel_tools_desc: 'Batch .xls → .xlsx + find duplicate rows by any column. Two tools in one.',
     script_download: 'Download', script_requires: 'Requires',
     tools: [
       {id:'json',icon:'{ }',name:'JSON Formatter',desc:'Pretty-print, validate, and minify JSON. Error highlights included.'},
@@ -386,6 +410,9 @@ var I18N = {
     no_req: '无需安装依赖 — 下载即用',
     script_dedup: '重复文件删除器', script_dedup_desc: '按内容比对查找并删除重复文件。安全快速。',
     script_extract_images: '图片文件提取器', script_extract_images_desc: '递归查找文件夹中所有图片。保存列表到文本文件。',
+    script_list_files: '文件名导出Excel', script_list_files_desc: '一键导出当前文件夹所有文件名到Excel表格。',
+    script_split_excel: 'Excel按日期拆分', script_split_excel_desc: '按日期列拆分Excel表格，每天一个文件。自动识别日期列。',
+    script_excel_tools: 'Excel转换+查重', script_excel_tools_desc: '批量.xls转.xlsx + 按列查重导出。二合一。',
     script_download: '下载', script_requires: '需要',
     req_title: '💡 需要什么工具？', req_desc: '告诉我你的需求，我来造。不保证工期 — 但我确实会做。',
     req_placeholder: '比如 "一个支持 JS 语法的正则表达式测试器"',
@@ -447,6 +474,9 @@ var I18N = {
     no_req: '無需安裝依賴 — 下載即用',
     script_dedup: '重複檔案刪除器', script_dedup_desc: '按內容比對尋找並刪除重複檔案。安全快速。',
     script_extract_images: '圖片檔案提取器', script_extract_images_desc: '遞迴尋找資料夾中所有圖片。儲存清單到文字檔。',
+    script_list_files: '檔名匯出Excel', script_list_files_desc: '一鍵匯出當前資料夾所有檔名到Excel表格。',
+    script_split_excel: 'Excel按日期拆分', script_split_excel_desc: '按日期列拆分Excel表格，每天一個檔案。自動識別日期列。',
+    script_excel_tools: 'Excel轉換+查重', script_excel_tools_desc: '批次.xls轉.xlsx + 按列查重匯出。二合一。',
     script_download: '下載', script_requires: '需要',
     req_title: '💡 需要什麼工具？', req_desc: '告訴我你的需求，我來造。不保證工期 — 但我確實會做。',
     req_placeholder: '比如 "一個支援 JS 語法的正則表達式測試器"',
