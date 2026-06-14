@@ -69,6 +69,26 @@
     .request-msg{margin-top:10px;font-size:.85rem;min-height:20px}
     .ad-placeholder{background:var(--code-bg);border:1px dashed var(--border);border-radius:var(--radius);text-align:center;padding:20px;color:var(--muted);font-size:.78rem;margin-top:32px}
 
+    .shop-page{max-width:1024px}
+    .shop-header{text-align:center;margin-bottom:32px}
+    .shop-header h2{font-size:1.5rem;font-weight:700;margin-bottom:6px}
+    .shop-header p{color:var(--muted);font-size:.9rem}
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+    .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .2s}
+    .product-card:hover{border-color:var(--accent);box-shadow:0 2px 8px rgba(0,0,0,.06);transform:translateY(-2px)}
+    .product-img{width:100%;height:220px;background:var(--code-bg);display:flex;align-items:center;justify-content:center;font-size:3.5rem;overflow:hidden}
+    .product-img img{width:100%;height:100%;object-fit:cover}
+    .product-body{padding:20px}
+    .product-body h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+    .product-body .desc{font-size:.85rem;color:var(--muted);line-height:1.6;margin-bottom:14px}
+    .product-specs{list-style:none;padding:0;margin:0 0 16px;font-size:.8rem;color:var(--muted)}
+    .product-specs li{padding:3px 0;display:flex;gap:8px}
+    .product-specs li::before{content:'•';color:var(--accent)}
+    .product-footer{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .product-price{font-size:1.4rem;font-weight:700}
+    .product-buy{display:inline-block;padding:10px 28px;background:var(--text);color:#fff;border-radius:8px;font-size:.9rem;font-weight:600;text-decoration:none;cursor:pointer;border:none;font-family:inherit;transition:opacity .2s}
+    .product-buy:hover{opacity:.88}
+    .shipping-note{font-size:.78rem;color:var(--muted);margin-top:8px;text-align:center}
     .about-page{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;max-width:720px}
     .about-page h2{font-size:1.3rem;margin-bottom:16px}
     .about-page p,.about-page ul{font-size:.9rem;color:var(--muted);margin-bottom:14px;line-height:1.7}
@@ -94,6 +114,7 @@
       </div>
       <div class="nav-links">
         <a href="#tools" data-i18n="nav_tools">Tools</a>
+        <a href="#" data-i18n="nav_shop" onclick="showPage('shop');return false">Shop</a>
         <a href="#request" data-i18n="nav_request">Request</a>
         <a href="#" data-i18n="nav_about" onclick="showPage('about');return false">About</a>
       </div>
@@ -221,13 +242,50 @@
   </section>
 </div>
 
+<!-- SHOP -->
+<div id="page-shop" style="display:none">
+  <section class="section">
+    <button class="btn" onclick="showPage('home')" style="margin-bottom:16px" data-i18n="back">← Back</button>
+    <div class="shop-page">
+      <div class="shop-header">
+        <h2 data-i18n="shop_title">🛒 DIY Electronics Shop</h2>
+        <p data-i18n="shop_sub">Quality PCB modules for makers. Worldwide shipping from China.</p>
+      </div>
+      <div class="product-grid">
+        <!-- Product 1: Type-C Power Bank PCB -->
+        <div class="product-card" id="product-pcb1">
+          <div class="product-img">🔋</div>
+          <div class="product-body">
+            <h3 data-i18n="p1_title">Type-C PD Fast Charge Power Bank PCB Board</h3>
+            <p class="desc" data-i18n="p1_desc">DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols. Perfect for 18650/21700 battery projects.</p>
+            <ul class="product-specs">
+              <li data-i18n="p1_spec1">Type-C bidirectional (charge + discharge)</li>
+              <li data-i18n="p1_spec2">USB-A output port</li>
+              <li data-i18n="p1_spec3">Digital LED battery percentage display</li>
+              <li data-i18n="p1_spec4">Built-in LED flashlight</li>
+              <li data-i18n="p1_spec5">Over-charge / over-discharge / short-circuit protection</li>
+              <li data-i18n="p1_spec6">Compatible with 18650 / 21700 Li-ion cells</li>
+              <li data-i18n="p1_spec7">No battery included — ships as regular mail (no lithium restrictions)</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">$19.99</span>
+              <a href="https://buy.stripe.com/placeholder" target="_blank" class="product-buy" data-i18n="buy_now">Buy Now</a>
+            </div>
+            <p class="shipping-note" data-i18n="ship_note">📦 Free worldwide shipping · Arrives in 7–20 days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <script>
 // ═══════════════════════════════════════════
 //  i18n
 // ═══════════════════════════════════════════
 var I18N = {
   'en': {
-    nav_tools: 'Tools', nav_request: 'Request', nav_about: 'About',
+    nav_tools: 'Tools', nav_request: 'Request', nav_about: 'About', nav_shop: 'Shop',
     hero_title: 'Free micro tools, built slow.',
     hero_sub: 'Small, useful online tools. No ads, no sign-up. Need something built? Just ask.',
     tag_more: '+ more',
@@ -247,6 +305,19 @@ var I18N = {
     online_note: '⚠️ Files auto-deleted after 1 hour. Runs on a personal VM.',
     upload_err_no_file: 'Please select a file.',
     upload_err_fail: 'Upload failed. The server may be offline.',
+    shop_title: '🛒 DIY Electronics Shop',
+    shop_sub: 'Quality PCB modules for makers. Worldwide shipping from China.',
+    p1_title: 'Type-C PD Fast Charge Power Bank PCB Board',
+    p1_desc: 'DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols. Perfect for 18650/21700 battery projects.',
+    p1_spec1: 'Type-C bidirectional (charge + discharge)',
+    p1_spec2: 'USB-A output port',
+    p1_spec3: 'Digital LED battery percentage display',
+    p1_spec4: 'Built-in LED flashlight',
+    p1_spec5: 'Over-charge / over-discharge / short-circuit protection',
+    p1_spec6: 'Compatible with 18650 / 21700 Li-ion cells',
+    p1_spec7: 'No battery included — ships as regular mail (no lithium restrictions)',
+    buy_now: 'Buy Now',
+    ship_note: '📦 Free worldwide shipping · Arrives in 7–20 days',
     script_word2pdf: 'Word → PDF Converter', script_word2pdf_desc: 'Batch convert all .docx files in a folder to PDF. Recursive search.',
     script_dedup: 'Duplicate File Remover', script_dedup_desc: 'Find and remove duplicate files by content comparison. Safe & fast.',
     script_extract_images: 'Image File Extractor', script_extract_images_desc: 'Recursively find all images in a folder. Save the list to a text file.',
@@ -265,7 +336,7 @@ var I18N = {
     ]
   },
   'zh-CN': {
-    nav_tools: '工具', nav_request: '提需求', nav_about: '关于',
+    nav_tools: '工具', nav_request: '提需求', nav_about: '关于', nav_shop: '商店',
     hero_title: '免费小工具，慢慢打磨。',
     hero_sub: '实用的在线小工具。无广告，无需注册。需要什么？告诉我。',
     tag_more: '还有更多',
@@ -278,6 +349,19 @@ var I18N = {
     online_note: '⚠️ 文件1小时后自动删除。服务运行在个人虚拟机上。',
     upload_err_no_file: '请先选择文件。',
     upload_err_fail: '上传失败，服务器可能不在线。',
+    shop_title: '🛒 DIY 电子小店',
+    shop_sub: '优质 PCB 模组，面向全球创客。从中国直发全球。',
+    p1_title: 'Type-C PD 快充充电宝主板 DIY 套件',
+    p1_desc: 'DIY 充电宝主板模组，支持 Type-C 双向快充、USB-A 输出、数码管电量显示和 LED 手电筒。兼容 PD/QC 快充协议，适合 18650/21700 锂电池项目。',
+    p1_spec1: 'Type-C 双向（充电+放电）',
+    p1_spec2: 'USB-A 输出接口',
+    p1_spec3: 'LED 数码管电量百分比显示',
+    p1_spec4: '自带 LED 手电筒功能',
+    p1_spec5: '过充/过放/短路保护',
+    p1_spec6: '兼容 18650 / 21700 锂电池',
+    p1_spec7: '不含电池 — 普货运输，无锂电池限制',
+    buy_now: '立即购买',
+    ship_note: '📦 全球包邮 · 7–20 天送达',
     script_word2pdf: 'Word → PDF 转换器', script_word2pdf_desc: '批量将文件夹内所有 .docx 文件转换为 PDF。递归搜索。',
     script_dedup: '重复文件删除器', script_dedup_desc: '按内容比对查找并删除重复文件。安全快速。',
     script_extract_images: '图片文件提取器', script_extract_images_desc: '递归查找文件夹中所有图片。保存列表到文本文件。',
@@ -303,7 +387,7 @@ var I18N = {
     ]
   },
   'zh-TW': {
-    nav_tools: '工具', nav_request: '提需求', nav_about: '關於',
+    nav_tools: '工具', nav_request: '提需求', nav_about: '關於', nav_shop: '商店',
     hero_title: '免費小工具，慢慢打磨。',
     hero_sub: '實用的線上小工具。無廣告，無需註冊。需要什麼？告訴我。',
     tag_more: '還有更多',
@@ -316,6 +400,19 @@ var I18N = {
     online_note: '⚠️ 檔案1小時後自動刪除。服務運行在個人虛擬機上。',
     upload_err_no_file: '請先選擇檔案。',
     upload_err_fail: '上傳失敗，伺服器可能不在線。',
+    shop_title: '🛒 DIY 電子小店',
+    shop_sub: '優質 PCB 模組，面向全球創客。從中國直發全球。',
+    p1_title: 'Type-C PD 快充充電寶主板 DIY 套件',
+    p1_desc: 'DIY 充電寶主板模組，支援 Type-C 雙向快充、USB-A 輸出、數碼管電量顯示和 LED 手電筒。相容 PD/QC 快充協定，適合 18650/21700 鋰電池專案。',
+    p1_spec1: 'Type-C 雙向（充電+放電）',
+    p1_spec2: 'USB-A 輸出介面',
+    p1_spec3: 'LED 數碼管電量百分比顯示',
+    p1_spec4: '自帶 LED 手電筒功能',
+    p1_spec5: '過充/過放/短路保護',
+    p1_spec6: '相容 18650 / 21700 鋰電池',
+    p1_spec7: '不含電池 — 普貨運輸，無鋰電池限制',
+    buy_now: '立即購買',
+    ship_note: '📦 全球包郵 · 7–20 天送達',
     script_word2pdf: 'Word → PDF 轉換器', script_word2pdf_desc: '批量將資料夾內所有 .docx 檔案轉換為 PDF。支援遞迴搜尋。',
     script_dedup: '重複檔案刪除器', script_dedup_desc: '按內容比對尋找並刪除重複檔案。安全快速。',
     script_extract_images: '圖片檔案提取器', script_extract_images_desc: '遞迴尋找資料夾中所有圖片。儲存清單到文字檔。',
