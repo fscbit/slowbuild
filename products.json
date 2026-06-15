@@ -98,5 +98,55 @@
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
     }
+  },
+  {
+    "id": "hinge1",
+    "image": "images/hinge-main.jpg",
+    "price": 21.00,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "Heavy-Duty Cabinet Door Hinges Set (4-Pack)",
+      "zh-CN": "重型橱柜门合页套装（4个装）",
+      "zh-TW": "重型櫥櫃門鉸鏈套裝（4個裝）"
+    },
+    "desc": {
+      "en": "Premium concealed cabinet hinges with soft-close mechanism. Suitable for kitchen cabinets, wardrobe doors, and furniture installation. Durable cold-rolled steel construction with nickel-plated finish.",
+      "zh-CN": "高品质隐藏式橱柜合页，带缓冲闭合功能。适用于厨房橱柜、衣柜门、家具安装。冷轧钢材质，镀镍表面处理，坚固耐用。",
+      "zh-TW": "高品質隱藏式櫥櫃鉸鏈，帶緩衝閉合功能。適用於廚房櫥櫃、衣櫃門、家具安裝。冷軋鋼材質，鍍鎳表面處理，堅固耐用。"
+    },
+    "specs": {
+      "en": [
+        "4-pack heavy-duty concealed hinges",
+        "Soft-close / buffer mechanism included",
+        "Cold-rolled steel, nickel-plated finish",
+        "Opening angle: 110°",
+        "Suitable for cabinet doors 15–22mm thick",
+        "Includes mounting screws and installation guide",
+        "Corrosion-resistant, ideal for kitchen & bathroom"
+      ],
+      "zh-CN": [
+        "4个装重型隐藏式合页",
+        "带缓冲闭合/阻尼功能",
+        "冷轧钢材质，镀镍表面",
+        "开启角度：110°",
+        "适用门板厚度：15–22mm",
+        "含安装螺丝和说明",
+        "防腐蚀，适合厨房/卫浴环境"
+      ],
+      "zh-TW": [
+        "4個裝重型隱藏式鉸鏈",
+        "帶緩衝閉合/阻尼功能",
+        "冷軋鋼材質，鍍鎳表面",
+        "開啟角度：110°",
+        "適用門板厚度：15–22mm",
+        "含安裝螺絲和說明",
+        "防腐蝕，適合廚房/衛浴環境"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
   }
 ]
