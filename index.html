@@ -360,7 +360,8 @@ var I18N = {
       {id:'url',icon:'🔗',name:'URL Encoder / Decoder',desc:'Encode or decode URL strings. Handle percent-encoding.'},
       {id:'base64',icon:'🔐',name:'Base64 Encoder / Decoder',desc:'Encode text to Base64 or decode. Works with Unicode.'},
       {id:'uuid',icon:'🎲',name:'UUID Generator',desc:'Generate random UUIDs v4. Batch up to 100.'},
-      {id:'password',icon:'🔑',name:'Password Generator',desc:'Strong random passwords. Custom length, symbols, numbers.'}
+      {id:'password',icon:'🔑',name:'Password Generator',desc:'Strong random passwords. Custom length, symbols, numbers.'},
+      {id:'sports',icon:'🏃',name:'Sports Meet Scorer',desc:'Track & field meet scoring. Auto rank by total + medal counts. Chinese schools.'}
     ]
   },
   'zh-CN': {
@@ -447,7 +448,8 @@ var I18N = {
       {id:'url',icon:'🔗',name:'URL 编解码',desc:'URL 编码与解码，处理百分号编码字符串。'},
       {id:'base64',icon:'🔐',name:'Base64 编解码',desc:'文本 ↔ Base64 互转，支持 Unicode。'},
       {id:'uuid',icon:'🎲',name:'UUID 生成器',desc:'随机生成 UUID v4，批量最多 100 个。'},
-      {id:'password',icon:'🔑',name:'密码生成器',desc:'高强度随机密码，可自定义长度和字符类型。'}
+      {id:'password',icon:'🔑',name:'密码生成器',desc:'高强度随机密码，可自定义长度和字符类型。'},
+      {id:'sports',icon:'🏃',name:'运动会成绩统计',desc:'田径运动会计分排名。总分+名次自动排位。支持校/市级。'}
     ]
   },
   'zh-TW': {
@@ -534,7 +536,8 @@ var I18N = {
       {id:'url',icon:'🔗',name:'URL 編解碼',desc:'URL 編碼與解碼，處理百分號編碼字串。'},
       {id:'base64',icon:'🔐',name:'Base64 編解碼',desc:'文字 ↔ Base64 互轉，支援 Unicode。'},
       {id:'uuid',icon:'🎲',name:'UUID 產生器',desc:'隨機產生 UUID v4，批量最多 100 個。'},
-      {id:'password',icon:'🔑',name:'密碼產生器',desc:'高強度隨機密碼，可自訂長度和字元類型。'}
+      {id:'password',icon:'🔑',name:'密碼產生器',desc:'高強度隨機密碼，可自訂長度和字元類型。'},
+      {id:'sports',icon:'🏃',name:'運動會成績統計',desc:'田徑運動會計分排名。總分+名次自動排位。支援校/市級。'}
     ]
   }
 };
@@ -679,8 +682,12 @@ function renderToolContent(id) {
         btn(lang==='zh-CN'?'复制':'Copy','copyPW()','small') + '</div>' +
         '<div class="result-bar show" id="pwResult" style="color:var(--text)"><input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="'+(lang==='zh-CN'?'点击生成':'Click Generate')+'"></div>');
       break;
+    case 'sports':
+      html = makeToolPage('🏃 ' + L.tools[10].name, buildSportsHTML());
+      break;
   }
   tc.innerHTML = html;
+  if (id === 'sports') initSportsTool();
 }
 
 // ═══════════════════════════════════════════
@@ -939,6 +946,258 @@ function uploadConvert(tool) {
       console.error(err);
     });
 }
+// ═══════════════════════════════════════════
+//  运动会成绩统计工具
+// ═══════════════════════════════════════════
+var SPORTS = {
+  version: 'school',
+  records: [],
+  school: {
+    classes: Array.from({length:17},function(_,i){return (301+i)+'班'}),
+    events: ['跑操','女 30 米火车','男 30 米火车','女 100 米','男 100 米','女跳远','女铅球','男跳高','远度投准','男三级跳','女 1500','男 1500','女 400','男 400','女接力','男接力','男跳远','男铅球','女跳高','踢毽子','女三级跳']
+  },
+  hengshui: {
+    classes: ['桃城区','冀州区','枣强县','武邑县','深州市','武强县','饶阳县','安平县','故城县','景县','阜城县','高新区','滨湖新区','衡水中学','衡水泰华中学','衡水市第二中学','衡水志臻中学','衡水市第十三中学'],
+    groups: ['甲组','乙组','丙组'],
+    events: ['女子 100 米','男子 100 米','女子 200 米','男子 200 米','女子 400 米','男子 400 米','女子 800 米','男子 800 米','女子 1500 米','男子 1500 米','女子 5000 米','男子 5000 米','女子 10000 米','男子 10000 米','女子 100 米栏','男子 110 米栏','女子 400 米栏','男子 400 米栏','女子跳高','男子跳高','女子跳远','男子跳远','女子三级跳','男子三级跳','女子铅球','男子铅球','女子铁饼','男子铁饼','女子标枪','男子标枪','女子 4X100 米','男子 4X100 米','女子 4X400 米','男子 4X400 米','混合 4X400 米']
+  }
+};
+
+function buildSportsHTML(){
+  return '<div id="sportsApp">'+
+    '<div style="display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap">'+
+      '<button class="btn" id="sptVerSchool" onclick="SPORTS.setVersion(\'school\')" style="font-weight:600">🏫 学校运动会</button>'+
+      '<button class="btn" id="sptVerCity" onclick="SPORTS.setVersion(\'hengshui\')">🏟️ 衡水市比赛</button>'+
+    '</div>'+
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">'+
+      '<div><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">班级/单位</label><select id="sptClass" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none"></select></div>'+
+      '<div><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">项目</label><select id="sptEvent" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none"></select></div>'+
+      '<div id="sptGroupRow" style="display:none"><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">组别</label><select id="sptGroup" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none"></select></div>'+
+      '<div><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">姓名 (可选)</label><input id="sptName" placeholder="张三" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none"></div>'+
+      '<div><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">分数</label><input id="sptScore" type="number" step="0.01" placeholder="0" style="width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:monospace;outline:none"></div>'+
+    '</div>'+
+    '<div class="btn-row" style="margin-bottom:18px">'+
+      '<button class="btn primary" onclick="SPORTS.addRecord()">➕ 添加记录</button>'+
+      '<button class="btn" onclick="SPORTS.saveData()">💾 保存</button>'+
+      '<button class="btn" onclick="SPORTS.loadData()">📂 加载</button>'+
+      '<button class="btn" onclick="SPORTS.exportCSV()">📋 导出 CSV</button>'+
+      '<button class="btn" onclick="SPORTS.clearAll()" style="color:#c0392b">🗑️ 清空</button>'+
+    '</div>'+
+    '<div id="sportsRecords" style="max-height:200px;overflow-y:auto;margin-bottom:16px;border:1px solid var(--border);border-radius:8px;background:var(--bg)"></div>'+
+    '<div id="sportsRanking"></div>'+
+  '</div>';
+}
+
+function initSportsTool(){
+  SPORTS.loadFromStorage();
+  SPORTS.setVersion(SPORTS.version);
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+  document.getElementById('sptScore').addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); SPORTS.addRecord(); }});
+}
+
+SPORTS.setVersion = function(v){
+  SPORTS.version = v;
+  var cfg = v==='school' ? SPORTS.school : SPORTS.hengshui;
+  document.getElementById('sptVerSchool').style.background = v==='school' ? 'var(--text)' : '';
+  document.getElementById('sptVerSchool').style.color = v==='school' ? '#fff' : '';
+  document.getElementById('sptVerCity').style.background = v==='hengshui' ? 'var(--text)' : '';
+  document.getElementById('sptVerCity').style.color = v==='hengshui' ? '#fff' : '';
+  var clsHtml = cfg.classes.map(function(c){return '<option value="'+c+'">'+c+'</option>'}).join('');
+  document.getElementById('sptClass').innerHTML = clsHtml;
+  var evtHtml = cfg.events.map(function(e){return '<option value="'+e+'">'+e+'</option>'}).join('');
+  document.getElementById('sptEvent').innerHTML = evtHtml;
+  if(v==='hengshui'){
+    document.getElementById('sptGroupRow').style.display = '';
+    document.getElementById('sptGroup').innerHTML = cfg.groups.map(function(g){return '<option value="'+g+'">'+g+'</option>'}).join('');
+  } else {
+    document.getElementById('sptGroupRow').style.display = 'none';
+  }
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+};
+
+SPORTS.addRecord = function(){
+  var cls = document.getElementById('sptClass').value;
+  var event = document.getElementById('sptEvent').value;
+  var name = document.getElementById('sptName').value.trim() || '-';
+  var score = parseFloat(document.getElementById('sptScore').value);
+  if(isNaN(score)){ alert('请输入有效分数！'); return; }
+  var rec = {class:cls, event:event, name:name, score:score, time: new Date().toLocaleString('zh-CN')};
+  if(SPORTS.version==='hengshui') rec.group = document.getElementById('sptGroup').value;
+  SPORTS.records.push(rec);
+  document.getElementById('sptName').value = '';
+  document.getElementById('sptScore').value = '';
+  SPORTS.saveToStorage();
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+};
+
+SPORTS.renderRecords = function(){
+  var el = document.getElementById('sportsRecords');
+  if(SPORTS.records.length===0){ el.innerHTML='<div style="padding:28px;text-align:center;color:var(--muted);font-size:.85rem">暂无记录，请添加成绩</div>'; return; }
+  var cfg = SPORTS.version==='school' ? SPORTS.school : SPORTS.hengshui;
+  var filtered = SPORTS.records.filter(function(r){ return cfg.classes.indexOf(r.class)>=0 && cfg.events.indexOf(r.event)>=0; });
+  var h = '<table style="width:100%;border-collapse:collapse;font-size:.82rem"><thead><tr style="background:var(--code-bg);text-align:left">'+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">#</th>'+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">班级/单位</th>'+
+    (SPORTS.version==='hengshui'?'<th style="padding:6px 10px;border-bottom:1px solid var(--border)">组别</th>':'')+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">项目</th>'+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">姓名</th>'+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">分数</th>'+
+    '<th style="padding:6px 10px;border-bottom:1px solid var(--border)">操作</th></tr></thead><tbody>';
+  filtered.forEach(function(r,i){
+    h += '<tr style="border-bottom:1px solid var(--border)">'+
+      '<td style="padding:4px 10px;color:var(--muted)">'+(i+1)+'</td>'+
+      '<td style="padding:4px 10px">'+r.class+'</td>'+
+      (SPORTS.version==='hengshui'?'<td style="padding:4px 10px">'+(r.group||'')+'</td>':'')+
+      '<td style="padding:4px 10px">'+r.event+'</td>'+
+      '<td style="padding:4px 10px;color:var(--muted)">'+r.name+'</td>'+
+      '<td style="padding:4px 10px;font-family:monospace;font-weight:600">'+r.score+'</td>'+
+      '<td style="padding:4px 10px"><button onclick="SPORTS.deleteRecord('+SPORTS.records.indexOf(r)+')" style="background:none;border:none;cursor:pointer;font-size:.9rem;color:#c0392b" title="删除">✕</button></td></tr>';
+  });
+  h += '</tbody></table>';
+  h += '<div style="padding:6px 10px;font-size:.75rem;color:var(--muted)">共 '+filtered.length+' 条记录</div>';
+  el.innerHTML = h;
+};
+
+SPORTS.deleteRecord = function(idx){
+  if(idx<0||idx>=SPORTS.records.length) return;
+  SPORTS.records.splice(idx,1);
+  SPORTS.saveToStorage();
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+};
+
+SPORTS.calcRanking = function(){
+  if(SPORTS.records.length===0) return [];
+  var cfg = SPORTS.version==='school' ? SPORTS.school : SPORTS.hengshui;
+  // Group by class
+  var classData = {};
+  SPORTS.records.forEach(function(r){
+    var cls = r.class;
+    if(!classData[cls]) classData[cls] = {total:0, ranks:{}, count:0, events:{}};
+    classData[cls].total += r.score;
+    classData[cls].count++;
+    if(!classData[cls].events[r.event]) classData[cls].events[r.event] = [];
+    classData[cls].events[r.event].push(r);
+  });
+  // Calculate per-event rankings (for tie-breaking)
+  cfg.events.forEach(function(evt){
+    var participants = SPORTS.records.filter(function(r){ return r.event===evt; });
+    participants.sort(function(a,b){ return b.score - a.score; });
+    participants.forEach(function(r,rank){
+      var cls = r.class;
+      if(classData[cls]){
+        classData[cls].ranks[rank+1] = (classData[cls].ranks[rank+1]||0) + 1;
+      }
+    });
+  });
+  // Build ranking list
+  var list = [];
+  for(var cls in classData){
+    var d = classData[cls];
+    list.push({class:cls, total:d.total, ranks:d.ranks, count:d.count,
+      first:d.ranks[1]||0, second:d.ranks[2]||0, third:d.ranks[3]||0});
+  }
+  // Sort: total desc → 1st desc → 2nd desc → ... → 10th desc
+  list.sort(function(a,b){
+    if(b.total!==a.total) return b.total - a.total;
+    for(var i=1;i<=10;i++){ var ca=a.ranks[i]||0, cb=b.ranks[i]||0; if(cb!==ca) return cb-ca; }
+    return 0;
+  });
+  list.forEach(function(item,i){ item.rank = i+1; });
+  return list;
+};
+
+SPORTS.renderRanking = function(){
+  var el = document.getElementById('sportsRanking');
+  var ranking = SPORTS.calcRanking();
+  if(ranking.length===0){ el.innerHTML=''; return; }
+  var h = '<h3 style="font-size:1.05rem;margin-bottom:12px">🏆 排名表 <span style="font-size:.75rem;color:var(--muted);font-weight:400">（总分 → 第1名数 → 第2名数 → ... → 第10名数）</span></h3>';
+  h += '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.85rem">'+
+    '<thead><tr style="background:var(--code-bg);text-align:left">'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">排名</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">班级/单位</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">总分</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">🥇第1</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">🥈第2</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">🥉第3</th>'+
+    '<th style="padding:8px 12px;border-bottom:2px solid var(--border)">参赛数</th></tr></thead><tbody>';
+  ranking.forEach(function(r){
+    var medal = r.rank===1?'🥇':r.rank===2?'🥈':r.rank===3?'🥉':'';
+    var bg = r.rank<=3?'background:#fffdf5':'';
+    h += '<tr style="border-bottom:1px solid var(--border);'+bg+'">'+
+      '<td style="padding:6px 12px;font-weight:700">'+medal+' '+r.rank+'</td>'+
+      '<td style="padding:6px 12px;font-weight:600">'+r.class+'</td>'+
+      '<td style="padding:6px 12px;font-family:monospace;font-weight:700;color:var(--accent)">'+r.total.toFixed(1)+'</td>'+
+      '<td style="padding:6px 12px">'+r.first+'</td>'+
+      '<td style="padding:6px 12px">'+r.second+'</td>'+
+      '<td style="padding:6px 12px">'+r.third+'</td>'+
+      '<td style="padding:6px 12px;color:var(--muted)">'+r.count+'</td></tr>';
+  });
+  h += '</tbody></table></div>';
+  el.innerHTML = h;
+};
+
+SPORTS.exportCSV = function(){
+  if(SPORTS.records.length===0){ alert('暂无数据！'); return; }
+  var cfg = SPORTS.version==='school' ? SPORTS.school : SPORTS.hengshui;
+  var ranking = SPORTS.calcRanking();
+  var lines = [];
+  // Sheet 1: Records
+  lines.push('=== 成绩明细 ===');
+  lines.push('序号,班级/单位,'+(SPORTS.version==='hengshui'?'组别,':'')+'项目,姓名,分数,录入时间');
+  var filtered = SPORTS.records.filter(function(r){ return cfg.classes.indexOf(r.class)>=0 && cfg.events.indexOf(r.event)>=0; });
+  filtered.forEach(function(r,i){
+    lines.push([i+1,r.class,SPORTS.version==='hengshui'?(r.group||''):'',r.event,r.name,r.score,r.time].filter(Boolean).join(','));
+  });
+  lines.push('');
+  // Sheet 2: Ranking
+  lines.push('=== 排名表 ===');
+  lines.push('排名,班级/单位,总分,第1名数,第2名数,第3名数,参赛数');
+  ranking.forEach(function(r){
+    lines.push([r.rank,r.class,r.total.toFixed(1),r.first,r.second,r.third,r.count].join(','));
+  });
+  var csv = '\uFEFF' + lines.join('\n');
+  var blob = new Blob([csv],{type:'text/csv;charset=utf-8'});
+  var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = '运动会成绩_' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(a.href);
+};
+
+SPORTS.clearAll = function(){
+  if(!confirm('确定清空所有数据？此操作不可恢复。')) return;
+  SPORTS.records = [];
+  SPORTS.saveToStorage();
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+};
+
+SPORTS.saveToStorage = function(){
+  try{ localStorage.setItem('slowbuild_sports_data', JSON.stringify(SPORTS.records)); localStorage.setItem('slowbuild_sports_ver', SPORTS.version); }catch(e){}
+};
+
+SPORTS.loadFromStorage = function(){
+  try{
+    var v = localStorage.getItem('slowbuild_sports_ver');
+    if(v) SPORTS.version = v;
+    var d = localStorage.getItem('slowbuild_sports_data');
+    if(d) SPORTS.records = JSON.parse(d);
+  }catch(e){}
+};
+
+SPORTS.saveData = function(){
+  SPORTS.saveToStorage();
+  alert('✓ 已保存到浏览器本地存储');
+};
+
+SPORTS.loadData = function(){
+  SPORTS.loadFromStorage();
+  SPORTS.setVersion(SPORTS.version);
+  SPORTS.renderRecords();
+  SPORTS.renderRanking();
+  alert('✓ 已加载 ('+SPORTS.records.length+' 条记录)');
+};
 </script>
 </body>
 </html>
