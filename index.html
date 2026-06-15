@@ -1930,7 +1930,7 @@ function copyPalette(){if(window._palette)navigator.clipboard.writeText(window._
 // ═══════════════════════════════════════════
 var SIDEBAR = {
   'en': [
-    {cat:'📝 Text', open:true, items:[
+    {cat:'📝 Text', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON Formatter'},
       {id:'regex',icon:'🔍',label:'Regex Tester'},
       {id:'count',icon:'📊',label:'Word Counter'},
@@ -1940,7 +1940,7 @@ var SIDEBAR = {
       {id:'htmlpreview',icon:'👁️',label:'HTML Preview'},
       {id:'mdpreview',icon:'📝',label:'Markdown Preview'}
     ]},
-    {cat:'🔐 Encode & Crypto', open:true, items:[
+    {cat:'🔐 Encode & Crypto', open:false, items:[
       {id:'url',icon:'🔗',label:'URL Encode/Decode'},
       {id:'base64',icon:'🔐',label:'Base64 Encode/Decode'},
       {id:'img2base64',icon:'🖼️',label:'Image to Base64'},
@@ -1948,17 +1948,17 @@ var SIDEBAR = {
       {id:'sha',icon:'🔏',label:'SHA Hasher'},
       {id:'morse',icon:'📡',label:'Morse Code'}
     ]},
-    {cat:'🎲 Generators', open:true, items:[
+    {cat:'🎲 Generators', open:false, items:[
       {id:'uuid',icon:'🎲',label:'UUID Generator'},
       {id:'password',icon:'🔑',label:'Password Gen'},
       {id:'random',icon:'🎯',label:'Random Number'},
       {id:'qrcode',icon:'📱',label:'QR Code'},
       {id:'time',icon:'🕐',label:'Timestamp Conv'}
     ]},
-    {cat:'⏱️ Time', open:true, items:[
+    {cat:'⏱️ Time', open:false, items:[
       {id:'stopwatch',icon:'⏱️',label:'Stopwatch'}
     ]},
-    {cat:'🎨 Color', open:true, items:[
+    {cat:'🎨 Color', open:false, items:[
       {id:'color',icon:'🎨',label:'Color Converter'},
       {id:'palette',icon:'🌈',label:'Color Palette'}
     ]},
@@ -1977,7 +1977,7 @@ var SIDEBAR = {
     {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
   ],
   'zh-CN': [
-    {cat:'📝 文本工具', open:true, items:[
+    {cat:'📝 文本工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
       {id:'regex',icon:'🔍',label:'正则测试'},
       {id:'count',icon:'📊',label:'字数统计'},
@@ -1987,7 +1987,7 @@ var SIDEBAR = {
       {id:'htmlpreview',icon:'👁️',label:'HTML 预览'},
       {id:'mdpreview',icon:'📝',label:'Markdown 预览'}
     ]},
-    {cat:'🔐 编码加密', open:true, items:[
+    {cat:'🔐 编码加密', open:false, items:[
       {id:'url',icon:'🔗',label:'URL 编解码'},
       {id:'base64',icon:'🔐',label:'Base64 编解码'},
       {id:'img2base64',icon:'🖼️',label:'图片转Base64'},
@@ -1995,17 +1995,17 @@ var SIDEBAR = {
       {id:'sha',icon:'🔏',label:'SHA 哈希'},
       {id:'morse',icon:'📡',label:'摩斯电码'}
     ]},
-    {cat:'🎲 生成器', open:true, items:[
+    {cat:'🎲 生成器', open:false, items:[
       {id:'uuid',icon:'🎲',label:'UUID 生成器'},
       {id:'password',icon:'🔑',label:'密码生成器'},
       {id:'random',icon:'🎯',label:'随机数生成'},
       {id:'qrcode',icon:'📱',label:'二维码生成'},
       {id:'time',icon:'🕐',label:'时间戳转换'}
     ]},
-    {cat:'⏱️ 时间', open:true, items:[
+    {cat:'⏱️ 时间', open:false, items:[
       {id:'stopwatch',icon:'⏱️',label:'秒表计时'}
     ]},
-    {cat:'🎨 颜色', open:true, items:[
+    {cat:'🎨 颜色', open:false, items:[
       {id:'color',icon:'🎨',label:'颜色转换器'},
       {id:'palette',icon:'🌈',label:'调色板'}
     ]},
@@ -2025,7 +2025,7 @@ var SIDEBAR = {
     {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
   ],
   'zh-TW': [
-    {cat:'📝 文字工具', open:true, items:[
+    {cat:'📝 文字工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
       {id:'regex',icon:'🔍',label:'正則測試'},
       {id:'count',icon:'📊',label:'字數統計'},
@@ -2035,7 +2035,7 @@ var SIDEBAR = {
       {id:'htmlpreview',icon:'👁️',label:'HTML 預覽'},
       {id:'mdpreview',icon:'📝',label:'Markdown 預覽'}
     ]},
-    {cat:'🔐 編碼加密', open:true, items:[
+    {cat:'🔐 編碼加密', open:false, items:[
       {id:'url',icon:'🔗',label:'URL 編解碼'},
       {id:'base64',icon:'🔐',label:'Base64 編解碼'},
       {id:'img2base64',icon:'🖼️',label:'圖片轉Base64'},
@@ -2043,17 +2043,17 @@ var SIDEBAR = {
       {id:'sha',icon:'🔏',label:'SHA 雜湊'},
       {id:'morse',icon:'📡',label:'摩斯電碼'}
     ]},
-    {cat:'🎲 產生器', open:true, items:[
+    {cat:'🎲 產生器', open:false, items:[
       {id:'uuid',icon:'🎲',label:'UUID 產生器'},
       {id:'password',icon:'🔑',label:'密碼產生器'},
       {id:'random',icon:'🎯',label:'隨機數產生'},
       {id:'qrcode',icon:'📱',label:'QR Code 產生'},
       {id:'time',icon:'🕐',label:'時間戳轉換'}
     ]},
-    {cat:'⏱️ 時間', open:true, items:[
+    {cat:'⏱️ 時間', open:false, items:[
       {id:'stopwatch',icon:'⏱️',label:'碼表計時'}
     ]},
-    {cat:'🎨 顏色', open:true, items:[
+    {cat:'🎨 顏色', open:false, items:[
       {id:'color',icon:'🎨',label:'顏色轉換器'},
       {id:'palette',icon:'🌈',label:'調色盤'}
     ]},
@@ -2085,7 +2085,7 @@ function renderSidebar(){
     }
     var catId = 'scat-'+i;
     h += '<div class="sidebar-cat" id="'+catId+'">'+
-      '<span class="cat-arrow'+(section.open===false?' rotated':'')+'">▶</span>'+
+      '<span class="cat-arrow'+(section.open===false?'':' rotated')+'">▶</span>'+
       section.cat+'</div>';
     h += '<div class="sidebar-items'+(section.open===false?' hidden':'')+'" id="'+catId+'-items">';
     section.items.forEach(function(item){
@@ -2128,6 +2128,9 @@ setLang = function(l){
   renderSidebar();
   if(window._currentTool) highlightSidebar(window._currentTool);
 };
+
+// Ensure sidebar renders on initial load
+if(document.getElementById('sidebarContent')) renderSidebar();
 </script>
 </div><!-- /main-wrap -->
 </body>
