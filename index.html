@@ -243,31 +243,7 @@
         <h2 data-i18n="shop_title">🛒 DIY Electronics Shop</h2>
         <p data-i18n="shop_sub">Quality PCB modules for makers. Worldwide shipping from China.</p>
       </div>
-      <div class="product-grid">
-        <!-- Product 1: Type-C Power Bank PCB -->
-        <div class="product-card" id="product-pcb1">
-          <div class="product-img"><img src="images/pcb-main.jpg" alt="Power Bank PCB Board" loading="lazy"></div>
-          <div class="product-body">
-            <h3 data-i18n="p1_title">Type-C PD Fast Charge Power Bank PCB Board</h3>
-            <p class="desc" data-i18n="p1_desc">DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols. Perfect for 18650/21700 battery projects.</p>
-            <ul class="product-specs">
-              <li data-i18n="p1_spec1">Type-C bidirectional (charge + discharge)</li>
-              <li data-i18n="p1_spec2">USB-A output port</li>
-              <li data-i18n="p1_spec3">Digital LED battery percentage display</li>
-              <li data-i18n="p1_spec4">Built-in LED flashlight</li>
-              <li data-i18n="p1_spec5">Over-charge / over-discharge / short-circuit protection</li>
-              <li data-i18n="p1_spec6">Compatible with 18650 / 21700 Li-ion cells</li>
-              <li data-i18n="p1_spec7">No battery included — ships as regular mail (no lithium restrictions)</li>
-            </ul>
-            <div class="product-footer">
-              <span class="product-price">$21.00</span>
-              <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" class="product-buy" data-i18n="buy_now">Buy Now</a>
-            </div>
-            <p class="shipping-note" data-i18n="ship_note">📦 Free worldwide shipping · Arrives in 7–20 days</p>
-          </div>
-        </div>
-
-      </div>
+      <div class="product-grid" id="productGrid"><!-- filled by JS from products.json --></div>
     </div>
   </section>
 </div>
@@ -550,6 +526,7 @@ function setLang(l) {
   applyI18n();
   renderToolCards();
   renderScriptCards();
+  renderShop();
   if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
 }
 function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N['en'][key]) || key; }
@@ -584,10 +561,41 @@ function renderScriptCards() {
   if (grid) grid.innerHTML = html;
 }
 
+function renderShop() {
+  var grid = document.getElementById('productGrid');
+  if (!grid) return;
+  grid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px;font-size:.85rem">Loading products...</div>';
+  fetch('products.json')
+    .then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
+    .then(function(products){
+      var html = '';
+      products.forEach(function(p){
+        html += '<div class="product-card">'+
+          '<div class="product-img"><img src="'+p.image+'" alt="'+p.name[lang]+'" loading="lazy" onerror="this.parentElement.innerHTML=\'📦\'"></div>'+
+          '<div class="product-body">'+
+            '<h3>'+p.name[lang]+'</h3>'+
+            '<p class="desc">'+p.desc[lang]+'</p>'+
+            '<ul class="product-specs">'+p.specs[lang].map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul>'+
+            '<div class="product-footer">'+
+              '<span class="product-price">$'+p.price.toFixed(2)+'</span>'+
+              '<a href="'+p.buyLink+'" target="_blank" class="product-buy">'+t('buy_now')+'</a>'+
+            '</div>'+
+            '<p class="shipping-note">'+p.shipping[lang]+'</p>'+
+          '</div></div>';
+      });
+      grid.innerHTML = html;
+    })
+    .catch(function(){
+      // Fallback: show hardcoded minimum
+      grid.innerHTML = '<div class="product-card"><div class="product-img">📦</div><div class="product-body"><h3>Products coming soon</h3><p class="desc">Check back later or contact us.</p></div></div>';
+    });
+}
+
 // init
 setLang(lang);
 renderToolCards();
 renderScriptCards();
+renderShop();
 
 // ═══════════════════════════════════════════
 //  Page nav

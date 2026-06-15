@@ -1,0 +1,102 @@
+[
+  {
+    "id": "pcb1",
+    "image": "images/pcb-main.jpg",
+    "price": 21.00,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "Type-C PD Fast Charge Power Bank PCB Board",
+      "zh-CN": "Type-C PD 快充充电宝主板 DIY 套件",
+      "zh-TW": "Type-C PD 快充充電寶主板 DIY 套件"
+    },
+    "desc": {
+      "en": "DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols. Perfect for 18650/21700 battery projects.",
+      "zh-CN": "DIY 充电宝主板模组，支持 Type-C 双向快充、USB-A 输出、数码管电量显示和 LED 手电筒。兼容 PD/QC 快充协议，适合 18650/21700 锂电池项目。",
+      "zh-TW": "DIY 充電寶主板模組，支援 Type-C 雙向快充、USB-A 輸出、數碼管電量顯示和 LED 手電筒。相容 PD/QC 快充協定，適合 18650/21700 鋰電池專案。"
+    },
+    "specs": {
+      "en": [
+        "Type-C bidirectional (charge + discharge)",
+        "USB-A output port",
+        "Digital LED battery percentage display",
+        "Built-in LED flashlight",
+        "Over-charge / over-discharge / short-circuit protection",
+        "Compatible with 18650 / 21700 Li-ion cells",
+        "No battery included — ships as regular mail (no lithium restrictions)"
+      ],
+      "zh-CN": [
+        "Type-C 双向（充电+放电）",
+        "USB-A 输出接口",
+        "LED 数码管电量百分比显示",
+        "自带 LED 手电筒功能",
+        "过充/过放/短路保护",
+        "兼容 18650 / 21700 锂电池",
+        "不含电池 — 普货运输，无锂电池限制"
+      ],
+      "zh-TW": [
+        "Type-C 雙向（充電+放電）",
+        "USB-A 輸出介面",
+        "LED 數碼管電量百分比顯示",
+        "自帶 LED 手電筒功能",
+        "過充/過放/短路保護",
+        "相容 18650 / 21700 鋰電池",
+        "不含電池 — 普貨運輸，無鋰電池限制"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "mold1",
+    "image": "images/mold-main.jpg",
+    "price": 15.00,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)",
+      "zh-CN": "3D 立体树脂杯垫硅胶模具套装（4款）",
+      "zh-TW": "3D 立體樹脂杯墊矽膠模具套裝（4款）"
+    },
+    "desc": {
+      "en": "Create stunning 3D-effect epoxy resin coasters. High-quality silicone molds with detailed patterns — mountains, ocean love, galaxy, and cherry blossoms. Easy release, durable, heat-resistant. Perfect for DIY craft lovers and handmade gift makers.",
+      "zh-CN": "制作惊艳的 3D 效果环氧树脂杯垫。高品质硅胶模具，细节精致 — 山峰、海洋之恋、星空银河、樱花。易脱模、耐用、耐高温。适合 DIY 手工爱好者和手工礼品制作。",
+      "zh-TW": "製作驚豔的 3D 效果環氧樹脂杯墊。高品質矽膠模具，細節精緻 — 山峰、海洋之戀、星空銀河、櫻花。易脫模、耐用、耐高溫。適合 DIY 手工愛好者和手工禮品製作。"
+    },
+    "specs": {
+      "en": [
+        "4 unique 3D designs: Mountain, Ocean Love, Galaxy, Cherry Blossom",
+        "Premium food-grade silicone — flexible, non-stick, easy release",
+        "High-temperature resistant up to 230°C (446°F)",
+        "Finished coaster size: approx. 10cm (4 inch) diameter",
+        "Works with epoxy resin, UV resin, cement, plaster",
+        "Reusable hundreds of times — dishwasher safe for cleaning",
+        "No resin or pigments included — mold set only"
+      ],
+      "zh-CN": [
+        "4款独特 3D 设计：山峰、海洋之恋、星空银河、樱花",
+        "食品级硅胶 — 柔软、不粘、易脱模",
+        "耐高温达 230°C",
+        "成品杯垫尺寸：约 10cm 直径",
+        "适用于环氧树脂、UV 树脂、水泥、石膏",
+        "可重复使用数百次 — 洗碗机可清洗",
+        "不含树脂或颜料 — 仅为模具套装"
+      ],
+      "zh-TW": [
+        "4款獨特 3D 設計：山峰、海洋之戀、星空銀河、櫻花",
+        "食品級矽膠 — 柔軟、不粘、易脫模",
+        "耐高溫達 230°C",
+        "成品杯墊尺寸：約 10cm 直徑",
+        "適用於環氧樹脂、UV 樹脂、水泥、石膏",
+        "可重複使用數百次 — 洗碗機可清洗",
+        "不含樹脂或顏料 — 僅為模具套裝"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  }
+]
