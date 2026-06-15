@@ -440,7 +440,13 @@ var I18N = {
       {id:'color',icon:'🎨',name:'Color Converter',desc:'HEX ↔ RGB ↔ HSL. Pick colors and copy values.'},
       {id:'regex',icon:'🔍',name:'Regex Tester',desc:'Test regular expressions in real-time. Match highlights & groups.'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'Classic puzzle game. Merge tiles to reach 2048.'},
-      {id:'reaction',icon:'⚡',name:'Reaction Test',desc:'How fast can you click? Test your reaction time.'}
+      {id:'reaction',icon:'⚡',name:'Reaction Test',desc:'How fast can you click? Test your reaction time.'},
+      {id:'img2base64',icon:'🖼️',name:'Image to Base64',desc:'Convert any image to a Base64 data URI. Paste or use in code.'},
+      {id:'random',icon:'🎯',name:'Random Number',desc:'Generate random numbers. Custom range, decimals, batch output.'},
+      {id:'htmlpreview',icon:'👁️',name:'HTML Preview',desc:'Write HTML/CSS/JS and see live preview instantly.'},
+      {id:'stopwatch',icon:'⏱️',name:'Stopwatch',desc:'Online stopwatch with laps. Start, stop, reset.'},
+      {id:'mdpreview',icon:'📝',name:'Markdown Preview',desc:'Write Markdown and see rendered HTML live.'},
+      {id:'palette',icon:'🌈',name:'Color Palette',desc:'Generate beautiful color palettes. Copy hex values.'}
     ]
   },
   'zh-CN': {
@@ -549,7 +555,13 @@ var I18N = {
       {id:'color',icon:'🎨',name:'颜色转换器',desc:'HEX ↔ RGB ↔ HSL，取色复制数值。'},
       {id:'regex',icon:'🔍',name:'正则测试器',desc:'实时测试正则表达式，高亮匹配和分组。'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'经典数字合并游戏，滑动方块凑出 2048。'},
-      {id:'reaction',icon:'⚡',name:'反应测试',desc:'你的反应有多快？点击测试反应时间。'}
+      {id:'reaction',icon:'⚡',name:'反应测试',desc:'你的反应有多快？点击测试反应时间。'},
+      {id:'img2base64',icon:'🖼️',name:'图片转Base64',desc:'图片转 Base64 编码，用于嵌入代码或传输。'},
+      {id:'random',icon:'🎯',name:'随机数生成器',desc:'自定义范围生成随机数，支持小数、批量输出。'},
+      {id:'htmlpreview',icon:'👁️',name:'HTML 预览',desc:'写 HTML/CSS/JS，实时预览效果。'},
+      {id:'stopwatch',icon:'⏱️',name:'秒表计时',desc:'在线秒表，支持分段计时。开始/暂停/重置。'},
+      {id:'mdpreview',icon:'📝',name:'Markdown 预览',desc:'写 Markdown，即时预览渲染效果。'},
+      {id:'palette',icon:'🌈',name:'调色板',desc:'生成漂亮的配色方案，一键复制色值。'}
     ]
   },
   'zh-TW': {
@@ -658,7 +670,13 @@ var I18N = {
       {id:'color',icon:'🎨',name:'顏色轉換器',desc:'HEX ↔ RGB ↔ HSL，取色複製數值。'},
       {id:'regex',icon:'🔍',name:'正則測試器',desc:'即時測試正則表達式，高亮匹配和分組。'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'經典數字合併遊戲，滑動方塊湊出 2048。'},
-      {id:'reaction',icon:'⚡',name:'反應測試',desc:'你的反應有多快？點擊測試反應時間。'}
+      {id:'reaction',icon:'⚡',name:'反應測試',desc:'你的反應有多快？點擊測試反應時間。'},
+      {id:'img2base64',icon:'🖼️',name:'圖片轉Base64',desc:'圖片轉 Base64 編碼，用於嵌入程式碼或傳輸。'},
+      {id:'random',icon:'🎯',name:'隨機數產生器',desc:'自訂範圍產生隨機數，支援小數、批次輸出。'},
+      {id:'htmlpreview',icon:'👁️',name:'HTML 預覽',desc:'寫 HTML/CSS/JS，即時預覽效果。'},
+      {id:'stopwatch',icon:'⏱️',name:'碼表計時',desc:'線上碼表，支援分段計時。開始/暫停/重置。'},
+      {id:'mdpreview',icon:'📝',name:'Markdown 預覽',desc:'寫 Markdown，即時預覽渲染效果。'},
+      {id:'palette',icon:'🌈',name:'調色盤',desc:'產生漂亮的配色方案，一鍵複製色值。'}
     ]
   }
 };
@@ -902,6 +920,52 @@ function renderToolContent(id) {
         '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(lang==='zh-CN'?'变绿时立即点击！':'Click when it turns green!')+'</p></div>');
       tc.innerHTML = html;
       initReaction();
+      break;
+    case 'img2base64':
+      html = makeToolPage('🖼️ ' + L.tools[19].name,
+        '<div style="text-align:center;padding:20px"><input type="file" accept="image/*" id="img2b64File" onchange="img2base64Convert()" style="margin-bottom:16px">'+
+        '<div id="img2b64Preview" style="max-width:300px;margin:0 auto 16px"></div>'+
+        '<textarea id="img2b64Result" readonly style="width:100%;height:120px;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.75rem;word-break:break-all;resize:vertical"></textarea>'+
+        '<div class="btn-row" style="margin-top:8px">'+btn('Copy','copyImg2Base64()','small')+'</div></div>');
+      break;
+    case 'random':
+      html = makeToolPage('🎯 ' + L.tools[20].name,
+        '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px">'+
+        '<div><label style="font-size:.78rem;color:var(--muted);display:block">Min</label><input id="rndMin" type="number" value="1" style="width:80px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
+        '<div><label style="font-size:.78rem;color:var(--muted);display:block">Max</label><input id="rndMax" type="number" value="100" style="width:80px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
+        '<div><label style="font-size:.78rem;color:var(--muted);display:block">'+'Count'+'</label><input id="rndCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
+        '<div style="display:flex;align-items:center;gap:6px;padding-bottom:8px"><label style="font-size:.78rem"><input type="checkbox" id="rndDecimal"> Decimal</label></div>'+
+        '</div>'+
+        optRow([btn('Generate','genRandom()','primary'),btn('Copy','copyRandom()')])+
+        '<div class="result-bar show" id="randomResult" style="margin-top:12px;font-family:monospace;font-size:1.1rem;min-height:24px;color:var(--text)"><em style="color:var(--muted)">'+'Click Generate'+'</em></div>');
+      break;
+    case 'htmlpreview':
+      html = makeToolPage('👁️ ' + L.tools[21].name,
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><textarea id="htmlPreviewInput" placeholder="<h1>Hello World</h1>" style="width:100%;height:300px;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.82rem;resize:vertical;outline:none" oninput="htmlLivePreview()"></textarea></div>'+
+        '<div><iframe id="htmlPreviewFrame" style="width:100%;height:300px;border:1px solid var(--border);border-radius:8px;background:#fff"></iframe></div></div>');
+      tc.innerHTML = html;
+      break;
+    case 'stopwatch':
+      html = makeToolPage('⏱️ ' + L.tools[22].name,
+        '<div style="text-align:center;padding:20px">'+
+        '<div style="font-size:3rem;font-family:monospace;font-weight:300;margin:20px 0" id="swDisplay">00:00:00.0</div>'+
+        optRow([btn('Start','swToggle()','primary'),btn('Lap','swLap()'),btn('Reset','swReset()')])+
+        '<div id="swLaps" style="margin-top:16px;max-height:200px;overflow-y:auto;font-family:monospace;font-size:.85rem;color:var(--muted)"></div></div>');
+      tc.innerHTML = html;
+      initStopwatch();
+      break;
+    case 'mdpreview':
+      html = makeToolPage('📝 ' + L.tools[23].name,
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><textarea id="mdInput" placeholder="# Hello\n**bold** text" style="width:100%;height:350px;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.82rem;resize:vertical;outline:none" oninput="mdLivePreview()"></textarea></div>'+
+        '<div><div id="mdPreview" style="width:100%;height:350px;border:1px solid var(--border);border-radius:8px;background:#fff;padding:16px;overflow-y:auto;font-size:.88rem;line-height:1.7"></div></div></div>');
+      tc.innerHTML = html;
+      break;
+    case 'palette':
+      html = makeToolPage('🌈 ' + L.tools[24].name,
+        '<div id="paletteColors" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:16px"><!-- filled by JS --></div>'+
+        optRow([btn('Generate','genPalette()','primary'),btn('Copy All','copyPalette()')]));
+      tc.innerHTML = html;
+      genPalette();
       break;
   }
   tc.innerHTML = html;
@@ -1552,6 +1616,33 @@ var _rs='idle',_rt,_rb=Infinity;
 function initReaction(){_rs='idle';document.getElementById('reactionBox').textContent=lang==='zh-CN'?'点击开始':'Click to Start';document.getElementById('reactionBox').style.background='var(--accent)'}
 function reactClick(){var b=document.getElementById('reactionBox'),r=document.getElementById('reactionResult');if(_rs==='idle'){_rs='waiting';b.textContent=lang==='zh-CN'?'等待变绿...':'Wait for green...';b.style.background='var(--red)';_rt=setTimeout(function(){_rs='go';_rt=Date.now();b.textContent=lang==='zh-CN'?'现在！':'NOW!';b.style.background='var(--green)'},1000+Math.random()*3000)}else if(_rs==='waiting'){clearTimeout(_rt);b.textContent=lang==='zh-CN'?'太快了！':'Too early!';b.style.background='var(--accent)';_rs='idle'}else if(_rs==='go'){var t=Date.now()-_rt;if(t<_rb)_rb=t;b.textContent=t+' ms';b.style.background='var(--accent)';r.innerHTML='<strong>'+t+' ms</strong> | '+(lang==='zh-CN'?'最佳: ':'Best: ')+_rb+' ms';_rs='idle'}}
 
+// Image to Base64
+function img2base64Convert(){var f=document.getElementById('img2b64File').files[0];if(!f)return;var r=new FileReader();r.onload=function(){var d=r.result;document.getElementById('img2b64Result').value=d;document.getElementById('img2b64Preview').innerHTML='<img src="'+d+'" style="max-width:100%;max-height:200px;border-radius:8px">';window._img2b64=d};r.readAsDataURL(f)}
+function copyImg2Base64(){if(window._img2b64)navigator.clipboard.writeText(window._img2b64)}
+
+// Random Number
+function genRandom(){var mn=parseFloat(document.getElementById('rndMin').value)||0,mx=parseFloat(document.getElementById('rndMax').value)||100,cn=parseInt(document.getElementById('rndCount').value)||1,dec=document.getElementById('rndDecimal').checked;if(mn>mx){var t=mn;mn=mx;mx=t}var el=document.getElementById('randomResult'),nums=[];for(var i=0;i<cn;i++){var n=Math.random()*(mx-mn)+mn;nums.push(dec?n.toFixed(4):Math.floor(n))}el.textContent=nums.join(', ');window._randNums=nums.join(', ')}
+function copyRandom(){if(window._randNums)navigator.clipboard.writeText(window._randNums)}
+
+// HTML Preview
+function htmlLivePreview(){var v=document.getElementById('htmlPreviewInput').value,f=document.getElementById('htmlPreviewFrame');f.srcdoc=v}
+
+// Stopwatch
+var _sw=0,_swInt=null,_swRunning=false;
+function initStopwatch(){_sw=0;_swRunning=false;if(_swInt)clearInterval(_swInt);_swInt=null;updateSwDisplay();document.getElementById('swLaps').innerHTML=''}
+function swToggle(){if(_swRunning){clearInterval(_swInt);_swInt=null;_swRunning=false}else{var start=Date.now()-_sw;_swInt=setInterval(function(){_sw=Date.now()-start;updateSwDisplay()},100);_swRunning=true}}
+function updateSwDisplay(){var ms=_sw,t=Math.floor(ms/3600000);var m=Math.floor((ms%3600000)/60000),s=Math.floor((ms%60000)/1000),ds=Math.floor((ms%1000)/100);document.getElementById('swDisplay').textContent=String(t).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+'.'+ds}
+function swLap(){if(!_swRunning)return;updateSwDisplay();var el=document.getElementById('swLaps'),d=document.getElementById('swDisplay').textContent;el.innerHTML='<div style="padding:4px 0;border-bottom:1px solid var(--border)">🏁 '+d+'</div>'+el.innerHTML}
+function swReset(){clearInterval(_swInt);_swInt=null;_sw=0;_swRunning=false;updateSwDisplay();document.getElementById('swLaps').innerHTML=''}
+
+// Markdown Preview
+function mdLivePreview(){var v=document.getElementById('mdInput').value,el=document.getElementById('mdPreview');el.innerHTML=md2html(v)}
+function md2html(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/^### (.+)$/gm,'<h3>$1</h3>').replace(/^## (.+)$/gm,'<h2>$1</h2>').replace(/^# (.+)$/gm,'<h1>$1</h1>').replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/^\- (.+)$/gm,'<li>$1</li>').replace(/(<li>.*<\/li>\n?)+/g,'<ul>$&</ul>').replace(/\n\n/g,'</p><p>').replace(/^/,'<p>').replace(/$/,'</p>').replace(/<p><\/p>/g,'')}
+
+// Color Palette
+function genPalette(){var schemes=[['#FF6B6B','#FFD93D','#6BCB77','#4D96FF'],['#2C3E50','#E74C3C','#ECF0F1','#3498DB'],['#1ABC9C','#2ECC71','#3498DB','#9B59B6'],['#F39C12','#E74C3C','#8E44AD','#2ECC71'],['#FF9FF3','#FECA57','#FF6B6B','#48DBFB'],['#00D2FF','#3A7BD5','#3A6073','#16222A']];var colors=schemes[Math.floor(Math.random()*schemes.length)],el=document.getElementById('paletteColors'),h='';colors.forEach(function(c){h+='<div style="background:'+c+';height:80px;border-radius:8px;display:flex;align-items:flex-end;justify-content:center;cursor:pointer" onclick="navigator.clipboard.writeText(\''+c+'\')" title="'+c+'"><span style="background:rgba(0,0,0,.5);color:#fff;padding:2px 8px;border-radius:4px;font-size:.7rem;font-family:monospace;margin-bottom:6px">'+c+'</span></div>'});el.innerHTML=h;window._palette=colors.join(', ')}
+function copyPalette(){if(window._palette)navigator.clipboard.writeText(window._palette)}
+
 // ═══════════════════════════════════════════
 //  Sidebar
 // ═══════════════════════════════════════════
@@ -1568,11 +1659,14 @@ var SIDEBAR = {
       {id:'count',icon:'📊',label:'Word Counter'},
       {id:'diff',icon:'≠',label:'Text Diff'},
       {id:'case',icon:'Aa',label:'Case Converter'},
-      {id:'filename',icon:'📁',label:'Filename Extract'}
+      {id:'filename',icon:'📁',label:'Filename Extract'},
+      {id:'htmlpreview',icon:'👁️',label:'HTML Preview'},
+      {id:'mdpreview',icon:'📝',label:'Markdown Preview'}
     ]},
     {cat:'🔐 Encode & Crypto', items:[
       {id:'url',icon:'🔗',label:'URL Encode/Decode'},
       {id:'base64',icon:'🔐',label:'Base64 Encode/Decode'},
+      {id:'img2base64',icon:'🖼️',label:'Image to Base64'},
       {id:'md5',icon:'🔐',label:'MD5 Hasher'},
       {id:'sha',icon:'🔏',label:'SHA Hasher'},
       {id:'morse',icon:'📡',label:'Morse Code'}
@@ -1580,11 +1674,16 @@ var SIDEBAR = {
     {cat:'🎲 Generators', items:[
       {id:'uuid',icon:'🎲',label:'UUID Generator'},
       {id:'password',icon:'🔑',label:'Password Gen'},
+      {id:'random',icon:'🎯',label:'Random Number'},
       {id:'qrcode',icon:'📱',label:'QR Code'},
       {id:'time',icon:'🕐',label:'Timestamp Conv'}
     ]},
+    {cat:'⏱️ Time', items:[
+      {id:'stopwatch',icon:'⏱️',label:'Stopwatch'}
+    ]},
     {cat:'🎨 Color', items:[
-      {id:'color',icon:'🎨',label:'Color Converter'}
+      {id:'color',icon:'🎨',label:'Color Converter'},
+      {id:'palette',icon:'🌈',label:'Color Palette'}
     ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'Shop',action:function(){showPage('shop')}},
@@ -1602,11 +1701,14 @@ var SIDEBAR = {
       {id:'count',icon:'📊',label:'字数统计'},
       {id:'diff',icon:'≠',label:'文本对比'},
       {id:'case',icon:'Aa',label:'大小写转换'},
-      {id:'filename',icon:'📁',label:'文件名提取'}
+      {id:'filename',icon:'📁',label:'文件名提取'},
+      {id:'htmlpreview',icon:'👁️',label:'HTML 预览'},
+      {id:'mdpreview',icon:'📝',label:'Markdown 预览'}
     ]},
     {cat:'🔐 编码加密', items:[
       {id:'url',icon:'🔗',label:'URL 编解码'},
       {id:'base64',icon:'🔐',label:'Base64 编解码'},
+      {id:'img2base64',icon:'🖼️',label:'图片转Base64'},
       {id:'md5',icon:'🔐',label:'MD5 哈希'},
       {id:'sha',icon:'🔏',label:'SHA 哈希'},
       {id:'morse',icon:'📡',label:'摩斯电码'}
@@ -1614,11 +1716,16 @@ var SIDEBAR = {
     {cat:'🎲 生成器', items:[
       {id:'uuid',icon:'🎲',label:'UUID 生成器'},
       {id:'password',icon:'🔑',label:'密码生成器'},
+      {id:'random',icon:'🎯',label:'随机数生成'},
       {id:'qrcode',icon:'📱',label:'二维码生成'},
       {id:'time',icon:'🕐',label:'时间戳转换'}
     ]},
+    {cat:'⏱️ 时间', items:[
+      {id:'stopwatch',icon:'⏱️',label:'秒表计时'}
+    ]},
     {cat:'🎨 颜色', items:[
-      {id:'color',icon:'🎨',label:'颜色转换器'}
+      {id:'color',icon:'🎨',label:'颜色转换器'},
+      {id:'palette',icon:'🌈',label:'调色板'}
     ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
@@ -1636,11 +1743,14 @@ var SIDEBAR = {
       {id:'count',icon:'📊',label:'字數統計'},
       {id:'diff',icon:'≠',label:'文字對比'},
       {id:'case',icon:'Aa',label:'大小寫轉換'},
-      {id:'filename',icon:'📁',label:'檔名提取'}
+      {id:'filename',icon:'📁',label:'檔名提取'},
+      {id:'htmlpreview',icon:'👁️',label:'HTML 預覽'},
+      {id:'mdpreview',icon:'📝',label:'Markdown 預覽'}
     ]},
     {cat:'🔐 編碼加密', items:[
       {id:'url',icon:'🔗',label:'URL 編解碼'},
       {id:'base64',icon:'🔐',label:'Base64 編解碼'},
+      {id:'img2base64',icon:'🖼️',label:'圖片轉Base64'},
       {id:'md5',icon:'🔐',label:'MD5 雜湊'},
       {id:'sha',icon:'🔏',label:'SHA 雜湊'},
       {id:'morse',icon:'📡',label:'摩斯電碼'}
@@ -1648,11 +1758,16 @@ var SIDEBAR = {
     {cat:'🎲 產生器', items:[
       {id:'uuid',icon:'🎲',label:'UUID 產生器'},
       {id:'password',icon:'🔑',label:'密碼產生器'},
+      {id:'random',icon:'🎯',label:'隨機數產生'},
       {id:'qrcode',icon:'📱',label:'QR Code 產生'},
       {id:'time',icon:'🕐',label:'時間戳轉換'}
     ]},
+    {cat:'⏱️ 時間', items:[
+      {id:'stopwatch',icon:'⏱️',label:'碼表計時'}
+    ]},
     {cat:'🎨 顏色', items:[
-      {id:'color',icon:'🎨',label:'顏色轉換器'}
+      {id:'color',icon:'🎨',label:'顏色轉換器'},
+      {id:'palette',icon:'🌈',label:'調色盤'}
     ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
