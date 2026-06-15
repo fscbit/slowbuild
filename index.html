@@ -100,6 +100,17 @@
     footer a{color:var(--muted)}
 
     @media(max-width:600px){.tool-grid{grid-template-columns:1fr}.request-form{flex-direction:column}.btn-row{flex-direction:column}.btn-row .btn{width:100%}.nav-right{width:100%;justify-content:space-between}}
+
+    .modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:99;align-items:center;justify-content:center}
+    .modal-overlay.show{display:flex}
+    .modal-box{background:var(--surface);border-radius:var(--radius);padding:28px;max-width:480px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.15)}
+    .modal-box h3{font-size:1.15rem;margin-bottom:6px}
+    .modal-box .modal-sub{color:var(--muted);font-size:.85rem;margin-bottom:16px}
+    .modal-box label{display:block;font-size:.82rem;color:var(--muted);margin:10px 0 4px}
+    .modal-box input,.modal-box textarea{width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:inherit;outline:none}
+    .modal-box input:focus,.modal-box textarea:focus{border-color:var(--accent)}
+    .modal-box textarea{min-height:60px;resize:vertical}
+    .modal-box .required::after{content:' *';color:var(--accent)}
   </style>
 </head>
 <body>
@@ -248,6 +259,27 @@
   </section>
 </div>
 
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal-box">
+    <h3>📦 <span data-i18n="order_title">Order Details</span></h3>
+    <p class="modal-sub"><span id="orderProduct">—</span> · <strong id="orderPrice" style="color:var(--accent)">$0</strong></p>
+    <label class="required" data-i18n="order_name">Your Name</label>
+    <input id="orderName" data-i18n-placeholder="order_name_ph">
+    <label class="required" data-i18n="order_address">Shipping Address</label>
+    <textarea id="orderAddress" data-i18n-placeholder="order_address_ph"></textarea>
+    <label data-i18n="order_email">Email (for order confirmation)</label>
+    <input id="orderEmail" type="email" data-i18n-placeholder="order_email_ph">
+    <label data-i18n="order_notes">Notes (optional)</label>
+    <input id="orderNotes" data-i18n-placeholder="order_notes_ph">
+    <div class="btn-row" style="margin-top:16px">
+      <button class="btn primary" onclick="submitOrder()" data-i18n="order_submit">Submit & Pay</button>
+      <button class="btn" onclick="closeOrder()" data-i18n="order_cancel">Cancel</button>
+    </div>
+    <div class="result-bar" id="orderMsg" style="margin-top:12px"></div>
+  </div>
+</div>
+
 <script>
 // ═══════════════════════════════════════════
 //  i18n
@@ -287,6 +319,14 @@ var I18N = {
     p1_spec7: 'No battery included — ships as regular mail (no lithium restrictions)',
     buy_now: 'Buy Now',
     ship_note: '📦 Free worldwide shipping · Arrives in 7–20 days',
+    order_title: 'Order Details', order_name: 'Your Name', order_name_ph: 'John Doe',
+    order_address: 'Shipping Address', order_address_ph: 'Full address with country & postal code',
+    order_email: 'Email (for order confirmation)', order_email_ph: 'you@example.com',
+    order_notes: 'Notes (optional)', order_notes_ph: 'Color / size preferences...',
+    order_submit: 'Submit & Pay', order_cancel: 'Cancel',
+    order_success: '✓ Order sent! Redirecting to payment...',
+    order_fail: '✗ Failed. Please try again or contact us.',
+    order_invalid: '✗ Please fill in all required fields.',
     p2_title: '3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)',
     p2_desc: 'Create stunning 3D-effect epoxy resin coasters. High-quality silicone molds with detailed patterns — mountains, ocean love, galaxy, and cherry blossoms. Easy release, durable, heat-resistant. Perfect for DIY craft lovers and handmade gift makers.',
     p2_spec1: '4 unique 3D designs: Mountain, Ocean Love, Galaxy, Cherry Blossom',
@@ -367,6 +407,14 @@ var I18N = {
     p1_spec7: '不含电池 — 普货运输，无锂电池限制',
     buy_now: '立即购买',
     ship_note: '📦 全球包邮 · 7–20 天送达',
+    order_title: '订单信息', order_name: '收货人姓名', order_name_ph: '张三',
+    order_address: '收货地址', order_address_ph: '请填写完整地址，含国家和邮编',
+    order_email: '邮箱（用于订单确认）', order_email_ph: 'example@qq.com',
+    order_notes: '备注（选填）', order_notes_ph: '颜色/尺寸偏好...',
+    order_submit: '提交并付款', order_cancel: '取消',
+    order_success: '✓ 订单已发送！正在跳转付款...',
+    order_fail: '✗ 发送失败，请重试或联系我们。',
+    order_invalid: '✗ 请填写必填项。',
     p2_title: '3D 立体树脂杯垫硅胶模具套装（4款）',
     p2_desc: '制作惊艳的 3D 效果环氧树脂杯垫。高品质硅胶模具，细节精致 — 山峰、海洋之恋、星空银河、樱花。易脱模、耐用、耐高温。适合 DIY 手工爱好者和手工礼品制作。',
     p2_spec1: '4款独特 3D 设计：山峰、海洋之恋、星空银河、樱花',
@@ -455,6 +503,14 @@ var I18N = {
     p1_spec7: '不含電池 — 普貨運輸，無鋰電池限制',
     buy_now: '立即購買',
     ship_note: '📦 全球包郵 · 7–20 天送達',
+    order_title: '訂單資訊', order_name: '收貨人姓名', order_name_ph: '張三',
+    order_address: '收貨地址', order_address_ph: '請填寫完整地址，含國家和郵遞區號',
+    order_email: '電子郵件（用於訂單確認）', order_email_ph: 'example@gmail.com',
+    order_notes: '備註（選填）', order_notes_ph: '顏色/尺寸偏好...',
+    order_submit: '提交並付款', order_cancel: '取消',
+    order_success: '✓ 訂單已發送！正在跳轉付款...',
+    order_fail: '✗ 發送失敗，請重試或聯絡我們。',
+    order_invalid: '✗ 請填寫必填項。',
     p2_title: '3D 立體樹脂杯墊矽膠模具套裝（4款）',
     p2_desc: '製作驚豔的 3D 效果環氧樹脂杯墊。高品質矽膠模具，細節精緻 — 山峰、海洋之戀、星空銀河、櫻花。易脫模、耐用、耐高溫。適合 DIY 手工愛好者和手工禮品製作。',
     p2_spec1: '4款獨特 3D 設計：山峰、海洋之戀、星空銀河、櫻花',
@@ -578,7 +634,7 @@ function renderShop() {
             '<ul class="product-specs">'+p.specs[lang].map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul>'+
             '<div class="product-footer">'+
               '<span class="product-price">$'+p.price.toFixed(2)+'</span>'+
-              '<a href="'+p.buyLink+'" target="_blank" class="product-buy">'+t('buy_now')+'</a>'+
+              '<button class="product-buy" onclick="openOrder(\''+escJS(p.name[lang])+'\','+p.price+',\''+escJS(p.buyLink)+'\')">'+t('buy_now')+'</button>'+
             '</div>'+
             '<p class="shipping-note">'+p.shipping[lang]+'</p>'+
           '</div></div>';
@@ -864,6 +920,87 @@ function submitRequest(e){
   e.preventDefault();
   var v=document.getElementById('reqInput').value.trim(),m=document.getElementById('reqMsg');
   if(v){m.textContent='✓ '+(lang==='zh-CN'?'收到！收藏本站关注更新。':'Got it! Bookmark for updates.');m.style.color='var(--green)';document.getElementById('reqInput').value=''}
+}
+
+function escJS(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'\\"'); }
+
+// ═══════════════════════════════════════════
+//  Order Modal
+// ═══════════════════════════════════════════
+var _orderPayLink = '';
+
+function openOrder(product, price, payLink){
+  _orderPayLink = payLink;
+  document.getElementById('orderProduct').textContent = product;
+  document.getElementById('orderPrice').textContent = '$'+price.toFixed(2);
+  document.getElementById('orderName').value = '';
+  document.getElementById('orderAddress').value = '';
+  document.getElementById('orderEmail').value = '';
+  document.getElementById('orderNotes').value = '';
+  document.getElementById('orderMsg').className = 'result-bar';
+  document.getElementById('orderModal').classList.add('show');
+  document.getElementById('orderName').focus();
+}
+
+function closeOrder(){
+  document.getElementById('orderModal').classList.remove('show');
+}
+
+function submitOrder(){
+  var product = document.getElementById('orderProduct').textContent;
+  var price = parseFloat(document.getElementById('orderPrice').textContent.replace('$',''));
+  var name = document.getElementById('orderName').value.trim();
+  var address = document.getElementById('orderAddress').value.trim();
+  var email = document.getElementById('orderEmail').value.trim();
+  var notes = document.getElementById('orderNotes').value.trim();
+  var msg = document.getElementById('orderMsg');
+
+  if(!name || !address){
+    msg.className = 'result-bar error show';
+    msg.textContent = t('order_invalid');
+    return;
+  }
+
+  msg.className = 'result-bar show';
+  msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':'Submitting...')+'</span>';
+
+  fetch('/api/order', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({product:product, price:price, name:name, email:email, address:address, notes:notes})
+  }).then(function(r){ return r.json(); })
+  .then(function(d){
+    if(d.success){
+      msg.className = 'result-bar success show';
+      msg.textContent = t('order_success');
+      // Store order in localStorage as backup
+      try{
+        var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
+        orders.push({id:d.orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+        localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
+      }catch(e){}
+      setTimeout(function(){
+        closeOrder();
+        window.open(_orderPayLink, '_blank');
+      }, 1500);
+    } else {
+      msg.className = 'result-bar error show';
+      msg.textContent = d.error || t('order_fail');
+    }
+  }).catch(function(err){
+    // Fallback: still let them pay, order stored in localStorage
+    msg.className = 'result-bar success show';
+    msg.textContent = '✓ '+(lang==='zh-CN'?'正在跳转付款（订单已本地保存）...':'Redirecting to payment (order saved locally)...');
+    try{
+      var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
+      orders.push({product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+      localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
+    }catch(e){}
+    setTimeout(function(){
+      closeOrder();
+      window.open(_orderPayLink, '_blank');
+    }, 1500);
+  });
 }
 
 // ═══════════════════════════════════════════
