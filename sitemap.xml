@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://slowbuild.top/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://slowbuild.top/?page=shop</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://slowbuild.top/?page=about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?page=privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <!-- Tools: Text -->
+  <url><loc>https://slowbuild.top/?tool=json</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=regex</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=count</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=diff</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=case</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=filename</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=htmlpreview</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=mdpreview</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Tools: Encode -->
+  <url><loc>https://slowbuild.top/?tool=url</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=base64</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=img2base64</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=md5</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=sha</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=morse</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Tools: Generators -->
+  <url><loc>https://slowbuild.top/?tool=uuid</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=password</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=random</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=qrcode</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=time</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Tools: Time -->
+  <url><loc>https://slowbuild.top/?tool=stopwatch</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Tools: Color -->
+  <url><loc>https://slowbuild.top/?tool=color</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=palette</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Tools: Games -->
+  <url><loc>https://slowbuild.top/?tool=gomoku</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=chess</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=go</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=game2048</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://slowbuild.top/?tool=tictactoe</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=sports</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://slowbuild.top/?tool=reaction</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://slowbuild.top/?tool=coinflip</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://slowbuild.top/?tool=dice</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+</urlset>
