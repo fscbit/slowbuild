@@ -111,9 +111,37 @@
     .modal-box input:focus,.modal-box textarea:focus{border-color:var(--accent)}
     .modal-box textarea{min-height:60px;resize:vertical}
     .modal-box .required::after{content:' *';color:var(--accent)}
+
+    /* Sidebar */
+    .sidebar{position:fixed;left:0;top:0;width:220px;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:20;padding:8px 0 80px;font-size:.84rem}
+    .sidebar-header{padding:12px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);margin-bottom:6px;cursor:pointer;text-decoration:none;color:var(--text)}
+    .sidebar-cat{padding:6px 16px 2px;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:10px;font-weight:600}
+    .sidebar-link{display:flex;align-items:center;gap:6px;padding:5px 16px;color:var(--text);text-decoration:none;transition:all .12s;cursor:pointer;font-size:.82rem;border-left:2px solid transparent}
+    .sidebar-link:hover{background:var(--code-bg);border-left-color:var(--border)}
+    .sidebar-link.active{background:var(--code-bg);border-left-color:var(--accent);color:var(--accent);font-weight:600}
+    .sidebar-link .sicon{font-size:.95rem;width:20px;text-align:center;flex-shrink:0}
+    .sidebar-spacer{height:8px}
+    /* Main content shift */
+    .main-wrap{margin-left:220px;min-height:100vh}
+    .sidebar-toggle{display:none;position:fixed;top:8px;left:8px;z-index:30;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:5px 9px;font-size:1.1rem;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    @media(max-width:768px){
+      .sidebar{transform:translateX(-100%);transition:transform .2s}
+      .sidebar.open{transform:translateX(0)}
+      .main-wrap{margin-left:0}
+      .sidebar-toggle{display:block}
+      nav{padding-left:40px}
+    }
   </style>
 </head>
 <body>
+<button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <a class="sidebar-header" href="#" onclick="showPage('home');return false"><span class="logo-dot"></span>slowbuild</a>
+  <div id="sidebarContent"><!-- filled by JS --></div>
+</aside>
+<!-- Main Content -->
+<div class="main-wrap">
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo" onclick="showPage('home');return false"><span class="logo-dot"></span>slowbuild</a>
@@ -124,9 +152,7 @@
         <button data-lang="zh-TW" onclick="setLang('zh-TW')">繁</button>
       </div>
       <div class="nav-links">
-        <a href="#tools" data-i18n="nav_tools">Tools</a>
         <a href="#" data-i18n="nav_shop" onclick="showPage('shop');return false">Shop</a>
-        <a href="#request" data-i18n="nav_request">Request</a>
         <a href="#" data-i18n="nav_about" onclick="showPage('about');return false">About</a>
       </div>
     </div>
@@ -1343,6 +1369,128 @@ SPORTS.loadData = function(){
   SPORTS.renderRanking();
   alert('✓ 已加载 ('+SPORTS.records.length+' 条记录)');
 };
+
+// ═══════════════════════════════════════════
+//  Sidebar
+// ═══════════════════════════════════════════
+var SIDEBAR = {
+  'en': [
+    {cat:'📝 Text Tools', items:[
+      {id:'json',icon:'{ }',label:'JSON Formatter'},
+      {id:'count',icon:'📊',label:'Word Counter'},
+      {id:'diff',icon:'≠',label:'Text Diff'},
+      {id:'case',icon:'Aa',label:'Case Converter'},
+      {id:'filename',icon:'📁',label:'Filename Extract'}
+    ]},
+    {cat:'🔐 Encoding', items:[
+      {id:'url',icon:'🔗',label:'URL Encode/Decode'},
+      {id:'base64',icon:'🔐',label:'Base64 Encode/Decode'}
+    ]},
+    {cat:'🎲 Generators', items:[
+      {id:'uuid',icon:'🎲',label:'UUID Generator'},
+      {id:'password',icon:'🔑',label:'Password Gen'},
+      {id:'time',icon:'🕐',label:'Timestamp Conv'}
+    ]},
+    {cat:'☁️ Convert', items:[
+      {id:'sports',icon:'🏃',label:'Sports Scorer'}
+    ]},
+    {type:'spacer'},
+    {type:'link',id:'shop',icon:'🛒',label:'Shop',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
+  ],
+  'zh-CN': [
+    {cat:'📝 文本工具', items:[
+      {id:'json',icon:'{ }',label:'JSON 格式化'},
+      {id:'count',icon:'📊',label:'字数统计'},
+      {id:'diff',icon:'≠',label:'文本对比'},
+      {id:'case',icon:'Aa',label:'大小写转换'},
+      {id:'filename',icon:'📁',label:'文件名提取'}
+    ]},
+    {cat:'🔐 编码工具', items:[
+      {id:'url',icon:'🔗',label:'URL 编解码'},
+      {id:'base64',icon:'🔐',label:'Base64 编解码'}
+    ]},
+    {cat:'🎲 生成器', items:[
+      {id:'uuid',icon:'🎲',label:'UUID 生成器'},
+      {id:'password',icon:'🔑',label:'密码生成器'},
+      {id:'time',icon:'🕐',label:'时间戳转换'}
+    ]},
+    {cat:'☁️ 转换', items:[
+      {id:'sports',icon:'🏃',label:'运动会成绩统计'}
+    ]},
+    {type:'spacer'},
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
+  ],
+  'zh-TW': [
+    {cat:'📝 文字工具', items:[
+      {id:'json',icon:'{ }',label:'JSON 格式化'},
+      {id:'count',icon:'📊',label:'字數統計'},
+      {id:'diff',icon:'≠',label:'文字對比'},
+      {id:'case',icon:'Aa',label:'大小寫轉換'},
+      {id:'filename',icon:'📁',label:'檔名提取'}
+    ]},
+    {cat:'🔐 編碼工具', items:[
+      {id:'url',icon:'🔗',label:'URL 編解碼'},
+      {id:'base64',icon:'🔐',label:'Base64 編解碼'}
+    ]},
+    {cat:'🎲 產生器', items:[
+      {id:'uuid',icon:'🎲',label:'UUID 產生器'},
+      {id:'password',icon:'🔑',label:'密碼產生器'},
+      {id:'time',icon:'🕐',label:'時間戳轉換'}
+    ]},
+    {cat:'☁️ 轉換', items:[
+      {id:'sports',icon:'🏃',label:'運動會成績統計'}
+    ]},
+    {type:'spacer'},
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'關於',action:function(){showPage('about')}}
+  ]
+};
+
+function renderSidebar(){
+  var data = SIDEBAR[lang] || SIDEBAR['en'];
+  var h = '';
+  data.forEach(function(section){
+    if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
+    if(section.type==='link'){
+      h += '<a class="sidebar-link" onclick="highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
+      return;
+    }
+    h += '<div class="sidebar-cat">'+section.cat+'</div>';
+    section.items.forEach(function(item){
+      h += '<a class="sidebar-link" onclick="highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
+    });
+  });
+  document.getElementById('sidebarContent').innerHTML = h;
+  document.getElementById('sidebar').classList.remove('open');
+}
+
+function highlightSidebar(id){
+  document.querySelectorAll('.sidebar-link').forEach(function(el){ el.classList.remove('active'); });
+  var el = document.getElementById('sblink-'+id);
+  if(el) el.classList.add('active');
+}
+
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+// Override showTool to highlight sidebar
+var _origShowTool = showTool;
+showTool = function(id){
+  highlightSidebar(id);
+  _origShowTool(id);
+};
+
+// Update init to render sidebar
+var _origSetLang = setLang;
+setLang = function(l){
+  _origSetLang(l);
+  renderSidebar();
+  if(window._currentTool) highlightSidebar(window._currentTool);
+};
 </script>
+</div><!-- /main-wrap -->
 </body>
 </html>
