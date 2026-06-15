@@ -114,7 +114,7 @@
 
     /* Sidebar */
     .sidebar{position:fixed;left:0;top:0;width:220px;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:20;padding:8px 0 80px;font-size:.84rem}
-    .sidebar-header{padding:12px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);margin-bottom:6px;cursor:pointer;text-decoration:none;color:var(--text)}
+    .sidebar-header{padding:12px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);margin-bottom:6px;cursor:pointer;text-decoration:none;color:var(--text);position:relative}
     .sidebar-cat{padding:6px 16px 2px;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:10px;font-weight:600;cursor:pointer;user-select:none;display:flex;align-items:center;gap:4px}
     .sidebar-cat:hover{color:var(--text)}
     .cat-arrow{font-size:.55rem;transition:transform .2s}
@@ -129,19 +129,24 @@
     .main-wrap{margin-left:220px;min-height:100vh}
     .sidebar-toggle{display:none;position:fixed;top:8px;left:8px;z-index:30;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:5px 9px;font-size:1.1rem;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.08)}
     @media(max-width:768px){
-      .sidebar{transform:translateX(-100%);transition:transform .2s}
+      .sidebar{transform:translateX(-100%);transition:transform .25s cubic-bezier(.4,0,.2,1)}
       .sidebar.open{transform:translateX(0)}
       .main-wrap{margin-left:0}
       .sidebar-toggle{display:block}
+      .sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:19;transition:opacity .25s}
+      .sidebar-overlay.show{display:block}
+      .sidebar-close-btn{display:block;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
+      .sidebar-close-btn:hover{color:var(--text);background:var(--code-bg)}
       nav{padding-left:40px}
     }
   </style>
 </head>
 <body>
 <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 <!-- Sidebar -->
 <aside class="sidebar" id="sidebar">
-  <a class="sidebar-header" href="#" onclick="showPage('home');return false"><span class="logo-dot"></span>slowbuild</a>
+  <a class="sidebar-header" href="#" onclick="showPage('home');return false"><span class="logo-dot"></span>slowbuild<button class="sidebar-close-btn" onclick="event.preventDefault();event.stopPropagation();closeSidebar()" aria-label="Close">✕</button></a>
   <div id="sidebarContent"><!-- filled by JS --></div>
 </aside>
 <!-- Main Content -->
@@ -2080,7 +2085,7 @@ function renderSidebar(){
   data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
     if(section.type==='link'){
-      h += '<a class="sidebar-link" onclick="highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
+      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
       return;
     }
     var catId = 'scat-'+i;
@@ -2089,7 +2094,7 @@ function renderSidebar(){
       section.cat+'</div>';
     h += '<div class="sidebar-items'+(section.open===false?' hidden':'')+'" id="'+catId+'-items">';
     section.items.forEach(function(item){
-      h += '<a class="sidebar-link" onclick="highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
+      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
     });
     h += '</div>';
   });
@@ -2111,8 +2116,34 @@ function highlightSidebar(id){
 }
 
 function toggleSidebar(){
-  document.getElementById('sidebar').classList.toggle('open');
+  var sb = document.getElementById('sidebar');
+  var ov = document.getElementById('sidebarOverlay');
+  sb.classList.toggle('open');
+  if(ov){ ov.classList.toggle('show', sb.classList.contains('open')); }
 }
+
+function closeSidebar(){
+  var sb = document.getElementById('sidebar');
+  var ov = document.getElementById('sidebarOverlay');
+  sb.classList.remove('open');
+  if(ov) ov.classList.remove('show');
+}
+
+// Swipe left to close sidebar on mobile
+(function(){
+  var sx=0;
+  document.addEventListener('touchstart',function(e){
+    var sb=document.getElementById('sidebar');
+    if(!sb||!sb.classList.contains('open'))return;
+    sx=e.touches[0].clientX;
+  },{passive:true});
+  document.addEventListener('touchmove',function(e){
+    var sb=document.getElementById('sidebar');
+    if(!sb||!sb.classList.contains('open')||!sx)return;
+    var dx=e.touches[0].clientX-sx;
+    if(dx<-30){ closeSidebar(); sx=0; }
+  },{passive:true});
+})();
 
 // Override showTool to highlight sidebar
 var _origShowTool = showTool;
