@@ -115,7 +115,11 @@
     /* Sidebar */
     .sidebar{position:fixed;left:0;top:0;width:220px;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:20;padding:8px 0 80px;font-size:.84rem}
     .sidebar-header{padding:12px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);margin-bottom:6px;cursor:pointer;text-decoration:none;color:var(--text)}
-    .sidebar-cat{padding:6px 16px 2px;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:10px;font-weight:600}
+    .sidebar-cat{padding:6px 16px 2px;font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:10px;font-weight:600;cursor:pointer;user-select:none;display:flex;align-items:center;gap:4px}
+    .sidebar-cat:hover{color:var(--text)}
+    .cat-arrow{font-size:.55rem;transition:transform .2s}
+    .cat-arrow.rotated{transform:rotate(90deg)}
+    .sidebar-items.hidden{display:none}
     .sidebar-link{display:flex;align-items:center;gap:6px;padding:5px 16px;color:var(--text);text-decoration:none;transition:all .12s;cursor:pointer;font-size:.82rem;border-left:2px solid transparent}
     .sidebar-link:hover{background:var(--code-bg);border-left-color:var(--border)}
     .sidebar-link.active{background:var(--code-bg);border-left-color:var(--accent);color:var(--accent);font-weight:600}
@@ -169,6 +173,27 @@
     </div>
   </section>
 
+  <!-- Premium Tools — own products first -->
+  <section class="section" id="scripts" style="margin-top:0;padding-top:0">
+    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">My Tools</span></h2>
+    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
+
+    <!-- Bundle Deal -->
+    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
+      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
+      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
+      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
+        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
+        <span style="font-size:2rem;font-weight:800">$22.00</span>
+        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
+      </div>
+      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
+    </div>
+
+    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
+  </section>
+
   <!-- Featured Tools -->
   <section style="max-width:960px;margin:0 auto;padding:20px 20px 0">
     <h2 class="sec-title">✨ <span data-i18n="featured_title">Featured Tools</span></h2>
@@ -191,26 +216,6 @@
         <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_sports">Track & field meet scoring.</p>
       </div>
     </div>
-  </section>
-
-  <section class="section" id="scripts">
-    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">Premium Tools</span></h2>
-    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
-
-    <!-- Bundle Deal -->
-    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
-      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
-      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
-      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
-        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
-        <span style="font-size:2rem;font-weight:800">$22.00</span>
-        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
-      </div>
-      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
-    </div>
-
-    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
   </section>
 
   <section class="section" id="online">
@@ -353,7 +358,7 @@ var I18N = {
     footer_about: 'About', footer_privacy: 'Privacy',
     about_content: '<h2>About slowbuild</h2><p>slowbuild is a collection of free, no-sign-up micro tools. Built one at a time, with care. No tracking, no ads (yet), no nonsense.</p><p>Every tool runs entirely in your browser. Your data never leaves your device.</p><p>I\'m an indie maker who writes scripts to solve real problems. slowbuild is where I share them with the world.</p><p>Got a tool idea? <a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">Request it →</a></p>',
     privacy_content: '<h2>Privacy Policy</h2><p><strong>Last updated:</strong> June 2026</p><p>slowbuild does not collect, store, or share any personal data. All tools run locally in your browser.</p><ul><li><strong>No cookies</strong> — except localStorage to remember your language preference.</li><li><strong>No analytics</strong> — we don\'t track you.</li><li><strong>No data upload</strong> — everything stays on your device.</li><li><strong>No third-party scripts</strong> — this site loads nothing external.</li></ul><p>If this changes in the future, this page will be updated. Questions? Contact: hello@slowbuild.top</p>',
-    sec_scripts: '📦 Scripts', scripts_desc: 'Download & run Python scripts on your own machine.',
+    sec_scripts: '📦 My Tools', scripts_desc: 'Standalone EXE files — my own tools, no install needed.',
     sec_online: '☁️ Online Convert', online_desc: 'Upload a file → our server converts → download result.',
     online_convert: 'Convert', online_word2pdf_desc: 'Upload .docx, get PDF. Max 20MB.',
     online_dedup_desc: 'Upload a .zip of files. See which are duplicates.',
@@ -466,7 +471,7 @@ var I18N = {
     feat_sports_name: '运动会统计', feat_sports: '田径运动会自动计分排名。',
     tag_more: '还有更多',
     sec_tools: '工具', tools_desc: '点开即用 — 全部在浏览器本地运行，不上传数据。',
-    sec_scripts: '📦 脚本下载', scripts_desc: '下载 Python 脚本，在自己的电脑上运行。',
+    sec_scripts: '📦 我的工具', scripts_desc: '独立 EXE 文件 — 我自己写的工具，无需安装，双击即用。',
     sec_online: '☁️ 在线转换', online_desc: '上传文件 → 服务器转换 → 下载结果。由你自己的虚拟机驱动。',
     online_convert: '转换', online_word2pdf_desc: '上传 .docx，返回 PDF。最大 20MB。',
     online_dedup_desc: '上传 .zip 文件包。查看哪些是重复的。',
@@ -587,7 +592,7 @@ var I18N = {
     feat_sports_name: '運動會統計', feat_sports: '田徑運動會自動計分排名。',
     tag_more: '還有更多',
     sec_tools: '工具', tools_desc: '點開即用 — 全部在瀏覽器本機運行，不上傳資料。',
-    sec_scripts: '📦 指令碼下載', scripts_desc: '下載 Python 指令碼，在自己的電腦上執行。',
+    sec_scripts: '📦 我的工具', scripts_desc: '獨立 EXE 檔案 — 我自己寫的工具，無需安裝，雙擊即用。',
     sec_online: '☁️ 線上轉換', online_desc: '上傳檔案 → 伺服器轉換 → 下載結果。由你自己的虛擬機驅動。',
     online_convert: '轉換', online_word2pdf_desc: '上傳 .docx，返回 PDF。最大 20MB。',
     online_dedup_desc: '上傳 .zip 檔案包。查看哪些是重複的。',
@@ -1748,8 +1753,9 @@ function drawGomoku(){
     else if(_gmkB[r][cl]===2){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(cl*s+s/2,r*s+s/2,s*.4,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#333';ctx.lineWidth=1;ctx.stroke()}
   }
 }
-function gmkClick(e){var c=document.getElementById('gmkCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;gmkPlace(x,y)}
-function gmkTouch(e){e.preventDefault();var c=document.getElementById('gmkCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;gmkPlace(x,y)}
+function _canvasXY(e,c){var r=c.getBoundingClientRect(),cx=e.clientX||(e.touches?e.touches[0].clientX:0),cy=e.clientY||(e.touches?e.touches[0].clientY:0);return [(cx-r.left)*(c.width/r.width),(cy-r.top)*(c.height/r.height)]}
+function gmkClick(e){var xy=_canvasXY(e,document.getElementById('gmkCanvas'));gmkPlace(xy[0],xy[1])}
+function gmkTouch(e){e.preventDefault();var xy=_canvasXY(e,document.getElementById('gmkCanvas'));gmkPlace(xy[0],xy[1])}
 function gmkPlace(x,y){
   if(_gmkOver)return;var s=_gmkCell,cl=Math.floor(x/s),r=Math.floor(y/s);if(cl<0||cl>=_gmkSize||r<0||r>=_gmkSize||_gmkB[r][cl]!==0)return;
   _gmkB[r][cl]=_gmkTurn;
@@ -1796,8 +1802,8 @@ function drawChess(){
     ctx.fillStyle='#000';ctx.font='bold 16px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(_chsNames[p]||p,x,y);
   }
 }
-function chsClick(e){var c=document.getElementById('chsCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;chsPlace(x,y)}
-function chsTouch(e){e.preventDefault();var c=document.getElementById('chsCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;chsPlace(x,y)}
+function chsClick(e){var xy=_canvasXY(e,document.getElementById('chsCanvas'));chsPlace(xy[0],xy[1])}
+function chsTouch(e){e.preventDefault();var xy=_canvasXY(e,document.getElementById('chsCanvas'));chsPlace(xy[0],xy[1])}
 function chsPlace(x,y){
   if(_chsOver)return;var cl=Math.round((x-25)/50),r=Math.round((y-75)/50);if(cl<0||cl>8||r<0||r>9)return;
   if(_chsSel){
@@ -1853,8 +1859,8 @@ function drawGo(){
     else if(_goB[r][cl]===2){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(cl*s+25,r*s+25,s*.4,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#000';ctx.lineWidth=1;ctx.stroke()}
   }
 }
-function goClick(e){var c=document.getElementById('goCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;goPlace(x,y)}
-function goTouch(e){e.preventDefault();var c=document.getElementById('goCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;goPlace(x,y)}
+function goClick(e){var xy=_canvasXY(e,document.getElementById('goCanvas'));goPlace(xy[0],xy[1])}
+function goTouch(e){e.preventDefault();var xy=_canvasXY(e,document.getElementById('goCanvas'));goPlace(xy[0],xy[1])}
 function goPlace(x,y){
   if(_goOver)return;var s=50,cl=Math.round((x-25)/s),r=Math.round((y-25)/s);if(cl<0||cl>=9||r<0||r>=9||_goB[r][cl]!==0)return;
   _goB[r][cl]=_goTurn;
@@ -1924,18 +1930,7 @@ function copyPalette(){if(window._palette)navigator.clipboard.writeText(window._
 // ═══════════════════════════════════════════
 var SIDEBAR = {
   'en': [
-    {cat:'🚀 slowbuild Original', items:[
-      {id:'gomoku',icon:'⚫',label:'Gomoku'},
-      {id:'chess',icon:'♟️',label:'Chinese Chess'},
-      {id:'go',icon:'⚪',label:'Go 9\u00d79'},
-      {id:'game2048',icon:'🎮',label:'2048'},
-      {id:'tictactoe',icon:'⭕',label:'Tic-Tac-Toe'},
-      {id:'sports',icon:'🏃',label:'Sports Scorer'},
-      {id:'reaction',icon:'⚡',label:'Reaction Test'},
-      {id:'coinflip',icon:'🪙',label:'Coin Flip'},
-      {id:'dice',icon:'🎲',label:'Dice Roller'}
-    ]},
-    {cat:'📝 Text', items:[
+    {cat:'📝 Text', open:true, items:[
       {id:'json',icon:'{ }',label:'JSON Formatter'},
       {id:'regex',icon:'🔍',label:'Regex Tester'},
       {id:'count',icon:'📊',label:'Word Counter'},
@@ -1945,7 +1940,7 @@ var SIDEBAR = {
       {id:'htmlpreview',icon:'👁️',label:'HTML Preview'},
       {id:'mdpreview',icon:'📝',label:'Markdown Preview'}
     ]},
-    {cat:'🔐 Encode & Crypto', items:[
+    {cat:'🔐 Encode & Crypto', open:true, items:[
       {id:'url',icon:'🔗',label:'URL Encode/Decode'},
       {id:'base64',icon:'🔐',label:'Base64 Encode/Decode'},
       {id:'img2base64',icon:'🖼️',label:'Image to Base64'},
@@ -1953,26 +1948,68 @@ var SIDEBAR = {
       {id:'sha',icon:'🔏',label:'SHA Hasher'},
       {id:'morse',icon:'📡',label:'Morse Code'}
     ]},
-    {cat:'🎲 Generators', items:[
+    {cat:'🎲 Generators', open:true, items:[
       {id:'uuid',icon:'🎲',label:'UUID Generator'},
       {id:'password',icon:'🔑',label:'Password Gen'},
       {id:'random',icon:'🎯',label:'Random Number'},
       {id:'qrcode',icon:'📱',label:'QR Code'},
       {id:'time',icon:'🕐',label:'Timestamp Conv'}
     ]},
-    {cat:'⏱️ Time', items:[
+    {cat:'⏱️ Time', open:true, items:[
       {id:'stopwatch',icon:'⏱️',label:'Stopwatch'}
     ]},
-    {cat:'🎨 Color', items:[
+    {cat:'🎨 Color', open:true, items:[
       {id:'color',icon:'🎨',label:'Color Converter'},
       {id:'palette',icon:'🌈',label:'Color Palette'}
+    ]},
+    {cat:'🎮 Games', open:false, items:[
+      {id:'gomoku',icon:'⚫',label:'Gomoku'},
+      {id:'chess',icon:'♟️',label:'Chinese Chess'},
+      {id:'go',icon:'⚪',label:'Go 9\u00d79'},
+      {id:'game2048',icon:'🎮',label:'2048'},
+      {id:'tictactoe',icon:'⭕',label:'Tic-Tac-Toe'},
+      {id:'reaction',icon:'⚡',label:'Reaction Test'},
+      {id:'coinflip',icon:'🪙',label:'Coin Flip'},
+      {id:'dice',icon:'🎲',label:'Dice Roller'}
     ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'Shop',action:function(){showPage('shop')}},
     {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
   ],
   'zh-CN': [
-    {cat:'🚀 slowbuild 原创', items:[
+    {cat:'📝 文本工具', open:true, items:[
+      {id:'json',icon:'{ }',label:'JSON 格式化'},
+      {id:'regex',icon:'🔍',label:'正则测试'},
+      {id:'count',icon:'📊',label:'字数统计'},
+      {id:'diff',icon:'≠',label:'文本对比'},
+      {id:'case',icon:'Aa',label:'大小写转换'},
+      {id:'filename',icon:'📁',label:'文件名提取'},
+      {id:'htmlpreview',icon:'👁️',label:'HTML 预览'},
+      {id:'mdpreview',icon:'📝',label:'Markdown 预览'}
+    ]},
+    {cat:'🔐 编码加密', open:true, items:[
+      {id:'url',icon:'🔗',label:'URL 编解码'},
+      {id:'base64',icon:'🔐',label:'Base64 编解码'},
+      {id:'img2base64',icon:'🖼️',label:'图片转Base64'},
+      {id:'md5',icon:'🔐',label:'MD5 哈希'},
+      {id:'sha',icon:'🔏',label:'SHA 哈希'},
+      {id:'morse',icon:'📡',label:'摩斯电码'}
+    ]},
+    {cat:'🎲 生成器', open:true, items:[
+      {id:'uuid',icon:'🎲',label:'UUID 生成器'},
+      {id:'password',icon:'🔑',label:'密码生成器'},
+      {id:'random',icon:'🎯',label:'随机数生成'},
+      {id:'qrcode',icon:'📱',label:'二维码生成'},
+      {id:'time',icon:'🕐',label:'时间戳转换'}
+    ]},
+    {cat:'⏱️ 时间', open:true, items:[
+      {id:'stopwatch',icon:'⏱️',label:'秒表计时'}
+    ]},
+    {cat:'🎨 颜色', open:true, items:[
+      {id:'color',icon:'🎨',label:'颜色转换器'},
+      {id:'palette',icon:'🌈',label:'调色板'}
+    ]},
+    {cat:'🎮 游戏', open:false, items:[
       {id:'gomoku',icon:'⚫',label:'五子棋'},
       {id:'chess',icon:'♟️',label:'中国象棋'},
       {id:'go',icon:'⚪',label:'围棋 9\u00d79'},
@@ -1983,44 +2020,44 @@ var SIDEBAR = {
       {id:'coinflip',icon:'🪙',label:'抛硬币'},
       {id:'dice',icon:'🎲',label:'掷骰子'}
     ]},
-    {cat:'📝 文本工具', items:[
-      {id:'json',icon:'{ }',label:'JSON 格式化'},
-      {id:'regex',icon:'🔍',label:'正则测试'},
-      {id:'count',icon:'📊',label:'字数统计'},
-      {id:'diff',icon:'≠',label:'文本对比'},
-      {id:'case',icon:'Aa',label:'大小写转换'},
-      {id:'filename',icon:'📁',label:'文件名提取'},
-      {id:'htmlpreview',icon:'👁️',label:'HTML 预览'},
-      {id:'mdpreview',icon:'📝',label:'Markdown 预览'}
-    ]},
-    {cat:'🔐 编码加密', items:[
-      {id:'url',icon:'🔗',label:'URL 编解码'},
-      {id:'base64',icon:'🔐',label:'Base64 编解码'},
-      {id:'img2base64',icon:'🖼️',label:'图片转Base64'},
-      {id:'md5',icon:'🔐',label:'MD5 哈希'},
-      {id:'sha',icon:'🔏',label:'SHA 哈希'},
-      {id:'morse',icon:'📡',label:'摩斯电码'}
-    ]},
-    {cat:'🎲 生成器', items:[
-      {id:'uuid',icon:'🎲',label:'UUID 生成器'},
-      {id:'password',icon:'🔑',label:'密码生成器'},
-      {id:'random',icon:'🎯',label:'随机数生成'},
-      {id:'qrcode',icon:'📱',label:'二维码生成'},
-      {id:'time',icon:'🕐',label:'时间戳转换'}
-    ]},
-    {cat:'⏱️ 时间', items:[
-      {id:'stopwatch',icon:'⏱️',label:'秒表计时'}
-    ]},
-    {cat:'🎨 颜色', items:[
-      {id:'color',icon:'🎨',label:'颜色转换器'},
-      {id:'palette',icon:'🌈',label:'调色板'}
-    ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
     {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
   ],
   'zh-TW': [
-    {cat:'🚀 slowbuild 原創', items:[
+    {cat:'📝 文字工具', open:true, items:[
+      {id:'json',icon:'{ }',label:'JSON 格式化'},
+      {id:'regex',icon:'🔍',label:'正則測試'},
+      {id:'count',icon:'📊',label:'字數統計'},
+      {id:'diff',icon:'≠',label:'文字對比'},
+      {id:'case',icon:'Aa',label:'大小寫轉換'},
+      {id:'filename',icon:'📁',label:'檔名提取'},
+      {id:'htmlpreview',icon:'👁️',label:'HTML 預覽'},
+      {id:'mdpreview',icon:'📝',label:'Markdown 預覽'}
+    ]},
+    {cat:'🔐 編碼加密', open:true, items:[
+      {id:'url',icon:'🔗',label:'URL 編解碼'},
+      {id:'base64',icon:'🔐',label:'Base64 編解碼'},
+      {id:'img2base64',icon:'🖼️',label:'圖片轉Base64'},
+      {id:'md5',icon:'🔐',label:'MD5 雜湊'},
+      {id:'sha',icon:'🔏',label:'SHA 雜湊'},
+      {id:'morse',icon:'📡',label:'摩斯電碼'}
+    ]},
+    {cat:'🎲 產生器', open:true, items:[
+      {id:'uuid',icon:'🎲',label:'UUID 產生器'},
+      {id:'password',icon:'🔑',label:'密碼產生器'},
+      {id:'random',icon:'🎯',label:'隨機數產生'},
+      {id:'qrcode',icon:'📱',label:'QR Code 產生'},
+      {id:'time',icon:'🕐',label:'時間戳轉換'}
+    ]},
+    {cat:'⏱️ 時間', open:true, items:[
+      {id:'stopwatch',icon:'⏱️',label:'碼表計時'}
+    ]},
+    {cat:'🎨 顏色', open:true, items:[
+      {id:'color',icon:'🎨',label:'顏色轉換器'},
+      {id:'palette',icon:'🌈',label:'調色盤'}
+    ]},
+    {cat:'🎮 遊戲', open:false, items:[
       {id:'gomoku',icon:'⚫',label:'五子棋'},
       {id:'chess',icon:'♟️',label:'中國象棋'},
       {id:'go',icon:'⚪',label:'圍棋 9\u00d79'},
@@ -2031,38 +2068,6 @@ var SIDEBAR = {
       {id:'coinflip',icon:'🪙',label:'擲硬幣'},
       {id:'dice',icon:'🎲',label:'擲骰子'}
     ]},
-    {cat:'📝 文字工具', items:[
-      {id:'json',icon:'{ }',label:'JSON 格式化'},
-      {id:'regex',icon:'🔍',label:'正則測試'},
-      {id:'count',icon:'📊',label:'字數統計'},
-      {id:'diff',icon:'≠',label:'文字對比'},
-      {id:'case',icon:'Aa',label:'大小寫轉換'},
-      {id:'filename',icon:'📁',label:'檔名提取'},
-      {id:'htmlpreview',icon:'👁️',label:'HTML 預覽'},
-      {id:'mdpreview',icon:'📝',label:'Markdown 預覽'}
-    ]},
-    {cat:'🔐 編碼加密', items:[
-      {id:'url',icon:'🔗',label:'URL 編解碼'},
-      {id:'base64',icon:'🔐',label:'Base64 編解碼'},
-      {id:'img2base64',icon:'🖼️',label:'圖片轉Base64'},
-      {id:'md5',icon:'🔐',label:'MD5 雜湊'},
-      {id:'sha',icon:'🔏',label:'SHA 雜湊'},
-      {id:'morse',icon:'📡',label:'摩斯電碼'}
-    ]},
-    {cat:'🎲 產生器', items:[
-      {id:'uuid',icon:'🎲',label:'UUID 產生器'},
-      {id:'password',icon:'🔑',label:'密碼產生器'},
-      {id:'random',icon:'🎯',label:'隨機數產生'},
-      {id:'qrcode',icon:'📱',label:'QR Code 產生'},
-      {id:'time',icon:'🕐',label:'時間戳轉換'}
-    ]},
-    {cat:'⏱️ 時間', items:[
-      {id:'stopwatch',icon:'⏱️',label:'碼表計時'}
-    ]},
-    {cat:'🎨 顏色', items:[
-      {id:'color',icon:'🎨',label:'顏色轉換器'},
-      {id:'palette',icon:'🌈',label:'調色盤'}
-    ]},
     {type:'spacer'},
     {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
     {type:'link',id:'about',icon:'📄',label:'關於',action:function(){showPage('about')}}
@@ -2072,19 +2077,31 @@ var SIDEBAR = {
 function renderSidebar(){
   var data = SIDEBAR[lang] || SIDEBAR['en'];
   var h = '';
-  data.forEach(function(section){
+  data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
     if(section.type==='link'){
       h += '<a class="sidebar-link" onclick="highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
       return;
     }
-    h += '<div class="sidebar-cat">'+section.cat+'</div>';
+    var catId = 'scat-'+i;
+    h += '<div class="sidebar-cat" id="'+catId+'">'+
+      '<span class="cat-arrow'+(section.open===false?' rotated':'')+'">▶</span>'+
+      section.cat+'</div>';
+    h += '<div class="sidebar-items'+(section.open===false?' hidden':'')+'" id="'+catId+'-items">';
     section.items.forEach(function(item){
       h += '<a class="sidebar-link" onclick="highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
     });
+    h += '</div>';
   });
   document.getElementById('sidebarContent').innerHTML = h;
   document.getElementById('sidebar').classList.remove('open');
+  // Wire accordion toggle
+  document.querySelectorAll('.sidebar-cat').forEach(function(cat){ cat.onclick = function(){
+    var items = document.getElementById(cat.id+'-items');
+    var arrow = cat.querySelector('.cat-arrow');
+    if(items){ items.classList.toggle('hidden'); }
+    if(arrow){ arrow.classList.toggle('rotated'); }
+  }});
 }
 
 function highlightSidebar(id){
