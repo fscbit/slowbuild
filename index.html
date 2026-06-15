@@ -449,7 +449,10 @@ var I18N = {
       {id:'palette',icon:'🌈',name:'Color Palette',desc:'Generate beautiful color palettes. Copy hex values.'},
       {id:'coinflip',icon:'🪙',name:'Coin Flip',desc:'Heads or tails? Flip a coin and find out.'},
       {id:'dice',icon:'🎲',name:'Dice Roller',desc:'Roll one or more dice. Perfect for board games.'},
-      {id:'tictactoe',icon:'⭕',name:'Tic-Tac-Toe',desc:'Classic XO game. Play against a friend on the same device.'}
+      {id:'tictactoe',icon:'⭕',name:'Tic-Tac-Toe',desc:'Classic XO game. Play against a friend on the same device.'},
+      {id:'gomoku',icon:'⚫',name:'Gomoku',desc:'Five in a row. Classic board game, 15×15.'},
+      {id:'chess',icon:'♟️',name:'Chinese Chess',desc:'Two-player Xiangqi on the same screen.'},
+      {id:'go',icon:'⚪',name:'Go (9×9)',desc:'Simplified Go. Capture territory, 9×9 board.'}
     ]
   },
   'zh-CN': {
@@ -567,7 +570,10 @@ var I18N = {
       {id:'palette',icon:'🌈',name:'调色板',desc:'生成漂亮的配色方案，一键复制色值。'},
       {id:'coinflip',icon:'🪙',name:'抛硬币',desc:'正面还是反面？抛个硬币看看。'},
       {id:'dice',icon:'🎲',name:'掷骰子',desc:'掷一个或多个骰子，棋牌游戏好帮手。'},
-      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'经典 XO 三连棋。双人对战，同屏玩耍。'}
+      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'经典 XO 三连棋。双人对战，同屏玩耍。'},
+      {id:'gomoku',icon:'⚫',name:'五子棋',desc:'五子连珠，经典棋类，15×15 棋盘。'},
+      {id:'chess',icon:'♟️',name:'中国象棋',desc:'双人对弈，同屏对局。'},
+      {id:'go',icon:'⚪',name:'围棋 (9×9)',desc:'简易围棋，围地吃子，9×9 棋盘。'}
     ]
   },
   'zh-TW': {
@@ -685,7 +691,10 @@ var I18N = {
       {id:'palette',icon:'🌈',name:'調色盤',desc:'產生漂亮的配色方案，一鍵複製色值。'},
       {id:'coinflip',icon:'🪙',name:'擲硬幣',desc:'正面還是反面？擲個硬幣看看。'},
       {id:'dice',icon:'🎲',name:'擲骰子',desc:'擲一個或多個骰子，棋牌遊戲好幫手。'},
-      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'經典 XO 三連棋。雙人對戰，同屏遊玩。'}
+      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'經典 XO 三連棋。雙人對戰，同屏遊玩。'},
+      {id:'gomoku',icon:'⚫',name:'五子棋',desc:'五子連珠，經典棋類，15×15 棋盤。'},
+      {id:'chess',icon:'♟️',name:'中國象棋',desc:'雙人對弈，同屏對局。'},
+      {id:'go',icon:'⚪',name:'圍棋 (9×9)',desc:'簡易圍棋，圍地吃子，9×9 棋盤。'}
     ]
   }
 };
@@ -1001,6 +1010,30 @@ function renderToolContent(id) {
         '<button class="btn small" onclick="initTTT()" style="margin-top:12px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
       tc.innerHTML = html;
       initTTT();
+      break;
+    case 'gomoku':
+      html = makeToolPage('⚫ ' + L.tools[28].name,
+        '<div style="text-align:center"><div id="gmkStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(lang==='zh-CN'?'黑子先手':'Black first')+'</div>'+
+        '<div style="overflow-x:auto"><canvas id="gmkCanvas" width="450" height="450" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="gmkClick(event)" ontouchstart="gmkTouch(event)"></canvas></div>'+
+        '<button class="btn small" onclick="initGomoku()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+      tc.innerHTML = html;
+      initGomoku();
+      break;
+    case 'chess':
+      html = makeToolPage('♟️ Chinese Chess',
+        '<div style="text-align:center"><div id="chsStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">'+(lang==='zh-CN'?'红方先行':'Red first')+'</div>'+
+        '<div style="overflow-x:auto"><canvas id="chsCanvas" width="450" height="500" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="chsClick(event)" ontouchstart="chsTouch(event)"></canvas></div>'+
+        '<button class="btn small" onclick="initChess()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+      tc.innerHTML = html;
+      initChess();
+      break;
+    case 'go':
+      html = makeToolPage('⚪ Go 9×9',
+        '<div style="text-align:center"><div id="goStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(lang==='zh-CN'?'黑子先手':'Black first')+'</div>'+
+        '<div style="overflow-x:auto"><canvas id="goCanvas" width="450" height="450" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="goClick(event)" ontouchstart="goTouch(event)"></canvas></div>'+
+        '<button class="btn small" onclick="initGo()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+      tc.innerHTML = html;
+      initGo();
       break;
   }
   tc.innerHTML = html;
@@ -1702,6 +1735,158 @@ function checkTTTWin(){
   return _tttBoard.every(function(c){return c!==''})?0:null;
 }
 
+// Gomoku 15x15
+var _gmkB=[],_gmkTurn=1,_gmkOver=false,_gmkSize=15,_gmkCell=30;
+function initGomoku(){var c=document.getElementById('gmkCanvas');if(!c)return;_gmkB=Array.from({length:_gmkSize},function(){return Array(_gmkSize).fill(0)});_gmkTurn=1;_gmkOver=false;document.getElementById('gmkStatus').textContent='⚫ '+(lang==='zh-CN'?'黑子先手':'Black first');drawGomoku()}
+function drawGomoku(){
+  var c=document.getElementById('gmkCanvas');if(!c)return;var ctx=c.getContext('2d'),s=_gmkCell;
+  ctx.fillStyle='#dcb35c';ctx.fillRect(0,0,c.width,c.height);
+  ctx.strokeStyle='#333';ctx.lineWidth=.8;
+  for(var i=0;i<_gmkSize;i++){ctx.beginPath();ctx.moveTo(s/2,i*s+s/2);ctx.lineTo((_gmkSize-.5)*s,i*s+s/2);ctx.stroke();ctx.beginPath();ctx.moveTo(i*s+s/2,s/2);ctx.lineTo(i*s+s/2,(_gmkSize-.5)*s);ctx.stroke()}
+  for(var r=0;r<_gmkSize;r++)for(var cl=0;cl<_gmkSize;cl++){
+    if(_gmkB[r][cl]===1){ctx.fillStyle='#000';ctx.beginPath();ctx.arc(cl*s+s/2,r*s+s/2,s*.4,0,Math.PI*2);ctx.fill()}
+    else if(_gmkB[r][cl]===2){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(cl*s+s/2,r*s+s/2,s*.4,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#333';ctx.lineWidth=1;ctx.stroke()}
+  }
+}
+function gmkClick(e){var c=document.getElementById('gmkCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;gmkPlace(x,y)}
+function gmkTouch(e){e.preventDefault();var c=document.getElementById('gmkCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;gmkPlace(x,y)}
+function gmkPlace(x,y){
+  if(_gmkOver)return;var s=_gmkCell,cl=Math.floor(x/s),r=Math.floor(y/s);if(cl<0||cl>=_gmkSize||r<0||r>=_gmkSize||_gmkB[r][cl]!==0)return;
+  _gmkB[r][cl]=_gmkTurn;
+  if(checkGomoku(r,cl)){
+    _gmkOver=true;document.getElementById('gmkStatus').innerHTML=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'赢了！':'Wins!')+' 🎉';
+    drawGomoku();return;
+  }
+  _gmkTurn=_gmkTurn===1?2:1;document.getElementById('gmkStatus').textContent=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合':"'s turn");
+  drawGomoku();
+}
+function checkGomoku(r,cl){
+  var p=_gmkB[r][cl],dirs=[[1,0],[0,1],[1,1],[1,-1]];
+  for(var d=0;d<4;d++){
+    var cnt=1,dr=dirs[d][0],dc=dirs[d][1];
+    for(var i=1;i<5;i++){var nr=r+dr*i,nc=cl+dc*i;if(nr<0||nr>=_gmkSize||nc<0||nc>=_gmkSize||_gmkB[nr][nc]!==p)break;cnt++}
+    for(var i=1;i<5;i++){var nr=r-dr*i,nc=cl-dc*i;if(nr<0||nr>=_gmkSize||nc<0||nc>=_gmkSize||_gmkB[nr][nc]!==p)break;cnt++}
+    if(cnt>=5)return true;
+  }
+  return false;
+}
+
+// Chinese Chess
+var _chsB=[],_chsTurn='r',_chsSel=null,_chsOver=false;
+var _chsInit=[['rR','rN','rB','rA','rK','rA','rB','rN','rR'],Array(9).fill(''),['','rC','','','','','','rC',''],['rP','','rP','','rP','','rP','','rP'],Array(9).fill(''),Array(9).fill(''),['bP','','bP','','bP','','bP','','bP'],['','bC','','','','','','bC',''],Array(9).fill(''),['bR','bN','bB','bA','bK','bA','bB','bN','bR']];
+var _chsNames={rK:'帅',rA:'仕',rB:'相',rN:'馬',rR:'車',rC:'炮',rP:'兵',bK:'将',bA:'士',bB:'象',bN:'馬',bR:'車',bC:'砲',bP:'卒'};
+function initChess(){_chsB=_chsInit.map(function(r){return r.slice()});_chsTurn='r';_chsSel=null;_chsOver=false;document.getElementById('chsStatus').textContent=lang==='zh-CN'?'红方先行':'Red first';drawChess()}
+function drawChess(){
+  var c=document.getElementById('chsCanvas');if(!c)return;var ctx=c.getContext('2d'),w=c.width,h=c.height;
+  ctx.fillStyle='#f5deb3';ctx.fillRect(0,0,w,h);
+  ctx.strokeStyle='#333';ctx.lineWidth=.8;
+  for(var i=0;i<8;i++){ctx.beginPath();ctx.moveTo(25,i*50+75);ctx.lineTo(425,i*50+75);ctx.stroke()}
+  for(var i=0;i<9;i++){ctx.beginPath();ctx.moveTo(i*50+25,75);ctx.lineTo(i*50+25,425);ctx.stroke();if(i>0&&i<8){ctx.beginPath();ctx.moveTo(i*50+25,75);ctx.lineTo(i*50+25,425);ctx.stroke()}}
+  ctx.strokeRect(25,75,400,350);
+  // Palace diagonals
+  ctx.beginPath();ctx.moveTo(175,75);ctx.lineTo(275,175);ctx.stroke();ctx.beginPath();ctx.moveTo(275,75);ctx.lineTo(175,175);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(175,375);ctx.lineTo(275,275);ctx.stroke();ctx.beginPath();ctx.moveTo(275,375);ctx.lineTo(175,275);ctx.stroke();
+  // Draw pieces
+  for(var r=0;r<10;r++)for(var cl=0;cl<9;cl++){
+    var p=_chsB[r][cl];if(!p)continue;
+    var x=cl*50+25,y=r*50+75;
+    ctx.fillStyle=_chsSel&&_chsSel[0]===r&&_chsSel[1]===cl?'#ffeb3b':p[0]==='r'?'#fdd':p[0]==='b'?'#ddf':'#fff';
+    ctx.strokeStyle='#333';ctx.lineWidth=2;
+    ctx.beginPath();ctx.arc(x,y,20,0,Math.PI*2);ctx.fill();ctx.stroke();
+    ctx.fillStyle='#000';ctx.font='bold 16px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(_chsNames[p]||p,x,y);
+  }
+}
+function chsClick(e){var c=document.getElementById('chsCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;chsPlace(x,y)}
+function chsTouch(e){e.preventDefault();var c=document.getElementById('chsCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;chsPlace(x,y)}
+function chsPlace(x,y){
+  if(_chsOver)return;var cl=Math.round((x-25)/50),r=Math.round((y-75)/50);if(cl<0||cl>8||r<0||r>9)return;
+  if(_chsSel){
+    var sr=_chsSel[0],sc=_chsSel[1],p=_chsB[sr][sc];
+    if(p&&p[0]===_chsTurn&&chsLegal(sr,sc,r,cl)){
+      _chsB[r][cl]=p;_chsB[sr][sc]='';
+      if(_chsB[r][cl]==='bK'||_chsB[r][cl]==='rK'){
+        var found=false;
+        for(var i=0;i<10;i++)for(var j=0;j<9;j++){if(_chsB[i][j]==='bK'||_chsB[i][j]==='rK'){found=false} }
+        // Check if king captured
+        var hasKing=p[0]==='r'?false:false;
+        for(var i=0;i<10;i++)for(var j=0;j<9;j++)if(_chsB[i][j]&&_chsB[i][j][0]!==p[0]&&(_chsB[i][j]==='bK'||_chsB[i][j]==='rK'))hasKing=true;
+        if(!hasKing){_chsOver=true;document.getElementById('chsStatus').innerHTML=(p[0]==='r'?'🔴':'🔵')+' '+(lang==='zh-CN'?'赢了！':'Wins!')+' 🎉';_chsSel=null;drawChess();return}
+      }
+      _chsTurn=_chsTurn==='r'?'b':'r';document.getElementById('chsStatus').textContent=(_chsTurn==='r'?'🔴':lang==='zh-CN'?'🔵 黑方':'🔵 Black')+(lang==='zh-CN'?' 的回合':"'s turn");
+    }
+    _chsSel=null;drawChess();return;
+  }
+  if(_chsB[r][cl]&&_chsB[r][cl][0]===_chsTurn){_chsSel=[r,cl];drawChess()}
+}
+function chsLegal(sr,sc,tr,tc){
+  var p=_chsB[sr][sc],t=_chsB[tr][tc];if(t&&t[0]===p[0])return false;
+  var dr=Math.abs(tr-sr),dc=Math.abs(tc-sc),dirR=tr>sr?1:-1,dirC=tc>sc?1:-1;
+  switch(p[1]){
+    case 'K': return dr+dc===1&&tc>=3&&tc<=5&&((p[0]==='r'&&tr>=7&&tr<=9)||(p[0]==='b'&&tr>=0&&tr<=2));
+    case 'A': return dr===1&&dc===1&&tc>=3&&tc<=5&&((p[0]==='r'&&tr>=7&&tr<=9)||(p[0]==='b'&&tr>=0&&tr<=2));
+    case 'B': return dr===2&&dc===2&&tc>=0&&tc<=8&&((p[0]==='r'&&tr>=5)||(p[0]==='b'&&tr<=4))&&!_chsB[sr+dirR][sc+dirC];
+    case 'N': return(dr===2&&dc===1)||(dr===1&&dc===2);
+    case 'R': return(sr===tr&&chsClearRay(sr,sc,tr,tc,true))||(sc===tc&&chsClearRay(sr,sc,tr,tc,false));
+    case 'C':
+      if(sr===tr||sc===tc){var cnt=-1;if(sr===tr){for(var i=Math.min(sc,tc);i<=Math.max(sc,tc);i++)if(_chsB[sr][i])cnt++}else{for(var i=Math.min(sr,tr);i<=Math.max(sr,tr);i++)if(_chsB[i][sc])cnt++}if(t)return cnt===1;return cnt===0}else return false;
+    case 'P': if(p[0]==='r')return(tr===sr-1&&tc===sc)||(sr>=5&&tr>=5&&tr===sr&&dc===1);else return(tr===sr+1&&tc===sc)||(sr<=4&&tr<=4&&tr===sr&&dc===1);
+  }
+  return false;
+}
+function chsClearRay(r1,c1,r2,c2,horiz){
+  var min=horiz?Math.min(c1,c2):Math.min(r1,r2),max=horiz?Math.max(c1,c2):Math.max(r1,r2);
+  for(var i=min+1;i<max;i++){if(horiz?_chsB[r1][i]:_chsB[i][c1])return false}return true;
+}
+
+// Go 9x9
+var _goB=[],_goTurn=1,_goOver=false,_goPass=0,_goPrisoners=[0,0];
+function initGo(){_goB=Array.from({length:9},function(){return Array(9).fill(0)});_goTurn=1;_goOver=false;_goPass=0;_goPrisoners=[0,0];document.getElementById('goStatus').textContent='⚫ '+(lang==='zh-CN'?'黑子先手':'Black first');drawGo()}
+function drawGo(){
+  var c=document.getElementById('goCanvas');if(!c)return;var ctx=c.getContext('2d'),s=50;
+  ctx.fillStyle='#dcb35c';ctx.fillRect(0,0,c.width,c.height);
+  ctx.strokeStyle='#333';ctx.lineWidth=.5;
+  for(var i=0;i<9;i++){ctx.beginPath();ctx.moveTo(25,i*s+25);ctx.lineTo(425,i*s+25);ctx.stroke();ctx.beginPath();ctx.moveTo(i*s+25,25);ctx.lineTo(i*s+25,425);ctx.stroke()}
+  // Star points
+  [[2,2],[2,6],[4,4],[6,2],[6,6]].forEach(function(p){ctx.fillStyle='#000';ctx.beginPath();ctx.arc(p[0]*s+25,p[1]*s+25,3,0,Math.PI*2);ctx.fill()});
+  for(var r=0;r<9;r++)for(var cl=0;cl<9;cl++){
+    if(_goB[r][cl]===1){ctx.fillStyle='#000';ctx.beginPath();ctx.arc(cl*s+25,r*s+25,s*.4,0,Math.PI*2);ctx.fill()}
+    else if(_goB[r][cl]===2){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(cl*s+25,r*s+25,s*.4,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#000';ctx.lineWidth=1;ctx.stroke()}
+  }
+}
+function goClick(e){var c=document.getElementById('goCanvas'),r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;goPlace(x,y)}
+function goTouch(e){e.preventDefault();var c=document.getElementById('goCanvas'),t=e.touches[0],r=c.getBoundingClientRect(),x=t.clientX-r.left,y=t.clientY-r.top;goPlace(x,y)}
+function goPlace(x,y){
+  if(_goOver)return;var s=50,cl=Math.round((x-25)/s),r=Math.round((y-25)/s);if(cl<0||cl>=9||r<0||r>=9||_goB[r][cl]!==0)return;
+  _goB[r][cl]=_goTurn;
+  var captured=goCapture(r,cl,_goTurn);
+  _goPrisoners[_goTurn-1]+=captured;
+  if(captured===0&&goHasLiberties(r,cl)){_goB[r][cl]=0;return} // suicide
+  _goPass=0;_goTurn=_goTurn===1?2:1;
+  document.getElementById('goStatus').textContent=(_goTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合 ':"'s turn ")+'('+(lang==='zh-CN'?'吃子':'Prisoners')+': '+_goPrisoners.join(' vs ')+')';
+  drawGo();
+}
+function goHasLiberties(r,cl){
+  var visited={},stack=[[r,cl]],color=_goB[r][cl];
+  while(stack.length){
+    var p=stack.pop(),rr=p[0],cc=p[1],k=rr+','+cc;if(visited[k])continue;visited[k]=true;
+    if(rr<0||rr>=9||cc<0||cc>=9)continue;
+    if(_goB[rr][cc]===0)return true;
+    if(_goB[rr][cc]===color){stack.push([rr-1,cc]);stack.push([rr+1,cc]);stack.push([rr,cc-1]);stack.push([rr,cc+1])}
+  }
+  return false;
+}
+function goCapture(r,cl,color){
+  var opponent=color===1?2:1,total=0,dirs=[[-1,0],[1,0],[0,-1],[0,1]];
+  for(var d=0;d<4;d++){
+    var nr=r+dirs[d][0],nc=cl+dirs[d][1];
+    if(nr>=0&&nr<9&&nc>=0&&nc<9&&_goB[nr][nc]===opponent&&!goHasLiberties(nr,nc)){
+      var visited={},stack=[[nr,nc]];
+      while(stack.length){var p=stack.pop(),rr=p[0],cc=p[1],k=rr+','+cc;if(visited[k])continue;visited[k]=true;_goB[rr][cc]=0;total++;stack.push([rr-1,cc]);stack.push([rr+1,cc]);stack.push([rr,cc-1]);stack.push([rr,cc+1])}
+    }
+  }
+  return total;
+}
+
 // Reaction
 var _rs='idle',_rt,_rb=Infinity;
 function initReaction(){_rs='idle';document.getElementById('reactionBox').textContent=lang==='zh-CN'?'点击开始':'Click to Start';document.getElementById('reactionBox').style.background='var(--accent)'}
@@ -1740,9 +1925,12 @@ function copyPalette(){if(window._palette)navigator.clipboard.writeText(window._
 var SIDEBAR = {
   'en': [
     {cat:'🚀 slowbuild Original', items:[
-      {id:'sports',icon:'🏃',label:'Sports Scorer'},
+      {id:'gomoku',icon:'⚫',label:'Gomoku'},
+      {id:'chess',icon:'♟️',label:'Chinese Chess'},
+      {id:'go',icon:'⚪',label:'Go 9\u00d79'},
       {id:'game2048',icon:'🎮',label:'2048'},
       {id:'tictactoe',icon:'⭕',label:'Tic-Tac-Toe'},
+      {id:'sports',icon:'🏃',label:'Sports Scorer'},
       {id:'reaction',icon:'⚡',label:'Reaction Test'},
       {id:'coinflip',icon:'🪙',label:'Coin Flip'},
       {id:'dice',icon:'🎲',label:'Dice Roller'}
@@ -1785,9 +1973,12 @@ var SIDEBAR = {
   ],
   'zh-CN': [
     {cat:'🚀 slowbuild 原创', items:[
-      {id:'sports',icon:'🏃',label:'运动会成绩统计'},
+      {id:'gomoku',icon:'⚫',label:'五子棋'},
+      {id:'chess',icon:'♟️',label:'中国象棋'},
+      {id:'go',icon:'⚪',label:'围棋 9\u00d79'},
       {id:'game2048',icon:'🎮',label:'2048'},
       {id:'tictactoe',icon:'⭕',label:'井字棋'},
+      {id:'sports',icon:'🏃',label:'运动会统计'},
       {id:'reaction',icon:'⚡',label:'反应测试'},
       {id:'coinflip',icon:'🪙',label:'抛硬币'},
       {id:'dice',icon:'🎲',label:'掷骰子'}
@@ -1830,9 +2021,12 @@ var SIDEBAR = {
   ],
   'zh-TW': [
     {cat:'🚀 slowbuild 原創', items:[
-      {id:'sports',icon:'🏃',label:'運動會成績統計'},
+      {id:'gomoku',icon:'⚫',label:'五子棋'},
+      {id:'chess',icon:'♟️',label:'中國象棋'},
+      {id:'go',icon:'⚪',label:'圍棋 9\u00d79'},
       {id:'game2048',icon:'🎮',label:'2048'},
       {id:'tictactoe',icon:'⭕',label:'井字棋'},
+      {id:'sports',icon:'🏃',label:'運動會統計'},
       {id:'reaction',icon:'⚡',label:'反應測試'},
       {id:'coinflip',icon:'🪙',label:'擲硬幣'},
       {id:'dice',icon:'🎲',label:'擲骰子'}
