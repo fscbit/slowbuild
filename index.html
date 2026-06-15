@@ -446,7 +446,10 @@ var I18N = {
       {id:'htmlpreview',icon:'👁️',name:'HTML Preview',desc:'Write HTML/CSS/JS and see live preview instantly.'},
       {id:'stopwatch',icon:'⏱️',name:'Stopwatch',desc:'Online stopwatch with laps. Start, stop, reset.'},
       {id:'mdpreview',icon:'📝',name:'Markdown Preview',desc:'Write Markdown and see rendered HTML live.'},
-      {id:'palette',icon:'🌈',name:'Color Palette',desc:'Generate beautiful color palettes. Copy hex values.'}
+      {id:'palette',icon:'🌈',name:'Color Palette',desc:'Generate beautiful color palettes. Copy hex values.'},
+      {id:'coinflip',icon:'🪙',name:'Coin Flip',desc:'Heads or tails? Flip a coin and find out.'},
+      {id:'dice',icon:'🎲',name:'Dice Roller',desc:'Roll one or more dice. Perfect for board games.'},
+      {id:'tictactoe',icon:'⭕',name:'Tic-Tac-Toe',desc:'Classic XO game. Play against a friend on the same device.'}
     ]
   },
   'zh-CN': {
@@ -561,7 +564,10 @@ var I18N = {
       {id:'htmlpreview',icon:'👁️',name:'HTML 预览',desc:'写 HTML/CSS/JS，实时预览效果。'},
       {id:'stopwatch',icon:'⏱️',name:'秒表计时',desc:'在线秒表，支持分段计时。开始/暂停/重置。'},
       {id:'mdpreview',icon:'📝',name:'Markdown 预览',desc:'写 Markdown，即时预览渲染效果。'},
-      {id:'palette',icon:'🌈',name:'调色板',desc:'生成漂亮的配色方案，一键复制色值。'}
+      {id:'palette',icon:'🌈',name:'调色板',desc:'生成漂亮的配色方案，一键复制色值。'},
+      {id:'coinflip',icon:'🪙',name:'抛硬币',desc:'正面还是反面？抛个硬币看看。'},
+      {id:'dice',icon:'🎲',name:'掷骰子',desc:'掷一个或多个骰子，棋牌游戏好帮手。'},
+      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'经典 XO 三连棋。双人对战，同屏玩耍。'}
     ]
   },
   'zh-TW': {
@@ -676,7 +682,10 @@ var I18N = {
       {id:'htmlpreview',icon:'👁️',name:'HTML 預覽',desc:'寫 HTML/CSS/JS，即時預覽效果。'},
       {id:'stopwatch',icon:'⏱️',name:'碼表計時',desc:'線上碼表，支援分段計時。開始/暫停/重置。'},
       {id:'mdpreview',icon:'📝',name:'Markdown 預覽',desc:'寫 Markdown，即時預覽渲染效果。'},
-      {id:'palette',icon:'🌈',name:'調色盤',desc:'產生漂亮的配色方案，一鍵複製色值。'}
+      {id:'palette',icon:'🌈',name:'調色盤',desc:'產生漂亮的配色方案，一鍵複製色值。'},
+      {id:'coinflip',icon:'🪙',name:'擲硬幣',desc:'正面還是反面？擲個硬幣看看。'},
+      {id:'dice',icon:'🎲',name:'擲骰子',desc:'擲一個或多個骰子，棋牌遊戲好幫手。'},
+      {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'經典 XO 三連棋。雙人對戰，同屏遊玩。'}
     ]
   }
 };
@@ -907,10 +916,11 @@ function renderToolContent(id) {
     case 'game2048':
       html = makeToolPage('🎮 2048',
         '<div style="text-align:center"><div style="display:flex;justify-content:center;gap:16px;margin-bottom:12px;align-items:center"><span style="font-weight:600">Score: <strong id="g2048Score">0</strong></span><button class="btn small" onclick="init2048()">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>'+
-        '<div id="g2048Board" style="display:inline-grid;grid-template-columns:repeat(4,80px);gap:8px;background:#bbada0;padding:8px;border-radius:8px"></div>'+
-        '<p style="font-size:.75rem;color:var(--muted);margin-top:12px">'+(lang==='zh-CN'?'方向键或滑动操作':'Arrow keys or swipe')+'</p></div>');
+        '<div id="g2048Board" style="display:inline-grid;grid-template-columns:repeat(4,70px);gap:6px;background:#bbada0;padding:6px;border-radius:8px;touch-action:none"></div>'+
+        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(lang==='zh-CN'?'方向键或滑动':'Arrow keys or swipe')+'</p></div>');
       tc.innerHTML = html;
       init2048();
+      break;
       break;
     case 'reaction':
       html = makeToolPage('⚡ ' + L.tools[18].name,
@@ -966,6 +976,31 @@ function renderToolContent(id) {
         optRow([btn('Generate','genPalette()','primary'),btn('Copy All','copyPalette()')]));
       tc.innerHTML = html;
       genPalette();
+      break;
+    case 'coinflip':
+      html = makeToolPage('🪙 ' + L.tools[25].name,
+        '<div style="text-align:center;padding:30px"><div id="coin" onclick="flipCoin()" style="width:140px;height:140px;border-radius:50%;margin:0 auto 20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#ffd700,#ffaa00);box-shadow:0 4px 12px rgba(0,0,0,.15);transition:transform .3s;user-select:none">🪙</div>'+
+        '<div class="result-bar show" id="coinResult" style="font-size:1.2rem;font-weight:600">'+'Tap to flip'+'</div>'+
+        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">Click the coin to flip</p></div>');
+      break;
+    case 'dice':
+      html = makeToolPage('🎲 ' + L.tools[26].name,
+        '<div style="text-align:center;padding:20px"><div style="display:flex;justify-content:center;gap:8px;margin-bottom:12px;align-items:center">'+
+        '<span style="font-size:.82rem;color:var(--muted)">'+(lang==='zh-CN'?'数量':'Count')+':</span>'+
+        '<input id="diceCount" type="number" value="1" min="1" max="10" style="width:50px;padding:6px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none;text-align:center"></div>'+
+        '<div id="diceResult" style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;min-height:100px;align-items:center;font-size:3rem"></div>'+
+        '<button class="btn primary" onclick="rollDice()" style="margin-top:16px;font-size:1rem;padding:12px 40px">🎲 '+(lang==='zh-CN'?'掷骰子':'Roll')+'</button>'+
+        '<div class="result-bar show" id="diceTotal" style="margin-top:12px;font-weight:600"></div></div>');
+      tc.innerHTML = html;
+      rollDice();
+      break;
+    case 'tictactoe':
+      html = makeToolPage('⭕ ' + L.tools[27].name,
+        '<div style="text-align:center"><div id="tttStatus" style="font-size:1rem;font-weight:600;margin-bottom:12px">⭕ '+(lang==='zh-CN'?'X 先手':'X goes first')+'</div>'+
+        '<div id="tttBoard" style="display:inline-grid;grid-template-columns:repeat(3,80px);gap:4px;background:var(--text);padding:4px;border-radius:8px"><!-- filled by JS --></div>'+
+        '<button class="btn small" onclick="initTTT()" style="margin-top:12px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+      tc.innerHTML = html;
+      initTTT();
       break;
   }
   tc.innerHTML = html;
@@ -1610,6 +1645,62 @@ function addTile2(){var e=[];for(var r=0;r<4;r++)for(var c=0;c<4;c++)if(g2048b[r
 function render2048(){var el=document.getElementById('g2048Board'),sc=document.getElementById('g2048Score');if(!el)return;sc.textContent=g2048s;var cols={'':[119,110,101],2:[238,228,218],4:[237,224,200],8:[242,177,121],16:[245,149,99],32:[246,124,95],64:[246,94,59],128:[237,207,114],256:[237,204,97],512:[237,200,80],1024:[237,197,63],2048:[237,194,46]},h='';for(var r=0;r<4;r++){for(var c=0;c<4;c++){var v=g2048b[r][c],bg=cols[v]||[60,58,50],fg=v<=4?[119,110,101]:[249,246,242];h+='<div style="width:80px;height:80px;background:rgb('+bg+');color:rgb('+fg+');display:flex;align-items:center;justify-content:center;font-size:'+(v>=1000?'1.8rem':'2rem')+';font-weight:700;border-radius:6px;font-family:sans-serif">'+(v||'')+'</div>'}}el.innerHTML=h}
 function move2048d(dir){var m=false;function slide(a){var r=a.filter(function(x){return x!==0});for(var i=0;i<r.length-1;i++){if(r[i]===r[i+1]){r[i]*=2;g2048s+=r[i];r.splice(i+1,1);r.push(0)}}while(r.length<4)r.push(0);return r}var nb=Array.from({length:4},function(){return Array(4).fill(0)});if(dir==='l'){for(var r=0;r<4;r++){nb[r]=slide(g2048b[r].slice());if(nb[r].join()!==g2048b[r].join())m=true}}else if(dir==='r'){for(var r=0;r<4;r++){nb[r]=slide(g2048b[r].slice().reverse()).reverse();if(nb[r].join()!==g2048b[r].join())m=true}}else if(dir==='u'){for(var c=0;c<4;c++){var col=g2048b.map(function(row){return row[c]});var nc=slide(col);for(var r=0;r<4;r++){if(nb[r][c]!==nc[r])m=true;nb[r][c]=nc[r]}}}else{for(var c=0;c<4;c++){var col=g2048b.map(function(row){return row[c]}).reverse();var nc=slide(col).reverse();for(var r=0;r<4;r++){if(nb[r][c]!==nc[r])m=true;nb[r][c]=nc[r]}}}if(m){g2048b=nb;addTile2();render2048()}}
 document.addEventListener('keydown',function(e){if(window._currentTool!=='game2048')return;switch(e.key){case'ArrowLeft':e.preventDefault();move2048d('l');break;case'ArrowRight':e.preventDefault();move2048d('r');break;case'ArrowUp':e.preventDefault();move2048d('u');break;case'ArrowDown':e.preventDefault();move2048d('d');break}});
+// 2048 touch support
+(function(){
+  var sx=0,sy=0;
+  document.addEventListener('touchstart',function(e){if(window._currentTool!=='game2048')return;sx=e.touches[0].clientX;sy=e.touches[0].clientY});
+  document.addEventListener('touchend',function(e){if(window._currentTool!=='game2048')return;var dx=(e.changedTouches[0].clientX-sx),dy=(e.changedTouches[0].clientY-sy);if(Math.abs(dx)<30&&Math.abs(dy)<30)return;e.preventDefault();if(Math.abs(dx)>Math.abs(dy))move2048d(dx>0?'r':'l');else move2048d(dy>0?'d':'u')});
+})();
+
+// Coin Flip
+function flipCoin(){
+  var coin=document.getElementById('coin'),res=document.getElementById('coinResult');
+  coin.style.transform='rotateY(720deg)';
+  var heads=Math.random()>.5;
+  setTimeout(function(){
+    coin.textContent=heads?'🪙':'💿';
+    coin.style.background=heads?'linear-gradient(135deg,#ffd700,#ffaa00)':'linear-gradient(135deg,#c0c0c0,#888)';
+    res.textContent=heads?'Heads! 🎉':'Tails! 🎉';
+    coin.style.transform='rotateY(0deg)';
+  },400);
+}
+
+// Dice Roller
+function rollDice(){
+  var cnt=parseInt(document.getElementById('diceCount').value)||1;if(cnt<1)cnt=1;if(cnt>10)cnt=10;
+  var el=document.getElementById('diceResult'),t=document.getElementById('diceTotal'),h='',total=0;
+  var faces=['⚀','⚁','⚂','⚃','⚄','⚅'];
+  for(var i=0;i<cnt;i++){var n=Math.floor(Math.random()*6)+1;total+=n;h+='<span>'+faces[n-1]+'</span>'}
+  el.innerHTML=h;t.textContent='Total: '+total;
+}
+
+// Tic-Tac-Toe
+var _tttBoard=[],_tttTurn='X',_tttOver=false;
+function initTTT(){_tttBoard=Array.from({length:9},function(){return''});_tttTurn='X';_tttOver=false;renderTTT();document.getElementById('tttStatus').textContent='⭕ '+(lang==='zh-CN'?'X 先手':'X goes first')}
+function renderTTT(){
+  var el=document.getElementById('tttBoard'),h='';
+  for(var i=0;i<9;i++){
+    h+='<div onclick="tttClick('+i+')" style="width:80px;height:80px;background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:2.5rem;font-weight:700;cursor:'+(_tttBoard[i]||_tttOver?'default':'pointer')+';color:'+(_tttBoard[i]==='X'?'var(--accent)':_tttBoard[i]==='O'?'var(--green)':'transparent')+'">'+(_tttBoard[i]||'')+'</div>';
+  }
+  el.innerHTML=h;
+}
+function tttClick(i){
+  if(_tttBoard[i]||_tttOver)return;
+  _tttBoard[i]=_tttTurn;
+  var w=checkTTTWin();
+  if(w){
+    document.getElementById('tttStatus').innerHTML=w===1?(_tttTurn+' wins! 🎉'):"It's a draw! 🤝";
+    _tttOver=true;renderTTT();return;
+  }
+  _tttTurn=_tttTurn==='X'?'O':'X';
+  document.getElementById('tttStatus').textContent=_tttTurn+' '+(lang==='zh-CN'?'的回合':"'s turn");
+  renderTTT();
+}
+function checkTTTWin(){
+  var wins=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+  for(var i=0;i<wins.length;i++){if(_tttBoard[wins[i][0]]&&_tttBoard[wins[i][0]]===_tttBoard[wins[i][1]]&&_tttBoard[wins[i][1]]===_tttBoard[wins[i][2]])return 1}
+  return _tttBoard.every(function(c){return c!==''})?0:null;
+}
 
 // Reaction
 var _rs='idle',_rt,_rb=Infinity;
@@ -1651,7 +1742,10 @@ var SIDEBAR = {
     {cat:'🚀 slowbuild Original', items:[
       {id:'sports',icon:'🏃',label:'Sports Scorer'},
       {id:'game2048',icon:'🎮',label:'2048'},
-      {id:'reaction',icon:'⚡',label:'Reaction Test'}
+      {id:'tictactoe',icon:'⭕',label:'Tic-Tac-Toe'},
+      {id:'reaction',icon:'⚡',label:'Reaction Test'},
+      {id:'coinflip',icon:'🪙',label:'Coin Flip'},
+      {id:'dice',icon:'🎲',label:'Dice Roller'}
     ]},
     {cat:'📝 Text', items:[
       {id:'json',icon:'{ }',label:'JSON Formatter'},
@@ -1693,7 +1787,10 @@ var SIDEBAR = {
     {cat:'🚀 slowbuild 原创', items:[
       {id:'sports',icon:'🏃',label:'运动会成绩统计'},
       {id:'game2048',icon:'🎮',label:'2048'},
-      {id:'reaction',icon:'⚡',label:'反应测试'}
+      {id:'tictactoe',icon:'⭕',label:'井字棋'},
+      {id:'reaction',icon:'⚡',label:'反应测试'},
+      {id:'coinflip',icon:'🪙',label:'抛硬币'},
+      {id:'dice',icon:'🎲',label:'掷骰子'}
     ]},
     {cat:'📝 文本工具', items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
@@ -1735,7 +1832,10 @@ var SIDEBAR = {
     {cat:'🚀 slowbuild 原創', items:[
       {id:'sports',icon:'🏃',label:'運動會成績統計'},
       {id:'game2048',icon:'🎮',label:'2048'},
-      {id:'reaction',icon:'⚡',label:'反應測試'}
+      {id:'tictactoe',icon:'⭕',label:'井字棋'},
+      {id:'reaction',icon:'⚡',label:'反應測試'},
+      {id:'coinflip',icon:'🪙',label:'擲硬幣'},
+      {id:'dice',icon:'🎲',label:'擲骰子'}
     ]},
     {cat:'📝 文字工具', items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
