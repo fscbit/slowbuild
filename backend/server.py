@@ -373,6 +373,234 @@ def health():
     return jsonify({"status": "ok", "libreoffice": bool(libre), "time": datetime.now().isoformat()})
 
 
+# ═══════════════════════════════════════════
+#  🛒 商品 & 课程管理 API（SQLite）
+# ═══════════════════════════════════════════
+
+import sqlite3
+
+DB_PATH = Path(__file__).parent / "shop.db"
+
+def get_db():
+    conn = sqlite3.connect(str(DB_PATH))
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA journal_mode=WAL")
+    return conn
+
+def init_db():
+    db = get_db()
+    db.executescript("""
+        CREATE TABLE IF NOT EXISTS products (
+            id TEXT PRIMARY KEY,
+            type TEXT NOT NULL DEFAULT 'physical',
+            name_en TEXT, name_cn TEXT, name_tw TEXT,
+            desc_en TEXT, desc_cn TEXT, desc_tw TEXT,
+            price REAL DEFAULT 0,
+            image TEXT DEFAULT '',
+            buy_link TEXT DEFAULT '',
+            specs TEXT DEFAULT '[]',
+            shipping_en TEXT DEFAULT '', shipping_cn TEXT DEFAULT '', shipping_tw TEXT DEFAULT '',
+            created_at TEXT DEFAULT (datetime('now','localtime')),
+            updated_at TEXT DEFAULT (datetime('now','localtime'))
+        );
+        CREATE TABLE IF NOT EXISTS courses (
+            id TEXT PRIMARY KEY,
+            title_en TEXT, title_cn TEXT, title_tw TEXT,
+            desc_en TEXT, desc_cn TEXT, desc_tw TEXT,
+            price REAL DEFAULT 0,
+            image TEXT DEFAULT '',
+            buy_link TEXT DEFAULT '',
+            video_preview TEXT DEFAULT '',
+            lesson_count INTEGER DEFAULT 0,
+            duration TEXT DEFAULT '',
+            syllabus TEXT DEFAULT '[]',
+            created_at TEXT DEFAULT (datetime('now','localtime')),
+            updated_at TEXT DEFAULT (datetime('now','localtime'))
+        );
+    """)
+    db.commit()
+    db.close()
+
+init_db()
+
+# ── 商品 CRUD ──
+
+def product_row_to_dict(row):
+    d = dict(row)
+    d["specs"] = json.loads(d.get("specs", "[]"))
+    d["name"] = {"en": d.pop("name_en", ""), "zh-CN": d.pop("name_cn", ""), "zh-TW": d.pop("name_tw", "")}
+    d["desc"] = {"en": d.pop("desc_en", ""), "zh-CN": d.pop("desc_cn", ""), "zh-TW": d.pop("desc_tw", "")}
+    d["shipping"] = {"en": d.pop("shipping_en", ""), "zh-CN": d.pop("shipping_cn", ""), "zh-TW": d.pop("shipping_tw", "")}
+    return d
+
+@app.route("/api/admin/products", methods=["GET"])
+def admin_list_products():
+    db = get_db()
+    rows = db.execute("SELECT * FROM products ORDER BY updated_at DESC").fetchall()
+    db.close()
+    return jsonify([product_row_to_dict(r) for r in rows])
+
+@app.route("/api/admin/products", methods=["POST"])
+def admin_create_product():
+    data = request.get_json(force=True)
+    if not data.get("id"):
+        return jsonify({"error": "id 必填"}), 400
+    db = get_db()
+    try:
+        db.execute("""
+            INSERT INTO products (id, type, name_en, name_cn, name_tw, desc_en, desc_cn, desc_tw,
+                price, image, buy_link, specs, shipping_en, shipping_cn, shipping_tw)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        """, (
+            data["id"], data.get("type","physical"),
+            data.get("name",{}).get("en",""), data.get("name",{}).get("zh-CN",""), data.get("name",{}).get("zh-TW",""),
+            data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
+            data.get("price",0), data.get("image",""), data.get("buyLink",""),
+            json.dumps(data.get("specs",[]), ensure_ascii=False),
+            data.get("shipping",{}).get("en",""), data.get("shipping",{}).get("zh-CN",""), data.get("shipping",{}).get("zh-TW","")
+        ))
+        db.commit()
+    except sqlite3.IntegrityError:
+        db.close()
+        return jsonify({"error": f"产品 ID '{data['id']}' 已存在"}), 409
+    db.close()
+    return jsonify({"ok": True, "id": data["id"]})
+
+@app.route("/api/admin/products/<pid>", methods=["PUT"])
+def admin_update_product(pid):
+    data = request.get_json(force=True)
+    db = get_db()
+    existing = db.execute("SELECT id FROM products WHERE id=?", (pid,)).fetchone()
+    if not existing:
+        db.close()
+        return jsonify({"error": "产品不存在"}), 404
+    db.execute("""
+        UPDATE products SET type=?, name_en=?, name_cn=?, name_tw=?, desc_en=?, desc_cn=?, desc_tw=?,
+            price=?, image=?, buy_link=?, specs=?, shipping_en=?, shipping_cn=?, shipping_tw=?,
+            updated_at=datetime('now','localtime')
+        WHERE id=?
+    """, (
+        data.get("type","physical"),
+        data.get("name",{}).get("en",""), data.get("name",{}).get("zh-CN",""), data.get("name",{}).get("zh-TW",""),
+        data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
+        data.get("price",0), data.get("image",""), data.get("buyLink",""),
+        json.dumps(data.get("specs",[]), ensure_ascii=False),
+        data.get("shipping",{}).get("en",""), data.get("shipping",{}).get("zh-CN",""), data.get("shipping",{}).get("zh-TW",""),
+        pid
+    ))
+    db.commit()
+    db.close()
+    return jsonify({"ok": True})
+
+@app.route("/api/admin/products/<pid>", methods=["DELETE"])
+def admin_delete_product(pid):
+    db = get_db()
+    db.execute("DELETE FROM products WHERE id=?", (pid,))
+    db.commit()
+    db.close()
+    return jsonify({"ok": True})
+
+# ── 课程 CRUD ──
+
+def course_row_to_dict(row):
+    d = dict(row)
+    d["syllabus"] = json.loads(d.get("syllabus", "[]"))
+    d["title"] = {"en": d.pop("title_en", ""), "zh-CN": d.pop("title_cn", ""), "zh-TW": d.pop("title_tw", "")}
+    d["desc"] = {"en": d.pop("desc_en", ""), "zh-CN": d.pop("desc_cn", ""), "zh-TW": d.pop("desc_tw", "")}
+    return d
+
+@app.route("/api/admin/courses", methods=["GET"])
+def admin_list_courses():
+    db = get_db()
+    rows = db.execute("SELECT * FROM courses ORDER BY updated_at DESC").fetchall()
+    db.close()
+    return jsonify([course_row_to_dict(r) for r in rows])
+
+@app.route("/api/admin/courses", methods=["POST"])
+def admin_create_course():
+    data = request.get_json(force=True)
+    if not data.get("id"):
+        return jsonify({"error": "id 必填"}), 400
+    db = get_db()
+    try:
+        db.execute("""
+            INSERT INTO courses (id, title_en, title_cn, title_tw, desc_en, desc_cn, desc_tw,
+                price, image, buy_link, video_preview, lesson_count, duration, syllabus)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        """, (
+            data["id"],
+            data.get("title",{}).get("en",""), data.get("title",{}).get("zh-CN",""), data.get("title",{}).get("zh-TW",""),
+            data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
+            data.get("price",0), data.get("image",""), data.get("buyLink",""),
+            data.get("videoPreview",""), data.get("lessonCount",0), data.get("duration",""),
+            json.dumps(data.get("syllabus",[]), ensure_ascii=False)
+        ))
+        db.commit()
+    except sqlite3.IntegrityError:
+        db.close()
+        return jsonify({"error": f"课程 ID '{data['id']}' 已存在"}), 409
+    db.close()
+    return jsonify({"ok": True, "id": data["id"]})
+
+@app.route("/api/admin/courses/<cid>", methods=["PUT"])
+def admin_update_course(cid):
+    data = request.get_json(force=True)
+    db = get_db()
+    existing = db.execute("SELECT id FROM courses WHERE id=?", (cid,)).fetchone()
+    if not existing:
+        db.close()
+        return jsonify({"error": "课程不存在"}), 404
+    db.execute("""
+        UPDATE courses SET title_en=?, title_cn=?, title_tw=?, desc_en=?, desc_cn=?, desc_tw=?,
+            price=?, image=?, buy_link=?, video_preview=?, lesson_count=?, duration=?, syllabus=?,
+            updated_at=datetime('now','localtime')
+        WHERE id=?
+    """, (
+        data.get("title",{}).get("en",""), data.get("title",{}).get("zh-CN",""), data.get("title",{}).get("zh-TW",""),
+        data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
+        data.get("price",0), data.get("image",""), data.get("buyLink",""),
+        data.get("videoPreview",""), data.get("lessonCount",0), data.get("duration",""),
+        json.dumps(data.get("syllabus",[]), ensure_ascii=False),
+        cid
+    ))
+    db.commit()
+    db.close()
+    return jsonify({"ok": True})
+
+@app.route("/api/admin/courses/<cid>", methods=["DELETE"])
+def admin_delete_course(cid):
+    db = get_db()
+    db.execute("DELETE FROM courses WHERE id=?", (cid,))
+    db.commit()
+    db.close()
+    return jsonify({"ok": True})
+
+# ── 公开接口（前端读取）──
+
+@app.route("/api/products", methods=["GET"])
+def public_products():
+    db = get_db()
+    rows = db.execute("SELECT * FROM products ORDER BY updated_at DESC").fetchall()
+    db.close()
+    return jsonify([product_row_to_dict(r) for r in rows])
+
+@app.route("/api/courses", methods=["GET"])
+def public_courses():
+    db = get_db()
+    rows = db.execute("SELECT * FROM courses ORDER BY updated_at DESC").fetchall()
+    db.close()
+    return jsonify([course_row_to_dict(r) for r in rows])
+
+@app.route("/api/shop", methods=["GET"])
+def public_shop():
+    """一次性返回所有商品和课程"""
+    db = get_db()
+    products = [product_row_to_dict(r) for r in db.execute("SELECT * FROM products ORDER BY updated_at DESC").fetchall()]
+    courses = [course_row_to_dict(r) for r in db.execute("SELECT * FROM courses ORDER BY updated_at DESC").fetchall()]
+    db.close()
+    return jsonify({"products": products, "courses": courses})
+
+
 if __name__ == "__main__":
     libre = find_libreoffice()
     print("=" * 55)
