@@ -314,10 +314,11 @@
     <button class="btn" onclick="showPage('home')" style="margin-bottom:16px" data-i18n="back">← Back</button>
     <div class="shop-page">
       <div class="shop-header">
-        <h2 data-i18n="shop_title">🛒 DIY Electronics Shop</h2>
-        <p data-i18n="shop_sub">Quality PCB modules for makers. Worldwide shipping from China.</p>
+        <h2 data-i18n="shop_title">🛒 slowbuild Shop</h2>
+        <p data-i18n="shop_sub">Digital tools, templates & courses. Instant delivery worldwide.</p>
       </div>
-      <div class="product-grid" id="productGrid"><!-- filled by JS from products.json --></div>
+      <div id="shopProducts"><h3 style="font-size:1rem;margin-bottom:12px" data-i18n="shop_products_title">📦 Products</h3><div class="product-grid" id="productGrid"></div></div>
+      <div id="shopCourses" style="margin-top:32px"><h3 style="font-size:1rem;margin-bottom:12px" data-i18n="shop_courses_title">📚 Courses</h3><div class="product-grid" id="courseGrid"></div></div>
     </div>
   </section>
 </div>
@@ -374,8 +375,10 @@ var I18N = {
     online_note: '⚠️ Files auto-deleted after 1 hour. Runs on a personal VM.',
     upload_err_no_file: 'Please select a file.',
     upload_err_fail: 'Upload failed. The server may be offline.',
-    shop_title: '🛒 DIY Electronics Shop',
-    shop_sub: 'Quality PCB modules for makers. Worldwide shipping from China.',
+    shop_title: '🛒 slowbuild Shop',
+    shop_sub: 'Digital tools, templates & courses. Instant delivery worldwide.',
+    shop_products_title: '📦 Products',
+    shop_courses_title: '📚 Courses',
     p1_title: 'Type-C PD Fast Charge Power Bank PCB Board',
     p1_desc: 'DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols. Perfect for 18650/21700 battery projects.',
     p1_spec1: 'Type-C bidirectional (charge + discharge)',
@@ -487,8 +490,10 @@ var I18N = {
     online_note: '⚠️ 文件1小时后自动删除。服务运行在个人虚拟机上。',
     upload_err_no_file: '请先选择文件。',
     upload_err_fail: '上传失败，服务器可能不在线。',
-    shop_title: '🛒 DIY 电子小店',
-    shop_sub: '优质 PCB 模组，面向全球创客。从中国直发全球。',
+    shop_title: '🛒 slowbuild 商店',
+    shop_sub: '数字工具、模板与课程。全球即时交付。',
+    shop_products_title: '📦 产品',
+    shop_courses_title: '📚 课程',
     p1_title: 'Type-C PD 快充充电宝主板 DIY 套件',
     p1_desc: 'DIY 充电宝主板模组，支持 Type-C 双向快充、USB-A 输出、数码管电量显示和 LED 手电筒。兼容 PD/QC 快充协议，适合 18650/21700 锂电池项目。',
     p1_spec1: 'Type-C 双向（充电+放电）',
@@ -608,8 +613,10 @@ var I18N = {
     online_note: '⚠️ 檔案1小時後自動刪除。服務運行在個人虛擬機上。',
     upload_err_no_file: '請先選擇檔案。',
     upload_err_fail: '上傳失敗，伺服器可能不在線。',
-    shop_title: '🛒 DIY 電子小店',
-    shop_sub: '優質 PCB 模組，面向全球創客。從中國直發全球。',
+    shop_title: '🛒 slowbuild 商店',
+    shop_sub: '數位工具、模板與課程。全球即時交付。',
+    shop_products_title: '📦 產品',
+    shop_courses_title: '📚 課程',
     p1_title: 'Type-C PD 快充充電寶主板 DIY 套件',
     p1_desc: 'DIY 充電寶主板模組，支援 Type-C 雙向快充、USB-A 輸出、數碼管電量顯示和 LED 手電筒。相容 PD/QC 快充協定，適合 18650/21700 鋰電池專案。',
     p1_spec1: 'Type-C 雙向（充電+放電）',
@@ -756,33 +763,71 @@ function renderScriptCards() {
 }
 
 function renderShop() {
-  var grid = document.getElementById('productGrid');
-  if (!grid) return;
-  grid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px;font-size:.85rem">Loading products...</div>';
-  fetch('products.json')
-    .then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
-    .then(function(products){
-      var html = '';
-      products.forEach(function(p){
-        html += '<div class="product-card">'+
-          '<div class="product-img"><img src="'+p.image+'" alt="'+p.name[lang]+'" loading="lazy" onerror="this.parentElement.innerHTML=\'📦\'"></div>'+
-          '<div class="product-body">'+
-            '<h3>'+p.name[lang]+'</h3>'+
-            '<p class="desc">'+p.desc[lang]+'</p>'+
-            '<ul class="product-specs">'+p.specs[lang].map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul>'+
-            '<div class="product-footer">'+
-              '<span class="product-price">$'+p.price.toFixed(2)+'</span>'+
-              '<button class="product-buy" onclick="openOrder(\''+escJS(p.name[lang])+'\','+p.price+',\''+escJS(p.buyLink)+'\')">'+t('buy_now')+'</button>'+
-            '</div>'+
-            '<p class="shipping-note">'+p.shipping[lang]+'</p>'+
-          '</div></div>';
+  var pGrid = document.getElementById('productGrid');
+  var cGrid = document.getElementById('courseGrid');
+  var sProducts = document.getElementById('shopProducts');
+  var sCourses = document.getElementById('shopCourses');
+  if (!pGrid) return;
+  pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px;font-size:.85rem">Loading...</div>';
+  if (cGrid) cGrid.innerHTML = '';
+
+  function renderProductCard(p){
+    return '<div class="product-card">'+
+      '<div class="product-img"><img src="'+p.image+'" alt="'+p.name[lang]+'" loading="lazy" onerror="this.parentElement.innerHTML=\'📦\'"></div>'+
+      '<div class="product-body">'+
+        '<h3>'+(p.name[lang]||p.name.en)+'</h3>'+
+        '<p class="desc">'+(p.desc[lang]||p.desc.en)+'</p>'+
+        (p.specs&&p.specs[lang]&&p.specs[lang].length ? '<ul class="product-specs">'+p.specs[lang].map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul>' : '')+
+        '<div class="product-footer">'+
+          '<span class="product-price">$'+(p.price||0).toFixed(2)+'</span>'+
+          '<a class="product-buy" href="'+(p.buyLink||'#')+'" target="_blank">'+t('buy_now')+'</a>'+
+        '</div>'+
+        (p.shipping&&p.shipping[lang] ? '<p class="shipping-note">'+p.shipping[lang]+'</p>' : '')+
+      '</div></div>';
+  }
+
+  function renderCourseCard(c){
+    return '<div class="product-card">'+
+      '<div class="product-img"><img src="'+(c.image||'')+'" alt="'+(c.title[lang]||c.title.en)+'" loading="lazy" onerror="this.parentElement.innerHTML=\'🎓\'"></div>'+
+      '<div class="product-body">'+
+        '<h3>'+(c.title[lang]||c.title.en)+'</h3>'+
+        '<p class="desc">'+(c.desc[lang]||c.desc.en)+'</p>'+
+        '<p class="shipping-note">📹 '+(c.lessonCount||0)+' lessons · '+(c.duration||'')+'</p>'+
+        '<div class="product-footer">'+
+          '<span class="product-price">$'+(c.price||0).toFixed(2)+'</span>'+
+          '<a class="product-buy" href="'+(c.buyLink||'#')+'" target="_blank">'+t('buy_now')+'</a>'+
+        '</div>'+
+      '</div></div>';
+  }
+
+  // Try backend API first, fallback to static products.json
+  var backend = (typeof BACKEND !== 'undefined' && BACKEND) ? BACKEND : '';
+  var apiPromise = backend ? fetch(backend.replace(/\/+$/,'')+'/api/shop').then(function(r){return r.json();}) : Promise.reject('no backend');
+
+  apiPromise.then(function(data){
+    // Backend API success
+    var phtml = '', chtml = '';
+    (data.products||[]).forEach(function(p){ phtml += renderProductCard(p); });
+    (data.courses||[]).forEach(function(c){ chtml += renderCourseCard(c); });
+    pGrid.innerHTML = phtml || '<div style="text-align:center;color:var(--muted);padding:20px">No products yet</div>';
+    if (cGrid) cGrid.innerHTML = chtml;
+    if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
+  }).catch(function(){
+    // Fallback to static products.json (for when backend is unavailable)
+    fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
+      .then(function(products){
+        var html = '';
+        products.forEach(function(p){ html += renderProductCard(p); });
+        pGrid.innerHTML = html;
+        if (cGrid) cGrid.innerHTML = '';
+        if (sCourses) sCourses.style.display = 'none';
+      })
+      .catch(function(){
+        pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Coming soon</div>';
+        if (cGrid) cGrid.innerHTML = '';
+        if (sCourses) sCourses.style.display = 'none';
       });
-      grid.innerHTML = html;
-    })
-    .catch(function(){
-      // Fallback: show hardcoded minimum
-      grid.innerHTML = '<div class="product-card"><div class="product-img">📦</div><div class="product-body"><h3>Products coming soon</h3><p class="desc">Check back later or contact us.</p></div></div>';
-    });
+  });
 }
 
 // init
