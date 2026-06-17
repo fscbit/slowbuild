@@ -575,7 +575,81 @@ def admin_delete_course(cid):
     db.close()
     return jsonify({"ok": True})
 
-# ── 公开接口（前端读取）──
+# ── 图片上传 ──
+
+CONFIG_PATH = Path(__file__).parent / "config.json"
+
+def get_config(key, default=""):
+    if CONFIG_PATH.exists():
+        try:
+            with open(CONFIG_PATH) as f:
+                return json.load(f).get(key, default)
+        except: pass
+    return os.environ.get(key.upper(), default)
+
+@app.route("/api/upload-image", methods=["POST"])
+def upload_image():
+    """上传图片到 GitHub 仓库"""
+    github_token = get_config("github_token")
+    if not github_token:
+        return jsonify({"error": "GitHub token 未配置，请在 config.json 中设置 github_token"}), 500
+    
+    data = request.get_json(force=True)
+    filename = data.get("filename", "image.jpg")
+    content_b64 = data.get("content", "")
+    
+    if not content_b64:
+        return jsonify({"error": "缺少图片内容"}), 400
+    
+    GITHUB_REPO = "fscbit/slowbuild"
+    
+    # 生成唯一文件名避免覆盖
+    name, ext = os.path.splitext(filename)
+    safe_name = re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+    unique_name = f"{safe_name}_{uuid.uuid4().hex[:6]}{ext}"
+    github_path = f"images/{unique_name}"
+    
+    # 上传到 GitHub
+    import urllib.request
+    try:
+        check_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{github_path}"
+        check_req = urllib.request.Request(check_url, headers={
+            "Authorization": f"token {github_token}",
+            "User-Agent": "slowbuild-backend"
+        })
+        sha = None
+        try:
+            with urllib.request.urlopen(check_req) as resp:
+                sha = json.loads(resp.read()).get("sha")
+        except urllib.error.HTTPError:
+            pass
+        
+        body = json.dumps({
+            "message": f"upload: {unique_name}",
+            "content": content_b64,
+            "branch": "main"
+        })
+        if sha:
+            d = json.loads(body)
+            d["sha"] = sha
+            body = json.dumps(d)
+        
+        put_req = urllib.request.Request(
+            f"https://api.github.com/repos/{GITHUB_REPO}/contents/{github_path}",
+            data=body.encode(),
+            headers={
+                "Authorization": f"token {github_token}",
+                "User-Agent": "slowbuild-backend",
+                "Content-Type": "application/json"
+            },
+            method="PUT"
+        )
+        with urllib.request.urlopen(put_req) as resp:
+            result = json.loads(resp.read())
+        
+        return jsonify({"ok": True, "path": github_path, "url": f"https://slowbuild.top/{github_path}"})
+    except Exception as e:
+        return jsonify({"error": f"上传失败: {str(e)}"}), 500
 
 @app.route("/api/products", methods=["GET"])
 def public_products():
