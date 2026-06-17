@@ -138,7 +138,8 @@
       .sidebar-toggle{display:block}
       .sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:19;transition:opacity .25s}
       .sidebar-overlay.show{display:block}
-      .sidebar-close-btn{display:block;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
+      .sidebar-close-btn{display:none;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
+      @media(max-width:768px){.sidebar-close-btn{display:block}}
       .sidebar-close-btn:hover{color:var(--text);background:var(--code-bg)}
       nav{padding-left:40px}
     }
@@ -2038,8 +2039,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'Dice Roller'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'Shop',action:function(){showPage('shop')}},
-    {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
+    {type:'link',id:'shop',icon:'🛒',label:'Shop',action:"showPage('shop')"},
+    {type:'link',id:'about',icon:'📄',label:'About',action:"showPage('about')"}
   ],
   'zh-CN': [
     {cat:'📝 文本工具', open:false, items:[
@@ -2086,8 +2087,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'掷骰子'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
-    {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:"showPage('shop')"},
+    {type:'link',id:'about',icon:'📄',label:'关于',action:"showPage('about')"}
   ],
   'zh-TW': [
     {cat:'📝 文字工具', open:false, items:[
@@ -2134,8 +2135,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'擲骰子'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
-    {type:'link',id:'about',icon:'📄',label:'關於',action:function(){showPage('about')}}
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:"showPage('shop')"},
+    {type:'link',id:'about',icon:'📄',label:'關於',action:"showPage('about')"}
   ]
 };
 
@@ -2145,7 +2146,8 @@ function renderSidebar(){
   data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
     if(section.type==='link'){
-      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
+      var actionStr = typeof section.action === 'function' ? section.action.toString().match(/\{([\s\S]*)\}/)[1].trim() : section.action;
+      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+section.id+'\');'+actionStr+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
       return;
     }
     var catId = 'scat-'+i;
