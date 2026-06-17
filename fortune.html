@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八字命盘 · Chinese Fortune</title>
+<style>
+:root{--bg:#0f0f0f;--surface:#1a1a1a;--gold:#d4a853;--text:#e0d6c2;--muted:#8a8070;--border:#2a2520;--accent:#c99c3a;--red-bg:#2a1515;--red:#ff6b6b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Serif SC","SimSun","KaiTi",serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.8}
+.hero{text-align:center;padding:60px 20px 30px;background:linear-gradient(180deg,#1a1410 0%,#0f0f0f 100%);border-bottom:1px solid var(--border)}
+.hero h1{font-size:2.2rem;color:var(--gold);letter-spacing:4px;margin-bottom:8px}
+.hero .sub{color:var(--muted);font-size:.95rem;letter-spacing:2px}
+.container{max-width:520px;margin:0 auto;padding:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+.card-title{font-size:1rem;color:var(--gold);margin-bottom:16px;letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+@media(max-width:400px){.form-grid{grid-template-columns:1fr 1fr}}
+.form-group{display:flex;flex-direction:column}
+.form-group label{font-size:.75rem;color:var(--muted);margin-bottom:4px}
+.form-group input,.form-group select{width:100%;padding:10px 12px;background:#111;border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:.9rem;font-family:inherit;outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus{border-color:var(--gold)}
+.btn{width:100%;padding:12px;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit;letter-spacing:1px;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#c99c3a,#a67c28);color:#fff}
+.btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.btn-outline:hover{background:rgba(212,168,83,.08)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.result-box{margin-top:16px}
+.loading{text-align:center;padding:30px;color:var(--muted)}
+.loading .spinner{display:inline-block;width:24px;height:24px;border:2px solid var(--gold);border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error-box{background:var(--red-bg);border:1px solid var(--red);border-radius:8px;padding:12px;color:var(--red);font-size:.85rem;margin-top:12px}
+.pillars{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin:12px 0}
+@media(max-width:420px){.pillars{grid-template-columns:1fr 1fr}}
+.pillar{text-align:center;padding:12px 8px;background:#111;border:1px solid var(--border);border-radius:8px}
+.pillar .label{font-size:.7rem;color:var(--muted);margin-bottom:4px}
+.pillar .chars{font-size:1.6rem;color:var(--gold);letter-spacing:2px;font-weight:700}
+.pillar .name{font-size:.65rem;color:var(--muted);margin-top:2px}
+.wuxing-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:10px 0}
+.wuxing-item{text-align:center;padding:8px 4px;border-radius:8px;background:#111;border:1px solid var(--border)}
+.wuxing-item .symbol{font-size:1.3rem}
+.wuxing-item .count{font-size:.75rem;color:var(--muted)}
+.interpretation{font-size:.88rem;line-height:1.9;padding:12px 0;border-top:1px solid var(--border);margin-top:12px}
+.interpretation .line{margin-bottom:8px}
+.paywall{margin-top:16px;text-align:center;padding:20px;background:linear-gradient(180deg,#1a1410,#111);border:1px solid var(--gold);border-radius:10px}
+.paywall .lock{font-size:2rem;margin-bottom:8px}
+.paywall h3{color:var(--gold);margin-bottom:4px}
+.paywall p{color:var(--muted);font-size:.82rem;margin-bottom:12px}
+.paywall .price{font-size:1.3rem;color:var(--gold);font-weight:700;margin-bottom:12px}
+.back-link{text-align:center;padding:16px}
+.back-link a{color:var(--muted);text-decoration:none;font-size:.82rem}
+.back-link a:hover{color:var(--gold)}
+.info-row{display:flex;justify-content:space-between;padding:6px 0;font-size:.85rem}
+.info-row span:first-child{color:var(--muted)}
+.info-row span:last-child{color:var(--gold)}
+.detail-section{margin-top:16px;padding-top:12px;border-top:1px solid var(--border)}
+.detail-section h4{color:var(--gold);font-size:.82rem;margin-bottom:6px;letter-spacing:1px}
+.detail-section p{font-size:.82rem;color:#b0a590;line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>八 字 命 盘</h1>
+  <div class="sub">Chinese Fortune · Ba Zi Calculator</div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="card-title">📅 出生日期</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>年</label>
+        <input type="number" id="year" placeholder="1990" min="1901" max="2100" value="1990">
+      </div>
+      <div class="form-group">
+        <label>月</label>
+        <input type="number" id="month" placeholder="1" min="1" max="12" value="1">
+      </div>
+      <div class="form-group">
+        <label>日</label>
+        <input type="number" id="day" placeholder="1" min="1" max="31" value="1">
+      </div>
+    </div>
+    <div class="form-grid" style="grid-template-columns:1fr 1fr;margin-top:10px">
+      <div class="form-group">
+        <label>时</label>
+        <select id="hour">
+          <option value="0">子时 23:00-01:00</option>
+          <option value="2">丑时 01:00-03:00</option>
+          <option value="4">寅时 03:00-05:00</option>
+          <option value="6">卯时 05:00-07:00</option>
+          <option value="8">辰时 07:00-09:00</option>
+          <option value="10">巳时 09:00-11:00</option>
+          <option value="12" selected>午时 11:00-13:00</option>
+          <option value="14">未时 13:00-15:00</option>
+          <option value="16">申时 15:00-17:00</option>
+          <option value="18">酉时 17:00-19:00</option>
+          <option value="20">戌时 19:00-21:00</option>
+          <option value="22">亥时 21:00-23:00</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>分钟（精确排盘）</label>
+        <select id="minute">
+          <option value="0">:00</option><option value="15">:15</option><option value="30">:30</option><option value="45">:45</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="calculate()" id="calcBtn" style="margin-top:16px">🔮 排盘分析</button>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="back-link">
+    <a href="/">← 返回 slowbuild</a>
+  </div>
+</div>
+
+<script>
+// ============================================
+// Backend config
+// ============================================
+var BACKEND = 'https://axis-needle-asian-depending.trycloudflare.com';
+
+function api(path, method, body){
+  var opt = {method:method||'POST', headers:{'Content-Type':'application/json'}};
+  if(body) opt.body = JSON.stringify(body);
+  return fetch(BACKEND + path, opt).then(function(r){
+    return r.json().then(function(d){
+      if(!r.ok) throw new Error(d.error||'Request failed');
+      return d;
+    });
+  });
+}
+
+// ============================================
+// Calculate
+// ============================================
+var currentResult = null;
+
+function calculate(){
+  var btn = document.getElementById('calcBtn');
+  var res = document.getElementById('result');
+  
+  var y = parseInt(document.getElementById('year').value);
+  var m = parseInt(document.getElementById('month').value);
+  var d = parseInt(document.getElementById('day').value);
+  var h = parseInt(document.getElementById('hour').value);
+  
+  if(!y||!m||!d||y<1901||y>2100||m<1||m>12||d<1||d>31){
+    res.innerHTML = '<div class="error-box">请输入合法日期（1901-2100年）</div>';
+    return;
+  }
+  
+  btn.disabled = true;
+  btn.textContent = '⏳ 推算中...';
+  res.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+  
+  api('/api/bazi', 'POST', {year:y, month:m, day:d, hour:h, level:'free'}).then(function(data){
+    currentResult = data;
+    renderFree(data);
+  }).catch(function(e){
+    // Backend offline — try localStorage fallback
+    res.innerHTML = '<div class="error-box">后端连接失败: '+e.message+'<br><small>请确保后端服务正在运行</small></div>';
+  }).finally(function(){
+    btn.disabled = false;
+    btn.textContent = '🔮 排盘分析';
+  });
+}
+
+// ============================================
+// Render Free Result
+// ============================================
+function renderFree(data){
+  var p = data.pillars;
+  var wx = data.wuxing;
+  var dm = data.day_master;
+  var interp = data.interpretation;
+  
+  var h = '';
+  
+  // Header
+  h += '<div class="card">';
+  h += '<div class="card-title">🧧 命盘概览</div>';
+  h += '<div class="info-row"><span>公历</span><span>'+data.solar+'</span></div>';
+  h += '<div class="info-row"><span>农历</span><span>'+data.lunar+'</span></div>';
+  h += '<div class="info-row"><span>生肖</span><span>🐲🐍🐴🐑🐒🐔🐕🐖🐀🐂🐅🐇'.charAt(['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'].indexOf(data.shengxiao))+' '+data.shengxiao+'</span></div>';
+  h += '<div class="info-row"><span>时辰</span><span>'+data.hour+'</span></div>';
+  
+  // Pillars
+  h += '<div class="pillars">';
+  var pillarLabels = {'year':'年柱','month':'月柱','day':'日柱','hour':'时柱'};
+  var pillarDesc = {'year':'祖上·童年','month':'父母·青年','day':'自己·婚姻','hour':'子女·晚年'};
+  for(var key in pillarLabels){
+    h += '<div class="pillar"><div class="label">'+pillarLabels[key]+'</div>';
+    h += '<div class="chars">'+p[key]+'</div>';
+    h += '<div class="name">'+pillarDesc[key]+'</div></div>';
+  }
+  h += '</div>';
+  
+  // Day master
+  h += '<div class="info-row"><span>日主</span><span>'+dm.gan+'（属'+dm.wuxing+'）</span></div>';
+  
+  // Five elements
+  h += '<div class="wuxing-grid">';
+  var wxNames = {'金':'🪙','木':'🌳','水':'💧','火':'🔥','土':'🏔️'};
+  for(var w in wxNames){
+    var count = wx.count[w]||0;
+    var color = count===0 ? 'color:var(--red);opacity:.5' : (count>=3?'color:var(--gold)':'');
+    h += '<div class="wuxing-item"><div class="symbol" style="'+color+'">'+wxNames[w]+'</div>';
+    h += '<div class="count">'+w+' ×'+count+'</div></div>';
+  }
+  h += '</div>';
+  
+  // Missing elements
+  if(wx.missing.length > 0){
+    h += '<div class="info-row"><span>五行缺失</span><span style="color:var(--red)">'+wx.missing.join('、')+'</span></div>';
+  }
+  
+  // Free interpretation
+  h += '<div class="interpretation">';
+  h += '<div class="line">💡 '+interp.summary+'</div>';
+  h += '<div class="line">📝 '+interp.nature+'</div>';
+  h += '</div>';
+  
+  h += '</div>';
+  
+  // Paywall for full reading
+  h += '<div class="paywall">';
+  h += '<div class="lock">🔒</div>';
+  h += '<h3>解锁完整命盘解读</h3>';
+  h += '<p>性格详解 · 事业方向 · 感情分析 · 五行平衡建议 · 吉祥元素</p>';
+  h += '<div class="price">$2.99</div>';
+  h += '<button class="btn btn-primary" onclick="buyFull()">💳 立即解锁</button>';
+  h += '<p style="font-size:.7rem;margin-top:6px;color:var(--muted)">付款后自动解锁完整解读</p>';
+  h += '</div>';
+  
+  document.getElementById('result').innerHTML = h;
+  document.getElementById('result').scrollIntoView({behavior:'smooth'});
+}
+
+// ============================================
+// Buy full reading
+// ============================================
+function buyFull(){
+  window.open('https://paypal.me/184723392/2.99', '_blank');
+  // After user comes back, they could enter a code — for now, simple
+  setTimeout(function(){
+    if(confirm('已完成支付？点击确定解锁完整解读')) {
+      unlockFull();
+    }
+  }, 3000);
+}
+
+function unlockFull(){
+  var data = currentResult;
+  if(!data) return;
+  
+  api('/api/bazi', 'POST', {
+    year: parseInt(data.solar.split('年')[0]),
+    month: parseInt(data.solar.split('年')[1]),
+    day: parseInt(data.solar.split('月')[1]),
+    hour: parseInt(document.getElementById('hour').value),
+    level: 'basic'
+  }).then(function(fullData){
+    renderFull(fullData);
+  }).catch(function(){
+    // If backend fails, just show what we have
+    renderFull(data);
+  });
+}
+
+function renderFull(data){
+  var interp = data.interpretation || {};
+  var h = '';
+  
+  h += '<div class="card" style="border-color:var(--gold)">';
+  h += '<div class="card-title">✅ 完整解读已解锁</div>';
+  
+  if(interp.wuxing_balance){
+    h += '<div class="detail-section"><h4>五行平衡</h4><p>'+interp.wuxing_balance+'</p></div>';
+  }
+  if(interp.career){
+    h += '<div class="detail-section"><h4>事业方向</h4><p>'+interp.career+'</p></div>';
+  }
+  if(interp.love){
+    h += '<div class="detail-section"><h4>感情运势</h4><p>'+interp.love+'</p></div>';
+  }
+  if(interp.lucky_elements && interp.lucky_elements.length > 0){
+    h += '<div class="detail-section"><h4>吉祥元素</h4><p>适合多接触与「'+interp.lucky_elements.join('、')+'」相关的事物、颜色</p></div>';
+  }
+  
+  h += '</div>';
+  
+  document.getElementById('result').innerHTML += h;
+}
+</script>
+</body>
+</html>
