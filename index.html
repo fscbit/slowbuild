@@ -804,29 +804,41 @@ function renderShop() {
   var backend = (typeof BACKEND !== 'undefined' && BACKEND) ? BACKEND : '';
   var apiPromise = backend ? fetch(backend.replace(/\/+$/,'')+'/api/shop').then(function(r){return r.json();}) : Promise.reject('no backend');
 
+  function loadFallbackProducts(chtml) {
+    return fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
+      .then(function(products){
+        var phtml = '';
+        products.forEach(function(p){ phtml += renderProductCard(p); });
+        pGrid.innerHTML = phtml || '<div style="text-align:center;color:var(--muted);padding:20px">No products yet</div>';
+        if (cGrid) cGrid.innerHTML = chtml || '';
+        if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
+      });
+  }
+
   apiPromise.then(function(data){
     // Backend API success
     var phtml = '', chtml = '';
     (data.products||[]).forEach(function(p){ phtml += renderProductCard(p); });
     (data.courses||[]).forEach(function(c){ chtml += renderCourseCard(c); });
-    pGrid.innerHTML = phtml || '<div style="text-align:center;color:var(--muted);padding:20px">No products yet</div>';
-    if (cGrid) cGrid.innerHTML = chtml;
-    if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
-  }).catch(function(){
-    // Fallback to static products.json (for when backend is unavailable)
-    fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
-      .then(function(products){
-        var html = '';
-        products.forEach(function(p){ html += renderProductCard(p); });
-        pGrid.innerHTML = html;
-        if (cGrid) cGrid.innerHTML = '';
-        if (sCourses) sCourses.style.display = 'none';
-      })
-      .catch(function(){
+    // If backend returned no products, fallback to local products.json
+    if (!phtml) {
+      loadFallbackProducts(chtml).catch(function(){
         pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Coming soon</div>';
         if (cGrid) cGrid.innerHTML = '';
         if (sCourses) sCourses.style.display = 'none';
       });
+      return;
+    }
+    pGrid.innerHTML = phtml;
+    if (cGrid) cGrid.innerHTML = chtml;
+    if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
+  }).catch(function(){
+    // Backend unreachable — fallback to local products.json
+    loadFallbackProducts('').catch(function(){
+      pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Coming soon</div>';
+      if (cGrid) cGrid.innerHTML = '';
+      if (sCourses) sCourses.style.display = 'none';
+    });
   });
 }
 
