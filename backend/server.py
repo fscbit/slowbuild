@@ -15,6 +15,9 @@ from datetime import datetime
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 
+# 八字命盘引擎
+from bazi import calculate_bazi
+
 app = Flask(__name__)
 CORS(app)
 
@@ -650,6 +653,38 @@ def upload_image():
         return jsonify({"ok": True, "path": github_path, "url": f"https://slowbuild.top/{github_path}"})
     except Exception as e:
         return jsonify({"error": f"上传失败: {str(e)}"}), 500
+
+
+# ═══════════════════════════════════════════
+#  🟢 八字命盘 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/bazi", methods=["POST"])
+def bazi_calc():
+    """八字命盘计算"""
+    data = request.get_json(force=True) or {}
+    year = data.get("year")
+    month = data.get("month")
+    day = data.get("day")
+    hour = data.get("hour", 12)
+    level = data.get("level", "free")  # free | basic | full
+    
+    if not all([year, month, day]):
+        return jsonify({"error": "请提供 year, month, day"}), 400
+    
+    try:
+        year, month, day = int(year), int(month), int(day)
+        hour = int(hour)
+    except (TypeError, ValueError):
+        return jsonify({"error": "日期格式错误"}), 400
+    
+    result = calculate_bazi(year, month, day, hour, level)
+    
+    if "error" in result:
+        return jsonify(result), 400
+    
+    return jsonify(result)
+
 
 @app.route("/api/products", methods=["GET"])
 def public_products():
