@@ -257,20 +257,67 @@ SELF_INTERPRETATIONS = {
            'love': '情感深沉神秘，需要一个懂自己的人'},
 }
 
-def generate_interpretation(bazi_result, level='basic'):
-    """根据八字结果生成解读"""
+# English interpretations
+SELF_INTERPRETATIONS_EN = {
+    '甲': {'nature': 'A towering tree — upright and persistent, a natural leader with strong self-esteem',
+           'career': 'Management, education, forestry, construction',
+           'love': 'Loyal to partners but stubborn; needs a complementary match'},
+    '乙': {'nature': 'Flowers and vines — flexible and delicate, sociable but sometimes indecisive',
+           'career': 'Arts, design, consulting, service industries',
+           'love': 'Values emotional connection, thrives with a decisive partner'},
+    '丙': {'nature': 'The blazing sun — passionate and generous, outgoing but sometimes impulsive',
+           'career': 'Media, entertainment, sales, tech industry',
+           'love': 'Bold and active in love; needs to give partner space'},
+    '丁': {'nature': 'A candle flame — introspective and meticulous, thoughtful but easily hurt',
+           'career': 'Research, writing, technology, healthcare',
+           'love': 'Seeks a soulmate; emotionally invested but vulnerable'},
+    '戊': {'nature': 'A fortress of earth — steady and reliable, trustworthy but conservative',
+           'career': 'Finance, real estate, administration, engineering',
+           'love': 'Strong sense of duty but lacks romance; needs a patient partner'},
+    '己': {'nature': 'Garden soil — gentle and tolerant, patient but lacking boldness',
+           'career': 'Education, nursing, agriculture, logistics',
+           'love': 'Tender and caring but dependent; needs a capable partner'},
+    '庚': {'nature': 'Forged steel — decisive and strong-willed, execution-oriented but lacks tenderness',
+           'career': 'Military, law, mechanics, competitive sports',
+           'love': 'Actions speak louder than words; pragmatic but not sweet-talking'},
+    '辛': {'nature': 'Fine jewelry — refined and elegant, has great taste but can be picky',
+           'career': 'Jewelry, beauty, music, luxury goods',
+           'love': 'Pursues perfect romantic love; would rather wait than settle'},
+    '壬': {'nature': 'A great river — broad-minded and intelligent, flexible but lacks persistence',
+           'career': 'Trade, diplomacy, tourism, logistics',
+           'love': 'Free-spirited and dislikes constraints; needs a mature, tolerant partner'},
+    '癸': {'nature': 'Morning dew — deep and wise, perceptive but prone to melancholy',
+           'career': 'Academia, strategy, psychology, investigation',
+           'love': 'Emotionally deep and mysterious; needs someone who truly understands'},
+}
+
+def generate_interpretation(bazi_result, level='basic', lang='zh'):
+    """根据八字结果生成解读。lang='en' 返回英文"""
     pillars = bazi_result['pillars']
     day_master = bazi_result['day_master']
     wuxing_info = bazi_result['wuxing']
     gan = day_master['gan']
     wx = day_master['wuxing']
     
-    self_info = SELF_INTERPRETATIONS.get(gan, {'nature': '目前数据不足', 'career': '暂无建议', 'love': '暂无建议'})
+    is_en = lang.startswith('en') if lang else False
+    interp_db = SELF_INTERPRETATIONS_EN if is_en else SELF_INTERPRETATIONS
+    fallback_nature = 'Insufficient data' if is_en else '目前数据不足'
+    fallback_career = 'No suggestion' if is_en else '暂无建议'
+    fallback_love = 'No suggestion' if is_en else '暂无建议'
+    
+    self_info = interp_db.get(gan, {'nature': fallback_nature, 'career': fallback_career, 'love': fallback_love})
+    
+    if is_en:
+        wx_en = {'木': 'Wood', '火': 'Fire', '土': 'Earth', '金': 'Metal', '水': 'Water'}
+        nature_first = self_info['nature'].split(',')[0].split(' — ')[0] if ' — ' in self_info['nature'] else self_info['nature'].split(',')[0]
+        summary = f"You are a {wx_en.get(wx, '')} {gan} person, like a {nature_first}."
+    else:
+        summary = f"您是{gan}木命人，如同{self_info['nature'].split('，')[0]}。"
     
     result = {
-        'summary': f"您是{gan}木命人，如同{self_info['nature'].split('，')[0]}。",
+        'summary': summary,
         'nature': self_info['nature'],
-        'wuxing_balance': "五行",
+        'wuxing_balance': "Five Elements" if is_en else "五行",
         'career': '',
         'love': '',
         'lucky_elements': [],
@@ -285,12 +332,23 @@ def generate_interpretation(bazi_result, level='basic'):
         missing = wuxing_info['missing']
         dominant = wuxing_info['dominant']
         
-        if len(missing) > 1:
-            result['wuxing_balance'] = f"五行缺{'、'.join(missing)}，建议通过颜色、饰品或名字来补充。{dominant}过旺，注意平衡。"
-        elif len(missing) == 1:
-            result['wuxing_balance'] = f"五行缺{missing[0]}，建议在日常生活中多接触与{missing[0]}相关的元素。"
+        if is_en:
+            wx_en_full = {'木': 'Wood', '火': 'Fire', '土': 'Earth', '金': 'Metal', '水': 'Water'}
+            missing_en = [wx_en_full.get(m, m) for m in missing]
+            dominant_en = wx_en_full.get(dominant, dominant)
+            if len(missing) > 1:
+                result['wuxing_balance'] = f"Missing {' and '.join(missing_en)}. Balance through colors, accessories or naming. Your {dominant_en} is dominant — seek balance."
+            elif len(missing) == 1:
+                result['wuxing_balance'] = f"Missing {missing_en[0]}. Incorporate more {missing_en[0]}-related elements in daily life."
+            else:
+                result['wuxing_balance'] = f"All five elements present — naturally balanced. {dominant_en} is strongest, your core trait."
         else:
-            result['wuxing_balance'] = f"五行齐全，先天命格比较平衡。{dominant}较旺，这是你的核心特质。"
+            if len(missing) > 1:
+                result['wuxing_balance'] = f"五行缺{'、'.join(missing)}，建议通过颜色、饰品或名字来补充。{dominant}过旺，注意平衡。"
+            elif len(missing) == 1:
+                result['wuxing_balance'] = f"五行缺{missing[0]}，建议在日常生活中多接触与{missing[0]}相关的元素。"
+            else:
+                result['wuxing_balance'] = f"五行齐全，先天命格比较平衡。{dominant}较旺，这是你的核心特质。"
         
         result['career'] = self_info['career']
         result['love'] = self_info['love']
@@ -308,12 +366,13 @@ def generate_interpretation(bazi_result, level='basic'):
 # 主函数
 # ═══════════════════════════
 
-def calculate_bazi(year, month, day, hour=12, level='basic'):
+def calculate_bazi(year, month, day, hour=12, level='basic', lang='zh'):
     """
     计算八字命盘
     year, month, day: 公历日期
     hour: 小时 (0-23)
     level: 'free' / 'basic' / 'full'
+    lang: 'zh' (中文) or 'en' (English)
     """
     try:
         date_obj = datetime.date(year, month, day)
@@ -364,7 +423,7 @@ def calculate_bazi(year, month, day, hour=12, level='basic'):
     }
     
     # 生成解读
-    interp = generate_interpretation(result, level)
+    interp = generate_interpretation(result, level, lang)
     result['interpretation'] = interp
     
     return result
