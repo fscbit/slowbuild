@@ -20,6 +20,10 @@ from bazi import calculate_bazi
 from astro import build_full_chart, get_daily_horoscope
 from numerology import build_numerology_report
 from fengshui import get_kua, get_home_advice
+from tarot import get_spread_reading
+from iching import get_reading
+from palm_reading import get_palm_reading
+from name_analysis import analyze_name
 
 app = Flask(__name__)
 CORS(app)
@@ -919,6 +923,99 @@ def geo_detect():
     country = cf_country or x_country or ''
     lang = COUNTRY_LANG.get(country, 'en')
     return jsonify({'country': country, 'lang': lang, 'available': list(COUNTRY_LANG.values())})
+
+
+# ═══════════════════════════════════════════
+#  🎴 塔罗占卜 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/tarot", methods=["POST"])
+def tarot():
+    """Tarot spread reading (3 cards)"""
+    data = request.get_json(force=True) or {}
+    cards = data.get("cards", [])
+    level = data.get("level", "free")
+
+    if len(cards) != 3:
+        return jsonify({"error": "Need exactly 3 card IDs"}), 400
+
+    try:
+        cards_int = [int(c) for c in cards]
+        reading = get_spread_reading(cards_int, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    return jsonify(reading)
+
+
+# ═══════════════════════════════════════════
+#  ☯️ 周易六爻 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/iching", methods=["POST"])
+def iching():
+    """I Ching hexagram reading"""
+    data = request.get_json(force=True) or {}
+    lines = data.get("lines", [])
+    level = data.get("level", "free")
+
+    if len(lines) != 6:
+        return jsonify({"error": "Need exactly 6 lines (0 or 1)"}), 400
+
+    try:
+        lines_int = [int(l) for l in lines]
+        reading = get_reading(lines_int, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    return jsonify(reading)
+
+
+# ═══════════════════════════════════════════
+#  🖐️ 手相解读 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/palm", methods=["POST"])
+def palm():
+    """Palm reading for selected lines"""
+    data = request.get_json(force=True) or {}
+    lines = data.get("lines", ["life"])
+    hand = data.get("hand", "right")
+    gender = data.get("gender", "male")
+    level = data.get("level", "free")
+
+    try:
+        reading = get_palm_reading(lines, hand, gender, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    return jsonify(reading)
+
+
+# ═══════════════════════════════════════════
+#  📛 姓名学 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/name", methods=["POST"])
+def name_analysis():
+    """Name stroke analysis"""
+    data = request.get_json(force=True) or {}
+    family = data.get("family", "").strip()
+    given = data.get("given", "").strip()
+    level = data.get("level", "free")
+
+    if not family or not given:
+        return jsonify({"error": "Need surname and given name"}), 400
+
+    try:
+        result = analyze_name(family, given, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    if result.get("error"):
+        return jsonify(result), 400
+
+    return jsonify(result)
 
 if __name__ == "__main__":
     libre = find_libreoffice()
