@@ -811,6 +811,115 @@ def fengshui():
 
     return jsonify(result)
 
+
+# ═══════════════════════════════════════════
+#  🌍 IP Geolocation → Language detection
+# ═══════════════════════════════════════════
+
+# Country → Language mapping
+COUNTRY_LANG = {
+    'CN': 'zh-CN', 'TW': 'zh-TW', 'HK': 'zh-TW', 'MO': 'zh-TW',
+    'JP': 'ja', 'KR': 'ko',
+    'US': 'en', 'GB': 'en', 'CA': 'en', 'AU': 'en', 'NZ': 'en', 'IE': 'en', 'SG': 'en',
+    'FR': 'fr', 'BE': 'fr', 'CH': 'fr',
+    'DE': 'de', 'AT': 'de',
+    'ES': 'es', 'MX': 'es', 'AR': 'es', 'CO': 'es', 'CL': 'es', 'PE': 'es',
+    'PT': 'pt', 'BR': 'pt',
+    'RU': 'ru', 'BY': 'ru', 'KZ': 'ru',
+    'IN': 'en',  # India defaults to English
+    'SA': 'en', 'AE': 'en',  # Middle East defaults to English
+}
+
+@app.route("/api/i18n/<lang_code>")
+def get_i18n(lang_code):
+    """Return translation strings for a given language"""
+    translations = {
+        'en': {
+            'hubTitle': '✦ Destiny Hub ✦', 'hubSub': 'Ancient wisdom meets modern stars — for fun & curiosity',
+            'back': '← Back to Hub',
+            'freeTag': 'Free', 'premTag': 'Premium',
+            'loading': 'Working the magic...', 'error': 'Please enter valid info',
+            'unlockTitle': 'Unlock Full Reading', 'unlockDesc': 'Get the complete detailed analysis',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 Unlock Now',
+            'unlockNote': 'Auto-unlocks after payment',
+            'payConfirm': 'Payment completed? Click OK to unlock', 'unlocked': '✅ Unlocked',
+        },
+        'zh-CN': {
+            'hubTitle': '✦ 命运之门 ✦', 'hubSub': '古老智慧与现代星辰 — 玩一玩，别太当真',
+            'back': '← 返回总览',
+            'freeTag': '免费', 'premTag': '高级',
+            'loading': '推算中...', 'error': '请输入完整信息',
+            'unlockTitle': '解锁完整解读', 'unlockDesc': '查看详细完整分析',
+            'unlockPrice': '¥12', 'unlockBtn': '💳 立即解锁',
+            'unlockNote': '付款后自动解锁', 'payConfirm': '已完成支付？点击确定', 'unlocked': '✅ 已解锁',
+        },
+        'zh-TW': {
+            'hubTitle': '✦ 命運之門 ✦', 'hubSub': '古老智慧與現代星辰 — 玩一玩，別太當真',
+            'back': '← 返回總覽',
+            'freeTag': '免費', 'premTag': '高級',
+            'loading': '推算中...', 'error': '請輸入完整資訊',
+            'unlockTitle': '解鎖完整解讀', 'unlockDesc': '查看詳細完整分析',
+            'unlockPrice': 'NT$60', 'unlockBtn': '💳 立即解鎖',
+            'unlockNote': '付款後自動解鎖', 'payConfirm': '已完成支付？點擊確定', 'unlocked': '✅ 已解鎖',
+        },
+        'ja': {
+            'hubTitle': '✦ ディスティニーハブ ✦', 'hubSub': '古代の知恵と現代の星々 — 楽しみのために',
+            'back': '← ハブに戻る',
+            'freeTag': '無料', 'premTag': 'プレミアム',
+            'loading': '計算中...', 'error': '有効な情報を入力してください',
+            'unlockTitle': '完全版をアンロック', 'unlockDesc': '詳細な分析を見る',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 アンロック',
+            'unlockNote': '支払い後に自動アンロック', 'payConfirm': '支払い完了？OKでアンロック', 'unlocked': '✅ アンロック済',
+        },
+        'ko': {
+            'hubTitle': '✦ 데스티니 허브 ✦', 'hubSub': '고대의 지혜와 현대의 별 — 재미로 즐기세요',
+            'back': '← 허브로 돌아가기',
+            'freeTag': '무료', 'premTag': '프리미엄',
+            'loading': '계산 중...', 'error': '유효한 정보를 입력하세요',
+            'unlockTitle': '전체 분석 잠금 해제', 'unlockDesc': '상세한 전체 분석 보기',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 잠금 해제',
+            'unlockNote': '결제 후 자동 잠금 해제', 'payConfirm': '결제 완료? OK로 잠금 해제', 'unlocked': '✅ 잠금 해제됨',
+        },
+        'es': {
+            'hubTitle': '✦ Portal del Destino ✦', 'hubSub': 'Sabiduría antigua y estrellas modernas — solo por diversión',
+            'back': '← Volver al Hub',
+            'freeTag': 'Gratis', 'premTag': 'Premium',
+            'loading': 'Calculando...', 'error': 'Ingresa información válida',
+            'unlockTitle': 'Desbloquear Lectura Completa', 'unlockDesc': 'Ver análisis detallado completo',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 Desbloquear',
+            'unlockNote': 'Se desbloquea tras el pago', 'payConfirm': '¿Pago completado? OK para desbloquear', 'unlocked': '✅ Desbloqueado',
+        },
+        'fr': {
+            'hubTitle': '✦ Portail du Destin ✦', 'hubSub': 'Sagesse ancienne et étoiles modernes — pour le plaisir',
+            'back': '← Retour au Hub',
+            'freeTag': 'Gratuit', 'premTag': 'Premium',
+            'loading': 'Calcul en cours...', 'error': 'Veuillez entrer des informations valides',
+            'unlockTitle': 'Débloquer la Lecture Complète', 'unlockDesc': 'Voir l'analyse détaillée complète',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 Débloquer',
+            'unlockNote': 'Déblocage automatique après paiement', 'payConfirm': 'Paiement terminé ? OK pour débloquer', 'unlocked': '✅ Débloqué',
+        },
+        'pt': {
+            'hubTitle': '✦ Portal do Destino ✦', 'hubSub': 'Sabedoria antiga e estrelas modernas — só por diversão',
+            'back': '← Voltar ao Hub',
+            'freeTag': 'Grátis', 'premTag': 'Premium',
+            'loading': 'Calculando...', 'error': 'Insira informações válidas',
+            'unlockTitle': 'Desbloquear Leitura Completa', 'unlockDesc': 'Ver análise detalhada completa',
+            'unlockPrice': '$1.99', 'unlockBtn': '💳 Desbloquear',
+            'unlockNote': 'Desbloqueio automático após pagamento', 'payConfirm': 'Pagamento concluído? OK para desbloquear', 'unlocked': '✅ Desbloqueado',
+        },
+    }
+    return jsonify(translations.get(lang_code, translations['en']))
+
+
+@app.route("/api/geo")
+def geo_detect():
+    """Detect user language from IP/location"""
+    cf_country = request.headers.get('CF-IPCountry', '').upper()
+    x_country = request.headers.get('X-Geo-Country', '').upper()
+    country = cf_country or x_country or ''
+    lang = COUNTRY_LANG.get(country, 'en')
+    return jsonify({'country': country, 'lang': lang, 'available': list(COUNTRY_LANG.values())})
+
 if __name__ == "__main__":
     libre = find_libreoffice()
     print("=" * 55)
