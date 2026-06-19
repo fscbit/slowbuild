@@ -58,34 +58,173 @@ body{font-family:"Noto Serif SC","SimSun","KaiTi",serif;background:var(--bg);col
 .detail-section h4{color:var(--gold);font-size:.82rem;margin-bottom:6px;letter-spacing:1px}
 .detail-section p{font-size:.82rem;color:#b0a590;line-height:1.7}
 </style>
+
+<script>
+// i18n for fortune page
+var FORTUNE_I18N = {
+  'en': {
+    title: 'Chinese Fortune · Ba Zi Calculator',
+    hero_sub: 'Discover your destiny through the ancient art of Bazi',
+    birth_date: '📅 Birth Date',
+    year: 'Year', month: 'Month', day: 'Day',
+    hour: 'Hour', minute: 'Minute (precise)',
+    calc_btn: '🔮 Calculate',
+    loading: 'Calculating...',
+    error_date: 'Please enter a valid date (1901-2100)',
+    error_backend: 'Backend connection failed. Please ensure the server is running.',
+    overview: '🧧 Chart Overview',
+    solar: 'Solar', lunar: 'Lunar',
+    zodiac: 'Zodiac', hour_label: 'Time',
+    year_pillar: 'Year Pillar', month_pillar: 'Month Pillar',
+    day_pillar: 'Day Pillar', hour_pillar: 'Hour Pillar',
+    year_desc: 'Ancestry·Childhood', month_desc: 'Parents·Youth',
+    day_desc: 'Self·Marriage', hour_desc: 'Children·Later Years',
+    day_master: 'Day Master',
+    missing: 'Missing Elements',
+    unlock_title: 'Unlock Full Reading',
+    unlock_desc: 'Personality · Career · Love · Element Balance · Lucky Elements',
+    unlock_price: '$2.99',
+    unlock_btn: '💳 Unlock Now',
+    unlock_note: 'Full reading auto-unlocks after payment',
+    back: '← Back to slowbuild',
+    pay_confirm: 'Payment completed? Click OK to unlock full reading.',
+    unlocked: '✅ Full Reading Unlocked',
+    wuxing_balance: 'Element Balance',
+    career: 'Career Direction',
+    love: 'Love & Relationships',
+    lucky: 'Lucky Elements',
+    lucky_tip: 'Favor things related to '
+  },
+  'zh-CN': {
+    title: '八字命盘 · Chinese Fortune',
+    hero_sub: '通过古老的八字命理，探索你的命运',
+    birth_date: '📅 出生日期',
+    year: '年', month: '月', day: '日',
+    hour: '时', minute: '分钟（精确排盘）',
+    calc_btn: '🔮 排盘分析',
+    loading: '推算中...',
+    error_date: '请输入合法日期（1901-2100年）',
+    error_backend: '后端连接失败。请确保后端服务正在运行。',
+    overview: '🧧 命盘概览',
+    solar: '公历', lunar: '农历',
+    zodiac: '生肖', hour_label: '时辰',
+    year_pillar: '年柱', month_pillar: '月柱',
+    day_pillar: '日柱', hour_pillar: '时柱',
+    year_desc: '祖上·童年', month_desc: '父母·青年',
+    day_desc: '自己·婚姻', hour_desc: '子女·晚年',
+    day_master: '日主',
+    missing: '五行缺失',
+    unlock_title: '解锁完整命盘解读',
+    unlock_desc: '性格详解 · 事业方向 · 感情分析 · 五行平衡建议 · 吉祥元素',
+    unlock_price: '$2.99',
+    unlock_btn: '💳 立即解锁',
+    unlock_note: '付款后自动解锁完整解读',
+    back: '<span data-ft="back">← 返回 slowbuild</span>',
+    pay_confirm: '已完成支付？点击确定解锁完整解读',
+    unlocked: '✅ 完整解读已解锁',
+    wuxing_balance: '五行平衡',
+    career: '事业方向',
+    love: '感情运势',
+    lucky: '吉祥元素',
+    lucky_tip: '适合多接触与「'
+  },
+  'zh-TW': {
+    title: '八字命盤 · Chinese Fortune',
+    hero_sub: '通過古老的八字命理，探索你的命運',
+    birth_date: '📅 出生日期',
+    year: '年', month: '月', day: '日',
+    hour: '時', minute: '分鐘（精確排盤）',
+    calc_btn: '🔮 排盤分析',
+    loading: '推算中...',
+    error_date: '請輸入合法日期（1901-2100年）',
+    error_backend: '後端連接失敗。請確保後端服務正在運行。',
+    overview: '🧧 命盤概覽',
+    solar: '西曆', lunar: '農曆',
+    zodiac: '生肖', hour_label: '時辰',
+    year_pillar: '年柱', month_pillar: '月柱',
+    day_pillar: '日柱', hour_pillar: '時柱',
+    year_desc: '祖上·童年', month_desc: '父母·青年',
+    day_desc: '自己·婚姻', hour_desc: '子女·晚年',
+    day_master: '日主',
+    missing: '五行缺失',
+    unlock_title: '解鎖完整命盤解讀',
+    unlock_desc: '性格詳解 · 事業方向 · 感情分析 · 五行平衡建議 · 吉祥元素',
+    unlock_price: '$2.99',
+    unlock_btn: '💳 立即解鎖',
+    unlock_note: '付款後自動解鎖完整解讀',
+    back: '<span data-ft="back">← 返回 slowbuild</span>',
+    pay_confirm: '已完成支付？點擊確定解鎖完整解讀',
+    unlocked: '✅ 完整解讀已解鎖',
+    wuxing_balance: '五行平衡',
+    career: '事業方向',
+    love: '感情運勢',
+    lucky: '吉祥元素',
+    lucky_tip: '適合多接觸與「'
+  }
+};
+
+// Detect language
+var fortuneLang = (function(){
+  var p = new URLSearchParams(window.location.search);
+  if(p.get('lang')) return p.get('lang');
+  try { var s = localStorage.getItem('slowbuild_lang'); if(s) return s; } catch(e){}
+  return 'zh-CN';
+})() + ';
+// Highlight active
+setTimeout(function(){ switchFortuneLang(fortuneLang); }, 100);
+
+})();
+
+function ft(key){
+  var d = FORTUNE_I18N[fortuneLang] || FORTUNE_I18N['zh-CN'];
+  return d[key] || FORTUNE_I18N['zh-CN'][key] || key;
+}
+
+// Update UI after load
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('[data-ft]').forEach(function(el){
+    el.textContent = ft(el.getAttribute('data-ft'));
+    if(el.placeholder !== undefined) el.placeholder = ft(el.getAttribute('data-ft'));
+  });
+  document.getElementById('ftTitle').textContent = ft('title');
+  document.getElementById('ftSub').textContent = ft('hero_sub');
+});
+</script>
 </head>
 <body>
 
 <div class="hero">
-  <h1>八 字 命 盘</h1>
-  <div class="sub">Chinese Fortune · Ba Zi Calculator</div>
+
+<div style="text-align:center;padding:8px 0;margin-top:-10px">
+  <div style="display:inline-flex;gap:2px;background:rgba(255,255,255,.05);border-radius:8px;padding:2px">
+    <button onclick="switchFortuneLang('zh-CN')" id="flang-zh-CN" style="font-size:.7rem;padding:3px 10px;border:none;border-radius:6px;cursor:pointer;background:#1a1410;color:var(--muted);font-family:inherit">简</button>
+    <button onclick="switchFortuneLang('en')" id="flang-en" style="font-size:.7rem;padding:3px 10px;border:none;border-radius:6px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit">EN</button>
+    <button onclick="switchFortuneLang('zh-TW')" id="flang-zh-TW" style="font-size:.7rem;padding:3px 10px;border:none;border-radius:6px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit">繁</button>
+  </div>
+</div>  <h1 id="ftTitle">八 字 命 盘</h1>
+  <div class="sub" id="ftSub">通过古老的八字命理，探索你的命运</div>
 </div>
 
 <div class="container">
   <div class="card">
-    <div class="card-title">📅 出生日期</div>
+    <div class="card-title">📅 <span data-ft="birth_date">出生日期</span></div>
     <div class="form-grid">
       <div class="form-group">
-        <label>年</label>
+        <label data-ft="year">年</label>
         <input type="number" id="year" placeholder="1990" min="1901" max="2100" value="1990">
       </div>
       <div class="form-group">
-        <label>月</label>
+        <label data-ft="month">月</label>
         <input type="number" id="month" placeholder="1" min="1" max="12" value="1">
       </div>
       <div class="form-group">
-        <label>日</label>
+        <label data-ft="day">日</label>
         <input type="number" id="day" placeholder="1" min="1" max="31" value="1">
       </div>
     </div>
     <div class="form-grid" style="grid-template-columns:1fr 1fr;margin-top:10px">
       <div class="form-group">
-        <label>时</label>
+        <label data-ft="hour">时</label>
         <select id="hour">
           <option value="0">子时 23:00-01:00</option>
           <option value="2">丑时 01:00-03:00</option>
@@ -102,19 +241,19 @@ body{font-family:"Noto Serif SC","SimSun","KaiTi",serif;background:var(--bg);col
         </select>
       </div>
       <div class="form-group">
-        <label>分钟（精确排盘）</label>
+        <label data-ft="minute">分钟（精确排盘）</label>
         <select id="minute">
           <option value="0">:00</option><option value="15">:15</option><option value="30">:30</option><option value="45">:45</option>
         </select>
       </div>
     </div>
-    <button class="btn btn-primary" onclick="calculate()" id="calcBtn" style="margin-top:16px">🔮 排盘分析</button>
+    <button class="btn btn-primary" onclick="calculate()" id="calcBtn" style="margin-top:16px"><span data-ft="calc_btn">🔮 排盘分析</span></button>
   </div>
 
   <div id="result"></div>
 
   <div class="back-link">
-    <a href="/">← 返回 slowbuild</a>
+    <a href="/"><span data-ft="back">← 返回 slowbuild</span></a>
   </div>
 </div>
 
@@ -140,6 +279,24 @@ function api(path, method, body){
 // ============================================
 var currentResult = null;
 
+
+function switchFortuneLang(l){
+  fortuneLang = l;
+  try { localStorage.setItem('slowbuild_lang', l); } catch(e){}
+  document.getElementById('ftTitle').textContent = ft('title');
+  document.getElementById('ftSub').textContent = ft('hero_sub');
+  document.querySelectorAll('[data-ft]').forEach(function(el){
+    el.textContent = ft(el.getAttribute('data-ft'));
+  });
+  // Update lang switcher buttons
+  ['zh-CN','en','zh-TW'].forEach(function(ll){
+    var btn = document.getElementById('flang-'+ll);
+    if(btn) btn.style.background = ll===l ? '#1a1410' : 'transparent';
+  });
+  // Clear result to retrigger with new lang
+  document.getElementById('result').innerHTML = '';
+  document.getElementById('calcBtn').textContent = ft('calc_btn');
+}
 function calculate(){
   var btn = document.getElementById('calcBtn');
   var res = document.getElementById('result');
@@ -150,23 +307,23 @@ function calculate(){
   var h = parseInt(document.getElementById('hour').value);
   
   if(!y||!m||!d||y<1901||y>2100||m<1||m>12||d<1||d>31){
-    res.innerHTML = '<div class="error-box">请输入合法日期（1901-2100年）</div>';
+    res.innerHTML = '<div class="error-box">'+ft('error_date')+'</div>';
     return;
   }
   
   btn.disabled = true;
-  btn.textContent = '⏳ 推算中...';
+  btn.textContent = '⏳ '+ft('loading');
   res.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
   
-  api('/api/bazi', 'POST', {year:y, month:m, day:d, hour:h, level:'free'}).then(function(data){
+  api('/api/bazi', 'POST', {year:y, month:m, day:d, hour:h, level:'free', lang:fortuneLang}).then(function(data){
     currentResult = data;
     renderFree(data);
   }).catch(function(e){
     // Backend offline — try localStorage fallback
-    res.innerHTML = '<div class="error-box">后端连接失败: '+e.message+'<br><small>请确保后端服务正在运行</small></div>';
+    res.innerHTML = '<div class="error-box">'+ft('error_backend')+': '+e.message+'</div>';
   }).finally(function(){
     btn.disabled = false;
-    btn.textContent = '🔮 排盘分析';
+    btn.textContent = ft('calc_btn');
   });
 }
 
@@ -183,16 +340,16 @@ function renderFree(data){
   
   // Header
   h += '<div class="card">';
-  h += '<div class="card-title">🧧 命盘概览</div>';
-  h += '<div class="info-row"><span>公历</span><span>'+data.solar+'</span></div>';
-  h += '<div class="info-row"><span>农历</span><span>'+data.lunar+'</span></div>';
-  h += '<div class="info-row"><span>生肖</span><span>🐲🐍🐴🐑🐒🐔🐕🐖🐀🐂🐅🐇'.charAt(['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'].indexOf(data.shengxiao))+' '+data.shengxiao+'</span></div>';
-  h += '<div class="info-row"><span>时辰</span><span>'+data.hour+'</span></div>';
+  h += '<div class="card-title">🧧 '+ft('overview')+'</div>';
+  h += '<div class="info-row"><span>'+ft('solar')+'</span><span>'+data.solar+'</span></div>';
+  h += '<div class="info-row"><span>'+ft('lunar')+'</span><span>'+data.lunar+'</span></div>';
+  h += '<div class="info-row"><span>'+ft('zodiac')+'</span><span>🐲🐍🐴🐑🐒🐔🐕🐖🐀🐂🐅🐇'.charAt(['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'].indexOf(data.shengxiao))+' '+data.shengxiao+'</span></div>';
+  h += '<div class="info-row"><span>'+ft('hour_label')+'</span><span>'+data.hour+'</span></div>';
   
   // Pillars
   h += '<div class="pillars">';
-  var pillarLabels = {'year':'年柱','month':'月柱','day':'日柱','hour':'时柱'};
-  var pillarDesc = {'year':'祖上·童年','month':'父母·青年','day':'自己·婚姻','hour':'子女·晚年'};
+  var pillarLabels = {'year':ft('year_pillar'),'month':ft('month_pillar'),'day':ft('day_pillar'),'hour':ft('hour_pillar')};
+  var pillarDesc = {'year':ft('year_desc'),'month':ft('month_desc'),'day':ft('day_desc'),'hour':ft('hour_desc')};
   for(var key in pillarLabels){
     h += '<div class="pillar"><div class="label">'+pillarLabels[key]+'</div>';
     h += '<div class="chars">'+p[key]+'</div>';
@@ -201,7 +358,7 @@ function renderFree(data){
   h += '</div>';
   
   // Day master
-  h += '<div class="info-row"><span>日主</span><span>'+dm.gan+'（属'+dm.wuxing+'）</span></div>';
+  h += '<div class="info-row"><span>'+ft('day_master')+'</span><span>'+dm.gan+'（属'+dm.wuxing+'）</span></div>';
   
   // Five elements
   h += '<div class="wuxing-grid">';
@@ -216,7 +373,7 @@ function renderFree(data){
   
   // Missing elements
   if(wx.missing.length > 0){
-    h += '<div class="info-row"><span>五行缺失</span><span style="color:var(--red)">'+wx.missing.join('、')+'</span></div>';
+    h += '<div class="info-row"><span>'+ft('missing')+'</span><span style="color:var(--red)">'+wx.missing.join('、')+'</span></div>';
   }
   
   // Free interpretation
@@ -230,11 +387,11 @@ function renderFree(data){
   // Paywall for full reading
   h += '<div class="paywall">';
   h += '<div class="lock">🔒</div>';
-  h += '<h3>解锁完整命盘解读</h3>';
-  h += '<p>性格详解 · 事业方向 · 感情分析 · 五行平衡建议 · 吉祥元素</p>';
-  h += '<div class="price">$2.99</div>';
-  h += '<button class="btn btn-primary" onclick="buyFull()">💳 立即解锁</button>';
-  h += '<p style="font-size:.7rem;margin-top:6px;color:var(--muted)">付款后自动解锁完整解读</p>';
+  h += '<h3>'+ft('unlock_title')+'</h3>';
+  h += '<p>'+ft('unlock_desc')+'</p>';
+  h += '<div class="price">'+ft('unlock_price')+'</div>';
+  h += '<button class="btn btn-primary" onclick="buyFull()">'+ft('unlock_btn')+'</button>';
+  h += '<p style="font-size:.7rem;margin-top:6px;color:var(--muted)">'+ft('unlock_note')+'</p>';
   h += '</div>';
   
   document.getElementById('result').innerHTML = h;
@@ -248,7 +405,7 @@ function buyFull(){
   window.open('https://paypal.me/ShicongFang/2.99', '_blank');
   // After user comes back, they could enter a code — for now, simple
   setTimeout(function(){
-    if(confirm('已完成支付？点击确定解锁完整解读')) {
+    if(confirm(ft('pay_confirm'))) {
       unlockFull();
     }
   }, 3000);
@@ -277,19 +434,19 @@ function renderFull(data){
   var h = '';
   
   h += '<div class="card" style="border-color:var(--gold)">';
-  h += '<div class="card-title">✅ 完整解读已解锁</div>';
+  h += '<div class="card-title">✅ '+ft('unlocked')+'</div>';
   
   if(interp.wuxing_balance){
-    h += '<div class="detail-section"><h4>五行平衡</h4><p>'+interp.wuxing_balance+'</p></div>';
+    h += '<div class="detail-section"><h4>'+ft('wuxing_balance')+'</h4><p>'+interp.wuxing_balance+'</p></div>';
   }
   if(interp.career){
-    h += '<div class="detail-section"><h4>事业方向</h4><p>'+interp.career+'</p></div>';
+    h += '<div class="detail-section"><h4>'+ft('career')+'</h4><p>'+interp.career+'</p></div>';
   }
   if(interp.love){
-    h += '<div class="detail-section"><h4>感情运势</h4><p>'+interp.love+'</p></div>';
+    h += '<div class="detail-section"><h4>'+ft('love')+'</h4><p>'+interp.love+'</p></div>';
   }
   if(interp.lucky_elements && interp.lucky_elements.length > 0){
-    h += '<div class="detail-section"><h4>吉祥元素</h4><p>适合多接触与「'+interp.lucky_elements.join('、')+'」相关的事物、颜色</p></div>';
+    h += '<div class="detail-section"><h4>'+ft('lucky')+'</h4><p>'+ft('lucky_tip')+'」'+interp.lucky_elements.join('、')+'」相关的事物、颜色</p></div>';
   }
   
   h += '</div>';
