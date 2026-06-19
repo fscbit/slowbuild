@@ -169,7 +169,7 @@ def get_daily_horoscope(sun_en, date_str):
         '财运不错。可能会收到一笔意外之喜或有新的收入机会。',
     ]
     horoscopes_en = [
-        'Bold action is favored today. Trust your instincts and move on that thing you've been postponing.',
+        'Bold action is favored today. Trust your instincts and move on that thing you\'ve been postponing.',
         'A day for slowing down. Quiet your mind and notice the small beauties around you.',
         'Communication flows easily. Reach out to someone — a pleasant surprise awaits.',
         'Intuition is heightened. Pay attention to dreams and gut feelings today.',
