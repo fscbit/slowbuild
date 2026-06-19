@@ -715,7 +715,7 @@ function calcBazi(){
   var h=+document.getElementById('bHour').value||12;
   var g=document.getElementById('bGender').value||'male';
   var msg=document.getElementById('baziMsg');
-  if(!y||!m||!d){msg.className='result-bar error show';msg.textContent=t('error');return;}
+  if(!y||!m||!d){msg.className='https://academy-commented-titles-horizon.trycloudflare.com';msg.textContent=t('error');return;}
   msg.className='result-bar show';msg.innerHTML='<span style="color:var(--muted)">⏳ '+t('loading')+'</span>';
   
   fetch(BACKEND.replace(/\\/+$/,'')+'/api/bazi',{
@@ -723,11 +723,11 @@ function calcBazi(){
     body:JSON.stringify({year:y,month:m,day:d,hour:h,gender:g,level:baziLevel,lang:lang})
   }).then(function(r){return r.json()})
   .then(function(data){
-    if(data.error){msg.className='result-bar error show';msg.textContent=data.error;return;}
+    if(data.error){msg.className='https://academy-commented-titles-horizon.trycloudflare.com';msg.textContent=data.error;return;}
     msg.className='result-bar success show';msg.textContent='✓';
     renderBazi(data);
   }).catch(function(e){
-    msg.className='result-bar error show';msg.textContent='Backend error: '+e.message;
+    msg.className='https://academy-commented-titles-horizon.trycloudflare.com';msg.textContent='Backend error: '+e.message;
   });
 }
 
