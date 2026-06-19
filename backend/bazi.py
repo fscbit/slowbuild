@@ -770,18 +770,20 @@ def generate_interpretation(bazi_result, level='basic', lang='zh'):
 # 主函数
 # ═══════════════════════════
 
-def calculate_bazi(year, month, day, hour=12, level='basic', lang='zh'):
+def calculate_bazi(year, month, day, hour=12, minute=0, level='basic', lang='zh', gender='male'):
     """
-    计算八字命盘
+    计算八字命盘（完整版）
     year, month, day: 公历日期
     hour: 小时 (0-23)
+    minute: 分钟 (0-59, 精确排盘)
     level: 'free' / 'basic' / 'full'
-    lang: 'zh' (中文) or 'en' (English)
+    lang: 'zh' / 'en'
+    gender: 'male' / 'female' (大运顺逆排)
     """
     try:
         date_obj = datetime.date(year, month, day)
     except ValueError:
-        return {'error': '日期不合法'}
+        return {'error': '日期不合法' if lang.startswith('zh') else 'Invalid date'}
     
     # 农历转换
     lunar_year, lunar_month, lunar_day, is_leap = solar_to_lunar(date_obj)
@@ -799,6 +801,9 @@ def calculate_bazi(year, month, day, hour=12, level='basic', lang='zh'):
         'hour': hour_gz
     }
     
+    # 纳音
+    nayin = {k: NA_YIN.get(v, '') for k, v in pillars.items()}
+    
     # 生肖
     zhi_idx = DI_ZHI.index(year_gz[1])
     shengxiao = SHENG_XIAO[zhi_idx]
@@ -806,11 +811,31 @@ def calculate_bazi(year, month, day, hour=12, level='basic', lang='zh'):
     # 时辰名称
     hour_name = get_hour_name(hour)
     
-    # 五行分析
-    wuxing = analyze_wuxing(pillars)
+    # 五行详细分析
+    wuxing = detailed_wuxing_balance(pillars)
+    
+    # 空亡
+    xun_kong = get_xun_kong(day_gz)
     
     # 日主
     day_master = get_day_master(pillars)
+    
+    # 日主强弱
+    dm_strength = day_master_strength(day_master, pillars, wuxing)
+    
+    # 十神
+    ten_gods = {}
+    day_gan = day_gz[0]
+    for pname, gz in pillars.items():
+        gan = gz[0]
+        zhi = gz[1] if len(gz) > 1 else ''
+        ten_gods[pname] = {
+            'gan': get_shi_shen(day_gan, gan),
+            'zhi': get_shi_shen(day_gan, zhi) if zhi else '',
+        }
+    
+    # 神煞
+    shen_sha = get_shen_sha(pillars, day_gz[1] if len(day_gz) > 1 else '')
     
     # 农历日期字符串
     lunar_month_str = f"{'闰' if is_leap else ''}{lunar_month}月"
@@ -822,16 +847,29 @@ def calculate_bazi(year, month, day, hour=12, level='basic', lang='zh'):
         'hour': hour_name,
         'shengxiao': shengxiao,
         'pillars': pillars,
+        'nayin': nayin,
         'day_master': day_master,
         'wuxing': wuxing,
+        'xun_kong': xun_kong,
+        'day_master_strength': dm_strength,
+        'ten_gods': ten_gods,
+        'shen_sha': shen_sha,
     }
+    
+    # 大运 (free: 3个, basic: 6个, full: 10个)
+    dayun = calculate_dayun(year, month, day, hour, gender, lang)
+    result['dayun'] = dayun[:3] if level == 'free' else (dayun[:6] if level == 'basic' else dayun)
+    
+    # 流年 (free: 1个, basic/full: 5个)
+    current_year = datetime.date.today().year
+    liunian = calculate_liunian(day_gz, current_year, 5, lang)
+    result['liunian'] = liunian[:1] if level == 'free' else liunian
     
     # 生成解读
     interp = generate_interpretation(result, level, lang)
     result['interpretation'] = interp
     
     return result
-
 
 # ═══════════════════════════
 # 命令行测试
