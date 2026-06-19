@@ -17,6 +17,8 @@ from flask_cors import CORS
 
 # 八字命盘引擎
 from bazi import calculate_bazi
+from astro import build_full_chart, get_daily_horoscope
+from numerology import build_numerology_report
 
 app = Flask(__name__)
 CORS(app)
@@ -719,6 +721,69 @@ def public_shop():
     db.close()
     return jsonify({"products": products, "courses": courses})
 
+
+
+# ═══════════════════════════════════════════
+#  🪐 西方占星 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/astro", methods=["POST"])
+def astro_chart():
+    """Full birth chart + horoscope"""
+    data = request.get_json(force=True) or {}
+    year = data.get("year")
+    month = data.get("month")
+    day = data.get("day")
+    hour = data.get("hour", 12)
+    level = data.get("level", "free")
+    lang = data.get("lang", "zh-CN")
+
+    if not all([year, month, day]):
+        return jsonify({"error": "Need year, month, day"}), 400
+
+    try:
+        chart = build_full_chart(int(year), int(month), int(day), int(hour), level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    if chart.get("error"):
+        return jsonify(chart), 400
+
+    # Add daily horoscope
+    sun_en = chart.get("sun", {}).get("en", "")
+    today = datetime.now().strftime("%Y-%m-%d")
+    daily = get_daily_horoscope(sun_en, today)
+    chart["daily"] = daily
+
+    return jsonify(chart)
+
+
+# ═══════════════════════════════════════════
+#  🔢 生命灵数 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/numerology", methods=["POST"])
+def numerology():
+    """Full numerology report"""
+    data = request.get_json(force=True) or {}
+    year = data.get("year")
+    month = data.get("month")
+    day = data.get("day")
+    name = data.get("name", "")
+    level = data.get("level", "free")
+
+    if not all([year, month, day]):
+        return jsonify({"error": "Need year, month, day"}), 400
+
+    try:
+        report = build_numerology_report(int(year), int(month), int(day), name, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    if report.get("error"):
+        return jsonify(report), 400
+
+    return jsonify(report)
 
 if __name__ == "__main__":
     libre = find_libreoffice()
