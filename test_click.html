@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Test Page</title>
+<style>
+body{background:#0a0a1a;color:#fff;font-family:sans-serif;padding:20px;text-align:center}
+button{padding:12px 24px;margin:10px;font-size:18px;border-radius:8px;border:none;cursor:pointer}
+.btn-blue{background:#4a90d9;color:#fff}
+.btn-gold{background:#c9a84c;color:#fff}
+.card{background:#1a1a2e;border:1px solid #333;border-radius:12px;padding:20px;margin:15px auto;max-width:350px}
+#msg{margin-top:20px;color:#c9a84c;font-size:18px}
+</style>
+</head>
+<body>
+<h1>🔮 测试页面</h1>
+<p>点下面的按钮试试：</p>
+<button class="btn-blue" onclick="showMsg('你点了按钮1')">按钮 1</button>
+<button class="btn-gold" onclick="showMsg('你点了按钮2')">按钮 2</button>
+<button onclick="switchL('zh')">中文</button>
+<button onclick="switchL('en')">EN</button>
+<div id="msg"></div>
+<div id="cards"></div>
+
+<script>
+var l='zh';
+function showMsg(m){document.getElementById('msg').innerText=m;}
+function switchL(lang){
+  l=lang;
+  showMsg('语言: '+lang);
+  renderCards();
+}
+function renderCards(){
+  var titles={zh:['八字命盘','星座运势','生命灵数'],en:['Ba Zi','Astro','Numerology']};
+  var h='';
+  for(var i=0;i<3;i++){
+    h+='<div class="card" onclick="showMsg(\'点卡片'+(i+1)+'\')"><h3>'+(titles[l]||titles.zh)[i]+'</h3><p>点我试试</p></div>';
+  }
+  document.getElementById('cards').innerHTML=h;
+}
+renderCards();
+</script>
+</body>
+</html>
