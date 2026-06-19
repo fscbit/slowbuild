@@ -468,7 +468,7 @@ function calcBazi(){
   if(!y||!m||!d){msg.className='result-bar error show';msg.textContent=t('error');return;}
   msg.className='result-bar show';msg.innerHTML='<span style="color:var(--muted)">⏳ '+t('loading')+'</span>';
   
-  fetch(BACKEND.replace(/\\/+$/,'')+'/api/bazi',{
+  fetch(BACKEND.replace(/\/+$/,'')+'/api/bazi',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({year:y,month:m,day:d,hour:h,gender:g,level:baziLevel,lang:lang})
   }).then(function(r){return r.json()})
