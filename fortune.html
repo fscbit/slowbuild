@@ -110,11 +110,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
       <button onclick="switchLang('zh-CN')" id="langBtnCN" class="active">简</button>
       <button onclick="switchLang('en')" id="langBtnEN">EN</button>
       <button onclick="switchLang('zh-TW')" id="langBtnTW">繁</button>
-      <button onclick="switchLang('ja')" id="langBtnJA">日</button>
-      <button onclick="switchLang('ko')" id="langBtnKO">한</button>
-      <button onclick="switchLang('es')" id="langBtnES">ES</button>
-      <button onclick="switchLang('fr')" id="langBtnFR">FR</button>
-      <button onclick="switchLang('pt')" id="langBtnPT">PT</button>
     </div>
   </div>
 
@@ -363,12 +358,6 @@ var T={
     fullChart:'完整星盤需準確出生時間和地點，目前顯示簡化版',
     freeTag:'免費',premTag:'高級',
     numResults:{},
-
-  'ja':{hubTitle:'✦ Destiny Hub ✦',hubSub:'Ancient wisdom meets modern stars — for fun'},
-  'ko':{hubTitle:'✦ Destiny Hub ✦',hubSub:'Ancient wisdom meets modern stars — for fun'},
-  'es':{hubTitle:'✦ Portal del Destino ✦',hubSub:'Sabiduría antigua y estrellas modernas — solo por diversión'},
-  'fr':{hubTitle:'✦ Portail du Destin ✦',hubSub:'Sagesse ancienne et étoiles modernes — pour le plaisir'},
-  'pt':{hubTitle:'✦ Portal do Destino ✦',hubSub:'Sabedoria antiga e estrelas modernas — só por diversão'},
   },
 };
 // Copy zh-TW numerology results from zh-CN
@@ -380,8 +369,10 @@ function t(key){
 
 function switchLang(l){
   lang=l;try{localStorage.setItem('fortune_lang',l)}catch(e){}
-  var ALL_LANGS=['zh-CN','en','zh-TW','ja','ko','es','fr','pt'],BTN_IDS={'zh-CN':'CN','en':'EN','zh-TW':'TW','ja':'JA','ko':'KO','es':'ES','fr':'FR','pt':'PT'};
-  ALL_LANGS.forEach(function(lc){var btn=document.getElementById('langBtn'+BTN_IDS[lc]);if(btn)btn.className=l===lc?'active':'';});
+  ['CN','EN','TW'].forEach(function(c){
+    var btn=document.getElementById('langBtn'+c);
+    if(btn) btn.className = l===('zh-'+c.replace('TW','TW'))?'active':'';
+  });
   renderHub();
   updateAllUIText();
 }
@@ -1031,8 +1022,6 @@ try{if(window.parent&&window.parent.BACKEND)BACKEND=window.parent.BACKEND}catch(
 
 renderHub();
 switchLang(lang);
-// Auto-detect lang by IP
-try{fetch(BACKEND.replace(/\/+$/,'')+'/api/geo').then(function(r){return r.json()}).then(function(g){if(g&&g.lang&&!localStorage.getItem('fortune_lang_set')){if(g.lang!==lang){lang=g.lang;switchLang(lang);}}localStorage.setItem('fortune_lang_set','1');}).catch(function(){});}catch(e){}
 </script>
 </body>
 </html>
