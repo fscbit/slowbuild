@@ -203,6 +203,100 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
   <div id="xlrResult"></div>
 </div>
 
+<!-- ====== FENG SHUI PANEL ====== -->
+<div class="panel" id="panelFengshui">
+  <button class="back-btn" onclick="backToHub()">← <span id="fsBack">Back to Hub</span></button>
+  <div class="card">
+    <div class="card-title">🏠 <span id="fsTitle">Feng Shui · Home & Destiny</span></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:12px" id="fsDesc">Enter your birth year and front door direction for personalized analysis.</p>
+    <div class="form-row">
+      <div class="form-group"><label id="fsYear">Year</label><input id="fsYearV" type="number" placeholder="1990" min="1901"></div>
+      <div class="form-group"><label id="fsGender">Gender</label><select id="fsGenderV"><option value="male" id="fsMale">Male</option><option value="female" id="fsFemale">Female</option></select></div>
+      <div class="form-group"><label id="fsDoor">Door Direction</label><select id="fsDoorV"><option>北</option><option>南</option><option>东</option><option>西</option><option>东北</option><option>西北</option><option>东南</option><option>西南</option><option>中</option></select></div>
+      <button class="btn btn-primary" onclick="calcFengShui()" id="fsBtn">🏠 Analyze</button>
+    </div>
+  </div>
+  <div id="fsResult"></div>
+</div>
+
+<!-- ====== BONE WEIGHT PANEL ====== -->
+<div class="panel" id="panelBoneWeight">
+  <button class="back-btn" onclick="backToHub()">← <span id="bwBack">Back to Hub</span></button>
+  <div class="card">
+    <div class="card-title">⚖️ <span id="bwTitle">Bone Weight Fortune · 称骨算命</span></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:12px" id="bwDesc">An ancient method to weigh your destiny. Each birth component has a weight. Your total reveals your fortune.</p>
+    <div class="form-row">
+      <div class="form-group"><label id="bwYear">Year</label><select id="bwYearV" onchange="updateBWMonth()"></select></div>
+      <div class="form-group"><label id="bwMonth">Month</label><select id="bwMonthV"><option value="1">正月</option><option value="2">二月</option><option value="3">三月</option><option value="4">四月</option><option value="5">五月</option><option value="6">六月</option><option value="7">七月</option><option value="8">八月</option><option value="9">九月</option><option value="10">十月</option><option value="11">十一月</option><option value="12">十二月</option></select></div>
+      <div class="form-group"><label id="bwDay">Day</label><select id="bwDayV"></select></div>
+      <div class="form-group"><label id="bwHour">Hour</label><select id="bwHourV"><option value="0">子时 (23-1)</option><option value="1">丑时 (1-3)</option><option value="2">寅时 (3-5)</option><option value="3">卯时 (5-7)</option><option value="4">辰时 (7-9)</option><option value="5">巳时 (9-11)</option><option value="6">午时 (11-13)</option><option value="7">未时 (13-15)</option><option value="8">申时 (15-17)</option><option value="9">酉时 (17-19)</option><option value="10">戌时 (19-21)</option><option value="11">亥时 (21-23)</option></select></div>
+      <button class="btn btn-primary" onclick="calcBoneWeight()" id="bwBtn">⚖️ Weigh</button>
+    </div>
+  </div>
+  <div id="bwResult"></div>
+</div>
+
+<!-- ====== PALM READING PANEL ====== -->
+<div class="panel" id="panelPalmReading">
+  <button class="back-btn" onclick="backToHub()">← <span id="palmBack">Back to Hub</span></button>
+  <div class="card">
+    <div class="card-title">🖐️ <span id="palmTitle">Palm Reading · 手掌纹路</span></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:12px" id="palmDesc">Choose your dominant hand and gender, then click the palm lines to reveal their meanings.</p>
+    <div class="form-row" style="justify-content:center;margin-bottom:16px">
+      <select id="palmHand" style="padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text)"><option value="right">右手/Right</option><option value="left">左手/Left</option></select>
+      <select id="palmGender" style="padding:8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text)"><option value="male">男/Male</option><option value="female">女/Female</option></select>
+    </div>
+    <div style="text-align:center;position:relative;display:inline-block;margin:0 auto;display:block;max-width:300px">
+      <svg viewBox="0 0 300 400" style="width:100%;max-width:300px;cursor:pointer">
+        <!-- Palm outline -->
+        <path d="M150 80 Q180 70 200 100 L210 140 Q215 160 220 180 Q225 200 210 220 Q200 240 190 260 L185 300 Q180 340 190 370 Q200 390 170 390 L130 390 Q100 390 110 370 Q120 340 115 300 L110 260 Q100 240 90 220 Q70 200 80 180 Q85 160 85 140 L95 100 Q110 70 150 80Z" fill="#1a1410" stroke="#3a3020" stroke-width="2"/>
+        <!-- Life line -->
+        <path id="lifeLine" d="M95 130 Q120 200 130 260 Q140 320 135 360" fill="none" stroke="#e8734a" stroke-width="3" opacity="0.7" style="cursor:pointer" onclick="showPalmLine('life')"/>
+        <!-- Head line -->
+        <path id="headLine" d="M95 125 Q150 140 230 150" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.7" style="cursor:pointer" onclick="showPalmLine('head')"/>
+        <!-- Heart line -->
+        <path id="heartLine" d="M80 160 Q150 140 240 130" fill="none" stroke="#d4a853" stroke-width="3" opacity="0.7" style="cursor:pointer" onclick="showPalmLine('heart')"/>
+        <!-- Fate line -->
+        <path id="fateLine" d="M150 200 Q155 280 150 380" fill="none" stroke="#8b5cf6" stroke="2" opacity="0.5" style="cursor:pointer" onclick="showPalmLine('fate')"/>
+        <!-- Labels -->
+        <text x="70" y="250" fill="#e8734a" font-size="10" style="cursor:pointer" onclick="showPalmLine('life')">生命线</text>
+        <text x="200" y="145" fill="#38bdf8" font-size="10" style="cursor:pointer" onclick="showPalmLine('head')">智慧线</text>
+        <text x="200" y="125" fill="#d4a853" font-size="10" style="cursor:pointer" onclick="showPalmLine('heart')">感情线</text>
+        <text x="160" y="290" fill="#8b5cf6" font-size="10" style="cursor:pointer" onclick="showPalmLine('fate')">命运线</text>
+      </svg>
+    </div>
+  </div>
+  <div id="palmResult"></div>
+</div>
+
+<!-- ====== LUCKY DRAW PANEL ====== -->
+<div class="panel" id="panelLuckyDraw">
+  <button class="back-btn" onclick="backToHub()">← <span id="ldBack">Back to Hub</span></button>
+  <div class="card">
+    <div class="card-title">🎋 <span id="ldTitle">Guan Yin Oracle · 观音灵签</span></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:12px" id="ldDesc">Quiet your mind, think of your question, then draw a sacred stick.</p>
+    <div style="text-align:center">
+      <button class="btn btn-primary" onclick="drawStick()" id="ldBtn" style="font-size:1.1rem;padding:14px 40px">🎋 Draw Oracle Stick</button>
+    </div>
+    <div id="ldResult" style="margin-top:16px"></div>
+  </div>
+</div>
+
+<!-- ====== NAME ANALYSIS PANEL ====== -->
+<div class="panel" id="panelNameAnaly">
+  <button class="back-btn" onclick="backToHub()">← <span id="nameBack">Back to Hub</span></button>
+  <div class="card">
+    <div class="card-title">📛 <span id="nameTitle">Name Analysis · 姓名探秘</span></div>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:12px" id="nameDesc">Based on Japanese 姓名判断 (Seimei Handan). Enter your full name to analyze stroke count fortune.</p>
+    <div class="form-row">
+      <div class="form-group"><label id="nameFamily">Surname</label><input id="nameFamilyV" placeholder="方"></div>
+      <div class="form-group"><label id="nameGiven">Given Name</label><input id="nameGivenV" placeholder="世聪"></div>
+      <button class="btn btn-primary" onclick="calcName()" id="nameBtn">📛 Analyze</button>
+    </div>
+  </div>
+  <div id="nameResult"></div>
+</div>
+
 <!-- ====== BLOOD TYPE PANEL ====== -->
 <div class="panel" id="panelBlood">
   <button class="back-btn" onclick="backToHub()">← <span id="bloodBack">Back to Hub</span></button>
@@ -441,6 +535,7 @@ function openSystem(id){
   switch(id){
     case 'astro':switchAstroTab('sign');break;
     case 'tarot':initTarot();break;
+    case 'boneweight':initBoneYear();break;
     case 'iching':initIching();break;
   }
   updateAllUIText();
@@ -455,7 +550,7 @@ function backToHub(){
 // ═══════════════════════════════════════════
 // BAZI
 // ═══════════════════════════════════════════
-var baziLevel='free',astroLevel='free',numLevel='free';
+var baziLevel='free',astroLevel='free',numLevel='free',fengshuiLevel='free';
 var BACKEND=parent.BACKEND||'https://api.slowbuild.top';
 
 function calcBazi(){
