@@ -110,6 +110,11 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
       <button onclick="switchLang('zh-CN')" id="langBtnCN" class="active">简</button>
       <button onclick="switchLang('en')" id="langBtnEN">EN</button>
       <button onclick="switchLang('zh-TW')" id="langBtnTW">繁</button>
+      <button onclick="switchLang('ja')" id="langBtnJA">日</button>
+      <button onclick="switchLang('ko')" id="langBtnKO">한</button>
+      <button onclick="switchLang('es')" id="langBtnES">ES</button>
+      <button onclick="switchLang('fr')" id="langBtnFR">FR</button>
+      <button onclick="switchLang('pt')" id="langBtnPT">PT</button>
     </div>
   </div>
 
@@ -221,6 +226,61 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 
 </div><!-- /container -->
 
+<!-- ====== FENG SHUI PANEL ====== -->
+<div class="panel" id="panelFengshui">
+  <button class="back-btn" onclick="backToHub()">← <span id="fengshuiBack">Back</span></button>
+  <div class="card">
+    <div class="card-title">🏠 <span id="fengshuiTitle">Feng Shui</span></div>
+    <div class="form-row">
+      <div class="form-group"><label id="fengshuiYear">Birth Year</label><input id="fsYear" type="number" placeholder="1990" min="1900" max="2100"></div>
+      <div class="form-group"><label id="fengshuiGender2">Gender</label><select id="fsGender"><option value="male" id="fengshuiMale2">Male</option><option value="female" id="fengshuiFemale2">Female</option></select></div>
+      <button class="btn btn-primary" onclick="calcFengshui()" id="fengshuiBtn">🏠 Calculate</button>
+    </div>
+    <div class="result-bar" id="fengshuiMsg"></div>
+  </div>
+  <div id="fengshuiResult"></div>
+</div>
+
+<!-- ====== PALM READING PANEL ====== -->
+<div class="panel" id="panelPalm">
+  <button class="back-btn" onclick="backToHub()">← <span id="palmBack">Back</span></button>
+  <div class="card">
+    <div class="card-title">✋ <span id="palmTitle">Palm Reading</span></div>
+    <div class="form-row">
+      <div class="form-group"><label id="palmShape">Hand Shape</label><select id="psShape"><option value="square" id="palmSquare">Square</option><option value="rect" id="palmRect">Rectangle</option><option value="mixed" id="palmMixed">Mixed</option></select></div>
+      <div class="form-group"><label id="palmFingers">Finger Length</label><select id="psFingers"><option value="long" id="palmLong">Long</option><option value="short" id="palmShort">Short</option><option value="avg" id="palmAvg">Average</option></select></div>
+      <button class="btn btn-primary" onclick="calcPalm()" id="palmBtn">✋ Analyze</button>
+    </div>
+    <div class="result-bar" id="palmMsg"></div>
+  </div>
+  <div id="palmResult"></div>
+</div>
+
+<!-- ====== LUCKY DRAW PANEL ====== -->
+<div class="panel" id="panelLucky">
+  <button class="back-btn" onclick="backToHub()">← <span id="luckyBack">Back</span></button>
+  <div class="card" style="text-align:center">
+    <div class="card-title">🥠 <span id="luckyTitle">Fortune Draw</span></div>
+    <p style="color:var(--muted);margin-bottom:20px" id="luckyDesc">Focus on your question, then draw a fortune.</p>
+    <button class="btn btn-gold" onclick="drawLucky()" id="luckyDraw" style="font-size:1.3rem;padding:16px 40px">🥠 Draw Fortune</button>
+    <div id="luckyResult" style="margin-top:20px"></div>
+  </div>
+</div>
+
+<!-- ====== NAME ANALYSIS PANEL ====== -->
+<div class="panel" id="panelName">
+  <button class="back-btn" onclick="backToHub()">← <span id="nameBack">Back</span></button>
+  <div class="card">
+    <div class="card-title">📛 <span id="nameTitle">Name Analysis</span></div>
+    <div class="form-row">
+      <div class="form-group"><label id="nameInput">Name</label><input id="nmName" type="text" placeholder="Enter name" style="width:200px"></div>
+      <button class="btn btn-primary" onclick="calcName()" id="nameBtn">📛 Analyze</button>
+    </div>
+    <div class="result-bar" id="nameMsg"></div>
+  </div>
+  <div id="nameResult"></div>
+</div>
+
 <script>
 // ═══════════════════════════════════════════
 // Stars background
@@ -248,7 +308,7 @@ var T={
     sysIching:'周易六爻',sysIchingDesc:'六次掷币成卦 · 古老的智慧指引',
     sysBlood:'血型性格',sysBloodDesc:'日式血型性格学 · 快速了解自己',
     sysXLR:'小六壬',sysXLRDesc:'失物寻找 · 方位指引 · 丢东西问它就对了',
-    back:'返回总览',baziTitle:'八字命盘 · Eight Characters',
+    sysFengshui:'风水堪舆',sysFengshuiDesc:'八宅风水 · 命卦方位 · 吉凶指引',sysPalm:'手相速查',sysPalmDesc:'掌型分析 · 手指特征 · 性格解读',sysLucky:'灵签占卜',sysLuckyDesc:'随机抽取 · 一键解惑 · 心诚则灵',sysName:'姓名分析',sysNameDesc:'笔画五行 · 天格地格 · 三才五格',back:'返回总览',baziTitle:'八字命盘 · Eight Characters',
     baziYear:'年',baziMonth:'月',baziDay:'日',baziHour:'时',baziGender:'性别',
     baziMale:'男',baziFemale:'女',baziBtn:'🔮 排盘分析',
     loading:'推算中...',error:'请输入完整日期',
@@ -335,7 +395,7 @@ var T={
     sysIching:'周易六爻',sysIchingDesc:'六次擲幣成卦 · 古老的智慧指引',
     sysBlood:'血型性格',sysBloodDesc:'日式血型性格学 · 快速了解自己',
     sysXLR:'小六壬',sysXLRDesc:'失物尋找 · 方位指引 · 丟東西問它就對了',
-    back:'返回總覽',baziTitle:'八字命盤 · Eight Characters',
+    sysFengshui:'Feng Shui',sysFengshuiDesc:'Eight Mansions · Personal Kua · Auspicious Directions',sysPalm:'Palm Reading',sysPalmDesc:'Hand shape · Finger traits · Personality insights',sysLucky:'Fortune Draw',sysLuckyDesc:'Random draw · Quick guidance · Believe to receive',sysName:'Name Analysis',sysNameDesc:'Stroke count · Five Elements · Destiny grid',back:'返回總覽',baziTitle:'八字命盤 · Eight Characters',
     baziYear:'年',baziMonth:'月',baziDay:'日',baziHour:'時',baziGender:'性別',
     baziMale:'男',baziFemale:'女',baziBtn:'🔮 排盤分析',
     loading:'推算中...',error:'請輸入完整日期',
@@ -358,6 +418,221 @@ var T={
     fullChart:'完整星盤需準確出生時間和地點，目前顯示簡化版',
     freeTag:'免費',premTag:'高級',
     numResults:{},
+  'ja':{
+    hubTitle:'✦ 運命の扉 ✦',hubSub:'古代の叡智と現代の星々 — 楽しむために',
+    sysBazi:'八字命式',sysBaziDesc:'中国古来の命理学 · 四柱八字 · 大運流年',
+    sysAstro:'西洋占星術',sysAstroDesc:'太陽・月・上昇星座 · 日運 · 相性診断',
+    sysNum:'ライフパスナンバー',sysNumDesc:'生年月日から導く数字の暗号',
+    sysTarot:'タロット占い',sysTarotDesc:'スリーカード · 過去現在未来',
+    sysIching:'易経',sysIchingDesc:'六爻で卦を立てる · 古代の智慧',
+    sysBlood:'血液型性格',sysBloodDesc:'日式血液型性格診断',
+    sysXLR:'小六壬',sysXLRDesc:'失せ物探し · 方位案内',
+    sysFengshui:'風水',sysFengshuiDesc:'八宅風水 · 命卦方位 · 吉凶判断',
+    sysPalm:'手相',sysPalmDesc:'手の形 · 指の特徴 · 性格分析',
+    sysLucky:'おみくじ',sysLuckyDesc:'ランダム抽選 · 即座の導き',
+    sysName:'姓名判断',sysNameDesc:'画数五行 · 天格地格 · 三才五格',
+    back:'戻る',baziTitle:'八字命式 · Eight Characters',
+    baziYear:'年',baziMonth:'月',baziDay:'日',baziHour:'時',baziGender:'性別',
+    baziMale:'男性',baziFemale:'女性',baziBtn:'🔮 計算する',
+    loading:'計算中...',error:'完全な日付を入力してください',
+    overview:'命式概要',solar:'新暦',lunar:'旧暦',zodiac:'干支',hourLabel:'時辰',
+    dayMaster:'日主',missing:'不足五行',wuxingBal:'五行バランス',dmStrength:'日主強弱',
+    tenGods:'十神関係',nayinLabel:'納音',shenSha:'神煞',xunKong:'空亡',
+    pillars:'四柱八字',dayunLabel:'大運',liunianLabel:'流年運勢',
+    career:'仕事運',love:'恋愛運',health:'健康運',lucky:'ラッキー要素',luckyTip:'「',
+    unlockTitle:'完全鑑定を解放',unlockDesc:'性格 · 仕事 · 恋愛 · 五行 · 吉祥 · 大運流年',
+    unlockPrice:'$2.99',unlockBtn:'💳 解放する',unlockNote:'支払い後自動解放',
+    payConfirm:'支払い完了？',unlocked:'✅ 解放済み',
+    astroSign:'太陽星座',astroDaily:'今日の運勢',astroCompat:'相性診断',astroRising:'完全星図',
+    chooseSign:'星座を選ぶ',
+    numTitle:'ライフパスナンバー',numYear:'年',numMonth:'月',numDay:'日',numBtn:'🔢 計算',
+    tarotTitle:'タロット · 三枚引き',tarotDraw:'🎴 カードを引く',tarotPos:['過去','現在','未来'],
+    ichingTitle:'易経 · 六爻',ichingCast:'☯️ コインを投げる',ichingRound:'投げる %d/6',
+    bloodTitle:'血液型性格',chooseBlood:'血液型を選ぶ',
+    xlrTitle:'小六壬 · 失せ物探し',xlrMonth:'旧暦月',xlrDay:'旧暦日',xlrHour:'時 (0-23)',
+    xlrBtn:'🔍 探す',xlrResult:'結果',xlrLoc:'方位',xlrFinder:'発見者',xlrTime:'時間',
+    fengshuiTitle:'風水 · 八宅命卦',fengshuiYear:'生まれた年',fengshuiGender2:'性別',fengshuiBtn:'🏠 計算',
+    palmTitle:'手相速查',palmShape:'手の形',palmBtn:'✋ 分析',
+    luckyTitle:'霊籤占い',luckyDraw:'🥠 おみくじを引く',
+    nameTitle:'姓名判断',nameInput:'お名前',nameBtn:'📛 分析',
+    freeTag:'無料',premTag:'プレミアム',
+    loading2:'計算中...',error2:'有効な情報を入力してください',
+    unlockTitle2:'完全な分析を解放',unlockDesc2:'詳細な分析を見る',
+    unlockPrice2:'$1.99',unlockBtn2:'💳 解放する',
+    unlockNote2:'支払い後自動解放',payConfirm2:'支払い完了？',unlocked2:'✅ 解放済み',
+  },
+  'ko':{
+    hubTitle:'✦ 운명의 문 ✦',hubSub:'고대의 지혜와 현대의 별들 — 즐기기 위해',
+    sysBazi:'팔자 명반',sysBaziDesc:'중국 고대 명리학 · 사주팔자 · 대운',
+    sysAstro:'서양 점성술',sysAstroDesc:'태양·달·상승 별자리 · 일간 운세 · 궁합',
+    sysNum:'생명 영수',sysNumDesc:'생년월일로 찾는 숫자의 비밀',
+    sysTarot:'타로 점술',sysTarotDesc:'세 장의 카드 · 과거 현재 미래',
+    sysIching:'주역',sysIchingDesc:'육효 점괘 · 고대의 지혜',
+    sysBlood:'혈액형 성격',sysBloodDesc:'일식 혈액형 성격학',
+    sysXLR:'소육임',sysXLRDesc:'분실물 찾기 · 방향 안내',
+    sysFengshui:'풍수',sysFengshuiDesc:'팔택풍수 · 명괘 방위 · 길흉 판단',
+    sysPalm:'수상',sysPalmDesc:'손 모양 · 손가락 특징 · 성격 분석',
+    sysLucky:'운세 뽑기',sysLuckyDesc:'무작위 추첨 · 빠른 안내',
+    sysName:'성명 분석',sysNameDesc:'획수 오행 · 천격 지격 · 삼재 오격',
+    back:'돌아가기',baziTitle:'팔자 명반 · Eight Characters',
+    baziYear:'년',baziMonth:'월',baziDay:'일',baziHour:'시',baziGender:'성별',
+    baziMale:'남',baziFemale:'여',baziBtn:'🔮 분석하기',
+    loading:'계산 중...',error:'완전한 날짜를 입력하세요',
+    overview:'명반 개요',solar:'양력',lunar:'음력',zodiac:'띠',hourLabel:'시간',
+    dayMaster:'일주',missing:'부족 오행',wuxingBal:'오행 균형',dmStrength:'일주 강약',
+    tenGods:'십신 관계',nayinLabel:'납음',shenSha:'신살',xunKong:'공망',
+    pillars:'사주팔자',dayunLabel:'대운',liunianLabel:'세운',
+    career:'직업운',love:'애정운',health:'건강운',lucky:'행운 요소',luckyTip:'「',
+    unlockTitle:'전체 해석 잠금 해제',unlockDesc:'성격 · 직업 · 애정 · 오행 · 행운 · 대운 세운',
+    unlockPrice:'$2.99',unlockBtn:'💳 잠금 해제',unlockNote:'결제 후 자동 해제',
+    payConfirm:'결제 완료?',unlocked:'✅ 해제 완료',
+    astroSign:'태양 별자리',astroDaily:'오늘의 운세',astroCompat:'궁합',astroRising:'전체 차트',
+    chooseSign:'별자리 선택',
+    numTitle:'생명 영수',numYear:'년',numMonth:'월',numDay:'일',numBtn:'🔢 계산',
+    tarotTitle:'타로 · 세 장',tarotDraw:'🎴 카드 뽑기',tarotPos:['과거','현재','미래'],
+    ichingTitle:'주역 · 육효',ichingCast:'☯️ 동전 던지기',ichingRound:'%d/6회',
+    bloodTitle:'혈액형 성격',chooseBlood:'혈액형 선택',
+    xlrTitle:'소육임 · 분실물',xlrMonth:'음력 월',xlrDay:'음력 일',xlrHour:'시간 (0-23)',
+    xlrBtn:'🔍 찾기',xlrResult:'결과',xlrLoc:'방위',xlrFinder:'발견자',xlrTime:'시간',
+    fengshuiTitle:'풍수 · 팔택 명괘',fengshuiYear:'출생년도',fengshuiGender2:'성별',fengshuiBtn:'🏠 계산',
+    palmTitle:'수상 간이 진단',palmShape:'손 모양',palmBtn:'✋ 분석',
+    luckyTitle:'운세 뽑기',luckyDraw:'🥠 뽑기',
+    nameTitle:'성명 분석',nameInput:'이름',nameBtn:'📛 분석',
+    freeTag:'무료',premTag:'프리미엄',
+    loading2:'계산 중...',error2:'유효한 정보를 입력하세요',
+    unlockTitle2:'전체 분석 잠금 해제',unlockDesc2:'상세 분석 보기',
+    unlockPrice2:'$1.99',unlockBtn2:'💳 잠금 해제',
+    unlockNote2:'결제 후 자동 해제',payConfirm2:'결제 완료?',unlocked2:'✅ 해제 완료',
+  },
+  'es':{
+    hubTitle:'✦ Portal del Destino ✦',hubSub:'Sabiduría antigua y estrellas modernas',
+    sysBazi:'Ba Zi',sysBaziDesc:'Numerología china · Cuatro Pilares · Destino',
+    sysAstro:'Astrología',sysAstroDesc:'Sol · Luna · Ascendente · Diario · Compatibilidad',
+    sysNum:'Numerología',sysNumDesc:'El código secreto de tu fecha de nacimiento',
+    sysTarot:'Tarot',sysTarotDesc:'Tres cartas · Pasado presente futuro',
+    sysIching:'I Ching',sysIchingDesc:'Seis monedas · Sabiduría milenaria',
+    sysBlood:'Tipo de Sangre',sysBloodDesc:'Personalidad según tu tipo de sangre',
+    sysXLR:'Xiao Liu Ren',sysXLRDesc:'Objetos perdidos · Orientación',
+    sysFengshui:'Feng Shui',sysFengshuiDesc:'Ocho Mansiones · Kua personal · Direcciones',
+    sysPalm:'Quiromancia',sysPalmDesc:'Forma de mano · Dedos · Personalidad',
+    sysLucky:'Galleta Fortuna',sysLuckyDesc:'Sorteo aleatorio · Guía rápida',
+    sysName:'Análisis Nombre',sysNameDesc:'Trazos · Cinco Elementos · Destino',
+    back:'Volver',baziTitle:'Ba Zi · Ocho Caracteres',
+    baziYear:'Año',baziMonth:'Mes',baziDay:'Día',baziHour:'Hora',baziGender:'Género',
+    baziMale:'Masculino',baziFemale:'Femenino',baziBtn:'🔮 Calcular',
+    loading:'Calculando...',error:'Ingrese fecha completa',
+    overview:'Resumen',solar:'Solar',lunar:'Lunar',zodiac:'Zodiaco',hourLabel:'Hora',
+    dayMaster:'Maestro Día',missing:'Falta',wuxingBal:'Balance',dmStrength:'Fuerza',
+    tenGods:'Diez Dioses',nayinLabel:'Nayin',shenSha:'Shen Sha',xunKong:'Vacío',
+    pillars:'Pilares',dayunLabel:'Gran Ciclo',liunianLabel:'Ciclo Anual',
+    career:'Carrera',love:'Amor',health:'Salud',lucky:'Suerte',luckyTip:'Conectar con «',
+    unlockTitle:'Desbloquear Lectura',unlockDesc:'Personalidad · Carrera · Amor · Salud',
+    unlockPrice:'$2.99',unlockBtn:'💳 Desbloquear',unlockNote:'Automático tras pago',
+    payConfirm:'¿Pago completado?',unlocked:'✅ Desbloqueado',
+    astroSign:'Signo Solar',astroDaily:'Diario',astroCompat:'Compatibilidad',astroRising:'Carta',
+    chooseSign:'Elige tu signo',
+    numTitle:'Número de Vida',numYear:'Año',numMonth:'Mes',numDay:'Día',numBtn:'🔢 Calcular',
+    tarotTitle:'Tarot · Tres Cartas',tarotDraw:'🎴 Sacar Cartas',tarotPos:['Pasado','Presente','Futuro'],
+    ichingTitle:'I Ching · Hexagrama',ichingCast:'☯️ Lanzar Monedas',ichingRound:'%d/6',
+    bloodTitle:'Tipo de Sangre',chooseBlood:'Elige tipo',
+    xlrTitle:'Objeto Perdido',xlrMonth:'Mes Lunar',xlrDay:'Día Lunar',xlrHour:'Hora (0-23)',
+    xlrBtn:'🔍 Buscar',xlrResult:'Resultado',xlrLoc:'Ubicación',xlrFinder:'Quién',xlrTime:'Cuándo',
+    fengshuiTitle:'Feng Shui · Kua',fengshuiYear:'Año Nac.',fengshuiGender2:'Género',fengshuiBtn:'🏠 Calcular',
+    palmTitle:'Quiromancia',palmShape:'Forma Mano',palmBtn:'✋ Analizar',
+    luckyTitle:'Galleta Fortuna',luckyDraw:'🥠 Sacar',
+    nameTitle:'Análisis Nombre',nameInput:'Nombre',nameBtn:'📛 Analizar',
+    freeTag:'Gratis',premTag:'Premium',
+    loading2:'Calculando...',error2:'Ingrese info válida',
+    unlockTitle2:'Desbloquear Análisis',unlockDesc2:'Ver análisis detallado',
+    unlockPrice2:'$1.99',unlockBtn2:'💳 Desbloquear',
+    unlockNote2:'Automático tras pago',payConfirm2:'¿Pago?',unlocked2:'✅ Desbloqueado',
+  },
+  'fr':{
+    hubTitle:'✦ Portail du Destin ✦',hubSub:'Sagesse ancienne et étoiles modernes',
+    sysBazi:'Ba Zi',sysBaziDesc:'Numérologie chinoise · Quatre Piliers',
+    sysAstro:'Astrologie',sysAstroDesc:'Soleil · Lune · Ascendant · Quotidien',
+    sysNum:'Numérologie',sysNumDesc:'Le code secret de votre date de naissance',
+    sysTarot:'Tarot',sysTarotDesc:'Trois cartes · Passé présent futur',
+    sysIching:'Yi King',sysIchingDesc:'Six pièces · Sagesse ancestrale',
+    sysBlood:'Groupe Sanguin',sysBloodDesc:'Personnalité selon le groupe sanguin',
+    sysXLR:'Xiao Liu Ren',sysXLRDesc:'Objets perdus · Orientation',
+    sysFengshui:'Feng Shui',sysFengshuiDesc:'Huit Demeures · Kua · Directions',
+    sysPalm:'Chiromancie',sysPalmDesc:'Forme main · Doigts · Personnalité',
+    sysLucky:'Fortune',sysLuckyDesc:'Tirage aléatoire · Guide rapide',
+    sysName:'Analyse Nom',sysNameDesc:'Traits · Cinq Éléments · Destin',
+    back:'Retour',baziTitle:'Ba Zi · Huit Caractères',
+    baziYear:'Année',baziMonth:'Mois',baziDay:'Jour',baziHour:'Heure',baziGender:'Genre',
+    baziMale:'Homme',baziFemale:'Femme',baziBtn:'🔮 Calculer',
+    loading:'Calcul...',error:'Date complète requise',
+    overview:'Aperçu',solar:'Solaire',lunar:'Lunaire',zodiac:'Zodiaque',hourLabel:'Heure',
+    dayMaster:'Maître Jour',missing:'Manque',wuxingBal:'Équilibre',dmStrength:'Force',
+    tenGods:'Dix Dieux',nayinLabel:'Nayin',shenSha:'Shen Sha',xunKong:'Vide',
+    pillars:'Piliers',dayunLabel:'Grand Cycle',liunianLabel:'Cycle Annuel',
+    career:'Carrière',love:'Amour',health:'Santé',lucky:'Chance',luckyTip:'Connecter avec «',
+    unlockTitle:'Débloquer Lecture',unlockDesc:'Personnalité · Carrière · Amour',
+    unlockPrice:'$2.99',unlockBtn:'💳 Débloquer',unlockNote:'Auto après paiement',
+    payConfirm:'Paiement OK ?',unlocked:'✅ Débloqué',
+    astroSign:'Signe Solaire',astroDaily:'Quotidien',astroCompat:'Compatibilité',astroRising:'Carte',
+    chooseSign:'Choisir signe',
+    numTitle:'Chemin de Vie',numYear:'Année',numMonth:'Mois',numDay:'Jour',numBtn:'🔢 Calculer',
+    tarotTitle:'Tarot · Trois Cartes',tarotDraw:'🎴 Tirer',tarotPos:['Passé','Présent','Futur'],
+    ichingTitle:'Yi King',ichingCast:'☯️ Lancer',ichingRound:'%d/6',
+    bloodTitle:'Groupe Sanguin',chooseBlood:'Choisir',
+    xlrTitle:'Objet Perdu',xlrMonth:'Mois Lunaire',xlrDay:'Jour Lunaire',xlrHour:'Heure',
+    xlrBtn:'🔍 Chercher',xlrResult:'Résultat',xlrLoc:'Endroit',xlrFinder:'Qui',xlrTime:'Quand',
+    fengshuiTitle:'Feng Shui · Kua',fengshuiYear:'Année Naiss.',fengshuiGender2:'Genre',fengshuiBtn:'🏠 Calculer',
+    palmTitle:'Chiromancie',palmShape:'Forme Main',palmBtn:'✋ Analyser',
+    luckyTitle:'Fortune',luckyDraw:'🥠 Tirer',
+    nameTitle:'Analyse Nom',nameInput:'Nom',nameBtn:'📛 Analyser',
+    freeTag:'Gratuit',premTag:'Premium',
+    loading2:'Calcul...',error2:'Infos valides svp',
+    unlockTitle2:'Débloquer Analyse',unlockDesc2:'Voir analyse détaillée',
+    unlockPrice2:'$1.99',unlockBtn2:'💳 Débloquer',
+    unlockNote2:'Auto après paiement',payConfirm2:'Paiement OK ?',unlocked2:'✅ Débloqué',
+  },
+  'pt':{
+    hubTitle:'✦ Portal do Destino ✦',hubSub:'Sabedoria antiga e estrelas modernas',
+    sysBazi:'Ba Zi',sysBaziDesc:'Numerologia chinesa · Quatro Pilares',
+    sysAstro:'Astrologia',sysAstroDesc:'Sol · Lua · Ascendente · Diário',
+    sysNum:'Numerologia',sysNumDesc:'O código secreto da sua data de nascimento',
+    sysTarot:'Tarô',sysTarotDesc:'Três cartas · Passado presente futuro',
+    sysIching:'I Ching',sysIchingDesc:'Seis moedas · Sabedoria ancestral',
+    sysBlood:'Tipo Sanguíneo',sysBloodDesc:'Personalidade pelo tipo sanguíneo',
+    sysXLR:'Xiao Liu Ren',sysXLRDesc:'Objetos perdidos · Orientação',
+    sysFengshui:'Feng Shui',sysFengshuiDesc:'Oito Mansões · Kua · Direções',
+    sysPalm:'Quiromancia',sysPalmDesc:'Forma mão · Dedos · Personalidade',
+    sysLucky:'Sorte',sysLuckyDesc:'Sorteio aleatório · Guia rápido',
+    sysName:'Análise Nome',sysNameDesc:'Traços · Cinco Elementos · Destino',
+    back:'Voltar',baziTitle:'Ba Zi · Oito Caracteres',
+    baziYear:'Ano',baziMonth:'Mês',baziDay:'Dia',baziHour:'Hora',baziGender:'Gênero',
+    baziMale:'Masculino',baziFemale:'Feminino',baziBtn:'🔮 Calcular',
+    loading:'Calculando...',error:'Data completa necessária',
+    overview:'Resumo',solar:'Solar',lunar:'Lunar',zodiac:'Zodíaco',hourLabel:'Hora',
+    dayMaster:'Mestre Dia',missing:'Falta',wuxingBal:'Equilíbrio',dmStrength:'Força',
+    tenGods:'Dez Deuses',nayinLabel:'Nayin',shenSha:'Shen Sha',xunKong:'Vazio',
+    pillars:'Pilares',dayunLabel:'Grande Ciclo',liunianLabel:'Ciclo Anual',
+    career:'Carreira',love:'Amor',health:'Saúde',lucky:'Sorte',luckyTip:'Conectar com «',
+    unlockTitle:'Desbloquear Leitura',unlockDesc:'Personalidade · Carreira · Amor',
+    unlockPrice:'$2.99',unlockBtn:'💳 Desbloquear',unlockNote:'Auto após pagamento',
+    payConfirm:'Pagamento OK?',unlocked:'✅ Desbloqueado',
+    astroSign:'Signo Solar',astroDaily:'Diário',astroCompat:'Compatibilidade',astroRising:'Mapa',
+    chooseSign:'Escolha signo',
+    numTitle:'Número da Vida',numYear:'Ano',numMonth:'Mês',numDay:'Dia',numBtn:'🔢 Calcular',
+    tarotTitle:'Tarô · Três Cartas',tarotDraw:'🎴 Tirar',tarotPos:['Passado','Presente','Futuro'],
+    ichingTitle:'I Ching',ichingCast:'☯️ Jogar Moedas',ichingRound:'%d/6',
+    bloodTitle:'Tipo Sanguíneo',chooseBlood:'Escolher',
+    xlrTitle:'Objeto Perdido',xlrMonth:'Mês Lunar',xlrDay:'Dia Lunar',xlrHour:'Hora',
+    xlrBtn:'🔍 Buscar',xlrResult:'Resultado',xlrLoc:'Local',xlrFinder:'Quem',xlrTime:'Quando',
+    fengshuiTitle:'Feng Shui · Kua',fengshuiYear:'Nascimento',fengshuiGender2:'Gênero',fengshuiBtn:'🏠 Calcular',
+    palmTitle:'Quiromancia',palmShape:'Forma Mão',palmBtn:'✋ Analisar',
+    luckyTitle:'Sorte',luckyDraw:'🥠 Tirar',
+    nameTitle:'Análise Nome',nameInput:'Nome',nameBtn:'📛 Analisar',
+    freeTag:'Grátis',premTag:'Premium',
+    loading2:'Calculando...',error2:'Info válida necessária',
+    unlockTitle2:'Desbloquear Análise',unlockDesc2:'Ver análise detalhada',
+    unlockPrice2:'$1.99',unlockBtn2:'💳 Desbloquear',
+    unlockNote2:'Auto após pagamento',payConfirm2:'Pagamento OK?',unlocked2:'✅ Desbloqueado',
+  },
   },
 };
 // Copy zh-TW numerology results from zh-CN
@@ -369,10 +644,8 @@ function t(key){
 
 function switchLang(l){
   lang=l;try{localStorage.setItem('fortune_lang',l)}catch(e){}
-  ['CN','EN','TW'].forEach(function(c){
-    var btn=document.getElementById('langBtn'+c);
-    if(btn) btn.className = l===('zh-'+c.replace('TW','TW'))?'active':'';
-  });
+  ['zh-CN','en','zh-TW','ja','ko','es','fr','pt'].forEach(function(lc){
+    var ids={zhCN:'CN',en:'EN',zhTW:'TW',ja:'JA',ko:'KO',es:'ES',fr:'FR',pt:'PT'},btn=document.getElementById('langBtn'+ids[lc.replace(/-/g,'')]);if(btn)btn.className=l===lc?'active':'';});
   renderHub();
   updateAllUIText();
 }
@@ -389,6 +662,10 @@ var SYSTEMS=[
   {id:'iching',icon:'☯️',titleKey:'sysIching',descKey:'sysIchingDesc',tag:'freeTag'},
   {id:'blood',icon:'🅰️',titleKey:'sysBlood',descKey:'sysBloodDesc',tag:'freeTag'},
   {id:'xiaoLiuRen',icon:'🖐️',titleKey:'sysXLR',descKey:'sysXLRDesc',tag:'freeTag'},
+  {id:'fengshui',icon:'🏠',titleKey:'sysFengshui',descKey:'sysFengshuiDesc',tag:'freeTag'},
+  {id:'palm',icon:'✋',titleKey:'sysPalm',descKey:'sysPalmDesc',tag:'freeTag'},
+  {id:'lucky',icon:'🥠',titleKey:'sysLucky',descKey:'sysLuckyDesc',tag:'freeTag'},
+  {id:'name',icon:'📛',titleKey:'sysName',descKey:'sysNameDesc',tag:'freeTag'},
 ];
 
 function renderHub(){
@@ -1015,6 +1292,78 @@ function calcXLR(){
 }
 
 // ═══════════════════════════════════════════
+// Feng Shui (Eight Mansions Kua Calculator)
+// ═══════════════════════════════════════════
+function calcFengshui(){
+  var y=parseInt(document.getElementById('fsYear').value);
+  var g=document.getElementById('fsGender').value;
+  if(!y||y<1900||y>2100){document.getElementById('fengshuiMsg').innerHTML='<div class="card"><p style="color:var(--red)">'+t('error2')+'</p></div>';return;}
+  document.getElementById('fengshuiMsg').innerHTML='<div class="card"><p>'+t('loading2')+'</p></div>';
+  var sum=0,tmp=y;
+  while(tmp>0){sum+=tmp%10;tmp=Math.floor(tmp/10);}
+  while(sum>9){var s=0;while(sum>0){s+=sum%10;sum=Math.floor(sum/10);}sum=s;}
+  var kua=(g==='male')?(11-sum):(4+sum);
+  if(kua>9)kua-=9;if(kua===5)kua=(g==='male')?2:8;
+  var names={1:'Kan / Water',2:'Kun / Earth',3:'Zhen / Thunder',4:'Xun / Wind',6:'Qian / Heaven',7:'Dui / Lake',8:'Gen / Mountain',9:'Li / Fire'};
+  var cn={1:'坎水',2:'坤土',3:'震雷',4:'巽风',6:'乾天',7:'兑泽',8:'艮山',9:'离火'};
+  var dirs={1:{ausp:['South','East','Southeast'],inausp:['Northeast','West','Northwest']},2:{ausp:['Northeast','West','Northwest'],inausp:['South','East','Southeast']},3:{ausp:['South','North','Southeast'],inausp:['West','Northwest','Northeast']},4:{ausp:['North','South','East'],inausp:['Northwest','Northeast','West']},6:{ausp:['West','Northeast','Southwest'],inausp:['South','East','North']},7:{ausp:['Northwest','Northeast','Southwest'],inausp:['South','East','North']},8:{ausp:['Southwest','Northwest','West'],inausp:['East','South','North']},9:{ausp:['East','South','North'],inausp:['Northeast','Southwest','West']}};
+  var h='<div class="card"><div style="text-align:center"><div style="font-size:3rem;margin-bottom:8px">'+kua+'</div><h3>'+cn[kua]+' / '+names[kua]+'</h3>';
+  h+='<p style="margin-top:12px;color:var(--gold)">Auspicious Directions:</p><p>'+dirs[kua].ausp.join(', ')+'</p>';
+  h+='<p style="color:var(--red);margin-top:8px">Inauspicious:</p><p>'+dirs[kua].inausp.join(', ')+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For reference only.</p></div></div>';
+  document.getElementById('fengshuiResult').innerHTML=h;
+}
+// ═══════════════════════════════════════════
+// Palm Reading
+// ═══════════════════════════════════════════
+function calcPalm(){
+  var shape=document.getElementById('psShape').value;
+  var fingers=document.getElementById('psFingers').value;
+  document.getElementById('palmMsg').innerHTML='';
+  var data={'square-long':{t:'Earth Hand',cn:'土形手',desc:'Practical and reliable. You value stability and security.'},'square-short':{t:'Earth-Fire Hand',cn:'土火混合',desc:'Practical yet energetic. You get things done quickly.'},'square-avg':{t:'Balanced Earth Hand',cn:'平衡土形',desc:'Grounded and steady. Loyal and dependable.'},'rect-long':{t:'Water Hand',cn:'水形手',desc:'Intuitive and creative. Drawn to arts and abstract thinking.'},'rect-short':{t:'Water-Air Hand',cn:'水风混合',desc:'Creative communicator. Quick-witted, adaptable.'},'rect-avg':{t:'Balanced Water Hand',cn:'平衡水形',desc:'Artistic and sensitive. Express yourself beautifully.'},'mixed-long':{t:'Fire Hand',cn:'火形手',desc:'Passionate and bold. Natural leader, unafraid of risks.'},'mixed-short':{t:'Fire-Air Hand',cn:'火风混合',desc:'Energetic thinker. Entrepreneurial spirit.'},'mixed-avg':{t:'Balanced Air Hand',cn:'平衡风形',desc:'Intellectual and sociable. A natural networker.'}};
+  var d=data[shape+'-'+fingers];
+  var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">✋</div><h3>'+d.t+'</h3><p style="color:var(--gold);font-size:.9rem">'+d.cn+'</p>';
+  h+='<p style="margin-top:12px;line-height:1.7">'+d.desc+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For entertainment only.</p></div></div>';
+  document.getElementById('palmResult').innerHTML=h;
+}
+// ═══════════════════════════════════════════
+// Lucky Draw
+// ═══════════════════════════════════════════
+function drawLucky(){
+  var fortunes=['Great fortune awaits you in unexpected places.','A pleasant surprise is coming your way.','Now is the time to take that bold step.','Patience will bring rewards.','Your kindness will be returned tenfold.','A new friendship will blossom.','Travel is in your stars. An adventure awaits.','Financial luck is strong. Wise investments pay off.','Let go of what no longer serves you.','Your creativity will solve the problem.','Someone you miss is thinking of you too.','A small risk today leads to a big reward tomorrow.'];
+  var cn=['好运在不经意处等你，保持开放心态。','惊喜正在路上，请睁大眼睛敞开心扉。','现在就是迈出勇敢一步的最佳时机。','耐心将带来回报。好事多磨。','你的善良会有十倍回报。继续做你自己。','一段新的友谊即将绽放，用心呵护。','旅行在星空中等着你。','财运亨通，明智的投资会得到回报。','放下不再适合你的东西，为新福气腾出空间。','你的创造力将解决难题。','你想念的人也正在想你。','今天的小冒险，明天的大收获。'];
+  var seed=Date.now()%fortunes.length;
+  var h='<div class="card" style="animation:fadeIn .5s ease"><div style="text-align:center"><div style="font-size:4rem">🥠</div>';
+  h+='<p style="font-size:1.1rem;line-height:1.7;margin-top:16px;font-style:italic">'+fortunes[seed]+'</p>';
+  h+='<p style="font-size:1rem;line-height:1.7;margin-top:8px;color:var(--gold)">'+cn[seed]+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:16px">For entertainment only.</p></div></div>';
+  document.getElementById('luckyResult').innerHTML=h;
+}
+// ═══════════════════════════════════════════
+// Name Analysis
+// ═══════════════════════════════════════════
+function calcName(){
+  var name=document.getElementById('nmName').value.trim();
+  if(!name){document.getElementById('nameMsg').innerHTML='<div class="card"><p style="color:var(--red)">'+t('error2')+'</p></div>';return;}
+  document.getElementById('nameMsg').innerHTML='';
+  var strokes=[];
+  for(var i=0;i<name.length;i++){
+    var code=name.charCodeAt(i);
+    if(code>=0x4e00&&code<=0x9fff){strokes.push((code%10)+5)}else{strokes.push(Math.min(code%10+3,25))}
+  }
+  var total=0;for(var i=0;i<strokes.length;i++)total+=strokes[i];
+  var elemCN=['金','木','水','火','土'];
+  var descs={0:{en:'Strong willpower, natural leader.',cn:'意志坚定，有领导才能。'},1:{en:'Creative and growth-oriented.',cn:'富有创造力，成长导向。'},2:{en:'Wise and intuitive, deep thinker.',cn:'智慧直觉，思维深邃。'},3:{en:'Passionate and energetic, charismatic.',cn:'热情活力，魅力四射。'},4:{en:'Stable and reliable, trustworthy.',cn:'稳重可靠，值得信赖。'}};
+  var d=descs[total%5];
+  var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">📛</div><h3>'+name+'</h3>';
+  h+='<p style="color:var(--gold);margin-top:8px">Total Strokes: '+total+' | Element: '+elemCN[total%5]+'</p>';
+  h+='<p style="margin-top:12px;line-height:1.7">'+d.en+'</p>';
+  h+='<p style="font-size:.9rem;line-height:1.7;color:var(--gold)">'+d.cn+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For reference only.</p></div></div>';
+  document.getElementById('nameResult').innerHTML=h;
+}
+// ═══════════════════════════════════════════
 // Init
 // ═══════════════════════════════════════════
 // Try to get BACKEND from parent (iframe context)
@@ -1022,6 +1371,7 @@ try{if(window.parent&&window.parent.BACKEND)BACKEND=window.parent.BACKEND}catch(
 
 renderHub();
 switchLang(lang);
+try{fetch(BACKEND.replace(/\/+$/,'')+'/api/geo').then(function(r){return r.json()}).then(function(g){if(g&&g.lang&&!localStorage.getItem('fortune_lang_set')){if(g.lang!==lang){lang=g.lang;switchLang(lang);}localStorage.setItem('fortune_lang_set','1');}}).catch(function(){});}catch(e){}
 </script>
 </body>
 </html>
