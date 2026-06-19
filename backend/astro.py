@@ -175,7 +175,7 @@ def get_daily_horoscope(sun_en, date_str):
         'Intuition is heightened. Pay attention to dreams and gut feelings today.',
         'The spotlight is on you. Share your ideas confidently — people are listening.',
         'Detail-oriented energy. Perfect for organizing, decluttering, and tying loose ends.',
-        'Balance is everything. If you've been overworking, take a break today.',
+        'Balance is everything. If you\'ve been overworking, take a break today.',
         'Deep transformation is brewing. Release what no longer serves you.',
         'Adventure calls! Step outside your comfort zone — new experiences await.',
         'Hard work pays off. Stay disciplined and focused — results are near.',
