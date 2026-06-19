@@ -898,7 +898,7 @@ def get_i18n(lang_code):
             'back': '← Retour au Hub',
             'freeTag': 'Gratuit', 'premTag': 'Premium',
             'loading': 'Calcul en cours...', 'error': 'Veuillez entrer des informations valides',
-            'unlockTitle': 'Débloquer la Lecture Complète', 'unlockDesc': 'Voir l'analyse détaillée complète',
+            'unlockTitle': 'Débloquer la Lecture Complète', 'unlockDesc': 'Voir l\'analyse détaillée complète',
             'unlockPrice': '$1.99', 'unlockBtn': '💳 Débloquer',
             'unlockNote': 'Déblocage automatique après paiement', 'payConfirm': 'Paiement terminé ? OK pour débloquer', 'unlocked': '✅ Débloqué',
         },
