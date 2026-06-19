@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>slowbuild 控制台</title>
+<title>slowbuild 商品管理后台</title>
 <style>
 :root{--bg:#f5f5f0;--surface:#fff;--text:#1a1a1a;--muted:#888;--border:#e0e0d8;--accent:#e87d4b;--green:#2e8b57;--red:#d94a4a;--blue:#4a90d9;--radius:10px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -90,6 +90,7 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
       <div id="productList"></div>
       <div class="btn-row" style="margin-top:12px">
         <button class="btn primary" onclick="showProductForm()">➕ 添加商品</button>
+      <button class="btn outline" onclick="quickTemplate()" style="margin-left:8px">📋 快速模板</button>
         <button class="btn outline" onclick="refreshAll()">🔄 刷新</button>
       </div>
     </div>
@@ -108,10 +109,17 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
     <div id="page-settings" style="display:none">
       <h2>⚙️ 设置</h2>
       <div class="card">
-        <div class="card-label">默认收款链接</div>
+        <div class="card-label">默认收款链接 (海外)</div>
         <div class="form-group">
-          <label>所有新商品/课程默认使用此收款链接</label>
-          <input type="text" id="defaultBuyLink" placeholder="LemonSqueezy / Payoneer 收款链接" onchange="saveSettings()">
+          <label>新商品默认海外收款链接 (Payoneer)</label>
+          <input type="text" id="defaultBuyLink" placeholder="https://link.payoneer.com/Token?t=..." onchange="saveSettings()">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-label">默认收款方式 (国内)</div>
+        <div class="form-group">
+          <label>新商品默认国内收款图片路径</label>
+          <input type="text" id="defaultBuyLinkCN" placeholder="images/alipay-qr.jpg" onchange="saveSettings()">
         </div>
       </div>
       <div class="card">
@@ -148,7 +156,8 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
   <div class="form-grid">
     <div class="form-group"><label>价格 USD</label><input id="pPrice" type="number" step="0.01" min="0" placeholder="9.99"></div>
     <div class="form-group"><label>图片路径</label><input id="pImage" placeholder="images/xxx.jpg"><input type="file" id="pImageFile" accept="image/*" style="margin-top:4px;font-size:.78rem" onchange="uploadImage()"><span id="pImageUploading" style="display:none;font-size:.75rem;color:var(--muted)">⏳ 上传中...</span></div>
-    <div class="form-group"><label>收款链接 (LemonSqueezy)</label><input id="pBuyLink" placeholder="https://slowbuild.lemonsqueezy.com/..."></div>
+    <div class="form-group"><label>收款链接 (Payoneer / 海外)</label><input id="pBuyLink" placeholder="https://link.payoneer.com/Token?t=..."></div>
+    <div class="form-group"><label>国内收款图片 (支付宝/微信)</label><input id="pBuyLinkCN" placeholder="images/alipay-qr.jpg"></div>
   </div>
   <div class="form-group" style="margin:10px 0"><label>描述 (EN)</label><textarea id="pDescEN" placeholder="Product description"></textarea></div>
   <div class="form-grid">
@@ -191,7 +200,7 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
   <div class="form-grid">
     <div class="form-group"><label>封面图片</label><input id="cImage" placeholder="images/course.jpg"></div>
     <div class="form-group"><label>预览视频 URL</label><input id="cVideoPreview" placeholder="https://youtube.com/..."></div>
-    <div class="form-group"><label>收款链接 (LemonSqueezy)</label><input id="cBuyLink" placeholder="https://slowbuild.lemonsqueezy.com/..."></div>
+    <div class="form-group"><label>收款链接 (Payoneer / 海外)</label><input id="cBuyLink" placeholder="https://link.payoneer.com/Token?t=..."></div>
   </div>
   <div class="form-group" style="margin:10px 0"><label>描述 (EN)</label><textarea id="cDescEN" placeholder="What students will learn..."></textarea></div>
   <div class="form-grid">
@@ -243,6 +252,7 @@ function api(path, method, body){
 (function init(){
   document.getElementById('apiUrl').value = localStorage.getItem('sb_api_url')||'';
   document.getElementById('defaultBuyLink').value = localStorage.getItem('sb_default_buy_link')||'';
+  document.getElementById('defaultBuyLinkCN').value = localStorage.getItem('sb_default_buy_link_cn')||'';
   document.getElementById('defaultImage').value = localStorage.getItem('sb_default_image')||'images/product.jpg';
   var u = apiUrl();
   if(u){ testConn(); }
@@ -313,6 +323,21 @@ function renderProductList(){
   el.innerHTML = h;
 }
 
+
+function quickTemplate(){
+  showProductForm();
+  // Pre-fill common fields
+  document.getElementById('pType').value = 'digital';
+  document.getElementById('pPrice').value = '4.99';
+  document.getElementById('pNameEN').placeholder = '例: Image Compressor';
+  document.getElementById('pNameCN').placeholder = '例: 图片压缩器';
+  document.getElementById('pDescEN').placeholder = 'Describe what this tool does...';
+  document.getElementById('pDescCN').placeholder = '描述这个工具的功能...';
+  document.getElementById('pShipEN').value = '📦 Instant digital delivery';
+  document.getElementById('pShipCN').value = '📦 即时数字交付';
+  document.getElementById('pShipTW').value = '📦 即時數位交付';
+  document.getElementById('pMsg').textContent = '💡 已填入模板，修改后保存即可';
+}
 function showProductForm(){
   document.getElementById('productModalTitle').textContent = '➕ 添加商品';
   document.getElementById('pId').value = '';
@@ -323,6 +348,7 @@ function showProductForm(){
   document.getElementById('pPrice').value = '9.99';
   document.getElementById('pImage').value = localStorage.getItem('sb_default_image')||'';
   document.getElementById('pBuyLink').value = localStorage.getItem('sb_default_buy_link')||'';
+  document.getElementById('pBuyLinkCN').value = localStorage.getItem('sb_default_buy_link_cn')||'';
   document.getElementById('pDescEN').value = '';
   document.getElementById('pDescCN').value = '';
   document.getElementById('pDescTW').value = '';
@@ -348,6 +374,7 @@ function editProduct(id){
   document.getElementById('pPrice').value = p.price||0;
   document.getElementById('pImage').value = p.image||'';
   document.getElementById('pBuyLink').value = p.buyLink||'';
+  document.getElementById('pBuyLinkCN').value = p.buyLinkCN||'';
   document.getElementById('pDescEN').value = p.desc.en||'';
   document.getElementById('pDescCN').value = p.desc['zh-CN']||'';
   document.getElementById('pDescTW').value = p.desc['zh-TW']||'';
@@ -394,6 +421,7 @@ function saveProduct(){
     price: parseFloat(document.getElementById('pPrice').value)||0,
     image: document.getElementById('pImage').value.trim(),
     buyLink: document.getElementById('pBuyLink').value.trim(),
+    buyLinkCN: document.getElementById('pBuyLinkCN').value.trim(),
     specs: {en:specsEn, 'zh-CN':specsCN, 'zh-TW':specsTW},
     shipping: {en:document.getElementById('pShipEN').value, 'zh-CN':document.getElementById('pShipCN').value, 'zh-TW':document.getElementById('pShipTW').value}
   };
@@ -576,6 +604,7 @@ function addSyllabusRow(){
 // ══════════════════════════════════
 function saveSettings(){
   localStorage.setItem('sb_default_buy_link', document.getElementById('defaultBuyLink').value.trim());
+  localStorage.setItem('sb_default_buy_link_cn', document.getElementById('defaultBuyLinkCN').value.trim());
   localStorage.setItem('sb_default_image', document.getElementById('defaultImage').value.trim());
 }
 
