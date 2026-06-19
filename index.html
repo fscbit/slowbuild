@@ -141,6 +141,16 @@
       .sidebar-close-btn{display:none;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
       @media(max-width:768px){.sidebar-close-btn{display:block}}
       .sidebar-close-btn:hover{color:var(--text);background:var(--code-bg)}
+    /* QR Payment Modal */
+    .qr-payment{text-align:center;padding:10px 0}
+    .qr-payment img{max-width:220px;border-radius:8px;border:1px solid var(--border)}
+    .qr-payment .qr-amount{font-size:1.6rem;font-weight:700;color:var(--accent);margin:8px 0}
+    .qr-payment .qr-note{font-size:.78rem;color:var(--muted);margin:8px 0}
+    .qr-payment .qr-orderid{background:var(--code-bg);padding:6px 12px;border-radius:6px;font-family:monospace;font-size:.85rem;display:inline-block;margin:4px 0}
+    .qr-payment .qr-platforms{display:flex;gap:10px;justify-content:center;margin:12px 0}
+    .qr-payment .qr-tab{font-size:.82rem;padding:6px 16px;border:1px solid var(--border);border-radius:6px;cursor:pointer;background:transparent;font-family:inherit;color:var(--muted);transition:all .15s}
+    .qr-payment .qr-tab.active{background:var(--text);color:#fff;border-color:var(--text)}
+
       nav{padding-left:40px}
     }
   </style>
@@ -195,7 +205,7 @@
       <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
         <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
         <span style="font-size:2rem;font-weight:800">$22.00</span>
-        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
+        <a id="bundleBuyBtn" onclick="buyBundleDirect(event)" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;cursor:pointer;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
       </div>
       <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
     </div>
@@ -322,6 +332,28 @@
       <div id="shopCourses" style="margin-top:32px"><h3 style="font-size:1rem;margin-bottom:12px" data-i18n="shop_courses_title">📚 Courses</h3><div class="product-grid" id="courseGrid"></div></div>
     </div>
   </section>
+</div>
+
+
+<!-- PAYMENT MODAL (zh-CN domestic) -->
+<div class="modal-overlay" id="payModal">
+  <div class="modal-box" style="text-align:center">
+    <h3>💳 <span id="payTitle">扫码支付</span></h3>
+    <p id="payProduct" style="color:var(--muted);font-size:.85rem;margin:4px 0">—</p>
+    <div class="qr-payment">
+      <div class="qr-amount" id="payAmount">$0</div>
+      <div class="qr-note">⚠️ <span id="payNote">付款时请在备注填写订单号</span></div>
+      <div class="qr-orderid" id="payOrderId">—</div>
+      <div class="qr-platforms">
+        <button class="qr-tab active" onclick="switchPayQR('alipay')" id="qrTabAlipay">支付宝</button>
+        <button class="qr-tab" onclick="switchPayQR('wechat')" id="qrTabWechat">微信</button>
+      </div>
+      <div id="qrAlipay"><img src="/images/alipay-qr.jpg" alt="支付宝收款码" style="max-width:220px;border-radius:8px"><p style="font-size:.75rem;color:var(--muted);margin-top:4px">打开支付宝扫一扫</p></div>
+      <div id="qrWechat" style="display:none"><p style="font-size:.85rem;color:var(--muted);padding:40px 0">微信收款码待提供</p></div>
+    </div>
+    <p style="font-size:.75rem;color:var(--muted);margin-top:8px">付款后我们会尽快处理，请留意订单通知</p>
+    <button class="btn primary" onclick="closePayModal()" style="margin-top:10px" id="payDoneBtn">✓ 已完成支付</button>
+  </div>
 </div>
 
 <!-- ORDER MODAL -->
@@ -1321,24 +1353,30 @@ function submitOrder(){
   msg.className = 'result-bar show';
   msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':'Submitting...')+'</span>';
 
+  var orderData = {product:product, price:price, name:name, email:email, address:address, notes:notes};
+  var orderId = 'SW' + Date.now().toString(36).toUpperCase();
+
   fetch('/api/order', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({product:product, price:price, name:name, email:email, address:address, notes:notes})
+    body: JSON.stringify(orderData)
   }).then(function(r){ return r.json(); })
   .then(function(d){
     if(d.success){
       msg.className = 'result-bar success show';
       msg.textContent = t('order_success');
-      // Store order in localStorage as backup
       try{
         var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-        orders.push({id:d.orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+        orders.push({id:d.orderId||orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
         localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
       }catch(e){}
       setTimeout(function(){
         closeOrder();
-        window.open(_orderPayLink, '_blank');
+        if(lang==='zh-CN'){
+          showPayModal(product, price, d.orderId||orderId);
+        } else {
+          window.open(_orderPayLink, '_blank');
+        }
       }, 1500);
     } else {
       msg.className = 'result-bar error show';
@@ -1347,17 +1385,55 @@ function submitOrder(){
   }).catch(function(err){
     // Fallback: still let them pay, order stored in localStorage
     msg.className = 'result-bar success show';
-    msg.textContent = '✓ '+(lang==='zh-CN'?'正在跳转付款（订单已本地保存）...':'Redirecting to payment (order saved locally)...');
+    if(lang==='zh-CN'){
+      msg.textContent = '✓ 订单已本地保存，请扫码付款';
+    } else {
+      msg.textContent = '✓ Order saved locally. Redirecting to payment...';
+    }
     try{
       var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-      orders.push({product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+      orders.push({id:orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
       localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
     }catch(e){}
     setTimeout(function(){
       closeOrder();
-      window.open(_orderPayLink, '_blank');
+      if(lang==='zh-CN'){
+        showPayModal(product, price, orderId);
+      } else {
+        window.open(_orderPayLink, '_blank');
+      }
     }, 1500);
   });
+}
+
+function showPayModal(product, price, orderId){
+  document.getElementById('payProduct').textContent = product;
+  document.getElementById('payAmount').textContent = '¥'+(price*7.2).toFixed(2)+' / $'+price.toFixed(2);
+  document.getElementById('payOrderId').textContent = orderId;
+  document.getElementById('orderModal').classList.remove('show');
+  document.getElementById('payModal').classList.add('show');
+  // Reset to alipay tab
+  switchPayQR('alipay');
+}
+
+function closePayModal(){
+  document.getElementById('payModal').classList.remove('show');
+}
+
+function buyBundleDirect(e){
+  e.preventDefault();
+  if(lang==='zh-CN'){
+    showPayModal('All 6 Tools Bundle', 22.00, 'SW' + Date.now().toString(36).toUpperCase());
+  } else {
+    window.open('https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl', '_blank');
+  }
+}
+
+function switchPayQR(type){
+  document.getElementById('qrAlipay').style.display = type==='alipay'?'block':'none';
+  document.getElementById('qrWechat').style.display = type==='wechat'?'block':'none';
+  document.getElementById('qrTabAlipay').className = type==='alipay'?'qr-tab active':'qr-tab';
+  document.getElementById('qrTabWechat').className = type==='wechat'?'qr-tab active':'qr-tab';
 }
 
 // ═══════════════════════════════════════════
