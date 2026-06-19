@@ -401,6 +401,7 @@ def init_db():
             price REAL DEFAULT 0,
             image TEXT DEFAULT '',
             buy_link TEXT DEFAULT '',
+            buy_link_cn TEXT DEFAULT '',
             specs TEXT DEFAULT '[]',
             shipping_en TEXT DEFAULT '', shipping_cn TEXT DEFAULT '', shipping_tw TEXT DEFAULT '',
             created_at TEXT DEFAULT (datetime('now','localtime')),
@@ -421,6 +422,11 @@ def init_db():
             updated_at TEXT DEFAULT (datetime('now','localtime'))
         );
     """)
+    # Migration: add buy_link_cn if missing
+    try:
+        db.execute("ALTER TABLE products ADD COLUMN buy_link_cn TEXT DEFAULT ''")
+    except sqlite3.OperationalError:
+        pass
     db.commit()
     db.close()
 
@@ -434,6 +440,7 @@ def product_row_to_dict(row):
     d["name"] = {"en": d.pop("name_en", ""), "zh-CN": d.pop("name_cn", ""), "zh-TW": d.pop("name_tw", "")}
     d["desc"] = {"en": d.pop("desc_en", ""), "zh-CN": d.pop("desc_cn", ""), "zh-TW": d.pop("desc_tw", "")}
     d["shipping"] = {"en": d.pop("shipping_en", ""), "zh-CN": d.pop("shipping_cn", ""), "zh-TW": d.pop("shipping_tw", "")}
+    d["buyLinkCN"] = d.pop("buy_link_cn", "")
     return d
 
 @app.route("/api/admin/products", methods=["GET"])
@@ -452,13 +459,14 @@ def admin_create_product():
     try:
         db.execute("""
             INSERT INTO products (id, type, name_en, name_cn, name_tw, desc_en, desc_cn, desc_tw,
-                price, image, buy_link, specs, shipping_en, shipping_cn, shipping_tw)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                price, image, buy_link, buy_link_cn, specs, shipping_en, shipping_cn, shipping_tw)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         """, (
             data["id"], data.get("type","physical"),
             data.get("name",{}).get("en",""), data.get("name",{}).get("zh-CN",""), data.get("name",{}).get("zh-TW",""),
             data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
             data.get("price",0), data.get("image",""), data.get("buyLink",""),
+            data.get("buyLinkCN",""),
             json.dumps(data.get("specs",[]), ensure_ascii=False),
             data.get("shipping",{}).get("en",""), data.get("shipping",{}).get("zh-CN",""), data.get("shipping",{}).get("zh-TW","")
         ))
@@ -479,7 +487,7 @@ def admin_update_product(pid):
         return jsonify({"error": "产品不存在"}), 404
     db.execute("""
         UPDATE products SET type=?, name_en=?, name_cn=?, name_tw=?, desc_en=?, desc_cn=?, desc_tw=?,
-            price=?, image=?, buy_link=?, specs=?, shipping_en=?, shipping_cn=?, shipping_tw=?,
+            price=?, image=?, buy_link=?, buy_link_cn=?, specs=?, shipping_en=?, shipping_cn=?, shipping_tw=?,
             updated_at=datetime('now','localtime')
         WHERE id=?
     """, (
@@ -487,6 +495,7 @@ def admin_update_product(pid):
         data.get("name",{}).get("en",""), data.get("name",{}).get("zh-CN",""), data.get("name",{}).get("zh-TW",""),
         data.get("desc",{}).get("en",""), data.get("desc",{}).get("zh-CN",""), data.get("desc",{}).get("zh-TW",""),
         data.get("price",0), data.get("image",""), data.get("buyLink",""),
+        data.get("buyLinkCN",""),
         json.dumps(data.get("specs",[]), ensure_ascii=False),
         data.get("shipping",{}).get("en",""), data.get("shipping",{}).get("zh-CN",""), data.get("shipping",{}).get("zh-TW",""),
         pid
@@ -678,7 +687,8 @@ def bazi_calc():
     except (TypeError, ValueError):
         return jsonify({"error": "日期格式错误"}), 400
     
-    result = calculate_bazi(year, month, day, hour, level)
+    lang = data.get("lang", "zh-CN")
+    result = calculate_bazi(year, month, day, hour, level, lang)
     
     if "error" in result:
         return jsonify(result), 400
