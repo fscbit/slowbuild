@@ -19,6 +19,7 @@ from flask_cors import CORS
 from bazi import calculate_bazi
 from astro import build_full_chart, get_daily_horoscope
 from numerology import build_numerology_report
+from fengshui import get_kua, get_home_advice
 
 app = Flask(__name__)
 CORS(app)
@@ -784,6 +785,31 @@ def numerology():
         return jsonify(report), 400
 
     return jsonify(report)
+
+
+# ═══════════════════════════════════════════
+#  🏠 风水堪舆 API
+# ═══════════════════════════════════════════
+
+@app.route("/api/fengshui", methods=["POST"])
+def fengshui():
+    """Kua number + 8-house + annual flying stars"""
+    data = request.get_json(force=True) or {}
+    year = data.get("year")
+    gender = data.get("gender", "male")
+    door = data.get("door_direction", "北")  # 大门朝向: 北/南/东/西/东北/西北/东南/西南
+    level = data.get("level", "free")
+
+    if not year:
+        return jsonify({"error": "Need birth year"}), 400
+
+    try:
+        kua = get_kua(int(year), gender)
+        result = get_home_advice(door, kua, level)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+    return jsonify(result)
 
 if __name__ == "__main__":
     libre = find_libreoffice()
