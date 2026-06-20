@@ -732,7 +732,18 @@ function backToHub(){
 // ═══════════════════════════════════════════
 // BAZI
 // ═══════════════════════════════════════════
-var baziLevel='free';
+var baziLevel = (function(){
+  // Check URL param for return from payment
+  if (location.search.indexOf('paid=bazi') !== -1) {
+    localStorage.setItem('fortune_bazi_unlocked', '1');
+    // Clean URL
+    if (history.replaceState) history.replaceState({}, '', location.pathname);
+    return 'full';
+  }
+  // Check localStorage for persisted unlock
+  try { if (localStorage.getItem('fortune_bazi_unlocked') === '1') return 'full'; } catch(e) {}
+  return 'free';
+})();
 var BACKEND=parent.BACKEND||'https://academy-commented-titles-horizon.trycloudflare.com';
 
 function calcBazi(){
@@ -879,6 +890,7 @@ function renderBazi(data){
     h+='<div class="price">'+t('unlockPrice')+'</div>';
     h+='<button class="btn btn-primary" onclick="buyFullReading()">'+t('unlockBtn')+'</button>';
     h+='<p style="font-size:.7rem;color:var(--muted);margin-top:8px">'+t('unlockNote')+'</p>';
+    h+='<p style="font-size:.7rem;margin-top:8px"><a href="javascript:void(0)" onclick="manualUnlock()" style="color:var(--muted);text-decoration:underline">'+t('payConfirm')+'</a></p>';
     h+='</div>';
   }else{
     if(interp.career) h+='<div class="card"><div class="card-title">💼 '+t('career')+'</div><p style="font-size:.82rem;color:var(--muted);line-height:1.7">'+interp.career+'</p></div>';
@@ -891,7 +903,18 @@ function renderBazi(data){
 }
 
 function buyFullReading(){
+  // Redirect to Payoneer payment, return to this page with paid flag
+  var returnUrl = encodeURIComponent(location.origin + location.pathname + '?paid=bazi');
+  var payUrl = 'https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=bazi';
+  // Open payment in same window
+  window.location.href = payUrl;
+  // Store intent in sessionStorage so we can detect when user returns
+  try { sessionStorage.setItem('fortune_pay_pending', '1'); } catch(e) {}
+}
+
+function manualUnlock(){
   if(confirm(t('payConfirm'))){
+    localStorage.setItem('fortune_bazi_unlocked', '1');
     baziLevel='full';
     calcBazi();
   }
