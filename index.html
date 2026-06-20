@@ -142,7 +142,12 @@
       .sidebar-close-btn:hover{color:var(--text);background:var(--code-bg)}
       nav{padding-left:40px}
     }
-  </style>
+  
+    /* Two-column responsive */
+    @media(max-width:800px){
+      .right-col{position:static!important}
+    }
+</style>
 </head>
 <body>
 <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Menu">☰</button>
@@ -181,52 +186,8 @@
     </div>
   </section>
 
-  <!-- Premium Tools — own products first -->
-  <section class="section" id="scripts" style="margin-top:0;padding-top:0">
-    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">My Tools</span></h2>
-    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
-
-    <!-- Bundle Deal -->
-    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
-      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
-      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
-      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
-        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
-        <span style="font-size:2rem;font-weight:800">$22.00</span>
-        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
-      </div>
-      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
-    </div>
-
-    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
-  </section>
-
-  <!-- Featured Tools -->
-  <section style="max-width:960px;margin:0 auto;padding:20px 20px 0">
-    <h2 class="sec-title">✨ <span data-i18n="featured_title">Featured Tools</span></h2>
-    <p class="sec-sub" data-i18n="featured_sub">Try our most popular tools — instantly, no signup.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px">
-      <div class="feat-card" onclick="showTool('game2048')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">🎮</div><strong>2048</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_2048">Merge tiles to reach 2048.</p>
-      </div>
-      <div class="feat-card" onclick="showTool('reaction')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">⚡</div><strong data-i18n="feat_reaction_name">Reaction Test</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_reaction">How fast can you react?</p>
-      </div>
-      <div class="feat-card" onclick="showTool('qrcode')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">📱</div><strong data-i18n="feat_qr_name">QR Code</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_qr">Text → QR code instantly.</p>
-      </div>
-      <div class="feat-card" onclick="showTool('sports')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">🏃</div><strong data-i18n="feat_sports_name">Sports Scorer</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_sports">Track & field meet scoring.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="online">
+  
+<section class="section" id="online">
     <h2 class="sec-title">☁️ <span data-i18n="sec_online">Online Convert</span></h2>
     <p class="sec-sub" data-i18n="online_desc">Upload a file → our server converts → download result. Powered by your own VM.</p>
     <div class="tool-grid">
@@ -258,15 +219,60 @@
     <p style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px" data-i18n="online_note">⚠️ Files are deleted from server after 1 hour. This service runs on a personal VM — it may go offline sometimes.</p>
   </section>
 
-  <section class="section" id="tools">
+  
+<!-- Featured Tools -->
+  <section style="max-width:960px;margin:0 auto;padding:20px 20px 0">
+    <h2 class="sec-title">✨ <span data-i18n="featured_title">Featured Tools</span></h2>
+    <p class="sec-sub" data-i18n="featured_sub">Try our most popular tools — instantly, no signup.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px">
+      <div class="feat-card" onclick="showTool('qrcode')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">📱</div><strong data-i18n="feat_qr_name">QR Code</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_qr">Text → QR code instantly.</p>
+      </div>
+      <div class="feat-card" onclick="showTool('sports')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">🏃</div><strong data-i18n="feat_sports_name">Sports Scorer</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_sports">Track & field meet scoring.</p>
+      </div>
+    </div>
+  
+  </section>
+  <!-- Two-column: Tools + Premium EXE -->
+  <section class="section" id="tools-section" style="padding-top:0">
     <h2 class="sec-title">🛠️ <span data-i18n="sec_tools">Tools</span></h2>
     <p class="sec-sub" data-i18n="tools_desc">Click any tool — runs in your browser. Nothing uploaded.</p>
-    <div class="tool-grid" id="toolGrid">
-      <!-- filled by JS -->
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start">
+      <!-- LEFT: Online Tools -->
+      <div>
+        <div class="tool-grid" id="toolGrid"><!-- filled by JS --></div>
+      </div>
+      <!-- RIGHT: Premium EXE + Bundle -->
+      <div class="right-col" style="position:sticky;top:60px">
+<div style="padding:0">
+    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">My Tools</span></h2>
+    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
+
+    <!-- Bundle Deal -->
+    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
+      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
+      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
+      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
+        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
+        <span style="font-size:2rem;font-weight:800">$22.00</span>
+        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
+      </div>
+      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
+    </div>
+
+    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
+  </div>
+
+  
+      </div>
     </div>
   </section>
 
-  <section class="section" id="request">
+<section class="section" id="request">
     <div class="request-box">
       <h3 data-i18n="req_title">💡 Need a tool?</h3>
       <p class="sub" data-i18n="req_desc">Tell me what you need. I build it. No promises — but I ship.</p>
