@@ -834,6 +834,18 @@ var I18N = {
 };
 
 var lang = localStorage.getItem('slowbuild_lang') || 'en';
+
+// IP auto-detect language (only on first visit, no cookie set)
+(function(){
+  if (localStorage.getItem('slowbuild_lang')) return; // user already chose
+  fetch('https://ipapi.co/json/').then(function(r){ return r.json(); }).then(function(d){
+    var cc = d.country_code;
+    if (cc === 'CN' || cc === 'SG') lang = 'zh-CN';
+    else if (cc === 'TW' || cc === 'HK' || cc === 'MO') lang = 'zh-TW';
+    setLang(lang);
+  }).catch(function(){});
+})();
+
 function setLang(l) {
   lang = l; localStorage.setItem('slowbuild_lang', l);
   document.querySelectorAll('[data-lang]').forEach(function(b){ b.classList.toggle('active', b.dataset.lang === l); });
