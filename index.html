@@ -1871,7 +1871,7 @@ function tttClick(i){
     _tttOver=true;renderTTT();return;
   }
   _tttTurn=_tttTurn==='X'?'O':'X';
-  document.getElementById('tttStatus').textContent=_tttTurn+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':''s turn');
+  document.getElementById('tttStatus').textContent=_tttTurn+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':'\x27s turn');
   renderTTT();
 }
 function checkTTTWin(){
@@ -1903,7 +1903,7 @@ function gmkPlace(x,y){
     _gmkOver=true;document.getElementById('gmkStatus').innerHTML=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'赢了！':lang==='zh-TW'?'贏了！':'Wins!')+' 🎉';
     drawGomoku();return;
   }
-  _gmkTurn=_gmkTurn===1?2:1;document.getElementById('gmkStatus').textContent=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':''s turn');
+  _gmkTurn=_gmkTurn===1?2:1;document.getElementById('gmkStatus').textContent=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':'\x27s turn');
   drawGomoku();
 }
 function checkGomoku(r,cl){
@@ -2008,7 +2008,7 @@ function goPlace(x,y){
   _goPrisoners[_goTurn-1]+=captured;
   if(captured===0&&goHasLiberties(r,cl)){_goB[r][cl]=0;return} // suicide
   _goPass=0;_goTurn=_goTurn===1?2:1;
-  document.getElementById('goStatus').textContent=(_goTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合 ':lang==='zh-TW'?'的回合 ':''s turn ')+'('+(lang==='zh-CN'?'吃子':lang==='zh-TW'?'吃子':'Prisoners')+': '+_goPrisoners.join(' vs ')+')';
+  document.getElementById('goStatus').textContent=(_goTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合 ':lang==='zh-TW'?'的回合 ':'\x27s turn ')+'('+(lang==='zh-CN'?'吃子':lang==='zh-TW'?'吃子':'Prisoners')+': '+_goPrisoners.join(' vs ')+')';
   drawGo();
 }
 function goHasLiberties(r,cl){
