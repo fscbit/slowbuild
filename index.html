@@ -861,8 +861,7 @@ function applyI18n() {
   document.querySelectorAll('[data-i18n]').forEach(function(el){ el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){ el.placeholder = t(el.dataset.i18nPlaceholder); });
   document.querySelectorAll('[data-i18n-html]').forEach(function(el){ el.innerHTML = t(el.dataset.i18nHtml); });
-  document.title = 'slowbuild — ' + (lang==='zh-CN'?'免费小工具，慢慢打磨':lang==='zh-TW'?'免費小工具，慢慢打磨':'free micro tools, built slow');
-  document.querySelector('meta[name=description]').content = lang==='zh-CN'?'免费在线小工具集合。无需注册，本地运行，无追踪。':lang==='zh-TW'?'免費線上小工具集合。無需註冊，本地運行，無追蹤。':'Free online micro tools. No sign-up, local processing, no tracking.';
+  updateSEOTitle('page','home');
 }
 function renderToolCards() {
   var tools = I18N[lang].tools, html = '';
@@ -965,14 +964,312 @@ renderShop();
 // ═══════════════════════════════════════════
 //  Page nav
 // ═══════════════════════════════════════════
-function showPage(name) {
+
+// ═══════════════════════════════════════════
+//  Dynamic SEO Titles
+// ═══════════════════════════════════════════
+var SEOTitles = {
+  home:{
+    en:'Free Online Tools — JSON Formatter, Hash Generator, QR Code & More | slowbuild',
+    zh-CN:'免费在线工具 — JSON格式化、哈希生成、二维码制作 | slowbuild',
+    zh-TW:'免費線上工具 — JSON格式化、雜湊生成、QR碼製作 | slowbuild',
+    enDesc:'Free online micro tools: JSON formatter, Base64 encoder, QR code generator, hash tools, text diff, and more. No signup, no ads.',
+    zh-CNDesc:'免费在线小工具：JSON格式化、Base64编解码、二维码生成、哈希计算、文本对比等。无需注册，无广告。',
+    zh-TWDesc:'免費線上小工具：JSON格式化、Base64編解碼、QR碼生成、雜湊計算、文本對比等。無需註冊，無廣告。',
+  },
+  shop:{
+    en:'Shop — Digital Tools & Gadgets | slowbuild',
+    zh-CN:'商店 — 数字工具与电子产品 | slowbuild',
+    zh-TW:'商店 — 數位工具與電子產品 | slowbuild',
+    enDesc:'Premium EXE tools, DIY electronics and everyday gadgets. One-time purchase, instant download.',
+    zh-CNDesc:'高级EXE工具、DIY电子产品和日常小物件。一次购买，即时下载。',
+    zh-TWDesc:'高級EXE工具、DIY電子和日常小物。一次購買，即時下載。',
+  },
+  about:{
+    en:'About — slowbuild',
+    zh-CN:'关于 — slowbuild',
+    zh-TW:'關於 — slowbuild',
+    enDesc:'slowbuild is a collection of free online tools built with care. No tracking, no ads, no signup.',
+    zh-CNDesc:'slowbuild 是一个精心打造的自由在线工具集合。无追踪、无广告、无需注册。',
+    zh-TWDesc:'slowbuild 是一個精心打造的自由線上工具集合。無追蹤、無廣告、無需註冊。',
+  },
+  privacy:{
+    en:'Privacy Policy — slowbuild',
+    zh-CN:'隐私政策 — slowbuild',
+    zh-TW:'隱私政策 — slowbuild',
+    enDesc:'slowbuild Privacy Policy — no cookies, no tracking, no data collection.',
+    zh-CNDesc:'slowbuild隐私政策 — 无Cookie、无追踪、不收集数据。',
+    zh-TWDesc:'slowbuild隱私政策 — 無Cookie、無追蹤、不收集資料。',
+  },
+  json:{
+    en:'Free Online JSON Formatter & Validator — Beautify, Minify, Validate | slowbuild',
+    zh-CN:'免费在线JSON格式化验证工具 | slowbuild',
+    zh-TW:'免費線上JSON格式化驗證工具 | slowbuild',
+    enDesc:'Free JSON formatter, validator and minifier. Pretty-print JSON with syntax highlighting and error detection.',
+    zh-CNDesc:'免费JSON格式化、验证和压缩工具。美化JSON格式，语法高亮和错误检测。',
+    zh-TWDesc:'免費JSON格式化、驗證和壓縮工具。美化JSON格式，語法高亮和錯誤檢測。',
+  },
+  case:{
+    en:'Free Online Case Converter — UPPER, lower, Title, camelCase | slowbuild',
+    zh-CN:'免费在线大小写转换工具 | slowbuild',
+    zh-TW:'免費線上大小寫轉換工具 | slowbuild',
+    enDesc:'Convert text case instantly: UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case.',
+    zh-CNDesc:'即时转换文本大小写：大写、小写、首字母大写、驼峰命名、蛇形命名等。',
+    zh-TWDesc:'即時轉換文字大小寫：大寫、小寫、標題大小寫、駝峰命名、蛇形命名等。',
+  },
+  count:{
+    en:'Free Online Word Counter & Character Count Tool | slowbuild',
+    zh-CN:'免费在线字数统计 & 字符计数工具 | slowbuild',
+    zh-TW:'免費線上字數統計 & 字元計數工具 | slowbuild',
+    enDesc:'Real-time word count, character count, line count, sentence count, and estimated reading time.',
+    zh-CNDesc:'实时统计字数、字符数、行数、句子数和预估阅读时间。',
+    zh-TWDesc:'即時統計字數、字元數、行數、句子數和預估閱讀時間。',
+  },
+  diff:{
+    en:'Free Online Text Diff Checker — Compare Two Texts Side by Side | slowbuild',
+    zh-CN:'免费在线文本差异对比工具 | slowbuild',
+    zh-TW:'免費線上文本差異對比工具 | slowbuild',
+    enDesc:'Compare two texts side by side and find differences instantly. Line-by-line diff with highlights.',
+    zh-CNDesc:'并排对比两段文本，即时查找差异。逐行对比，高亮显示。',
+    zh-TWDesc:'並排對比兩段文字，即時查找差異。逐行對比，高亮顯示。',
+  },
+  time:{
+    en:'Free Online Unix Timestamp Converter — Epoch to Date & Time | slowbuild',
+    zh-CN:'免费在线时间戳转换工具 | slowbuild',
+    zh-TW:'免費線上時間戳轉換工具 | slowbuild',
+    enDesc:'Convert Unix timestamps to human readable dates and vice versa. Support seconds and milliseconds.',
+    zh-CNDesc:'Unix时间戳与日期互转，支持秒和毫秒。',
+    zh-TWDesc:'Unix時間戳與日期互轉，支援秒和毫秒。',
+  },
+  filename:{
+    en:'Free Online Filename Extractor & Cleaner | slowbuild',
+    zh-CN:'免费在线文件名提取清洗工具 | slowbuild',
+    zh-TW:'免費線上檔名提取清洗工具 | slowbuild',
+    enDesc:'Extract filenames from file paths. Filter by extension, remove duplicates.',
+    zh-CNDesc:'从文件路径中提取文件名，按扩展名过滤，去除重复。',
+    zh-TWDesc:'從檔案路徑中提取檔名，按副檔名過濾，去除重複。',
+  },
+  url:{
+    en:'Free Online URL Encoder & Decoder | slowbuild',
+    zh-CN:'免费在线URL编码解码工具 | slowbuild',
+    zh-TW:'免費線上URL編碼解碼工具 | slowbuild',
+    enDesc:'Encode or decode URL strings. Handle percent-encoding and special characters.',
+    zh-CNDesc:'编码或解码URL字符串，处理百分号编码和特殊字符。',
+    zh-TWDesc:'編碼或解碼URL字串，處理百分號編碼和特殊字元。',
+  },
+  base64:{
+    en:'Free Online Base64 Encoder & Decoder | slowbuild',
+    zh-CN:'免费在线Base64编码解码工具 | slowbuild',
+    zh-TW:'免費線上Base64編碼解碼工具 | slowbuild',
+    enDesc:'Encode text to Base64 or decode Base64 to text. Works with Unicode characters.',
+    zh-CNDesc:'文本转Base64编码或Base64解码为文本，支持Unicode。',
+    zh-TWDesc:'文字轉Base64編碼或Base64解碼為文字，支援Unicode。',
+  },
+  uuid:{
+    en:'Free Online UUID Generator — Generate Random UUID v4 | slowbuild',
+    zh-CN:'免费在线UUID生成器 | slowbuild',
+    zh-TW:'免費線上UUID產生器 | slowbuild',
+    enDesc:'Generate random UUIDs v4. Batch generate up to 100 UUIDs at once.',
+    zh-CNDesc:'生成随机UUID v4，可批量一次生成最多100个。',
+    zh-TWDesc:'產生隨機UUID v4，可批次一次產生最多100個。',
+  },
+  password:{
+    en:'Free Online Password Generator — Strong Random Passwords | slowbuild',
+    zh-CN:'免费在线密码生成器 | slowbuild',
+    zh-TW:'免費線上密碼產生器 | slowbuild',
+    enDesc:'Generate strong random passwords. Customize length, include symbols, numbers, uppercase.',
+    zh-CNDesc:'生成强随机密码，可自定义长度、包含符号、数字、大写字母。',
+    zh-TWDesc:'產生強隨機密碼，可自訂長度、包含符號、數字、大寫字母。',
+  },
+  md5:{
+    en:'Free Online MD5 Hash Generator | slowbuild',
+    zh-CN:'免费在线MD5哈希生成器 | slowbuild',
+    zh-TW:'免費線上MD5雜湊產生器 | slowbuild',
+    enDesc:'Generate MD5 hash from any text. One-click copy the hash result.',
+    zh-CNDesc:'从任意文本生成MD5哈希值，一键复制结果。',
+    zh-TWDesc:'從任意文字產生MD5雜湊值，一鍵複製結果。',
+  },
+  sha:{
+    en:'Free Online SHA Hash Generator — SHA-1, SHA-256, SHA-512 | slowbuild',
+    zh-CN:'免费在线SHA哈希生成器 — SHA-1/256/512 | slowbuild',
+    zh-TW:'免費線上SHA雜湊產生器 — SHA-1/256/512 | slowbuild',
+    enDesc:'Generate SHA-1, SHA-256, and SHA-512 hashes from any text. Copy all results.',
+    zh-CNDesc:'从任意文本生成SHA-1/SHA-256/SHA-512哈希值。',
+    zh-TWDesc:'從任意文字產生SHA-1/SHA-256/SHA-512雜湊值。',
+  },
+  qrcode:{
+    en:'Free Online QR Code Generator — Create QR Codes from Text & URLs | slowbuild',
+    zh-CN:'免费在线二维码生成器 | slowbuild',
+    zh-TW:'免費線上QR碼產生器 | slowbuild',
+    enDesc:'Create QR codes from text, URLs, or any input. Download as PNG image.',
+    zh-CNDesc:'从文本、链接或任意输入生成二维码，可下载为PNG图片。',
+    zh-TWDesc:'從文字、連結或任意輸入產生QR碼，可下載為PNG圖片。',
+  },
+  morse:{
+    en:'Free Online Morse Code Translator — Encode & Decode | slowbuild',
+    zh-CN:'免费在线摩尔斯电码翻译器 | slowbuild',
+    zh-TW:'免費線上摩斯密碼翻譯器 | slowbuild',
+    enDesc:'Convert text to Morse code and decode Morse code back to text. Learn dots and dashes.',
+    zh-CNDesc:'文字与摩尔斯电码互转，学习点划编码。',
+    zh-TWDesc:'文字與摩斯密碼互轉，學習點劃編碼。',
+  },
+  color:{
+    en:'Free Online Color Converter — HEX, RGB, HSL Color Picker | slowbuild',
+    zh-CN:'免费在线颜色转换器 — HEX/RGB/HSL | slowbuild',
+    zh-TW:'免費線上顏色轉換器 — HEX/RGB/HSL | slowbuild',
+    enDesc:'Convert colors between HEX, RGB, and HSL formats. Pick any color and copy values.',
+    zh-CNDesc:'在HEX、RGB、HSL之间转换颜色格式，取色并复制值。',
+    zh-TWDesc:'在HEX、RGB、HSL之間轉換顏色格式，取色並複製值。',
+  },
+  regex:{
+    en:'Free Online Regex Tester — Regular Expression Debugger | slowbuild',
+    zh-CN:'免费在线正则表达式测试工具 | slowbuild',
+    zh-TW:'免費線上正規表示式測試工具 | slowbuild',
+    enDesc:'Test regular expressions in real-time. Match highlights, capture groups, and cheatsheet.',
+    zh-CNDesc:'实时测试正则表达式，匹配高亮，捕获组显示，附速查表。',
+    zh-TWDesc:'即時測試正規表示式，符合項目高亮，擷取群組顯示，附速查表。',
+  },
+  game2048:{
+    en:'Play 2048 Game Online Free — Classic Number Puzzle | slowbuild',
+    zh-CN:'2048小游戏在线免费玩 | slowbuild',
+    zh-TW:'2048小遊戲線上免費玩 | slowbuild',
+    enDesc:'Play 2048 online for free. Merge tiles to reach 2048. The classic addictive number puzzle game.',
+    zh-CNDesc:'在线免费玩2048，合并数字方块达到2048。经典上瘾的数字益智游戏。',
+    zh-TWDesc:'線上免費玩2048，合併數字方塊達到2048。經典上癮的數字益智遊戲。',
+  },
+  reaction:{
+    en:'Free Online Reaction Time Test — How Fast Are You? | slowbuild',
+    zh-CN:'免费在线反应速度测试 | slowbuild',
+    zh-TW:'免費線上反應速度測試 | slowbuild',
+    enDesc:'Test your reaction time. Click when the color changes. Compare with friends.',
+    zh-CNDesc:'测试你的反应速度，颜色变化时点击。和朋友比比看。',
+    zh-TWDesc:'測試你的反應速度，顏色變化時點擊。和朋友比比看。',
+  },
+  img2base64:{
+    en:'Free Online Image to Base64 Converter — Encode Images to Data URI | slowbuild',
+    zh-CN:'免费在线图片转Base64工具 | slowbuild',
+    zh-TW:'免費線上圖片轉Base64工具 | slowbuild',
+    enDesc:'Convert any image to a Base64 data URI. Paste directly into HTML, CSS, or code.',
+    zh-CNDesc:'将任意图片转换为Base64数据URI，可直接粘贴到HTML/CSS/代码中。',
+    zh-TWDesc:'將任意圖片轉換為Base64資料URI，可直接貼到HTML/CSS/程式碼中。',
+  },
+  random:{
+    en:'Free Online Random Number Generator — Custom Range & Dice | slowbuild',
+    zh-CN:'免费在线随机数生成器 | slowbuild',
+    zh-TW:'免費線上亂數產生器 | slowbuild',
+    enDesc:'Generate random numbers in a custom range. Integer or decimal, batch output.',
+    zh-CNDesc:'在自定义范围内生成随机数，整数或小数，可批量输出。',
+    zh-TWDesc:'在自訂範圍內產生亂數，整數或小數，可批次輸出。',
+  },
+  htmlpreview:{
+    en:'Free Online HTML Previewer — Live HTML, CSS & JS Editor | slowbuild',
+    zh-CN:'免费在线HTML实时预览工具 | slowbuild',
+    zh-TW:'免費線上HTML即時預覽工具 | slowbuild',
+    enDesc:'Write HTML, CSS, and JavaScript and see the live preview instantly in your browser.',
+    zh-CNDesc:'编写HTML/CSS/JS代码，浏览器内即时查看实时预览。',
+    zh-TWDesc:'編寫HTML/CSS/JS程式碼，瀏覽器內即時查看即時預覽。',
+  },
+  stopwatch:{
+    en:'Free Online Stopwatch & Timer | slowbuild',
+    zh-CN:'免费在线秒表计时器 | slowbuild',
+    zh-TW:'免費線上碼表計時器 | slowbuild',
+    enDesc:'Online stopwatch with lap recording. Start, stop, and reset. Precise timing.',
+    zh-CNDesc:'在线秒表计时，支持分段计时，启动、停止、重置。',
+    zh-TWDesc:'線上碼表計時，支援分段計時，啟動、停止、重置。',
+  },
+  mdpreview:{
+    en:'Free Online Markdown Previewer — Live MD to HTML | slowbuild',
+    zh-CN:'免费在线Markdown实时预览工具 | slowbuild',
+    zh-TW:'免費線上Markdown即時預覽工具 | slowbuild',
+    enDesc:'Write Markdown and see the rendered HTML live. Supports tables, code blocks, images.',
+    zh-CNDesc:'编写Markdown，实时查看HTML渲染效果。支持表格、代码块、图片。',
+    zh-TWDesc:'編寫Markdown，即時查看HTML渲染效果。支援表格、程式碼區塊、圖片。',
+  },
+  palette:{
+    en:'Free Online Color Palette Generator — Generate Color Schemes | slowbuild',
+    zh-CN:'免费在线配色方案生成器 | slowbuild',
+    zh-TW:'免費線上配色方案產生器 | slowbuild',
+    enDesc:'Generate beautiful color palettes automatically. Copy hex values for your design.',
+    zh-CNDesc:'自动生成漂亮的配色方案，复制十六进制颜色值用于设计。',
+    zh-TWDesc:'自動產生漂亮的配色方案，複製十六進位顏色值用於設計。',
+  },
+  coinflip:{
+    en:'Free Online Coin Flipper — Heads or Tails Random Toss | slowbuild',
+    zh-CN:'免费在线抛硬币 — 正面还是反面 | slowbuild',
+    zh-TW:'免費線上拋硬幣 — 正面還是反面 | slowbuild',
+    enDesc:'Flip a virtual coin. Heads or tails? Perfect for quick decisions and games.',
+    zh-CNDesc:'虚拟抛硬币，正面还是反面？快速决策和游戏的好帮手。',
+    zh-TWDesc:'虛擬拋硬幣，正面還是反面？快速決策和遊戲的好幫手。',
+  },
+  dice:{
+    en:'Free Online Dice Roller — Roll Virtual Dice | slowbuild',
+    zh-CN:'免费在线骰子 — 虚拟掷骰子 | slowbuild',
+    zh-TW:'免費線上骰子 — 虛擬擲骰子 | slowbuild',
+    enDesc:'Roll one or more virtual dice. Perfect for board games and random decisions.',
+    zh-CNDesc:'掷一个或多个虚拟骰子，完美用于桌游和随机决策。',
+    zh-TWDesc:'擲一個或多個虛擬骰子，完美用於桌遊和隨機決策。',
+  },
+  tictactoe:{
+    en:'Play Tic Tac Toe Online Free — XO Game | slowbuild',
+    zh-CN:'Tic Tac Toe 井字棋在线免费玩 | slowbuild',
+    zh-TW:'Tic Tac Toe 圈圈叉叉線上免費玩 | slowbuild',
+    enDesc:'Play Tic Tac Toe online free. Two-player XO game on the same screen.',
+    zh-CNDesc:'在线免费玩井字棋，双人同屏对战。',
+    zh-TWDesc:'線上免費玩圈圈叉叉，雙人同屏對戰。',
+  },
+  gomoku:{
+    en:'Play Gomoku Online Free — Five in a Row Board Game | slowbuild',
+    zh-CN:'五子棋在线免费玩 | slowbuild',
+    zh-TW:'五子棋線上免費玩 | slowbuild',
+    enDesc:'Play Gomoku online free. Classic five-in-a-row strategy game on a 15x15 board.',
+    zh-CNDesc:'在线免费玩五子棋，经典15×15棋盘策略游戏。',
+    zh-TWDesc:'線上免費玩五子棋，經典15×15棋盤策略遊戲。',
+  },
+  chess:{
+    en:'Play Chinese Chess Online Free — Xiangqi Board Game | slowbuild',
+    zh-CN:'中国象棋在线免费玩 | slowbuild',
+    zh-TW:'中國象棋線上免費玩 | slowbuild',
+    enDesc:'Play Chinese Chess (Xiangqi) online free. Two-player on the same screen.',
+    zh-CNDesc:'在线免费玩中国象棋，双人同屏对战。',
+    zh-TWDesc:'線上免費玩中國象棋，雙人同屏對戰。',
+  },
+  go:{
+    en:'Play Go Online Free — Weiqi Board Game 9x9 | slowbuild',
+    zh-CN:'围棋在线免费玩 — 9×9棋盘 | slowbuild',
+    zh-TW:'圍棋線上免費玩 — 9×9棋盤 | slowbuild',
+    enDesc:'Play Go (Weiqi/Baduk) online free. Capture territory on a 9x9 board.',
+    zh-CNDesc:'在线免费玩围棋，9×9棋盘，围地取胜。',
+    zh-TWDesc:'線上免費玩圍棋，9×9棋盤，圍地取勝。',
+  },
+  sports:{
+    en:'Free Online Sports Meet Score Calculator & Tracker | slowbuild',
+    zh-CN:'运动会成绩统计计算器 | slowbuild',
+    zh-TW:'運動會成績統計計算器 | slowbuild',
+    enDesc:'Track & field meet scoring tool. Auto rank by total scores and medal counts.',
+    zh-CNDesc:'运动会成绩统计工具，自动按总分和奖牌数排名。',
+    zh-TWDesc:'運動會成績統計工具，自動按總分和獎牌數排名。',
+  },
+};
+
+function updateSEOTitle(type,id){
+  var entry = SEOTitles[id || 'home'];
+  if(!entry) entry = SEOTitles.home;
+  var l = lang||'en';
+  document.title = entry[l] || entry['en'];
+  var descEl = document.querySelector('meta[name="description"]');
+  if(descEl) descEl.content = entry[l+'Desc'] || entry['enDesc'];
+}
+
+function showPage(name, toolId) {
+  updateSEOTitle(name==="tool"?"tool":"page", name==="tool"?toolId:name);
   document.querySelectorAll('[id^="page-"]').forEach(function(p){ p.style.display = 'none'; });
   var page = document.getElementById('page-' + name);
   if (page) { page.style.display = 'block'; window.scrollTo(0, 0); }
 }
 function showTool(id) {
   window._currentTool = id;
-  showPage('tool');
+  updateSEOTitle('tool', id);
+  showPage('tool', id);
   renderToolContent(id);
 }
 
