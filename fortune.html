@@ -679,6 +679,32 @@ var SYSTEMS=[
   {id:'numerology',icon:'🔢',titleKey:'sysNum',descKey:'sysNumDesc',tag:'premTag'},
 ];
 
+// ═══ Shared paywall ═══
+function unlockSys(sid){
+  localStorage.setItem('fortune_'+sid+'_unlocked','1');
+  alert(t('unlocked'));
+  // re-render current panel
+  var act=document.querySelector('.panel.active');
+  if(act){ var pid=act.id.replace('panel',''); if(typeof window['calc'+pid]==='function') window['calc'+pid](); }
+}
+function showPaywall(sid){
+  if(localStorage.getItem('fortune_'+sid+'_unlocked')==='1') return;
+  var r=document.getElementById(sid+'Result');
+  if(!r||r.querySelector('.paywall')) return;
+  var pw='<div class="card paywall" style="margin-top:16px">';
+  pw+='<h3>'+t('unlockTitle')+'</h3><p style="font-size:.8rem;color:var(--muted);margin:8px 0">'+t('unlockDesc')+'</p>';
+  pw+='<div class="price">'+t('unlockPrice')+'</div>';
+  pw+='<div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap">';
+  pw+='<a href="https://www.paypal.me/fangshicong/2.99" target="_blank" style="display:inline-block;padding:10px 20px;background:#0070ba;color:#fff;border-radius:8px;font-size:.88rem;font-weight:700;text-decoration:none;margin:4px">💳 PayPal</a>';
+  pw+='<button class="btn" onclick="buyWithPayoneer()" style="padding:10px 20px;background:var(--accent);color:#fff;border-radius:8px;font-size:.88rem;font-weight:700;margin:4px;cursor:pointer;border:none">💳 '+t('cardPayBtn')+'</button>';
+  pw+='</div>';
+  if(lang==='zh-CN') pw+='<div style="margin-top:12px;display:flex;gap:12px;justify-content:center"><div style="text-align:center"><img src="images/wechat-qr.jpg" style="width:100px;border-radius:8px;border:2px solid var(--border)"><p style="font-size:.65rem;color:var(--muted);margin-top:2px">微信</p></div><div style="text-align:center"><img src="images/alipay-qr.jpg" style="width:100px;border-radius:8px;border:2px solid var(--border)"><p style="font-size:.65rem;color:var(--muted);margin-top:2px">支付宝</p></div></div>';
+  pw+='<p style="font-size:.7rem;color:var(--muted);margin-top:10px">'+t('unlockNote')+'</p>';
+  pw+='<p style="font-size:.75rem;margin-top:4px"><a href="javascript:void(0)" onclick="unlockSys(\x27'+sid+'\x27)" style="color:var(--gold);text-decoration:underline;font-weight:600">\xe2\x9c\x85 '+t('payConfirm')+'</a></p>';
+  pw+='</div>';
+  r.insertAdjacentHTML('beforeend',pw);
+}
+
 function renderHub(){
   var h='';
   SYSTEMS.forEach(function(s){
@@ -1119,7 +1145,7 @@ function calcNumerology(){
   var n=reduceNum(reduceNum(y)+reduceNum(m)+reduceNum(d));
   var results=T[lang].numResults||T['zh-CN'].numResults;
   var desc=results[n]||'Unique path with special meaning.';
-  document.getElementById('numResult').innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem;color:var(--gold)">'+n+'</div><h3>'+t('numTitle')+' '+n+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:12px">'+desc+'</p></div>';
+  document.getElementById('numResult').innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem;color:var(--gold)">'+n+'</div><h3>'+t('numTitle')+' '+n+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:12px">'+desc+'</p></div>';showPaywall('num');
 }
 
 function reduceNum(num){
@@ -1190,7 +1216,7 @@ function flipTarot(i){
     tarotCards.forEach(function(cc,ii){
       h+='<div class="result-section"><h4>'+labels[ii]+': '+(!lang.startsWith('zh')?cc.name:cc.cn)+'</h4><p>'+cc.en+'</p></div>';
     });
-    document.getElementById('tarotResult').innerHTML='<div class="card">'+h+'</div>';
+    document.getElementById('tarotResult').innerHTML='<div class="card">'+h+'</div>';showPaywall('tarot');
     document.getElementById('tarotMsg').className='result-bar success show';
     document.getElementById('tarotMsg').textContent='✨';
   }
@@ -1243,9 +1269,9 @@ function castIching(){
     }
     if(hex){
       var ichName=lang.startsWith('zh')?hex.cn:hex.name;
-      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><h3 style="color:var(--gold)">'+ichName+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:8px">'+hex.desc+'</p></div>';
+      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><h3 style="color:var(--gold)">'+ichName+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:8px">'+hex.desc+'</p></div>';showPaywall('iching');
     }else{
-      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><p style="color:var(--muted)">A rare and unique hexagram has appeared. Trust your intuition.</p></div>';
+      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><p style="color:var(--muted)">A rare and unique hexagram has appeared. Trust your intuition.</p></div>';showPaywall('iching');
     }
   }
 }
@@ -1265,7 +1291,7 @@ function calcBlood(){
   if(!bt)return;
   var p=BLOOD_PERSONALITY[bt];
   var txt=!lang.startsWith('zh')?p.en:p.cn;
-  document.getElementById('bloodResult').innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem;color:var(--red)">🅰️</div><h3 style="color:var(--gold)">'+bt+' '+t('bloodTitle')+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:12px">'+txt+'</p></div>';
+  document.getElementById('bloodResult').innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem;color:var(--red)">🅰️</div><h3 style="color:var(--gold)">'+bt+' '+t('bloodTitle')+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:12px">'+txt+'</p></div>';showPaywall('blood');
 }
 
 // ═══════════════════════════════════════════
@@ -1357,7 +1383,7 @@ function calcXLR(){
   h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">💡 '+(isEn?'Think of the item clearly before asking. Results are for reference only.':'心中默念失物名称后再求，结果仅供参考。')+'</p>';
   h+='</div></div>';
   
-  document.getElementById('xlrResult').innerHTML=h;
+  document.getElementById('xlrResult').innerHTML=h;showPaywall('xlr');
 }
 
 // ═══════════════════════════════════════════
@@ -1383,7 +1409,7 @@ function calcFengshui(){
   h+='<p style="margin-top:12px;color:var(--gold)">'+(isZh?cnDirs.ausp:enDirs.ausp)+':</p><p>'+dirs[kua].ausp.join(', ')+'</p>';
   h+='<p style="color:var(--red);margin-top:8px">'+(isZh?cnDirs.inausp:enDirs.inausp)+':</p><p>'+dirs[kua].inausp.join(', ')+'</p>';
   h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh?'仅供参考。':'For reference only.')+'</p></div></div>';
-  document.getElementById('fengshuiResult').innerHTML=h;
+  document.getElementById('fengshuiResult').innerHTML=h;showPaywall('fengshui');
 }
 // ═══════════════════════════════════════════
 // Palm Reading
@@ -1398,7 +1424,7 @@ function calcPalm(){
   var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">✋</div><h3>'+(isZh2?d.cn:d.t)+'</h3>';
   h+='<p style="margin-top:12px;line-height:1.7">'+d.desc+'</p>';
   h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh2?'仅供娱乐。':'For entertainment only.')+'</p></div></div>';
-  document.getElementById('palmResult').innerHTML=h;
+  document.getElementById('palmResult').innerHTML=h;showPaywall('palm');
 }
 // ═══════════════════════════════════════════
 // Lucky Draw
@@ -1411,7 +1437,7 @@ function drawLucky(){
   var h='<div class="card" style="animation:fadeIn .5s ease"><div style="text-align:center"><div style="font-size:4rem">🥠</div>';
   h+='<p style="font-size:1.1rem;line-height:1.7;margin-top:16px;font-style:italic">'+(isZh4?cn[seed]:fortunes[seed])+'</p>';
   h+='<p style="font-size:.72rem;color:var(--muted);margin-top:16px">'+(isZh4?'仅供娱乐。':'For entertainment only.')+'</p></div></div>';
-  document.getElementById('luckyResult').innerHTML=h;
+  document.getElementById('luckyResult').innerHTML=h;showPaywall('lucky');
 }
 // ═══════════════════════════════════════════
 // Name Analysis
@@ -1434,7 +1460,7 @@ function calcName(){
   h+='<p style="color:var(--gold);margin-top:8px">'+(isZh3?'总笔画':'Total Strokes')+': '+total+' | '+(isZh3?'五行':'Element')+': '+elemCN[total%5]+'</p>';
   h+='<p style="margin-top:12px;line-height:1.7">'+(isZh3?d.cn:d.en)+'</p>';
   h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh3?'仅供参考。':'For reference only.')+'</p></div></div>';
-  document.getElementById('nameResult').innerHTML=h;
+  document.getElementById('nameResult').innerHTML=h;showPaywall('name');
 }
 // ═══════════════════════════════════════════
 // Init
