@@ -102,7 +102,6 @@
     footer p{font-size:.78rem;color:var(--muted)}
     footer a{color:var(--muted)}
 
-    @media(max-width:768px){.home-cols{flex-direction:column!important}.home-cols .exe-sidebar{width:100%!important;position:static!important}}
     @media(max-width:600px){.tool-grid{grid-template-columns:1fr}.request-form{flex-direction:column}.btn-row{flex-direction:column}.btn-row .btn{width:100%}.nav-right{width:100%;justify-content:space-between}}
 
     .modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:99;align-items:center;justify-content:center}
@@ -139,19 +138,8 @@
       .sidebar-toggle{display:block}
       .sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:19;transition:opacity .25s}
       .sidebar-overlay.show{display:block}
-      .sidebar-close-btn{display:none;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
-      @media(max-width:768px){.sidebar-close-btn{display:block}}
+      .sidebar-close-btn{display:block;position:absolute;top:8px;right:8px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;line-height:1}
       .sidebar-close-btn:hover{color:var(--text);background:var(--code-bg)}
-    /* QR Payment Modal */
-    .qr-payment{text-align:center;padding:10px 0}
-    .qr-payment img{max-width:220px;border-radius:8px;border:1px solid var(--border)}
-    .qr-payment .qr-amount{font-size:1.6rem;font-weight:700;color:var(--accent);margin:8px 0}
-    .qr-payment .qr-note{font-size:.78rem;color:var(--muted);margin:8px 0}
-    .qr-payment .qr-orderid{background:var(--code-bg);padding:6px 12px;border-radius:6px;font-family:monospace;font-size:.85rem;display:inline-block;margin:4px 0}
-    .qr-payment .qr-platforms{display:flex;gap:10px;justify-content:center;margin:12px 0}
-    .qr-payment .qr-tab{font-size:.82rem;padding:6px 16px;border:1px solid var(--border);border-radius:6px;cursor:pointer;background:transparent;font-family:inherit;color:var(--muted);transition:all .15s}
-    .qr-payment .qr-tab.active{background:var(--text);color:#fff;border-color:var(--text)}
-
       nav{padding-left:40px}
     }
   </style>
@@ -194,6 +182,50 @@
   </section>
 
   <!-- Premium Tools — own products first -->
+  <section class="section" id="scripts" style="margin-top:0;padding-top:0">
+    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">My Tools</span></h2>
+    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
+
+    <!-- Bundle Deal -->
+    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
+      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
+      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
+      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
+        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
+        <span style="font-size:2rem;font-weight:800">$22.00</span>
+        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
+      </div>
+      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
+    </div>
+
+    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
+  </section>
+
+  <!-- Featured Tools -->
+  <section style="max-width:960px;margin:0 auto;padding:20px 20px 0">
+    <h2 class="sec-title">✨ <span data-i18n="featured_title">Featured Tools</span></h2>
+    <p class="sec-sub" data-i18n="featured_sub">Try our most popular tools — instantly, no signup.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px">
+      <div class="feat-card" onclick="showTool('game2048')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">🎮</div><strong>2048</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_2048">Merge tiles to reach 2048.</p>
+      </div>
+      <div class="feat-card" onclick="showTool('reaction')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">⚡</div><strong data-i18n="feat_reaction_name">Reaction Test</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_reaction">How fast can you react?</p>
+      </div>
+      <div class="feat-card" onclick="showTool('qrcode')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">📱</div><strong data-i18n="feat_qr_name">QR Code</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_qr">Text → QR code instantly.</p>
+      </div>
+      <div class="feat-card" onclick="showTool('sports')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
+        <div style="font-size:2rem;margin-bottom:6px">🏃</div><strong data-i18n="feat_sports_name">Sports Scorer</strong>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_sports">Track & field meet scoring.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="online">
     <h2 class="sec-title">☁️ <span data-i18n="sec_online">Online Convert</span></h2>
     <p class="sec-sub" data-i18n="online_desc">Upload a file → our server converts → download result. Powered by your own VM.</p>
@@ -226,72 +258,14 @@
     <p style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px" data-i18n="online_note">⚠️ Files are deleted from server after 1 hour. This service runs on a personal VM — it may go offline sometimes.</p>
   </section>
 
-  <!-- Fortune / Bazi -->
-  <section style="max-width:960px;margin:0 auto;padding:0 20px 24px">
-    <a href="/fortune.html" style="display:block;background:linear-gradient(135deg,#1a1410,#2a1f15);border:1px solid #3a3020;border-radius:var(--radius);padding:24px;text-decoration:none;color:var(--text);transition:all .2s" onmouseenter="this.style.borderColor='#d4a853'" onmouseleave="this.style.borderColor='#3a3020'">
-      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-        <div style="font-size:2.5rem">🔮</div>
-        <div style="flex:1;min-width:200px">
-          <h3 style="font-size:1.1rem;color:#d4a853;margin-bottom:4px"><span data-i18n="fortune_title">八字命盘 · Chinese Fortune</span></h3>
-          <p style="font-size:.84rem;color:#8a8070;line-height:1.6" data-i18n="fortune_desc">探索你的八字命盘，了解五行平衡、事业方向与感情运势</p>
-        </div>
-        <div style="padding:8px 18px;background:#d4a853;color:#1a1410;border-radius:6px;font-size:.85rem;font-weight:600;white-space:nowrap" data-i18n="fortune_btn">立即排盘 →</div>
-      </div>
-    </a>
-  </section>
-  <!-- Featured Tools -->
-  <section style="max-width:960px;margin:0 auto;padding:20px 20px 0">
-    <h2 class="sec-title">✨ <span data-i18n="featured_title">Featured Tools</span></h2>
-    <p class="sec-sub" data-i18n="featured_sub">Try our most popular tools — instantly, no signup.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px">
-      <div class="feat-card" onclick="showTool('sports')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">🏃</div><strong data-i18n="feat_sports_name">Sports Scorer</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_sports">Track & field meet scoring.</p>
-      </div>
-      <div class="feat-card" onclick="showTool('qrcode')" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all .2s" onmouseenter="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='var(--border)';this.style.transform='none'">
-        <div style="font-size:2rem;margin-bottom:6px">📱</div><strong data-i18n="feat_qr_name">QR Code</strong>
-        <p style="font-size:.78rem;color:var(--muted);margin-top:4px" data-i18n="feat_qr">Text → QR code instantly.</p>
-      </div>
+  <section class="section" id="tools">
+    <h2 class="sec-title">🛠️ <span data-i18n="sec_tools">Tools</span></h2>
+    <p class="sec-sub" data-i18n="tools_desc">Click any tool — runs in your browser. Nothing uploaded.</p>
+    <div class="tool-grid" id="toolGrid">
+      <!-- filled by JS -->
     </div>
   </section>
-  <!-- Tools + EXE Sidebar -->
-  <section style="max-width:1024px;margin:0 auto;padding:32px 20px">
-    <div style="display:flex;gap:24px;align-items:flex-start">
-      <!-- Left: Tools -->
-      <div style="flex:1;min-width:0">
-        <h2 class="sec-title">🛠️ <span data-i18n="sec_tools">Tools</span></h2>
-        <p class="sec-sub" data-i18n="tools_desc">Click any tool — runs in your browser. Nothing uploaded.</p>
-        <div class="tool-grid" id="toolGrid">
-          <!-- filled by JS -->
-        </div>
-      </div>
-      <!-- Right: EXE Bundle -->
-      <div style="width:280px;flex-shrink:0">
-  <!-- My EXE Tools — right sidebar -->
-  <aside style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:sticky;top:70px">
-    <h3 style="font-size:.95rem;font-weight:700;margin-bottom:4px">📦 <span data-i18n="sec_scripts">My EXE Tools</span></h3>
-    <p style="font-size:.78rem;color:var(--muted);margin-bottom:14px" data-i18n="scripts_desc">Standalone EXE files, no install.</p>
-    <div id="scriptGridSidebar" style="font-size:.78rem"><!-- filled by JS --></div>
-    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:10px;padding:16px;margin-top:14px;color:#fff;text-align:center">
-      <span style="background:#e87d4b;padding:2px 10px;border-radius:10px;font-size:.7rem;font-weight:700">🔥 BEST VALUE</span>
-      <p style="font-size:.82rem;margin:10px 0 6px;opacity:.9" data-i18n="bundle_desc_short">All 6 tools in one bundle</p>
-      <div style="margin:8px 0">
-        <span style="text-decoration:line-through;opacity:.5;font-size:.8rem">$29.94</span>
-        <span style="font-size:1.4rem;font-weight:800;margin-left:6px">$22.00</span>
-      </div>
-      <a id="bundleBuyBtn2" onclick="buyBundleDirect(event)" style="display:inline-block;padding:8px 20px;background:#e87d4b;color:#fff;border-radius:6px;font-size:.82rem;font-weight:700;text-decoration:none;cursor:pointer" data-i18n="buy_bundle">Buy Bundle</a>
-      <p style="font-size:.65rem;opacity:.5;margin-top:6px" data-i18n="bundle_save">Save 27%</p>
-    </div>
-  </aside>
-      </div>
-    </div>
-    <style>
-      @media(max-width:768px){
-        #page-home section > div[style*="display:flex"]{flex-direction:column!important}
-        #page-home section > div[style*="display:flex"] > div[style*="width:280px"]{width:100%!important}
-      }
-    </style>
-  </section>
+
   <section class="section" id="request">
     <div class="request-box">
       <h3 data-i18n="req_title">💡 Need a tool?</h3>
@@ -347,28 +321,6 @@
       <div id="shopCourses" style="margin-top:32px"><h3 style="font-size:1rem;margin-bottom:12px" data-i18n="shop_courses_title">📚 Courses</h3><div class="product-grid" id="courseGrid"></div></div>
     </div>
   </section>
-</div>
-
-
-<!-- PAYMENT MODAL (zh-CN domestic) -->
-<div class="modal-overlay" id="payModal">
-  <div class="modal-box" style="text-align:center">
-    <h3>💳 <span id="payTitle">扫码支付</span></h3>
-    <p id="payProduct" style="color:var(--muted);font-size:.85rem;margin:4px 0">—</p>
-    <div class="qr-payment">
-      <div class="qr-amount" id="payAmount">$0</div>
-      <div class="qr-note">⚠️ <span id="payNote">付款时请在备注填写订单号</span></div>
-      <div class="qr-orderid" id="payOrderId">—</div>
-      <div class="qr-platforms">
-        <button class="qr-tab active" onclick="switchPayQR('alipay')" id="qrTabAlipay">支付宝</button>
-        <button class="qr-tab" onclick="switchPayQR('wechat')" id="qrTabWechat">微信</button>
-      </div>
-      <div id="qrAlipay"><img src="/images/alipay-qr.jpg" alt="支付宝收款码" style="max-width:220px;border-radius:8px"><p style="font-size:.75rem;color:var(--muted);margin-top:4px">打开支付宝扫一扫</p></div>
-      <div id="qrWechat" style="display:none"><img src="/images/wechat-qr.jpg" alt="微信收款码" style="max-width:220px;border-radius:8px"><p style="font-size:.75rem;color:var(--muted);margin-top:4px">打开微信扫一扫</p></div>
-    </div>
-    <p style="font-size:.75rem;color:var(--muted);margin-top:8px">付款后我们会尽快处理，请留意订单通知</p>
-    <button class="btn primary" onclick="closePayModal()" style="margin-top:10px" id="payDoneBtn">✓ 已完成支付</button>
-  </div>
 </div>
 
 <!-- ORDER MODAL -->
@@ -485,6 +437,35 @@ var I18N = {
     bundle_title: '🔥 All 6 Tools — Complete Bundle',
     bundle_desc: 'Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.',
     bundle_save: 'Save 27% — $29.94 value for $22.00',
+
+    ui_copy: 'Copy', ui_clear: 'Clear', ui_generate: 'Generate',
+    ui_count: 'Count', ui_download: 'Download', ui_new_game: 'New Game',
+    ui_score: 'Score', ui_best: 'Best', ui_length: 'Length',
+    ui_min: 'Min', ui_max: 'Max', ui_decimal: 'Decimal',
+    ui_filter: 'Filter', ui_size: 'Size', ui_start: 'Start',
+    ui_lap: 'Lap', ui_reset: 'Reset',
+    ui_words: 'Words', ui_chars: 'Chars', ui_lines: 'Lines', ui_reading: 'Reading',
+    ui_now: 'Now', ui_original: 'Original', ui_modified: 'Modified',
+    ui_compare: 'Compare', ui_timestamp: 'Timestamp (s)', ui_date: 'Date',
+    ui_encode: 'Encode', ui_decode: 'Decode', ui_extract: 'Extract',
+    ui_copy_all: 'Copy All', ui_roll: 'Roll',
+    ui_format_validate: 'Format / Validate', ui_minify: 'Minify',
+    ui_text_morse: 'Text→Morse', ui_morse_text: 'Morse→Text',
+    ui_hex: 'HEX', ui_rgb: 'RGB', ui_copy_hex: 'Copy HEX', ui_copy_rgb: 'Copy RGB', ui_copy_hsl: 'Copy HSL',
+    ui_pattern: 'Pattern', ui_enter_regex: 'Enter pattern and test string...',
+    ui_arrow_keys: 'Arrow keys or swipe',
+    ui_click_start: 'Click to Start', ui_best_dash: 'Best: —', ui_click_green: 'Click when it turns green!',
+    ui_tap_flip: 'Tap to flip', ui_click_flip_hint: 'Click the coin to flip',
+    ui_x_first: 'X goes first', ui_black_first: 'Black first', ui_red_first: 'Red first',
+    ui_generate_uuid_hint: 'Click Generate to create UUIDs...',
+    ui_generate_pw_hint: 'Click Generate',
+    ui_enter_url: 'Enter text or URL...',
+    ui_click_generate: 'Click Generate',
+    ui_extract_placeholder: 'Extracted filenames will appear here...',
+    ui_md5_btn: 'MD5', ui_sha1: 'SHA-1', ui_sha256: 'SHA-256', ui_sha512: 'SHA-512',
+    ui_no_json: 'Paste JSON first.',
+    ui_lowercase: 'lowercase', ui_uppercase: 'UPPERCASE', ui_titlecase: 'Title Case',
+    ui_snake_case: 'snake_case', ui_camelCase: 'camelCase', ui_PascalCase: 'PascalCase',
     tools: [
       {id:'json',icon:'{ }',name:'JSON Formatter',desc:'Pretty-print, validate, and minify JSON. Error highlights included.'},
       {id:'case',icon:'Aa',name:'Case Converter',desc:'lowercase, UPPERCASE, snake_case, camelCase, PascalCase.'},
@@ -608,6 +589,35 @@ var I18N = {
     footer_about: '关于', footer_privacy: '隐私政策',
     about_content: '<h2>关于 slowbuild</h2><p>slowbuild 是一系列免费、无需注册的微型工具集合。一个接一个地打磨，用心建造。</p><p>所有工具都在你的浏览器本地运行，数据不会离开你的设备。无追踪、无广告（暂时）、无废话。</p><p>我是一个写脚本解决实际问题的独立创作者。slowbuild 是我将它们分享给世界的地方。</p><p>有工具想法？<a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">点这里提需求 →</a></p>',
     privacy_content: '<h2>隐私政策</h2><p><strong>更新日期：</strong>2026年6月</p><p>slowbuild 不收集、不存储、不分享任何个人数据。所有工具都在您的浏览器本地运行。</p><ul><li><strong>无 Cookie</strong> — 仅用 localStorage 记住您的语言偏好。</li><li><strong>无分析追踪</strong> — 不追踪您的使用行为。</li><li><strong>无数据上传</strong> — 所有内容都在您的设备上处理。</li><li><strong>无第三方脚本</strong> — 本网站不加载任何外部资源。</li></ul><p>如果未来有变化，本页面会更新。有问题请联系：hello@slowbuild.top</p>',
+
+    ui_copy: '复制', ui_clear: '清空', ui_generate: '生成',
+    ui_count: '数量', ui_download: '下载', ui_new_game: '新游戏',
+    ui_score: '分数', ui_best: '最佳', ui_length: '长度',
+    ui_min: '最小', ui_max: '最大', ui_decimal: '小数',
+    ui_filter: '过滤', ui_size: '尺寸', ui_start: '开始',
+    ui_lap: '分段', ui_reset: '重置',
+    ui_words: '字数', ui_chars: '字符', ui_lines: '行', ui_reading: '阅读',
+    ui_now: '当前时间', ui_original: '原文', ui_modified: '修改后',
+    ui_compare: '对比', ui_timestamp: '时间戳(秒)', ui_date: '日期',
+    ui_encode: '编码', ui_decode: '解码', ui_extract: '提取文件名',
+    ui_copy_all: '复制全部', ui_roll: '掷骰子',
+    ui_format_validate: '格式化/校验', ui_minify: '压缩',
+    ui_text_morse: '文字→摩斯', ui_morse_text: '摩斯→文字',
+    ui_hex: 'HEX', ui_rgb: 'RGB', ui_copy_hex: '复制 HEX', ui_copy_rgb: '复制 RGB', ui_copy_hsl: '复制 HSL',
+    ui_pattern: '正则', ui_enter_regex: '输入正则和测试文本...',
+    ui_arrow_keys: '方向键或滑动',
+    ui_click_start: '点击开始', ui_best_dash: '最佳: —', ui_click_green: '变绿时立即点击！',
+    ui_tap_flip: '点击翻转', ui_click_flip_hint: '点击硬币翻转',
+    ui_x_first: 'X 先手', ui_black_first: '黑子先手', ui_red_first: '红方先行',
+    ui_generate_uuid_hint: '点击生成按钮创建 UUID...',
+    ui_generate_pw_hint: '点击生成',
+    ui_enter_url: '输入文字或网址...',
+    ui_click_generate: '点击生成',
+    ui_extract_placeholder: '提取的文件名将显示在此处...',
+    ui_md5_btn: 'MD5', ui_sha1: 'SHA-1', ui_sha256: 'SHA-256', ui_sha512: 'SHA-512',
+    ui_no_json: '请先粘贴 JSON。',
+    ui_lowercase: '全小写', ui_uppercase: '全大写', ui_titlecase: '首字母大写',
+    ui_snake_case: '蛇形命名', ui_camelCase: '驼峰命名', ui_PascalCase: '帕斯卡命名',
     tools: [
       {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校验、压缩 JSON。错误自动标注。'},
       {id:'case',icon:'Aa',name:'大小写转换',desc:'全小写、全大写、蛇形、驼峰、帕斯卡，一键切换。'},
@@ -731,6 +741,35 @@ var I18N = {
     footer_about: '關於', footer_privacy: '隱私政策',
     about_content: '<h2>關於 slowbuild</h2><p>slowbuild 是一系列免費、無需註冊的微型工具集合。一個接一個地打磨，用心建造。</p><p>所有工具都在你的瀏覽器本機運行，資料不會離開你的裝置。無追蹤、無廣告（暫時）、無廢話。</p><p>我是一個寫腳本解決實際問題的獨立創作者。slowbuild 是我將它們分享給世界的地方。</p><p>有工具想法？<a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">點這裡提需求 →</a></p>',
     privacy_content: '<h2>隱私政策</h2><p><strong>更新日期：</strong>2026年6月</p><p>slowbuild 不收集、不儲存、不分享任何個人資料。所有工具都在您的瀏覽器本機運行。</p><ul><li><strong>無 Cookie</strong> — 僅用 localStorage 記住您的語言偏好。</li><li><strong>無分析追蹤</strong> — 不追蹤您的使用行為。</li><li><strong>無資料上傳</strong> — 所有內容都在您的裝置上處理。</li><li><strong>無第三方腳本</strong> — 本網站不加載任何外部資源。</li></ul><p>如果未來有變化，本頁面會更新。有問題請聯繫：hello@slowbuild.top</p>',
+
+    ui_copy: '複製', ui_clear: '清除', ui_generate: '產生',
+    ui_count: '數量', ui_download: '下載', ui_new_game: '新遊戲',
+    ui_score: '分數', ui_best: '最佳', ui_length: '長度',
+    ui_min: '最小', ui_max: '最大', ui_decimal: '小數',
+    ui_filter: '過濾', ui_size: '尺寸', ui_start: '開始',
+    ui_lap: '分段', ui_reset: '重置',
+    ui_words: '字數', ui_chars: '字元', ui_lines: '行', ui_reading: '閱讀',
+    ui_now: '目前時間', ui_original: '原文', ui_modified: '修改後',
+    ui_compare: '對比', ui_timestamp: '時間戳(秒)', ui_date: '日期',
+    ui_encode: '編碼', ui_decode: '解碼', ui_extract: '提取檔名',
+    ui_copy_all: '複製全部', ui_roll: '擲骰子',
+    ui_format_validate: '格式化/校驗', ui_minify: '壓縮',
+    ui_text_morse: '文字→摩斯', ui_morse_text: '摩斯→文字',
+    ui_hex: 'HEX', ui_rgb: 'RGB', ui_copy_hex: '複製 HEX', ui_copy_rgb: '複製 RGB', ui_copy_hsl: '複製 HSL',
+    ui_pattern: '正則', ui_enter_regex: '輸入正則和測試文字...',
+    ui_arrow_keys: '方向鍵或滑動',
+    ui_click_start: '點擊開始', ui_best_dash: '最佳: —', ui_click_green: '變綠時立即點擊！',
+    ui_tap_flip: '點擊翻轉', ui_click_flip_hint: '點擊硬幣翻轉',
+    ui_x_first: 'X 先手', ui_black_first: '黑子先手', ui_red_first: '紅方先行',
+    ui_generate_uuid_hint: '點擊產生按鈕創建 UUID...',
+    ui_generate_pw_hint: '點擊產生',
+    ui_enter_url: '輸入文字或網址...',
+    ui_click_generate: '點擊產生',
+    ui_extract_placeholder: '提取的檔名將顯示在此處...',
+    ui_md5_btn: 'MD5', ui_sha1: 'SHA-1', ui_sha256: 'SHA-256', ui_sha512: 'SHA-512',
+    ui_no_json: '請先貼上 JSON。',
+    ui_lowercase: '全小寫', ui_uppercase: '全大寫', ui_titlecase: '首字母大寫',
+    ui_snake_case: '蛇形命名', ui_camelCase: '駝峰命名', ui_PascalCase: '帕斯卡命名',
     tools: [
       {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校驗、壓縮 JSON。錯誤自動標註。'},
       {id:'case',icon:'Aa',name:'大小寫轉換',desc:'全小寫、全大寫、蛇形、駝峰、帕斯卡，一鍵切換。'},
@@ -808,17 +847,6 @@ function renderScriptCards() {
   });
   var grid = document.getElementById('scriptGrid');
   if (grid) grid.innerHTML = html;
-  // Also fill sidebar version
-  var sidebarGrid = document.getElementById('scriptGridSidebar');
-  if (sidebarGrid) {
-    var shtml = '';
-    tools.forEach(function(t){
-      shtml += '<div style="padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px">';
-      shtml += '<span>'+t.icon+'</span><span style="font-weight:500">'+L['script_'+t.id]+'</span>';
-      shtml += '</div>';
-    });
-    sidebarGrid.innerHTML = shtml;
-  }
 }
 
 function renderShop() {
@@ -863,41 +891,29 @@ function renderShop() {
   var backend = (typeof BACKEND !== 'undefined' && BACKEND) ? BACKEND : '';
   var apiPromise = backend ? fetch(backend.replace(/\/+$/,'')+'/api/shop').then(function(r){return r.json();}) : Promise.reject('no backend');
 
-  function loadFallbackProducts(chtml) {
-    return fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
-      .then(function(products){
-        var phtml = '';
-        products.forEach(function(p){ phtml += renderProductCard(p); });
-        pGrid.innerHTML = phtml || '<div style="text-align:center;color:var(--muted);padding:20px">No products yet</div>';
-        if (cGrid) cGrid.innerHTML = chtml || '';
-        if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
-      });
-  }
-
   apiPromise.then(function(data){
     // Backend API success
     var phtml = '', chtml = '';
     (data.products||[]).forEach(function(p){ phtml += renderProductCard(p); });
     (data.courses||[]).forEach(function(c){ chtml += renderCourseCard(c); });
-    // If backend returned no products, fallback to local products.json
-    if (!phtml) {
-      loadFallbackProducts(chtml).catch(function(){
+    pGrid.innerHTML = phtml || '<div style="text-align:center;color:var(--muted);padding:20px">No products yet</div>';
+    if (cGrid) cGrid.innerHTML = chtml;
+    if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
+  }).catch(function(){
+    // Fallback to static products.json (for when backend is unavailable)
+    fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
+      .then(function(products){
+        var html = '';
+        products.forEach(function(p){ html += renderProductCard(p); });
+        pGrid.innerHTML = html;
+        if (cGrid) cGrid.innerHTML = '';
+        if (sCourses) sCourses.style.display = 'none';
+      })
+      .catch(function(){
         pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Coming soon</div>';
         if (cGrid) cGrid.innerHTML = '';
         if (sCourses) sCourses.style.display = 'none';
       });
-      return;
-    }
-    pGrid.innerHTML = phtml;
-    if (cGrid) cGrid.innerHTML = chtml;
-    if (sCourses && !chtml) sCourses.style.display = 'none'; else if (sCourses) sCourses.style.display = '';
-  }).catch(function(){
-    // Backend unreachable — fallback to local products.json
-    loadFallbackProducts('').catch(function(){
-      pGrid.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Coming soon</div>';
-      if (cGrid) cGrid.innerHTML = '';
-      if (sCourses) sCourses.style.display = 'none';
-    });
   });
 }
 
@@ -939,66 +955,66 @@ function renderToolContent(id) {
     case 'json':
       html = makeToolPage('{ } ' + L.tools[0].name,
         txt('jsonInput','{"name":"slowbuild","tools":["json","url","base64"]}') +
-        optRow([btn('Format / Validate','formatJSON()','primary'), btn('Minify','minifyJSON()'), btn('Clear','clearJSON()')]) +
+        optRow([btn(t('ui_format_validate'),'formatJSON()','primary'), btn(t('ui_minify'),'minifyJSON()'), btn(t('ui_clear'),'clearJSON()')]) +
         bar('jsonMsg'));
       break;
     case 'case':
       html = makeToolPage('Aa ' + L.tools[1].name,
         txt('caseInput','') +
-        optRow([btn('lowercase','convertCase("lower")'),btn('UPPERCASE','convertCase("upper")'),btn('Title Case','convertCase("title")'),btn('snake_case','convertCase("snake")'),btn('camelCase','convertCase("camel")'),btn('PascalCase','convertCase("pascal")')]));
+        optRow([btn(t('ui_lowercase'),'convertCase("lower")'),btn(t('ui_uppercase'),'convertCase("upper")'),btn(t('ui_titlecase'),'convertCase("title")'),btn(t('ui_snake_case'),'convertCase("snake")'),btn(t('ui_camelCase'),'convertCase("camel")'),btn(t('ui_PascalCase'),'convertCase("pascal")')]));
       break;
     case 'count':
       html = makeToolPage('📊 ' + L.tools[2].name,
-        txt('countInput','') + '<div class="result-bar show" id="countResult" style="color:var(--text)">'+(lang==='zh-CN'?'字数':'Words')+': <strong>0</strong> | '+(lang==='zh-CN'?'字符':'Chars')+': <strong>0</strong> | '+(lang==='zh-CN'?'行':'Lines')+': <strong>0</strong> | '+(lang==='zh-CN'?'阅读':'Reading')+': <strong>0 min</strong></div>');
+        txt('countInput','') + '<div class="result-bar show" id="countResult" style="color:var(--text)">'+(t('ui_words'))+': <strong>0</strong> | '+(t('ui_chars'))+': <strong>0</strong> | '+(t('ui_lines'))+': <strong>0</strong> | '+(t('ui_reading'))+': <strong>0 min</strong></div>');
       tc.innerHTML = html;
       document.getElementById('countInput').oninput = updateCount;
       break;
     case 'diff':
       html = makeToolPage('≠ ' + L.tools[3].name,
-        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'原文':'Original')+'</label><textarea id="diffA" style="min-height:160px"></textarea></div><div><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'修改后':'Modified')+'</label><textarea id="diffB" style="min-height:160px"></textarea></div></div>' +
-        optRow([btn(lang==='zh-CN'?'对比':'Compare','runDiff()','primary'), btn(lang==='zh-CN'?'清空':'Clear','clearDiff()')]) +
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><label style="font-size:.85rem;color:var(--muted)">'+(t('ui_original'))+'</label><textarea id="diffA" style="min-height:160px"></textarea></div><div><label style="font-size:.85rem;color:var(--muted)">'+(t('ui_modified'))+'</label><textarea id="diffB" style="min-height:160px"></textarea></div></div>' +
+        optRow([btn(t('ui_compare'),'runDiff()','primary'), btn(t('ui_clear'),'clearDiff()')]) +
         bar('diffResult'));
       break;
     case 'time':
       html = makeToolPage('🕐 ' + L.tools[4].name,
-        '<div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:flex-end"><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">Unix '+(lang==='zh-CN'?'时间戳(秒)':'Timestamp (s)')+'</label><input id="tsInput" type="number" placeholder="1700000000" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.88rem;outline:none" oninput="tsToDate()"></div><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'日期':'Date')+'</label><input id="dateInput" type="text" placeholder="2024-01-01 12:00" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none" oninput="dateToTs()"></div></div>' +
-        optRow([btn(lang==='zh-CN'?'当前时间':'Now','tsNow()')]) +
-        '<div class="result-bar show" id="tsResult" style="color:var(--text)"><strong>'+(lang==='zh-CN'?'现在':'Now')+':</strong> <span id="nowTs"></span> | <span id="nowDate"></span></div>');
+        '<div style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap;align-items:flex-end"><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">Unix '+(t('ui_timestamp'))+'</label><input id="tsInput" type="number" placeholder="1700000000" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.88rem;outline:none" oninput="tsToDate()"></div><div style="flex:1;min-width:180px"><label style="font-size:.85rem;color:var(--muted)">'+(t('ui_date'))+'</label><input id="dateInput" type="text" placeholder="2024-01-01 12:00" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none" oninput="dateToTs()"></div></div>' +
+        optRow([btn(t('ui_now'),'tsNow()')]) +
+        '<div class="result-bar show" id="tsResult" style="color:var(--text)"><strong>'+(t('ui_now'))+':</strong> <span id="nowTs"></span> | <span id="nowDate"></span></div>');
       tc.innerHTML = html;
       updateNow2(); setInterval(updateNow2, 1000);
       break;
     case 'filename':
       html = makeToolPage('📁 ' + L.tools[5].name,
         txt('filenameInput','') +
-        '<div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'过滤':'Filter')+':</span><input id="filenameFilter" placeholder=".jpg .png .js" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;font-size:.83rem;font-family:inherit;outline:none;flex:1;min-width:200px" oninput="applyFilenameFilter()"></div>' +
-        optRow([btn(lang==='zh-CN'?'提取文件名':'Extract','extractFilenames()','primary'), btn(lang==='zh-CN'?'复制':'Copy','copyFilenames()'), btn(lang==='zh-CN'?'清空':'Clear','clearFilenames()')]) +
-        '<div class="result-bar show" id="filenameResult" style="color:var(--text)"><em style="color:var(--muted)">'+(lang==='zh-CN'?'提取的文件名将显示在此处...':'Extracted filenames will appear here...')+'</em></div>');
+        '<div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(t('ui_filter'))+':</span><input id="filenameFilter" placeholder=".jpg .png .js" style="padding:6px 12px;border:1px solid var(--border);border-radius:8px;font-size:.83rem;font-family:inherit;outline:none;flex:1;min-width:200px" oninput="applyFilenameFilter()"></div>' +
+        optRow([btn(t('ui_extract'),'extractFilenames()','primary'), btn(t('ui_copy'),'copyFilenames()'), btn(t('ui_clear'),'clearFilenames()')]) +
+        '<div class="result-bar show" id="filenameResult" style="color:var(--text)"><em style="color:var(--muted)">'+(t('ui_extract_placeholder'))+'</em></div>');
       break;
     case 'url':
       html = makeToolPage('🔗 ' + L.tools[6].name,
         txt('urlInput','') +
-        optRow([btn('Encode','urlEncode()','primary'), btn('Decode','urlDecode()'), btn(lang==='zh-CN'?'清空':'Clear',"document.getElementById('urlInput').value = '';document.getElementById('urlMsg').className='result-bar'")]) +
+        optRow([btn(t('ui_encode'),'urlEncode()','primary'), btn(t('ui_decode'),'urlDecode()'), btn(t('ui_clear'),"document.getElementById('urlInput').value = '';document.getElementById('urlMsg').className='result-bar'")]) +
         bar('urlMsg'));
       break;
     case 'base64':
       html = makeToolPage('🔐 ' + L.tools[7].name,
         txt('base64Input','') +
-        optRow([btn('Encode','base64Encode()','primary'), btn('Decode','base64Decode()'), btn(lang==='zh-CN'?'清空':'Clear',"document.getElementById('base64Input').value = '';document.getElementById('base64Msg').className='result-bar'")]) +
+        optRow([btn(t('ui_encode'),'base64Encode()','primary'), btn(t('ui_decode'),'base64Decode()'), btn(t('ui_clear'),"document.getElementById('base64Input').value = '';document.getElementById('base64Msg').className='result-bar'")]) +
         bar('base64Msg'));
       break;
     case 'uuid':
       html = makeToolPage('🎲 ' + L.tools[8].name,
-        '<div style="display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(lang==='zh-CN'?'数量':'Count')+':</span><input id="uuidCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">' +
-        btn(lang==='zh-CN'?'生成':'Generate','generateUUIDs()','primary') +
-        btn(lang==='zh-CN'?'复制全部':'Copy All','copyUUIDs()','small') + '</div>' +
-        '<div class="result-bar show" id="uuidResult" style="color:var(--text)"><em style="color:var(--muted)">'+(lang==='zh-CN'?'点击生成按钮创建 UUID...':'Click Generate to create UUIDs...')+'</em></div>');
+        '<div style="display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap"><span style="font-size:.85rem;color:var(--muted)">'+(t('ui_count'))+':</span><input id="uuidCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace">' +
+        btn(t('ui_generate'),'generateUUIDs()','primary') +
+        btn(t('ui_copy_all'),'copyUUIDs()','small') + '</div>' +
+        '<div class="result-bar show" id="uuidResult" style="color:var(--text)"><em style="color:var(--muted)">'+(t('ui_generate_uuid_hint'))+'</em></div>');
       break;
     case 'password':
       html = makeToolPage('🔑 ' + L.tools[9].name,
-        '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px"><div><label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">'+(lang==='zh-CN'?'长度':'Length')+'</label><input id="pwLength" type="number" value="16" min="4" max="128" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace"></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwUpper" checked> A-Z</label><label><input type="checkbox" id="pwLower" checked> a-z</label></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwDigits" checked> 0-9</label><label><input type="checkbox" id="pwSymbols" checked> !@#$</label></div>' +
-        btn(lang==='zh-CN'?'生成':'Generate','generatePW()','primary') +
-        btn(lang==='zh-CN'?'复制':'Copy','copyPW()','small') + '</div>' +
-        '<div class="result-bar show" id="pwResult" style="color:var(--text)"><input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="'+(lang==='zh-CN'?'点击生成':'Click Generate')+'"></div>');
+        '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px"><div><label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">'+(t('ui_length'))+'</label><input id="pwLength" type="number" value="16" min="4" max="128" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;outline:none;font-family:monospace"></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwUpper" checked> A-Z</label><label><input type="checkbox" id="pwLower" checked> a-z</label></div><div style="display:flex;flex-direction:column;gap:3px;font-size:.83rem"><label><input type="checkbox" id="pwDigits" checked> 0-9</label><label><input type="checkbox" id="pwSymbols" checked> !@#$</label></div>' +
+        btn(t('ui_generate'),'generatePW()','primary') +
+        btn(t('ui_copy')+'','copyPW()','small') + '</div>' +
+        '<div class="result-bar show" id="pwResult" style="color:var(--text)"><input id="pwOutput" readonly style="width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:1rem;text-align:center;background:var(--bg);outline:none" value="'+(t('ui_generate_pw_hint'))+'"></div>');
       break;
     case 'sports':
       html = makeToolPage('🏃 ' + L.tools[10].name, buildSportsHTML());
@@ -1006,21 +1022,21 @@ function renderToolContent(id) {
     case 'md5':
       html = makeToolPage('🔐 ' + L.tools[11].name,
         txt('md5Input','') +
-        optRow([btn('MD5','hashText(\"MD5\")','primary'), btn('Copy','copyHash()'), btn('Clear','clearHash()')]) +
+        optRow([btn('MD5','hashText(\"MD5\")','primary'), btn(t('ui_copy'),'copyHash()'), btn(t('ui_clear'),'clearHash()')]) +
         bar('md5Msg'));
       break;
     case 'sha':
       html = makeToolPage('🔏 ' + L.tools[12].name,
         '<div class="btn-row" style="margin-bottom:14px">'+
-          btn('SHA-1','hashText(\"SHA-1\")'),btn('SHA-256','hashText(\"SHA-256\")'),btn('SHA-512','hashText(\"SHA-512\")')+'</div>'+
+          btn(t('ui_sha1'),'hashText(\"SHA-1\")'),btn(t('ui_sha256'),'hashText(\"SHA-256\")'),btn(t('ui_sha512'),'hashText(\"SHA-512\")')+'</div>'+
         txt('shaInput','') +
         bar('shaMsg'));
       break;
     case 'qrcode':
       html = makeToolPage('📱 ' + L.tools[13].name,
-        '<div style="display:flex;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:260px"><input id="qrInput" placeholder="'+(lang==='zh-CN'?'输入文字或网址...':'Enter text or URL...')+'" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:inherit;outline:none;margin-bottom:12px" oninput="generateQR()">'+
-        '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.82rem;color:var(--muted)">Size:</span><input id="qrSize" type="number" value="256" min="64" max="512" step="32" style="width:70px;padding:6px;border:1px solid var(--border);border-radius:8px;font-size:.82rem;outline:none" onchange="generateQR()">'+
-        btn('Download','downloadQR()','small')+'</div></div>'+
+        '<div style="display:flex;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:260px"><input id="qrInput" placeholder="'+(t('ui_enter_url'))+'" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:inherit;outline:none;margin-bottom:12px" oninput="generateQR()">'+
+        '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.82rem;color:var(--muted)">'+t('ui_size')+':</span><input id="qrSize" type="number" value="256" min="64" max="512" step="32" style="width:70px;padding:6px;border:1px solid var(--border);border-radius:8px;font-size:.82rem;outline:none" onchange="generateQR()">'+
+        btn(t('ui_download'),'downloadQR()','small')+'</div></div>'+
         '<div style="min-width:200px;text-align:center"><canvas id="qrCanvas" style="border:1px solid var(--border);border-radius:8px;max-width:100%"></canvas></div></div>');
       tc.innerHTML = html;
       setTimeout(generateQR,100);
@@ -1028,34 +1044,34 @@ function renderToolContent(id) {
     case 'morse':
       html = makeToolPage('📡 ' + L.tools[14].name,
         txt('morseInput','') +
-        optRow([btn(lang==='zh-CN'?'文字→摩斯':'Text→Morse','morseEncode()','primary'), btn(lang==='zh-CN'?'摩斯→文字':'Morse→Text','morseDecode()'), btn('Copy','copyMorse()'), btn('Clear','clearMorse()')]) +
+        optRow([btn(t('ui_text_morse'),'morseEncode()','primary'), btn(t('ui_morse_text'),'morseDecode()'), btn(t('ui_copy'),'copyMorse()'), btn(t('ui_clear'),'clearMorse()')]) +
         bar('morseMsg'));
       break;
     case 'color':
       html = makeToolPage('🎨 ' + L.tools[15].name,
         '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">'+
-        '<div><label style="font-size:.82rem;color:var(--muted);display:block">HEX</label><div style="display:flex;gap:8px"><span style="font-size:1.5rem">#</span><input id="hexInput" placeholder="e87d4b" maxlength="6" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:1rem;font-family:monospace;outline:none" oninput="hexChanged()"></div></div>'+
-        '<div><label style="font-size:.82rem;color:var(--muted);display:block">RGB</label><div style="display:flex;gap:4px"><input id="rInput" placeholder="R" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"><input id="gInput" placeholder="G" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"><input id="bInput" placeholder="B" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"></div></div>'+
+        '<div><label style="font-size:.82rem;color:var(--muted);display:block">'+t('ui_hex')+'</label><div style="display:flex;gap:8px"><span style="font-size:1.5rem">#</span><input id="hexInput" placeholder="e87d4b" maxlength="6" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:1rem;font-family:monospace;outline:none" oninput="hexChanged()"></div></div>'+
+        '<div><label style="font-size:.82rem;color:var(--muted);display:block">'+t('ui_rgb')+'</label><div style="display:flex;gap:4px"><input id="rInput" placeholder="R" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"><input id="gInput" placeholder="G" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"><input id="bInput" placeholder="B" style="width:60px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="rgbChanged()"></div></div>'+
         '</div>'+
         '<div style="text-align:center;margin:12px 0"><div id="colorPreview" style="width:100%;height:80px;border-radius:8px;border:1px solid var(--border);background:#e87d4b"></div>'+
         '<p style="font-size:.8rem;color:var(--muted);margin-top:6px" id="colorLabel">HSL: 18° 83% 61%</p></div>'+
-        optRow([btn('Copy HEX','copyColor(\"hex\")','small'), btn('Copy RGB','copyColor(\"rgb\")','small'), btn('Copy HSL','copyColor(\"hsl\")','small')]));
+        optRow([btn(t('ui_copy_hex'),'copyColor(\"hex\")','small'), btn(t('ui_copy_rgb'),'copyColor(\"rgb\")','small'), btn(t('ui_copy_hsl'),'copyColor(\"hsl\")','small')]));
       tc.innerHTML = html;
       updateColorPreview();
       break;
     case 'regex':
       html = makeToolPage('🔍 ' + L.tools[16].name,
-        '<div style="margin-bottom:12px"><label style="font-size:.82rem;color:var(--muted);display:block">Pattern</label><div style="display:flex;gap:8px"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexPattern" placeholder="\\d+" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none" oninput="runRegex()"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexFlags" placeholder="g" style="width:50px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="runRegex()"></div></div>'+
+        '<div style="margin-bottom:12px"><label style="font-size:.82rem;color:var(--muted);display:block">'+t('ui_pattern')+'</label><div style="display:flex;gap:8px"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexPattern" placeholder="\\d+" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none" oninput="runRegex()"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexFlags" placeholder="g" style="width:50px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="runRegex()"></div></div>'+
         txt('regexInput','Test string...') +
-        '<div class="result-bar show" id="regexResult" style="color:var(--text);margin-top:8px"><em style="color:var(--muted)">'+(lang==='zh-CN'?'输入正则和测试文本...':'Enter pattern and test string...')+'</em></div>');
+        '<div class="result-bar show" id="regexResult" style="color:var(--text);margin-top:8px"><em style="color:var(--muted)">'+(t('ui_enter_regex'))+'</em></div>');
       tc.innerHTML = html;
       document.getElementById('regexInput').oninput = runRegex;
       break;
     case 'game2048':
       html = makeToolPage('🎮 2048',
-        '<div style="text-align:center"><div style="display:flex;justify-content:center;gap:16px;margin-bottom:12px;align-items:center"><span style="font-weight:600">Score: <strong id="g2048Score">0</strong></span><button class="btn small" onclick="init2048()">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>'+
+        '<div style="text-align:center"><div style="display:flex;justify-content:center;gap:16px;margin-bottom:12px;align-items:center"><span style="font-weight:600">'+t('ui_score')+': <strong id="g2048Score">0</strong></span><button class="btn small" onclick="init2048()">'+(t('ui_new_game'))+'</button></div>'+
         '<div id="g2048Board" style="display:inline-grid;grid-template-columns:repeat(4,70px);gap:6px;background:#bbada0;padding:6px;border-radius:8px;touch-action:none"></div>'+
-        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(lang==='zh-CN'?'方向键或滑动':'Arrow keys or swipe')+'</p></div>');
+        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(t('ui_arrow_keys'))+'</p></div>');
       tc.innerHTML = html;
       init2048();
       break;
@@ -1063,9 +1079,9 @@ function renderToolContent(id) {
     case 'reaction':
       html = makeToolPage('⚡ ' + L.tools[18].name,
         '<div style="text-align:center;padding:40px 0">'+
-        '<div id="reactionBox" onclick="reactClick()" style="width:220px;height:220px;border-radius:50%;margin:0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;transition:background .15s;background:var(--accent);color:#fff;user-select:none">'+(lang==='zh-CN'?'点击开始':'Click to Start')+'</div>'+
-        '<div class="result-bar show" id="reactionResult" style="margin-top:16px;max-width:300px;margin-left:auto;margin-right:auto;text-align:center;font-size:1rem"><strong>'+(lang==='zh-CN'?'最佳: —':'Best: —')+'</strong></div>'+
-        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(lang==='zh-CN'?'变绿时立即点击！':'Click when it turns green!')+'</p></div>');
+        '<div id="reactionBox" onclick="reactClick()" style="width:220px;height:220px;border-radius:50%;margin:0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:700;transition:background .15s;background:var(--accent);color:#fff;user-select:none">'+(t('ui_click_start'))+'</div>'+
+        '<div class="result-bar show" id="reactionResult" style="margin-top:16px;max-width:300px;margin-left:auto;margin-right:auto;text-align:center;font-size:1rem"><strong>'+(t('ui_best_dash'))+'</strong></div>'+
+        '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">'+(t('ui_click_green'))+'</p></div>');
       tc.innerHTML = html;
       initReaction();
       break;
@@ -1074,18 +1090,18 @@ function renderToolContent(id) {
         '<div style="text-align:center;padding:20px"><input type="file" accept="image/*" id="img2b64File" onchange="img2base64Convert()" style="margin-bottom:16px">'+
         '<div id="img2b64Preview" style="max-width:300px;margin:0 auto 16px"></div>'+
         '<textarea id="img2b64Result" readonly style="width:100%;height:120px;padding:10px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.75rem;word-break:break-all;resize:vertical"></textarea>'+
-        '<div class="btn-row" style="margin-top:8px">'+btn('Copy','copyImg2Base64()','small')+'</div></div>');
+        '<div class="btn-row" style="margin-top:8px">'+btn(t('ui_copy'),'copyImg2Base64()','small')+'</div></div>');
       break;
     case 'random':
       html = makeToolPage('🎯 ' + L.tools[20].name,
         '<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px">'+
         '<div><label style="font-size:.78rem;color:var(--muted);display:block">Min</label><input id="rndMin" type="number" value="1" style="width:80px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
         '<div><label style="font-size:.78rem;color:var(--muted);display:block">Max</label><input id="rndMax" type="number" value="100" style="width:80px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
-        '<div><label style="font-size:.78rem;color:var(--muted);display:block">'+'Count'+'</label><input id="rndCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
-        '<div style="display:flex;align-items:center;gap:6px;padding-bottom:8px"><label style="font-size:.78rem"><input type="checkbox" id="rndDecimal"> Decimal</label></div>'+
+        '<div><label style="font-size:.78rem;color:var(--muted);display:block">'+t('ui_count')+'</label><input id="rndCount" type="number" value="1" min="1" max="100" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none"></div>'+
+        '<div style="display:flex;align-items:center;gap:6px;padding-bottom:8px"><label style="font-size:.78rem"><input type="checkbox" id="rndDecimal">'+t('ui_decimal')+'</label></div>'+
         '</div>'+
-        optRow([btn('Generate','genRandom()','primary'),btn('Copy','copyRandom()')])+
-        '<div class="result-bar show" id="randomResult" style="margin-top:12px;font-family:monospace;font-size:1.1rem;min-height:24px;color:var(--text)"><em style="color:var(--muted)">'+'Click Generate'+'</em></div>');
+        optRow([btn(t('ui_generate'),'genRandom()','primary'),btn(t('ui_copy'),'copyRandom()')])+
+        '<div class="result-bar show" id="randomResult" style="margin-top:12px;font-family:monospace;font-size:1.1rem;min-height:24px;color:var(--text)"><em style="color:var(--muted)">'+t('ui_click_generate')+'</em></div>');
       break;
     case 'htmlpreview':
       html = makeToolPage('👁️ ' + L.tools[21].name,
@@ -1097,7 +1113,7 @@ function renderToolContent(id) {
       html = makeToolPage('⏱️ ' + L.tools[22].name,
         '<div style="text-align:center;padding:20px">'+
         '<div style="font-size:3rem;font-family:monospace;font-weight:300;margin:20px 0" id="swDisplay">00:00:00.0</div>'+
-        optRow([btn('Start','swToggle()','primary'),btn('Lap','swLap()'),btn('Reset','swReset()')])+
+        optRow([btn(t('ui_start'),'swToggle()','primary'),btn(t('ui_lap'),'swLap()'),btn(t('ui_reset'),'swReset()')])+
         '<div id="swLaps" style="margin-top:16px;max-height:200px;overflow-y:auto;font-family:monospace;font-size:.85rem;color:var(--muted)"></div></div>');
       tc.innerHTML = html;
       initStopwatch();
@@ -1111,56 +1127,56 @@ function renderToolContent(id) {
     case 'palette':
       html = makeToolPage('🌈 ' + L.tools[24].name,
         '<div id="paletteColors" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:16px"><!-- filled by JS --></div>'+
-        optRow([btn('Generate','genPalette()','primary'),btn('Copy All','copyPalette()')]));
+        optRow([btn(t('ui_generate'),'genPalette()','primary'),btn(t('ui_copy_all'),'copyPalette()')]));
       tc.innerHTML = html;
       genPalette();
       break;
     case 'coinflip':
       html = makeToolPage('🪙 ' + L.tools[25].name,
         '<div style="text-align:center;padding:30px"><div id="coin" onclick="flipCoin()" style="width:140px;height:140px;border-radius:50%;margin:0 auto 20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:4rem;background:linear-gradient(135deg,#ffd700,#ffaa00);box-shadow:0 4px 12px rgba(0,0,0,.15);transition:transform .3s;user-select:none">🪙</div>'+
-        '<div class="result-bar show" id="coinResult" style="font-size:1.2rem;font-weight:600">'+'Tap to flip'+'</div>'+
+        '<div class="result-bar show" id="coinResult" style="font-size:1.2rem;font-weight:600">'+t('ui_tap_flip')+'</div>'+
         '<p style="font-size:.75rem;color:var(--muted);margin-top:8px">Click the coin to flip</p></div>');
       break;
     case 'dice':
       html = makeToolPage('🎲 ' + L.tools[26].name,
         '<div style="text-align:center;padding:20px"><div style="display:flex;justify-content:center;gap:8px;margin-bottom:12px;align-items:center">'+
-        '<span style="font-size:.82rem;color:var(--muted)">'+(lang==='zh-CN'?'数量':'Count')+':</span>'+
+        '<span style="font-size:.82rem;color:var(--muted)">'+(t('ui_count'))+':</span>'+
         '<input id="diceCount" type="number" value="1" min="1" max="10" style="width:50px;padding:6px;border:1px solid var(--border);border-radius:8px;font-size:.88rem;font-family:monospace;outline:none;text-align:center"></div>'+
         '<div id="diceResult" style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;min-height:100px;align-items:center;font-size:3rem"></div>'+
-        '<button class="btn primary" onclick="rollDice()" style="margin-top:16px;font-size:1rem;padding:12px 40px">🎲 '+(lang==='zh-CN'?'掷骰子':'Roll')+'</button>'+
+        '<button class="btn primary" onclick="rollDice()" style="margin-top:16px;font-size:1rem;padding:12px 40px">🎲 '+(t('ui_roll'))+'</button>'+
         '<div class="result-bar show" id="diceTotal" style="margin-top:12px;font-weight:600"></div></div>');
       tc.innerHTML = html;
       rollDice();
       break;
     case 'tictactoe':
       html = makeToolPage('⭕ ' + L.tools[27].name,
-        '<div style="text-align:center"><div id="tttStatus" style="font-size:1rem;font-weight:600;margin-bottom:12px">⭕ '+(lang==='zh-CN'?'X 先手':'X goes first')+'</div>'+
+        '<div style="text-align:center"><div id="tttStatus" style="font-size:1rem;font-weight:600;margin-bottom:12px">⭕ '+(t('ui_x_first'))+'</div>'+
         '<div id="tttBoard" style="display:inline-grid;grid-template-columns:repeat(3,80px);gap:4px;background:var(--text);padding:4px;border-radius:8px"><!-- filled by JS --></div>'+
-        '<button class="btn small" onclick="initTTT()" style="margin-top:12px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+        '<button class="btn small" onclick="initTTT()" style="margin-top:12px">'+(t('ui_new_game'))+'</button></div>');
       tc.innerHTML = html;
       initTTT();
       break;
     case 'gomoku':
       html = makeToolPage('⚫ ' + L.tools[28].name,
-        '<div style="text-align:center"><div id="gmkStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(lang==='zh-CN'?'黑子先手':'Black first')+'</div>'+
+        '<div style="text-align:center"><div id="gmkStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(t('ui_black_first'))+'</div>'+
         '<div style="overflow-x:auto"><canvas id="gmkCanvas" width="450" height="450" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="gmkClick(event)" ontouchstart="gmkTouch(event)"></canvas></div>'+
-        '<button class="btn small" onclick="initGomoku()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+        '<button class="btn small" onclick="initGomoku()" style="margin-top:8px">'+(t('ui_new_game'))+'</button></div>');
       tc.innerHTML = html;
       initGomoku();
       break;
     case 'chess':
       html = makeToolPage('♟️ Chinese Chess',
-        '<div style="text-align:center"><div id="chsStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">'+(lang==='zh-CN'?'红方先行':'Red first')+'</div>'+
+        '<div style="text-align:center"><div id="chsStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">'+(t('ui_red_first'))+'</div>'+
         '<div style="overflow-x:auto"><canvas id="chsCanvas" width="450" height="500" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="chsClick(event)" ontouchstart="chsTouch(event)"></canvas></div>'+
-        '<button class="btn small" onclick="initChess()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+        '<button class="btn small" onclick="initChess()" style="margin-top:8px">'+(t('ui_new_game'))+'</button></div>');
       tc.innerHTML = html;
       initChess();
       break;
     case 'go':
       html = makeToolPage('⚪ Go 9×9',
-        '<div style="text-align:center"><div id="goStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(lang==='zh-CN'?'黑子先手':'Black first')+'</div>'+
+        '<div style="text-align:center"><div id="goStatus" style="font-size:1rem;font-weight:600;margin-bottom:10px">⚫ '+(t('ui_black_first'))+'</div>'+
         '<div style="overflow-x:auto"><canvas id="goCanvas" width="450" height="450" style="border:1px solid var(--border);border-radius:8px;cursor:pointer;max-width:100%;height:auto;touch-action:none" onclick="goClick(event)" ontouchstart="goTouch(event)"></canvas></div>'+
-        '<button class="btn small" onclick="initGo()" style="margin-top:8px">'+(lang==='zh-CN'?'新游戏':'New Game')+'</button></div>');
+        '<button class="btn small" onclick="initGo()" style="margin-top:8px">'+(t('ui_new_game'))+'</button></div>');
       tc.innerHTML = html;
       initGo();
       break;
@@ -1174,7 +1190,7 @@ function renderToolContent(id) {
 // ═══════════════════════════════════════════
 function formatJSON(){
   var v=document.getElementById('jsonInput').value.trim(),m=document.getElementById('jsonMsg');
-  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴 JSON。':'Paste JSON first.';return}
+  if(!v){m.className='result-bar error show';m.textContent=t('ui_no_json');return}
   try{var o=JSON.parse(v);document.getElementById('jsonInput').value=JSON.stringify(o,null,2);m.className='result-bar success show';m.textContent='✓ Valid JSON — formatted.'}
   catch(e){m.className='result-bar error show';m.textContent='✗ Invalid: '+e.message}
 }
@@ -1201,18 +1217,18 @@ function convertCase(type){
 function updateCount(){
   var v=document.getElementById('countInput').value;
   var w=v.trim()?v.trim().split(/\s+/).length:0,c=v.length,l=v?v.split(/\n/).length:0,m=Math.ceil(w/200);
-  var words=lang==='zh-CN'?'字数':'Words',chars=lang==='zh-CN'?'字符':'Chars',lines=lang==='zh-CN'?'行':'Lines',reading=lang==='zh-CN'?'阅读':'Reading';
+  var words=t('ui_words'),chars=t('ui_chars'),lines=t('ui_lines'),reading=t('ui_reading');
   document.getElementById('countResult').innerHTML=words+': <strong>'+w+'</strong> | '+chars+': <strong>'+c+'</strong> | '+lines+': <strong>'+l+'</strong> | '+reading+': <strong>'+m+' min</strong>';
 }
 
 function runDiff(){
   var a=document.getElementById('diffA').value,b=document.getElementById('diffB').value,m=document.getElementById('diffResult');
-  if(a===b){m.className='result-bar success show';m.textContent='✓ '+(lang==='zh-CN'?'文本相同。':'Texts are identical.');return}
-  if(!a||!b){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请填写两段文本。':'Both texts needed.';return}
+  if(a===b){m.className='result-bar success show';m.textContent='✓ '+(lang==='zh-CN'?'文本相同。':lang==='zh-TW'?'文字相同。':'Texts are identical.');return}
+  if(!a||!b){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请填写两段文本。':lang==='zh-TW'?'請填寫兩段文字。':'Both texts needed.';return}
   var la=a.split('\n'),lb=b.split('\n'),d=0,out=[],max=Math.max(la.length,lb.length);
   for(var i=0;i<max;i++){if(la[i]!==lb[i]){d++;out.push('Line '+(i+1)+': '+(la[i]||'(empty)')+' → '+(lb[i]||'(empty)'))}}
   m.className='result-bar show';
-  m.innerHTML='<strong>'+d+' '+(lang==='zh-CN'?'行不同':'line(s) differ')+':</strong><br>'+out.slice(0,10).join('<br>')+(out.length>10?'<br>...'+(lang==='zh-CN'?'还有 ':'and ')+(out.length-10)+(lang==='zh-CN'?' 行':' more'):'');
+  m.innerHTML='<strong>'+d+' '+(lang==='zh-CN'?'行不同':lang==='zh-TW'?'行不同':'line(s) differ')+':</strong><br>'+out.slice(0,10).join('<br>')+(out.length>10?'<br>...'+(lang==='zh-CN'?'还有 ':lang==='zh-TW'?'還有 ':'and ')+(out.length-10)+(lang==='zh-CN'?' 行':lang==='zh-TW'?' 行':' more'):'');
 }
 function clearDiff(){document.getElementById('diffA').value='';document.getElementById('diffB').value='';document.getElementById('diffResult').className='result-bar'}
 
@@ -1236,7 +1252,7 @@ function updateNow2(){var n=Math.floor(Date.now()/1000);var nE=document.getEleme
 var _filenames=[];
 function extractFilenames(){
   var v=document.getElementById('filenameInput').value,r=document.getElementById('filenameResult');
-  if(!v.trim()){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'请先粘贴文本。':'Paste some text first.')+'</em>';return}
+  if(!v.trim()){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'请先粘贴文本。':lang==='zh-TW'?'請先貼上文字。':'Paste some text first.')+'</em>';return}
   var paths=v.split('\n');_filenames=[];
   for(var i=0;i<paths.length;i++){
     var line=paths[i].trim();if(!line)continue;
@@ -1250,10 +1266,10 @@ function applyFilenameFilter(){renderFilenames()}
 function renderFilenames(){
   var r=document.getElementById('filenameResult'),f=(document.getElementById('filenameFilter').value||'').trim().toLowerCase(),exts=f?f.split(/\s+/):[],filtered=_filenames;
   if(exts.length>0)filtered=_filenames.filter(function(x){return exts.some(function(e){return x.toLowerCase().endsWith(e)})});
-  if(_filenames.length===0){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'提取的文件名将显示在此处...':'Extracted filenames will appear here...')+'</em>'}
-  else if(filtered.length===0){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'无匹配文件名。共提取 ':'No filenames match. Total: ')+_filenames.length+'</em>'}
+  if(_filenames.length===0){r.innerHTML='<em style="color:var(--muted)">'+(t('ui_extract_placeholder'))+'</em>'}
+  else if(filtered.length===0){r.innerHTML='<em style="color:var(--muted)">'+(lang==='zh-CN'?'无匹配文件名。共提取 ':lang==='zh-TW'?'無匹配檔名。共提取 ':'No filenames match. Total: ')+_filenames.length+'</em>'}
   else{
-    var h='<div style="font-size:.83rem;color:var(--muted);margin-bottom:8px">'+filtered.length+' '+(lang==='zh-CN'?'个文件':'file(s)')+(filtered.length!==_filenames.length?' '+(lang==='zh-CN'?'(从 ':'(filtered from ')+_filenames.length+')':'')+'</div>';
+    var h='<div style="font-size:.83rem;color:var(--muted);margin-bottom:8px">'+filtered.length+' '+(lang==='zh-CN'?'个文件':lang==='zh-TW'?'個檔案':'file(s)')+(filtered.length!==_filenames.length?' '+(lang==='zh-CN'?'(从 ':lang==='zh-TW'?'(從 ':'(filtered from ')+_filenames.length+')':'')+'</div>';
     for(var i=0;i<filtered.length;i++)h+='<div style="padding:3px 0;font-family:monospace;font-size:.83rem">'+filtered[i]+'</div>';
     r.innerHTML=h;
   }
@@ -1264,7 +1280,7 @@ function copyFilenames(){
   if(filtered.length===0)return;
   navigator.clipboard.writeText(filtered.join('\n')).then(function(){
     var r=document.getElementById('filenameResult'),old=r.innerHTML;
-    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':'Copied ')+filtered.length+(lang==='zh-CN'?' 个文件名!':' filenames!')+'</span>';
+    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':lang==='zh-TW'?'已複製 ':'Copied ')+filtered.length+(lang==='zh-CN'?' 个文件名!':lang==='zh-TW'?' 個檔名!':' filenames!')+'</span>';
     setTimeout(function(){renderFilenames()},1500);
   });
 }
@@ -1272,25 +1288,25 @@ function clearFilenames(){document.getElementById('filenameInput').value='';docu
 
 function urlEncode(){
   var v=document.getElementById('urlInput').value,m=document.getElementById('urlMsg');
-  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':lang==='zh-TW'?'請先貼上文字。':'Paste text first.';return}
   document.getElementById('urlInput').value=encodeURIComponent(v);m.className='result-bar success show';m.textContent='✓ Encoded.';
 }
 function urlDecode(){
   var v=document.getElementById('urlInput').value,m=document.getElementById('urlMsg');
-  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':lang==='zh-TW'?'請先貼上文字。':'Paste text first.';return}
   try{document.getElementById('urlInput').value=decodeURIComponent(v);m.className='result-bar success show';m.textContent='✓ Decoded.'}
   catch(e){m.className='result-bar error show';m.textContent='✗ Invalid.'}
 }
 
 function base64Encode(){
   var v=document.getElementById('base64Input').value,m=document.getElementById('base64Msg');
-  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':'Paste text first.';return}
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴文本。':lang==='zh-TW'?'請先貼上文字。':'Paste text first.';return}
   try{document.getElementById('base64Input').value=btoa(unescape(encodeURIComponent(v)));m.className='result-bar success show';m.textContent='✓ Encoded.'}
-  catch(e){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'编码失败':'Encode failed'}
+  catch(e){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'编码失败':lang==='zh-TW'?'編碼失敗':'Encode failed'}
 }
 function base64Decode(){
   var v=document.getElementById('base64Input').value,m=document.getElementById('base64Msg');
-  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴 Base64。':'Paste Base64 first.';return}
+  if(!v){m.className='result-bar error show';m.textContent=lang==='zh-CN'?'请先粘贴 Base64。':lang==='zh-TW'?'請先貼上 Base64。':'Paste Base64 first.';return}
   try{document.getElementById('base64Input').value=decodeURIComponent(escape(atob(v)));m.className='result-bar success show';m.textContent='✓ Decoded.'}
   catch(e){m.className='result-bar error show';m.textContent='✗ Invalid Base64.'}
 }
@@ -1306,7 +1322,7 @@ function copyUUIDs(){
   if(!window._uuids||window._uuids.length===0)return;
   navigator.clipboard.writeText(window._uuids.join('\n')).then(function(){
     var r=document.getElementById('uuidResult');
-    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':'Copied ')+window._uuids.length+' UUIDs!</span>';
+    r.innerHTML='<span style="color:var(--green)">✓ '+(lang==='zh-CN'?'已复制 ':lang==='zh-TW'?'已複製 ':'Copied ')+window._uuids.length+' UUIDs!</span>';
     setTimeout(function(){if(window._uuids)generateUUIDs()},1500);
   });
 }
@@ -1324,9 +1340,9 @@ function generatePW(){
 }
 function copyPW(){
   var pw=document.getElementById('pwOutput').value;
-  if(!pw||pw===(lang==='zh-CN'?'点击生成':'Click Generate'))return;
+  if(!pw||pw===(t('ui_generate_pw_hint')))return;
   navigator.clipboard.writeText(pw).then(function(){
-    var el=document.getElementById('pwOutput');el.value=lang==='zh-CN'?'✓ 已复制!':'✓ Copied!';
+    var el=document.getElementById('pwOutput');el.value=lang==='zh-CN'?'✓ 已复制!':lang==='zh-TW'?'✓ 已複製!':'✓ Copied!';
     setTimeout(function(){el.value=pw},1200);
   });
 }
@@ -1334,7 +1350,7 @@ function copyPW(){
 function submitRequest(e){
   e.preventDefault();
   var v=document.getElementById('reqInput').value.trim(),m=document.getElementById('reqMsg');
-  if(v){m.textContent='✓ '+(lang==='zh-CN'?'收到！收藏本站关注更新。':'Got it! Bookmark for updates.');m.style.color='var(--green)';document.getElementById('reqInput').value=''}
+  if(v){m.textContent='✓ '+(lang==='zh-CN'?'收到！收藏本站关注更新。':lang==='zh-TW'?'收到！收藏本站關注更新。':'Got it! Bookmark for updates.');m.style.color='var(--green)';document.getElementById('reqInput').value=''}
 }
 
 function escJS(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'\\"'); }
@@ -1377,32 +1393,26 @@ function submitOrder(){
   }
 
   msg.className = 'result-bar show';
-  msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':'Submitting...')+'</span>';
-
-  var orderData = {product:product, price:price, name:name, email:email, address:address, notes:notes};
-  var orderId = 'SW' + Date.now().toString(36).toUpperCase();
+  msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':lang==='zh-TW'?'提交中...':'Submitting...')+'</span>';
 
   fetch('/api/order', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify(orderData)
+    body: JSON.stringify({product:product, price:price, name:name, email:email, address:address, notes:notes})
   }).then(function(r){ return r.json(); })
   .then(function(d){
     if(d.success){
       msg.className = 'result-bar success show';
       msg.textContent = t('order_success');
+      // Store order in localStorage as backup
       try{
         var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-        orders.push({id:d.orderId||orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+        orders.push({id:d.orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
         localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
       }catch(e){}
       setTimeout(function(){
         closeOrder();
-        if(lang==='zh-CN'){
-          showPayModal(product, price, d.orderId||orderId);
-        } else {
-          window.open(_orderPayLink, '_blank');
-        }
+        window.open(_orderPayLink, '_blank');
       }, 1500);
     } else {
       msg.className = 'result-bar error show';
@@ -1411,61 +1421,23 @@ function submitOrder(){
   }).catch(function(err){
     // Fallback: still let them pay, order stored in localStorage
     msg.className = 'result-bar success show';
-    if(lang==='zh-CN'){
-      msg.textContent = '✓ 订单已本地保存，请扫码付款';
-    } else {
-      msg.textContent = '✓ Order saved locally. Redirecting to payment...';
-    }
+    msg.textContent = '✓ '+(lang==='zh-CN'?'正在跳转付款（订单已本地保存）...':lang==='zh-TW'?'正在跳轉付款（訂單已本機儲存）...':'Redirecting to payment (order saved locally)...');
     try{
       var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-      orders.push({id:orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+      orders.push({product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
       localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
     }catch(e){}
     setTimeout(function(){
       closeOrder();
-      if(lang==='zh-CN'){
-        showPayModal(product, price, orderId);
-      } else {
-        window.open(_orderPayLink, '_blank');
-      }
+      window.open(_orderPayLink, '_blank');
     }, 1500);
   });
-}
-
-function showPayModal(product, price, orderId){
-  document.getElementById('payProduct').textContent = product;
-  document.getElementById('payAmount').textContent = '¥'+(price*7.2).toFixed(2)+' / $'+price.toFixed(2);
-  document.getElementById('payOrderId').textContent = orderId;
-  document.getElementById('orderModal').classList.remove('show');
-  document.getElementById('payModal').classList.add('show');
-  // Reset to alipay tab
-  switchPayQR('alipay');
-}
-
-function closePayModal(){
-  document.getElementById('payModal').classList.remove('show');
-}
-
-function buyBundleDirect(e){
-  e.preventDefault();
-  if(lang==='zh-CN'){
-    showPayModal('All 6 Tools Bundle', 22.00, 'SW' + Date.now().toString(36).toUpperCase());
-  } else {
-    window.open('https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl', '_blank');
-  }
-}
-
-function switchPayQR(type){
-  document.getElementById('qrAlipay').style.display = type==='alipay'?'block':'none';
-  document.getElementById('qrWechat').style.display = type==='wechat'?'block':'none';
-  document.getElementById('qrTabAlipay').className = type==='alipay'?'qr-tab active':'qr-tab';
-  document.getElementById('qrTabWechat').className = type==='wechat'?'qr-tab active':'qr-tab';
 }
 
 // ═══════════════════════════════════════════
 //  在线转换 — 连接后端 VM
 // ═══════════════════════════════════════════
-var BACKEND = 'https://academy-commented-titles-horizon.trycloudflare.com';
+var BACKEND = 'https://concerned-median-decision-longitude.trycloudflare.com';
 
 function uploadConvert(tool) {
   var fileInput, resultDiv, endpoint, method;
@@ -1822,7 +1794,7 @@ function clearHash(){['md5','sha'].forEach(function(id){var el=document.getEleme
 function md5(s){function r(n,c){return(n<<c)|(n>>>(32-c))}function q(x,y,z){return(x&y)|(~x&z)}function l(x,y,z){return(x&z)|(y&~z)}var w=[],i,n=s.length,a=0x67452301,b=0xefcdab89,c=0x98badcfe,d=0x10325476;for(i=0;i<n;i++)w[i>>2]|=(s.charCodeAt(i)&255)<<((i%4)*8);w[i>>2]|=0x80<<((i%4)*8);var len=(((w.length+2)*8)/64|0)+1;w[w.length]=n*8;while(w.length<len*16)w.push(0);function f(fn,aa,bb,cc,dd,x,s,t){return r(aa+fn(bb,cc,dd)+x+t,s)+bb}function hfn(x,y,z){return x^y^z}function kfn(x,y,z){return y^(x|~z)}for(var j=0;j<w.length;j+=16){var aa=a,bb=b,cc=c,dd=d;a=f(q,a,b,c,d,w[j+0],7,0xd76aa478);d=f(q,d,a,b,c,w[j+1],12,0xe8c7b756);c=f(q,c,d,a,b,w[j+2],17,0x242070db);b=f(q,b,c,d,a,w[j+3],22,0xc1bdceee);a=f(q,a,b,c,d,w[j+4],7,0xf57c0faf);d=f(q,d,a,b,c,w[j+5],12,0x4787c62a);c=f(q,c,d,a,b,w[j+6],17,0xa8304613);b=f(q,b,c,d,a,w[j+7],22,0xfd469501);a=f(q,a,b,c,d,w[j+8],7,0x698098d8);d=f(q,d,a,b,c,w[j+9],12,0x8b44f7af);c=f(q,c,d,a,b,w[j+10],17,0xffff5bb1);b=f(q,b,c,d,a,w[j+11],22,0x895cd7be);a=f(q,a,b,c,d,w[j+12],7,0x6b901122);d=f(q,d,a,b,c,w[j+13],12,0xfd987193);c=f(q,c,d,a,b,w[j+14],17,0xa679438e);b=f(q,b,c,d,a,w[j+15],22,0x49b40821);a=f(l,a,b,c,d,w[j+1],5,0xf61e2562);d=f(l,d,a,b,c,w[j+6],9,0xc040b340);c=f(l,c,d,a,b,w[j+11],14,0x265e5a51);b=f(l,b,c,d,a,w[j+0],20,0xe9b6c7aa);a=f(l,a,b,c,d,w[j+5],5,0xd62f105d);d=f(l,d,a,b,c,w[j+10],9,0x2441453);c=f(l,c,d,a,b,w[j+15],14,0xd8a1e681);b=f(l,b,c,d,a,w[j+4],20,0xe7d3fbc8);a=f(l,a,b,c,d,w[j+9],5,0x21e1cde6);d=f(l,d,a,b,c,w[j+14],9,0xc33707d6);c=f(l,c,d,a,b,w[j+3],14,0xf4d50d87);b=f(l,b,c,d,a,w[j+8],20,0x455a14ed);a=f(l,a,b,c,d,w[j+13],5,0xa9e3e905);d=f(l,d,a,b,c,w[j+2],9,0xfcefa3f8);c=f(l,c,d,a,b,w[j+7],14,0x676f02d9);b=f(l,b,c,d,a,w[j+12],20,0x8d2a4c8a);a=f(hfn,a,b,c,d,w[j+5],4,0xfffa3942);d=f(hfn,d,a,b,c,w[j+8],11,0x8771f681);c=f(hfn,c,d,a,b,w[j+11],16,0x6d9d6122);b=f(hfn,b,c,d,a,w[j+14],23,0xfde5380c);a=f(hfn,a,b,c,d,w[j+1],4,0xa4beea44);d=f(hfn,d,a,b,c,w[j+4],11,0x4bdecfa9);c=f(hfn,c,d,a,b,w[j+7],16,0xf6bb4b60);b=f(hfn,b,c,d,a,w[j+10],23,0xbebfbc70);a=f(hfn,a,b,c,d,w[j+13],4,0x289b7ec6);d=f(hfn,d,a,b,c,w[j+0],11,0xeaa127fa);c=f(hfn,c,d,a,b,w[j+3],16,0xd4ef3085);b=f(hfn,b,c,d,a,w[j+6],23,0x4881d05);a=f(hfn,a,b,c,d,w[j+9],4,0xd9d4d039);d=f(hfn,d,a,b,c,w[j+12],11,0xe6db99e5);c=f(hfn,c,d,a,b,w[j+15],16,0x1fa27cf8);b=f(hfn,b,c,d,a,w[j+2],23,0xc4ac5665);a=f(kfn,a,b,c,d,w[j+0],6,0xf4292244);d=f(kfn,d,a,b,c,w[j+7],10,0x432aff97);c=f(kfn,c,d,a,b,w[j+14],15,0xab9423a7);b=f(kfn,b,c,d,a,w[j+5],21,0xfc93a039);a=f(kfn,a,b,c,d,w[j+12],6,0x655b59c3);d=f(kfn,d,a,b,c,w[j+3],10,0x8f0ccc92);c=f(kfn,c,d,a,b,w[j+10],15,0xffeff47d);b=f(kfn,b,c,d,a,w[j+1],21,0x85845dd1);a=f(kfn,a,b,c,d,w[j+8],6,0x6fa87e4f);d=f(kfn,d,a,b,c,w[j+15],10,0xfe2ce6e0);c=f(kfn,c,d,a,b,w[j+6],15,0xa3014314);b=f(kfn,b,c,d,a,w[j+13],21,0x4e0811a1);a=f(kfn,a,b,c,d,w[j+4],6,0xf7537e82);d=f(kfn,d,a,b,c,w[j+11],10,0xbd3af235);c=f(kfn,c,d,a,b,w[j+2],15,0x2ad7d2bb);b=f(kfn,b,c,d,a,w[j+9],21,0xeb86d391);a=(a+aa)>>>0;b=(b+bb)>>>0;c=(c+cc)>>>0;d=(d+dd)>>>0}function toHex(v){return(v>>>0).toString(16).padStart(8,'0')}return toHex(a)+toHex(b)+toHex(c)+toHex(d)}
 
 // QR Code
-function generateQR(){var t=document.getElementById('qrInput').value.trim(),s=parseInt(document.getElementById('qrSize').value)||256,c=document.getElementById('qrCanvas');if(s<64)s=64;if(s>512)s=512;c.width=s;c.height=s;var ctx=c.getContext('2d');if(!t){ctx.fillStyle='#f0f0f0';ctx.fillRect(0,0,s,s);ctx.fillStyle='#999';ctx.font='14px sans-serif';ctx.textAlign='center';ctx.fillText(lang==='zh-CN'?'输入内容':'Enter text',s/2,s/2);return}var img=new Image();img.onload=function(){ctx.drawImage(img,0,0,s,s)};img.src='https://api.qrserver.com/v1/create-qr-code/?size='+s+'x'+s+'&data='+encodeURIComponent(t)}
+function generateQR(){var t=document.getElementById('qrInput').value.trim(),s=parseInt(document.getElementById('qrSize').value)||256,c=document.getElementById('qrCanvas');if(s<64)s=64;if(s>512)s=512;c.width=s;c.height=s;var ctx=c.getContext('2d');if(!t){ctx.fillStyle='#f0f0f0';ctx.fillRect(0,0,s,s);ctx.fillStyle='#999';ctx.font='14px sans-serif';ctx.textAlign='center';ctx.fillText(lang==='zh-CN'?'输入内容':lang==='zh-TW'?'輸入內容':'Enter text',s/2,s/2);return}var img=new Image();img.onload=function(){ctx.drawImage(img,0,0,s,s)};img.src='https://api.qrserver.com/v1/create-qr-code/?size='+s+'x'+s+'&data='+encodeURIComponent(t)}
 function downloadQR(){var c=document.getElementById('qrCanvas');if(!c||!document.getElementById('qrInput').value.trim())return;var a=document.createElement('a');a.download='qrcode.png';a.href=c.toDataURL();document.body.appendChild(a);a.click();document.body.removeChild(a)}
 
 // Morse
@@ -1882,7 +1854,7 @@ function rollDice(){
 
 // Tic-Tac-Toe
 var _tttBoard=[],_tttTurn='X',_tttOver=false;
-function initTTT(){_tttBoard=Array.from({length:9},function(){return''});_tttTurn='X';_tttOver=false;renderTTT();document.getElementById('tttStatus').textContent='⭕ '+(lang==='zh-CN'?'X 先手':'X goes first')}
+function initTTT(){_tttBoard=Array.from({length:9},function(){return''});_tttTurn='X';_tttOver=false;renderTTT();document.getElementById('tttStatus').textContent='⭕ '+(t('ui_x_first'))}
 function renderTTT(){
   var el=document.getElementById('tttBoard'),h='';
   for(var i=0;i<9;i++){
@@ -1899,7 +1871,7 @@ function tttClick(i){
     _tttOver=true;renderTTT();return;
   }
   _tttTurn=_tttTurn==='X'?'O':'X';
-  document.getElementById('tttStatus').textContent=_tttTurn+' '+(lang==='zh-CN'?'的回合':"'s turn");
+  document.getElementById('tttStatus').textContent=_tttTurn+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':''s turn');
   renderTTT();
 }
 function checkTTTWin(){
@@ -1910,7 +1882,7 @@ function checkTTTWin(){
 
 // Gomoku 15x15
 var _gmkB=[],_gmkTurn=1,_gmkOver=false,_gmkSize=15,_gmkCell=30;
-function initGomoku(){var c=document.getElementById('gmkCanvas');if(!c)return;_gmkB=Array.from({length:_gmkSize},function(){return Array(_gmkSize).fill(0)});_gmkTurn=1;_gmkOver=false;document.getElementById('gmkStatus').textContent='⚫ '+(lang==='zh-CN'?'黑子先手':'Black first');drawGomoku()}
+function initGomoku(){var c=document.getElementById('gmkCanvas');if(!c)return;_gmkB=Array.from({length:_gmkSize},function(){return Array(_gmkSize).fill(0)});_gmkTurn=1;_gmkOver=false;document.getElementById('gmkStatus').textContent='⚫ '+(t('ui_black_first'));drawGomoku()}
 function drawGomoku(){
   var c=document.getElementById('gmkCanvas');if(!c)return;var ctx=c.getContext('2d'),s=_gmkCell;
   ctx.fillStyle='#dcb35c';ctx.fillRect(0,0,c.width,c.height);
@@ -1928,10 +1900,10 @@ function gmkPlace(x,y){
   if(_gmkOver)return;var s=_gmkCell,cl=Math.floor(x/s),r=Math.floor(y/s);if(cl<0||cl>=_gmkSize||r<0||r>=_gmkSize||_gmkB[r][cl]!==0)return;
   _gmkB[r][cl]=_gmkTurn;
   if(checkGomoku(r,cl)){
-    _gmkOver=true;document.getElementById('gmkStatus').innerHTML=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'赢了！':'Wins!')+' 🎉';
+    _gmkOver=true;document.getElementById('gmkStatus').innerHTML=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'赢了！':lang==='zh-TW'?'贏了！':'Wins!')+' 🎉';
     drawGomoku();return;
   }
-  _gmkTurn=_gmkTurn===1?2:1;document.getElementById('gmkStatus').textContent=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合':"'s turn");
+  _gmkTurn=_gmkTurn===1?2:1;document.getElementById('gmkStatus').textContent=(_gmkTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合':lang==='zh-TW'?'的回合':''s turn');
   drawGomoku();
 }
 function checkGomoku(r,cl){
@@ -1949,7 +1921,7 @@ function checkGomoku(r,cl){
 var _chsB=[],_chsTurn='r',_chsSel=null,_chsOver=false;
 var _chsInit=[['rR','rN','rB','rA','rK','rA','rB','rN','rR'],Array(9).fill(''),['','rC','','','','','','rC',''],['rP','','rP','','rP','','rP','','rP'],Array(9).fill(''),Array(9).fill(''),['bP','','bP','','bP','','bP','','bP'],['','bC','','','','','','bC',''],Array(9).fill(''),['bR','bN','bB','bA','bK','bA','bB','bN','bR']];
 var _chsNames={rK:'帅',rA:'仕',rB:'相',rN:'馬',rR:'車',rC:'炮',rP:'兵',bK:'将',bA:'士',bB:'象',bN:'馬',bR:'車',bC:'砲',bP:'卒'};
-function initChess(){_chsB=_chsInit.map(function(r){return r.slice()});_chsTurn='r';_chsSel=null;_chsOver=false;document.getElementById('chsStatus').textContent=lang==='zh-CN'?'红方先行':'Red first';drawChess()}
+function initChess(){_chsB=_chsInit.map(function(r){return r.slice()});_chsTurn='r';_chsSel=null;_chsOver=false;document.getElementById('chsStatus').textContent=t('ui_red_first');drawChess()}
 function drawChess(){
   var c=document.getElementById('chsCanvas');if(!c)return;var ctx=c.getContext('2d'),w=c.width,h=c.height;
   ctx.fillStyle='#f5deb3';ctx.fillRect(0,0,w,h);
@@ -1984,9 +1956,9 @@ function chsPlace(x,y){
         // Check if king captured
         var hasKing=p[0]==='r'?false:false;
         for(var i=0;i<10;i++)for(var j=0;j<9;j++)if(_chsB[i][j]&&_chsB[i][j][0]!==p[0]&&(_chsB[i][j]==='bK'||_chsB[i][j]==='rK'))hasKing=true;
-        if(!hasKing){_chsOver=true;document.getElementById('chsStatus').innerHTML=(p[0]==='r'?'🔴':'🔵')+' '+(lang==='zh-CN'?'赢了！':'Wins!')+' 🎉';_chsSel=null;drawChess();return}
+        if(!hasKing){_chsOver=true;document.getElementById('chsStatus').innerHTML=(p[0]==='r'?'🔴':'🔵')+' '+(lang==='zh-CN'?'赢了！':lang==='zh-TW'?'贏了！':'Wins!')+' 🎉';_chsSel=null;drawChess();return}
       }
-      _chsTurn=_chsTurn==='r'?'b':'r';document.getElementById('chsStatus').textContent=(_chsTurn==='r'?'🔴':lang==='zh-CN'?'🔵 黑方':'🔵 Black')+(lang==='zh-CN'?' 的回合':"'s turn");
+      _chsTurn=_chsTurn==='r'?'b':'r';document.getElementById('chsStatus').textContent=(_chsTurn==='r'?'🔴':lang==='zh-CN'?'🔵 黑方':lang==='zh-TW'?'🔵 黑方':'🔵 Black')+(lang==='zh-CN'?' 的回合':lang==='zh-TW'?' 的回合':"'s turn");
     }
     _chsSel=null;drawChess();return;
   }
@@ -2014,7 +1986,7 @@ function chsClearRay(r1,c1,r2,c2,horiz){
 
 // Go 9x9
 var _goB=[],_goTurn=1,_goOver=false,_goPass=0,_goPrisoners=[0,0];
-function initGo(){_goB=Array.from({length:9},function(){return Array(9).fill(0)});_goTurn=1;_goOver=false;_goPass=0;_goPrisoners=[0,0];document.getElementById('goStatus').textContent='⚫ '+(lang==='zh-CN'?'黑子先手':'Black first');drawGo()}
+function initGo(){_goB=Array.from({length:9},function(){return Array(9).fill(0)});_goTurn=1;_goOver=false;_goPass=0;_goPrisoners=[0,0];document.getElementById('goStatus').textContent='⚫ '+(t('ui_black_first'));drawGo()}
 function drawGo(){
   var c=document.getElementById('goCanvas');if(!c)return;var ctx=c.getContext('2d'),s=50;
   ctx.fillStyle='#dcb35c';ctx.fillRect(0,0,c.width,c.height);
@@ -2036,7 +2008,7 @@ function goPlace(x,y){
   _goPrisoners[_goTurn-1]+=captured;
   if(captured===0&&goHasLiberties(r,cl)){_goB[r][cl]=0;return} // suicide
   _goPass=0;_goTurn=_goTurn===1?2:1;
-  document.getElementById('goStatus').textContent=(_goTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合 ':"'s turn ")+'('+(lang==='zh-CN'?'吃子':'Prisoners')+': '+_goPrisoners.join(' vs ')+')';
+  document.getElementById('goStatus').textContent=(_goTurn===1?'⚫':'⚪')+' '+(lang==='zh-CN'?'的回合 ':lang==='zh-TW'?'的回合 ':''s turn ')+'('+(lang==='zh-CN'?'吃子':lang==='zh-TW'?'吃子':'Prisoners')+': '+_goPrisoners.join(' vs ')+')';
   drawGo();
 }
 function goHasLiberties(r,cl){
@@ -2063,8 +2035,8 @@ function goCapture(r,cl,color){
 
 // Reaction
 var _rs='idle',_rt,_rb=Infinity;
-function initReaction(){_rs='idle';document.getElementById('reactionBox').textContent=lang==='zh-CN'?'点击开始':'Click to Start';document.getElementById('reactionBox').style.background='var(--accent)'}
-function reactClick(){var b=document.getElementById('reactionBox'),r=document.getElementById('reactionResult');if(_rs==='idle'){_rs='waiting';b.textContent=lang==='zh-CN'?'等待变绿...':'Wait for green...';b.style.background='var(--red)';_rt=setTimeout(function(){_rs='go';_rt=Date.now();b.textContent=lang==='zh-CN'?'现在！':'NOW!';b.style.background='var(--green)'},1000+Math.random()*3000)}else if(_rs==='waiting'){clearTimeout(_rt);b.textContent=lang==='zh-CN'?'太快了！':'Too early!';b.style.background='var(--accent)';_rs='idle'}else if(_rs==='go'){var t=Date.now()-_rt;if(t<_rb)_rb=t;b.textContent=t+' ms';b.style.background='var(--accent)';r.innerHTML='<strong>'+t+' ms</strong> | '+(lang==='zh-CN'?'最佳: ':'Best: ')+_rb+' ms';_rs='idle'}}
+function initReaction(){_rs='idle';document.getElementById('reactionBox').textContent=t('ui_click_start');document.getElementById('reactionBox').style.background='var(--accent)'}
+function reactClick(){var b=document.getElementById('reactionBox'),r=document.getElementById('reactionResult');if(_rs==='idle'){_rs='waiting';b.textContent=lang==='zh-CN'?'等待变绿...':lang==='zh-TW'?'等待變綠...':'Wait for green...';b.style.background='var(--red)';_rt=setTimeout(function(){_rs='go';_rt=Date.now();b.textContent=lang==='zh-CN'?'现在！':lang==='zh-TW'?'現在！':'NOW!';b.style.background='var(--green)'},1000+Math.random()*3000)}else if(_rs==='waiting'){clearTimeout(_rt);b.textContent=lang==='zh-CN'?'太快了！':lang==='zh-TW'?'太快了！':'Too early!';b.style.background='var(--accent)';_rs='idle'}else if(_rs==='go'){var t=Date.now()-_rt;if(t<_rb)_rb=t;b.textContent=t+' ms';b.style.background='var(--accent)';r.innerHTML='<strong>'+t+' ms</strong> | '+(lang==='zh-CN'?'最佳: ':lang==='zh-TW'?'最佳: ':'Best: ')+_rb+' ms';_rs='idle'}}
 
 // Image to Base64
 function img2base64Convert(){var f=document.getElementById('img2b64File').files[0];if(!f)return;var r=new FileReader();r.onload=function(){var d=r.result;document.getElementById('img2b64Result').value=d;document.getElementById('img2b64Preview').innerHTML='<img src="'+d+'" style="max-width:100%;max-height:200px;border-radius:8px">';window._img2b64=d};r.readAsDataURL(f)}
@@ -2141,9 +2113,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'Dice Roller'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'Shop',action:"showPage('shop')"},
-    {type:'link',id:'fortune',icon:'🔮',label:'Bazi Fortune',action:"window.location='/fortune.html'"},
-    {type:'link',id:'about',icon:'📄',label:'About',action:"showPage('about')"}
+    {type:'link',id:'shop',icon:'🛒',label:'Shop',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
   ],
   'zh-CN': [
     {cat:'📝 文本工具', open:false, items:[
@@ -2190,9 +2161,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'掷骰子'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'商店',action:"showPage('shop')"},
-    {type:'link',id:'fortune',icon:'🔮',label:'八字命盘',action:"window.location='/fortune.html'"},
-    {type:'link',id:'about',icon:'📄',label:'关于',action:"showPage('about')"}
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
   ],
   'zh-TW': [
     {cat:'📝 文字工具', open:false, items:[
@@ -2239,9 +2209,8 @@ var SIDEBAR = {
       {id:'dice',icon:'🎲',label:'擲骰子'}
     ]},
     {type:'spacer'},
-    {type:'link',id:'shop',icon:'🛒',label:'商店',action:"showPage('shop')"},
-    {type:'link',id:'fortune',icon:'🔮',label:'八字命盤',action:"window.location='/fortune.html'"},
-    {type:'link',id:'about',icon:'📄',label:'關於',action:"showPage('about')"}
+    {type:'link',id:'shop',icon:'🛒',label:'商店',action:function(){showPage('shop')}},
+    {type:'link',id:'about',icon:'📄',label:'關於',action:function(){showPage('about')}}
   ]
 };
 
@@ -2251,8 +2220,7 @@ function renderSidebar(){
   data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
     if(section.type==='link'){
-      var actionStr = typeof section.action === 'function' ? section.action.toString().match(/\{([\s\S]*)\}/)[1].trim() : section.action;
-      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+section.id+'\');'+actionStr+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
+      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+section.id+'\');'+section.action.toString().slice(6)+'" id="sblink-'+section.id+'"><span class="sicon">'+section.icon+'</span>'+section.label+'</a>';
       return;
     }
     var catId = 'scat-'+i;
