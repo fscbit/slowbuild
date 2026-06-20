@@ -1211,7 +1211,8 @@ function castIching(){
       hex=ICHING_HEXAGRAMS[rkey];
     }
     if(hex){
-      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><h3 style="color:var(--gold)">'+hex.cn+'</h3><p style="font-size:.85rem;font-weight:700;color:var(--teal)">'+hex.name+'</p><p style="font-size:.82rem;line-height:1.7;margin-top:8px">'+hex.desc+'</p></div>';
+      var ichName=lang.startsWith('zh')?hex.cn:hex.name;
+      document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><h3 style="color:var(--gold)">'+ichName+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:8px">'+hex.desc+'</p></div>';
     }else{
       document.getElementById('ichResult').innerHTML='<div class="card" style="text-align:center"><p style="color:var(--muted)">A rare and unique hexagram has appeared. Trust your intuition.</p></div>';
     }
@@ -1344,10 +1345,13 @@ function calcFengshui(){
   var names={1:'Kan / Water',2:'Kun / Earth',3:'Zhen / Thunder',4:'Xun / Wind',6:'Qian / Heaven',7:'Dui / Lake',8:'Gen / Mountain',9:'Li / Fire'};
   var cn={1:'坎水',2:'坤土',3:'震雷',4:'巽风',6:'乾天',7:'兑泽',8:'艮山',9:'离火'};
   var dirs={1:{ausp:['South','East','Southeast'],inausp:['Northeast','West','Northwest']},2:{ausp:['Northeast','West','Northwest'],inausp:['South','East','Southeast']},3:{ausp:['South','North','Southeast'],inausp:['West','Northwest','Northeast']},4:{ausp:['North','South','East'],inausp:['Northwest','Northeast','West']},6:{ausp:['West','Northeast','Southwest'],inausp:['South','East','North']},7:{ausp:['Northwest','Northeast','Southwest'],inausp:['South','East','North']},8:{ausp:['Southwest','Northwest','West'],inausp:['East','South','North']},9:{ausp:['East','South','North'],inausp:['Northeast','Southwest','West']}};
-  var h='<div class="card"><div style="text-align:center"><div style="font-size:3rem;margin-bottom:8px">'+kua+'</div><h3>'+cn[kua]+' / '+names[kua]+'</h3>';
-  h+='<p style="margin-top:12px;color:var(--gold)">Auspicious Directions:</p><p>'+dirs[kua].ausp.join(', ')+'</p>';
-  h+='<p style="color:var(--red);margin-top:8px">Inauspicious:</p><p>'+dirs[kua].inausp.join(', ')+'</p>';
-  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For reference only.</p></div></div>';
+  var isZh=lang.startsWith('zh');
+  var cnDirs={ausp:'吉方',inausp:'凶方'};
+  var enDirs={ausp:'Auspicious Directions',inausp:'Inauspicious'};
+  var h='<div class="card"><div style="text-align:center"><div style="font-size:3rem;margin-bottom:8px">'+kua+'</div><h3>'+(isZh?cn[kua]:names[kua])+'</h3>';
+  h+='<p style="margin-top:12px;color:var(--gold)">'+(isZh?cnDirs.ausp:enDirs.ausp)+':</p><p>'+dirs[kua].ausp.join(', ')+'</p>';
+  h+='<p style="color:var(--red);margin-top:8px">'+(isZh?cnDirs.inausp:enDirs.inausp)+':</p><p>'+dirs[kua].inausp.join(', ')+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh?'仅供参考。':'For reference only.')+'</p></div></div>';
   document.getElementById('fengshuiResult').innerHTML=h;
 }
 // ═══════════════════════════════════════════
@@ -1359,9 +1363,10 @@ function calcPalm(){
   document.getElementById('palmMsg').innerHTML='';
   var data={'square-long':{t:'Earth Hand',cn:'土形手',desc:'Practical and reliable. You value stability and security.'},'square-short':{t:'Earth-Fire Hand',cn:'土火混合',desc:'Practical yet energetic. You get things done quickly.'},'square-avg':{t:'Balanced Earth Hand',cn:'平衡土形',desc:'Grounded and steady. Loyal and dependable.'},'rect-long':{t:'Water Hand',cn:'水形手',desc:'Intuitive and creative. Drawn to arts and abstract thinking.'},'rect-short':{t:'Water-Air Hand',cn:'水风混合',desc:'Creative communicator. Quick-witted, adaptable.'},'rect-avg':{t:'Balanced Water Hand',cn:'平衡水形',desc:'Artistic and sensitive. Express yourself beautifully.'},'mixed-long':{t:'Fire Hand',cn:'火形手',desc:'Passionate and bold. Natural leader, unafraid of risks.'},'mixed-short':{t:'Fire-Air Hand',cn:'火风混合',desc:'Energetic thinker. Entrepreneurial spirit.'},'mixed-avg':{t:'Balanced Air Hand',cn:'平衡风形',desc:'Intellectual and sociable. A natural networker.'}};
   var d=data[shape+'-'+fingers];
-  var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">✋</div><h3>'+d.t+'</h3><p style="color:var(--gold);font-size:.9rem">'+d.cn+'</p>';
+  var isZh2=lang.startsWith('zh');
+  var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">✋</div><h3>'+(isZh2?d.cn:d.t)+'</h3>';
   h+='<p style="margin-top:12px;line-height:1.7">'+d.desc+'</p>';
-  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For entertainment only.</p></div></div>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh2?'仅供娱乐。':'For entertainment only.')+'</p></div></div>';
   document.getElementById('palmResult').innerHTML=h;
 }
 // ═══════════════════════════════════════════
@@ -1371,10 +1376,10 @@ function drawLucky(){
   var fortunes=['Great fortune awaits you in unexpected places.','A pleasant surprise is coming your way.','Now is the time to take that bold step.','Patience will bring rewards.','Your kindness will be returned tenfold.','A new friendship will blossom.','Travel is in your stars. An adventure awaits.','Financial luck is strong. Wise investments pay off.','Let go of what no longer serves you.','Your creativity will solve the problem.','Someone you miss is thinking of you too.','A small risk today leads to a big reward tomorrow.'];
   var cn=['好运在不经意处等你，保持开放心态。','惊喜正在路上，请睁大眼睛敞开心扉。','现在就是迈出勇敢一步的最佳时机。','耐心将带来回报。好事多磨。','你的善良会有十倍回报。继续做你自己。','一段新的友谊即将绽放，用心呵护。','旅行在星空中等着你。','财运亨通，明智的投资会得到回报。','放下不再适合你的东西，为新福气腾出空间。','你的创造力将解决难题。','你想念的人也正在想你。','今天的小冒险，明天的大收获。'];
   var seed=Date.now()%fortunes.length;
+  var isZh4=lang.startsWith('zh');
   var h='<div class="card" style="animation:fadeIn .5s ease"><div style="text-align:center"><div style="font-size:4rem">🥠</div>';
-  h+='<p style="font-size:1.1rem;line-height:1.7;margin-top:16px;font-style:italic">'+fortunes[seed]+'</p>';
-  h+='<p style="font-size:1rem;line-height:1.7;margin-top:8px;color:var(--gold)">'+cn[seed]+'</p>';
-  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:16px">For entertainment only.</p></div></div>';
+  h+='<p style="font-size:1.1rem;line-height:1.7;margin-top:16px;font-style:italic">'+(isZh4?cn[seed]:fortunes[seed])+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:16px">'+(isZh4?'仅供娱乐。':'For entertainment only.')+'</p></div></div>';
   document.getElementById('luckyResult').innerHTML=h;
 }
 // ═══════════════════════════════════════════
@@ -1393,11 +1398,11 @@ function calcName(){
   var elemCN=['金','木','水','火','土'];
   var descs={0:{en:'Strong willpower, natural leader.',cn:'意志坚定，有领导才能。'},1:{en:'Creative and growth-oriented.',cn:'富有创造力，成长导向。'},2:{en:'Wise and intuitive, deep thinker.',cn:'智慧直觉，思维深邃。'},3:{en:'Passionate and energetic, charismatic.',cn:'热情活力，魅力四射。'},4:{en:'Stable and reliable, trustworthy.',cn:'稳重可靠，值得信赖。'}};
   var d=descs[total%5];
+  var isZh3=lang.startsWith('zh');
   var h='<div class="card"><div style="text-align:center"><div style="font-size:2.5rem">📛</div><h3>'+name+'</h3>';
-  h+='<p style="color:var(--gold);margin-top:8px">Total Strokes: '+total+' | Element: '+elemCN[total%5]+'</p>';
-  h+='<p style="margin-top:12px;line-height:1.7">'+d.en+'</p>';
-  h+='<p style="font-size:.9rem;line-height:1.7;color:var(--gold)">'+d.cn+'</p>';
-  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">For reference only.</p></div></div>';
+  h+='<p style="color:var(--gold);margin-top:8px">'+(isZh3?'总笔画':'Total Strokes')+': '+total+' | '+(isZh3?'五行':'Element')+': '+elemCN[total%5]+'</p>';
+  h+='<p style="margin-top:12px;line-height:1.7">'+(isZh3?d.cn:d.en)+'</p>';
+  h+='<p style="font-size:.72rem;color:var(--muted);margin-top:12px">'+(isZh3?'仅供参考。':'For reference only.')+'</p></div></div>';
   document.getElementById('nameResult').innerHTML=h;
 }
 // ═══════════════════════════════════════════
