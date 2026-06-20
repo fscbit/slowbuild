@@ -184,7 +184,7 @@ def calculate_dayun(year, month, day, hour, gender, lang='zh'):
         nayin_en = NA_YIN_EN.get(nayin, '')
         results.append({
             'start_age': age, 'end_age': age + 9, 'ganzhi': gz,
-            'nayin': nayin_en if lang.startswith('en') else nayin,
+            'nayin': nayin_en if not lang.startswith('zh') else nayin,
             'nayin_cn': nayin,
         })
     return results
@@ -213,12 +213,12 @@ def calculate_liunian(day_gz, current_year, count=5, lang='zh'):
         yr_zhi = gz[1] if len(gz)>1 else ''
         relations = []
         if liuhe.get(day_zhi) == yr_zhi:
-            relations.append('Union' if lang.startswith('en') else '六合')
+            relations.append('Union' if not lang.startswith('zh') else '六合')
         if chong.get(day_zhi) == yr_zhi:
-            relations.append('Clash' if lang.startswith('en') else '相冲')
+            relations.append('Clash' if not lang.startswith('zh') else '相冲')
         results.append({
             'year': yr, 'ganzhi': gz,
-            'shi_shen': _shi_shen_en(ss) if lang.startswith('en') else ss,
+            'shi_shen': _shi_shen_en(ss) if not lang.startswith('zh') else ss,
             'nayin': NA_YIN.get(gz, ''),
             'zhi_relations': relations,
         })
@@ -651,7 +651,8 @@ def generate_interpretation(bazi_result, level='basic', lang='zh'):
     wuxing_info = bazi_result['wuxing']
     gan = day_master['gan']
     wx = day_master['wuxing']
-    is_en = lang.startswith('en') if lang else False
+    is_en = not (lang.startswith('zh') if lang else True)  # non-Chinese languages default to English
+    is_zh = lang.startswith('zh') if lang else True
     interp_db = SELF_INTERPRETATIONS_EN if is_en else SELF_INTERPRETATIONS
     dm_full = DAY_MASTER_FULL.get(gan, {})
     
