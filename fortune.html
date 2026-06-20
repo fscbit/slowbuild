@@ -903,14 +903,19 @@ function renderBazi(data){
 }
 
 function buyFullReading(){
-  // Redirect to Payoneer payment, return to this page with paid flag
-  var returnUrl = encodeURIComponent(location.origin + location.pathname + '?paid=bazi');
+  // Open Payoneer payment in new tab
   var payUrl = 'https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=bazi';
-  // Open payment in same window
-  window.location.href = payUrl;
-  // Store intent in sessionStorage so we can detect when user returns
-  try { sessionStorage.setItem('fortune_pay_pending', '1'); } catch(e) {}
+  window.open(payUrl, '_blank');
+  // Show a message to guide user back
+  var msg = document.getElementById('baziResult');
+  msg.innerHTML = '<div class="paywall" style="margin-top:0"><h3>💳 '+t('payRedirectTitle')+'</h3><p style="font-size:.84rem;color:var(--muted);margin:8px 0">'+t('payRedirectDesc')+'</p><button class="btn btn-primary" onclick="manualUnlock()" style="margin-top:12px">'+t('payConfirm')+'</button></div>';
 }
+
+var PAY_REDIRECT = {
+  title:{en:'Payment window opened', 'zh-CN':'支付窗口已打开','zh-TW':'支付視窗已打開',ja:'支払い画面を開きました',ko:'결제 창이 열렸습니다',es:'Ventana de pago abierta',fr:'Fenêtre de paiement ouverte',pt:'Janela de pagamento aberta'},
+  desc:{en:'Complete payment in the new window, then click below to unlock.','zh-CN':'在新窗口完成支付后，点击下方按钮解锁。','zh-TW':'在新視窗完成支付後，點擊下方按鈕解鎖。',ja:'新しいウィンドウで支払いを完了し、下のボタンをクリックして解除してください。',ko:'새 창에서 결제를 완료한 후 아래 버튼을 클릭하여 잠금 해제하세요。',es:'Complete el pago en la nueva ventana, luego haga clic abajo para desbloquear.',fr:'Complétez le paiement dans la nouvelle fenêtre, puis cliquez ci-dessous pour déverrouiller.',pt:'Conclua o pagamento na nova janela e clique abaixo para desbloquear.'}
+};
+function t2(key,sub){ return (PAY_REDIRECT[sub]||{})[lang] || (PAY_REDIRECT[sub]||{}).en || ''; }
 
 function manualUnlock(){
   if(confirm(t('payConfirm'))){
