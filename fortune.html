@@ -952,9 +952,9 @@ function getZodiac(month,day){
 }
 
 function getZodiacName(i){
-  if(lang==='en')return ZODIAC_EN[i];
   if(lang==='zh-TW')return ZODIAC_TW[i];
-  return ZODIAC_CN[i];
+  if(lang.startsWith('zh'))return ZODIAC_CN[i];
+  return ZODIAC_EN[i];
 }
 
 var DAILY_HOROSCOPE={
@@ -1046,7 +1046,7 @@ function showSignResult(){
   if(!m||!d)return;
   var zi=getZodiac(m,d);
   var el=document.getElementById('signResult');
-  el.innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem">'+(['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'][zi])+'</div><h3 style="color:var(--gold)">'+getZodiacName(zi)+'</h3><p style="font-size:.82rem;color:var(--muted)">'+(lang==='en'?ZODIAC_EN[zi]:ZODIAC_CN[zi])+' · '+(lang==='en'?'Element':'元素')+': '+(['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water'][zi])+'</p></div>';
+  el.innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem">'+(['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'][zi])+'</div><h3 style="color:var(--gold)">'+getZodiacName(zi)+'</h3><p style="font-size:.82rem;color:var(--muted)">'+(!lang.startsWith('zh')?ZODIAC_EN[zi]:lang==='zh-TW'?ZODIAC_TW[zi]:ZODIAC_CN[zi])+' · '+(!lang.startsWith('zh')?'Element':'元素')+': '+(['Fire','Earth','Air','Water','Fire','Earth','Air','Water','Fire','Earth','Air','Water'][zi])+'</p></div>';
 }
 
 function showDaily(i){
@@ -1151,13 +1151,13 @@ function flipTarot(i){
   if(el.classList.contains('flipped'))return;
   var c=tarotCards[i];
   el.classList.add('flipped');
-  el.innerHTML='<div style="text-align:center;padding:8px"><div style="font-size:2rem">🃏</div><div style="font-weight:700;font-size:.7rem;margin-top:4px;color:var(--gold)">'+(lang==='en'?c.name:c.cn)+'</div><div class="card-meaning">'+c.en+'</div></div>';
+  el.innerHTML='<div style="text-align:center;padding:8px"><div style="font-size:2rem">🃏</div><div style="font-weight:700;font-size:.7rem;margin-top:4px;color:var(--gold)">'+(!lang.startsWith('zh')?c.name:c.cn)+'</div><div class="card-meaning">'+c.en+'</div></div>';
   tarotFlipped++;
   if(tarotFlipped===3){
     var labels=[t('past'),t('present'),t('future')];
     var h='';
     tarotCards.forEach(function(cc,ii){
-      h+='<div class="result-section"><h4>'+labels[ii]+': '+(lang==='en'?cc.name:cc.cn)+'</h4><p>'+cc.en+'</p></div>';
+      h+='<div class="result-section"><h4>'+labels[ii]+': '+(!lang.startsWith('zh')?cc.name:cc.cn)+'</h4><p>'+cc.en+'</p></div>';
     });
     document.getElementById('tarotResult').innerHTML='<div class="card">'+h+'</div>';
     document.getElementById('tarotMsg').className='result-bar success show';
@@ -1232,7 +1232,7 @@ function calcBlood(){
   var bt=document.getElementById('bloodType').value;
   if(!bt)return;
   var p=BLOOD_PERSONALITY[bt];
-  var txt=lang==='en'?p.en:p.cn;
+  var txt=!lang.startsWith('zh')?p.en:p.cn;
   document.getElementById('bloodResult').innerHTML='<div class="card" style="text-align:center"><div style="font-size:3rem;color:var(--red)">🅰️</div><h3 style="color:var(--gold)">'+bt+' '+t('bloodTitle')+'</h3><p style="font-size:.82rem;line-height:1.7;margin-top:12px">'+txt+'</p></div>';
 }
 
@@ -1304,7 +1304,7 @@ function calcXLR(){
   // Simplified: start from daan(1), count month, then day, then hour
   var pos=((m-1)+(d-1)+getLunarHour(h)-1)%6;
   var result=XLR_DATA[XLR_POSITIONS[pos]];
-  var isEn=lang==='en';
+  var isEn=!lang.startsWith('zh');
   
   var h='<div class="card" style="text-align:center">';
   h+='<div style="font-size:3rem">'+result.emoji+'</div>';
