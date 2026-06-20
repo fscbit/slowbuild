@@ -648,6 +648,11 @@ var T={
 };
 // Copy zh-TW numerology results from zh-CN
 T['zh-TW'].numResults = T['zh-CN'].numResults;
+T['ja'].numResults = T['zh-CN'].numResults;
+T['ko'].numResults = T['zh-CN'].numResults;
+T['es'].numResults = T['zh-CN'].numResults;
+T['fr'].numResults = T['zh-CN'].numResults;
+T['pt'].numResults = T['zh-CN'].numResults;
 
 function t(key){
   return (T[lang]||T['zh-CN'])[key] || (T['zh-CN'])[key] || key;
