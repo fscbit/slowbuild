@@ -385,7 +385,18 @@ var T={
       22:'Master Builder — turns dreams into reality. Highest potential.',
       33:'Cosmic Teacher — great love and sacrifice. Ultimate master number.',
     },
-  error2:'Enter valid info',loading2:'Loading...',xlrDay:'Lunar Day',xlrMonth:'Lunar Month'},
+  error2:'Enter valid info',loading2:'Loading...',
+    xlrDay:'Lunar Day',xlrMonth:'Lunar Month',
+    chooseBlood:'Select your blood type',
+    ichingTitle:'I Ching · Hexagram',ichingCast:'☯️ Toss Coins',ichingRound:'Toss %d/6',
+    xlrBack:'← Back',xlrTitle:'Lost Item Divination',xlrNowBtn:'⏰ Use Now',
+    xlrResult:'Result',xlrLoc:'Direction',xlrFinder:'Found by',xlrTime:'When',
+    fengshuiBack:'← Back',fengshuiTitle:'Feng Shui · Eight Houses',fengshuiYear:'Birth Year',fengshuiGender2:'Gender',fengshuiBtn:'🏠 Calculate',
+    palmBack:'← Back',palmTitle:'Palm Reading',palmShape:'Hand Shape',palmBtn:'✋ Analyze',
+    luckyBack:'← Back',luckyTitle:'Fortune Draw',luckyDraw:'🥠 Draw',
+    nameBack:'← Back',nameTitle:'Name Analysis',nameInput:'Your Name',nameBtn:'📛 Analyze',
+    astroTabSignTxt:'Sun Sign',astroTabDailyTxt:'Daily',astroTabCompatTxt:'Love',astroTabRisingTxt:'Full Chart',
+  },
   'zh-TW':{
     hubTitle:'✦ 命運之門 ✦',hubSub:'古老智慧與現代星辰 — 選擇你的探索之路',
     sysBazi:'八字算命',sysBaziDesc:'出生時間看命運 · 性格事業感情 · 大運流年',
@@ -706,6 +717,26 @@ function updateAllUIText(){
   });
   // Blood
   ['bloodBack','bloodTitle','bloodBtn'].forEach(function(k){
+    var el=document.getElementById(k);if(el)el.textContent=t(k);
+  });
+  // XLR
+  ['xlrBack','xlrTitle','xlrMonth','xlrDay','xlrHour','xlrBtn','xlrNowBtn'].forEach(function(k){
+    var el=document.getElementById(k);if(el)el.textContent=t(k);
+  });
+  // Feng Shui
+  ['fengshuiBack','fengshuiTitle','fengshuiYear','fengshuiGender2','fengshuiBtn'].forEach(function(k){
+    var el=document.getElementById(k);if(el)el.textContent=t(k);
+  });
+  // Palm
+  ['palmBack','palmTitle','palmShape','palmBtn'].forEach(function(k){
+    var el=document.getElementById(k);if(el)el.textContent=t(k);
+  });
+  // Lucky
+  ['luckyBack','luckyTitle','luckyDraw'].forEach(function(k){
+    var el=document.getElementById(k);if(el)el.textContent=t(k);
+  });
+  // Name
+  ['nameBack','nameTitle','nameInput','nameBtn'].forEach(function(k){
     var el=document.getElementById(k);if(el)el.textContent=t(k);
   });
 }
