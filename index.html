@@ -874,7 +874,7 @@ function setLang(l) {
   renderScriptCards();
   renderShop();
   if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
-  } catch(e) { __showErr('setLang error:', e + " :: " + e.message); }
+  } catch(e) { __showErr('setLang: ' + e.message); }
 }
 function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N['en'][key]) || key; }
 function applyI18n() {
@@ -888,7 +888,7 @@ function renderToolCards() {
   var tools = I18N[lang].tools, html = '';
   tools.forEach(function(t){ html += '<div class="tool-card" onclick="showTool(\'' + t.id + '\')"><div class="icon">' + t.icon + '</div><h3>' + t.name + '</h3><p class="desc">' + t.desc + '</p></div>'; });
   document.getElementById('toolGrid').innerHTML = html;
-  } catch(e) { __showErr('renderToolCards failed:', e + " :: " + e.message); }
+  } catch(e) { __showErr('renderToolCards: ' + e.message); }
 }
 
 function renderScriptCards() {
@@ -2648,13 +2648,13 @@ showTool = function(id){
 // Update init to render sidebar
 var _origSetLang = setLang;
 setLang = function(l){
-  try{ _origSetLang(l); }catch(e){ __showErr('setLang core failed:',e + " :: " + e.message); }
-  try{ renderSidebar(); }catch(e){ __showErr('renderSidebar failed:',e + " :: " + e.message); }
+  try{ _origSetLang(l); }catch(e){ __showErr('setLang wrapper: ' + e.message); }
+  try{ renderSidebar(); }catch(e){ __showErr('renderSidebar: ' + e.message); }
   try{ if(window._currentTool) highlightSidebar(window._currentTool); }catch(e){}
 };
 
 // Ensure sidebar renders on initial load
-try{if(document.getElementById('sidebarContent')) renderSidebar();}catch(e){__showErr('sidebar init failed:',e + " :: " + e.message);}
+try{if(document.getElementById('sidebarContent')) renderSidebar();}catch(e){__showErr('sidebar init: ' + e.message);}
 </script>
 </div><!-- /main-wrap -->
 <noscript><div style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ef4444;color:#fff;text-align:center;padding:4px;font-size:12px">⚠️ JavaScript is disabled or blocked</div></noscript>
