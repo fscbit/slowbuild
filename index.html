@@ -1265,6 +1265,7 @@ var SEOTitles = {
 };
 
 function updateSEOTitle(type,id){
+  if(typeof SEOTitles === 'undefined') return;
   var entry = SEOTitles[id || 'home'];
   if(!entry) entry = SEOTitles.home;
   var l = lang||'en';
