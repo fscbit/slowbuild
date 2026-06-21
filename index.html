@@ -2574,6 +2574,8 @@ var SIDEBAR = {
 
 function renderSidebar(){
   var data = SIDEBAR[lang] || SIDEBAR['en'];
+  // diag
+  document.title = '✓ SB:'+lang+' items:'+data.length;
   var h = '';
   data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
@@ -2654,7 +2656,10 @@ setLang = function(l){
 };
 
 // Ensure sidebar renders on initial load
+document.title = 'lang='+lang+' sidebar='+(document.getElementById('sidebarContent')?'exists':'MISSING');
 try{if(document.getElementById('sidebarContent')) renderSidebar();}catch(e){__showErr('sidebar init: ' + e.message);}
+// Force setLang if geo-detection didn't fire
+setTimeout(function(){ setLang(lang); }, 2000);
 </script>
 </div><!-- /main-wrap -->
 <noscript><div style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ef4444;color:#fff;text-align:center;padding:4px;font-size:12px">⚠️ JavaScript is disabled or blocked</div></noscript>
