@@ -163,6 +163,7 @@
 </style>
 </head>
 <body>
+<div id="__v" style="display:none">v4</div>
 <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Menu">☰</button>
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 <!-- Sidebar -->
@@ -2564,6 +2565,7 @@ var SIDEBAR = {
 };
 
 function renderSidebar(){
+  document.title = 'slowbuild ✓';
   var data = SIDEBAR[lang] || SIDEBAR['en'];
   var h = '';
   data.forEach(function(section,i){
