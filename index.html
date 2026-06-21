@@ -383,7 +383,6 @@
 <script data-cfasync="false">
 // ═══════════════════════════════════════════
 //  i18n
-(function(){document.body.insertAdjacentHTML('afterbegin','<div id="_js_test" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#22c55e;color:#000;text-align:center;padding:2px;font-size:10px;font-family:monospace">JS OK</div>');setTimeout(function(){var e=document.getElementById('_js_test');if(e)e.remove()},2000);})();
 // ═══════════════════════════════════════════
 var I18N = {
   'en': {
@@ -864,6 +863,7 @@ var lang = localStorage.getItem('slowbuild_lang') || 'en';
 })();
 
 function setLang(l) {
+  try {
   lang = l; localStorage.setItem('slowbuild_lang', l);
   document.querySelectorAll('[data-lang]').forEach(function(b){ b.classList.toggle('active', b.dataset.lang === l); });
   document.documentElement.lang = l;
@@ -872,6 +872,7 @@ function setLang(l) {
   renderScriptCards();
   renderShop();
   if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
+  } catch(e) { console.error('setLang error:', e); }
 }
 function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N['en'][key]) || key; }
 function applyI18n() {
@@ -881,9 +882,11 @@ function applyI18n() {
   updateSEOTitle('page','home');
 }
 function renderToolCards() {
+  try {
   var tools = I18N[lang].tools, html = '';
   tools.forEach(function(t){ html += '<div class="tool-card" onclick="showTool(\'' + t.id + '\')"><div class="icon">' + t.icon + '</div><h3>' + t.name + '</h3><p class="desc">' + t.desc + '</p></div>'; });
   document.getElementById('toolGrid').innerHTML = html;
+  } catch(e) { console.error('renderToolCards failed:', e); }
 }
 
 function renderScriptCards() {
@@ -2643,13 +2646,13 @@ showTool = function(id){
 // Update init to render sidebar
 var _origSetLang = setLang;
 setLang = function(l){
-  _origSetLang(l);
-  renderSidebar();
-  if(window._currentTool) highlightSidebar(window._currentTool);
+  try{ _origSetLang(l); }catch(e){ console.error('setLang core failed:',e); }
+  try{ renderSidebar(); }catch(e){ console.error('renderSidebar failed:',e); }
+  try{ if(window._currentTool) highlightSidebar(window._currentTool); }catch(e){}
 };
 
 // Ensure sidebar renders on initial load
-if(document.getElementById('sidebarContent')) renderSidebar();
+try{if(document.getElementById('sidebarContent')) renderSidebar();}catch(e){console.error('sidebar init failed:',e);}
 </script>
 </div><!-- /main-wrap -->
 <noscript><div style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ef4444;color:#fff;text-align:center;padding:4px;font-size:12px">⚠️ JavaScript is disabled or blocked</div></noscript>
