@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora BaZi Gratis en Línea | Astrología China - SlowBuild</title>
+<meta name="description" content="Calculadora de BaZi (Ocho Caracteres) gratis en línea. Introduce tu fecha y hora de nacimiento para una lectura instantánea de astrología china. Interpretación con IA.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/es/fortune/bazi.html">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/fortune/bazi.html">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/bazi.html">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/bazi.html">
+<link rel="alternate" hreflang="es" href="https://slowbuild.top/es/fortune/bazi.html">
+<link rel="alternate" hreflang="fr" href="https://slowbuild.top/fr/fortune/bazi.html">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el BaZi (Ocho Caracteres)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El BaZi, también conocido como Cuatro Pilares del Destino, es un sistema astrológico chino que analiza el destino de una persona según su fecha y hora de nacimiento. Utiliza los Troncos Celestiales y las Ramas Terrenales para formar ocho caracteres que representan el año, mes, día y hora de nacimiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es precisa una lectura de BaZi gratuita en línea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. El cálculo del BaZi se basa en un marco matemático, por lo que incluso las herramientas gratuitas producen cartas precisas. Nuestro sistema con IA proporciona interpretaciones detalladas basadas en métodos tradicionales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué información necesito para una lectura de BaZi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Necesitas tu fecha de nacimiento (año, mes, día) y la hora de nacimiento. Cuanto más precisa sea la hora, más exactos serán tus Cuatro Pilares."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild Calculadora BaZi",
+  "url": "https://slowbuild.top/es/fortune/bazi.html",
+  "description": "Calculadora gratuita de BaZi (Ocho Caracteres) con interpretación IA",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+.page-title { text-align: center; padding: 40px 0 20px; }
+.page-title h1 { font-size: 2.5rem; color: var(--gold); }
+.content-section { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+.content-section h2 { color: var(--gold); font-size: 1.5rem; margin: 32px 0 12px; }
+.content-section h3 { color: var(--teal); margin: 20px 0 8px; }
+.content-section p { margin-bottom: 16px; opacity: 0.9; }
+.content-section ul { margin: 0 0 16px 20px; }
+.content-section li { margin-bottom: 6px; }
+.iframe-wrapper { max-width: 900px; margin: 30px auto; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.iframe-wrapper iframe { width: 100%; height: 700px; border: none; display: block; }
+.faq-section { max-width: 800px; margin: 40px auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+.faq-section h2 { color: var(--gold); text-align: center; margin-bottom: 24px; }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { color: var(--teal); font-size: 1.1rem; margin-bottom: 8px; }
+.faq-item p { opacity: 0.85; }
+.related-links { max-width: 800px; margin: 40px auto; text-align: center; }
+.related-links h3 { color: var(--gold); margin-bottom: 16px; }
+.related-grid { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.related-grid a { padding: 10px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+.related-grid a:hover { border-color: var(--gold); color: var(--gold); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .page-title h1 { font-size: 1.8rem; }
+  .iframe-wrapper iframe { height: 600px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/es/fortune/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/fortune/bazi.html" hreflang="en">English</a>
+      <a href="/ja/fortune/bazi.html" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/bazi.html" hreflang="ko">한국어</a>
+      <a href="/es/fortune/bazi.html" hreflang="es">Español</a>
+      <a href="/fr/fortune/bazi.html" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/es/fortune/">Inicio</a> &rsaquo; Calculadora BaZi
+  </nav>
+
+  <section class="page-title">
+    <h1>🔮 Calculadora BaZi Gratuita</h1>
+  </section>
+
+  <section class="content-section">
+    <h2>¿Qué es el BaZi? Entendiendo los Ocho Caracteres</h2>
+    <p>El BaZi (八字), que literalmente significa "Ocho Caracteres", es uno de los sistemas más profundos de la metafísica y astrología china. También conocido como los Cuatro Pilares del Destino (四柱推命), esta práctica ancestral ha guiado decisiones de vida durante más de mil años. A diferencia de la astrología occidental, el BaZi crea un plano energético único basado en tu fecha y hora de nacimiento.</p>
+
+    <p>Tu carta BaZi se compone de cuatro pilares — Año, Mes, Día y Hora — cada uno con un Tronco Celestial y una Rama Terrenal. El Tronco del Día es particularmente significativo, ya que te representa a ti, el "Maestro del Día".</p>
+
+    <h2>Cómo Funciona Nuestra Calculadora BaZi</h2>
+    <p>Nuestra calculadora con IA hace que sea increíblemente simple generar tu carta personal de Ocho Caracteres. Simplemente introduce tu fecha y hora de nacimiento y nuestro sistema:</p>
+    <ul>
+      <li>Calcula los Troncos Celestiales y Ramas Terrenales exactos para los cuatro pilares</li>
+      <li>Identifica tu elemento del Maestro del Día (Madera, Fuego, Tierra, Metal o Agua)</li>
+      <li>Analiza el equilibrio de los Cinco Elementos en tu carta</li>
+      <li>Genera una interpretación personalizada de tus patrones de destino</li>
+    </ul>
+
+    <h2>Lo que el BaZi Puede Revelar</h2>
+    <p>El BaZi puede revelar tus rasgos de personalidad, tendencias profesionales, dinámicas de relación, potencial financiero, predisposiciones de salud y el flujo general de los períodos de suerte a lo largo de tu vida. Es un marco completo para entender tus fortalezas naturales y desafíos.</p>
+
+    <p>Tradicionalmente, una consulta de BaZi puede costar cientos de dólares. Nuestra herramienta gratuita democratiza el acceso a esta sabiduría milenaria con interpretación instantánea con IA. Ya sea por curiosidad o para buscar orientación práctica, nuestra calculadora ofrece un punto de entrada accesible al profundo mundo del BaZi.</p>
+  </section>
+
+  <section class="iframe-wrapper">
+    <iframe src="/fortune.html?sys=bazi" title="Calculadora BaZi Gratuita" loading="lazy"></iframe>
+  </section>
+
+  <section class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-item">
+      <h3>¿Qué es el BaZi (Ocho Caracteres)?</h3>
+      <p>El BaZi, también conocido como los Cuatro Pilares del Destino, es un sistema astrológico chino que analiza el destino según la fecha y hora de nacimiento usando Troncos Celestiales y Ramas Terrenales.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Es precisa una lectura gratuita en línea?</h3>
+      <p>Sí. El cálculo del BaZi se basa en un marco matemático, por lo que las herramientas gratuitas producen cartas precisas.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué información necesito?</h3>
+      <p>Necesitas tu fecha de nacimiento (año, mes, día) y la hora de nacimiento. Cuanto más precisa sea la hora, mejor.</p>
+    </div>
+  </section>
+
+  <section class="related-links">
+    <h3>Explora Más Herramientas</h3>
+    <div class="related-grid">
+      <a href="/es/fortune/tarot.html">🎴 Lectura de Tarot</a>
+      <a href="/es/fortune/">✦ Todos los Sistemas</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · Adivinación con IA · <a href="/es/fortune/">Inicio</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. Las lecturas son solo para entretenimiento.</p>
+  </div>
+</footer>
+</body>
+</html>

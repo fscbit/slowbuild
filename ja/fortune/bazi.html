@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料八字占い | 四柱推命オンライン - SlowBuild</title>
+<meta name="description" content="無料の八字（四柱推命）オンライン占い。生年月日と時間を入力するだけで、あなたの運命をAIが詳しく鑑定します。性格・仕事・恋愛・健康運まで完全無料で診断。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/ja/fortune/bazi.html">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/fortune/bazi.html">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/bazi.html">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/bazi.html">
+<link rel="alternate" hreflang="es" href="https://slowbuild.top/es/fortune/bazi.html">
+<link rel="alternate" hreflang="fr" href="https://slowbuild.top/fr/fortune/bazi.html">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "八字占い（四柱推命）とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "八字占い（四柱推命）は、生まれた年・月・日・時間から導き出される8つの漢字でその人の運命を読み解く中国伝統の占星術です。年柱・月柱・日柱・時柱の四つの柱から、性格や適職、運気の流れを分析します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料の八字占いは正確ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。八字の計算自体は数学的なフレームワークに基づいているため、無料ツールでも正確な命式を算出できます。当サイトのAIシステムは、古典的な解釈法に基づいて詳細な鑑定結果を提供します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "八字占いには何が必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "生年月日と出生時間が必要です。出生時間がわからない場合は不明のままでも鑑定可能ですが、できるだけ正確な時間を入力するとより詳細な結果が得られます。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild 八字占い",
+  "url": "https://slowbuild.top/ja/fortune/bazi.html",
+  "description": "無料の八字（四柱推命）オンライン占い",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+.page-title { text-align: center; padding: 40px 0 20px; }
+.page-title h1 { font-size: 2.5rem; color: var(--gold); }
+.content-section { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+.content-section h2 { color: var(--gold); font-size: 1.5rem; margin: 32px 0 12px; }
+.content-section h3 { color: var(--teal); margin: 20px 0 8px; }
+.content-section p { margin-bottom: 16px; opacity: 0.9; }
+.content-section ul { margin: 0 0 16px 20px; }
+.content-section li { margin-bottom: 6px; }
+.iframe-wrapper { max-width: 900px; margin: 30px auto; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.iframe-wrapper iframe { width: 100%; height: 700px; border: none; display: block; }
+.faq-section { max-width: 800px; margin: 40px auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+.faq-section h2 { color: var(--gold); text-align: center; margin-bottom: 24px; }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { color: var(--teal); font-size: 1.1rem; margin-bottom: 8px; }
+.faq-item p { opacity: 0.85; }
+.related-links { max-width: 800px; margin: 40px auto; text-align: center; }
+.related-links h3 { color: var(--gold); margin-bottom: 16px; }
+.related-grid { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.related-grid a { padding: 10px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+.related-grid a:hover { border-color: var(--gold); color: var(--gold); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .page-title h1 { font-size: 1.8rem; }
+  .iframe-wrapper iframe { height: 600px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/ja/fortune/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/fortune/bazi.html" hreflang="en">English</a>
+      <a href="/ja/fortune/bazi.html" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/bazi.html" hreflang="ko">한국어</a>
+      <a href="/es/fortune/bazi.html" hreflang="es">Español</a>
+      <a href="/fr/fortune/bazi.html" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/ja/fortune/">ホーム</a> &rsaquo; 八字占い
+  </nav>
+
+  <section class="page-title">
+    <h1>🔮 無料八字占い</h1>
+  </section>
+
+  <section class="content-section">
+    <h2>八字占い（四柱推命）とは</h2>
+    <p>八字（はちじ）占い、別名「四柱推命（しちゅうすいめい）」は、中国で千年以上にわたって受け継がれてきた伝統的な運命学です。生まれた年・月・日・時間という四つの柱から、あなたの性格や才能、人生の流れを読み解きます。</p>
+
+    <p>八字は、天干（てんかん）と地支（ちし）の組み合わせによって構成される8つの文字から成り立っています。この8文字が、あなたの運命の設計図となります。西洋占星術が惑星の位置を重視するのに対し、八字は五行（木・火・土・金・水）のバランスと相互作用を中心に分析します。</p>
+
+    <h2>八字占いでわかること</h2>
+    <p>八字鑑定では、以下のような項目について詳しく知ることができます：</p>
+    <ul>
+      <li><strong>性格と本質：</strong>日干（にっかん）を中心にあなたの根本的な性格や気質がわかります。</li>
+      <li><strong>仕事と適職：</strong>五行のバランスから、あなたに合った職業や成功しやすい分野が見えてきます。</li>
+      <li><strong>恋愛と結婚：</strong>配偶者宮から相性の良い相手の特徴や、結婚のタイミングを読み解きます。</li>
+      <li><strong>健康運：</strong>五行の偏りから注意すべき健康面をアドバイスします。</li>
+      <li><strong>運気の流れ：</strong>10年ごとの大運（たいうん）から、人生の転機や好機を予測します。</li>
+    </ul>
+
+    <h2>なぜ無料八字占いなのか</h2>
+    <p>本来、八字鑑定は数万円の費用がかかる専門的な占術です。しかし、当サイトではAI技術を活用することで、どなたでも無料で八字占いを体験できます。古典的な解釈法に基づいた正確な命式計算と、AIによる詳細な解説を、今すぐ無料でお試しください。</p>
+
+    <p>出生時間が不明な場合でも、年月日だけでも十分な鑑定が可能です。まずは気軽にあなたの八字を調べてみませんか？</p>
+  </section>
+
+  <section class="iframe-wrapper">
+    <iframe src="/fortune.html?sys=bazi" title="無料八字占い" loading="lazy"></iframe>
+  </section>
+
+  <section class="faq-section">
+    <h2>よくある質問</h2>
+    <div class="faq-item">
+      <h3>八字占い（四柱推命）とは何ですか？</h3>
+      <p>八字占い（四柱推命）は、生まれた年・月・日・時間から導き出される8つの漢字でその人の運命を読み解く中国伝統の占星術です。</p>
+    </div>
+    <div class="faq-item">
+      <h3>無料の八字占いは正確ですか？</h3>
+      <p>はい。八字の計算自体は数学的なフレームワークに基づいているため、無料ツールでも正確な命式を算出できます。</p>
+    </div>
+    <div class="faq-item">
+      <h3>八字占いには何が必要ですか？</h3>
+      <p>生年月日と出生時間が必要です。出生時間がわからない場合は不明のままでも鑑定可能です。</p>
+    </div>
+  </section>
+
+  <section class="related-links">
+    <h3>他の占いも試してみる</h3>
+    <div class="related-grid">
+      <a href="/ja/fortune/tarot.html">🎴 タロット占い</a>
+      <a href="/ja/fortune/zodiac.html">🪐 2026年運勢</a>
+      <a href="/ja/fortune/">✦ 占い一覧</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · AI搭載占い · <a href="/ja/fortune/">ホーム</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. 占い結果はエンターテインメント目的です。</p>
+  </div>
+</footer>
+</body>
+</html>

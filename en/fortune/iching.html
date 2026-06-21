@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free I Ching Divination Online | Hexagram Oracle - SlowBuild</title>
+<meta name="description" content="Free online I Ching (Book of Changes) divination. Receive a hexagram oracle with AI-powered interpretation. Ancient Chinese wisdom, instant reading.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/en/fortune/iching.html">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/fortune/iching.html">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the I Ching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The I Ching (易经), or Book of Changes, is one of the oldest Chinese classics, dating back over 3,000 years. It is an oracle system based on 64 hexagrams formed from combinations of broken (yin) and solid (yang) lines. Each hexagram represents an archetypal situation with guidance for action."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does I Ching divination work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I Ching divination works by generating a hexagram — traditionally through tossing coins or counting yarrow stalks. Our online tool uses algorithmic randomization to generate authentic hexagrams. The resulting hexagram provides wisdom about your situation through its symbolic meaning and commentary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the I Ching predict the future?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rather than predicting a fixed future, the I Ching reveals the underlying dynamics and patterns at play in your situation. It helps you understand the nature of change and offers guidance on how to navigate circumstances wisely. It's a tool for reflection and decision-making, not deterministic prophecy."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild I Ching Divination",
+  "url": "https://slowbuild.top/en/fortune/iching.html",
+  "description": "Free online I Ching (Book of Changes) hexagram oracle with AI-powered interpretation",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+.page-title { text-align: center; padding: 40px 0 20px; }
+.page-title h1 { font-size: 2.5rem; color: var(--gold); }
+.content-section { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+.content-section h2 { color: var(--gold); font-size: 1.5rem; margin: 32px 0 12px; }
+.content-section h3 { color: var(--teal); margin: 20px 0 8px; }
+.content-section p { margin-bottom: 16px; opacity: 0.9; }
+.content-section ul { margin: 0 0 16px 20px; }
+.content-section li { margin-bottom: 6px; }
+.iframe-wrapper { max-width: 900px; margin: 30px auto; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.iframe-wrapper iframe { width: 100%; height: 700px; border: none; display: block; }
+.faq-section { max-width: 800px; margin: 40px auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+.faq-section h2 { color: var(--gold); text-align: center; margin-bottom: 24px; }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { color: var(--teal); font-size: 1.1rem; margin-bottom: 8px; }
+.faq-item p { opacity: 0.85; }
+.related-links { max-width: 800px; margin: 40px auto; text-align: center; }
+.related-links h3 { color: var(--gold); margin-bottom: 16px; }
+.related-grid { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.related-grid a { padding: 10px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+.related-grid a:hover { border-color: var(--gold); color: var(--gold); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .page-title h1 { font-size: 1.8rem; }
+  .iframe-wrapper iframe { height: 600px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/en/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/" hreflang="en">English</a>
+      <a href="/ja/fortune/" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/" hreflang="ko">한국어</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/en/">Home</a> &rsaquo; <a href="/en/">Fortune Reading</a> &rsaquo; I Ching Divination
+  </nav>
+
+  <section class="page-title">
+    <h1>☯️ Free I Ching Reading</h1>
+  </section>
+
+  <section class="content-section">
+    <h2>The Book of Changes — Ancient Wisdom for Modern Life</h2>
+    <p>The I Ching (易经), or Book of Changes, is perhaps the oldest oracle in continuous use — its origins reach back over three millennia to the dawn of Chinese civilization. Revered by Confucius, consulted by emperors, and studied by philosophers across centuries, the I Ching remains one of humanity's most profound tools for understanding change, making decisions, and navigating life's uncertainties.</p>
+
+    <p>Unlike fortune-telling systems that claim to predict a fixed future, the I Ching is fundamentally a philosophy of change. Its core insight is that everything flows — all situations contain the seeds of their opposite, and wisdom lies in understanding the pattern of change you're in right now. The Book of Changes doesn't tell you what will happen; it illuminates the dynamics at play so you can act with clarity and grace.</p>
+
+    <h2>Understanding the 64 Hexagrams</h2>
+    <p>At the heart of the I Ching are 64 hexagrams — figures composed of six lines, each either broken (yin, ⚋ receptive) or solid (yang, ⚊ creative). These 64 patterns represent every fundamental situation in human life, from Hexagram 1 (The Creative, pure yang energy) to Hexagram 64 (Before Completion, the moment just before breakthrough).</p>
+
+    <p>Each hexagram is built from two trigrams (three-line figures), which represent the eight fundamental forces: Heaven, Earth, Thunder, Water, Mountain, Wind, Fire, and Lake. The interaction between the upper and lower trigrams creates the hexagram's meaning — for example, Water over Fire forms Hexagram 63 (After Completion), while Fire over Water forms Hexagram 64 (Before Completion). Same elements, different order, entirely different meaning.</p>
+
+    <h2>How Our I Ching Oracle Works</h2>
+    <p>Our free I Ching tool brings this ancient wisdom to your screen with an AI-powered interpretation:</p>
+    <ul>
+      <li><strong>Generate a Hexagram:</strong> Our system uses algorithmic randomization to construct authentic hexagrams with the same probability distribution as traditional coin-tossing methods.</li>
+      <li><strong>Primary and Moving Lines:</strong> The system identifies moving (changing) lines within your hexagram, which add nuance to the reading and may indicate a transforming hexagram.</li>
+      <li><strong>AI Interpretation:</strong> Our AI draws upon thousands of years of I Ching commentary — from the original Zhou Dynasty core text through Confucian commentaries to modern psychological interpretations — to deliver a reading that's both authentic and relevant to your life today.</li>
+    </ul>
+
+    <h2>How to Ask the I Ching</h2>
+    <p>The quality of your I Ching reading depends greatly on how you approach it. Here are some guidelines:</p>
+    <ul>
+      <li><strong>Form a clear question.</strong> The I Ching responds best to specific, open-ended questions. Instead of "Will I be happy?" try "What should I understand about my current life direction?"</li>
+      <li><strong>Be sincere and open.</strong> Bring genuine curiosity. The I Ching speaks to those who listen with an open heart.</li>
+      <li><strong>One question at a time.</strong> Don't rapid-fire questions. Sit with each reading and reflect before asking again.</li>
+      <li><strong>Trust the response.</strong> Even if the hexagram seems unrelated at first, give it time. The I Ching often reveals connections that aren't immediately obvious.</li>
+    </ul>
+
+    <h2>Famous Hexagrams and Their Meanings</h2>
+    <p><strong>Hexagram 1 — The Creative (乾):</strong> Pure yang energy. A time of initiative, leadership, and creative power. Take bold action with integrity.</p>
+    <p><strong>Hexagram 2 — The Receptive (坤):</strong> Pure yin energy. A time of receptivity, patience, and nurturing. Let things unfold naturally; don't force outcomes.</p>
+    <p><strong>Hexagram 11 — Peace (泰):</strong> Heaven and Earth in harmony. A time of prosperity and smooth progress. Small efforts yield big results.</p>
+    <p><strong>Hexagram 12 — Stagnation (否):</strong> Heaven and Earth separated. A time of blockages and distance. Persevere with integrity; this too shall pass.</p>
+    <p><strong>Hexagram 52 — Keeping Still (艮):</strong> The mountain. A time for meditation, stillness, and inner work. Stop external activity and turn inward.</p>
+    <p>Each of the 64 hexagrams contains layer upon layer of wisdom. Whether you're facing a major life decision or seeking daily guidance, the I Ching offers perspective that has stood the test of three thousand years.</p>
+  </section>
+
+  <section class="iframe-wrapper">
+    <iframe src="/fortune.html?sys=iching" title="Free I Ching Reading" loading="lazy"></iframe>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is the I Ching?</h3>
+      <p>The I Ching (易经), or Book of Changes, is one of the oldest Chinese classics, dating back over 3,000 years. It is an oracle system based on 64 hexagrams formed from combinations of broken (yin) and solid (yang) lines. Each hexagram represents an archetypal situation with guidance for action.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How does I Ching divination work?</h3>
+      <p>I Ching divination works by generating a hexagram — traditionally through tossing coins or counting yarrow stalks. Our online tool uses algorithmic randomization to generate authentic hexagrams. The resulting hexagram provides wisdom about your situation through its symbolic meaning and commentary.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can the I Ching predict the future?</h3>
+      <p>Rather than predicting a fixed future, the I Ching reveals the underlying dynamics and patterns at play in your situation. It helps you understand the nature of change and offers guidance on how to navigate circumstances wisely. It's a tool for reflection and decision-making, not deterministic prophecy.</p>
+    </div>
+  </section>
+
+  <section class="related-links">
+    <h3>Explore More Fortune Tools</h3>
+    <div class="related-grid">
+      <a href="/en/fortune/bazi.html">🔮 BaZi Calculator</a>
+      <a href="/en/fortune/tarot.html">🎴 Tarot Reading</a>
+      <a href="/en/fortune/zodiac.html">🪐 2026 Zodiac</a>
+      <a href="/en/">✦ All Systems</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · AI-Powered Fortune Reading · <a href="/en/">Home</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. Fortune readings are for entertainment purposes only.</p>
+  </div>
+</footer>
+</body>
+</html>

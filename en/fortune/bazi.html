@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free BaZi Calculator Online | Chinese Astrology Reading - SlowBuild</title>
+<meta name="description" content="Free online BaZi (Eight Characters) calculator. Enter your birth date and time for an instant Chinese astrology reading. AI-powered interpretation.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/en/fortune/bazi.html">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="zh-TW" href="https://slowbuild.top/zh-TW/fortune/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/fortune/bazi.html">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/bazi.html">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/bazi.html">
+<link rel="alternate" hreflang="es" href="https://slowbuild.top/es/fortune/bazi.html">
+<link rel="alternate" hreflang="fr" href="https://slowbuild.top/fr/fortune/bazi.html">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is BaZi (Eight Characters)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BaZi, also known as Four Pillars of Destiny, is a Chinese astrological system that analyzes a person's destiny based on their birth date and time. It uses the Heavenly Stems and Earthly Branches to form eight characters representing the year, month, day, and hour of birth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is a free online BaZi reading?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A free online BaZi calculator provides a solid foundational analysis using the mathematical framework of Chinese astrology. Our AI-powered system calculates the exact Eight Characters, Day Master element, and Five Elements balance. While a professional consultation adds nuanced interpretation, our free tool gives accurate structural results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information do I need for a BaZi reading?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need your birth date (year, month, day) and birth time (hour). The more precise the birth time, the more accurate your Four Pillars will be. Even without exact time, the first three pillars (year, month, day) still provide substantial insight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can BaZi reveal about my life?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BaZi can reveal your personality traits, career tendencies, relationship dynamics, wealth potential, health predispositions, and the general flow of luck periods throughout your life. It provides a comprehensive framework for understanding your natural strengths and challenges."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild BaZi Calculator",
+  "url": "https://slowbuild.top/en/fortune/bazi.html",
+  "description": "Free online BaZi (Eight Characters) calculator with AI-powered interpretation",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+.page-title { text-align: center; padding: 40px 0 20px; }
+.page-title h1 { font-size: 2.5rem; color: var(--gold); }
+.content-section { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+.content-section h2 { color: var(--gold); font-size: 1.5rem; margin: 32px 0 12px; }
+.content-section h3 { color: var(--teal); margin: 20px 0 8px; }
+.content-section p { margin-bottom: 16px; opacity: 0.9; }
+.content-section ul { margin: 0 0 16px 20px; }
+.content-section li { margin-bottom: 6px; }
+.iframe-wrapper { max-width: 900px; margin: 30px auto; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.iframe-wrapper iframe { width: 100%; height: 700px; border: none; display: block; }
+.faq-section { max-width: 800px; margin: 40px auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+.faq-section h2 { color: var(--gold); text-align: center; margin-bottom: 24px; }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { color: var(--teal); font-size: 1.1rem; margin-bottom: 8px; }
+.faq-item p { opacity: 0.85; }
+.related-links { max-width: 800px; margin: 40px auto; text-align: center; }
+.related-links h3 { color: var(--gold); margin-bottom: 16px; }
+.related-grid { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.related-grid a { padding: 10px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+.related-grid a:hover { border-color: var(--gold); color: var(--gold); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .page-title h1 { font-size: 1.8rem; }
+  .iframe-wrapper iframe { height: 600px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/en/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/" hreflang="en">English</a>
+      <a href="/ja/fortune/bazi.html" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/bazi.html" hreflang="ko">한국어</a>
+      <a href="/es/fortune/bazi.html" hreflang="es">Español</a>
+      <a href="/fr/fortune/bazi.html" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/en/">Home</a> &rsaquo; <a href="/en/">Fortune Reading</a> &rsaquo; BaZi Calculator
+  </nav>
+
+  <section class="page-title">
+    <h1>🔮 Free BaZi Calculator</h1>
+  </section>
+
+  <section class="content-section">
+    <h2>What is BaZi? Understanding the Eight Characters</h2>
+    <p>BaZi (八字), literally meaning "Eight Characters," is one of the most profound systems of Chinese metaphysics and astrology. Also known as the Four Pillars of Destiny (四柱推命), this ancient practice has been guiding people's life decisions for over a thousand years. Unlike Western astrology which maps planetary positions, BaZi creates a unique energetic blueprint based on your birth date and time using the Chinese calendar's Heavenly Stems (天干) and Earthly Branches (地支).</p>
+    
+    <p>Your BaZi chart is composed of four pillars — Year, Month, Day, and Hour — each containing a Heavenly Stem and an Earthly Branch, forming eight characters in total. The Day Stem is particularly significant as it represents you, the "Day Master," and forms the center around which the entire chart is interpreted.</p>
+
+    <h2>How Our Free BaZi Calculator Works</h2>
+    <p>Our AI-powered BaZi calculator makes it incredibly simple to generate your personal Eight Characters chart. Simply enter your birth date and time in the tool below, and our system will:</p>
+    <ul>
+      <li>Calculate the exact Heavenly Stems and Earthly Branches for all four pillars</li>
+      <li>Identify your Day Master element (Wood, Fire, Earth, Metal, or Water)</li>
+      <li>Analyze the Five Elements balance in your chart</li>
+      <li>Generate a personalized interpretation of your destiny patterns</li>
+      <li>Provide insights into your natural strengths and life tendencies</li>
+    </ul>
+
+    <h2>What BaZi Can Reveal About You</h2>
+    <p>A BaZi reading offers a comprehensive view of your life blueprint:</p>
+    
+    <h3>Personality & Character</h3>
+    <p>Your Day Master element and the surrounding influences reveal your core personality traits — whether you're naturally assertive like Wood, adaptable like Water, or grounded like Earth. Understanding this helps you embrace your authentic self.</p>
+    
+    <h3>Career & Wealth Potential</h3>
+    <p>The interaction between your Day Master and the wealth elements in your chart reveals your earning patterns, ideal career paths, and how you best attract prosperity. Some people are suited for entrepreneurship while others thrive in structured environments.</p>
+    
+    <h3>Relationships & Marriage</h3>
+    <p>The spouse palace and interaction between day and year pillars provide insight into romantic tendencies, compatibility patterns, and timing for significant relationships. BaZi compatibility analysis is widely used in Chinese culture for matchmaking.</p>
+    
+    <h3>Health & Wellbeing</h3>
+    <p>Imbalances in the Five Elements can indicate health predispositions. A BaZi reading helps you understand which organs and body systems may need extra care, based on traditional Chinese medicine correspondences.</p>
+    
+    <h3>Luck Cycles & Timing</h3>
+    <p>BaZi maps out 10-year luck pillars that show the changing energetic landscape of your life. Understanding your current luck cycle helps you make better decisions about timing — when to push forward, when to consolidate, and when to pivot.</p>
+
+    <h2>Why Use Our Free Online BaZi Calculator?</h2>
+    <p>Traditional BaZi consultations can cost hundreds of dollars and require finding a qualified practitioner. Our free online tool democratizes access to this ancient wisdom. With instant AI-powered interpretation, you get immediate results without waiting for an appointment. Whether you're curious about Chinese metaphysics or seeking practical life guidance, our calculator provides an accessible entry point to the profound world of BaZi.</p>
+  </section>
+
+  <section class="iframe-wrapper">
+    <iframe src="/fortune.html?sys=bazi" title="Free BaZi Calculator" loading="lazy"></iframe>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is BaZi (Eight Characters)?</h3>
+      <p>BaZi, also known as Four Pillars of Destiny, is a Chinese astrological system that analyzes a person's destiny based on their birth date and time. It uses the Heavenly Stems and Earthly Branches to form eight characters representing the year, month, day, and hour of birth.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How accurate is a free online BaZi reading?</h3>
+      <p>A free online BaZi calculator provides a solid foundational analysis using the mathematical framework of Chinese astrology. Our AI-powered system calculates the exact Eight Characters, Day Master element, and Five Elements balance. While a professional consultation adds nuanced interpretation, our free tool gives accurate structural results.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What information do I need for a BaZi reading?</h3>
+      <p>You need your birth date (year, month, day) and birth time (hour). The more precise the birth time, the more accurate your Four Pillars will be. Even without exact time, the first three pillars (year, month, day) still provide substantial insight.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What can BaZi reveal about my life?</h3>
+      <p>BaZi can reveal your personality traits, career tendencies, relationship dynamics, wealth potential, health predispositions, and the general flow of luck periods throughout your life. It provides a comprehensive framework for understanding your natural strengths and challenges.</p>
+    </div>
+  </section>
+
+  <section class="related-links">
+    <h3>Explore More Fortune Tools</h3>
+    <div class="related-grid">
+      <a href="/en/fortune/tarot.html">🎴 Tarot Reading</a>
+      <a href="/en/fortune/iching.html">☯️ I Ching</a>
+      <a href="/en/fortune/zodiac.html">🪐 2026 Zodiac</a>
+      <a href="/en/">✦ All Systems</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · AI-Powered Fortune Reading · <a href="/en/">Home</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. Fortune readings are for entertainment purposes only.</p>
+  </div>
+</footer>
+</body>
+</html>

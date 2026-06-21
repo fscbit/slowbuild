@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>무료 사주 | 사주팔자 온라인 - SlowBuild</title>
+<meta name="description" content="무료 사주팔자 온라인 계산기. 생년월일과 시간만 입력하면 AI가 당신의 운명을 상세히 분석합니다. 성격, 직업, 연애, 건강운까지 완전 무료 진단.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/ko/fortune/bazi.html">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/fortune/bazi.html">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/bazi.html">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/bazi.html">
+<link rel="alternate" hreflang="es" href="https://slowbuild.top/es/fortune/bazi.html">
+<link rel="alternate" hreflang="fr" href="https://slowbuild.top/fr/fortune/bazi.html">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "사주팔자란 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "사주팔자(四柱八字)는 태어난 연·월·일·시를 기반으로 여덟 글자로 운명을 해석하는 중국 전통 명리학입니다. 연주·월주·일주·시주의 네 기둥을 통해 성격, 적성, 운세의 흐름을 분석합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "무료 사주도 정확한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 사주 계산 자체는 수학적 프레임워크에 기반하므로 무료 도구로도 정확한 명식을 산출할 수 있습니다. 저희 AI는 전통적 해석법에 기반한 상세한 감정 결과를 제공합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "사주를 보려면 무엇이 필요한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "생년월일과 태어난 시간이 필요합니다. 정확한 시간을 모르는 경우에도 연월일만으로 충분한 분석이 가능합니다."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild 사주팔자",
+  "url": "https://slowbuild.top/ko/fortune/bazi.html",
+  "description": "무료 사주팔자 온라인 계산기",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+.page-title { text-align: center; padding: 40px 0 20px; }
+.page-title h1 { font-size: 2.5rem; color: var(--gold); }
+.content-section { max-width: 800px; margin: 0 auto; padding: 20px 0; }
+.content-section h2 { color: var(--gold); font-size: 1.5rem; margin: 32px 0 12px; }
+.content-section h3 { color: var(--teal); margin: 20px 0 8px; }
+.content-section p { margin-bottom: 16px; opacity: 0.9; }
+.content-section ul { margin: 0 0 16px 20px; }
+.content-section li { margin-bottom: 6px; }
+.iframe-wrapper { max-width: 900px; margin: 30px auto; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.iframe-wrapper iframe { width: 100%; height: 700px; border: none; display: block; }
+.faq-section { max-width: 800px; margin: 40px auto; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+.faq-section h2 { color: var(--gold); text-align: center; margin-bottom: 24px; }
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { color: var(--teal); font-size: 1.1rem; margin-bottom: 8px; }
+.faq-item p { opacity: 0.85; }
+.related-links { max-width: 800px; margin: 40px auto; text-align: center; }
+.related-links h3 { color: var(--gold); margin-bottom: 16px; }
+.related-grid { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.related-grid a { padding: 10px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; transition: all 0.2s; }
+.related-grid a:hover { border-color: var(--gold); color: var(--gold); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .page-title h1 { font-size: 1.8rem; }
+  .iframe-wrapper iframe { height: 600px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/ko/fortune/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/fortune/bazi.html" hreflang="en">English</a>
+      <a href="/ja/fortune/bazi.html" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/bazi.html" hreflang="ko">한국어</a>
+      <a href="/es/fortune/bazi.html" hreflang="es">Español</a>
+      <a href="/fr/fortune/bazi.html" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/ko/fortune/">홈</a> &rsaquo; 사주팔자
+  </nav>
+
+  <section class="page-title">
+    <h1>🔮 무료 사주팔자</h1>
+  </section>
+
+  <section class="content-section">
+    <h2>사주팔자(四柱八字)란 무엇인가요?</h2>
+    <p>사주팔자는 '네 개의 기둥과 여덟 개의 글자'라는 뜻으로, 중국에서 천 년 이상 전해 내려온 전통 운명학입니다. 태어난 해(년주)·달(월주)·날(일주)·시간(시주)의 네 기둥을 바탕으로 당신의 타고난 운명과 성격, 인생의 흐름을 읽어냅니다.</p>
+
+    <p>사주는 천간(天干)과 지지(地支)의 조합으로 이루어진 여덟 글자로 구성됩니다. 이 여덟 글자가 바로 당신 운명의 설계도입니다. 특히 태어난 날의 천간인 '일간(日干)'은 당신 자신을 나타내며, 이를 중심으로 오행(목·화·토·금·수)의 균형과 상호작용을 분석합니다.</p>
+
+    <h2>사주로 알 수 있는 것들</h2>
+    <ul>
+      <li><strong>성격과 본질:</strong> 일간을 중심으로 당신의 근본적인 성격과 기질을 파악합니다.</li>
+      <li><strong>직업과 적성:</strong> 오행의 균형으로 당신에게 맞는 직업과 성공 가능성이 높은 분야를 알 수 있습니다.</li>
+      <li><strong>연애와 결혼:</strong> 배우자 궁을 통해 좋은 인연의 특징과 결혼 시기를 읽어냅니다.</li>
+      <li><strong>건강운:</strong> 오행의 편중으로 주의해야 할 건강 측면을 조언합니다.</li>
+      <li><strong>운세의 흐름:</strong> 10년 단위의 대운(大運)으로 인생의 전환점과 기회를 예측합니다.</li>
+    </ul>
+
+    <h2>무료 사주 서비스의 장점</h2>
+    <p>원래 사주 감정은 전문 상담사의 고가 서비스입니다. 하지만 저희는 AI 기술을 활용해 누구나 무료로 정확한 사주팔자를 확인할 수 있게 했습니다. 전통적 해석법에 기반한 정확한 명식 계산과 AI의 상세한 해설을 지금 바로 무료로 경험해보세요.</p>
+
+    <p>태어난 시간을 모르더라도 연월일만으로 충분한 분석이 가능합니다. 부담 없이 당신의 사주를 알아보세요.</p>
+  </section>
+
+  <section class="iframe-wrapper">
+    <iframe src="/fortune.html?sys=bazi" title="무료 사주팔자" loading="lazy"></iframe>
+  </section>
+
+  <section class="faq-section">
+    <h2>자주 묻는 질문</h2>
+    <div class="faq-item">
+      <h3>사주팔자란 무엇인가요?</h3>
+      <p>사주팔자는 태어난 연·월·일·시를 기반으로 여덟 글자로 운명을 해석하는 중국 전통 명리학입니다.</p>
+    </div>
+    <div class="faq-item">
+      <h3>무료 사주도 정확한가요?</h3>
+      <p>네. 사주 계산은 수학적 프레임워크에 기반하므로 무료 도구로도 정확한 명식을 산출할 수 있습니다.</p>
+    </div>
+    <div class="faq-item">
+      <h3>사주를 보려면 무엇이 필요한가요?</h3>
+      <p>생년월일과 태어난 시간이 필요합니다. 정확한 시간을 모르는 경우에도 분석이 가능합니다.</p>
+    </div>
+  </section>
+
+  <section class="related-links">
+    <h3>다른 운세도 확인하세요</h3>
+    <div class="related-grid">
+      <a href="/ko/fortune/tarot.html">🎴 타로 점</a>
+      <a href="/ko/fortune/zodiac.html">🪐 2026년 운세</a>
+      <a href="/ko/fortune/">✦ 운세 목록</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · AI 기반 운세 · <a href="/ko/fortune/">홈</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. 운세 결과는 오락 목적으로만 제공됩니다.</p>
+  </div>
+</footer>
+</body>
+</html>

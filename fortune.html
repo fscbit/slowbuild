@@ -1521,6 +1521,14 @@ function calcName(){
 try{if(window.parent&&window.parent.BACKEND)BACKEND=window.parent.BACKEND}catch(e){}
 
 renderHub();
+// Auto-open system from URL param
+(function(){
+  var sys = new URLSearchParams(window.location.search).get('sys');
+  if (sys) {
+    var found = SYSTEMS.find(function(s){return s.id === sys});
+    if (found) openSystem(found.id);
+  }
+})();
 switchLang(lang);
 try{fetch(BACKEND.replace(/\/+$/,'')+'/api/geo').then(function(r){return r.json()}).then(function(g){if(g&&g.lang&&!localStorage.getItem('fortune_lang_set')){if(g.lang!==lang){lang=g.lang;switchLang(lang);}localStorage.setItem('fortune_lang_set','1');}}).catch(function(){});}catch(e){}
 </script>

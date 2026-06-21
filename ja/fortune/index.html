@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料占い | 八字・タロット・易経 - SlowBuild</title>
+<meta name="description" content="AI搭載の無料中国占いサイト。八字（四柱推命）、易経、タロット、2026年の十二支運勢など11種類の占いを無料で提供。今すぐあなたの運命をチェック。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://slowbuild.top/ja/fortune/">
+<link rel="alternate" hreflang="zh-CN" href="https://slowbuild.top/">
+<link rel="alternate" hreflang="en" href="https://slowbuild.top/en/">
+<link rel="alternate" hreflang="zh-TW" href="https://slowbuild.top/zh-TW/fortune/">
+<link rel="alternate" hreflang="ja" href="https://slowbuild.top/ja/fortune/">
+<link rel="alternate" hreflang="ko" href="https://slowbuild.top/ko/fortune/">
+<link rel="alternate" hreflang="es" href="https://slowbuild.top/es/fortune/">
+<link rel="alternate" hreflang="fr" href="https://slowbuild.top/fr/fortune/">
+<link rel="alternate" hreflang="x-default" href="https://slowbuild.top/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SlowBuild 無料占い",
+  "url": "https://slowbuild.top/ja/fortune/",
+  "description": "AI搭載の無料中国占いサイト。11種類の占いシステムを提供。",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
+}
+</script>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #d4d4e0;
+  --gold: #d4a853;
+  --teal: #38bdf8;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; line-height: 1.7; min-height: 100vh; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--gold); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--border); padding: 20px 0; margin-bottom: 40px; }
+header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.lang-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang-switcher a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; transition: all 0.2s; color: var(--text); }
+.lang-switcher a:hover, .lang-switcher a.active { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.1); }
+.hero { text-align: center; padding: 60px 0; }
+.hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 12px; }
+.hero .subtitle { font-size: 1.2rem; color: var(--text); opacity: 0.8; max-width: 600px; margin: 0 auto; }
+.systems-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 40px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: all 0.3s; }
+.card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(212,168,83,0.1); }
+.card h3 { color: var(--gold); font-size: 1.25rem; margin-bottom: 8px; }
+.card .system-emoji { font-size: 2rem; margin-bottom: 12px; }
+.card p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 16px; }
+.card .cta { display: inline-block; padding: 8px 20px; background: var(--gold); color: var(--bg); border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: all 0.2s; }
+.card .cta:hover { background: #c49a40; }
+.breadcrumb { padding: 12px 0; font-size: 0.9rem; opacity: 0.7; }
+.breadcrumb a { color: var(--teal); }
+footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 0.9rem; opacity: 0.6; margin-top: 60px; }
+footer a { color: var(--gold); }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .systems-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="/ja/fortune/" class="logo">✦ SlowBuild</a>
+    <nav class="lang-switcher">
+      <a href="/" hreflang="zh-CN">中文</a>
+      <a href="/en/" hreflang="en">English</a>
+      <a href="/zh-TW/fortune/" hreflang="zh-TW">繁體</a>
+      <a href="/ja/fortune/" class="active" hreflang="ja">日本語</a>
+      <a href="/ko/fortune/" hreflang="ko">한국어</a>
+      <a href="/es/fortune/" hreflang="es">Español</a>
+      <a href="/fr/fortune/" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb">
+    <a href="/ja/fortune/">ホーム</a> &rsaquo; 占い
+  </nav>
+
+  <section class="hero">
+    <h1>✦ 運命の扉 ✦</h1>
+    <p class="subtitle">古代の知恵と現代の星々が出会う場所 — あなたの道を選んでください</p>
+  </section>
+
+  <section class="systems-grid">
+    <div class="card">
+      <div class="system-emoji">🔮</div>
+      <h3>八字占い（四柱推命）</h3>
+      <p>生年月日と時間からあなたの運命を解き明かします。性格、仕事、恋愛、健康まで総合的に鑑定。</p>
+      <a href="/ja/fortune/bazi.html" class="cta">八字を占う</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">☯️</div>
+      <h3>易経（周易）</h3>
+      <p>64卦から導き出される古代中国の英知。あなたの問いに易が応えます。</p>
+      <a href="/fortune.html?sys=iching" class="cta">易を立てる</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">🎴</div>
+      <h3>タロット占い</h3>
+      <p>3枚引きで過去・現在・未来を読み解きます。AIによる詳細な解説付き。</p>
+      <a href="/ja/fortune/tarot.html" class="cta">カードを引く</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">🪐</div>
+      <h3>2026年十二支運勢</h3>
+      <p>丙午（ひのえうま）年のあなたの運勢。12支すべての詳細な年間運勢を無料で公開。</p>
+      <a href="/ja/fortune/zodiac.html" class="cta">運勢を見る</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">🖐️</div>
+      <h3>手相占い</h3>
+      <p>手のひらの写真をアップロードして、生命線、感情線、運命線をAIが分析します。</p>
+      <a href="/fortune.html?sys=palm" class="cta">手相を見る</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">😊</div>
+      <h3>人相占い</h3>
+      <p>顔の特徴から運命と性格を読み解く「面相術」。AIがあなたの顔を分析します。</p>
+      <a href="/fortune.html?sys=face" class="cta">顔を分析</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">💭</div>
+      <h3>夢占い</h3>
+      <p>見た夢を入力すると、AIが夢に隠された意味を解釈します。</p>
+      <a href="/fortune.html?sys=dream" class="cta">夢を解釈</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">🧭</div>
+      <h3>風水診断</h3>
+      <p>あなたの住まいやオフィスのエネルギーを最適化。調和と繁栄をもたらします。</p>
+      <a href="/fortune.html?sys=fengshui" class="cta">風水を診断</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">⭐</div>
+      <h3>西洋占星術</h3>
+      <p>ホロスコープによる出生図分析。星座、ハウス、惑星のアスペクトを解説。</p>
+      <a href="/fortune.html?sys=western" class="cta">ホロスコープ</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">💖</div>
+      <h3>恋愛相性診断</h3>
+      <p>八字と十二支で二人の相性を徹底分析。恋愛成就のアドバイスも。</p>
+      <a href="/fortune.html?sys=love" class="cta">相性を見る</a>
+    </div>
+    <div class="card">
+      <div class="system-emoji">📅</div>
+      <h3>今日の運勢</h3>
+      <p>あなたの星座と日付から今日の運勢をピンポイントでお届けします。</p>
+      <a href="/fortune.html?sys=daily" class="cta">今日の運勢</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>SlowBuild · AI搭載占い · <a href="/ja/fortune/">ホーム</a></p>
+    <p style="margin-top:8px;">&copy; 2026 SlowBuild. 占い結果はエンターテインメント目的です。</p>
+  </div>
+</footer>
+</body>
+</html>
