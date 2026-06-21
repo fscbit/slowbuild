@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日运势 · 黄历星座塔罗六爻 | slowbuild.top</title>
+<meta name="description" content="全球占卜文化聚合——每日黄历宜忌、十二星座运势、塔罗日签、六爻日卦、每日幸运。">
+<meta name="keywords" content="黄历,星座运势,塔罗,六爻,易经,每日运势,占卜,农历,老黄历">
+<link rel="canonical" href="https://slowbuild.top/almanac.html">
+<meta property="og:title" content="每日运势 · 黄历星座塔罗六爻">
+<meta property="og:description" content="中式黄历 × 西方星座 × 塔罗 × 易经，每日一签一卦一运。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://slowbuild.top/almanac.html">
+<meta property="og:site_name" content="slowbuild.top">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"每日运势日历","url":"https://slowbuild.top/almanac.html","description":"每日黄历、星座、塔罗、六爻运势聚合工具","applicationCategory":"LifestyleApplication","operatingSystem":"All"}
+</script>
+<style>
+:root{
+  --bg:#0a0a0f;--surface:#12121a;--surface2:#181825;--border:#1e1e2e;
+  --border-accent:#2a2a3e;--text:#d4d4e0;--text-dim:#a0a0b8;--muted:#707088;
+  --gold:#d4a853;--gold-dim:#a08040;--gold-bg:rgba(212,168,83,0.08);--gold-bg2:rgba(212,168,83,0.14);
+  --teal:#38bdf8;--teal-bg:rgba(56,189,248,0.08);--teal-bg2:rgba(56,189,248,0.15);
+  --red:#f87171;--red-bg:rgba(248,113,113,0.08);
+  --green:#4ade80;--green-bg:rgba(74,222,128,0.08);
+  --purple:#c084fc;--purple-bg:rgba(192,132,252,0.08);
+  --orange:#fb923c;--orange-bg:rgba(251,146,60,0.08);
+  --pink:#f472b6;--pink-bg:rgba(244,114,182,0.08);
+  --star:#fbbf24;
+  --radius:12px;--radius-sm:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:radial-gradient(ellipse at 10% 5%,rgba(212,168,83,0.05) 0%,transparent 40%),
+             radial-gradient(ellipse at 90% 30%,rgba(192,132,252,0.04) 0%,transparent 40%),
+             radial-gradient(ellipse at 50% 80%,rgba(56,189,248,0.03) 0%,transparent 50%);
+  pointer-events:none;z-index:0;
+}
+.container{max-width:1000px;margin:0 auto;padding:16px;position:relative;z-index:1;}
+
+/* header */
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;margin-bottom:8px;}
+.site-logo{font-size:18px;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.5px;}
+.site-logo span{color:var(--gold);}
+.refresh-btn{background:var(--surface);border:1px solid var(--border);color:var(--text-dim);padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;transition:all .2s;}
+.refresh-btn:hover{color:var(--text);border-color:var(--border-accent);}
+
+/* hero date */
+.date-hero{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:clamp(20px,4vw,36px) 24px;text-align:center;margin-bottom:20px;position:relative;overflow:hidden;
+}
+.date-hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:200px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);}
+.lunar-display{font-size:clamp(36px,7vw,60px);font-weight:900;color:var(--gold);letter-spacing:3px;line-height:1.1;}
+.lunar-display .lunar-month{font-size:0.72em;margin-right:6px;}
+.lunar-display .lunar-day{font-size:1.15em;}
+.lunar-display .is-leap{font-size:0.38em;vertical-align:super;color:var(--red);}
+.solar-display{font-size:15px;color:var(--text-dim);margin-top:8px;letter-spacing:1px;}
+.solar-display .weekday{color:var(--teal);}
+.ganzhi-display{font-size:14px;color:var(--muted);margin-top:6px;letter-spacing:2px;}
+.ganzhi-display .gz-sep{color:var(--border-accent);margin:0 6px;}
+.term-badge{display:inline-block;margin-top:10px;background:var(--teal-bg);color:var(--teal);padding:4px 16px;border-radius:20px;font-size:14px;letter-spacing:2px;border:1px solid var(--teal-bg2);}
+
+/* chongsha */
+.chongsha-bar{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 18px;margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;}
+.cs-item{display:flex;align-items:center;gap:5px;}
+.cs-label{color:var(--muted);font-size:12px;}
+.cs-value{color:var(--text);font-weight:600;}
+.cs-value.warn{color:var(--red);}
+.cs-dot{width:3px;height:3px;border-radius:50%;background:var(--border-accent);}
+
+/* section heading */
+.sec-head{font-size:15px;font-weight:700;color:var(--text);letter-spacing:2px;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.sec-head .icon{font-size:18px;}
+
+/* card base */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px 20px;margin-bottom:16px;}
+.card2{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px;}
+
+/* ===== ALMANAC 黄历 ===== */
+.almanac-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;}
+.almanac-col-label{font-size:14px;font-weight:700;padding:8px 0;text-align:center;letter-spacing:3px;}
+.almanac-col-label.yi{color:var(--green);}
+.almanac-col-label.ji{color:var(--red);}
+.almanac-list{list-style:none;display:flex;flex-wrap:wrap;gap:5px;justify-content:center;}
+.almanac-list li{background:var(--surface2);padding:5px 10px;border-radius:6px;font-size:12px;color:var(--text-dim);border:1px solid transparent;transition:all .15s;}
+.almanac-list.yi-list li{border-color:var(--green-bg);}
+.almanac-list.ji-list li{border-color:var(--red-bg);}
+.almanac-list.yi-list li:hover{background:var(--green-bg);color:var(--green);}
+.almanac-list.ji-list li:hover{background:var(--red-bg);color:var(--red);}
+.gods-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);}
+.god-item{text-align:center;background:var(--surface2);padding:10px 6px;border-radius:var(--radius-sm);}
+.god-item .god-icon{font-size:18px;margin-bottom:3px;}
+.god-item .god-name{font-size:11px;color:var(--muted);}
+.god-item .god-value{font-size:13px;color:var(--text);font-weight:600;}
+
+/* ===== LUCKY CARD ===== */
+.lucky-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:10px;}
+.lucky-item{text-align:center;padding:12px 8px;background:var(--bg);border-radius:var(--radius-sm);}
+.lucky-item .lucky-icon{font-size:22px;margin-bottom:4px;}
+.lucky-item .lucky-label{font-size:11px;color:var(--muted);margin-bottom:2px;}
+.lucky-item .lucky-value{font-size:16px;font-weight:700;color:var(--gold);}
+.lucky-item .lucky-sub{font-size:11px;color:var(--text-dim);margin-top:1px;}
+
+/* ===== TAROT ===== */
+.tarot-card-inner{display:flex;gap:20px;align-items:center;}
+.tarot-visual{flex-shrink:0;width:80px;height:120px;background:linear-gradient(135deg,var(--purple-bg),var(--gold-bg));border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:32px;}
+.tarot-visual.reversed{transform:rotate(180deg);}
+.tarot-info{flex:1;min-width:0;}
+.tarot-name{font-size:18px;font-weight:700;color:var(--purple);margin-bottom:2px;}
+.tarot-en{font-size:12px;color:var(--muted);margin-bottom:6px;}
+.tarot-pos{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;margin-bottom:8px;}
+.tarot-pos.upright{background:var(--green-bg);color:var(--green);}
+.tarot-pos.reversed{background:var(--red-bg);color:var(--red);}
+.tarot-meaning{font-size:13px;color:var(--text-dim);line-height:1.6;}
+
+/* ===== I CHING ===== */
+.iching-inner{display:flex;gap:20px;align-items:flex-start;}
+.iching-visual{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:2px;}
+.iching-hex{font-size:28px;color:var(--text);letter-spacing:4px;text-align:center;line-height:1.3;}
+.iching-tri{font-size:13px;color:var(--muted);}
+.iching-info{flex:1;min-width:0;}
+.iching-num{font-size:11px;color:var(--muted);margin-bottom:2px;}
+.iching-name{font-size:18px;font-weight:700;color:var(--teal);margin-bottom:4px;}
+.iching-judge{font-size:13px;color:var(--text-dim);line-height:1.7;}
+.iching-level{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;margin-top:6px;}
+.iching-level.good{background:var(--green-bg);color:var(--green);}
+.iching-level.fair{background:var(--orange-bg);color:var(--orange);}
+.iching-level.caution{background:var(--red-bg);color:var(--red);}
+
+/* ===== ZODIAC ===== */
+.zodiac-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;}
+.zodiac-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px 8px;text-align:center;transition:all .2s;}
+.zodiac-card:hover{border-color:var(--border-accent);transform:translateY(-1px);}
+.zodiac-card.highlight{border-color:var(--gold);background:var(--gold-bg);box-shadow:0 0 18px rgba(212,168,83,0.06);}
+.zodiac-card .z-icon{font-size:20px;margin-bottom:3px;}
+.zodiac-card .z-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.zodiac-card .z-stars{font-size:11px;margin-bottom:3px;letter-spacing:1px;}
+.zodiac-card .z-fortune{font-size:10px;color:var(--text-dim);line-height:1.45;margin-bottom:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.zodiac-card .z-meta{display:flex;justify-content:center;gap:6px;font-size:10px;color:var(--muted);}
+.zodiac-card .z-meta span{white-space:nowrap;}
+
+/* ===== FOOTER ===== */
+.site-footer{text-align:center;padding:24px 0 32px;font-size:12px;color:var(--muted);}
+.site-footer a{color:var(--teal);text-decoration:none;}
+.site-footer a:hover{text-decoration:underline;}
+.footer-divider{width:40px;height:2px;background:var(--border-accent);margin:0 auto 12px;border-radius:1px;}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .container{padding:10px;}
+  .almanac-cols{grid-template-columns:1fr;gap:0 12px;}
+  .zodiac-grid{grid-template-columns:repeat(3,1fr);gap:5px;}
+  .gods-row{grid-template-columns:repeat(2,1fr);}
+  .tarot-card-inner{flex-direction:column;text-align:center;}
+  .tarot-visual{margin:0 auto;}
+  .iching-inner{flex-direction:column;text-align:center;}
+  .iching-visual{margin:0 auto;}
+  .lucky-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:420px){
+  .zodiac-grid{grid-template-columns:repeat(2,1fr);gap:4px;}
+  .lucky-grid{grid-template-columns:repeat(2,1fr);}
+  .lunar-display{font-size:32px;letter-spacing:1px;}
+  .chongsha-bar{gap:6px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="site-header">
+  <a href="https://slowbuild.top" class="site-logo">slow<span>build</span>.top</a>
+  <button class="refresh-btn" onclick="location.reload()">📅 今天</button>
+</header>
+<div id="app"></div>
+<footer class="site-footer">
+  <div class="footer-divider"></div>
+  <p>仅供娱乐参考 · <a href="https://slowbuild.top">slowbuild.top</a></p>
+</footer>
+</div>
+
+<script>
+// ==================== LUNAR ENGINE ====================
+var lunarInfo=[0x04bd8,0x04ae0,0x0a570,0x054d5,0x0d260,0x0d950,0x16554,0x056a0,0x09ad0,0x055d2,0x04ae0,0x0a5b6,0x0a4d0,0x0d250,0x1d255,0x0b540,0x0d6a0,0x0ada2,0x095b0,0x14977,0x04970,0x0a4b0,0x0b4b5,0x06a50,0x06d40,0x1ab54,0x02b60,0x09570,0x052f2,0x04970,0x06566,0x0d4a0,0x0ea50,0x06e95,0x05ad0,0x02b60,0x186e3,0x092e0,0x1c8d7,0x0c950,0x0d4a0,0x1d8a6,0x0b550,0x056a0,0x1a5b4,0x025d0,0x092d0,0x0d2b2,0x0a950,0x0b557,0x06ca0,0x0b550,0x15355,0x04da0,0x0a5b0,0x14573,0x052b0,0x0a9a8,0x0e950,0x06aa0,0x0aea6,0x0ab50,0x04b60,0x0aae4,0x0a570,0x05260,0x0f263,0x0d950,0x05b57,0x056a0,0x096d0,0x04dd5,0x04ad0,0x0a4d0,0x0d4d4,0x0d250,0x0d558,0x0b540,0x0b6a0,0x195a6,0x095b0,0x049b0,0x0a974,0x0a4b0,0x0b27a,0x06a50,0x06d40,0x0af46,0x0ab60,0x09570,0x04af5,0x04970,0x064b0,0x074a3,0x0ea50,0x06b58,0x055c0,0x0ab60,0x096d5,0x092e0,0x0c960,0x0d954,0x0d4a0,0x0da50,0x07552,0x056a0,0x0abb7,0x025d0,0x092d0,0x0cab5,0x0a950,0x0b4a0,0x0baa4,0x0ad50,0x055d9,0x04ba0,0x0a5b0,0x15176,0x052b0,0x0a930,0x07954,0x06aa0,0x0ad50,0x05b52,0x04b60,0x0a6e6,0x0a4e0,0x0d260,0x0ea65,0x0d530,0x05aa0,0x076a3,0x096d0,0x04afb,0x04ad0,0x0a4d0,0x1d0b6,0x0d250,0x0d520,0x0dd45,0x0b5a0,0x056d0,0x055b2,0x049b0,0x0a577,0x0a4b0,0x0aa50,0x1b255,0x06d20,0x0ada0,0x14b63,0x09370,0x049f8,0x04970,0x064b0,0x168a6,0x0ea50,0x06aa0,0x1a6c4,0x0aae0,0x0a2e0,0x0d2e3,0x0c960,0x0d557,0x0d4a0,0x0da50,0x05d55,0x056a0,0x0a6d0,0x055d4,0x052d0,0x0a9b8,0x0a950,0x0b4a0,0x0b6a6,0x0ad50,0x055a0,0x0aba4,0x0a5b0,0x052b0,0x0b273,0x06930,0x07337,0x06aa0,0x0ad50,0x14b55,0x04b60,0x0a570,0x054e4,0x0d160,0x0e968,0x0d520,0x0daa0,0x16aa6,0x056d0,0x04ae0,0x0a9d4,0x0a2d0,0x0d150,0x0f252,0x0d520];
+var Gan=['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
+var Zhi=['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+var Animals=['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'];
+var lunarMonthNames=['正','二','三','四','五','六','七','八','九','十','冬','腊'];
+var lunarDayNames=['','初一','初二','初三','初四','初五','初六','初七','初八','初九','初十','十一','十二','十三','十四','十五','十六','十七','十八','十九','二十','廿一','廿二','廿三','廿四','廿五','廿六','廿七','廿八','廿九','三十'];
+var weekDays=['日','一','二','三','四','五','六'];
+var directions=['正北','东北','正东','东南','正南','西南','正西','西北'];
+
+function lYearDays(y){var i,s=348;for(i=0x8000;i>0x8;i>>=1)s+=(lunarInfo[y-1900]&i)?1:0;return s+leapDays(y);}
+function leapMonth(y){return lunarInfo[y-1900]&0xf;}
+function leapDays(y){if(leapMonth(y))return(lunarInfo[y-1900]&0x10000)?30:29;return 0;}
+function monthDays(y,m){return(lunarInfo[y-1900]&(0x10000>>m))?30:29;}
+
+function solar2lunar(y,m,d){
+  if(y<1900||y>2100)return null;
+  var base=new Date(1900,0,31);
+  var target=new Date(y,m-1,d);
+  var offset=Math.round((target-base)/86400000);
+  var i,temp=0;
+  for(i=1900;i<2101&&offset>0;i++){temp=lYearDays(i);offset-=temp;}
+  if(offset<0){offset+=temp;i--;}
+  var ly=i,lm=1,ld,l_isLeap=false,leap=leapMonth(ly),lmonLen;
+  while(offset>=0){
+    lmonLen=l_isLeap?leapDays(ly):monthDays(ly,lm);
+    if(offset<lmonLen)break;
+    offset-=lmonLen;
+    if(leap>0&&lm===leap){if(l_isLeap){l_isLeap=false;lm++;}else l_isLeap=true;}
+    else lm++;
+  }
+  return{lYear:ly,lMonth:lm,lDay:offset+1,isLeap:l_isLeap,year:y,month:m,day:d};
+}
+function ganZhiYear(ly){var i=(ly-4)%60;return Gan[i%10]+Zhi[i%12];}
+function ganZhiMonth(ly,lm){var ys=(ly-4)%10,bi=(lm+1)%12,si=(ys*2+lm+1)%10;return Gan[si]+Zhi[bi];}
+function ganZhiDay(y,m,d){
+  var base=new Date(1900,0,31),target=new Date(y,m-1,d);
+  var off=Math.round((target-base)/86400000),i=((off%60)+60+36)%60;
+  return Gan[i%10]+Zhi[i%12];
+}
+function gzDayIdx(y,m,d){
+  var base=new Date(1900,0,31),target=new Date(y,m-1,d);
+  var off=Math.round((target-base)/86400000);
+  return((off%60)+60+36)%60;
+}
+function getAnimal(ly){return Animals[(ly-4)%12];}
+
+var solarTerms=[{n:'小寒',m:1,d:5},{n:'大寒',m:1,d:20},{n:'立春',m:2,d:4},{n:'雨水',m:2,d:19},{n:'惊蛰',m:3,d:6},{n:'春分',m:3,d:21},{n:'清明',m:4,d:5},{n:'谷雨',m:4,d:20},{n:'立夏',m:5,d:5},{n:'小满',m:5,d:21},{n:'芒种',m:6,d:6},{n:'夏至',m:6,d:21},{n:'小暑',m:7,d:7},{n:'大暑',m:7,d:23},{n:'立秋',m:8,d:7},{n:'处暑',m:8,d:23},{n:'白露',m:9,d:8},{n:'秋分',m:9,d:23},{n:'寒露',m:10,d:8},{n:'霜降',m:10,d:23},{n:'立冬',m:11,d:7},{n:'小雪',m:11,d:22},{n:'大雪',m:12,d:7},{n:'冬至',m:12,d:22}];
+function findSolarTerm(y,m,d){for(var i=0;i<solarTerms.length;i++){var s=solarTerms[i];if(s.m===m&&Math.abs(s.d-d)<=1)return s.n;}return null;}
+
+// seeded RNG
+function sRng(s){var x=Math.sin(s*9301+49297)*233280;return x-Math.floor(x);}
+function shuffleSeed(arr,seed){var a=arr.slice(),m=a.length,t,i;while(m){i=Math.floor(sRng(seed+m)*m--);t=a[m];a[m]=a[i];a[i]=t;}return a;}
+
+// ==================== ALMANAC ====================
+var dayOfficerNames=['建日','除日','满日','平日','定日','执日','破日','危日','成日','收日','开日','闭日'];
+function getDayOfficer(lm,dayBranch){var mb=(lm+1)%12,diff=(dayBranch-mb+12)%12;return{idx:diff,name:dayOfficerNames[diff]};}
+var yiItems=['嫁娶','祭祀','祈福','求嗣','开光','出行','解除','伐木','入宅','安床','拆卸','修造','动土','上梁','安葬','破土','移徙','开市','交易','立券','纳财','纳畜','入殓','移柩','安机械','栽种','牧养','会亲友','进人口','塑绘','开池','起基','竖柱','安门','盖屋','经络','补垣','塞穴','扫舍'];
+var jiItems=['嫁娶','安葬','出行','动土','词讼','开市','入宅','移徙','上梁','作灶','安门','伐木','栽种','安床','祭祀','祈福','开光','修造','拆卸','破土','掘井','行丧','置产','进货','进人口','会亲友','纳畜','牧养','经络','开池'];
+var caiShenMap=['东北','东北','正东','东南','东南','正北','正东','西南','正南','正北'];
+var xiShenMap=['西北','西南','正南','东南','东北','西北','西南','正南','东南','东北'];
+var fuShenMap=['正北','正北','正东','正东','正南','正南','西南','西南','西北','西北'];
+var taiShenPos=['占门碓外东南','占碓磨厕外东南','占厨灶炉外正南','占仓库门外正南','占房床厕外正南','占房床炉外正南','占碓磨床外西南','占厕外西南','占门炉外西南','占大门外西南','占碓磨门外西北','占厨灶厕外西北','占仓库厕外西北','占房床门外西北','占房床炉外西北','占门碓外正北','占碓磨厕外正北','占厨灶床外正北','占仓库门外正北','占房床厕外东北','占门炉外东北','占大门外东北','占碓磨门外西北','占厨灶炉外东北','占仓库厕外正东','占房床门外正东','占房床炉外正东','占门碓外东南','占碓磨厕外东南','占厨灶床外东南','占仓库门外东南','占房床厕外东南','占门炉外东南','占大门外东南','占碓磨门外东南','占厨灶炉外东南','占仓库厕外正南','占房床门外正南','占房床炉外正南','占门碓外西南','占碓磨厕外西南','占厨灶床外西南','占仓库门外西南','占房床厕外西南','占门炉外西南','占大门外西南','占碓磨门外西南','占厨灶炉外西南','占仓库厕外西北','占房床门外西北','占房床炉外西北','占门碓外正北','占碓磨厕外正北','占厨灶床外正北','占仓库门外正北','占房床厕外东北','占门炉外东北','占大门外东北','占碓磨门外西北','占厨灶炉外东北'];
+
+function genAlmanac(gzIdx,lm,ld){
+  var seed=gzIdx*100+lm*7+ld*13;
+  var db=gzIdx%12;
+  var officer=getDayOfficer(lm,db);
+  var yc=6+Math.floor(sRng(seed+1)*3);
+  var sy=shuffleSeed(yiItems,seed+2).slice(0,yc);
+  var jc=5+Math.floor(sRng(seed+3)*3);
+  var sj=shuffleSeed(jiItems,seed+4).slice(0,jc+5);
+  var ji=[];
+  for(var i=0;i<sj.length&&ji.length<jc;i++){if(sy.indexOf(sj[i])<0)ji.push(sj[i]);}
+  var chongAnimal=Animals[(db+6)%12],shaDir=directions[(db+6)%12];
+  var ds=gzIdx%10;
+  return{officer:officer,yi:sy,ji:ji,chongAnimal:chongAnimal,shaDir:shaDir,
+    caiShen:caiShenMap[ds],xiShen:xiShenMap[ds],fuShen:fuShenMap[ds],
+    taiShen:taiShenPos[gzIdx%taiShenPos.length]};
+}
+
+// ==================== LUCKY ====================
+var luckyColors=['红色','橙色','金色','黄色','绿色','青色','天蓝','宝蓝','紫色','粉色','白色','银色','米色','棕色','牛仔蓝','玫红','珊瑚色','薄荷绿','薰衣草紫','暖橘色'];
+var elements=['金','木','水','火','土'];
+var shiChen=['子时 23:00-01:00','丑时 01:00-03:00','寅时 03:00-05:00','卯时 05:00-07:00','辰时 07:00-09:00','巳时 09:00-11:00','午时 11:00-13:00','未时 13:00-15:00','申时 15:00-17:00','酉时 17:00-19:00','戌时 19:00-21:00','亥时 21:00-23:00'];
+
+function genLucky(y,m,d){
+  var seed=y*10000+m*100+d;
+  return{
+    color:luckyColors[Math.floor(sRng(seed*3+7)*luckyColors.length)],
+    num:Math.floor(sRng(seed*5+13)*9)+1,
+    dir:directions[Math.floor(sRng(seed*7+19)*directions.length)],
+    element:elements[Math.floor(sRng(seed*11+23)*elements.length)],
+    time:shiChen[Math.floor(sRng(seed*13+29)*shiChen.length)]
+  };
+}
+
+// ==================== TAROT (78 cards) ====================
+var majorArcana=[
+  {n:'愚者',en:'The Fool',m:'新的开始正召唤你，放下顾虑，带着好奇心迈出一步。信任旅程，即使前路未知。'},
+  {n:'魔术师',en:'The Magician',m:'你拥有实现目标所需的一切资源。专注意志，将想法化为现实，今天行动力爆棚。'},
+  {n:'女祭司',en:'The High Priestess',m:'倾听内心的声音，答案不在外界而在于你的直觉。保持安静，灵感会自然浮现。'},
+  {n:'女皇',en:'The Empress',m:'丰盛与滋养环绕着你。今天适合享受生活、照顾自己或亲近自然，创造力充沛。'},
+  {n:'皇帝',en:'The Emperor',m:'秩序和纪律带来安全感。今天适合制定计划、承担责任，用理性主宰局面。'},
+  {n:'教皇',en:'The Hierophant',m:'遵循传统和经验的指引。虚心求教，或许是时候回归基础、寻求智慧的传承。'},
+  {n:'恋人',en:'The Lovers',m:'重要的选择摆在你面前。跟随真心而非算计，真诚的连接比完美的选项更重要。'},
+  {n:'战车',en:'The Chariot',m:'意志力是你今天最强武器。克服分歧、勇往直前，胜利属于坚持的人。'},
+  {n:'力量',en:'Strength',m:'真正的力量来自温柔和耐心。以柔克刚，用理解和包容驯服内心的野兽。'},
+  {n:'隐士',en:'The Hermit',m:'独处是今天的主题。向内探索，远离喧嚣，一盏心灯足以照亮前路。'},
+  {n:'命运之轮',en:'Wheel of Fortune',m:'命运的齿轮正在转动，好运将至。顺势而为，接受变化，转折就在眼前。'},
+  {n:'正义',en:'Justice',m:'因果平衡的一天。诚实面对自己，做出公正的判断，你所付出的会有回应。'},
+  {n:'倒吊人',en:'The Hanged Man',m:'换个角度看世界。暂停不是放弃，而是为了更好地出发。顺其自然，静观其变。'},
+  {n:'死神',en:'Death',m:'旧的不去新的不来。坦然接受结束，每一次告别都是新生的序章。'},
+  {n:'节制',en:'Temperance',m:'中庸之道带来和谐。今天适合平衡各方，不急不躁，寻找恰到好处的节奏。'},
+  {n:'恶魔',en:'The Devil',m:'觉察你的执念和束缚。那些让你焦虑的，可能只是心魔。今天适合断舍离。'},
+  {n:'塔',en:'The Tower',m:'突如其来的变化或许让人不安，但崩塌的只是不牢固的部分。坦然面对重建。'},
+  {n:'星星',en:'The Star',m:'希望之光照亮前路。保持信念，疗愈正在发生，美好的事物在向你靠近。'},
+  {n:'月亮',en:'The Moon',m:'迷雾中前行需格外小心。别被表象迷惑，相信直觉，真相会逐渐清晰。'},
+  {n:'太阳',en:'The Sun',m:'今天是你的高光时刻！活力四射，自信绽放，一切都沐浴在温暖光芒之中。'},
+  {n:'审判',en:'Judgement',m:'是时候复盘和觉醒。听从内心的召唤，接受过去的自己，迎接全新的开始。'},
+  {n:'世界',en:'The World',m:'一个周期圆满结束。今天适合庆祝成就、回顾旅程，整合所得准备下一程。'},
+];
+var minorArcana=[];
+var suits=['权杖','圣杯','宝剑','星币'];
+var courts=['侍从','骑士','王后','国王'];
+var suitEmoji=['🪵','🍷','⚔️','🪙'];
+for(var s=0;s<4;s++){
+  for(var r=1;r<=10;r++)minorArcana.push({n:suits[s]+r,en:suits[s]+' '+r,suit:s,m:''});
+  for(var c=0;c<4;c++)minorArcana.push({n:suits[s]+courts[c],en:suits[s]+' '+courts[c],suit:s,m:''});
+}
+// Meanings for minor arcana
+var minorMeanings=[
+  '新行动的能量正在涌动，抓住灵感的第一缕火花。','适合做规划的一天，厘清方向再出发。','前期准备已有成果，今天可以看到初步进展。','稳定是今天的主题，巩固已有阵地，不急于拓新。','良性竞争激发潜力，今天的对手是你最好的老师。','胜利在望，团队的支持是你最大的后盾。','坚守立场，面对挑战不退让，你比想象中更强大。','快节奏的一天，事情推进迅速，跟上节奏别掉队。','接近尾声仍需保持警惕，最后一步往往最关键。','扛起责任的时刻到了，虽然辛苦但值得骄傲。',
+  '情感的新涟漪正在荡漾，打开心扉让温暖进来。','内心的连接比言语更重要，今天适合深度交流。','分享喜悦的时刻，和亲近的人一起庆祝小小的快乐。','稳定有时意味着平淡，但平淡中藏着真正的满足。','有点失落的情绪很正常，给自己一点时间消化。','回忆是温暖的礼物，今天适合整理珍藏过往。','选择太多反而迷茫，静下来听听心里真正想要什么。','放下不再滋养你的关系，向前走，风景更好。','愿望即将实现，保持期待，美好正在靠近。','情感的圆满带来内心的安宁，感恩此刻拥有的一切。',
+  '清晰的思维是今天的利器，理性决策胜过情感冲动。','面临十字路口，权衡利弊后再行动，不急于选边。','心碎过才会更懂自己，允许情绪流过但别停留太久。','休养生息的一天，让大脑放空，恢复内在秩序。','内在的矛盾需要正视，逃避解决不了根本问题。','向前看，带着经验和智慧离开不再适合你的境地。','有时耍小聪明不如坦诚面对，诚实是最高效的策略。','思维被限制的感觉很糟，尝试换个环境或视角。','过度担忧只是自我消耗，今天试试把焦虑写在纸上再撕掉。','新的思维模式正在形成，拥抱这场认知的升级。',
+  '脚踏实地的努力终有回报，今天的投入会在未来增值。','平衡收支和精力，学会合理调配资源是今天的课题。','技能的积累到了展示的时候，你的专业值得被看见。','守成的一天，保护已有的成果比冒险扩张更明智。','物质上的不安全感是暂时的，重新审视什么真正重要。','分享带来更多，无论知识还是财富，施比受更有福。','耐心等待花开，有些事情急不来，享受过程本身。','专注和精益求精是今天的关键词，工匠精神让你出众。','接近目标了，别在这个时候松懈，最后的工序最见功夫。','收获的季节，享受成果的同时也为下一个周期播种。',
+  '保持好奇心，像孩童般探索，今天学什么都快。','带着热情踏上新旅程，不要害怕未知，勇敢出发。','你的创造力正在感染身边的人，大胆展现自己。','以温柔的方式掌控局面，关怀比命令更有力量。','稳扎稳打的领导者气质，今天你自然成为众人的主心骨。','求知若渴的一天，找个老师或书本，汲取智慧。','在关系中做出真心选择，真诚是最好的策略。','驾驭内心的冲动，将其导向有建设性的方向。','以柔克刚的智慧，温和的坚持比激烈的对抗更有力量。','退一步反思，内在的智慧正在酝酿，不急著向外求。','抓住命运递来的机会，运气偏爱有准备的人。','公正客观地处理事务，今天的判断会得到众人认可。','换个视角看问题，暂时的停滞是为了更大的飞跃。','结束意味着新的开始，勇敢告别过去，迎接蜕变。','在冲突中寻找平衡，对立面往往藏着和解的钥匙。','面对内心的欲望和恐惧，觉察本身就是解脱的开始。','突如其来的觉醒打破幻象，虽然痛但值得。','保持希望和信念，黑暗中也有星光指引你前行。','穿越迷茫需要勇气，相信直觉会带你驶出迷雾。','今天你自带光芒，尽情享受这充满活力的时刻。','内省和觉醒的一天，放下评判，接纳完整的自己。','圆满完成的时刻到了，好好庆祝你的旅程和成长。'
+];
+
+function genTarot(y,m,d){
+  var seed=y*10000+m*100+d;
+  var deck=[];
+  for(var i=0;i<22;i++)deck.push({t:'major',i:i,card:majorArcana[i]});
+  for(var i=0;i<56;i++)deck.push({t:'minor',i:i,card:minorArcana[i],meaning:minorMeanings[i]});
+  // Use date seed to select
+  var idx=Math.floor(sRng(seed*17+53)*78);
+  var card=deck[idx];
+  var reversed=sRng(seed*19+67)>0.58; // ~42% chance reversed
+  return{card:card,reversed:reversed};
+}
+
+// ==================== I CHING (64 hexagrams) ====================
+var ichingHexagrams=[
+  {n:'乾为天',t:'☰☰',j:'元亨利贞。自强不息，龙腾九天。今天的你充满创造力，大胆行动。',lv:'good'},
+  {n:'坤为地',t:'☷☷',j:'厚德载物，柔顺利贞。以柔克刚的一天，包容和耐心胜过强势。',lv:'good'},
+  {n:'水雷屯',t:'☵☳',j:'万事开头难。新事物萌芽期，需要耐心孕育，不宜急躁冒进。',lv:'fair'},
+  {n:'山水蒙',t:'☶☵',j:'蒙昧待启。适合虚心学习，向有经验的人请教，启蒙就在今天。',lv:'fair'},
+  {n:'水天需',t:'☵☰',j:'等待时机。好事需要耐心酝酿，今天不适合强求，静候佳音。',lv:'fair'},
+  {n:'天水讼',t:'☰☵',j:'争议宜解不宜结。遇事多沟通，避免对簿公堂，退一步海阔天空。',lv:'caution'},
+  {n:'地水师',t:'☷☵',j:'以正出师。团队协作需要统一的指挥，今天适合组织协调工作。',lv:'good'},
+  {n:'水地比',t:'☵☷',j:'亲附和合。人际关系的温暖日，适合拉近与他人的距离。',lv:'good'},
+  {n:'风天小畜',t:'☴☰',j:'小有积蓄。量变引起质变之前，耐心积累，别嫌进展慢。',lv:'fair'},
+  {n:'天泽履',t:'☰☱',j:'如履薄冰。谨慎行事，遵守规则，跟在有经验的人后面最安全。',lv:'caution'},
+  {n:'地天泰',t:'☷☰',j:'天地交泰，万事亨通。今天诸事顺遂，是难得的好日子。',lv:'good'},
+  {n:'天地否',t:'☰☷',j:'闭塞不通。宜退守自省，不宜大动作，保存实力等待转机。',lv:'caution'},
+  {n:'天火同人',t:'☰☲',j:'志同道合。适合团队合作，寻找理念一致的伙伴共同推进。',lv:'good'},
+  {n:'火天大有',t:'☲☰',j:'丰收在望。努力即将获得回报，今天适合庆祝和分享成果。',lv:'good'},
+  {n:'地山谦',t:'☷☶',j:'谦受益，满招损。放低姿态反而能获得更多，虚怀若谷。',lv:'good'},
+  {n:'雷地豫',t:'☳☷',j:'愉悦安乐。今天适合放松心情，享受生活，但别过度放纵。',lv:'good'},
+  {n:'泽雷随',t:'☱☳',j:'顺势而为。灵活应变胜过固执己见，今天随大流反而是智慧。',lv:'fair'},
+  {n:'山风蛊',t:'☶☴',j:'拨乱反正。发现问题的根源并着手整顿，勇气可嘉。',lv:'fair'},
+  {n:'地泽临',t:'☷☱',j:'居高临下。今天你的视野格外清晰，适合做决策和规划。',lv:'good'},
+  {n:'风地观',t:'☴☷',j:'观察学习。多听多看少说，今天的观察会带来深刻洞察。',lv:'fair'},
+  {n:'火雷噬嗑',t:'☲☳',j:'明断是非。今天适合做判断和决策，果断处理拖延的事务。',lv:'good'},
+  {n:'山火贲',t:'☶☲',j:'文饰之美。注重外在形象和表达方式，今天你的审美格外在线。',lv:'fair'},
+  {n:'山地剥',t:'☶☷',j:'剥落衰退。顺势接受不顺，守住根本，低谷是反弹的起点。',lv:'caution'},
+  {n:'地雷复',t:'☷☳',j:'一阳来复。转机正在萌芽，黑暗中已透出微光，保持希望。',lv:'good'},
+  {n:'天雷无妄',t:'☰☳',j:'真实不虚。坦诚面对自己和他人，不抱侥幸心理，真诚是最好策略。',lv:'fair'},
+  {n:'山天大畜',t:'☶☰',j:'厚积薄发。默默积蓄能量，今天的沉淀是明天的爆发。',lv:'good'},
+  {n:'山雷颐',t:'☶☳',j:'养正修身。关注身心健康，营养和休息同样重要，养精蓄锐。',lv:'fair'},
+  {n:'泽风大过',t:'☱☴',j:'过犹不及。任何事情都别走极端，中庸才是长久之道。',lv:'caution'},
+  {n:'坎为水',t:'☵☵',j:'习坎入坎。逆境中更要坚定信念，水能穿石靠的是持续力。',lv:'caution'},
+  {n:'离为火',t:'☲☲',j:'光明依附。借势发光，找到你可以依靠的力量，相互照亮。',lv:'good'},
+  {n:'泽山咸',t:'☱☶',j:'感应交融。人与人之间的磁场在加强，适合情感交流和合作。',lv:'good'},
+  {n:'雷风恒',t:'☳☴',j:'持之以恒。坚持就是胜利，今天适合推进需要耐力的长期计划。',lv:'good'},
+  {n:'天山遁',t:'☰☶',j:'退避自保。暂时的后退是为了更好的前进，以退为进是智慧。',lv:'fair'},
+  {n:'雷天大壮',t:'☳☰',j:'强盛壮大。力量充沛的一天，适合挑战高难度，但也别莽撞。',lv:'good'},
+  {n:'火地晋',t:'☲☷',j:'旭日东升。事业和声望在上升期，抓住机会展示自己。',lv:'good'},
+  {n:'地火明夷',t:'☷☲',j:'韬光养晦。聪明才智宜深藏，在不顺中保存实力，静待时机。',lv:'caution'},
+  {n:'风火家人',t:'☴☲',j:'家庭和睦。今天适合回归家庭，打理内部事务，亲情温暖人心。',lv:'good'},
+  {n:'火泽睽',t:'☲☱',j:'求同存异。意见分歧很正常，关键是在差异中找到共同点。',lv:'fair'},
+  {n:'水山蹇',t:'☵☶',j:'艰难险阻。前路有障碍，但每一步都在靠近目标，别放弃。',lv:'caution'},
+  {n:'雷水解',t:'☳☵',j:'解脱困境。难题即将迎刃而解，放松心情，解决方案自然浮现。',lv:'good'},
+  {n:'山泽损',t:'☶☱',j:'损下益上。有时候放手也是一种得到，学会做减法。',lv:'fair'},
+  {n:'风雷益',t:'☴☳',j:'增益有利。今天是大有收获的一天，善用机会推进项目。',lv:'good'},
+  {n:'泽天夬',t:'☱☰',j:'决断果断。当断则断，不再拖延，今天的勇气带来长久的轻松。',lv:'good'},
+  {n:'天风姤',t:'☰☴',j:'相遇邂逅。意外的遇见可能是命中注定的安排，保持开放心态。',lv:'fair'},
+  {n:'泽地萃',t:'☱☷',j:'精英汇聚。适合参加集体活动，人群中有你需要的资源和能量。',lv:'good'},
+  {n:'地风升',t:'☷☴',j:'步步高升。循序渐进向上，今天的每一小步都在为未来铺路。',lv:'good'},
+  {n:'泽水困',t:'☱☵',j:'穷困自守。困境中反而要更坚定，熬过这一段，豁然开朗。',lv:'caution'},
+  {n:'水风井',t:'☵☴',j:'井养不穷。根基稳固才能源源不断，今天适合回顾基本面。',lv:'fair'},
+  {n:'泽火革',t:'☱☲',j:'变革创新。时代在召唤改变，顺势革新，旧的不去新的不来。',lv:'good'},
+  {n:'火风鼎',t:'☲☴',j:'鼎立天下。你站在一个重要的位置，今天的言行影响深远。',lv:'good'},
+  {n:'震为雷',t:'☳☳',j:'临危不乱。面对突发事件保持镇定，你的沉稳能安定人心。',lv:'fair'},
+  {n:'艮为山',t:'☶☶',j:'知止不殆。知道什么时候停下来比知道什么时候冲更重要。',lv:'fair'},
+  {n:'风山渐',t:'☴☶',j:'循序渐进。慢就是快，今天适合一步一步踏实推进既定目标。',lv:'good'},
+  {n:'雷泽归妹',t:'☳☱',j:'结合之美。合作、签约、关系的建立都在一个好时机。',lv:'good'},
+  {n:'雷火丰',t:'☳☲',j:'丰盛盈满。今天能量充沛，要大刀阔斧地做事情，但也要注意分寸。',lv:'good'},
+  {n:'火山旅',t:'☲☶',j:'旅居在外。人在旅途或变动中，适应环境的变化，随遇而安。',lv:'fair'},
+  {n:'巽为风',t:'☴☴',j:'柔顺谦逊。以柔克刚，顺势而为，今天低调反而是最高明的策略。',lv:'fair'},
+  {n:'兑为泽',t:'☱☱',j:'悦而亨通。今天是社交和沟通的好日子，人缘极佳，交流顺畅。',lv:'good'},
+  {n:'风水涣',t:'☴☵',j:'涣散聚合。离散中寻找聚合的力量，今天适合凝聚人心。',lv:'fair'},
+  {n:'水泽节',t:'☵☱',j:'节制有度。适可而止是今天的关键词，凡事把握好分寸。',lv:'fair'},
+  {n:'风泽中孚',t:'☴☱',j:'诚信为本。真诚是最好的通行证，以心换心，信任自然来。',lv:'good'},
+  {n:'雷山小过',t:'☳☶',j:'小有过越。细节上可以稍微超常发挥，但大方向要稳。',lv:'fair'},
+  {n:'水火既济',t:'☵☲',j:'事已成矣。大功告成的一天，但要居安思危，守成不易。',lv:'good'},
+  {n:'火水未济',t:'☲☵',j:'尚未完成。革命尚未成功，但曙光在前，再坚持一下。',lv:'fair'},
+];
+
+function genIching(y,m,d){
+  var seed=y*10000+m*100+d;
+  var idx=Math.floor(sRng(seed*23+41)*64);
+  return ichingHexagrams[idx];
+}
+
+// ==================== ZODIAC ====================
+var zodiacSigns=[
+  {n:'白羊座',e:'♈',s:[3,21],ed:[4,19]},{n:'金牛座',e:'♉',s:[4,20],ed:[5,20]},
+  {n:'双子座',e:'♊',s:[5,21],ed:[6,21]},{n:'巨蟹座',e:'♋',s:[6,22],ed:[7,22]},
+  {n:'狮子座',e:'♌',s:[7,23],ed:[8,22]},{n:'处女座',e:'♍',s:[8,23],ed:[9,22]},
+  {n:'天秤座',e:'♎',s:[9,23],ed:[10,23]},{n:'天蝎座',e:'♏',s:[10,24],ed:[11,22]},
+  {n:'射手座',e:'♐',s:[11,23],ed:[12,21]},{n:'摩羯座',e:'♑',s:[12,22],ed:[1,19]},
+  {n:'水瓶座',e:'♒',s:[1,20],ed:[2,18]},{n:'双鱼座',e:'♓',s:[2,19],ed:[3,20]}
+];
+function getZodiac(m,d){for(var i=0;i<12;i++){var z=zodiacSigns[i];if(z.s[0]===12&&z.ed[0]===1){if(m===12&&d>=z.s[1])return i;if(m===1&&d<=z.ed[1])return i;}else{if(m===z.s[0]&&d>=z.s[1])return i;if(m===z.ed[0]&&d<=z.ed[1])return i;}}return-1;}
+
+var fortuneTemplates={
+1:['今天容易遇到小波折，保持耐心，慢一点反而更快。','情绪波动较大，适合独处消化，别和他人争对错。','做事容易分心，重要决定建议改天再议，静观其变。','有些事强求不来，顺势而为，今天的低调是为明天的爆发。','容易与人产生误会，说话前多想三秒，避免口舌之争。','精力不足的一天，别勉强自己，休息好最重要。','计划可能被打乱，接受变化，转机往往在意外之中。','小心财物往来，今天不太适合做大额消费或投资决策。','身边的人可能不太理解你，别急着解释，时间会证明。','有点焦虑的一天，试试深呼吸，把大任务拆成小步骤。','今天容易钻牛角尖，换个角度看问题，解法就在转角处。','运势低迷但不代表一切，守住底线，明天会更好。','沟通成本偏高，重要的事最好写下来确认，避免遗漏。','身体略疲惫，注意补充水分和睡眠，别硬撑。','不宜做重大决定，今天的直觉可能不太准，多听他人意见。','容易错失机会，保持警觉，但不必过度自责。','人际关系略紧张，退一步海阔天空，不必争一时之气。','今天别给自己太大压力，完成比完美更重要。','小意外可能频发，随身物品多检查，出门前留足时间。','状态不在线，适合做常规事务，创造性的工作缓缓。'],
+2:['平淡中藏着机会，多留意身边细节，惊喜就在不起眼处。','今天适合踏实做事，虽然不出彩，但稳稳当当也是福。','小确幸的一天，一杯好茶、一首好歌，足以治愈。','偶尔的慢节奏不是坏事，整理心情，为明天蓄力。','工作上有小进展，不急躁，按自己的节奏来就好。','别太在意他人眼光，今天的你，做好自己就够了。','适合学习新东西，知识储备会在未来派上用场。','理财宜保守，小积累也能聚沙成塔，别嫌慢。','人际关系平平，不冷不热刚好，给自己留点空间。','今天适合整理收纳，清理环境的同时也清理心情。','遇到小麻烦别慌，冷静应对，事情没那么糟。','健康方面注意颈椎和眼睛，适时起来走动放松。','今天适合复盘总结，回顾一下最近的得失。','出门遇贵人的概率不小，保持微笑和礼貌。','适合约朋友小聚，轻松聊天胜过严肃讨论。','灵感零星闪现，随手记下来，说不定有大用。','今天适合处理积压已久的小事，清空待办列表。','做事效率一般，但质量不错，慢工出细活。','可能有意外小收入，别嫌少，积少成多。','心态平稳的一天，这份宁静本身就值得珍惜。'],
+3:['运势稳中向好，抓住上午的好状态，把重要的事先做了。','今天适合团队合作，你的想法容易获得他人认可。','财运不错，可能有意外惊喜，但别冲动消费。','沟通顺畅的一天，适合开会、谈判、表达想法。','创意灵感充沛，把点子抓住，付诸行动会有收获。','人际关系和谐，适合化解之前的误会和隔阂。','今天效率很高，适合冲刺积压的工作，一鼓作气。','健康状态良好，适合运动锻炼，出一身汗精神更好。','有机会认识新朋友，社交场合中你格外有魅力。','适合做计划，今天头脑清晰，制定的方案可行性高。','可能收到好消息，保持手机畅通，别错过重要信息。','学习效率高的一天，考试复习事半功倍。','手头的事推进顺利，按计划执行，别节外生枝。','适合投资自己，买书、报课、学技能都是好选择。','感情方面有温暖互动，一句关心就能拉近彼此距离。','出门办事顺利，流程走得快，提前到达更从容。','今天适合开始新项目，开头顺，后面就顺。','小目标达成的一天，给自己一点奖励，保持干劲。','直觉很准，信任自己的判断，别犹豫不决。','各方面都比较均衡，好好享受这难得的好状态。'],
+4:['好运正在路上，今天做重要决定，成功率很高。','事业上有突破机会，大胆展示自己，别藏着掖着。','贵人运旺盛，关键时候有人伸出援手，记得感谢。','财运亨通，投资理财有好机会，但也要理性判断。','今天魅力值拉满，约会、面试、见客户都格外加分。','创意爆棚，适合头脑风暴，你的想法令人眼前一亮。','人际关系极佳，适合拓展人脉，结识志同道合者。','今天行动力超强，想到就去做，效率碾压平常。','健康状态极好，适合挑战高强度运动，挑战自我。','有机会获得认可或奖励，这是你应得的回报。','适合谈判和签约，你的立场坚定又不失灵活。','今天特别适合表达爱意，勇敢说出心里话。','灵感源源不断，创作型工作者今天产出会很高。','旅行运佳，短途出行有意外收获，别宅在家里。','学习新技能速度飞快，今天看的书过目不忘。','合作运强，找到对的人一起做事，事半功倍。','财运偏旺，可能有额外的奖金或红包进账。','今天适合做长远规划，眼光放远，格局打开。','心情愉悦，感染力强，身边的人都被你带动。','把握今天的好时机，重要事项优先处理，别拖延。'],
+5:['运势如虹！今天做什么都顺手，大胆推进重要计划吧。','吉星高照！事业和感情双丰收，今天值得好好庆祝。','超级幸运日！抽奖、面试、谈判都有意想不到的好结果。','所有能量都在对的方向，今天你的自信心是最大武器。','财运爆棚！适合收账、签约、开市，钱财主动找上门。','人际关系达到巅峰，你的人脉网络今天最给力。','今天能量满格，适合挑战最难的任务，轻松拿下。','灵感和执行力完美结合，今天能创造奇迹般的成果。','贵人从天而降，抓住今天遇到的每一个人和机会。','今天是一周的高光时刻，重要事情都安排在今天处理。','爱情运势极佳，单身者有望邂逅，有伴者感情升温。','事业上有重大突破信号，保持敏锐，果断出手。','身体精力充沛，适合开始新的健身计划或挑战。','今天做什么都顺，趁势多推进几个项目，收获满满。','好运挡不住，别想太多，跟随直觉走就对了。','完美的决策日，思虑周详，判断准确，令人信服。','今天适合开启新篇章，转型、跳槽、搬家都顺遂。','幸运色效应拉满，穿上幸运色，好运加倍。','今天你自带光环，走到哪里都是焦点，享受吧。','把握住今天的每一个机会，它们会带来长久的好影响。']
+};
+
+function genHoroscopes(y,m,d){
+  var ds=y*10000+m*100+d,cur=getZodiac(m,d),res=[];
+  for(var i=0;i<12;i++){
+    var stars=Math.min(5,Math.max(1,Math.floor(sRng(i*73+ds*137)*5)+1));
+    var tpls=fortuneTemplates[stars];
+    var ft=tpls[Math.floor(sRng(i*499+ds*271)*tpls.length)];
+    var ln=Math.floor(sRng(i*111+ds*37)*10)+1;
+    var lc=luckyColors[Math.floor(sRng(i*223+ds*59)*luckyColors.length)];
+    var ld=directions[Math.floor(sRng(i*333+ds*73)*directions.length)];
+    res.push({idx:i,sign:zodiacSigns[i],stars:stars,fortune:ft,lnum:ln,lcol:lc,ldir:ld,isCur:i===cur});
+  }
+  return res;
+}
+
+// ==================== RENDER ====================
+function starHTML(n){var h='';for(var i=0;i<5;i++)h+=i<n?'<span style="color:#fbbf24">★</span>':'<span style="color:#3a3a4a">★</span>';return h;}
+
+function render(){
+  var n=new Date();
+  var y=n.getFullYear(),m=n.getMonth()+1,d=n.getDate(),w=n.getDay();
+  var lu=solar2lunar(y,m,d);
+  if(!lu){document.getElementById('app').innerHTML='<p style="text-align:center;padding:40px;color:var(--muted)">日期超出范围 (1900-2100)</p>';return;}
+
+  var gzY=ganZhiYear(lu.lYear),gzM=ganZhiMonth(lu.lYear,lu.lMonth),gzD=ganZhiDay(y,m,d);
+  var gzIdx=gzDayIdx(y,m,d),animal=getAnimal(lu.lYear),term=findSolarTerm(y,m,d);
+  var almanac=genAlmanac(gzIdx,lu.lMonth,lu.lDay);
+  var lucky=genLucky(y,m,d);
+  var tarot=genTarot(y,m,d);
+  var iching=genIching(y,m,d);
+  var horoscopes=genHoroscopes(y,m,d);
+  var curZodiac=getZodiac(m,d);
+
+  var lmName=(lu.isLeap?'闰':'')+lunarMonthNames[lu.lMonth-1];
+  var ldName=lunarDayNames[lu.lDay];
+
+  var H='';
+
+  // --- HERO ---
+  H+='<div class="date-hero">';
+  H+='<div class="lunar-display">'+(lu.isLeap?'<span class="is-leap">闰</span>':'')+'<span class="lunar-month">'+lmName+'月</span><span class="lunar-day">'+ldName+'</span></div>';
+  H+='<div class="solar-display">'+y+'年'+m+'月'+d+'日 · 星期<span class="weekday">'+weekDays[w]+'</span></div>';
+  H+='<div class="ganzhi-display">'+gzY+'年<span class="gz-sep">·</span>'+gzM+'月<span class="gz-sep">·</span>'+gzD+'日<span class="gz-sep">·</span>属'+animal+'</div>';
+  if(term)H+='<div class="term-badge">🌿 今日'+term+'</div>';
+  H+='</div>';
+
+  // --- CHONG SHA ---
+  H+='<div class="chongsha-bar">';
+  H+='<div class="cs-item"><span class="cs-label">冲煞</span><span class="cs-value warn">冲'+almanac.chongAnimal+'（'+almanac.shaDir+'）</span></div><div class="cs-dot"></div>';
+  H+='<div class="cs-item"><span class="cs-label">建除</span><span class="cs-value">'+almanac.officer.name+'</span></div><div class="cs-dot"></div>';
+  H+='<div class="cs-item"><span class="cs-label">日柱</span><span class="cs-value">'+gzD+'</span></div>';
+  H+='</div>';
+
+  // --- ALMANAC ---
+  H+='<div class="card">';
+  H+='<div class="sec-head"><span class="icon">📋</span>'+gzD+' 黄历</div>';
+  H+='<div class="almanac-cols">';
+  H+='<div><div class="almanac-col-label yi">✅ 宜</div><ul class="almanac-list yi-list">';
+  for(var i=0;i<almanac.yi.length;i++)H+='<li>'+almanac.yi[i]+'</li>';
+  H+='</ul></div>';
+  H+='<div><div class="almanac-col-label ji">⚠️ 忌</div><ul class="almanac-list ji-list">';
+  for(var i=0;i<almanac.ji.length;i++)H+='<li>'+almanac.ji[i]+'</li>';
+  H+='</ul></div></div>';
+  H+='<div class="gods-row">';
+  H+='<div class="god-item"><div class="god-icon">💰</div><div class="god-name">财神</div><div class="god-value">'+almanac.caiShen+'</div></div>';
+  H+='<div class="god-item"><div class="god-icon">🎉</div><div class="god-name">喜神</div><div class="god-value">'+almanac.xiShen+'</div></div>';
+  H+='<div class="god-item"><div class="god-icon">🙏</div><div class="god-name">福神</div><div class="god-value">'+almanac.fuShen+'</div></div>';
+  H+='<div class="god-item"><div class="god-icon">👶</div><div class="god-name">胎神</div><div class="god-value">'+almanac.taiShen+'</div></div>';
+  H+='</div></div>';
+
+  // --- DAILY LUCKY ---
+  H+='<div class="card2">';
+  H+='<div class="sec-head"><span class="icon">🍀</span>今日幸运</div>';
+  H+='<div class="lucky-grid">';
+  H+='<div class="lucky-item"><div class="lucky-icon">🎨</div><div class="lucky-label">幸运色</div><div class="lucky-value">'+lucky.color+'</div></div>';
+  H+='<div class="lucky-item"><div class="lucky-icon">🔢</div><div class="lucky-label">幸运数字</div><div class="lucky-value">'+lucky.num+'</div></div>';
+  H+='<div class="lucky-item"><div class="lucky-icon">🧭</div><div class="lucky-label">幸运方位</div><div class="lucky-value">'+lucky.dir+'</div></div>';
+  H+='<div class="lucky-item"><div class="lucky-icon">🌿</div><div class="lucky-label">五行加持</div><div class="lucky-value">'+lucky.element+'</div></div>';
+  H+='<div class="lucky-item"><div class="lucky-icon">⏰</div><div class="lucky-label">吉时</div><div class="lucky-sub">'+lucky.time+'</div></div>';
+  H+='</div></div>';
+
+  // --- TAROT ---
+  H+='<div class="card">';
+  H+='<div class="sec-head"><span class="icon">🔮</span>塔罗日签</div>';
+  H+='<div class="tarot-card-inner">';
+  H+='<div class="tarot-visual'+(tarot.reversed?' reversed':'')+'">'+(tarot.reversed?'🃏↯':'🃏')+'</div>';
+  H+='<div class="tarot-info">';
+  H+='<div class="tarot-name">'+tarot.card.card.n+'</div>';
+  H+='<div class="tarot-en">'+tarot.card.card.en+'</div>';
+  H+='<div class="tarot-pos '+(tarot.reversed?'reversed':'upright')+'">'+(tarot.reversed?'↯ 逆位':'↑ 正位')+'</div>';
+  var tmean=tarot.card.meaning||tarot.card.card.m;
+  H+='<div class="tarot-meaning">'+tmean+'</div>';
+  H+='</div></div></div>';
+
+  // --- I CHING ---
+  var ilv=iching.lv;
+  var ilvLabel=ilv==='good'?'吉':ilv==='fair'?'平':'慎';
+  H+='<div class="card">';
+  H+='<div class="sec-head"><span class="icon">☯️</span>六爻日卦</div>';
+  H+='<div class="iching-inner">';
+  H+='<div class="iching-visual">';
+  H+='<div class="iching-hex">'+iching.t+'</div>';
+  H+='<div class="iching-tri">'+iching.t[0]+iching.t[1]+' / '+iching.t[2]+iching.t[3]+'</div>';
+  H+='</div>';
+  H+='<div class="iching-info">';
+  H+='<div class="iching-num">第'+(ichingHexagrams.indexOf(iching)+1)+'卦</div>';
+  H+='<div class="iching-name">'+iching.n+'</div>';
+  H+='<div class="iching-judge">'+iching.j+'</div>';
+  H+='<div class="iching-level '+ilv+'">'+ilvLabel+'</div>';
+  H+='</div></div></div>';
+
+  // --- ZODIAC ---
+  H+='<div class="card">';
+  H+='<div class="sec-head"><span class="icon">✨</span>十二星座今日运势';
+  if(curZodiac>=0)H+=' <span style="font-size:13px;font-weight:400;color:var(--teal);margin-left:8px;">今天属于 '+zodiacSigns[curZodiac].e+' '+zodiacSigns[curZodiac].n+'</span>';
+  H+='</div>';
+  H+='<div class="zodiac-grid">';
+  for(var i=0;i<horoscopes.length;i++){
+    var ho=horoscopes[i];
+    H+='<div class="zodiac-card'+(ho.isCur?' highlight':'')+'">';
+    H+='<div class="z-icon">'+ho.sign.e+'</div>';
+    H+='<div class="z-name">'+ho.sign.n+'</div>';
+    H+='<div class="z-stars">'+starHTML(ho.stars)+'</div>';
+    H+='<div class="z-fortune">'+ho.fortune+'</div>';
+    H+='<div class="z-meta"><span>🔢'+ho.lnum+'</span><span>🎨'+ho.lcol+'</span><span>🧭'+ho.ldir+'</span></div>';
+    H+='</div>';
+  }
+  H+='</div></div>';
+
+  document.getElementById('app').innerHTML=H;
+
+  // Auto-refresh at midnight
+  var mid=new Date();mid.setHours(24,0,0,0);
+  setTimeout(function(){render();setInterval(render,86400000);},mid-new Date()+2000);
+}
+
+render();
+</script>
+</body>
+</html>
