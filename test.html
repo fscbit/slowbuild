@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slowbuild — test page</title>
+  <style>
+    body{font-family:sans-serif;max-width:600px;margin:40px auto;padding:20px}
+    .box{background:#f0f0f0;border-radius:8px;padding:20px;margin:10px 0}
+    button{padding:10px 20px;margin:5px;cursor:pointer;border:none;border-radius:6px;background:#e87d4b;color:#fff;font-size:16px}
+    #result{margin-top:10px;font-weight:bold}
+  </style>
+</head>
+<body>
+  <h1>slowbuild test page ✅</h1>
+  <div class="box">
+    <p>If you can see this box, HTML loading works.</p>
+    <p id="jsTest" style="color:red">JS NOT loaded — check console</p>
+  </div>
+  <button onclick="testClick()">Click me (JS test)</button>
+  <div id="result"></div>
+  <script>
+    document.getElementById('jsTest').textContent = '✅ JS loaded OK';
+    document.getElementById('jsTest').style.color = 'green';
+    var clicks = 0;
+    function testClick() {
+      clicks++;
+      document.getElementById('result').textContent = 'Button clicked ' + clicks + ' time(s) at ' + new Date().toLocaleTimeString();
+    }
+    console.log('Test page JS loaded successfully');
+  </script>
+</body>
+</html>
