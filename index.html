@@ -163,11 +163,6 @@
 </style>
 </head>
 <body>
-<script>var _t0=Date.now();</script>
-<script>document.write('<div id="__diag" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#22c55e;color:#000;text-align:center;padding:4px;font-size:12px;font-family:monospace">✅ JS RUNNING — page loaded in <span id="__ms">...</span>ms</div>');</script>
-<script>var _diag=document.getElementById('__ms');if(_diag)_diag.textContent=(Date.now()-_t0);setTimeout(function(){var d=document.getElementById('__diag');if(d)d.remove()},4000);</script>
-<div id="__errors" style="position:fixed;bottom:0;left:0;right:0;z-index:99998;background:#ef4444;color:#fff;text-align:left;padding:8px;font-size:11px;font-family:monospace;max-height:120px;overflow:auto;display:none"></div>
-<script>var __showErr=function(t){var e=document.getElementById('__errors');if(e){e.style.display='block';e.innerHTML+=t+'<br>';}};</script>
 <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Menu">☰</button>
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 <!-- Sidebar -->
@@ -865,7 +860,6 @@ var lang = localStorage.getItem('slowbuild_lang') || 'en';
 })();
 
 function setLang(l) {
-  try {
   lang = l; localStorage.setItem('slowbuild_lang', l);
   document.querySelectorAll('[data-lang]').forEach(function(b){ b.classList.toggle('active', b.dataset.lang === l); });
   document.documentElement.lang = l;
@@ -873,8 +867,7 @@ function setLang(l) {
   renderToolCards();
   renderScriptCards();
   renderShop();
-  if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
-  } catch(e) { __showErr('setLang: ' + e.message); }
+  if (document.getElementById('page-tool') && document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
 }
 function t(key) { return (I18N[lang] && I18N[lang][key]) || (I18N['en'][key]) || key; }
 function applyI18n() {
@@ -884,11 +877,9 @@ function applyI18n() {
   updateSEOTitle('page','home');
 }
 function renderToolCards() {
-  try {
   var tools = I18N[lang].tools, html = '';
   tools.forEach(function(t){ html += '<div class="tool-card" onclick="showTool(\'' + t.id + '\')"><div class="icon">' + t.icon + '</div><h3>' + t.name + '</h3><p class="desc">' + t.desc + '</p></div>'; });
   document.getElementById('toolGrid').innerHTML = html;
-  } catch(e) { __showErr('renderToolCards: ' + e.message); }
 }
 
 function renderScriptCards() {
@@ -1877,7 +1868,7 @@ function uploadConvert(tool) {
       } else {
         resultDiv.textContent = '✗ ' + (lang === 'zh-CN' ? '上传失败。服务器可能离线，请稍后重试。' : 'Failed. Server may be offline. Try again later.');
       }
-      __showErr(err + " :: " + e.message);
+      console.error(err, e.message);
     });
 }
 // ═══════════════════════════════════════════
@@ -2574,8 +2565,6 @@ var SIDEBAR = {
 
 function renderSidebar(){
   var data = SIDEBAR[lang] || SIDEBAR['en'];
-  // diag
-  document.title = '✓ SB:'+lang+' items:'+data.length;
   var h = '';
   data.forEach(function(section,i){
     if(section.type==='spacer'){ h += '<div class="sidebar-spacer"></div>'; return; }
@@ -2650,16 +2639,14 @@ showTool = function(id){
 // Update init to render sidebar
 var _origSetLang = setLang;
 setLang = function(l){
-  try{ _origSetLang(l); }catch(e){ __showErr('setLang wrapper: ' + e.message); }
-  try{ renderSidebar(); }catch(e){ __showErr('renderSidebar: ' + e.message); }
-  try{ if(window._currentTool) highlightSidebar(window._currentTool); }catch(e){}
+  _origSetLang(l);
+  renderSidebar();
+  if(window._currentTool) highlightSidebar(window._currentTool);
 };
 
 // Ensure sidebar renders on initial load
-document.title = 'lang='+lang+' sidebar='+(document.getElementById('sidebarContent')?'exists':'MISSING');
-try{if(document.getElementById('sidebarContent')) renderSidebar();}catch(e){__showErr('sidebar init: ' + e.message);}
-// Force setLang if geo-detection didn't fire
-setTimeout(function(){ setLang(lang); }, 2000);
+if(document.getElementById('sidebarContent')) renderSidebar();
+setLang(lang);
 </script>
 </div><!-- /main-wrap -->
 <noscript><div style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ef4444;color:#fff;text-align:center;padding:4px;font-size:12px">⚠️ JavaScript is disabled or blocked</div></noscript>
