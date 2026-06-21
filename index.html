@@ -19,8 +19,8 @@
   <meta name="twitter:title" content="slowbuild — free micro tools, built slow">
   <meta name="twitter:description" content="Free online tools for devs, writers, and makers. No ads, no sign-up.">
   <!-- Google Analytics — 替换 G-GEH0CB22LS 为你的 GA4 衡量 ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEH0CB22LS"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GEH0CB22LS')</script>
+  <script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-GEH0CB22LS"></script>
+  <script data-cfasync="false">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GEH0CB22LS')</script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
   <style>
     :root{--bg:#fafaf8;--surface:#fff;--text:#1e1e1e;--muted:#666;--border:#e5e5e0;--accent:#e87d4b;--code-bg:#f3f0eb;--green:#3a8c5c;--radius:10px}
@@ -380,6 +380,7 @@
 <script data-cfasync="false">
 // ═══════════════════════════════════════════
 //  i18n
+(function(){document.body.insertAdjacentHTML('afterbegin','<div id="_js_test" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#22c55e;color:#000;text-align:center;padding:2px;font-size:10px;font-family:monospace">JS OK</div>');setTimeout(function(){var e=document.getElementById('_js_test');if(e)e.remove()},2000);})();
 // ═══════════════════════════════════════════
 var I18N = {
   'en': {
@@ -2648,5 +2649,6 @@ setLang = function(l){
 if(document.getElementById('sidebarContent')) renderSidebar();
 </script>
 </div><!-- /main-wrap -->
+<noscript><div style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#ef4444;color:#fff;text-align:center;padding:4px;font-size:12px">⚠️ JavaScript is disabled or blocked</div></noscript>
 </body>
 </html>
