@@ -2,7 +2,7 @@
   {
     "id": "pcb1",
     "image": "images/pcb-main.jpg",
-    "price": 21.00,
+    "price": 21.0,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
     "name": {
       "en": "Type-C PD Fast Charge Power Bank PCB Board",
@@ -52,7 +52,7 @@
   {
     "id": "mold1",
     "image": "images/mold-main.jpg",
-    "price": 15.00,
+    "price": 15.0,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
     "name": {
       "en": "3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)",
@@ -102,7 +102,7 @@
   {
     "id": "hinge1",
     "image": "images/hinge-main.jpg",
-    "price": 21.00,
+    "price": 21.0,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
     "name": {
       "en": "Heavy-Duty Cabinet Door Hinges Set (4-Pack)",
@@ -686,9 +686,16 @@
     "type": "digital",
     "image": null,
     "icon": "🎁",
-    "price": 22.00,
+    "price": 22.0,
     "buyLink": "#",
-    "bundleOf": ["exe-pdfmerge", "exe-video2mp3", "exe-dupfinder", "exe-img2pdf", "exe-renamer", "exe-csvjson"],
+    "bundleOf": [
+      "exe-pdfmerge",
+      "exe-video2mp3",
+      "exe-dupfinder",
+      "exe-img2pdf",
+      "exe-renamer",
+      "exe-csvjson"
+    ],
     "name": {
       "en": "🛠️ SlowBuild Toolbox — All 6 Premium Tools (Bundle)",
       "zh-CN": "🛠️ SlowBuild 工具箱 — 6款 Premium 工具打包",
@@ -1110,9 +1117,18 @@
     "type": "digital",
     "image": null,
     "icon": "🚀",
-    "price": 35.00,
+    "price": 35.0,
     "buyLink": "#",
-    "bundleOf": ["exe-fba-calc", "exe-sku-gen", "exe-listing-opt", "exe-invoice-gen", "exe-shopify-csv", "exe-keyword-tool", "exe-currency", "exe-translator"],
+    "bundleOf": [
+      "exe-fba-calc",
+      "exe-sku-gen",
+      "exe-listing-opt",
+      "exe-invoice-gen",
+      "exe-shopify-csv",
+      "exe-keyword-tool",
+      "exe-currency",
+      "exe-translator"
+    ],
     "name": {
       "en": "🚀 Cross-Border Seller Toolkit — All 8 E-Commerce Tools (Bundle)",
       "zh-CN": "🚀 跨境卖家工具箱 — 8款电商工具打包",
@@ -1157,6 +1173,1941 @@
         "🌐 產品描述翻譯器（8語）",
         "💰 比單獨購買省 30%（$35 vs $50.91）"
       ]
+    }
+  },
+  {
+    "id": "breadboard1",
+    "image": "images/breadboard-kit.jpg",
+    "price": 12.99,
+    "name": {
+      "en": "830-Point Solderless Breadboard + Jumper Wire Kit",
+      "zh-CN": "830孔 免焊面包板 + 跳线套装",
+      "zh-TW": "830孔 免焊麵包板 + 跳線套裝"
+    },
+    "desc": {
+      "en": "Complete breadboard starter kit with 830 tie-points, 65 male-to-male jumper wires, power rails. Perfect for Arduino, Raspberry Pi, and electronics prototyping. No soldering required.",
+      "zh-CN": "完整面包板入门套装：830孔、65根公对公跳线、电源轨。Arduino/Raspberry Pi 原型开发必备，免焊接即插即用。",
+      "zh-TW": "完整麵包板入門套裝：830孔、65根公對公跳線、電源軌。Arduino/Raspberry Pi 原型開發必備，免焊接即插即用。"
+    },
+    "specs": {
+      "en": [
+        "830 tie-points with dual power rails",
+        "65× male-to-male jumper wires (varied lengths)",
+        "Self-adhesive backing for mounting",
+        "ABS plastic base, phosphor bronze contacts",
+        "Compatible with Arduino UNO, Nano, ESP32, Raspberry Pi",
+        "Size: 165×55×8mm"
+      ],
+      "zh-CN": [
+        "830孔 + 双电源轨",
+        "65根 公对公跳线（多种长度）",
+        "底部自粘胶，可固定安装",
+        "ABS塑料底座，磷铜触点",
+        "兼容 Arduino UNO/Nano/ESP32/Raspberry Pi",
+        "尺寸：165×55×8mm"
+      ],
+      "zh-TW": [
+        "830孔 + 雙電源軌",
+        "65根 公對公跳線（多種長度）",
+        "底部自粘膠，可固定安裝",
+        "ABS塑料底座，磷銅觸點",
+        "相容 Arduino UNO/Nano/ESP32/Raspberry Pi",
+        "尺寸：165×55×8mm"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "esp32-1",
+    "image": "images/esp32-dev-board.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "ESP32-WROOM-32D Development Board (WiFi + Bluetooth)",
+      "zh-CN": "ESP32-WROOM-32D 开发板 (WiFi + 蓝牙)",
+      "zh-TW": "ESP32-WROOM-32D 開發板 (WiFi + 藍牙)"
+    },
+    "desc": {
+      "en": "Dual-core ESP32 dev board with WiFi 802.11 b/g/n + Bluetooth 4.2 BLE. 38-pin GPIO, USB-C, perfect for IoT, smart home, and DIY automation projects. Arduino IDE compatible.",
+      "zh-CN": "双核 ESP32 开发板，WiFi + 蓝牙 4.2 BLE，38 引脚 GPIO，USB-C 接口。IoT、智能家居、DIY 自动化首选。兼容 Arduino IDE。",
+      "zh-TW": "雙核 ESP32 開發板，WiFi + 藍牙 4.2 BLE，38 引腳 GPIO，USB-C 接口。IoT、智能家居、DIY 自動化首選。相容 Arduino IDE。"
+    },
+    "specs": {
+      "en": [
+        "ESP32-WROOM-32D dual-core 240MHz",
+        "WiFi 802.11 b/g/n + Bluetooth 4.2 BLE",
+        "38-pin GPIO breakout (ADC, DAC, SPI, I2C, UART)",
+        "4MB Flash + 520KB SRAM",
+        "USB-C port (CH340C chip)",
+        "Arduino IDE / MicroPython / ESP-IDF compatible"
+      ],
+      "zh-CN": [
+        "ESP32-WROOM-32D 双核 240MHz",
+        "WiFi + 蓝牙 4.2 BLE",
+        "38引脚 GPIO（ADC/DAC/SPI/I2C/UART）",
+        "4MB Flash + 520KB SRAM",
+        "USB-C 接口（CH340C 芯片）",
+        "兼容 Arduino IDE / MicroPython / ESP-IDF"
+      ],
+      "zh-TW": [
+        "ESP32-WROOM-32D 雙核 240MHz",
+        "WiFi + 藍牙 4.2 BLE",
+        "38引腳 GPIO（ADC/DAC/SPI/I2C/UART）",
+        "4MB Flash + 520KB SRAM",
+        "USB-C 接口（CH340C 芯片）",
+        "相容 Arduino IDE / MicroPython / ESP-IDF"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "sensor-kit1",
+    "image": "images/sensor-kit.jpg",
+    "price": 19.99,
+    "name": {
+      "en": "37-in-1 Sensor Module Kit for Arduino / Raspberry Pi",
+      "zh-CN": "37合1 传感器模块套件 (Arduino/Raspberry Pi)",
+      "zh-TW": "37合1 感測器模組套件 (Arduino/Raspberry Pi)"
+    },
+    "desc": {
+      "en": "Complete sensor starter kit: ultrasonic, IR, temperature, humidity, motion, sound, light, flame, gas, touch, and 27 more modules. All with pre-soldered pins and cables. The ultimate maker's toolbox.",
+      "zh-CN": "完整传感器入门套件：超声波、红外、温度、湿度、运动、声音、光线、火焰、气体、触摸等 37 种模块。全预焊排针+排线。创客终极工具箱。",
+      "zh-TW": "完整感測器入門套件：超聲波、紅外、溫度、濕度、運動、聲音、光線、火焰、氣體、觸摸等 37 種模組。全預焊排針+排線。創客終極工具箱。"
+    },
+    "specs": {
+      "en": [
+        "37 sensor & actuator modules (pre-soldered)",
+        "Includes: ultrasonic HC-SR04, DHT11 temp/humidity, PIR motion, IR receiver",
+        "3× breadboard + 120× jumper wires + 20× F-F dupont cables",
+        "All modules in organized plastic storage box",
+        "5V / 3.3V compatible with Arduino & Raspberry Pi",
+        "Each module with pin labels & mini PCB"
+      ],
+      "zh-CN": [
+        "37种传感器&执行器模块（预焊排针）",
+        "含：超声波HC-SR04、DHT11温湿度、PIR人体感应、红外接收",
+        "3块面包板 + 120根跳线 + 20根母对母杜邦线",
+        "全部模块收纳在塑料零件盒",
+        "5V/3.3V 兼容 Arduino & Raspberry Pi",
+        "每块带引脚标注和迷你PCB"
+      ],
+      "zh-TW": [
+        "37種感測器&執行器模組（預焊排針）",
+        "含：超聲波HC-SR04、DHT11溫濕度、PIR人體感應、紅外接收",
+        "3塊麵包板 + 120根跳線 + 20根母對母杜邦線",
+        "全部模組收納在塑膠零件盒",
+        "5V/3.3V 相容 Arduino & Raspberry Pi",
+        "每塊帶引腳標注和迷你PCB"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "soldering-iron1",
+    "image": "images/soldering-iron.jpg",
+    "price": 24.99,
+    "name": {
+      "en": "65W Adjustable Temperature Soldering Iron Kit (16-in-1)",
+      "zh-CN": "65W 调温电烙铁套装 16合1",
+      "zh-TW": "65W 調溫電烙鐵套裝 16合1"
+    },
+    "desc": {
+      "en": "Professional soldering iron with 200-450°C adjustable temperature, ceramic heating core, fast 20s heat-up. Includes solder wire, desoldering pump, tweezers, stand, 5 tips. Everything in a carry case.",
+      "zh-CN": "专业电烙铁，200-450°C 可调温，陶瓷发热芯，20秒速热。含焊锡丝、吸锡器、镊子、烙铁架、5个烙铁头。收纳包一拎就走。",
+      "zh-TW": "專業電烙鐵，200-450°C 可調溫，陶瓷發熱芯，20秒速熱。含焊錫絲、吸錫器、鑷子、烙鐵架、5個烙鐵頭。收納包一拎就走。"
+    },
+    "specs": {
+      "en": [
+        "65W ceramic core, 200-450°C adjustable",
+        "20-second fast heat-up",
+        "LED digital temperature display",
+        "5 interchangeable tips (point, chisel, knife, bevel, conical)",
+        "Includes: solder wire 50g, desoldering pump, tweezers, stand",
+        "Carrying case: 28×18×5cm"
+      ],
+      "zh-CN": [
+        "65W 陶瓷芯，200-450°C 可调",
+        "20秒速热",
+        "LED 数显温度",
+        "5个可换烙铁头（尖头/刀头/K型/马蹄/锥形）",
+        "含：焊锡丝50g、吸锡器、镊子、烙铁架",
+        "收纳包：28×18×5cm"
+      ],
+      "zh-TW": [
+        "65W 陶瓷芯，200-450°C 可調",
+        "20秒速熱",
+        "LED 數顯溫度",
+        "5個可換烙鐵頭（尖頭/刀頭/K型/馬蹄/錐形）",
+        "含：焊錫絲50g、吸錫器、鑷子、烙鐵架",
+        "收納包：28×18×5cm"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "jumper-wire1",
+    "image": "images/jumper-wire-set.jpg",
+    "price": 6.99,
+    "name": {
+      "en": "120-Pack Dupont Jumper Wire Set (M-M / M-F / F-F)",
+      "zh-CN": "120根 杜邦线套装（公公/公母/母母）",
+      "zh-TW": "120根 杜邦線套裝（公公/公母/母母）"
+    },
+    "desc": {
+      "en": "Premium 24AWG copper jumper wires, 3 types × 40 pieces each. 20cm length, color-coded. Essential for breadboard, Arduino, Raspberry Pi, and electronics prototyping. Flexible silicone insulation.",
+      "zh-CN": "高品质 24AWG 铜芯杜邦线，3种×40根，20cm 彩色分类。面包板/Arduino/Raspberry Pi 电子原型必备。柔性硅胶绝缘层。",
+      "zh-TW": "高品質 24AWG 銅芯杜邦線，3種×40根，20cm 彩色分類。麵包板/Arduino/Raspberry Pi 電子原型必備。柔性矽膠絕緣層。"
+    },
+    "specs": {
+      "en": [
+        "120 pieces total: 40 M-M + 40 M-F + 40 F-F",
+        "24AWG pure copper core",
+        "20cm (8 inch) length each",
+        "10 colors for easy circuit tracing",
+        "Flexible silicone insulation (heat resistant)",
+        "Compatible with 2.54mm standard pins"
+      ],
+      "zh-CN": [
+        "共120根：40公公 + 40公母 + 40母母",
+        "24AWG 纯铜线芯",
+        "每根20cm",
+        "10种颜色便于区分电路",
+        "柔性硅胶绝缘（耐高温）",
+        "兼容2.54mm标准排针"
+      ],
+      "zh-TW": [
+        "共120根：40公公 + 40公母 + 40母母",
+        "24AWG 純銅線芯",
+        "每根20cm",
+        "10種顏色便於區分電路",
+        "柔性矽膠絕緣（耐高溫）",
+        "相容2.54mm標準排針"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "heat-shrink1",
+    "image": "images/heat-shrink-tubing.jpg",
+    "price": 5.99,
+    "name": {
+      "en": "580-Piece Heat Shrink Tubing Kit (8 Sizes, 2:1 Ratio)",
+      "zh-CN": "580根 热缩管套装（8种尺寸，2:1）",
+      "zh-TW": "580根 熱縮管套裝（8種尺寸，2:1）"
+    },
+    "desc": {
+      "en": "Professional heat shrink tubing assortment: 8 sizes from 1mm to 10mm, 2:1 shrink ratio, polyolefin material. Ideal for wire insulation, cable repair, DIY electronics, and automotive wiring. Comes in organized box.",
+      "zh-CN": "专业热缩管套装：8种尺寸 1mm-10mm，2:1收缩比，聚烯烃材质。电线绝缘、线缆修复、DIY 电子、汽车线路的理想选择。收纳盒分格。",
+      "zh-TW": "專業熱縮管套裝：8種尺寸 1mm-10mm，2:1收縮比，聚烯烴材質。電線絕緣、線纜修復、DIY 電子、汽車線路的理想選擇。收納盒分格。"
+    },
+    "specs": {
+      "en": [
+        "580 pieces total across 8 sizes",
+        "Sizes: 1.0 / 1.5 / 2.0 / 2.5 / 3.5 / 5.0 / 7.0 / 10.0mm",
+        "2:1 shrink ratio (shrinks to 50% diameter)",
+        "Polyolefin material, flame retardant",
+        "Shrink temp: 70-125°C, operating: -55 to 125°C",
+        "Color: black, organized plastic box"
+      ],
+      "zh-CN": [
+        "共580根，8种尺寸",
+        "尺寸：1.0/1.5/2.0/2.5/3.5/5.0/7.0/10.0mm",
+        "2:1 收缩比",
+        "聚烯烃材质，阻燃",
+        "收缩温度70-125°C，工作温度-55~125°C",
+        "黑色，收纳塑料盒"
+      ],
+      "zh-TW": [
+        "共580根，8種尺寸",
+        "尺寸：1.0/1.5/2.0/2.5/3.5/5.0/7.0/10.0mm",
+        "2:1 收縮比",
+        "聚烯烴材質，阻燃",
+        "收縮溫度70-125°C，工作溫度-55~125°C",
+        "黑色，收納塑膠盒"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "servo-motor1",
+    "image": "images/servo-motor.jpg",
+    "price": 14.99,
+    "name": {
+      "en": "5-Pack SG90 Micro Servo Motor + 2-Pack MG996R for Arduino",
+      "zh-CN": "5个 SG90 微型舵机 + 2个 MG996R (Arduino)",
+      "zh-TW": "5個 SG90 微型舵機 + 2個 MG996R (Arduino)"
+    },
+    "desc": {
+      "en": "7 servo motors for robotics & RC projects. 5× ultra-light SG90 (9g, 180°) + 2× high-torque MG996R (55g, metal gear, 10kg·cm). Perfect for robot arms, RC cars, pan-tilt, and automation.",
+      "zh-CN": "7个舵机，机器人&遥控项目必备。5个超轻 SG90（9克，180°）+ 2个大扭力 MG996R（55克，金属齿，10kg·cm）。机械臂、遥控车、云台、自动化。",
+      "zh-TW": "7個舵機，機器人&遙控項目必備。5個超輕 SG90（9克，180°）+ 2個大扭力 MG996R（55克，金屬齒，10kg·cm）。機械臂、遙控車、雲台、自動化。"
+    },
+    "specs": {
+      "en": [
+        "5× SG90: 9g, 180° rotation, nylon gear, 1.2kg·cm torque",
+        "2× MG996R: 55g, 180°/360°, metal gear, 10kg·cm torque",
+        "Operating voltage: 4.8-6.0V DC",
+        "PWM control, 500-2500μs pulse range",
+        "Includes mounting screws & servo horns",
+        "Standard 3-pin connector (GND, VCC, Signal)"
+      ],
+      "zh-CN": [
+        "5个 SG90：9克，180°转动，尼龙齿，1.2kg·cm 扭矩",
+        "2个 MG996R：55克，180°/360°，金属齿，10kg·cm 扭矩",
+        "工作电压：4.8-6.0V DC",
+        "PWM 控制，500-2500μs 脉宽",
+        "含安装螺丝和舵盘",
+        "标准3针接口（GND, VCC, Signal）"
+      ],
+      "zh-TW": [
+        "5個 SG90：9克，180°轉動，尼龍齒，1.2kg·cm 扭矩",
+        "2個 MG996R：55克，180°/360°，金屬齒，10kg·cm 扭矩",
+        "工作電壓：4.8-6.0V DC",
+        "PWM 控制，500-2500μs 脈寬",
+        "含安裝螺絲和舵盤",
+        "標準3針接口（GND, VCC, Signal）"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "power-adapter1",
+    "image": "images/power-adapter.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "9V 1A DC Power Adapter with 5.5×2.1mm Plug + 9V Battery Clip",
+      "zh-CN": "9V 1A DC 电源适配器 + 9V 电池扣",
+      "zh-TW": "9V 1A DC 電源適配器 + 9V 電池扣"
+    },
+    "desc": {
+      "en": "Stable 9V 1A wall adapter with 5.5×2.1mm barrel jack. Perfect for Arduino UNO, breadboard power modules, LED strips, and small electronics. Includes 9V battery clip connector for portable projects.",
+      "zh-CN": "稳定 9V 1A 电源适配器，5.5×2.1mm 圆头。Arduino UNO/面包板电源/LED 灯带/小电子项目。附带 9V 电池扣接头，便携项目也能用。",
+      "zh-TW": "穩定 9V 1A 電源適配器，5.5×2.1mm 圓頭。Arduino UNO/麵包板電源/LED 燈帶/小電子項目。附帶 9V 電池扣接頭，便攜項目也能用。"
+    },
+    "specs": {
+      "en": [
+        "Output: 9V DC 1A (1000mA)",
+        "Plug: 5.5×2.1mm center-positive barrel",
+        "Input: 100-240V AC 50/60Hz (worldwide)",
+        "Includes 9V battery snap clip adapter",
+        "Overload / short-circuit / overheat protection",
+        "Cable length: 1.2m (4ft)"
+      ],
+      "zh-CN": [
+        "输出：9V DC 1A (1000mA)",
+        "插头：5.5×2.1mm 内正外负",
+        "输入：100-240V AC 全球通用",
+        "含 9V 电池扣转接头",
+        "过载/短路/过热保护",
+        "线长：1.2米"
+      ],
+      "zh-TW": [
+        "輸出：9V DC 1A (1000mA)",
+        "插頭：5.5×2.1mm 內正外負",
+        "輸入：100-240V AC 全球通用",
+        "含 9V 電池扣轉接頭",
+        "過載/短路/過熱保護",
+        "線長：1.2米"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "cable-clip1",
+    "image": "images/cable-clips.jpg",
+    "price": 5.99,
+    "name": {
+      "en": "30-Pack Self-Adhesive Cable Management Clips (3 Sizes)",
+      "zh-CN": "30个 自粘理线夹（3种尺寸）",
+      "zh-TW": "30個 自粘理線夾（3種尺寸）"
+    },
+    "desc": {
+      "en": "Tidy up your desk instantly. 30 clear adhesive cable clips in 3 sizes — hold USB cables, charging cords, network cables, headphones. No drilling, sticks to any smooth surface. Peel, stick, done.",
+      "zh-CN": "瞬间整理桌面。30个透明自粘理线夹，3种尺寸——USB线/充电线/网线/耳机线。免打孔，贴在任意光滑表面。撕开→贴上→搞定。",
+      "zh-TW": "瞬間整理桌面。30個透明自粘理線夾，3種尺寸——USB線/充電線/網線/耳機線。免打孔，貼在任意光滑表面。撕開→貼上→搞定。"
+    },
+    "specs": {
+      "en": [
+        "30 pieces: 10 large + 10 medium + 10 small",
+        "Clear polycarbonate, nearly invisible",
+        "3M-quality adhesive backing",
+        "Holds cables 2.5mm to 7mm diameter",
+        "Sticks to: desk, wall, glass, metal, plastic",
+        "Removable without residue"
+      ],
+      "zh-CN": [
+        "30个：10大 + 10中 + 10小",
+        "透明聚碳酸酯，几乎隐形",
+        "3M级别背胶",
+        "兼容2.5mm-7mm线径",
+        "可贴：桌面/墙面/玻璃/金属/塑料",
+        "移除不留残胶"
+      ],
+      "zh-TW": [
+        "30個：10大 + 10中 + 10小",
+        "透明聚碳酸酯，幾乎隱形",
+        "3M級別背膠",
+        "相容2.5mm-7mm線徑",
+        "可貼：桌面/牆面/玻璃/金屬/塑膠",
+        "移除不留殘膠"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "cable-sleeve1",
+    "image": "images/cable-sleeve.jpg",
+    "price": 7.99,
+    "name": {
+      "en": "4M Spiral Cable Wrap Sleeve — Wire Organizer Tube",
+      "zh-CN": "4米 螺旋缠绕管 线材整理套管",
+      "zh-TW": "4米 螺旋纏繞管 線材整理套管"
+    },
+    "desc": {
+      "en": "Tame the cable chaos under your desk. 4-meter spiral wrap tube bundles multiple cables into one neat snake. Cut to any length. Perfect for PC setups, home theater, server racks, and office desks.",
+      "zh-CN": "终结桌下盘丝洞。4米螺旋缠绕管，多根线缆缠成一根整洁蛇管。任意裁剪长度。台式机/家庭影院/服务器机架/办公桌通杀。",
+      "zh-TW": "終結桌下盤絲洞。4米螺旋纏繞管，多根線纜纏成一根整潔蛇管。任意裁剪長度。桌上型電腦/家庭影院/伺服器機架/辦公桌通殺。"
+    },
+    "specs": {
+      "en": [
+        "4 meters (13ft) total length",
+        "Diameter: 12mm when closed, fits 5-15 cables",
+        "PE material, flexible & durable",
+        "Cut to any length with scissors",
+        "Flame retardant (UL94 V-2)",
+        "Color: black"
+      ],
+      "zh-CN": [
+        "总长4米",
+        "闭合直径12mm，容纳5-15根线",
+        "PE材质，柔韧耐用",
+        "剪刀任意裁剪",
+        "阻燃 UL94 V-2",
+        "黑色"
+      ],
+      "zh-TW": [
+        "總長4米",
+        "閉合直徑12mm，容納5-15根線",
+        "PE材質，柔韌耐用",
+        "剪刀任意裁剪",
+        "阻燃 UL94 V-2",
+        "黑色"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "desk-organizer1",
+    "image": "images/desk-organizer.jpg",
+    "price": 16.99,
+    "name": {
+      "en": "4-Slot Bamboo Desk Organizer — Pen Holder, Phone Stand, Drawer",
+      "zh-CN": "4格 竹木桌面收纳盒 — 笔筒+手机架+抽屉",
+      "zh-TW": "4格 竹木桌面收納盒 — 筆筒+手機架+抽屜"
+    },
+    "desc": {
+      "en": "Natural bamboo desk organizer with 4 compartments: pen holder, phone/tablet stand, sticky note slot, and a mini drawer for small items. Fits standard desk accessories. Elevates any workspace instantly.",
+      "zh-CN": "天然竹木桌面收纳，4个分区：笔筒、手机/平板支架、便签槽、小抽屉。适配标准办公文具。一秒提升桌面质感。",
+      "zh-TW": "天然竹木桌面收納，4個分區：筆筒、手機/平板支架、便簽槽、小抽屜。適配標準辦公文具。一秒提升桌面質感。"
+    },
+    "specs": {
+      "en": [
+        "Natural bamboo, smooth sanded finish",
+        "4 compartments: pen holder / phone stand / note slot / drawer",
+        "Phone slot fits devices up to 12.9 inch tablet",
+        "Anti-slip silicone feet",
+        "Size: 22×12×14cm",
+        "Eco-friendly, biodegradable material"
+      ],
+      "zh-CN": [
+        "天然竹木，光滑打磨",
+        "4格：笔筒/手机架/便签槽/抽屉",
+        "手机槽兼容最大12.9寸平板",
+        "防滑硅胶脚垫",
+        "尺寸：22×12×14cm",
+        "环保可降解材质"
+      ],
+      "zh-TW": [
+        "天然竹木，光滑打磨",
+        "4格：筆筒/手機架/便簽槽/抽屜",
+        "手機槽相容最大12.9吋平板",
+        "防滑矽膠腳墊",
+        "尺寸：22×12×14cm",
+        "環保可降解材質"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "monitor-stand1",
+    "image": "images/monitor-stand.jpg",
+    "price": 22.99,
+    "name": {
+      "en": "Adjustable Aluminum Monitor Riser Stand with USB Hub",
+      "zh-CN": "铝合金 显示器增高架 带 USB 扩展",
+      "zh-TW": "鋁合金 顯示器增高架 帶 USB 擴展"
+    },
+    "desc": {
+      "en": "Ergonomic aluminum monitor stand raises your screen to eye level — reduces neck strain. Built-in 4-port USB 3.0 hub. Under-stand storage for keyboard. Adjustable 3-height. Holds up to 20kg.",
+      "zh-CN": "人体工学铝合金增高架，屏幕升至视线高度——缓解颈椎压力。内置 4口 USB 3.0 集线器。架下可收纳键盘。3档高度可调。承重 20kg。",
+      "zh-TW": "人體工學鋁合金增高架，螢幕升至視線高度——緩解頸椎壓力。內置 4口 USB 3.0 集線器。架下可收納鍵盤。3檔高度可調。承重 20kg。"
+    },
+    "specs": {
+      "en": [
+        "Aluminum alloy, silver finish",
+        "3 height levels: 8.5 / 11 / 13.5cm",
+        "4-port USB 3.0 hub (5Gbps)",
+        "Anti-slip silicone pads top & bottom",
+        "Keyboard storage underneath",
+        "Max load: 20kg (44lbs), fits monitors up to 32\""
+      ],
+      "zh-CN": [
+        "铝合金，银色",
+        "3档高度：8.5 / 11 / 13.5cm",
+        "4口 USB 3.0 集线器（5Gbps）",
+        "顶/底防滑硅胶垫",
+        "架下键盘收纳",
+        "承重20kg，适配最大32寸显示器"
+      ],
+      "zh-TW": [
+        "鋁合金，銀色",
+        "3檔高度：8.5 / 11 / 13.5cm",
+        "4口 USB 3.0 集線器（5Gbps）",
+        "頂/底防滑矽膠墊",
+        "架下鍵盤收納",
+        "承重20kg，適配最大32吋顯示器"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "laptop-stand1",
+    "image": "images/laptop-stand.jpg",
+    "price": 19.99,
+    "name": {
+      "en": "Foldable Aluminum Laptop Stand — Ergonomic 6-Level Riser",
+      "zh-CN": "折叠铝合金 笔记本支架 — 6档高度",
+      "zh-TW": "折疊鋁合金 筆記本支架 — 6檔高度"
+    },
+    "desc": {
+      "en": "Ultra-portable aluminum laptop stand. 6 adjustable tilt angles, open-air design for better cooling. Folds flat to 1.5cm, weighs only 380g. Fits all laptops 10-17 inch. Carry bag included.",
+      "zh-CN": "超便携铝合金笔记本支架。6档可调角度，镂空设计散热更好。折叠后仅 1.5cm 厚，重 380g。适配 10-17 寸所有笔记本。含收纳袋。",
+      "zh-TW": "超便攜鋁合金筆記本支架。6檔可調角度，鏤空設計散熱更好。折疊後僅 1.5cm 厚，重 380g。適配 10-17 吋所有筆記本。含收納袋。"
+    },
+    "specs": {
+      "en": [
+        "Aluminum alloy, space gray / silver",
+        "6 adjustable tilt angles",
+        "Open-air design enhances airflow & cooling",
+        "Folds flat to 15mm, weighs 380g",
+        "Anti-slip silicone pads protect laptop",
+        "Fits 10-17 inch laptops & tablets, carry bag included"
+      ],
+      "zh-CN": [
+        "铝合金，深空灰/银色",
+        "6档可调倾斜角度",
+        "镂空设计增强空气流通散热",
+        "折叠至15mm，重380g",
+        "防滑硅胶护垫保护笔记本",
+        "适配10-17寸笔记本/平板，含收纳袋"
+      ],
+      "zh-TW": [
+        "鋁合金，深空灰/銀色",
+        "6檔可調傾斜角度",
+        "鏤空設計增強空氣流通散熱",
+        "折疊至15mm，重380g",
+        "防滑矽膠護墊保護筆記本",
+        "適配10-17吋筆記本/平板，含收納袋"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "webcam-cover1",
+    "image": "images/webcam-cover.jpg",
+    "price": 4.99,
+    "name": {
+      "en": "6-Pack Ultra-Thin Webcam Privacy Cover Slider (0.7mm)",
+      "zh-CN": "6个 超薄摄像头隐私盖 (0.7mm)",
+      "zh-TW": "6個 超薄鏡頭隱私蓋 (0.7mm)"
+    },
+    "desc": {
+      "en": "Protect your privacy. Ultra-thin 0.7mm slide covers — laptop still closes normally. 6-pack fits all laptops, tablets, and phones. Easy peel-and-stick, no residue. Black & white mixed.",
+      "zh-CN": "保护隐私。超薄 0.7mm 滑盖——笔记本正常合盖。6个装，适配所有笔记本/平板/手机。即撕即贴，不留残胶。黑白混装。",
+      "zh-TW": "保護隱私。超薄 0.7mm 滑蓋——筆記本正常合蓋。6個裝，適配所有筆記本/平板/手機。即撕即貼，不留殘膠。黑白混裝。"
+    },
+    "specs": {
+      "en": [
+        "6-pack (3 black + 3 white)",
+        "Ultra-thin: 0.7mm — laptop closes normally",
+        "3M adhesive, no residue on removal",
+        "Slide-to-open mechanism, smooth action",
+        "Fits all laptop webcams, tablets, phones",
+        "Size: 18×9mm per cover"
+      ],
+      "zh-CN": [
+        "6个装（3黑+3白）",
+        "超薄0.7mm——笔记本正常合盖",
+        "3M背胶，移除不留痕",
+        "滑动开合，顺滑不卡",
+        "适配所有笔记本/平板/手机摄像头",
+        "尺寸：18×9mm/个"
+      ],
+      "zh-TW": [
+        "6個裝（3黑+3白）",
+        "超薄0.7mm——筆記本正常合蓋",
+        "3M背膠，移除不留痕",
+        "滑動開合，順滑不卡",
+        "適配所有筆記本/平板/手機鏡頭",
+        "尺寸：18×9mm/個"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "mouse-pad1",
+    "image": "images/mouse-pad-large.jpg",
+    "price": 11.99,
+    "name": {
+      "en": "Extended Desk Mat (80×30cm) — Waterproof Felt Mouse Pad",
+      "zh-CN": "大号桌垫 (80×30cm) — 防水毛毡鼠标垫",
+      "zh-TW": "大號桌墊 (80×30cm) — 防水毛氈滑鼠墊"
+    },
+    "desc": {
+      "en": "Premium dual-material desk mat: smooth fabric top for mouse + non-slip rubber bottom. Water-resistant surface, stitched edges. Covers keyboard + mouse zone. Dark gray, minimalist style.",
+      "zh-CN": "高品质双料桌垫：细纹织物面适合鼠标 + 防滑橡胶底。防水表面，锁边工艺。覆盖键盘+鼠标区。深灰色，极简风。",
+      "zh-TW": "高品質雙料桌墊：細紋織物面適合滑鼠 + 防滑橡膠底。防水表面，鎖邊工藝。覆蓋鍵盤+滑鼠區。深灰色，極簡風。"
+    },
+    "specs": {
+      "en": [
+        "Size: 80×30cm (31.5×11.8 inch)",
+        "Surface: smooth woven fabric (optimized for optical mouse)",
+        "Base: natural rubber, anti-slip",
+        "Water-resistant, wipe-clean surface",
+        "Stitched edges prevent fraying",
+        "Thickness: 3mm, dark gray"
+      ],
+      "zh-CN": [
+        "尺寸：80×30cm",
+        "表面：细纹织物（优化光学鼠标）",
+        "底部：天然橡胶，防滑",
+        "防水表面，湿布擦拭",
+        "锁边工艺防脱线",
+        "厚度：3mm，深灰色"
+      ],
+      "zh-TW": [
+        "尺寸：80×30cm",
+        "表面：細紋織物（優化光學滑鼠）",
+        "底部：天然橡膠，防滑",
+        "防水表面，濕布擦拭",
+        "鎖邊工藝防脫線",
+        "厚度：3mm，深灰色"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "usb-hub1",
+    "image": "images/usb-hub.jpg",
+    "price": 13.99,
+    "name": {
+      "en": "7-Port USB 3.0 Hub with Individual Switches + 5V Power",
+      "zh-CN": "7口 USB 3.0 集线器 带独立开关 + 5V供电",
+      "zh-TW": "7口 USB 3.0 集線器 帶獨立開關 + 5V供電"
+    },
+    "desc": {
+      "en": "7-port USB 3.0 hub with individual on/off switches per port — power only what you need. 5Gbps transfer speed, 5V/2A external power for hungry devices. Perfect for desktop setups. LED indicators per port.",
+      "zh-CN": "7口 USB 3.0 集线器，每口独立开关——用哪个开哪个。5Gbps 传输，5V/2A 外接供电带得动大功率设备。台式机桌面神器。每口 LED 指示灯。",
+      "zh-TW": "7口 USB 3.0 集線器，每口獨立開關——用哪個開哪個。5Gbps 傳輸，5V/2A 外接供電帶得動大功率設備。桌上型電腦桌面神器。每口 LED 指示燈。"
+    },
+    "specs": {
+      "en": [
+        "7× USB 3.0 ports (5Gbps, backward USB 2.0/1.1)",
+        "Individual on/off switch + blue LED per port",
+        "5V/2A DC power adapter included",
+        "USB 3.0 cable: 1m (3.3ft)",
+        "Plug & play, no drivers needed",
+        "Compatible: Windows / macOS / Linux / ChromeOS"
+      ],
+      "zh-CN": [
+        "7个 USB 3.0 口（5Gbps，向下兼容2.0/1.1）",
+        "每口独立开关 + 蓝色LED",
+        "含 5V/2A DC 电源适配器",
+        "USB 3.0数据线：1米",
+        "即插即用，免驱",
+        "兼容：Windows/macOS/Linux/ChromeOS"
+      ],
+      "zh-TW": [
+        "7個 USB 3.0 口（5Gbps，向下相容2.0/1.1）",
+        "每口獨立開關 + 藍色LED",
+        "含 5V/2A DC 電源適配器",
+        "USB 3.0數據線：1米",
+        "即插即用，免驅",
+        "相容：Windows/macOS/Linux/ChromeOS"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "phone-mount1",
+    "image": "images/phone-mount-car.jpg",
+    "price": 11.99,
+    "name": {
+      "en": "Universal Car Phone Mount — Dashboard & Windshield Suction",
+      "zh-CN": "通用车载手机支架 — 仪表台/挡风玻璃吸盘式",
+      "zh-TW": "通用車載手機支架 — 儀表台/擋風玻璃吸盤式"
+    },
+    "desc": {
+      "en": "Strong suction cup car phone mount. One-touch release mechanism, 360° rotation, fits all 4.0-7.0 inch phones. Works on dashboard and windshield. Never falls off even on bumpy roads.",
+      "zh-CN": "强力吸盘车载手机支架。一键释放、360°旋转、适配4.0-7.0寸所有手机。仪表台和挡风玻璃都能装。颠簸路面牢牢吸附不掉。",
+      "zh-TW": "強力吸盤車載手機支架。一鍵釋放、360°旋轉、適配4.0-7.0吋所有手機。儀表台和擋風玻璃都能裝。顛簸路面牢牢吸附不掉。"
+    },
+    "specs": {
+      "en": [
+        "Strong suction cup (dashboard + windshield)",
+        "One-touch lock & release button",
+        "360° rotation, adjustable viewing angle",
+        "Fits 4.0-7.0 inch phones (with or without case)",
+        "Heat-resistant TPU + ABS construction",
+        "Install in 3 seconds, no tools needed"
+      ],
+      "zh-CN": [
+        "强力吸盘（仪表台+挡风玻璃）",
+        "一键锁紧&释放",
+        "360°旋转，角度可调",
+        "适配4.0-7.0寸手机（带壳也能用）",
+        "耐高温TPU+ABS材质",
+        "3秒安装，无需工具"
+      ],
+      "zh-TW": [
+        "強力吸盤（儀表台+擋風玻璃）",
+        "一鍵鎖緊&釋放",
+        "360°旋轉，角度可調",
+        "適配4.0-7.0吋手機（帶殼也能用）",
+        "耐高溫TPU+ABS材質",
+        "3秒安裝，無需工具"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "tire-gauge1",
+    "image": "images/tire-gauge.jpg",
+    "price": 7.99,
+    "name": {
+      "en": "Digital Tire Pressure Gauge with LCD Backlight",
+      "zh-CN": "数字胎压计 LCD背光",
+      "zh-TW": "數字胎壓計 LCD背光"
+    },
+    "desc": {
+      "en": "Accurate digital tire pressure gauge. Measures 0-100 PSI / 0-7 BAR, 0.5 PSI precision. LCD backlight for night use. Auto-off saves battery. Essential for car, motorcycle, bicycle tires.",
+      "zh-CN": "精准数字胎压计。0-100 PSI / 0-7 BAR 量程，0.5 PSI 精度。LCD背光夜间可用。自动关机省电。汽车/摩托/自行车胎必备。",
+      "zh-TW": "精準數字胎壓計。0-100 PSI / 0-7 BAR 量程，0.5 PSI 精度。LCD背光夜間可用。自動關機省電。汽車/摩托/自行車胎必備。"
+    },
+    "specs": {
+      "en": [
+        "Range: 0-100 PSI / 0-7 BAR / 0-700 kPa",
+        "Accuracy: ±0.5 PSI / ±0.03 BAR",
+        "LCD display with blue backlight",
+        "Auto-off after 30 seconds",
+        "Includes CR2032 battery",
+        "Compact: 14×4×2cm, 65g"
+      ],
+      "zh-CN": [
+        "量程：0-100 PSI / 0-7 BAR / 0-700 kPa",
+        "精度：±0.5 PSI / ±0.03 BAR",
+        "LCD屏 蓝色背光",
+        "30秒自动关机",
+        "含 CR2032 电池",
+        "小巧：14×4×2cm，65g"
+      ],
+      "zh-TW": [
+        "量程：0-100 PSI / 0-7 BAR / 0-700 kPa",
+        "精度：±0.5 PSI / ±0.03 BAR",
+        "LCD屏 藍色背光",
+        "30秒自動關機",
+        "含 CR2032 電池",
+        "小巧：14×4×2cm，65g"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "car-charger1",
+    "image": "images/car-charger.jpg",
+    "price": 9.99,
+    "name": {
+      "en": "66W Dual USB-C + USB-A Car Charger (PD + QC 3.0)",
+      "zh-CN": "66W 双口 USB-C + USB-A 车载充电器 (PD+QC3.0)",
+      "zh-TW": "66W 雙口 USB-C + USB-A 車載充電器 (PD+QC3.0)"
+    },
+    "desc": {
+      "en": "Fast charge two devices simultaneously in your car. USB-C 45W PD for laptop/tablet + USB-A 18W QC 3.0 for phone. All-metal body, LED voltage display. Fits all 12V/24V car sockets.",
+      "zh-CN": "车载双口快充。USB-C 45W PD 充笔记本/平板 + USB-A 18W QC3.0 充手机。全金属机身，LED电压显示。兼容所有12V/24V车充口。",
+      "zh-TW": "車載雙口快充。USB-C 45W PD 充筆記本/平板 + USB-A 18W QC3.0 充手機。全金屬機身，LED電壓顯示。相容所有12V/24V車充口。"
+    },
+    "specs": {
+      "en": [
+        "USB-C: 45W PD (5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A)",
+        "USB-A: 18W QC 3.0",
+        "Total output: 66W max",
+        "LED voltage display (12V/24V)",
+        "All-metal zinc alloy body",
+        "Compatible with 12V & 24V vehicles"
+      ],
+      "zh-CN": [
+        "USB-C：45W PD（5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A）",
+        "USB-A：18W QC 3.0",
+        "总输出：最大66W",
+        "LED电压显示（12V/24V）",
+        "全金属锌合金机身",
+        "兼容12V & 24V车辆"
+      ],
+      "zh-TW": [
+        "USB-C：45W PD（5V/3A, 9V/3A, 12V/3A, 15V/3A, 20V/2.25A）",
+        "USB-A：18W QC 3.0",
+        "總輸出：最大66W",
+        "LED電壓顯示（12V/24V）",
+        "全金屬鋅合金機身",
+        "相容12V & 24V車輛"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "obd2-scanner1",
+    "image": "images/obd2-scanner.jpg",
+    "price": 18.99,
+    "name": {
+      "en": "ELM327 OBD2 Bluetooth Car Diagnostic Scanner",
+      "zh-CN": "ELM327 OBD2 蓝牙汽车诊断仪",
+      "zh-TW": "ELM327 OBD2 藍牙汽車診斷儀"
+    },
+    "desc": {
+      "en": "Read & clear check engine light from your phone. Bluetooth OBD2 scanner works with Torque Pro, Car Scanner apps. Reads error codes, live data, fuel economy. Compatible with all 1996+ cars (OBD2 standard).",
+      "zh-CN": "手机读取和清除发动机故障灯。蓝牙 OBD2 诊断仪，配合 Torque Pro/Car Scanner 等 App。读故障码、实时数据、油耗。兼容所有1996年后车型（OBD2标准）。",
+      "zh-TW": "手機讀取和清除引擎故障燈。藍牙 OBD2 診斷儀，配合 Torque Pro/Car Scanner 等 App。讀故障碼、即時數據、油耗。相容所有1996年後車型（OBD2標準）。"
+    },
+    "specs": {
+      "en": [
+        "ELM327 v2.1 chip, stable connection",
+        "Bluetooth 4.0, range 10m",
+        "Read & clear DTC error codes",
+        "Live data stream: RPM, speed, temp, fuel",
+        "Compatible: Android (Torque) / iOS (Car Scanner)",
+        "All OBD2 vehicles (1996+, worldwide)"
+      ],
+      "zh-CN": [
+        "ELM327 v2.1 芯片，连接稳定",
+        "蓝牙4.0，距离10米",
+        "读取和清除DTC故障码",
+        "实时数据流：转速/速度/温度/油耗",
+        "兼容：Android (Torque) / iOS (Car Scanner)",
+        "所有OBD2车辆（1996+，全球）"
+      ],
+      "zh-TW": [
+        "ELM327 v2.1 芯片，連接穩定",
+        "藍牙4.0，距離10米",
+        "讀取和清除DTC故障碼",
+        "即時數據流：轉速/速度/溫度/油耗",
+        "相容：Android (Torque) / iOS (Car Scanner)",
+        "所有OBD2車輛（1996+，全球）"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "car-air-freshener1",
+    "image": "images/car-diffuser.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "Solar-Powered Car Air Purifier & Aroma Diffuser",
+      "zh-CN": "太阳能 车载空气净化香薰机",
+      "zh-TW": "太陽能 車載空氣淨化香薰機"
+    },
+    "desc": {
+      "en": "Solar-powered car fragrance diffuser — no batteries needed. Dual-ring turbine spins with sunlight, spreading essential oil scent throughout the car. Aluminum alloy build, adds a premium touch to any dashboard.",
+      "zh-CN": "太阳能车载香薰机——不用电池。双环涡轮随阳光旋转，精油香气弥漫全车。铝合金机身，仪表台质感升级。",
+      "zh-TW": "太陽能車載香薰機——不用電池。雙環渦輪隨陽光旋轉，精油香氣彌漫全車。鋁合金機身，儀表台質感升級。"
+    },
+    "specs": {
+      "en": [
+        "Solar powered — no battery or cable needed",
+        "Dual-ring auto-spinning turbine",
+        "Aluminum alloy body, mirror finish",
+        "Compatible with any essential oils",
+        "Anti-slip base pad for dashboard",
+        "Size: 6.5×6.5×4cm, 120g"
+      ],
+      "zh-CN": [
+        "太阳能驱动——不用电池或接线",
+        "双环自动旋转涡轮",
+        "铝合金机身，镜面工艺",
+        "兼容任意精油",
+        "底部防滑垫，放仪表台稳",
+        "尺寸：6.5×6.5×4cm，120g"
+      ],
+      "zh-TW": [
+        "太陽能驅動——不用電池或接線",
+        "雙環自動旋轉渦輪",
+        "鋁合金機身，鏡面工藝",
+        "相容任意精油",
+        "底部防滑墊，放儀表台穩",
+        "尺寸：6.5×6.5×4cm，120g"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "jump-starter1",
+    "image": "images/jump-starter.jpg",
+    "price": 29.99,
+    "name": {
+      "en": "12000mAh Car Jump Starter — Portable Battery Booster + Power Bank",
+      "zh-CN": "12000mAh 汽车应急启动电源 — 便携搭电宝",
+      "zh-TW": "12000mAh 汽車應急啟動電源 — 便攜搭電寶"
+    },
+    "desc": {
+      "en": "Portable 12000mAh jump starter starts 6.0L gas / 4.0L diesel engines up to 30 times per charge. Also works as power bank with dual USB outputs + LED flashlight. Peak 2000A current. Safety clamps with 8 protections.",
+      "zh-CN": "便携12000mAh应急启动电源，一次充电启动6.0L汽油/4.0L柴油发动机最多30次。也可当充电宝（双USB输出）+ LED手电筒。峰值2000A电流。智能夹8重保护。",
+      "zh-TW": "便攜12000mAh應急啟動電源，一次充電啟動6.0L汽油/4.0L柴油引擎最多30次。也可當充電寶（雙USB輸出）+ LED手電筒。峰值2000A電流。智能夾8重保護。"
+    },
+    "specs": {
+      "en": [
+        "12000mAh Li-polymer battery",
+        "Peak current: 2000A, starts up to 6.0L gas / 4.0L diesel",
+        "Up to 30 jump starts per charge",
+        "Dual USB output (5V/2.4A) — power bank mode",
+        "LED flashlight (3 modes: normal / strobe / SOS)",
+        "8 safety protections: reverse polarity, over-current, short circuit, etc."
+      ],
+      "zh-CN": [
+        "12000mAh 锂聚合物电池",
+        "峰值电流2000A，启动最大6.0L汽油/4.0L柴油",
+        "单次充电最多启动30次",
+        "双USB输出（5V/2.4A）——可当充电宝",
+        "LED手电筒（3模式：常亮/爆闪/SOS）",
+        "8重保护：反接/过流/短路/过温等"
+      ],
+      "zh-TW": [
+        "12000mAh 鋰聚合物電池",
+        "峰值電流2000A，啟動最大6.0L汽油/4.0L柴油",
+        "單次充電最多啟動30次",
+        "雙USB輸出（5V/2.4A）——可當充電寶",
+        "LED手電筒（3模式：常亮/爆閃/SOS）",
+        "8重保護：反接/過流/短路/過溫等"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "kitchen-scale1",
+    "image": "images/kitchen-scale.jpg",
+    "price": 12.99,
+    "name": {
+      "en": "Digital Kitchen Scale 5kg / 0.1g Precision with Bowl",
+      "zh-CN": "数字厨房秤 5kg/0.1g 高精度 带碗",
+      "zh-TW": "數字廚房秤 5kg/0.1g 高精度 帶碗"
+    },
+    "desc": {
+      "en": "High-precision 0.1g kitchen scale. 5kg max capacity, stainless steel platform. Tare function, unit switch (g/oz/lb/ml). Perfect for cooking, baking, coffee, and portion control. Includes removable mixing bowl.",
+      "zh-CN": "高精度0.1g厨房秤。5kg量程，不锈钢秤面。去皮功能、单位切换（克/盎司/磅/毫升）。烹饪、烘焙、手冲咖啡、饮食控制。附带可拆卸搅拌碗。",
+      "zh-TW": "高精度0.1g廚房秤。5kg量程，不鏽鋼秤面。去皮功能、單位切換（克/盎司/磅/毫升）。烹飪、烘焙、手沖咖啡、飲食控制。附帶可拆卸攪拌碗。"
+    },
+    "specs": {
+      "en": [
+        "Max: 5000g / 0.1g precision",
+        "Stainless steel weighing platform",
+        "Tare / zero function",
+        "Units: g / oz / lb / ml / fl.oz",
+        "LCD display with blue backlight",
+        "Auto-off after 60s, includes 2× AAA + mixing bowl"
+      ],
+      "zh-CN": [
+        "最大5000g，精度0.1g",
+        "不锈钢秤面",
+        "去皮/归零功能",
+        "单位：克/盎司/磅/毫升/液盎司",
+        "LCD屏蓝色背光",
+        "60秒自动关机，含2节AAA电池+搅拌碗"
+      ],
+      "zh-TW": [
+        "最大5000g，精度0.1g",
+        "不鏽鋼秤面",
+        "去皮/歸零功能",
+        "單位：克/盎司/磅/毫升/液盎司",
+        "LCD屏藍色背光",
+        "60秒自動關機，含2節AAA電池+攪拌碗"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "led-strip1",
+    "image": "images/led-strip.jpg",
+    "price": 15.99,
+    "name": {
+      "en": "5M RGB LED Strip Light with Smart App + Remote Control",
+      "zh-CN": "5米 RGB LED 灯带 智能App+遥控",
+      "zh-TW": "5米 RGB LED 燈帶 智能App+遙控"
+    },
+    "desc": {
+      "en": "5-meter color-changing LED strip with 150 RGB LEDs. Control via phone app (WiFi/Bluetooth) or remote. 16 million colors, music sync, timer, scene modes. USB powered, adhesive backing. Perfect for room, TV backlight, desk.",
+      "zh-CN": "5米变色LED灯带，150颗RGB灯珠。手机App（WiFi/蓝牙）或遥控器控制。1600万色、音乐律动、定时、场景模式。USB供电，背面背胶。房间/电视背光/桌面氛围。",
+      "zh-TW": "5米變色LED燈帶，150顆RGB燈珠。手機App（WiFi/藍牙）或遙控器控制。1600萬色、音樂律動、定時、場景模式。USB供電，背面背膠。房間/電視背光/桌面氛圍。"
+    },
+    "specs": {
+      "en": [
+        "5 meters, 150 RGB LEDs (5050 SMD)",
+        "16 million colors, 20+ dynamic modes",
+        "App control (Tuya/Smart Life) + 24-key remote",
+        "Music sync (microphone built into controller)",
+        "Timer & schedule function",
+        "USB powered, 3M adhesive backing, cuttable every 3 LEDs"
+      ],
+      "zh-CN": [
+        "5米，150颗RGB灯珠（5050 SMD）",
+        "1600万色，20+动态模式",
+        "App控制（涂鸦/智能生活）+ 24键遥控",
+        "音乐律动（控制器内置麦克风）",
+        "定时&日程功能",
+        "USB供电，3M背胶，每3颗灯珠可裁剪"
+      ],
+      "zh-TW": [
+        "5米，150顆RGB燈珠（5050 SMD）",
+        "1600萬色，20+動態模式",
+        "App控制（塗鴉/智慧生活）+ 24鍵遙控",
+        "音樂律動（控制器內置麥克風）",
+        "定時&日程功能",
+        "USB供電，3M背膠，每3顆燈珠可裁剪"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "smart-plug1",
+    "image": "images/smart-plug.jpg",
+    "price": 11.99,
+    "name": {
+      "en": "WiFi Smart Plug (16A) — Voice + App Remote Control",
+      "zh-CN": "WiFi 智能插座 (16A) — 语音+App远程控制",
+      "zh-TW": "WiFi 智慧插座 (16A) — 語音+App遠程控制"
+    },
+    "desc": {
+      "en": "Turn any appliance smart in 10 seconds. WiFi smart plug with timer, schedule, voice control (Alexa/Google Home). Monitor energy usage, set countdown timers. 16A max, fits standard wall sockets.",
+      "zh-CN": "10秒让任意电器变智能。WiFi智能插座，定时、日程、语音控制（Alexa/小爱/Google Home）。用电量监控，倒计时关。16A最大，标准墙面插座。",
+      "zh-TW": "10秒讓任意電器變智慧。WiFi智慧插座，定時、日程、語音控制（Alexa/Google Home）。用電量監控，倒計時關。16A最大，標準牆面插座。"
+    },
+    "specs": {
+      "en": [
+        "WiFi 2.4GHz, no hub required",
+        "App: Smart Life / Tuya (iOS + Android)",
+        "Voice: Alexa, Google Home, Siri Shortcuts",
+        "16A / 3680W max load",
+        "Timer, schedule, countdown, away mode",
+        "Energy monitoring (real-time power consumption)",
+        "Size: 5×5×3cm, compact design"
+      ],
+      "zh-CN": [
+        "WiFi 2.4GHz，无需网关",
+        "App：智能生活/涂鸦（iOS+Android）",
+        "语音：Alexa/小爱/Google Home/Siri",
+        "16A / 3680W 最大负载",
+        "定时/日程/倒计时/离家模式",
+        "用电量监控（实时功率）",
+        "尺寸：5×5×3cm，小巧不挡邻座"
+      ],
+      "zh-TW": [
+        "WiFi 2.4GHz，無需網關",
+        "App：智慧生活/塗鴉（iOS+Android）",
+        "語音：Alexa/Google Home/Siri",
+        "16A / 3680W 最大負載",
+        "定時/日程/倒計時/離家模式",
+        "用電量監控（即時功率）",
+        "尺寸：5×5×3cm，小巧不擋鄰座"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "milk-frother1",
+    "image": "images/milk-frother.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "Electric Milk Frother — Handheld Foam Maker + Mixer",
+      "zh-CN": "电动奶泡器 — 手持打泡+搅拌",
+      "zh-TW": "電動奶泡器 — 手持打泡+攪拌"
+    },
+    "desc": {
+      "en": "Make café-quality lattes at home. High-speed 19000 RPM motor creates rich microfoam in 20 seconds. Also works as egg beater, protein shake mixer, matcha whisk. 2 AA batteries, stainless steel whisk.",
+      "zh-CN": "在家做出咖啡馆级拿铁。19000 RPM 高速电机，20秒打出细腻绵密奶泡。还能打蛋、搅蛋白粉、打抹茶。2节AA电池，不锈钢搅拌头。",
+      "zh-TW": "在家做出咖啡館級拿鐵。19000 RPM 高速電機，20秒打出細膩綿密奶泡。還能打蛋、攪蛋白粉、打抹茶。2節AA電池，不鏽鋼攪拌頭。"
+    },
+    "specs": {
+      "en": [
+        "19000 RPM high-speed motor",
+        "Stainless steel whisk head (removable, dishwasher safe)",
+        "20 seconds for perfect microfoam",
+        "Multi-use: milk froth / egg beat / mix drinks",
+        "Powered by 2× AA batteries (not included)",
+        "Compact: 22×3.5cm, 100g"
+      ],
+      "zh-CN": [
+        "19000 RPM 高速电机",
+        "不锈钢搅拌头（可拆卸，洗碗机安全）",
+        "20秒打出完美绵密奶泡",
+        "多用：打奶泡/打蛋/搅拌饮",
+        "2节AA电池供电（不含）",
+        "小巧：22×3.5cm，100g"
+      ],
+      "zh-TW": [
+        "19000 RPM 高速電機",
+        "不鏽鋼攪拌頭（可拆卸，洗碗機安全）",
+        "20秒打出完美綿密奶泡",
+        "多用：打奶泡/打蛋/攪拌飲",
+        "2節AA電池供電（不含）",
+        "小巧：22×3.5cm，100g"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "silicone-bags1",
+    "image": "images/silicone-bags.jpg",
+    "price": 14.99,
+    "name": {
+      "en": "10-Pack Reusable Silicone Food Storage Bags (Leakproof)",
+      "zh-CN": "10个 可重复使用硅胶食品袋（防漏）",
+      "zh-TW": "10個 可重複使用矽膠食品袋（防漏）"
+    },
+    "desc": {
+      "en": "Replace single-use plastic bags forever. 10 food-grade silicone bags in 3 sizes — airtight, leakproof seal. Freezer safe, microwave safe, dishwasher safe. Save money and the planet.",
+      "zh-CN": "永远告别一次性塑料袋。10个食品级硅胶袋，3种尺寸——密封防漏。可冷冻/微波/洗碗机。省钱包也省地球。",
+      "zh-TW": "永遠告別一次性塑膠袋。10個食品級矽膠袋，3種尺寸——密封防漏。可冷凍/微波/洗碗機。省錢包也省地球。"
+    },
+    "specs": {
+      "en": [
+        "10 bags: 4 large + 4 medium + 2 snack size",
+        "100% food-grade LFGB silicone",
+        "Airtight double-seal zipper — no leaks",
+        "Temperature: -40°C to 230°C (-40°F to 446°F)",
+        "Freezer / microwave / dishwasher safe",
+        "Reusable 3000+ times, BPA-free"
+      ],
+      "zh-CN": [
+        "10袋：4大 + 4中 + 2零食",
+        "100% 食品级 LFGB 硅胶",
+        "双密封拉链——不漏",
+        "温度：-40°C 到 230°C",
+        "可冷冻/微波/洗碗机",
+        "可重复使用3000+次，无BPA"
+      ],
+      "zh-TW": [
+        "10袋：4大 + 4中 + 2零食",
+        "100% 食品級 LFGB 矽膠",
+        "雙密封拉鏈——不漏",
+        "溫度：-40°C 到 230°C",
+        "可冷凍/微波/洗碗機",
+        "可重複使用3000+次，無BPA"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "door-stop1",
+    "image": "images/door-stop.jpg",
+    "price": 6.99,
+    "name": {
+      "en": "4-Pack Magnetic Door Stopper — Silent Close, No Drilling",
+      "zh-CN": "4个 磁吸门吸 — 静音闭合，免打孔",
+      "zh-TW": "4個 磁吸門吸 — 靜音閉合，免打孔"
+    },
+    "desc": {
+      "en": "Magnetic door catch keeps doors open without slamming. Strong neodymium magnet holds door firmly. 3M adhesive or screw mounting. Silent, no more door banging. Fits all door types.",
+      "zh-CN": "磁吸门吸，保持门常开不撞墙。强力钕磁铁牢牢吸住。3M背胶或螺丝两种安装。静音，不再被门撞声烦。适配所有门型。",
+      "zh-TW": "磁吸門吸，保持門常開不撞牆。強力釹磁鐵牢牢吸住。3M背膠或螺絲兩種安裝。靜音，不再被門撞聲煩。適配所有門型。"
+    },
+    "specs": {
+      "en": [
+        "4-pack: 2 wall-side + 2 door-side",
+        "Strong neodymium magnet",
+        "3M adhesive (no drilling) or screw mount",
+        "Silent close, soft landing",
+        "ABS body, rust-proof",
+        "Fits wood, metal, glass doors"
+      ],
+      "zh-CN": [
+        "4个装：2个墙面端 + 2个门端",
+        "强力钕磁铁",
+        "3M背胶（免打孔）或螺丝安装",
+        "静音闭合，轻缓停止",
+        "ABS外壳，防锈",
+        "适用木门/金属门/玻璃门"
+      ],
+      "zh-TW": [
+        "4個裝：2個牆面端 + 2個門端",
+        "強力釹磁鐵",
+        "3M背膠（免打孔）或螺絲安裝",
+        "靜音閉合，輕緩停止",
+        "ABS外殼，防鏽",
+        "適用木門/金屬門/玻璃門"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "mini-flashlight1",
+    "image": "images/mini-flashlight.jpg",
+    "price": 13.99,
+    "name": {
+      "en": "1000 Lumen Mini LED Flashlight — USB-C Rechargeable, Zoomable",
+      "zh-CN": "1000流明 迷你LED手电筒 — USB-C充电，变焦",
+      "zh-TW": "1000流明 迷你LED手電筒 — USB-C充電，變焦"
+    },
+    "desc": {
+      "en": "Pocket-sized powerhouse. 1000 lumens, 5 modes (high/med/low/strobe/SOS), zoomable beam from flood to spot. USB-C rechargeable, 1500mAh. Magnetic tail cap, IPX5 waterproof. EDC essential.",
+      "zh-CN": "口袋里的光炮。1000流明，5种模式（高/中/低/爆闪/SOS），变焦泛光↔聚光。USB-C充电，1500mAh。磁吸尾盖，IPX5防水。EDC必备。",
+      "zh-TW": "口袋裡的光砲。1000流明，5種模式（高/中/低/爆閃/SOS），變焦泛光↔聚光。USB-C充電，1500mAh。磁吸尾蓋，IPX5防水。EDC必備。"
+    },
+    "specs": {
+      "en": [
+        "1000 lumens max (CREE XM-L2 LED)",
+        "5 modes: high / medium / low / strobe / SOS",
+        "Zoomable: flood ↔ spot beam",
+        "USB-C rechargeable, 1500mAh battery (included)",
+        "Magnetic tail cap + pocket clip",
+        "IPX5 waterproof, 120g, 12×3cm"
+      ],
+      "zh-CN": [
+        "最高1000流明（CREE XM-L2 LED）",
+        "5模式：高/中/低/爆闪/SOS",
+        "变焦：泛光↔聚光",
+        "USB-C充电，含1500mAh电池",
+        "磁吸尾盖 + 口袋夹",
+        "IPX5防水，120g，12×3cm"
+      ],
+      "zh-TW": [
+        "最高1000流明（CREE XM-L2 LED）",
+        "5模式：高/中/低/爆閃/SOS",
+        "變焦：泛光↔聚光",
+        "USB-C充電，含1500mAh電池",
+        "磁吸尾蓋 + 口袋夾",
+        "IPX5防水，120g，12×3cm"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "headlamp1",
+    "image": "images/headlamp.jpg",
+    "price": 9.99,
+    "name": {
+      "en": "LED Headlamp — 5 Modes, USB Rechargeable, Motion Sensor",
+      "zh-CN": "LED 头灯 — 5模式 USB充电 挥手感应",
+      "zh-TW": "LED 頭燈 — 5模式 USB充電 揮手感應"
+    },
+    "desc": {
+      "en": "Hands-free headlamp with motion sensor — wave to turn on/off. 230° wide beam, 5 modes including red light for night vision. USB-C rechargeable, adjustable elastic band. Perfect for camping, running, hiking, repairs.",
+      "zh-CN": "挥手感应的免提头灯——手一挥就开关。230° 广角照明，5种模式含红光夜视。USB-C充电，可调松紧带。露营/跑步/徒步/修车神器。",
+      "zh-TW": "揮手感應的免提頭燈——手一揮就開關。230° 廣角照明，5種模式含紅光夜視。USB-C充電，可調鬆緊帶。露營/跑步/徒步/修車神器。"
+    },
+    "specs": {
+      "en": [
+        "Motion sensor: wave hand to on/off",
+        "230° wide beam COB LED + spotlight LED",
+        "5 modes: high / low / red / red strobe / SOS",
+        "USB-C rechargeable, 1200mAh",
+        "Adjustable elastic headband (child & adult)",
+        "IPX4 splash-proof, 85g"
+      ],
+      "zh-CN": [
+        "挥手感应开关",
+        "230°广角COB LED + 聚光LED",
+        "5模式：高亮/低亮/红光/红光闪/SOS",
+        "USB-C充电，1200mAh",
+        "可调松紧带（儿童&成人）",
+        "IPX4防溅，85g"
+      ],
+      "zh-TW": [
+        "揮手感應開關",
+        "230°廣角COB LED + 聚光LED",
+        "5模式：高亮/低亮/紅光/紅光閃/SOS",
+        "USB-C充電，1200mAh",
+        "可調鬆緊帶（兒童&成人）",
+        "IPX4防濺，85g"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "carabiner1",
+    "image": "images/carabiner-clip.jpg",
+    "price": 7.99,
+    "name": {
+      "en": "5-Pack Heavy-Duty Carabiner Clips — Aluminum D-Ring Keychain",
+      "zh-CN": "5个 重型铝合金 快挂D扣 钥匙扣",
+      "zh-TW": "5個 重型鋁合金 快掛D扣 鑰匙扣"
+    },
+    "desc": {
+      "en": "5-pack aluminum carabiner clips. 30kg load capacity each. Spring-loaded gate, anodized colors. Clip keys, water bottles, gear to backpack. Not for climbing — perfect EDC / camping / hiking accessory.",
+      "zh-CN": "5个铝合金快挂扣。每个承重30kg。弹簧扣门，阳极氧化彩色。挂钥匙、水瓶、装备到背包上。非攀岩用途——EDC/露营/徒步配件。",
+      "zh-TW": "5個鋁合金快掛扣。每個承重30kg。彈簧扣門，陽極氧化彩色。掛鑰匙、水瓶、裝備到背包上。非攀岩用途——EDC/露營/徒步配件。"
+    },
+    "specs": {
+      "en": [
+        "5-pack, 5 anodized colors",
+        "Aluminum alloy 7075, 30kg load each",
+        "Spring-loaded wire gate",
+        "Size: 60×30mm (standard D-ring)",
+        "Weight: 12g each",
+        "⚠️ NOT for climbing / safety use"
+      ],
+      "zh-CN": [
+        "5个装，5色阳极氧化",
+        "7075铝合金，每只承重30kg",
+        "弹簧扣门",
+        "尺寸：60×30mm（标准 D 扣）",
+        "重量：12g/个",
+        "⚠️ 非攀岩/承重安全用途"
+      ],
+      "zh-TW": [
+        "5個裝，5色陽極氧化",
+        "7075鋁合金，每只承重30kg",
+        "彈簧扣門",
+        "尺寸：60×30mm（標準 D 扣）",
+        "重量：12g/個",
+        "⚠️ 非攀岩/承重安全用途"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "dry-bag1",
+    "image": "images/dry-bag.jpg",
+    "price": 11.99,
+    "name": {
+      "en": "5L / 10L / 20L Waterproof Dry Bag — Roll-Top Closure",
+      "zh-CN": "5L/10L/20L 防水袋 — 卷口密封",
+      "zh-TW": "5L/10L/20L 防水袋 — 卷口密封"
+    },
+    "desc": {
+      "en": "Keep your gear dry. Lightweight 210T nylon waterproof dry bag with roll-top closure. 3 sizes available. Perfect for kayaking, boating, beach, hiking, or protecting electronics in rain. Floats on water.",
+      "zh-CN": "装备防水神器。轻量210T尼龙防水袋，卷口密封。3种容量可选。皮划艇/划船/海滩/徒步，雨天保护电子设备。落水不沉。",
+      "zh-TW": "裝備防水神器。輕量210T尼龍防水袋，卷口密封。3種容量可選。獨木舟/划船/海灘/徒步，雨天保護電子設備。落水不沉。"
+    },
+    "specs": {
+      "en": [
+        "Available sizes: 5L / 10L / 20L (select at checkout)",
+        "210T ripstop nylon, waterproof coating",
+        "Roll-top closure (3-4 folds), secure buckle",
+        "Fully waterproof when properly closed",
+        "Floats on water with air trapped inside",
+        "Weight: 50-80g depending on size"
+      ],
+      "zh-CN": [
+        "可选：5L / 10L / 20L（下单备注）",
+        "210T 防撕裂尼龙，防水涂层",
+        "卷口密封（3-4折），安全卡扣",
+        "正确密封后完全防水",
+        "内含空气，落水不沉",
+        "重量：50-80g（因容量而异）"
+      ],
+      "zh-TW": [
+        "可選：5L / 10L / 20L（下單備註）",
+        "210T 防撕裂尼龍，防水塗層",
+        "卷口密封（3-4折），安全卡扣",
+        "正確密封後完全防水",
+        "內含空氣，落水不沉",
+        "重量：50-80g（因容量而異）"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "portable-fan1",
+    "image": "images/portable-fan.jpg",
+    "price": 14.99,
+    "name": {
+      "en": "USB Rechargeable Portable Fan — 3-Speed, Foldable, Desk/Clip",
+      "zh-CN": "USB充电 便携风扇 — 3档 折叠 桌面/夹式",
+      "zh-TW": "USB充電 便攜風扇 — 3檔 折疊 桌面/夾式"
+    },
+    "desc": {
+      "en": "Versatile 3-in-1 fan: desk stand, clip-on, or handheld. 3 speeds, 360° tilt, ultra-quiet brushless motor. 4000mAh battery lasts 6-20 hours. Clip it anywhere — stroller, desk, bed, camping tent.",
+      "zh-CN": "三合一多功能风扇：桌面、夹式、手持。3档风速、360°摇头、超静音无刷电机。4000mAh电池续航6-20小时。婴儿车/桌面/床头/帐篷随便夹。",
+      "zh-TW": "三合一多功能風扇：桌面、夾式、手持。3檔風速、360°搖頭、超靜音無刷電機。4000mAh電池續航6-20小時。嬰兒車/桌面/床頭/帳篷隨便夾。"
+    },
+    "specs": {
+      "en": [
+        "3-in-1: desk / clip-on / handheld",
+        "3 speeds (low/med/high) + 360° rotation",
+        "Brushless motor, <30dB (silent)",
+        "4000mAh battery, USB-C rechargeable",
+        "Runtime: 6h (high) / 12h (med) / 20h (low)",
+        "Clip opens to 6cm, fits most surfaces"
+      ],
+      "zh-CN": [
+        "三合一：桌面/夹式/手持",
+        "3档风速 + 360°旋转",
+        "无刷电机，<30dB静音",
+        "4000mAh电池，USB-C充电",
+        "续航：6h(高)/12h(中)/20h(低)",
+        "夹口最大6cm，适配多数表面"
+      ],
+      "zh-TW": [
+        "三合一：桌面/夾式/手持",
+        "3檔風速 + 360°旋轉",
+        "無刷電機，<30dB靜音",
+        "4000mAh電池，USB-C充電",
+        "續航：6h(高)/12h(中)/20h(低)",
+        "夾口最大6cm，適配多數表面"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "picnic-blanket1",
+    "image": "images/picnic-blanket.jpg",
+    "price": 16.99,
+    "name": {
+      "en": "Waterproof Foldable Picnic Blanket (200×200cm) — 4-Person",
+      "zh-CN": "防水折叠 野餐垫 (200×200cm) — 4人",
+      "zh-TW": "防水折疊 野餐墊 (200×200cm) — 4人"
+    },
+    "desc": {
+      "en": "Large 200×200cm picnic mat for 4 people. 3-layer: soft fleece top + sponge middle + waterproof PEVA bottom. Folds into a compact carry bag with handle. Weighs only 600g. Beach, park, camping, festival ready.",
+      "zh-CN": "大号200×200cm野餐垫，4人使用。3层结构：柔软摇粒绒面+海绵中层+防水PEVA底层。折叠入便携收纳包带提手。仅重600g。沙滩/公园/露营/音乐节。",
+      "zh-TW": "大號200×200cm野餐墊，4人使用。3層結構：柔軟搖粒絨面+海綿中層+防水PEVA底層。折疊入便攜收納包帶提手。僅重600g。沙灘/公園/露營/音樂節。"
+    },
+    "specs": {
+      "en": [
+        "Size: 200×200cm (open) / 30×20cm (folded)",
+        "3-layer: fleece top + foam middle + PEVA waterproof bottom",
+        "Folds into carry bag with handle",
+        "Easy clean: wipe or machine wash",
+        "Weight: 600g",
+        "Sand-proof, moisture-proof, water-resistant"
+      ],
+      "zh-CN": [
+        "尺寸：200×200cm（展开）/ 30×20cm（折叠）",
+        "3层：摇粒绒+海绵+PEVA防水底",
+        "折叠入携带收纳包",
+        "易清洁：湿布擦或机洗",
+        "重量：600g",
+        "防沙/防潮/防水"
+      ],
+      "zh-TW": [
+        "尺寸：200×200cm（展開）/ 30×20cm（折疊）",
+        "3層：搖粒絨+海綿+PEVA防水底",
+        "折疊入攜帶收納包",
+        "易清潔：濕布擦或機洗",
+        "重量：600g",
+        "防沙/防潮/防水"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "usb-c-cable1",
+    "image": "images/usb-c-cable.jpg",
+    "price": 7.99,
+    "name": {
+      "en": "100W USB-C to USB-C Cable (2M) — Fast Charge + Data, Braided",
+      "zh-CN": "100W USB-C to USB-C 快充线 (2米) — 编织",
+      "zh-TW": "100W USB-C to USB-C 快充線 (2米) — 編織"
+    },
+    "desc": {
+      "en": "Premium 2-meter braided USB-C cable. 100W PD fast charging + 480Mbps data. Nylon braided, 50000+ bend lifespan. Works with MacBook, iPad, Samsung, Pixel, Switch, and all USB-C devices.",
+      "zh-CN": "高品质2米编织USB-C线。100W PD快充 + 480Mbps数据传输。尼龙编织，50000+弯折寿命。MacBook/iPad/三星/Pixel/Switch 全部兼容。",
+      "zh-TW": "高品質2米編織USB-C線。100W PD快充 + 480Mbps數據傳輸。尼龍編織，50000+彎折壽命。MacBook/iPad/三星/Pixel/Switch 全部相容。"
+    },
+    "specs": {
+      "en": [
+        "100W PD 3.0 fast charging (20V/5A)",
+        "480Mbps USB 2.0 data transfer",
+        "2 meters (6.6ft) length",
+        "Nylon braided, aluminum connector housing",
+        "50000+ bend test certified",
+        "E-Marker chip for safe 100W delivery"
+      ],
+      "zh-CN": [
+        "100W PD 3.0 快充（20V/5A）",
+        "480Mbps USB 2.0 数据传输",
+        "2米长度",
+        "尼龙编织，铝合金接头",
+        "通过50000+次弯折测试",
+        "内置 E-Marker 芯片，100W安全输出"
+      ],
+      "zh-TW": [
+        "100W PD 3.0 快充（20V/5A）",
+        "480Mbps USB 2.0 數據傳輸",
+        "2米長度",
+        "尼龍編織，鋁合金接頭",
+        "通過50000+次彎折測試",
+        "內置 E-Marker 芯片，100W安全輸出"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "cable-organizer1",
+    "image": "images/cable-organizer-bag.jpg",
+    "price": 14.99,
+    "name": {
+      "en": "Electronic Organizer Bag — Double-Layer Travel Cable Case",
+      "zh-CN": "数码收纳包 — 双层旅行线材收纳",
+      "zh-TW": "數位收納包 — 雙層旅行線材收納"
+    },
+    "desc": {
+      "en": "Keep all your gadgets organized on the go. Double-layer design holds charger, cables, power bank, SD cards, USB drives, earphones. Water-resistant Oxford fabric, elastic bands, mesh pockets. Perfect travel companion.",
+      "zh-CN": "出行数码收纳利器。双层设计收纳充电器、数据线、充电宝、SD卡、U盘、耳机。防水牛津布，弹力绑带，网袋分区。旅行神器。",
+      "zh-TW": "出行數位收納利器。雙層設計收納充電器、數據線、充電寶、SD卡、隨身碟、耳機。防水牛津布，彈力綁帶，網袋分區。旅行神器。"
+    },
+    "specs": {
+      "en": [
+        "Double-layer design with zippered compartments",
+        "Elastic bands + mesh pockets for organizing",
+        "Water-resistant Oxford fabric exterior",
+        "Fits: chargers, cables, power bank, SD cards, USB drives",
+        "Size: 24×17×6cm (open), 24×17×3cm (closed)",
+        "Lightweight: 250g, travel-ready"
+      ],
+      "zh-CN": [
+        "双层拉链隔层设计",
+        "弹力绑带 + 网袋分区收纳",
+        "外层防水牛津布",
+        "收纳：充电器/数据线/充电宝/SD卡/U盘",
+        "尺寸：24×17×6cm（开）/ 24×17×3cm（合）",
+        "轻量250g，出行便携"
+      ],
+      "zh-TW": [
+        "雙層拉鏈隔層設計",
+        "彈力綁帶 + 網袋分區收納",
+        "外層防水牛津布",
+        "收納：充電器/數據線/充電寶/SD卡/隨身碟",
+        "尺寸：24×17×6cm（開）/ 24×17×3cm（合）",
+        "輕量250g，出行便攜"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "screen-protector1",
+    "image": "images/screen-protector.jpg",
+    "price": 5.99,
+    "name": {
+      "en": "Universal Tablet Screen Cleaning Kit — Spray + Microfiber + Wipes",
+      "zh-CN": "通用平板屏幕清洁套装 — 喷雾+超细纤维布+湿巾",
+      "zh-TW": "通用平板螢幕清潔套裝 — 噴霧+超細纖維布+濕巾"
+    },
+    "desc": {
+      "en": "Complete screen cleaning kit for all devices. 200ml streak-free spray + large microfiber cloth + 20 wet/dry wipes. Safe for phone, tablet, laptop, TV, camera lens. Anti-static formula repels dust.",
+      "zh-CN": "全设备屏幕清洁套装。200ml无痕清洁喷雾 + 大号超细纤维布 + 20片干湿巾。手机/平板/笔记本/电视/相机镜头都安全。抗静电配方不易沾灰。",
+      "zh-TW": "全設備螢幕清潔套裝。200ml無痕清潔噴霧 + 大號超細纖維布 + 20片乾濕巾。手機/平板/筆記本/電視/相機鏡頭都安全。抗靜電配方不易沾灰。"
+    },
+    "specs": {
+      "en": [
+        "200ml streak-free cleaning spray",
+        "1× large microfiber cloth (30×30cm)",
+        "20× wet/dry cleaning wipes",
+        "Anti-static, anti-fog formula",
+        "Safe for all screens & lenses (alcohol-free)",
+        "Includes travel-size spray bottle"
+      ],
+      "zh-CN": [
+        "200ml 无痕清洁喷雾",
+        "1块大号超细纤维布（30×30cm）",
+        "20片干湿清洁湿巾",
+        "抗静电、防雾配方",
+        "所有屏幕&镜头安全（不含酒精）",
+        "含便携旅行装喷雾瓶"
+      ],
+      "zh-TW": [
+        "200ml 無痕清潔噴霧",
+        "1塊大號超細纖維布（30×30cm）",
+        "20片乾濕清潔濕巾",
+        "抗靜電、防霧配方",
+        "所有螢幕&鏡頭安全（不含酒精）",
+        "含便攜旅行裝噴霧瓶"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "usb-light1",
+    "image": "images/usb-lamp.jpg",
+    "price": 5.99,
+    "name": {
+      "en": "USB LED Mini Lamp — Flexible Gooseneck, 3 Brightness Levels",
+      "zh-CN": "USB LED 迷你灯 — 柔性鹅颈管 3档亮度",
+      "zh-TW": "USB LED 迷你燈 — 柔性鵝頸管 3檔亮度"
+    },
+    "desc": {
+      "en": "Tiny USB gooseneck light for laptop, power bank, or any USB port. 3 brightness levels, 360° bendable neck. Perfect for keyboard lighting at night, reading, or as emergency light. 18cm, 25g.",
+      "zh-CN": "迷你USB鹅颈灯，插笔记本/充电宝/任意USB口。3档亮度、360°弯曲鹅颈。夜间键盘照明、阅读、应急灯。18cm，25g。",
+      "zh-TW": "迷你USB鵝頸燈，插筆記本/充電寶/任意USB口。3檔亮度、360°彎曲鵝頸。夜間鍵盤照明、閱讀、應急燈。18cm，25g。"
+    },
+    "specs": {
+      "en": [
+        "3 brightness levels (touch switch)",
+        "360° bendable gooseneck (18cm)",
+        "USB-A plug, works with any USB port",
+        "Warm white 3000K LED",
+        "Power: 1.5W, ultra-low consumption",
+        "Weight: 25g, portable"
+      ],
+      "zh-CN": [
+        "3档亮度（触摸开关）",
+        "360°可弯鹅颈管（18cm）",
+        "USB-A插头，任意USB口即用",
+        "暖白3000K LED",
+        "功率：1.5W，超低功耗",
+        "重量：25g，便携"
+      ],
+      "zh-TW": [
+        "3檔亮度（觸摸開關）",
+        "360°可彎鵝頸管（18cm）",
+        "USB-A插頭，任意USB口即用",
+        "暖白3000K LED",
+        "功率：1.5W，超低功耗",
+        "重量：25g，便攜"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "sd-card-reader1",
+    "image": "images/sd-card-reader.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "USB 3.0 SD/MicroSD Card Reader — 5Gbps, Dual Slot",
+      "zh-CN": "USB 3.0 SD/TF卡读卡器 — 5Gbps 双卡槽",
+      "zh-TW": "USB 3.0 SD/TF卡讀卡器 — 5Gbps 雙卡槽"
+    },
+    "desc": {
+      "en": "Fast dual-slot card reader. SD + MicroSD simultaneously, USB 3.0 5Gbps speed. Plug & play, no drivers. Aluminum body, keychain loop. Read photos, videos, dashcam footage instantly.",
+      "zh-CN": "高速双卡槽读卡器。SD + TF同时读写，USB 3.0 5Gbps。即插即用免驱。铝合金机身，钥匙扣环。照片/视频/行车记录仪秒传。",
+      "zh-TW": "高速雙卡槽讀卡器。SD + TF同時讀寫，USB 3.0 5Gbps。即插即用免驅。鋁合金機身，鑰匙扣環。照片/影片/行車記錄器秒傳。"
+    },
+    "specs": {
+      "en": [
+        "Dual slot: SD + MicroSD (read simultaneously)",
+        "USB 3.0, 5Gbps transfer speed",
+        "Supports SDXC / SDHC / UHS-I up to 2TB",
+        "Aluminum alloy body with keychain loop",
+        "Plug & play, no driver needed",
+        "Compatible: Windows / macOS / Linux / Android (OTG)"
+      ],
+      "zh-CN": [
+        "双卡槽：SD + TF（可同时读写）",
+        "USB 3.0，5Gbps传输",
+        "支持 SDXC/SDHC/UHS-I，最大2TB",
+        "铝合金机身 + 钥匙扣环",
+        "即插即用免驱",
+        "兼容：Windows/macOS/Linux/Android(OTG)"
+      ],
+      "zh-TW": [
+        "雙卡槽：SD + TF（可同時讀寫）",
+        "USB 3.0，5Gbps傳輸",
+        "支援 SDXC/SDHC/UHS-I，最大2TB",
+        "鋁合金機身 + 鑰匙扣環",
+        "即插即用免驅",
+        "相容：Windows/macOS/Linux/Android(OTG)"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "bluetooth-adapter1",
+    "image": "images/bluetooth-adapter.jpg",
+    "price": 9.99,
+    "name": {
+      "en": "Bluetooth 5.3 USB Adapter — Ultra-Low Latency, Plug & Play",
+      "zh-CN": "蓝牙5.3 USB适配器 — 超低延迟 即插即用",
+      "zh-TW": "藍牙5.3 USB適配器 — 超低延遲 即插即用"
+    },
+    "desc": {
+      "en": "Add Bluetooth 5.3 to any desktop PC. Connect mouse, keyboard, headphones, game controller simultaneously. Ultra-low latency for gaming, 20m range. Nano size — barely visible when plugged in.",
+      "zh-CN": "给任意台式机加上蓝牙5.3。同时连接鼠标/键盘/耳机/手柄。游戏级超低延迟，20米距离。纳米尺寸——插上几乎看不见。",
+      "zh-TW": "給任意桌上型電腦加上藍牙5.3。同時連接滑鼠/鍵盤/耳機/手柄。遊戲級超低延遲，20米距離。奈米尺寸——插上幾乎看不見。"
+    },
+    "specs": {
+      "en": [
+        "Bluetooth 5.3 (backward to 4.0)",
+        "Range: 20m (open space)",
+        "Connect up to 7 devices simultaneously",
+        "Ultra-low latency, supports aptX / AAC audio",
+        "Nano size: 15×7×5mm",
+        "Plug & play: Windows 8/10/11 (driver auto-install)"
+      ],
+      "zh-CN": [
+        "蓝牙5.3（向下兼容4.0）",
+        "距离：20米（开放空间）",
+        "最多同时连7设备",
+        "超低延迟，支持 aptX/AAC 音频",
+        "纳米尺寸：15×7×5mm",
+        "即插即用：Windows 8/10/11 自动装驱动"
+      ],
+      "zh-TW": [
+        "藍牙5.3（向下相容4.0）",
+        "距離：20米（開放空間）",
+        "最多同時連7設備",
+        "超低延遲，支援 aptX/AAC 音訊",
+        "奈米尺寸：15×7×5mm",
+        "即插即用：Windows 8/10/11 自動裝驅動"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "laptop-sleeve1",
+    "image": "images/laptop-sleeve.jpg",
+    "price": 16.99,
+    "name": {
+      "en": "Water-Resistant Laptop Sleeve Case (11-17 inch) — Padded + Pocket",
+      "zh-CN": "防水 笔记本电脑内胆包 (11-17寸) — 加厚+口袋",
+      "zh-TW": "防水 筆記型電腦內膽包 (11-17吋) — 加厚+口袋"
+    },
+    "desc": {
+      "en": "Slim, padded laptop sleeve with front pocket for accessories. Water-resistant neoprene + canvas exterior. Soft fleece lining protects from scratches. Available in 11-17 inch sizes. Fits MacBook, Dell, HP, Lenovo.",
+      "zh-CN": "轻薄加厚笔记本内胆包，前置配件口袋。防水氯丁橡胶+帆布外层。柔软绒毛内衬防刮花。可选11-17寸。适配MacBook/戴尔/惠普/联想。",
+      "zh-TW": "輕薄加厚筆記本內膽包，前置配件口袋。防水氯丁橡膠+帆布外層。柔軟絨毛內襯防刮花。可選11-17吋。適配MacBook/戴爾/惠普/聯想。"
+    },
+    "specs": {
+      "en": [
+        "Multiple sizes: 11-12 / 13-14 / 15-16 / 17 inch",
+        "Water-resistant neoprene + canvas",
+        "5mm padding + soft fleece lining",
+        "Front zippered pocket (charger, mouse, cables)",
+        "Slim design fits inside another bag",
+        "Color: dark gray / black"
+      ],
+      "zh-CN": [
+        "多种尺寸：11-12/13-14/15-16/17寸",
+        "防水氯丁橡胶+帆布",
+        "5mm加厚+柔软绒毛内衬",
+        "前置拉链口袋（充电器/鼠标/线材）",
+        "轻薄设计可放入其他包内",
+        "颜色：深灰/黑色"
+      ],
+      "zh-TW": [
+        "多種尺寸：11-12/13-14/15-16/17吋",
+        "防水氯丁橡膠+帆布",
+        "5mm加厚+柔軟絨毛內襯",
+        "前置拉鏈口袋（充電器/滑鼠/線材）",
+        "輕薄設計可放入其他包內",
+        "顏色：深灰/黑色"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "phone-stand1",
+    "image": "images/phone-stand.jpg",
+    "price": 8.99,
+    "name": {
+      "en": "Adjustable Aluminum Phone & Tablet Stand — Foldable Desktop Holder",
+      "zh-CN": "铝合金 可调手机&平板支架 — 折叠桌面座",
+      "zh-TW": "鋁合金 可調手機&平板支架 — 折疊桌面座"
+    },
+    "desc": {
+      "en": "Premium aluminum alloy stand for phone and tablet. Adjustable angle + height, foldable to pocket size. Anti-slip silicone pads, cable pass-through hole. One stand for all devices — phone, tablet, Kindle, Switch.",
+      "zh-CN": "高品质铝合金支架，手机平板通用。角度+高度可调，可折叠成口袋大小。防滑硅胶垫，底部留线孔。一架上所有设备——手机/平板/Kindle/Switch。",
+      "zh-TW": "高品質鋁合金支架，手機平板通用。角度+高度可調，可折疊成口袋大小。防滑矽膠墊，底部留線孔。一架上所有設備——手機/平板/Kindle/Switch。"
+    },
+    "specs": {
+      "en": [
+        "Aluminum alloy, space gray / silver",
+        "Adjustable height & tilt angle",
+        "Foldable to 15×10×2cm (pocket size)",
+        "Anti-slip silicone pads (top + bottom)",
+        "Cable pass-through hole for charging while using",
+        "Fits 4-13 inch devices, max 1kg load"
+      ],
+      "zh-CN": [
+        "铝合金，深空灰/银色",
+        "高度和角度可调",
+        "折叠至15×10×2cm（口袋大小）",
+        "上下防滑硅胶垫",
+        "底部留线孔，边充边用",
+        "适配4-13寸设备，最大承重1kg"
+      ],
+      "zh-TW": [
+        "鋁合金，深空灰/銀色",
+        "高度和角度可調",
+        "折疊至15×10×2cm（口袋大小）",
+        "上下防滑矽膠墊",
+        "底部留線孔，邊充邊用",
+        "適配4-13吋設備，最大承重1kg"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
     }
   }
 ]
