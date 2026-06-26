@@ -148,5 +148,255 @@
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
     }
+  },
+  {
+    "id": "usbtest1",
+    "image": "images/usb-tester.jpg",
+    "price": 9.99,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "USB-C PD Tester & Multimeter (6-in-1)",
+      "zh-CN": "USB-C PD 快充测试仪 6合1 多功能",
+      "zh-TW": "USB-C PD 快充測試儀 6合1 多功能"
+    },
+    "desc": {
+      "en": "Compact USB power tester with color LCD. Measure voltage, current, power, capacity, and supported fast-charge protocols. A must-have tool for every electronics DIYer to check your cables, chargers, and power banks.",
+      "zh-CN": "小巧 USB 测试仪，彩色 LCD 显示。实时测量电压、电流、功率、容量，还能检测快充协议。每个电子 DIY 玩家必备，拿来测数据线、充电头、充电宝一目了然。",
+      "zh-TW": "小巧 USB 測試儀，彩色 LCD 顯示。即時測量電壓、電流、功率、容量，還能檢測快充協議。每個電子 DIY 玩家必備，拿來測數據線、充電頭、充電寶一目了然。"
+    },
+    "specs": {
+      "en": [
+        "Color LCD display — voltage / current / power / capacity",
+        "USB-C & USB-A dual input (bidirectional)",
+        "PD 3.0 / QC 4+ / AFC / FCP / SCP protocol detection",
+        "Over-voltage / over-current / short-circuit alarm",
+        "Supports up to 8A / 240W pass-through",
+        "Data logging & storage function",
+        "Fits in your pocket — 60×28×12mm"
+      ],
+      "zh-CN": [
+        "彩色 LCD 显示 — 电压/电流/功率/容量",
+        "USB-C & USB-A 双口输入（双向）",
+        "PD 3.0 / QC 4+ / AFC / FCP / SCP 协议检测",
+        "过压/过流/短路报警",
+        "最高支持 8A / 240W 直通",
+        "数据记录和存储功能",
+        "口袋大小 — 60×28×12mm"
+      ],
+      "zh-TW": [
+        "彩色 LCD 顯示 — 電壓/電流/功率/容量",
+        "USB-C & USB-A 雙口輸入（雙向）",
+        "PD 3.0 / QC 4+ / AFC / FCP / SCP 協議檢測",
+        "過壓/過流/短路報警",
+        "最高支援 8A / 240W 直通",
+        "數據記錄和存儲功能",
+        "口袋大小 — 60×28×12mm"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "screwdriver1",
+    "image": "images/screwdriver-set.jpg",
+    "price": 15.99,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "45-in-1 Precision Screwdriver Set with Magnetic Bits",
+      "zh-CN": "45合1 精密螺丝刀套装 磁性批头",
+      "zh-TW": "45合1 精密螺絲刀套裝 磁性批頭"
+    },
+    "desc": {
+      "en": "Compact precision screwdriver kit for phone repair, laptop disassembly, glasses, watches, drones, and all electronics. Magnetic driver handle with 45 interchangeable bits — the ultimate tool for your desk drawer.",
+      "zh-CN": "袖珍精密螺丝刀套装，手机维修、笔记本拆机、眼镜、手表、无人机都适用。磁性手柄 + 45 个可换批头 — 放桌上抽屉里随时能用。",
+      "zh-TW": "袖珍精密螺絲刀套裝，手機維修、筆記本拆機、眼鏡、手錶、無人機都適用。磁性手柄 + 45 個可換批頭 — 放桌上抽屜裡隨時能用。"
+    },
+    "specs": {
+      "en": [
+        "45 interchangeable bits (Phillips / Flat / Torx / Hex / Pentalobe etc.)",
+        "Magnetic driver handle — bits stay put",
+        "Aluminum alloy handle, non-slip grip",
+        "Flexible extension shaft for tight spaces",
+        "Includes opening picks, suction cup, tweezers",
+        "Compact storage case — 14×9×4cm",
+        "Ideal for phones, laptops, drones, glasses, toys"
+      ],
+      "zh-CN": [
+        "45个可换批头（十字/一字/梅花/六角/五星等）",
+        "磁性手柄 — 批头不掉",
+        "铝合金手柄，防滑握感",
+        "柔性延长杆，狭窄空间也能用",
+        "含撬片、吸盘、镊子等拆机工具",
+        "紧凑收纳盒 — 14×9×4cm",
+        "手机/笔记本/无人机/眼镜/玩具都适用"
+      ],
+      "zh-TW": [
+        "45個可換批頭（十字/一字/梅花/六角/五星等）",
+        "磁性手柄 — 批頭不掉",
+        "鋁合金手柄，防滑握感",
+        "柔性延長桿，狹窄空間也能用",
+        "含撬片、吸盤、鑷子等拆機工具",
+        "緊湊收納盒 — 14×9×4cm",
+        "手機/筆記本/無人機/眼鏡/玩具都適用"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "thermo1",
+    "image": "images/thermo-hygro.jpg",
+    "price": 7.99,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "Mini LCD Digital Thermometer & Hygrometer",
+      "zh-CN": "迷你 LCD 数显温湿度计",
+      "zh-TW": "迷你 LCD 數顯溫濕度計"
+    },
+    "desc": {
+      "en": "Tiny digital thermometer + humidity meter with crisp LCD screen. Perfect for home, office, server room, wine cellar, humidor, or greenhouse. Runs for a year on a single button cell.",
+      "zh-CN": "超小数字温湿度计，LCD 清晰读数。放家里、办公室、机房、酒柜、雪茄盒、花房都行。一颗纽扣电池用一年。",
+      "zh-TW": "超小數字溫濕度計，LCD 清晰讀數。放家裡、辦公室、機房、酒櫃、雪茄盒、花房都行。一顆鈕扣電池用一年。"
+    },
+    "specs": {
+      "en": [
+        "Temperature range: -20°C ~ 70°C (-4°F ~ 158°F)",
+        "Humidity range: 10% ~ 99% RH",
+        "Accuracy: ±1°C / ±5% RH",
+        "Refresh rate: every 10 seconds",
+        "CR2032 button cell (included), ~12 months",
+        "3 mounting options: stand / magnet / sticker",
+        "Ultra-compact: 48×30×9mm"
+      ],
+      "zh-CN": [
+        "温度范围：-20°C ~ 70°C",
+        "湿度范围：10% ~ 99% RH",
+        "精度：±1°C / ±5% RH",
+        "刷新间隔：10 秒",
+        "CR2032 纽扣电池（含），续航约 12 个月",
+        "三种安装：支架 / 磁吸 / 背胶",
+        "超小尺寸：48×30×9mm"
+      ],
+      "zh-TW": [
+        "溫度範圍：-20°C ~ 70°C",
+        "濕度範圍：10% ~ 99% RH",
+        "精度：±1°C / ±5% RH",
+        "刷新間隔：10 秒",
+        "CR2032 鈕扣電池（含），續航約 12 個月",
+        "三種安裝：支架 / 磁吸 / 背膠",
+        "超小尺寸：48×30×9mm"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "multitool1",
+    "image": "images/multitool-card.jpg",
+    "price": 12.99,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "Stainless Steel Credit Card Multi-Tool (18-in-1)",
+      "zh-CN": "不锈钢信用卡多功能工具卡 18合1",
+      "zh-TW": "不鏽鋼信用卡多功能工具卡 18合1"
+    },
+    "desc": {
+      "en": "Wallet-sized survival tool made of 420 stainless steel. Includes wrench set, screwdrivers, bottle opener, ruler, saw blade, and more — all in a card that fits your wallet. TSA-safe, perfect EDC companion.",
+      "zh-CN": "钱包大小的生存工具卡，420 不锈钢材质。集成扳手、螺丝刀、开瓶器、尺子、锯刃等 18 种功能，塞钱包里就行。TSA 安检友好，EDC 随身利器。",
+      "zh-TW": "錢包大小的生存工具卡，420 不鏽鋼材質。集成扳手、螺絲刀、開瓶器、尺子、鋸刃等 18 種功能，塞錢包裡就行。TSA 安檢友好，EDC 隨身利器。"
+    },
+    "specs": {
+      "en": [
+        "18-in-1: wrench set (5 sizes), flathead & Phillips driver",
+        "Bottle opener, can opener, box cutter",
+        "Butterfly wrench, saw blade, ruler (inch + cm)",
+        "Made of 420 stainless steel — rust-proof",
+        "Credit card size: 70×45×2mm, fits any wallet",
+        "TSA-safe (no blade over 6cm)",
+        "Great gift for outdoors, camping, DIY, everyday carry"
+      ],
+      "zh-CN": [
+        "18合1：5种扳手 + 一字/十字螺丝刀",
+        "开瓶器、开罐器、开箱刀",
+        "蝶形扳手、锯刃、刻度尺（英寸+厘米）",
+        "420 不锈钢 — 防锈耐用",
+        "信用卡大小：70×45×2mm，塞钱包",
+        "TSA 安检友好（无超 6cm 刀刃）",
+        "户外/露营/DIY/EDC 送礼好选择"
+      ],
+      "zh-TW": [
+        "18合1：5種扳手 + 一字/十字螺絲刀",
+        "開瓶器、開罐器、開箱刀",
+        "蝶形扳手、鋸刃、刻度尺（英寸+厘米）",
+        "420 不鏽鋼 — 防鏽耐用",
+        "信用卡大小：70×45×2mm，塞錢包",
+        "TSA 安檢友好（無超 6cm 刀刃）",
+        "戶外/露營/DIY/EDC 送禮好選擇"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
+  },
+  {
+    "id": "ledlight1",
+    "image": "images/led-work-light.jpg",
+    "price": 18.99,
+    "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
+    "name": {
+      "en": "COB LED Rechargeable Work Light with Magnetic Base",
+      "zh-CN": "COB LED 充电工作灯 磁吸底座",
+      "zh-TW": "COB LED 充電工作燈 磁吸底座"
+    },
+    "desc": {
+      "en": "Super-bright COB LED flood light with 180° folding stand and strong magnetic base. Stick it on your car hood, workbench, or any metal surface. Rechargeable via USB-C, lasts 4–8 hours. Perfect for garage, camping, roadside repairs, and power outages.",
+      "zh-CN": "超亮 COB LED 泛光灯，180° 折叠支架 + 强力磁吸底座。吸在车引擎盖、工作台、任何金属面上。USB-C 充电，续航 4-8 小时。修车、露营、停电都好用。",
+      "zh-TW": "超亮 COB LED 泛光燈，180° 折疊支架 + 強力磁吸底座。吸在車引擎蓋、工作台、任何金屬面上。USB-C 充電，續航 4-8 小時。修車、露營、停電都好用。"
+    },
+    "specs": {
+      "en": [
+        "COB LED panel — 500 lumens, 180° wide beam",
+        "3 brightness modes (high / low / strobe)",
+        "Strong magnetic base + 180° folding hook",
+        "USB-C rechargeable (cable included), 2000mAh",
+        "Runtime: 4h (high) / 8h (low) / 10h (strobe)",
+        "IPX4 water-resistant — rain & splash proof",
+        "Lightweight: 180g, portable for any job"
+      ],
+      "zh-CN": [
+        "COB LED 灯板 — 500 流明，180° 广角",
+        "3档亮度（高亮/低亮/爆闪）",
+        "强力磁吸底座 + 180° 折叠挂钩",
+        "USB-C 充电（含线），2000mAh",
+        "续航：4h（高亮）/ 8h（低亮）/ 10h（爆闪）",
+        "IPX4 防水 — 下雨溅水不怕",
+        "轻便：180g，随手带走"
+      ],
+      "zh-TW": [
+        "COB LED 燈板 — 500 流明，180° 廣角",
+        "3檔亮度（高亮/低亮/爆閃）",
+        "強力磁吸底座 + 180° 折疊掛鉤",
+        "USB-C 充電（含線），2000mAh",
+        "續航：4h（高亮）/ 8h（低亮）/ 10h（爆閃）",
+        "IPX4 防水 — 下雨濺水不怕",
+        "輕便：180g，隨手帶走"
+      ]
+    },
+    "shipping": {
+      "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
+      "zh-CN": "📦 全球包邮 · 7–20 天送达",
+      "zh-TW": "📦 全球包郵 · 7–20 天送達"
+    }
   }
 ]
