@@ -452,7 +452,8 @@
         "🆓 永久授權 — 一次購買，終身使用",
         "📦 付款後即時下載"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-video2mp3",
@@ -499,7 +500,8 @@
         "🆓 永久授權",
         "📦 付款後即時下載"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-dupfinder",
@@ -546,7 +548,8 @@
         "🆓 永久授權",
         "📦 即時下載"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-img2pdf",
@@ -593,7 +596,8 @@
         "🆓 永久授權",
         "📦 即時下載"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-renamer",
@@ -640,7 +644,8 @@
         "🆓 永久授權",
         "📦 即時下載"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-csvjson",
@@ -687,7 +692,8 @@
         "🆓 永久授權",
         "📦 即時下載"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-bundle",
@@ -742,7 +748,8 @@
         "🔄 CSV-JSON 轉換 — 雙向資料格式轉換",
         "💰 比單獨購買省 30%（$22 vs $29.94）"
       ]
-    }
+    },
+    "category": "bundle"
   },
   {
     "id": "exe-fba-calc",
@@ -789,7 +796,8 @@
         "🇪🇺 含歐洲 VAT 計算",
         "📋 匯出 CSV 做進一步分析"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-sku-gen",
@@ -836,7 +844,8 @@
         "🔢 一次生成 1-10,000 個碼",
         "🔒 100% 離線 — 產品數據不出電腦"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-listing-opt",
@@ -883,7 +892,8 @@
         "📊 修改前後並列對比",
         "🇺🇸🇬🇧🇩🇪🇯🇵 美/英/德/日站點規則"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-invoice-gen",
@@ -930,7 +940,8 @@
         "📋 匯出 PDF（可直接列印/郵件發送）",
         "✅ 符合 Amazon FBA 發貨要求"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-shopify-csv",
@@ -977,7 +988,8 @@
         "🏪 模板：Shopify / WooCommerce / BigCommerce",
         "📋 匯出標準 CSV，直接導入"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-keyword-tool",
@@ -1024,7 +1036,8 @@
         "📋 匯出關鍵詞 CSV（含各項指標）",
         "🇺🇸🇬🇧🇩🇪🇯🇵 多站點支援"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-currency",
@@ -1071,7 +1084,8 @@
         "🔄 匯率自動刷新",
         "💰 利潤保護模式（利潤下降自動提醒）"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-translator",
@@ -1118,7 +1132,8 @@
         "🔄 原文/譯文並列預覽",
         "📦 匯出 Shopify/Amazon 相容 CSV"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-ecom-bundle",
@@ -1181,7 +1196,8 @@
         "🌐 產品描述翻譯器（8語）",
         "💰 比單獨購買省 30%（$35 vs $50.91）"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "breadboard1",
@@ -3205,7 +3221,8 @@
         "🖥️ Windows 7/8/10/11",
         "🆓 永久授權，即時下載"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-img-compress",
@@ -3252,7 +3269,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-img-resize",
@@ -3299,7 +3317,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-watermark",
@@ -3346,7 +3365,8 @@
         "🔄 旋轉 & 平鋪選項",
         "🔒 100% 離線"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-screenshot-pdf",
@@ -3393,7 +3413,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-photo-renamer",
@@ -3440,7 +3461,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-qrcode-gen",
@@ -3487,7 +3509,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-gif-maker",
@@ -3534,7 +3557,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-pdf-split",
@@ -3581,7 +3605,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-pdf-compress",
@@ -3628,7 +3653,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-pdf-rotate",
@@ -3675,7 +3701,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-pdf-unlock",
@@ -3722,7 +3749,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-pdf-extract",
@@ -3769,7 +3797,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-pdf-protect",
@@ -3816,7 +3845,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-audio-cutter",
@@ -3863,7 +3893,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-audio-merge",
@@ -3910,7 +3941,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-mp3-tag",
@@ -3957,7 +3989,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-subtitle-tool",
@@ -4004,7 +4037,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-youtube-dl",
@@ -4051,7 +4085,8 @@
         "🔒 100% 離線（本地運行）",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-screen-rec",
@@ -4098,7 +4133,8 @@
         "📦 輸出：MP4 (H.264)",
         "🔒 100% 離線"
       ]
-    }
+    },
+    "category": "media"
   },
   {
     "id": "exe-json-fmt",
@@ -4145,7 +4181,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-sql-fmt",
@@ -4192,7 +4229,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-base64-tool",
@@ -4239,7 +4277,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-diff-tool",
@@ -4286,7 +4325,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-regex-tester",
@@ -4333,7 +4373,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-color-picker",
@@ -4380,7 +4421,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-password-gen",
@@ -4427,7 +4469,8 @@
         "🔒 100% 離線——密碼不出電腦",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-word-count",
@@ -4474,7 +4517,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-timestamp",
@@ -4521,7 +4565,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-clipboard-mgr",
@@ -4568,7 +4613,8 @@
         "🔒 所有數據保存在本地",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-hash-tool",
@@ -4615,7 +4661,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-roi-calc",
@@ -4662,7 +4709,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-competitor",
@@ -4709,7 +4757,8 @@
         "📋 匯出所有數據為CSV",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-ship-label",
@@ -4756,7 +4805,8 @@
         "📋 保存標籤模板",
         "🔒 100% 離線"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-review-analyzer",
@@ -4803,7 +4853,8 @@
         "📋 匯出CSV分析報告",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-photo-resizer-ecom",
@@ -4850,7 +4901,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "ecommerce"
   },
   {
     "id": "exe-file-shredder",
@@ -4894,7 +4946,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-sysinfo",
@@ -4941,7 +4994,8 @@
         "📋 匯出：TXT/HTML報告",
         "🔒 100% 離線"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-folder-size",
@@ -4988,7 +5042,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-text-merger",
@@ -5035,7 +5090,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-file-splitter",
@@ -5082,7 +5138,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-file-encrypt",
@@ -5129,7 +5186,8 @@
         "🔒 100% 離線",
         "🆓 永久授權"
       ]
-    }
+    },
+    "category": "utility"
   },
   {
     "id": "exe-pdf-bundle",
@@ -5188,7 +5246,8 @@
         "🔐 PDF加密 — 加密碼保護",
         "💰 $19.99 vs $34.93 — 省43%"
       ]
-    }
+    },
+    "category": "pdf"
   },
   {
     "id": "exe-image-bundle",
@@ -5251,7 +5310,8 @@
         "📷 照片EXIF改名",
         "💰 $22.99 vs $38.93 — 省40%"
       ]
-    }
+    },
+    "category": "image"
   },
   {
     "id": "exe-dev-bundle",
@@ -5318,7 +5378,8 @@
         "🕐 時間戳轉換",
         "💰 $22.99 vs $44.91 — 省49%"
       ]
-    }
+    },
+    "category": "dev"
   },
   {
     "id": "exe-ultimate-bundle",
@@ -5375,6 +5436,7 @@
         "💰 $69.99 vs ~$140+ — 省50%",
         "🆓 永久授權，含未來所有更新"
       ]
-    }
+    },
+    "category": "bundle"
   }
 ]

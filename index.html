@@ -117,6 +117,25 @@
 
     @media(max-width:600px){.tool-grid{grid-template-columns:1fr}.request-form{flex-direction:column}.btn-row{flex-direction:column}.btn-row .btn{width:100%}.nav-right{width:100%;justify-content:space-between}}
 
+
+    /* Category tabs */
+    .cat-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+    .cat-tab{padding:6px 14px;border:1px solid var(--border);border-radius:20px;font-size:.78rem;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s}
+    .cat-tab:hover{border-color:var(--accent);color:var(--text)}
+    .cat-tab.active{background:var(--text);color:#fff;border-color:var(--text)}
+    .cat-tab.bundle-tab{background:linear-gradient(135deg,#e87d4b,#d94a4a);color:#fff;border:none;font-weight:600}
+    /* Tool list items */
+    .tool-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin-bottom:6px;background:var(--surface);transition:all .15s}
+    .tool-item:hover{border-color:var(--accent)}
+    .tool-item .ti-icon{font-size:1.2rem;width:28px;text-align:center;flex-shrink:0}
+    .tool-item .ti-name{flex:1;font-size:.82rem;font-weight:500}
+    .tool-item .ti-desc{font-size:.72rem;color:var(--muted);flex:2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .tool-item .ti-price{font-weight:700;color:var(--accent);font-size:.85rem;min-width:55px;text-align:right}
+    .tool-item .ti-btn{padding:5px 14px;border:1px solid var(--accent);border-radius:6px;font-size:.75rem;cursor:pointer;background:transparent;color:var(--accent);font-family:inherit;transition:all .15s;white-space:nowrap}
+    .tool-item .ti-btn:hover{background:var(--accent);color:#fff}
+    .tool-item .ti-badge{font-size:.65rem;padding:2px 6px;border-radius:4px;font-weight:600}
+    .ti-badge.best{background:#fef8e7;color:#e87d4b}
+    
     .modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:99;align-items:center;justify-content:center}
     .modal-overlay.show{display:flex}
     .modal-box{background:var(--surface);border-radius:var(--radius);padding:28px;max-width:480px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.15)}
@@ -320,23 +339,22 @@
       <!-- RIGHT: Premium EXE + Bundle -->
       <div class="right-col" style="position:sticky;top:60px">
 <div style="padding:0">
-    <h2 class="sec-title">📦 <span data-i18n="sec_scripts">My Tools</span></h2>
-    <p class="sec-sub" data-i18n="scripts_desc">Standalone EXE files — no install, no Python, just run.</p>
+<h2 class="sec-title">🛠️ <span data-i18n="sec_apps">Apps & Tools</span></h2>
+    <p class="sec-sub" data-i18n="apps_desc">All premium tools — download, double-click, done. No install needed.</p>
 
-    <!-- Bundle Deal -->
-    <div style="background:linear-gradient(135deg,#1e1e1e,#333);border-radius:12px;padding:24px;margin-bottom:24px;color:#fff;text-align:center">
-      <span style="background:#e87d4b;padding:2px 12px;border-radius:12px;font-size:.75rem;font-weight:700">🔥 BEST VALUE</span>
-      <h3 style="font-size:1.3rem;margin:12px 0 6px" data-i18n="bundle_title">All 6 Tools Bundle</h3>
-      <p style="font-size:.88rem;opacity:.85;max-width:600px;margin:0 auto 14px" data-i18n="bundle_desc">Word→PDF + Duplicate Remover + Image Finder + File2Excel + Excel Splitter + XLS Converter.</p>
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap">
-        <span style="text-decoration:line-through;opacity:.6;font-size:.95rem">$29.94</span>
-        <span style="font-size:2rem;font-weight:800">$22.00</span>
-        <a href="https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl" target="_blank" style="display:inline-block;padding:12px 32px;background:#e87d4b;color:#fff;border-radius:8px;font-size:.95rem;font-weight:700;text-decoration:none;transition:opacity .2s" data-i18n="buy_bundle">Buy Bundle</a>
-      </div>
-      <p style="font-size:.75rem;opacity:.6;margin-top:8px" data-i18n="bundle_save">Save 27%</p>
+    <!-- Category Tabs -->
+    <div class="cat-tabs" id="catTabs">
+      <button class="cat-tab active" onclick="showCat('all')" data-i18n="cat_all">All</button>
+      <button class="cat-tab" onclick="showCat('pdf')">📄 PDF</button>
+      <button class="cat-tab" onclick="showCat('image')">🎨 Image</button>
+      <button class="cat-tab" onclick="showCat('media')">🎬 Media</button>
+      <button class="cat-tab" onclick="showCat('ecommerce')">🚀 E-Com</button>
+      <button class="cat-tab" onclick="showCat('dev')">⚙️ Dev</button>
+      <button class="cat-tab" onclick="showCat('utility')">📊 Utility</button>
+      <button class="cat-tab bundle-tab" onclick="showCat('bundle')">🎁 Bundles</button>
     </div>
 
-    <div class="tool-grid" id="scriptGrid"><!-- filled by JS --></div>
+    <div id="appToolList"><!-- filled by JS --></div>
   </div>
 
   
@@ -493,6 +511,8 @@ var I18N = {
     order_email_required: '✗ Please enter your email.',
     order_payment: 'Payment Method',
     order_scan_qr: 'Scan to pay, then note your Order ID:',
+    sec_apps: 'Apps & Tools', apps_desc: 'All premium tools — download, double-click, done. No install needed.',
+    cat_all: 'All',
     p2_title: '3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)',
     p2_desc: 'Create stunning 3D-effect epoxy resin coasters. High-quality silicone molds with detailed patterns — mountains, ocean love, galaxy, and cherry blossoms. Easy release, durable, heat-resistant. Perfect for DIY craft lovers and handmade gift makers.',
     p2_spec1: '4 unique 3D designs: Mountain, Ocean Love, Galaxy, Cherry Blossom',
@@ -647,6 +667,8 @@ var I18N = {
     order_email_required: '✗ 请填写邮箱。',
     order_payment: '支付方式',
     order_scan_qr: '扫码支付后，备注您的订单号：',
+    sec_apps: '应用工具', apps_desc: '所有高级工具 — 下载、双击、直接使用，无需安装。',
+    cat_all: '全部',
     p2_title: '3D 立体树脂杯垫硅胶模具套装（4款）',
     p2_desc: '制作惊艳的 3D 效果环氧树脂杯垫。高品质硅胶模具，细节精致 — 山峰、海洋之恋、星空银河、樱花。易脱模、耐用、耐高温。适合 DIY 手工爱好者和手工礼品制作。',
     p2_spec1: '4款独特 3D 设计：山峰、海洋之恋、星空银河、樱花',
@@ -806,6 +828,8 @@ var I18N = {
     order_email_required: '✗ 請填寫郵箱。',
     order_payment: '付款方式',
     order_scan_qr: '掃碼付款後，備註您的訂單號：',
+    sec_apps: '應用工具', apps_desc: '所有高級工具 — 下載、雙擊、直接使用，無需安裝。',
+    cat_all: '全部',
     p2_title: '3D 立體樹脂杯墊矽膠模具套裝（4款）',
     p2_desc: '製作驚豔的 3D 效果環氧樹脂杯墊。高品質矽膠模具，細節精緻 — 山峰、海洋之戀、星空銀河、櫻花。易脫模、耐用、耐高溫。適合 DIY 手工愛好者和手工禮品製作。',
     p2_spec1: '4款獨特 3D 設計：山峰、海洋之戀、星空銀河、櫻花',
@@ -1031,7 +1055,7 @@ function renderShop() {
     fetch('products.json').then(function(r){ if(!r.ok) throw new Error('fail'); return r.json(); })
       .then(function(products){
         var html = '';
-        products.forEach(function(p){ html += renderProductCard(p); });
+        products.forEach(function(p){ if(p.type==='physical') html += renderProductCard(p); });
         pGrid.innerHTML = html;
         if (cGrid) cGrid.innerHTML = '';
         if (sCourses) sCourses.style.display = 'none';
