@@ -728,5 +728,435 @@
         "💰 比單獨購買省 30%（$22 vs $29.94）"
       ]
     }
+  },
+  {
+    "id": "exe-fba-calc",
+    "type": "digital",
+    "image": null,
+    "icon": "📊",
+    "price": 6.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Amazon FBA Profit Calculator — Know Your Real Margin (EXE)",
+      "zh-CN": "Amazon FBA 利润计算器 — 算清你的真实利润",
+      "zh-TW": "Amazon FBA 利潤計算器 — 算清你的真實利潤"
+    },
+    "desc": {
+      "en": "Calculate real FBA profit after all fees: referral fee, FBA fulfillment, storage, shipping, PPC, VAT. Compare 10 products side-by-side. The tool every Amazon seller wishes they had on day one.",
+      "zh-CN": "扣除所有费用后的真实 FBA 利润：佣金、物流、仓储、运费、广告、VAT。10 款产品并列对比。亚马逊卖家第一天就该有的工具。",
+      "zh-TW": "扣除所有費用後的真實 FBA 利潤：佣金、物流、倉儲、運費、廣告、VAT。10 款產品並列對比。亞馬遜賣家第一天就該有的工具。"
+    },
+    "specs": {
+      "en": [
+        "📊 Auto-calculates referral fee (by category %)",
+        "📦 FBA fulfillment fee by size tier & weight",
+        "💰 Storage fee (monthly + long-term)",
+        "🚚 Inbound shipping cost per unit",
+        "📢 Optional PPC cost deduction",
+        "🇪🇺 EU VAT calculator included",
+        "📋 Export results as CSV for further analysis"
+      ],
+      "zh-CN": [
+        "📊 自动计算各类目佣金比例",
+        "📦 FBA 配送费按尺寸重量分档",
+        "💰 仓储费（月度 + 长期）",
+        "🚚 头程物流每件成本",
+        "📢 可选 PPC 广告费扣除",
+        "🇪🇺 含欧洲 VAT 计算",
+        "📋 导出 CSV 做进一步分析"
+      ],
+      "zh-TW": [
+        "📊 自動計算各類目佣金比例",
+        "📦 FBA 配送費按尺寸重量分檔",
+        "💰 倉儲費（月度 + 長期）",
+        "🚚 頭程物流每件成本",
+        "📢 可選 PPC 廣告費扣除",
+        "🇪🇺 含歐洲 VAT 計算",
+        "📋 匯出 CSV 做進一步分析"
+      ]
+    }
+  },
+  {
+    "id": "exe-sku-gen",
+    "type": "digital",
+    "image": null,
+    "icon": "🏷️",
+    "price": 5.99,
+    "buyLink": "#",
+    "name": {
+      "en": "SKU / FNSKU / UPC / EAN Batch Generator (EXE)",
+      "zh-CN": "SKU / FNSKU / UPC / EAN 批量生成器",
+      "zh-TW": "SKU / FNSKU / UPC / EAN 批量生成器"
+    },
+    "desc": {
+      "en": "Generate hundreds of SKUs, FNSKUs, UPC-A, and EAN-13 barcodes in one click. Supports prefix rules, sequential numbering, and barcode image export. Essential for inventory management across Amazon, eBay, Shopify.",
+      "zh-CN": "一键批量生成 SKU、FNSKU、UPC-A、EAN-13 条码。支持前缀规则、顺序编号、条码图片导出。Amazon、eBay、Shopify 多平台库存管理必备。",
+      "zh-TW": "一鍵批量生成 SKU、FNSKU、UPC-A、EAN-13 條碼。支援前綴規則、順序編號、條碼圖片匯出。Amazon、eBay、Shopify 多平台庫存管理必備。"
+    },
+    "specs": {
+      "en": [
+        "🏷️ SKU with prefix + auto-numbering rules",
+        "📦 FNSKU from ASIN (Amazon labeling)",
+        "🔢 UPC-A (12-digit) and EAN-13 barcode generation",
+        "🖼️ Export barcodes as PNG images",
+        "📋 CSV export for bulk upload to Amazon/Shopify",
+        "🔢 Generate 1-10,000 codes in one batch",
+        "🔒 100% offline — your product data stays local"
+      ],
+      "zh-CN": [
+        "🏷️ SKU 前缀 + 自动编号规则",
+        "📦 从 ASIN 生成 FNSKU",
+        "🔢 UPC-A (12位) 和 EAN-13 条码生成",
+        "🖼️ 条码导出为 PNG 图片",
+        "📋 CSV 导出，批量上传到 Amazon/Shopify",
+        "🔢 一次生成 1-10,000 个码",
+        "🔒 100% 离线 — 产品数据不出电脑"
+      ],
+      "zh-TW": [
+        "🏷️ SKU 前綴 + 自動編號規則",
+        "📦 從 ASIN 生成 FNSKU",
+        "🔢 UPC-A (12位) 和 EAN-13 條碼生成",
+        "🖼️ 條碼匯出為 PNG 圖片",
+        "📋 CSV 匯出，批量上傳到 Amazon/Shopify",
+        "🔢 一次生成 1-10,000 個碼",
+        "🔒 100% 離線 — 產品數據不出電腦"
+      ]
+    }
+  },
+  {
+    "id": "exe-listing-opt",
+    "type": "digital",
+    "image": null,
+    "icon": "📝",
+    "price": 5.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Amazon Listing Title & Bullet Optimizer (EXE)",
+      "zh-CN": "Amazon Listing 标题 & 五点优化器",
+      "zh-TW": "Amazon Listing 標題 & 五點優化器"
+    },
+    "desc": {
+      "en": "Auto-check your listing title length, keyword density, banned words, and character limits per Amazon's latest rules. Score your listing and get fix suggestions. Supports US/UK/DE/JP marketplaces.",
+      "zh-CN": "自动检查 Listing 标题长度、关键词密度、违禁词、各站点字符限制。给 Listing 打分并提供修改建议。支持美/英/德/日四大站点。",
+      "zh-TW": "自動檢查 Listing 標題長度、關鍵詞密度、違禁詞、各站點字符限制。給 Listing 打分並提供修改建議。支援美/英/德/日四大站點。"
+    },
+    "specs": {
+      "en": [
+        "📏 Title char count (200 US / 80 JP / 200 DE/UK)",
+        "🔑 Keyword density analysis (primary + secondary)",
+        "🚫 Banned/restricted word detection by marketplace",
+        "⭐ Listing score: 0-100 with improvement tips",
+        "📋 Bullet point char limit checker (500 chars)",
+        "📊 Side-by-side before/after comparison",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 US / UK / DE / JP compliance"
+      ],
+      "zh-CN": [
+        "📏 标题字符数检查（US 200 / JP 80 / DE/UK 200）",
+        "🔑 关键词密度分析（主词+辅词）",
+        "🚫 各站点违禁词/受限词检测",
+        "⭐ Listing 综合评分 0-100 + 优化建议",
+        "📋 五点描述字符限制检查（500字符）",
+        "📊 修改前后并列对比",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 美/英/德/日站点规则"
+      ],
+      "zh-TW": [
+        "📏 標題字符數檢查（US 200 / JP 80 / DE/UK 200）",
+        "🔑 關鍵詞密度分析（主詞+輔詞）",
+        "🚫 各站點違禁詞/受限詞檢測",
+        "⭐ Listing 綜合評分 0-100 + 優化建議",
+        "📋 五點描述字符限制檢查（500字符）",
+        "📊 修改前後並列對比",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 美/英/德/日站點規則"
+      ]
+    }
+  },
+  {
+    "id": "exe-invoice-gen",
+    "type": "digital",
+    "image": null,
+    "icon": "📋",
+    "price": 6.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Invoice & Packing Slip Generator — Amazon Compliant (EXE)",
+      "zh-CN": "发票 & 装箱单生成器 — 符合亚马逊要求",
+      "zh-TW": "發票 & 裝箱單生成器 — 符合亞馬遜要求"
+    },
+    "desc": {
+      "en": "Generate professional invoices and packing slips for FBA shipments, DDP orders, and direct-to-customer sales. Auto-fills from CSV data. PDF output with your logo and business info. Amazon-compliant format.",
+      "zh-CN": "生成专业发票和装箱单，FBA 发货、DDP 订单、直发客户都适用。从 CSV 自动填数据，PDF 输出带 Logo 和公司信息。亚马逊合规格式。",
+      "zh-TW": "生成專業發票和裝箱單，FBA 發貨、DDP 訂單、直發客戶都適用。從 CSV 自動填數據，PDF 輸出帶 Logo 和公司信息。亞馬遜合規格式。"
+    },
+    "specs": {
+      "en": [
+        "📄 Professional invoice template (A4 / US Letter)",
+        "📦 Packing slip template (FBA box content format)",
+        "🏢 Custom logo + business info + tax ID",
+        "📊 Batch generate from CSV (1000+ orders)",
+        "🌍 Multi-currency: USD / EUR / GBP / JPY / CNY",
+        "📋 Export as PDF (ready to print/email)",
+        "✅ Amazon FBA shipment-compliant"
+      ],
+      "zh-CN": [
+        "📄 专业发票模板（A4 / US Letter）",
+        "📦 装箱单模板（FBA 箱内物品格式）",
+        "🏢 自定义 Logo + 公司信息 + 税号",
+        "📊 从 CSV 批量生成（1000+ 单）",
+        "🌍 多币种：USD / EUR / GBP / JPY / CNY",
+        "📋 导出 PDF（可直接打印/邮件发送）",
+        "✅ 符合 Amazon FBA 发货要求"
+      ],
+      "zh-TW": [
+        "📄 專業發票模板（A4 / US Letter）",
+        "📦 裝箱單模板（FBA 箱內物品格式）",
+        "🏢 自定義 Logo + 公司信息 + 稅號",
+        "📊 從 CSV 批量生成（1000+ 單）",
+        "🌍 多幣種：USD / EUR / GBP / JPY / CNY",
+        "📋 匯出 PDF（可直接列印/郵件發送）",
+        "✅ 符合 Amazon FBA 發貨要求"
+      ]
+    }
+  },
+  {
+    "id": "exe-shopify-csv",
+    "type": "digital",
+    "image": null,
+    "icon": "📦",
+    "price": 5.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Shopify / WooCommerce CSV Product Import Formatter (EXE)",
+      "zh-CN": "Shopify / WooCommerce CSV 批量上架格式化工具",
+      "zh-TW": "Shopify / WooCommerce CSV 批量上架格式化工具"
+    },
+    "desc": {
+      "en": "Convert your product spreadsheet into Shopify/WooCommerce-ready CSV in one click. Auto-maps columns, fixes image URLs, generates handles, sets variants. Import 1000+ products in 2 minutes instead of 2 days.",
+      "zh-CN": "把你的产品表格一键转成 Shopify/WooCommerce 标准 CSV。自动映射列名、修正图片链接、生成 Handle、设置变体。2 分钟上架 1000+ 个 SKU。",
+      "zh-TW": "把你的產品表格一鍵轉成 Shopify/WooCommerce 標準 CSV。自動映射列名、修正圖片連結、生成 Handle、設置變體。2 分鐘上架 1000+ 個 SKU。"
+    },
+    "specs": {
+      "en": [
+        "🔄 Auto-detect column headers → Shopify format",
+        "🖼️ Image URL validation & formatting",
+        "🔗 Handle auto-generation from product title",
+        "📐 Variant support: size / color / material / etc.",
+        "📊 Preview first 10 rows before final export",
+        "🏪 Templates: Shopify / WooCommerce / BigCommerce",
+        "📋 Export standard CSV ready for import"
+      ],
+      "zh-CN": [
+        "🔄 自动识别表头 → Shopify 格式",
+        "🖼️ 图片链接验证和格式修正",
+        "🔗 从标题自动生成 Handle",
+        "📐 变体支持：尺寸/颜色/材质等",
+        "📊 导出前预览前 10 行",
+        "🏪 模板：Shopify / WooCommerce / BigCommerce",
+        "📋 导出标准 CSV，直接导入"
+      ],
+      "zh-TW": [
+        "🔄 自動識別表頭 → Shopify 格式",
+        "🖼️ 圖片連結驗證和格式修正",
+        "🔗 從標題自動生成 Handle",
+        "📐 變體支援：尺寸/顏色/材質等",
+        "📊 匯出前預覽前 10 行",
+        "🏪 模板：Shopify / WooCommerce / BigCommerce",
+        "📋 匯出標準 CSV，直接導入"
+      ]
+    }
+  },
+  {
+    "id": "exe-keyword-tool",
+    "type": "digital",
+    "image": null,
+    "icon": "🔍",
+    "price": 7.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Amazon Keyword Research & Competitor Analyzer (EXE)",
+      "zh-CN": "Amazon 关键词调研 & 竞品分析工具",
+      "zh-TW": "Amazon 關鍵詞調研 & 競品分析工具"
+    },
+    "desc": {
+      "en": "Analyze top competitor listings to extract winning keywords. Shows search volume estimates, category trends, and keyword gaps. Find the exact words your competitors rank for — and steal their traffic.",
+      "zh-CN": "分析头部竞品 Listing，提取高转化关键词。显示搜索量预估、类目趋势、关键词缺口。找到竞品排名的精准词——把他们的流量抢过来。",
+      "zh-TW": "分析頭部競品 Listing，提取高轉化關鍵詞。顯示搜索量預估、類目趨勢、關鍵詞缺口。找到競品排名的精準詞——把他們的流量搶過來。"
+    },
+    "specs": {
+      "en": [
+        "🔍 Extract keywords from top 10 competitor listings",
+        "📊 Keyword frequency & density analysis",
+        "🎯 Find keyword gaps (competitors rank, you don't)",
+        "📈 Category trend & seasonality indicators",
+        "🏷️ Long-tail keyword discovery (low competition)",
+        "📋 Export keyword list as CSV with metrics",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 Multi-marketplace support"
+      ],
+      "zh-CN": [
+        "🔍 从 Top 10 竞品 Listing 提取关键词",
+        "📊 关键词频率 & 密度分析",
+        "🎯 发现关键词缺口（竞品有、你没有）",
+        "📈 类目趋势 & 季节性指标",
+        "🏷️ 长尾词发现（低竞争度）",
+        "📋 导出关键词 CSV（含各项指标）",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 多站点支持"
+      ],
+      "zh-TW": [
+        "🔍 從 Top 10 競品 Listing 提取關鍵詞",
+        "📊 關鍵詞頻率 & 密度分析",
+        "🎯 發現關鍵詞缺口（競品有、你沒有）",
+        "📈 類目趨勢 & 季節性指標",
+        "🏷️ 長尾詞發現（低競爭度）",
+        "📋 匯出關鍵詞 CSV（含各項指標）",
+        "🇺🇸🇬🇧🇩🇪🇯🇵 多站點支援"
+      ]
+    }
+  },
+  {
+    "id": "exe-currency",
+    "type": "digital",
+    "image": null,
+    "icon": "💱",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Multi-Marketplace Currency Converter & Price Optimizer (EXE)",
+      "zh-CN": "多平台汇率换算 & 定价优化器",
+      "zh-TW": "多平台匯率換算 & 定價優化器"
+    },
+    "desc": {
+      "en": "Convert prices across 20+ currencies with live rates. Sync pricing across Amazon US/UK/DE/JP, eBay, Shopify — find the optimal price point for each marketplace. Includes VAT/GST auto-calculation.",
+      "zh-CN": "20+ 币种实时汇率换算。Amazon 美/英/德/日、eBay、Shopify 跨平台同步定价——找到每个市场的最优定价。自动计算 VAT/GST。",
+      "zh-TW": "20+ 幣種即時匯率換算。Amazon 美/英/德/日、eBay、Shopify 跨平台同步定價——找到每個市場的最優定價。自動計算 VAT/GST。"
+    },
+    "specs": {
+      "en": [
+        "💱 20+ currencies with live exchange rates",
+        "🌍 Auto VAT/GST calculation per country",
+        "📊 Price comparison across Amazon US/UK/DE/JP",
+        "🔢 Bulk import prices from CSV, batch convert",
+        "📋 Export optimized price table",
+        "🔄 Automatic rate refresh",
+        "💰 Margin protection mode (alerts if margin drops)"
+      ],
+      "zh-CN": [
+        "💱 20+ 币种实时汇率",
+        "🌍 各国 VAT/GST 自动计算",
+        "📊 Amazon 美/英/德/日跨站比价",
+        "🔢 CSV 批量导入价格、批量换算",
+        "📋 导出优化后价格表",
+        "🔄 汇率自动刷新",
+        "💰 利润保护模式（利润下降自动提醒）"
+      ],
+      "zh-TW": [
+        "💱 20+ 幣種即時匯率",
+        "🌍 各國 VAT/GST 自動計算",
+        "📊 Amazon 美/英/德/日跨站比價",
+        "🔢 CSV 批量導入價格、批量換算",
+        "📋 匯出優化後價格表",
+        "🔄 匯率自動刷新",
+        "💰 利潤保護模式（利潤下降自動提醒）"
+      ]
+    }
+  },
+  {
+    "id": "exe-translator",
+    "type": "digital",
+    "image": null,
+    "icon": "🌐",
+    "price": 5.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Product Description Translator for Cross-Border Sellers (EXE)",
+      "zh-CN": "跨境卖家产品描述翻译器",
+      "zh-TW": "跨境賣家產品描述翻譯器"
+    },
+    "desc": {
+      "en": "Translate your product titles, bullet points, and descriptions between 8 languages with marketplace-specific terminology. Includes Amazon keyword preservation (keeps important search terms untranslated). One click, all languages.",
+      "zh-CN": "一键把产品标题、五点、描述翻译成 8 种语言，自动保留关键词（重要搜索词不翻）。Amazon 各站点专业术语内置。做全球市场，一个工具搞定多语言 Listing。",
+      "zh-TW": "一鍵把產品標題、五點、描述翻譯成 8 種語言，自動保留關鍵詞（重要搜索詞不翻）。Amazon 各站點專業術語內置。做全球市場，一個工具搞定多語言 Listing。"
+    },
+    "specs": {
+      "en": [
+        "🌐 8 languages: EN / CN / JP / DE / ES / FR / IT / PT",
+        "🔑 Smart keyword preservation (keeps brand terms)",
+        "📏 Auto-truncate to marketplace char limits",
+        "🏪 Amazon category-specific terminology database",
+        "📋 Batch mode: translate entire CSV product catalog",
+        "🔄 Side-by-side original vs translated preview",
+        "📦 Export as Shopify/Amazon-ready CSV"
+      ],
+      "zh-CN": [
+        "🌐 8 语：中/英/日/德/西/法/意/葡",
+        "🔑 智能关键词保留（品牌词不翻）",
+        "📏 自动截断适配各站点字符限制",
+        "🏪 Amazon 各类目专业术语库",
+        "📋 批量模式：整个 CSV 产品目录一键翻译",
+        "🔄 原文/译文并列预览",
+        "📦 导出 Shopify/Amazon 兼容 CSV"
+      ],
+      "zh-TW": [
+        "🌐 8 語：中/英/日/德/西/法/意/葡",
+        "🔑 智能關鍵詞保留（品牌詞不翻）",
+        "📏 自動截斷適配各站點字符限制",
+        "🏪 Amazon 各類目專業術語庫",
+        "📋 批量模式：整個 CSV 產品目錄一鍵翻譯",
+        "🔄 原文/譯文並列預覽",
+        "📦 匯出 Shopify/Amazon 相容 CSV"
+      ]
+    }
+  },
+  {
+    "id": "exe-ecom-bundle",
+    "type": "digital",
+    "image": null,
+    "icon": "🚀",
+    "price": 35.00,
+    "buyLink": "#",
+    "bundleOf": ["exe-fba-calc", "exe-sku-gen", "exe-listing-opt", "exe-invoice-gen", "exe-shopify-csv", "exe-keyword-tool", "exe-currency", "exe-translator"],
+    "name": {
+      "en": "🚀 Cross-Border Seller Toolkit — All 8 E-Commerce Tools (Bundle)",
+      "zh-CN": "🚀 跨境卖家工具箱 — 8款电商工具打包",
+      "zh-TW": "🚀 跨境賣家工具箱 — 8款電商工具打包"
+    },
+    "desc": {
+      "en": "The complete cross-border seller toolkit. FBA Calculator + SKU Generator + Listing Optimizer + Invoice Generator + Shopify CSV Formatter + Keyword Tool + Currency Converter + Translator. Everything you need to scale from 0 to 6 figures. Save 30%.",
+      "zh-CN": "跨境卖家全栈工具箱。FBA 计算器 + SKU 生成 + Listing 优化 + 发票生成 + Shopify CSV + 关键词调研 + 汇率换算 + 多语翻译。从零到六位数的全部工具，省 30%。",
+      "zh-TW": "跨境賣家全棧工具箱。FBA 計算器 + SKU 生成 + Listing 優化 + 發票生成 + Shopify CSV + 關鍵詞調研 + 匯率換算 + 多語翻譯。從零到六位數的全部工具，省 30%。"
+    },
+    "specs": {
+      "en": [
+        "📊 Amazon FBA Profit Calculator",
+        "🏷️ SKU / FNSKU / UPC / EAN Generator",
+        "📝 Amazon Listing Title Optimizer",
+        "📋 Invoice & Packing Slip Generator",
+        "📦 Shopify / WooCommerce CSV Formatter",
+        "🔍 Amazon Keyword Research Tool",
+        "💱 Multi-Marketplace Currency Converter",
+        "🌐 Product Description Translator (8 languages)",
+        "💰 Save 30% vs individual purchase ($35 vs $50.91)"
+      ],
+      "zh-CN": [
+        "📊 Amazon FBA 利润计算器",
+        "🏷️ SKU / FNSKU / UPC / EAN 生成器",
+        "📝 Amazon Listing 标题优化器",
+        "📋 发票 & 装箱单生成器",
+        "📦 Shopify / WooCommerce CSV 格式化",
+        "🔍 Amazon 关键词调研工具",
+        "💱 多平台汇率换算器",
+        "🌐 产品描述翻译器（8语）",
+        "💰 比单独购买省 30%（$35 vs $50.91）"
+      ],
+      "zh-TW": [
+        "📊 Amazon FBA 利潤計算器",
+        "🏷️ SKU / FNSKU / UPC / EAN 生成器",
+        "📝 Amazon Listing 標題優化器",
+        "📋 發票 & 裝箱單生成器",
+        "📦 Shopify / WooCommerce CSV 格式化",
+        "🔍 Amazon 關鍵詞調研工具",
+        "💱 多平台匯率換算器",
+        "🌐 產品描述翻譯器（8語）",
+        "💰 比單獨購買省 30%（$35 vs $50.91）"
+      ]
+    }
   }
 ]
