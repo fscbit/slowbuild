@@ -398,5 +398,335 @@
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
     }
+  },
+  {
+    "id": "exe-pdfmerge",
+    "type": "digital",
+    "image": null,
+    "icon": "📎",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "PDF Merger — Merge Multiple PDFs into One (EXE)",
+      "zh-CN": "PDF 合并工具 — 多文件合并成一个 PDF",
+      "zh-TW": "PDF 合併工具 — 多檔案合併成一個 PDF"
+    },
+    "desc": {
+      "en": "Drag & drop PDF files onto the EXE — instant merge. Works offline, no installation needed. PyPDF2-powered, lightning fast. Perfect for combining invoices, reports, scans, eBooks.",
+      "zh-CN": "把 PDF 文件直接拖到 EXE 上 → 瞬间合并。离线运行，无需安装。底层 PyPDF2，速度飞快。合并发票、报告、扫描件、电子书的最佳工具。",
+      "zh-TW": "把 PDF 檔案直接拖到 EXE 上 → 瞬間合併。離線運行，無需安裝。底層 PyPDF2，速度飛快。合併發票、報告、掃描件、電子書的最佳工具。"
+    },
+    "specs": {
+      "en": [
+        "⚡ Drag & drop — no UI, instant merge",
+        "📄 Supports unlimited PDF files",
+        "🔒 100% offline — your files never leave your PC",
+        "🪶 Lightweight single EXE (~6MB)",
+        "🖥️ Works on Windows 7/8/10/11",
+        "🆓 Lifetime license — buy once, use forever",
+        "📦 Instant download after payment"
+      ],
+      "zh-CN": [
+        "⚡ 拖放即用 — 无需界面，瞬间合并",
+        "📄 支持无限数量 PDF 文件",
+        "🔒 100% 离线 — 文件绝不离开你的电脑",
+        "🪶 轻量单文件 EXE（~6MB）",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权 — 一次购买，终身使用",
+        "📦 付款后即时下载"
+      ],
+      "zh-TW": [
+        "⚡ 拖放即用 — 無需界面，瞬間合併",
+        "📄 支援無限數量 PDF 檔案",
+        "🔒 100% 離線 — 檔案絕不離開你的電腦",
+        "🪶 輕量單檔案 EXE（~6MB）",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權 — 一次購買，終身使用",
+        "📦 付款後即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-video2mp3",
+    "type": "digital",
+    "image": null,
+    "icon": "🎵",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Video to MP3 Converter — Extract Audio from Any Video (EXE)",
+      "zh-CN": "视频转 MP3 — 从任意视频提取音频",
+      "zh-TW": "影片轉 MP3 — 從任意影片提取音訊"
+    },
+    "desc": {
+      "en": "Extract high-quality MP3 audio from any video file. Drag your MP4/MKV/AVI/WMV/MOV — get 192kbps MP3 instantly. Uses ffmpeg engine, batch process supported. Perfect for saving podcasts, music, lectures.",
+      "zh-CN": "从任意视频提取高清 MP3 音频。拖入 MP4/MKV/AVI/WMV/MOV → 瞬间输出 192kbps MP3。ffmpeg 引擎，支持批量处理。保存播客、音乐、讲座的神器。",
+      "zh-TW": "從任意影片提取高清 MP3 音訊。拖入 MP4/MKV/AVI/WMV/MOV → 瞬間輸出 192kbps MP3。ffmpeg 引擎，支援批量處理。保存播客、音樂、講座的神器。"
+    },
+    "specs": {
+      "en": [
+        "🎬 Supports all video formats (MP4/MKV/AVI/WMV/MOV/FLV)",
+        "🎧 192kbps studio-quality MP3 output",
+        "📂 Batch mode — drag multiple videos at once",
+        "🔒 100% offline processing",
+        "🖥️ Windows 7/8/10/11 compatible",
+        "🆓 Lifetime license",
+        "📦 Instant download after payment"
+      ],
+      "zh-CN": [
+        "🎬 支持所有视频格式（MP4/MKV/AVI/WMV/MOV/FLV）",
+        "🎧 192kbps 录音室品质 MP3",
+        "📂 批量模式 — 一次拖入多个视频",
+        "🔒 100% 离线处理",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权",
+        "📦 付款后即时下载"
+      ],
+      "zh-TW": [
+        "🎬 支援所有影片格式（MP4/MKV/AVI/WMV/MOV/FLV）",
+        "🎧 192kbps 錄音室品質 MP3",
+        "📂 批量模式 — 一次拖入多個影片",
+        "🔒 100% 離線處理",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權",
+        "📦 付款後即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-dupfinder",
+    "type": "digital",
+    "image": null,
+    "icon": "🔍",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Duplicate File Finder — Free Up Disk Space (EXE)",
+      "zh-CN": "重复文件查找器 — 一键清理磁盘空间",
+      "zh-TW": "重複檔案查找器 — 一鍵清理磁碟空間"
+    },
+    "desc": {
+      "en": "Scan any folder and find duplicate files by content hash (not just filename). Identify wasted disk space instantly. Pure Python, no dependencies — drag your folder and get a clean report.",
+      "zh-CN": "扫描任意文件夹，按内容哈希（不是文件名）精准识别重复文件。一眼看出浪费了多少磁盘空间。纯 Python，零依赖 — 拖入文件夹即出报告。",
+      "zh-TW": "掃描任意檔案夾，按內容哈希（不是檔案名）精準識別重複檔案。一眼看出浪費了多少磁碟空間。純 Python，零依賴 — 拖入檔案夾即出報告。"
+    },
+    "specs": {
+      "en": [
+        "🔬 MD5 hash comparison — 100% accuracy",
+        "📊 Groups duplicates with file sizes",
+        "🚀 Fast scan — skips tiny files automatically",
+        "🔒 Offline, no data sent anywhere",
+        "🖥️ Windows 7/8/10/11",
+        "🆓 Lifetime license",
+        "📦 Instant download"
+      ],
+      "zh-CN": [
+        "🔬 MD5 哈希比对 — 100% 准确",
+        "📊 分组显示重复文件及大小",
+        "🚀 快速扫描 — 自动跳过小文件",
+        "🔒 离线运行，数据不外传",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权",
+        "📦 即时下载"
+      ],
+      "zh-TW": [
+        "🔬 MD5 哈希比對 — 100% 準確",
+        "📊 分組顯示重複檔案及大小",
+        "🚀 快速掃描 — 自動跳過小檔案",
+        "🔒 離線運行，數據不外傳",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權",
+        "📦 即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-img2pdf",
+    "type": "digital",
+    "image": null,
+    "icon": "🖼️",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Image to PDF Converter — Batch Convert Photos to PDF (EXE)",
+      "zh-CN": "图片转 PDF — 批量照片转换成一个 PDF",
+      "zh-TW": "圖片轉 PDF — 批量照片轉換成一個 PDF"
+    },
+    "desc": {
+      "en": "Convert JPG/PNG/WEBP/BMP images into a single clean PDF. Drag multiple photos — get one polished document. Perfect for scanning receipts, creating photo albums, or submitting documents online.",
+      "zh-CN": "把 JPG/PNG/WEBP/BMP 图片转换成一个整洁的 PDF。拖入多张照片 → 输出一个文档。扫描收据、制作相册、线上提交材料的首选工具。",
+      "zh-TW": "把 JPG/PNG/WEBP/BMP 圖片轉換成一個整潔的 PDF。拖入多張照片 → 輸出一個文件。掃描收據、製作相冊、線上提交材料的首選工具。"
+    },
+    "specs": {
+      "en": [
+        "📸 Supports JPG, PNG, WEBP, BMP, TIFF",
+        "📑 Auto page sizing — fits your images",
+        "🔒 Offline conversion",
+        "🪶 Lightweight (~8MB EXE)",
+        "🖥️ Windows 7/8/10/11",
+        "🆓 Lifetime license",
+        "📦 Instant download"
+      ],
+      "zh-CN": [
+        "📸 支持 JPG/PNG/WEBP/BMP/TIFF",
+        "📑 自动页面适配",
+        "🔒 离线转换",
+        "🪶 轻量 (~8MB EXE)",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权",
+        "📦 即时下载"
+      ],
+      "zh-TW": [
+        "📸 支援 JPG/PNG/WEBP/BMP/TIFF",
+        "📑 自動頁面適配",
+        "🔒 離線轉換",
+        "🪶 輕量 (~8MB EXE)",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權",
+        "📦 即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-renamer",
+    "type": "digital",
+    "image": null,
+    "icon": "🏷️",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "Batch File Renamer — Regex Rename Tool (EXE)",
+      "zh-CN": "批量文件改名器 — 正则表达式重命名工具",
+      "zh-TW": "批量檔案改名器 — 正則表達式重命名工具"
+    },
+    "desc": {
+      "en": "Rename hundreds of files in seconds with regex find & replace. Preview before renaming (safe mode). Perfect for organizing photos, music, documents, or cleaning up messy downloads folder.",
+      "zh-CN": "用正则表达式几秒内批量重命名成百上千个文件。先预览再改名（安全模式）。整理照片、音乐、文档、清理下载文件夹的利器。",
+      "zh-TW": "用正則表達式幾秒內批量重命名成百上千個檔案。先預覽再改名（安全模式）。整理照片、音樂、文件、清理下載檔案夾的利器。"
+    },
+    "specs": {
+      "en": [
+        "🧩 Regex find & replace (powerful pattern matching)",
+        "👁️ Preview mode — see changes before applying",
+        "📂 Process entire folder recursively",
+        "🔒 100% offline",
+        "🖥️ Windows 7/8/10/11",
+        "🆓 Lifetime license",
+        "📦 Instant download"
+      ],
+      "zh-CN": [
+        "🧩 正则表达式查找替换（强大模式匹配）",
+        "👁️ 预览模式 — 先看变化再执行",
+        "📂 可递归处理整个文件夹",
+        "🔒 100% 离线",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权",
+        "📦 即时下载"
+      ],
+      "zh-TW": [
+        "🧩 正則表達式查找替換（強大模式匹配）",
+        "👁️ 預覽模式 — 先看變化再執行",
+        "📂 可遞歸處理整個檔案夾",
+        "🔒 100% 離線",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權",
+        "📦 即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-csvjson",
+    "type": "digital",
+    "image": null,
+    "icon": "🔄",
+    "price": 4.99,
+    "buyLink": "#",
+    "name": {
+      "en": "CSV ⇄ JSON Converter — Bidirectional Data Converter (EXE)",
+      "zh-CN": "CSV ⇄ JSON 转换器 — 双向数据格式转换",
+      "zh-TW": "CSV ⇄ JSON 轉換器 — 雙向資料格式轉換"
+    },
+    "desc": {
+      "en": "Instantly convert CSV to JSON or JSON to CSV by dragging a file. Auto-detects format and converts the other way. Uses UTF-8 with BOM for Excel compatibility. Essential for developers and data analysts.",
+      "zh-CN": "拖入 CSV → 输出 JSON，拖入 JSON → 输出 CSV。自动识别格式，双向互转。UTF-8+BOM 确保 Excel 不乱码。开发者和数据分析师的必备工具。",
+      "zh-TW": "拖入 CSV → 輸出 JSON，拖入 JSON → 輸出 CSV。自動識別格式，雙向互轉。UTF-8+BOM 確保 Excel 不亂碼。開發者和數據分析師的必備工具。"
+    },
+    "specs": {
+      "en": [
+        "🔄 Auto-detect: CSV → JSON, JSON → CSV",
+        "📊 Excel-compatible UTF-8 BOM encoding",
+        "🧹 Pretty-printed JSON (indented, readable)",
+        "🔒 100% offline",
+        "🖥️ Windows 7/8/10/11",
+        "🆓 Lifetime license",
+        "📦 Instant download"
+      ],
+      "zh-CN": [
+        "🔄 自动识别：CSV→JSON，JSON→CSV",
+        "📊 Excel 兼容 UTF-8 BOM 编码",
+        "🧹 JSON 美化输出（缩进、易读）",
+        "🔒 100% 离线",
+        "🖥️ 支持 Windows 7/8/10/11",
+        "🆓 永久授权",
+        "📦 即时下载"
+      ],
+      "zh-TW": [
+        "🔄 自動識別：CSV→JSON，JSON→CSV",
+        "📊 Excel 相容 UTF-8 BOM 編碼",
+        "🧹 JSON 美化輸出（縮進、易讀）",
+        "🔒 100% 離線",
+        "🖥️ 支援 Windows 7/8/10/11",
+        "🆓 永久授權",
+        "📦 即時下載"
+      ]
+    }
+  },
+  {
+    "id": "exe-bundle",
+    "type": "digital",
+    "image": null,
+    "icon": "🎁",
+    "price": 22.00,
+    "buyLink": "#",
+    "bundleOf": ["exe-pdfmerge", "exe-video2mp3", "exe-dupfinder", "exe-img2pdf", "exe-renamer", "exe-csvjson"],
+    "name": {
+      "en": "🛠️ SlowBuild Toolbox — All 6 Premium Tools (Bundle)",
+      "zh-CN": "🛠️ SlowBuild 工具箱 — 6款 Premium 工具打包",
+      "zh-TW": "🛠️ SlowBuild 工具箱 — 6款 Premium 工具打包"
+    },
+    "desc": {
+      "en": "Get all 6 premium tools for the price of 4. One download, lifetime access to: PDF Merger, Video to MP3, Duplicate Finder, Image to PDF, Batch Renamer, CSV-JSON Converter. Save 30% vs buying individually.",
+      "zh-CN": "花4个的钱买全部6个工具。一次下载，终身使用：PDF合并、视频转MP3、重复文件查找、图片转PDF、批量改名、CSV-JSON转换。比单独购买省30%。",
+      "zh-TW": "花4個的錢買全部6個工具。一次下載，終身使用：PDF合併、影片轉MP3、重複檔案查找、圖片轉PDF、批量改名、CSV-JSON轉換。比單獨購買省30%。"
+    },
+    "specs": {
+      "en": [
+        "📎 PDF Merger — Merge PDFs instantly",
+        "🎵 Video to MP3 — Extract audio from any video",
+        "🔍 Duplicate Finder — Free up disk space",
+        "🖼️ Image to PDF — Batch convert photos",
+        "🏷️ Batch Renamer — Regex rename hundreds of files",
+        "🔄 CSV-JSON Converter — Bidirectional data conversion",
+        "💰 Save 30% vs individual purchase ($22 vs $29.94)"
+      ],
+      "zh-CN": [
+        "📎 PDF 合并 — 瞬间合并 PDF 文件",
+        "🎵 视频转 MP3 — 从任意视频提取音频",
+        "🔍 重复文件查找 — 释放磁盘空间",
+        "🖼️ 图片转 PDF — 批量照片转换",
+        "🏷️ 批量改名 — 正则表达式重命名",
+        "🔄 CSV-JSON 转换 — 双向数据格式转换",
+        "💰 比单独购买省 30%（$22 vs $29.94）"
+      ],
+      "zh-TW": [
+        "📎 PDF 合併 — 瞬間合併 PDF 檔案",
+        "🎵 影片轉 MP3 — 從任意影片提取音訊",
+        "🔍 重複檔案查找 — 釋放磁碟空間",
+        "🖼️ 圖片轉 PDF — 批量照片轉換",
+        "🏷️ 批量改名 — 正則表達式重命名",
+        "🔄 CSV-JSON 轉換 — 雙向資料格式轉換",
+        "💰 比單獨購買省 30%（$22 vs $29.94）"
+      ]
+    }
   }
 ]
