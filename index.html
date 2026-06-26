@@ -127,6 +127,10 @@
     .modal-box input:focus,.modal-box textarea:focus{border-color:var(--accent)}
     .modal-box textarea{min-height:60px;resize:vertical}
     .modal-box .required::after{content:' *';color:var(--accent)}
+    .pay-methods{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+    .pay-opt{padding:8px 14px;border:1px solid var(--border);border-radius:8px;cursor:pointer;font-size:.8rem;transition:all .15s;display:inline-flex;align-items:center;gap:4px}
+    .pay-opt:hover{border-color:var(--accent)}
+    .pay-opt-sel{border-color:var(--accent);background:#fef8f0}
 
     /* Sidebar */
     .sidebar{position:fixed;left:0;top:0;width:220px;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:20;padding:8px 0 80px;font-size:.84rem}
@@ -400,18 +404,32 @@
 <!-- ORDER MODAL -->
 <div class="modal-overlay" id="orderModal">
   <div class="modal-box">
-    <h3>📦 <span data-i18n="order_title">Order Details</span></h3>
-    <p class="modal-sub"><span id="orderProduct">—</span> · <strong id="orderPrice" style="color:var(--accent)">$0</strong></p>
-    <label class="required" data-i18n="order_name">Your Name</label>
+    <h3>🛒 <span data-i18n="order_title">Checkout</span></h3>
+    <p class="modal-sub"><span id="orderProduct">—</span> · <strong id="orderPrice" style="color:var(--accent)">$0</strong> · <span id="orderType" style="font-size:.75rem;color:var(--muted)"></span></p>
+    <label class="required" data-i18n="order_email">Email (for order confirmation & delivery)</label>
+    <input id="orderEmail" type="email" data-i18n-placeholder="order_email_ph" placeholder="your@email.com">
+    <label data-i18n="order_name">Your Name</label>
     <input id="orderName" data-i18n-placeholder="order_name_ph">
-    <label class="required" data-i18n="order_address">Shipping Address</label>
-    <textarea id="orderAddress" data-i18n-placeholder="order_address_ph"></textarea>
-    <label data-i18n="order_email">Email (for order confirmation)</label>
-    <input id="orderEmail" type="email" data-i18n-placeholder="order_email_ph">
+    <div id="orderAddressGroup">
+      <label class="required" data-i18n="order_address">Shipping Address</label>
+      <textarea id="orderAddress" data-i18n-placeholder="order_address_ph"></textarea>
+    </div>
+    <label data-i18n="order_payment">Payment Method</label>
+    <div class="pay-methods" id="payMethods">
+      <label class="pay-opt pay-opt-sel" onclick="selectPay(this,'payoneer')"><input type="radio" name="pay" value="payoneer" checked hidden>💳 Payoneer</label>
+      <label class="pay-opt" onclick="selectPay(this,'paypal')"><input type="radio" name="pay" value="paypal" hidden>🅿️ PayPal</label>
+      <label class="pay-opt" onclick="selectPay(this,'alipay')"><input type="radio" name="pay" value="alipay" hidden>💙 Alipay</label>
+      <label class="pay-opt" onclick="selectPay(this,'wechat')"><input type="radio" name="pay" value="wechat" hidden>💚 WeChat</label>
+    </div>
+    <div id="orderQR" style="display:none;text-align:center;margin:12px 0;padding:12px;background:var(--bg);border-radius:8px">
+      <p style="font-size:.82rem;color:var(--muted);margin-bottom:8px" data-i18n="order_scan_qr">Scan to pay, then note your Order ID:</p>
+      <img id="orderQRImg" src="" style="max-width:200px;border-radius:8px" alt="QR">
+      <p style="font-size:.72rem;color:var(--accent);margin-top:6px"><strong id="orderQRId"></strong></p>
+    </div>
     <label data-i18n="order_notes">Notes (optional)</label>
     <input id="orderNotes" data-i18n-placeholder="order_notes_ph">
     <div class="btn-row" style="margin-top:16px">
-      <button class="btn primary" onclick="submitOrder()" data-i18n="order_submit">Submit & Pay</button>
+      <button class="btn primary" onclick="submitOrder()" data-i18n="order_submit">Place Order</button>
       <button class="btn" onclick="closeOrder()" data-i18n="order_cancel">Cancel</button>
     </div>
     <div class="result-bar" id="orderMsg" style="margin-top:12px"></div>
@@ -471,7 +489,10 @@ var I18N = {
     order_submit: 'Submit & Pay', order_cancel: 'Cancel',
     order_success: '✓ Order sent! Redirecting to payment...',
     order_fail: '✗ Failed. Please try again or contact us.',
-    order_invalid: '✗ Please fill in all required fields.',
+    order_invalid: '✗ Please fill in required fields.',
+    order_email_required: '✗ Please enter your email.',
+    order_payment: 'Payment Method',
+    order_scan_qr: 'Scan to pay, then note your Order ID:',
     p2_title: '3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)',
     p2_desc: 'Create stunning 3D-effect epoxy resin coasters. High-quality silicone molds with detailed patterns — mountains, ocean love, galaxy, and cherry blossoms. Easy release, durable, heat-resistant. Perfect for DIY craft lovers and handmade gift makers.',
     p2_spec1: '4 unique 3D designs: Mountain, Ocean Love, Galaxy, Cherry Blossom',
@@ -623,6 +644,9 @@ var I18N = {
     order_success: '✓ 订单已发送！正在跳转付款...',
     order_fail: '✗ 发送失败，请重试或联系我们。',
     order_invalid: '✗ 请填写必填项。',
+    order_email_required: '✗ 请填写邮箱。',
+    order_payment: '支付方式',
+    order_scan_qr: '扫码支付后，备注您的订单号：',
     p2_title: '3D 立体树脂杯垫硅胶模具套装（4款）',
     p2_desc: '制作惊艳的 3D 效果环氧树脂杯垫。高品质硅胶模具，细节精致 — 山峰、海洋之恋、星空银河、樱花。易脱模、耐用、耐高温。适合 DIY 手工爱好者和手工礼品制作。',
     p2_spec1: '4款独特 3D 设计：山峰、海洋之恋、星空银河、樱花',
@@ -779,6 +803,9 @@ var I18N = {
     order_success: '✓ 訂單已發送！正在跳轉付款...',
     order_fail: '✗ 發送失敗，請重試或聯絡我們。',
     order_invalid: '✗ 請填寫必填項。',
+    order_email_required: '✗ 請填寫郵箱。',
+    order_payment: '付款方式',
+    order_scan_qr: '掃碼付款後，備註您的訂單號：',
     p2_title: '3D 立體樹脂杯墊矽膠模具套裝（4款）',
     p2_desc: '製作驚豔的 3D 效果環氧樹脂杯墊。高品質矽膠模具，細節精緻 — 山峰、海洋之戀、星空銀河、櫻花。易脫模、耐用、耐高溫。適合 DIY 手工愛好者和手工禮品製作。',
     p2_spec1: '4款獨特 3D 設計：山峰、海洋之戀、星空銀河、櫻花',
@@ -967,7 +994,7 @@ function renderShop() {
         (p.specs&&p.specs[lang]&&p.specs[lang].length ? '<ul class="product-specs">'+p.specs[lang].map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul>' : '')+
         '<div class="product-footer">'+
           '<span class="product-price">$'+(p.price||0).toFixed(2)+'</span>'+
-          '<a class="product-buy" href="'+(p.buyLink||'#')+'" target="_blank">'+t('buy_now')+'</a>'+
+          '<button class="product-buy" onclick="openOrder(\''+p.id+'\',\''+(p.name[lang]||p.name.en).replace(/'/g,"\\'")+'\','+(p.price||0)+',\''+(p.type||'physical')+'\')">'+t('buy_now')+'</button>'+
         '</div>'+
         (p.shipping&&p.shipping[lang] ? '<p class="shipping-note">'+p.shipping[lang]+'</p>' : '')+
       '</div></div>';
@@ -982,7 +1009,7 @@ function renderShop() {
         '<p class="shipping-note">📹 '+(c.lessonCount||0)+' lessons · '+(c.duration||'')+'</p>'+
         '<div class="product-footer">'+
           '<span class="product-price">$'+(c.price||0).toFixed(2)+'</span>'+
-          '<a class="product-buy" href="'+(c.buyLink||'#')+'" target="_blank">'+t('buy_now')+'</a>'+
+          '<button class="product-buy" onclick="openOrder(\''+c.id+'\',\''+(c.title[lang]||c.title.en).replace(/'/g,"\\'")+'\','+(c.price||0)+',\'course\')">'+t('buy_now')+'</button>'+
         '</div>'+
       '</div></div>';
   }
@@ -1757,19 +1784,48 @@ function escJS(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").repl
 // ═══════════════════════════════════════════
 //  Order Modal
 // ═══════════════════════════════════════════
-var _orderPayLink = '';
+var ORDER_API = 'https://concert-arrangements-football-declared.trycloudflare.com';  // order server — update after tunnel restart!
 
-function openOrder(product, price, payLink){
-  _orderPayLink = payLink;
-  document.getElementById('orderProduct').textContent = product;
+var _orderProductId = '';
+var _orderType = '';
+var _orderPayLink = '';
+var _payMethod = 'payoneer';
+
+function openOrder(productId, productName, price, ptype){
+  _orderProductId = productId;
+  _orderType = ptype || 'physical';
+  _payMethod = 'payoneer';
+  document.getElementById('orderProduct').textContent = productName;
   document.getElementById('orderPrice').textContent = '$'+price.toFixed(2);
+  document.getElementById('orderType').textContent = ptype==='digital' ? '💿 Digital' : ptype==='course' ? '📚 Course' : '📦 Physical';
   document.getElementById('orderName').value = '';
-  document.getElementById('orderAddress').value = '';
   document.getElementById('orderEmail').value = '';
+  document.getElementById('orderAddress').value = '';
   document.getElementById('orderNotes').value = '';
   document.getElementById('orderMsg').className = 'result-bar';
+  document.getElementById('orderQR').style.display = 'none';
+  // Show/hide address for digital
+  document.getElementById('orderAddressGroup').style.display = (ptype==='physical') ? '' : 'none';
+  // Reset payment selection
+  document.querySelectorAll('.pay-opt').forEach(function(el){ el.classList.remove('pay-opt-sel'); });
+  document.querySelector('.pay-opt[onclick*="payoneer"]').classList.add('pay-opt-sel');
   document.getElementById('orderModal').classList.add('show');
-  document.getElementById('orderName').focus();
+  document.getElementById('orderEmail').focus();
+}
+
+function selectPay(el, method){
+  _payMethod = method;
+  document.querySelectorAll('.pay-opt').forEach(function(e){ e.classList.remove('pay-opt-sel'); });
+  el.classList.add('pay-opt-sel');
+  // Show QR for Alipay/WeChat
+  var qrDiv = document.getElementById('orderQR');
+  if(method==='alipay'||method==='wechat'){
+    var img = method==='alipay' ? 'images/alipay-qr.jpg' : 'images/wechat-qr.jpg';
+    document.getElementById('orderQRImg').src = img;
+    qrDiv.style.display = '';
+  } else {
+    qrDiv.style.display = 'none';
+  }
 }
 
 function closeOrder(){
@@ -1777,59 +1833,74 @@ function closeOrder(){
 }
 
 function submitOrder(){
-  var product = document.getElementById('orderProduct').textContent;
+  var productName = document.getElementById('orderProduct').textContent;
   var price = parseFloat(document.getElementById('orderPrice').textContent.replace('$',''));
+  var email = document.getElementById('orderEmail').value.trim();
   var name = document.getElementById('orderName').value.trim();
   var address = document.getElementById('orderAddress').value.trim();
-  var email = document.getElementById('orderEmail').value.trim();
   var notes = document.getElementById('orderNotes').value.trim();
   var msg = document.getElementById('orderMsg');
 
-  if(!name || !address){
+  if(!email){
+    msg.className = 'result-bar error show';
+    msg.textContent = t('order_email_required') || 'Please enter your email.';
+    return;
+  }
+  if(_orderType==='physical' && !address){
     msg.className = 'result-bar error show';
     msg.textContent = t('order_invalid');
     return;
   }
 
   msg.className = 'result-bar show';
-  msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':lang==='zh-TW'?'提交中...':'Submitting...')+'</span>';
+  msg.innerHTML = '<span style="color:var(--muted)">⏳ '+(lang==='zh-CN'?'提交中...':lang==='zh-TW'?'提交中...':'Placing order...')+'</span>';
 
-  fetch('/api/order', {
+  // Call order API
+  var apiUrl = (ORDER_API||'').replace(/\/+$/,'') + '/api/order';
+  fetch(apiUrl, {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({product:product, price:price, name:name, email:email, address:address, notes:notes})
+    body: JSON.stringify({
+      product_id: _orderProductId,
+      email: email,
+      name: name,
+      payment_method: _payMethod,
+      address: address,
+      notes: notes
+    })
   }).then(function(r){ return r.json(); })
   .then(function(d){
-    if(d.success){
+    if(d.ok){
+      // Show QR ID for Alipay/WeChat
+      if(_payMethod==='alipay'||_payMethod==='wechat'){
+        document.getElementById('orderQRId').textContent = '#'+d.order_id.substr(0,8);
+        document.getElementById('orderQR').style.display = '';
+      }
       msg.className = 'result-bar success show';
       msg.textContent = t('order_success');
-      // Store order in localStorage as backup
+      // Save locally
       try{
         var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-        orders.push({id:d.orderId, product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
+        orders.push({id:d.order_id, product:productName, price:price, email:email, time:new Date().toISOString(), method:_payMethod});
         localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
       }catch(e){}
-      setTimeout(function(){
-        closeOrder();
-        window.open(_orderPayLink, '_blank');
-      }, 1500);
+      if(d.status==='confirmed'){
+        msg.textContent = '✅ '+(lang==='zh-CN'?'已确认！下载链接已发送到你的邮箱。':lang==='zh-TW'?'已確認！下載連結已發送到你的郵箱。':'Confirmed! Download link sent to your email.');
+      }else if(d.redirect_url){
+        setTimeout(function(){ window.open(d.redirect_url, '_blank'); }, 1200);
+      }
     } else {
       msg.className = 'result-bar error show';
       msg.textContent = d.error || t('order_fail');
     }
   }).catch(function(err){
-    // Fallback: still let them pay, order stored in localStorage
+    // Fallback: still let them pay
     msg.className = 'result-bar success show';
-    msg.textContent = '✓ '+(lang==='zh-CN'?'正在跳转付款（订单已本地保存）...':lang==='zh-TW'?'正在跳轉付款（訂單已本機儲存）...':'Redirecting to payment (order saved locally)...');
-    try{
-      var orders = JSON.parse(localStorage.getItem('slowbuild_orders')||'[]');
-      orders.push({product:product, price:price, name:name, address:address, email:email, time:new Date().toISOString()});
-      localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
-    }catch(e){}
+    msg.textContent = '✓ '+(lang==='zh-CN'?'正在跳转付款...':lang==='zh-TW'?'正在跳轉付款...':'Redirecting to payment...');
     setTimeout(function(){
-      closeOrder();
-      window.open(_orderPayLink, '_blank');
-    }, 1500);
+      if(_payMethod==='payoneer') window.open('https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl', '_blank');
+      else if(_payMethod==='paypal') window.open('https://paypal.me/slowbuild', '_blank');
+    }, 1200);
   });
 }
 

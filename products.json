@@ -47,7 +47,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "mold1",
@@ -97,7 +98,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "hinge1",
@@ -147,7 +149,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "usbtest1",
@@ -197,7 +200,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "screwdriver1",
@@ -247,7 +251,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "thermo1",
@@ -297,7 +302,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "multitool1",
@@ -347,7 +353,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "ledlight1",
@@ -397,7 +404,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "exe-pdfmerge",
@@ -1219,7 +1227,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "esp32-1",
@@ -1265,7 +1274,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "sensor-kit1",
@@ -1311,7 +1321,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "soldering-iron1",
@@ -1357,7 +1368,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "jumper-wire1",
@@ -1403,7 +1415,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "heat-shrink1",
@@ -1449,7 +1462,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "servo-motor1",
@@ -1495,7 +1509,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "power-adapter1",
@@ -1541,7 +1556,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "cable-clip1",
@@ -1587,7 +1603,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "cable-sleeve1",
@@ -1633,7 +1650,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "desk-organizer1",
@@ -1679,7 +1697,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "monitor-stand1",
@@ -1725,7 +1744,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "laptop-stand1",
@@ -1771,7 +1791,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "webcam-cover1",
@@ -1817,7 +1838,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "mouse-pad1",
@@ -1863,7 +1885,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "usb-hub1",
@@ -1909,7 +1932,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "phone-mount1",
@@ -1955,7 +1979,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "tire-gauge1",
@@ -2001,7 +2026,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "car-charger1",
@@ -2047,7 +2073,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "obd2-scanner1",
@@ -2093,7 +2120,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "car-air-freshener1",
@@ -2139,7 +2167,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "jump-starter1",
@@ -2185,7 +2214,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "kitchen-scale1",
@@ -2231,7 +2261,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "led-strip1",
@@ -2277,7 +2308,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "smart-plug1",
@@ -2326,7 +2358,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "milk-frother1",
@@ -2372,7 +2405,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "silicone-bags1",
@@ -2418,7 +2452,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "door-stop1",
@@ -2464,7 +2499,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "mini-flashlight1",
@@ -2510,7 +2546,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "headlamp1",
@@ -2556,7 +2593,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "carabiner1",
@@ -2602,7 +2640,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "dry-bag1",
@@ -2648,7 +2687,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "portable-fan1",
@@ -2694,7 +2734,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "picnic-blanket1",
@@ -2740,7 +2781,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "usb-c-cable1",
@@ -2786,7 +2828,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "cable-organizer1",
@@ -2832,7 +2875,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "screen-protector1",
@@ -2878,7 +2922,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "usb-light1",
@@ -2924,7 +2969,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "sd-card-reader1",
@@ -2970,7 +3016,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "bluetooth-adapter1",
@@ -3016,7 +3063,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "laptop-sleeve1",
@@ -3062,7 +3110,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "phone-stand1",
@@ -3108,7 +3157,8 @@
       "en": "📦 Free worldwide shipping · Arrives in 7–20 days",
       "zh-CN": "📦 全球包邮 · 7–20 天送达",
       "zh-TW": "📦 全球包郵 · 7–20 天送達"
-    }
+    },
+    "type": "physical"
   },
   {
     "id": "exe-bg-remover",

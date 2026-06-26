@@ -78,6 +78,7 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
   <div class="sidebar">
     <button class="active" data-page="products" onclick="switchPage('products')">📦 商品管理</button>
     <button data-page="courses" onclick="switchPage('courses')">📚 课程管理</button>
+    <button data-page="orders" onclick="switchPage('orders')">📋 订单管理</button>
     <button data-page="settings" onclick="switchPage('settings')">⚙️ 设置</button>
   </div>
 
@@ -103,6 +104,18 @@ h2{font-size:1.25rem;margin-bottom:20px;display:flex;align-items:center;gap:8px}
         <button class="btn primary" onclick="showCourseForm()">➕ 添加课程</button>
         <button class="btn outline" onclick="refreshAll()">🔄 刷新</button>
       </div>
+    </div>
+
+    <!-- ══════ 订单管理 ══════ -->
+    <div id="page-orders" style="display:none">
+      <h2>📋 订单管理 <span id="orderStats" style="font-size:.8rem;color:var(--muted);font-weight:400;margin-left:12px"></span></h2>
+      <div class="btn-row" style="margin-bottom:12px">
+        <button class="btn primary sm" style="background:var(--green)" onclick="filterOrders('')">全部</button>
+        <button class="btn outline sm" onclick="filterOrders('pending')">⏳ 待确认</button>
+        <button class="btn outline sm" onclick="filterOrders('confirmed')">✅ 已确认</button>
+        <button class="btn outline sm" onclick="refreshOrders()">🔄 刷新</button>
+      </div>
+      <div id="orderList"></div>
     </div>
 
     <!-- ══════ 设置 ══════ -->
@@ -283,7 +296,7 @@ function refreshAll(){
 // Page Switching
 // ══════════════════════════════════
 function switchPage(page){
-  document.querySelectorAll('#page-products,#page-courses,#page-settings').forEach(function(p){p.style.display='none'});
+  document.querySelectorAll('#page-products,#page-courses,#page-orders,#page-settings').forEach(function(p){p.style.display='none'});
   document.getElementById('page-'+page).style.display='block';
   document.querySelectorAll('.sidebar button').forEach(function(b){b.classList.remove('active')});
   document.querySelector('[data-page="'+page+'"]').classList.add('active');
@@ -650,6 +663,110 @@ function uploadImage(){
   };
   reader.readAsDataURL(file);
 }
+
+// ══════════════════════════════════
+// Orders (connects to order_server.py on port 5002)
+// ══════════════════════════════════
+var ORDER_URL = (function(){
+  var u = document.getElementById('apiUrl').value.trim() || '';
+  // Default: same host, port 5002
+  return u ? u.replace(/:\d+(\/.*)?$/, ':5002') : window.location.origin.replace(/:\d+/, ':5002') || 'http://localhost:5002';
+})();
+
+function orderApi(path, method, body){
+  var url = ORDER_URL.replace(/\/+$/, '') + path;
+  var opts = {method:method||'GET', headers:{'Content-Type':'application/json'}};
+  if(body) opts.body = JSON.stringify(body);
+  return fetch(url, opts).then(function(r){ return r.json(); });
+}
+
+function refreshOrders(){
+  var el = document.getElementById('orderList');
+  el.innerHTML = '<div class="empty">加载中...</div>';
+  orderApi('/api/orders?limit=200').then(function(orders){
+    orderApi('/api/stats').then(function(stats){
+      document.getElementById('orderStats').textContent =
+        '共 '+stats.total_orders+' 单 | 待确认 '+stats.pending+' | 营收 $'+stats.revenue_usd+' | 今日 '+stats.today_orders;
+    }).catch(function(){});
+    _orders = orders;
+    renderOrderList(orders);
+  }).catch(function(e){
+    el.innerHTML = '<div class="empty">❌ 订单服务未连接 ('+e.message+')<br><small>确保 Win10 VM 上 order_server.py 正在运行（端口 5002）</small></div>';
+  });
+}
+
+function filterOrders(status){
+  document.querySelectorAll('#page-orders .btn-row button').forEach(function(b,i){
+    b.className = i===0 && !status ? 'btn primary sm' : 'btn outline sm';
+    if(status && b.textContent.indexOf(status==='pending'?'待确认':status==='confirmed'?'已确认':'')>=0) b.className='btn primary sm';
+  });
+  orderApi('/api/orders?limit=200').then(function(orders){
+    if(status) orders = orders.filter(function(o){ return o.status===status; });
+    _orders = orders;
+    renderOrderList(orders);
+  }).catch(function(){});
+}
+
+var _orders = [];
+function renderOrderList(orders){
+  var el = document.getElementById('orderList');
+  if(!orders.length){ el.innerHTML = '<div class="empty">暂无订单</div>'; return; }
+  el.innerHTML = orders.map(function(o){
+    var badge = o.status==='confirmed' ? '<span class="badge digital">已确认</span>' : '<span class="badge course">待确认</span>';
+    var typeBadge = o.product_type==='digital' ? '<span class="badge digital">数字</span>' :
+                    o.product_type==='course' ? '<span class="badge course">课程</span>' :
+                    '<span class="badge physical">实物</span>';
+    var pmColor = o.payment_method==='payoneer'?'#4a90d9':o.payment_method==='paypal'?'#003087':o.payment_method==='alipay'?'#1677ff':'#07c160';
+    var pmBadge = '<span style="display:inline-block;padding:1px 6px;border-radius:4px;font-size:.68rem;background:'+pmColor+';color:#fff">'+o.payment_method+'</span>';
+    var email = o.download_sent ? '📧' : '';
+    var btns = '';
+    if(o.status==='pending'){
+      btns = '<button class="btn accent sm" onclick="confirmOrder(\''+o.id+'\')">✅ 确认收款</button>';
+    } else {
+      btns = '<button class="btn outline sm" onclick="resendOrderEmail(\''+o.id+'\')">📧 重发邮件</button>';
+    }
+    return '<div class="list-item" style="flex-wrap:wrap">'+
+      '<div class="id">#'+o.id.substr(0,8)+'</div>'+
+      '<div class="name" style="flex:2">'+o.product_name+' '+typeBadge+' '+email+'</div>'+
+      '<div class="name" style="flex:1;font-size:.78rem;color:var(--muted)">'+o.buyer_email+'</div>'+
+      '<div class="meta">'+pmBadge+'</div>'+
+      '<div class="price">$'+o.price.toFixed(2)+'</div>'+
+      '<div style="min-width:60px">'+badge+'</div>'+
+      '<div style="min-width:100px">'+btns+'</div>'+
+      '</div>';
+  }).join('');
+}
+
+function confirmOrder(orderId){
+  if(!confirm('确认已收到 '+orderId+' 的付款？将自动发送下载链接邮件。')) return;
+  orderApi('/api/order/'+orderId+'/confirm', 'POST').then(function(d){
+    if(d.ok){
+      toast('✅ 已确认'+(d.email_sent?'，邮件已发送':'，但邮件发送失败:'+d.email_error));
+      refreshOrders();
+    } else {
+      toast('❌ '+d.error, 'err');
+    }
+  }).catch(function(e){
+    toast('❌ '+e.message, 'err');
+  });
+}
+
+function resendOrderEmail(orderId){
+  if(!confirm('重发确认邮件给 '+orderId+'？')) return;
+  orderApi('/api/order/'+orderId+'/resend', 'POST').then(function(d){
+    if(d.ok) toast('✅ 邮件已重发');
+    else toast('❌ 发送失败: '+d.error, 'err');
+  }).catch(function(e){
+    toast('❌ '+e.message, 'err');
+  });
+}
+
+// Auto-refresh orders when switching to orders tab
+var _origSwitchPage = switchPage;
+switchPage = function(page){
+  if(page==='orders') refreshOrders();
+  _origSwitchPage(page);
+};
 </script>
 </body>
 </html>
