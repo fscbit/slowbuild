@@ -1,2 +1,5 @@
 .vercel
 config.json
+__pycache__/
+*.local
+test-almanac.js
