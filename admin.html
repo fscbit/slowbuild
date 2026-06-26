@@ -665,12 +665,12 @@ function uploadImage(){
 }
 
 // ══════════════════════════════════
-// Orders (connects to order_server.py on port 5002)
+// Orders (connects to order_server.py on port 5003)
 // ══════════════════════════════════
 var ORDER_URL = (function(){
   var u = document.getElementById('apiUrl').value.trim() || '';
-  // Default: same host, port 5002
-  return u ? u.replace(/:\d+(\/.*)?$/, ':5002') : window.location.origin.replace(/:\d+/, ':5002') || 'http://localhost:5002';
+  // Default: same host, port 5003
+  return u ? u.replace(/:\d+(\/.*)?$/, ':5003') : window.location.origin.replace(/:\d+/, ':5003') || 'http://localhost:5003';
 })();
 
 function orderApi(path, method, body){
@@ -691,7 +691,7 @@ function refreshOrders(){
     _orders = orders;
     renderOrderList(orders);
   }).catch(function(e){
-    el.innerHTML = '<div class="empty">❌ 订单服务未连接 ('+e.message+')<br><small>确保 Win10 VM 上 order_server.py 正在运行（端口 5002）</small></div>';
+    el.innerHTML = '<div class="empty">❌ 订单服务未连接 ('+e.message+')<br><small>确保 Win10 VM 上 order_server.py 正在运行（端口 5003）</small></div>';
   });
 }
 

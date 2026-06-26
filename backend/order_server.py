@@ -1,7 +1,7 @@
 """
 slowbuild Order Server — Payment + Delivery System
 ═══════════════════════════════════════════════════
-Port 5002 (separate from main server on 5000)
+Port 5003 (separate from main server on 5000)
 Run: python order_server.py
 
 Flow:
@@ -464,8 +464,8 @@ def health():
 # ── Main ────────────────────────────────────────────────
 if __name__ == "__main__":
     init_db()
-    print("🚀 slowbuild Order Server running on port 5002")
+    print("🚀 slowbuild Order Server running on port 5003")
     print(f"   Orders DB: {DB_FILE}")
     print(f"   Products:  {PRODUCTS_FILE}")
     print(f"   Email:     {SMTP_USER}")
-    app.run(host="0.0.0.0", port=5002, debug=False)
+    app.run(host="0.0.0.0", port=5003, debug=False)

@@ -13,12 +13,12 @@ echo.
 echo [1/2] Starting main server (port 5000)...
 start "slowbuild-main" cmd /c "python server.py"
 
-echo [2/2] Starting order server (port 5002)...
+echo [2/2] Starting order server (port 5003)...
 start "slowbuild-order" cmd /c "python order_server.py"
 
 echo.
 echo Both servers started!
 echo   Main:   http://localhost:5000
-echo   Orders: http://localhost:5002
+echo   Orders: http://localhost:5003
 echo.
 pause
