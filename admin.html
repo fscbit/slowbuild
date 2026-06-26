@@ -664,34 +664,23 @@ function uploadImage(){
   reader.readAsDataURL(file);
 }
 
-// ══════════════════════════════════
-// Orders (connects to order_server.py on port 5003)
-// ══════════════════════════════════
-var ORDER_URL = (function(){
-  var u = document.getElementById('apiUrl').value.trim() || '';
-  // Default: same host, port 5003
-  return u ? u.replace(/:\d+(\/.*)?$/, ':5003') : window.location.origin.replace(/:\d+/, ':5003') || 'http://localhost:5003';
-})();
-
+// Orders (uses same API as product admin — order routes registered in server.py)
 function orderApi(path, method, body){
-  var url = ORDER_URL.replace(/\/+$/, '') + path;
-  var opts = {method:method||'GET', headers:{'Content-Type':'application/json'}};
-  if(body) opts.body = JSON.stringify(body);
-  return fetch(url, opts).then(function(r){ return r.json(); });
+  return api(path, method, body);
 }
 
 function refreshOrders(){
   var el = document.getElementById('orderList');
   el.innerHTML = '<div class="empty">加载中...</div>';
   orderApi('/api/orders?limit=200').then(function(orders){
-    orderApi('/api/stats').then(function(stats){
+    orderApi('/api/order-stats').then(function(stats){
       document.getElementById('orderStats').textContent =
         '共 '+stats.total_orders+' 单 | 待确认 '+stats.pending+' | 营收 $'+stats.revenue_usd+' | 今日 '+stats.today_orders;
     }).catch(function(){});
     _orders = orders;
     renderOrderList(orders);
   }).catch(function(e){
-    el.innerHTML = '<div class="empty">❌ 订单服务未连接 ('+e.message+')<br><small>确保 Win10 VM 上 order_server.py 正在运行（端口 5003）</small></div>';
+    el.innerHTML = '<div class="empty">❌ 订单服务未连接 ('+e.message+')<br><small>确保 Win10 VM 上 server.py 已更新并重启</small></div>';
   });
 }
 

@@ -1784,7 +1784,7 @@ function escJS(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").repl
 // ═══════════════════════════════════════════
 //  Order Modal
 // ═══════════════════════════════════════════
-var ORDER_API = 'https://benefit-heritage-merger-sponsor.trycloudflare.com';  // order server — update after tunnel restart!
+var ORDER_API = BACKEND;  // same server as main backend (order routes added to server.py)  // order server — update after tunnel restart!
 
 var _orderProductId = '';
 var _orderType = '';

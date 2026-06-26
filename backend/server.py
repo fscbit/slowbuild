@@ -1054,4 +1054,9 @@ if __name__ == "__main__":
         print("  下载 LibreOffice: https://www.libreoffice.org/download/")
     print()
 
+# ── 订单支付系统 ──
+from order_routes import register_order_routes
+register_order_routes(app)
+
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
