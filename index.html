@@ -475,15 +475,12 @@
   </section>
 
   
-  <!-- ② 命运之门 Fortune Gateway -->
+  <!-- ② 免费在线工具 -->
   <section id="tools-section" class="section" style="padding-top:0">
     <h2 class="sec-title">🛠️ <span data-i18n="tools_head">Free Online Tools</span></h2>
     <p class="sec-sub" data-i18n="tools_head_sub">Runs in your browser. No upload. No signup.</p>
 
-    <!-- Compact: 6 most used tools -->
-    <div class="tool-grid-compact" id="freeToolGrid"></div>
-
-    <!-- Online Convert 合并到工具网格内 -->
+    <!-- ☁️ 在线转换 — 放在最前面，高使用率优先 -->
     <div class="tool-grid-compact" style="margin-top:10px" id="onlineConvertGrid">
       <div class="tool-card-compact" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">📄➡️📕</div>
@@ -530,6 +527,9 @@
       </div>
       <p style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px" data-i18n="online_note">⚠️ Files are deleted from server after 1 hour. This service runs on a personal VM — it may go offline sometimes.</p>
     </details>
+
+    <!-- Compact: 6 most used tools — 在线工具排后面 -->
+    <div class="tool-grid-compact" id="freeToolGrid"></div>
 
     <!-- Expand: show all tools -->
     <details class="tools-expand" id="toolsExpandDetails">
