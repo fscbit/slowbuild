@@ -362,6 +362,7 @@
     .tools-expand summary:hover{color:var(--text)}
     /* Entry cards (blog, shop, industry) */
     .blog-entry-card,.shop-entry-card,.industry-entry-card{display:flex;align-items:center;gap:16px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--text);transition:all .2s}
+    @media(max-width:480px){.industry-entry-card{flex-wrap:wrap;text-align:center}.industry-entry-card>div[style*=\"flex-direction:column\"]{flex-direction:row!important}}
     .blog-entry-card:hover,.shop-entry-card:hover,.industry-entry-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 2px 8px rgba(0,0,0,.06)}
     .blog-entry-card span:first-child,.shop-entry-card span:first-child,.industry-entry-card span:first-child{font-size:2rem}
     .blog-entry-card .arrow,.shop-entry-card .arrow,.industry-entry-card .arrow{font-size:1.5rem;color:var(--muted)}
@@ -642,14 +643,17 @@
 
   <!-- ⑧ Industry & Trade 入口 -->
   <section id="industry-entry" class="section" style="padding-top:0">
-    <a href="/industry.html" class="industry-entry-card">
+    <div class="industry-entry-card">
       <span>🏭</span>
       <div style="flex:1">
-        <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:4px;color:#fff" data-i18n="industry_head">Industry &amp; Trade</h2>
-        <p style="font-size:.82rem;color:rgba(255,255,255,.85);line-height:1.5" data-i18n="industry_sub">Hengshui manufacturing clusters — factory direct sourcing</p>
+        <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:4px;color:#fff" data-i18n="industry_head">China Supply Chain — My Backyard</h2>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.85);line-height:1.5" data-i18n="industry_sub">Factory-direct from China's hidden manufacturing hub. No middlemen. WhatsApp me.</p>
       </div>
-      <span class="arrow" data-i18n="industry_cta">Source Now →</span>
-    </a>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener" style="background:#25D366;color:#fff;padding:6px 14px;border-radius:20px;font-size:.78rem;font-weight:600;text-decoration:none;white-space:nowrap" title="WhatsApp">💬 WhatsApp</a>
+        <a href="/industry.html" style="color:rgba(255,255,255,.8);font-size:.75rem;text-decoration:none" data-i18n="industry_cta">Source Now →</a>
+      </div>
+    </div>
   </section>
 
 <section class="section" id="request">
@@ -769,7 +773,7 @@ var I18N = {
     blog_readmore: 'Read more →',
     tools_view_all: 'View all {N} tools ▸',
     shop_entry_head: 'Shop — DIY &amp; Gadgets', shop_entry_sub: 'Desk accessories, electronics, tools for the office',
-    industry_head: 'Industry &amp; Trade', industry_sub: 'Hengshui manufacturing clusters — factory direct sourcing', industry_cta: 'Source Now →',
+    industry_head: 'China Supply Chain — My Backyard', industry_sub: 'Factory-direct from China\'s hidden manufacturing hub. No middlemen. WhatsApp me.', industry_cta: 'Talk to Me →',
     featured_title: 'Featured Tools', featured_sub: 'Try our most popular tools — instantly, no signup.',
     feat_2048: 'Merge tiles to reach 2048.',
     feat_reaction_name: 'Reaction Test', feat_reaction: 'How fast can you react?',
@@ -950,7 +954,7 @@ var I18N = {
     blog_readmore: '阅读全文 →',
     tools_view_all: '查看全部 {N} 个工具 ▸',
     shop_entry_head: '商店 — DIY 与电子产品', shop_entry_sub: '桌面配件、电子产品、办公神器',
-    industry_head: '衡水产业带', industry_sub: '衡水六大制造产业集群 — 工厂直采', industry_cta: '询价采购 →',
+    industry_head: '中国制造产业链 · 就在我身边', industry_sub: '隐藏在河北小城的制造集群，工厂直供价。没有中间商。加我WhatsApp聊聊。', industry_cta: '联系我 →',
     featured_title: '✨ 特色工具', featured_sub: '试试最受欢迎的工具 — 无需注册，即开即用。',
     feat_2048: '经典数字合并，拼出 2048。',
     feat_reaction_name: '反应测试', feat_reaction: '你的反应有多快？',
@@ -1129,7 +1133,7 @@ var I18N = {
     blog_readmore: '閱讀全文 →',
     tools_view_all: '查看全部 {N} 個工具 ▸',
     shop_entry_head: '商店 — DIY 與電子產品', shop_entry_sub: '桌面配件、電子產品、辦公神器',
-    industry_head: '衡水產業帶', industry_sub: '衡水六大製造產業集群 — 工廠直採', industry_cta: '詢價採購 →',
+    industry_head: '中國製造產業鏈 · 就在我身邊', industry_sub: '隱藏在河北小城的製造集群，工廠直供價。沒有中間商。加我WhatsApp聊聊。', industry_cta: '聯繫我 →',
     featured_title: '✨ 特色工具', featured_sub: '試試最受歡迎的工具 — 無需註冊，即開即用。',
     feat_2048: '經典數字合併，拼出 2048。',
     feat_reaction_name: '反應測試', feat_reaction: '你的反應有多快？',
