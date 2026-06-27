@@ -1340,7 +1340,18 @@ function showCat(cat) {
   }).join('');
 }
 fetch('products.json').then(function(r){return r.json();}).then(function(ps){
-  _allCatProducts = ps.map(function(p){ if(!p.icon) p.icon = p.type==='digital'?'💿':'📦'; if(!p.category) p.category = p.type==='digital'?'utility':'physical'; return p; });
+  // Only show digital products in Premium Apps (physical goods only in Shop)
+  var catOrder = {ecommerce:1, utility:2, pdf:3, image:4, media:5, dev:6, bundle:7};
+  var digitals = ps.filter(function(p){ return p.type === 'digital'; }).map(function(p){
+    if(!p.icon) p.icon = '💿';
+    if(!p.category) p.category = 'utility';
+    return p;
+  });
+  digitals.sort(function(a,b){
+    var ao = catOrder[a.category] || 9, bo = catOrder[b.category] || 9;
+    return ao - bo;
+  });
+  _allCatProducts = digitals;
   showCat('all');
 }).catch(function(){ document.getElementById('appToolList').innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Loading...</div>'; });
 
