@@ -470,7 +470,7 @@
     <p class="sub" data-i18n="hero_sub">PDF conversion, fortune reading, office gadgets — built for the 9-to-5 warriors.</p>
     <div class="hero-cta">
       <a href="#tools-section" class="btn primary" data-i18n="hero_tools_btn">🛠️ Browse Tools</a>
-      <a href="#fortune-gateway" class="btn ghost" data-i18n="hero_fortune_btn">🔮 Try Fortune</a>
+      <a href="#fortune-gateway" class="btn ghost" data-i18n="hero_fortune_btn">🔮 Workplace Oracle</a>
     </div>
   </section>
 
@@ -567,6 +567,22 @@
       </div>
       <span class="arrow">→</span>
     </a>
+  </section>
+
+  <!-- ⑥b 职场博客预览 -->
+  <section id="work-blog-previews" class="section" style="padding-top:0">
+    <div class="blog-cards">
+      <a href="/blog/" class="blog-card">
+        <h3 data-i18n="blog1_title">Why Your Excel Crashes at 4:59 PM (And How to Fix It)</h3>
+        <div class="excerpt" data-i18n="blog1_excerpt">That sinking feeling when Excel freezes right before clock-out. Corrupted formulas, bloated VLOOKUPs, and circular references — here's how to fix them before your boss walks by.</div>
+        <span style="color:var(--accent);font-size:.8rem;font-weight:500;margin-top:8px;display:inline-block" data-i18n="blog_readmore">Read more →</span>
+      </a>
+      <a href="/blog/" class="blog-card">
+        <h3 data-i18n="blog2_title">The Art of Looking Busy: A Survival Guide</h3>
+        <div class="excerpt" data-i18n="blog2_excerpt">Master the subtle craft of appearing productive without actually working. Strategic tab-switching, the perfect frown, and other essential office survival skills.</div>
+        <span style="color:var(--accent);font-size:.8rem;font-weight:500;margin-top:8px;display:inline-block" data-i18n="blog_readmore">Read more →</span>
+      </a>
+    </div>
   </section>
 
   <!-- ⑦ Shop 入口 -->
@@ -733,14 +749,21 @@ var I18N = {
     nav_tools: 'Tools', nav_request: 'Request', nav_about: 'About', nav_shop: 'Shop',
     hero_title: 'Tools &amp; Fortune for the Daily Grind.',
     hero_sub: 'PDF conversion, fortune reading, office gadgets — built for the 9-to-5 warriors.',
-    hero_fortune_btn: '🔮 Try Fortune', hero_tools_btn: '🛠️ Browse Tools',
-    fortune_head: 'Fortune Gateway', fortune_head_sub: 'Bazi · Tarot · Zodiac · I Ching — AI-powered',
+    hero_fortune_btn: '🔮 Workplace Oracle', hero_tools_btn: '🛠️ Browse Tools',
+    fortune_head: 'Workplace Oracle', fortune_head_sub: 'Bazi · Tarot · Zodiac · I Ching — ancient wisdom for modern stress.',
     fortune_blog_head: 'Fortune Culture', fortune_blog_sub: 'Bazi guides · zodiac insights · feng shui tips',
     blog_view_all: 'View All Posts →',
     tools_head: 'Free Online Tools', tools_head_sub: 'Runs in your browser. No upload. No signup.',
     tools_show_all: 'Show all 30+ tools →',
     premium_head: 'Premium Apps', premium_head_sub: 'Download, double-click, done. One purchase.',
     work_blog_head: 'Workplace Blog', work_blog_sub: 'Productivity tips · career insights · indie dev',
+    work_blog_preview_head: 'Latest Posts',
+    blog1_title: 'Why Your Excel Crashes at 4:59 PM (And How to Fix It)',
+    blog1_excerpt: 'That sinking feeling when Excel freezes right before clock-out. Corrupted formulas, bloated VLOOKUPs, and circular references — here\'s how to fix them before your boss walks by.',
+    blog2_title: 'The Art of Looking Busy: A Survival Guide',
+    blog2_excerpt: 'Master the subtle craft of appearing productive without actually working. Strategic tab-switching, the perfect frown, and other essential office survival skills.',
+    blog_readmore: 'Read more →',
+    tools_view_all: 'View all {N} tools ▸',
     shop_entry_head: 'Shop — DIY &amp; Gadgets', shop_entry_sub: 'Desk accessories, electronics, tools for the office',
     industry_head: 'Industry &amp; Trade', industry_sub: 'Hengshui manufacturing clusters — factory direct sourcing', industry_cta: 'Source Now →',
     featured_title: 'Featured Tools', featured_sub: 'Try our most popular tools — instantly, no signup.',
@@ -907,14 +930,21 @@ var I18N = {
     nav_tools: '工具', nav_request: '提需求', nav_about: '关于', nav_shop: '商店',
     hero_title: '打工人的效率工具与命理指南',
     hero_sub: 'PDF转换 · 在线算命 · 办公神器 — 为朝九晚五的你量身打造。',
-    hero_fortune_btn: '🔮 免费算命', hero_tools_btn: '🛠️ 浏览工具',
-    fortune_head: '命运之门', fortune_head_sub: '八字 · 塔罗 · 星座 · 易经 — AI驱动',
+    hero_fortune_btn: '🔮 职场占卜', hero_tools_btn: '🛠️ 浏览工具',
+    fortune_head: '职场占卜文化', fortune_head_sub: '八字 · 塔罗 · 星座 · 易经 — 古老智慧解现代心结',
     fortune_blog_head: '命理文化', fortune_blog_sub: '八字入门 · 星座解析 · 风水知识',
     blog_view_all: '查看全部文章 →',
     tools_head: '免费在线工具', tools_head_sub: '浏览器本地运行，不上传，不注册。',
     tools_show_all: '展开全部 30+ 工具 →',
     premium_head: '高级工具', premium_head_sub: '下载 → 双击 → 直接用。一次购买。',
     work_blog_head: '职场博客', work_blog_sub: '办公效率 · 职场心得 · 独立开发',
+    work_blog_preview_head: '最新文章',
+    blog1_title: '为什么你的Excel总在下班前崩溃（以及如何解决）',
+    blog1_excerpt: '下班前5分钟Excel突然卡死的绝望感，每个打工人都不陌生。损坏的公式、臃肿的VLOOKUP、循环引用——趁老板走过来之前搞定它们。',
+    blog2_title: '摸鱼的艺术：职场生存指南',
+    blog2_excerpt: '掌握不干活但看起来很忙的微妙技巧。战略性切换窗口、恰到好处的皱眉、以及其他办公室生存必备技能。',
+    blog_readmore: '阅读全文 →',
+    tools_view_all: '查看全部 {N} 个工具 ▸',
     shop_entry_head: '商店 — DIY 与电子产品', shop_entry_sub: '桌面配件、电子产品、办公神器',
     industry_head: '衡水产业带', industry_sub: '衡水六大制造产业集群 — 工厂直采', industry_cta: '询价采购 →',
     featured_title: '✨ 特色工具', featured_sub: '试试最受欢迎的工具 — 无需注册，即开即用。',
@@ -1079,14 +1109,21 @@ var I18N = {
     nav_tools: '工具', nav_request: '提需求', nav_about: '關於', nav_shop: '商店',
     hero_title: '打工人的效率工具與命理指南',
     hero_sub: 'PDF轉換 · 線上算命 · 辦公神器 — 為朝九晚五的你量身打造。',
-    hero_fortune_btn: '🔮 免費算命', hero_tools_btn: '🛠️ 瀏覽工具',
-    fortune_head: '命運之門', fortune_head_sub: '八字 · 塔羅 · 星座 · 易經 — AI驅動',
+    hero_fortune_btn: '🔮 職場占卜', hero_tools_btn: '🛠️ 瀏覽工具',
+    fortune_head: '職場占卜文化', fortune_head_sub: '八字 · 塔羅 · 星座 · 易經 — 古老智慧解現代心結',
     fortune_blog_head: '命理文化', fortune_blog_sub: '八字入門 · 星座解析 · 風水知識',
     blog_view_all: '查看全部文章 →',
     tools_head: '免費線上工具', tools_head_sub: '瀏覽器本機運行，不上傳，不註冊。',
     tools_show_all: '展開全部 30+ 工具 →',
     premium_head: '高級工具', premium_head_sub: '下載 → 雙擊 → 直接用。一次購買。',
     work_blog_head: '職場部落格', work_blog_sub: '辦公效率 · 職場心得 · 獨立開發',
+    work_blog_preview_head: '最新文章',
+    blog1_title: '為什麼你的Excel總在下班前崩潰（以及如何解決）',
+    blog1_excerpt: '下班前5分鐘Excel突然卡死的絕望感，每個打工人都不陌生。損壞的公式、臃腫的VLOOKUP、循環引用——趁老闆走過來之前搞定它們。',
+    blog2_title: '摸魚的藝術：職場生存指南',
+    blog2_excerpt: '掌握不幹活但看起來很忙的微妙技巧。戰略性切換視窗、恰到好處的皺眉、以及其他辦公室生存必備技能。',
+    blog_readmore: '閱讀全文 →',
+    tools_view_all: '查看全部 {N} 個工具 ▸',
     shop_entry_head: '商店 — DIY 與電子產品', shop_entry_sub: '桌面配件、電子產品、辦公神器',
     industry_head: '衡水產業帶', industry_sub: '衡水六大製造產業集群 — 工廠直採', industry_cta: '詢價採購 →',
     featured_title: '✨ 特色工具', featured_sub: '試試最受歡迎的工具 — 無需註冊，即開即用。',
@@ -1338,9 +1375,18 @@ function showCat(cat) {
   var filtered = cat === 'all' ? _allCatProducts : _allCatProducts.filter(function(p){ return p.category === cat; });
   var el = document.getElementById('appToolList');
   if (!filtered.length) { el.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px;font-size:.85rem">No products in this category</div>'; return; }
-  el.innerHTML = filtered.map(function(p){
+  var N = filtered.length;
+  var itemHTML = function(p){
     return '<div class="tool-item"><span class="ti-icon">'+(p.icon||'📦')+'</span><span class="ti-name">'+(p.name[lang]||p.name.en)+'</span><span class="ti-desc">'+(p.desc[lang]||p.desc.en||'')+'</span><span class="ti-price">$'+(p.price||0).toFixed(2)+'</span><button class="ti-btn" onclick="openOrder(\''+p.id+'\',\''+(p.name[lang]||p.name.en).replace(/'/g,"\\'")+'\','+(p.price||0)+',\''+(p.type||'digital')+'\')">'+t('buy_now')+'</button></div>';
-  }).join('');
+  };
+  if (N <= 4) {
+    el.innerHTML = filtered.map(itemHTML).join('');
+  } else {
+    var visible = filtered.slice(0,4).map(itemHTML).join('');
+    var hidden = filtered.slice(4).map(itemHTML).join('');
+    var summaryText = t('tools_view_all').replace('{N}', N);
+    el.innerHTML = visible + '<details class="tools-expand"><summary style="cursor:pointer;color:var(--accent);font-size:.85rem;font-weight:500;padding:8px 0" class="tools-more-summary">' + summaryText + '</summary><div style="margin-top:4px">' + hidden + '</div></details>';
+  }
 }
 fetch('products.json').then(function(r){return r.json();}).then(function(ps){
   // Only show digital products in Premium Apps (physical goods only in Shop)
