@@ -900,6 +900,8 @@ var I18N = {
     ui_no_json: 'Paste JSON first.',
     ui_lowercase: 'lowercase', ui_uppercase: 'UPPERCASE', ui_titlecase: 'Title Case',
     ui_snake_case: 'snake_case', ui_camelCase: 'camelCase', ui_PascalCase: 'PascalCase',
+    ui_input: 'Input', ui_output: 'Output', ui_dedup: 'Dedup', ui_trim: 'Trim', ui_stats: 'Stats',
+    ui_quality: 'Quality', ui_compressed: 'Compressed', ui_drop_click: 'Click or drag image here',
     tools: [
       {id:'json',icon:'{ }',name:'JSON Formatter',desc:'Pretty-print, validate, and minify JSON. Error highlights included.'},
       {id:'case',icon:'Aa',name:'Case Converter',desc:'lowercase, UPPERCASE, snake_case, camelCase, PascalCase.'},
@@ -917,7 +919,7 @@ var I18N = {
       {id:'qrcode',icon:'📱',name:'QR Code Generator',desc:'Create QR codes from text or URLs. Download as PNG.'},
       {id:'morse',icon:'📡',name:'Morse Code',desc:'Convert text to Morse code and back. Learn dots & dashes.'},
       {id:'color',icon:'🎨',name:'Color Converter',desc:'HEX ↔ RGB ↔ HSL. Pick colors and copy values.'},
-      {id:'regex',icon:'🔍',name:'Regex Tester',desc:'Test regular expressions in real-time. Match highlights & groups.'},
+      {id:'regex',icon:'🧵',name:'Regex Tester',desc:'Test regex patterns in real-time. Highlight matches.'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'Classic puzzle game. Merge tiles to reach 2048.'},
       {id:'reaction',icon:'⚡',name:'Reaction Test',desc:'How fast can you click? Test your reaction time.'},
       {id:'img2base64',icon:'🖼️',name:'Image to Base64',desc:'Convert any image to a Base64 data URI. Paste or use in code.'},
@@ -931,7 +933,9 @@ var I18N = {
       {id:'tictactoe',icon:'⭕',name:'Tic-Tac-Toe',desc:'Classic XO game. Play against a friend on the same device.'},
       {id:'gomoku',icon:'⚫',name:'Gomoku',desc:'Five in a row. Classic board game, 15×15.'},
       {id:'chess',icon:'♟️',name:'Chinese Chess',desc:'Two-player Xiangqi on the same screen.'},
-      {id:'go',icon:'⚪',name:'Go (9×9)',desc:'Simplified Go. Capture territory, 9×9 board.'}
+      {id:'go',icon:'⚪',name:'Go (9×9)',desc:'Simplified Go. Capture territory, 9×9 board.'},
+      {id:'dedup',icon:'🔀',name:'Text Dedup & Sort',desc:'Remove duplicates, sort lines, trim spaces.'},
+      {id:'imgcompress',icon:'🗜️',name:'Image Compressor',desc:'Compress images in browser. No upload.'}
     ]
   },
   'zh-CN': {
@@ -1079,6 +1083,8 @@ var I18N = {
     ui_no_json: '请先粘贴 JSON。',
     ui_lowercase: '全小写', ui_uppercase: '全大写', ui_titlecase: '首字母大写',
     ui_snake_case: '蛇形命名', ui_camelCase: '驼峰命名', ui_PascalCase: '帕斯卡命名',
+    ui_input: '输入', ui_output: '输出', ui_dedup: '去重', ui_trim: '去空格', ui_stats: '统计',
+    ui_quality: '质量', ui_compressed: '压缩后', ui_drop_click: '点击或拖拽图片到这里',
     tools: [
       {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校验、压缩 JSON。错误自动标注。'},
       {id:'case',icon:'Aa',name:'大小写转换',desc:'全小写、全大写、蛇形、驼峰、帕斯卡，一键切换。'},
@@ -1096,7 +1102,7 @@ var I18N = {
       {id:'qrcode',icon:'📱',name:'二维码生成器',desc:'文字/网址一键生成二维码，可下载 PNG。'},
       {id:'morse',icon:'📡',name:'摩斯电码',desc:'文字 ↔ 摩斯电码互转，点划之间学密码。'},
       {id:'color',icon:'🎨',name:'颜色转换器',desc:'HEX ↔ RGB ↔ HSL，取色复制数值。'},
-      {id:'regex',icon:'🔍',name:'正则测试器',desc:'实时测试正则表达式，高亮匹配和分组。'},
+      {id:'regex',icon:'🧵',name:'正则表达式测试器',desc:'实时测试正则表达式，高亮匹配结果。'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'经典数字合并游戏，滑动方块凑出 2048。'},
       {id:'reaction',icon:'⚡',name:'反应测试',desc:'你的反应有多快？点击测试反应时间。'},
       {id:'img2base64',icon:'🖼️',name:'图片转Base64',desc:'图片转 Base64 编码，用于嵌入代码或传输。'},
@@ -1110,7 +1116,9 @@ var I18N = {
       {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'经典 XO 三连棋。双人对战，同屏玩耍。'},
       {id:'gomoku',icon:'⚫',name:'五子棋',desc:'五子连珠，经典棋类，15×15 棋盘。'},
       {id:'chess',icon:'♟️',name:'中国象棋',desc:'双人对弈，同屏对局。'},
-      {id:'go',icon:'⚪',name:'围棋 (9×9)',desc:'简易围棋，围地吃子，9×9 棋盘。'}
+      {id:'go',icon:'⚪',name:'围棋 (9×9)',desc:'简易围棋，围地吃子，9×9 棋盘。'},
+      {id:'dedup',icon:'🔀',name:'文本去重排序',desc:'去重、排序、清理空格，一键搞定。'},
+      {id:'imgcompress',icon:'🗜️',name:'图片压缩器',desc:'浏览器内压缩图片，不上传服务器。'}
     ]
   },
   'zh-TW': {
@@ -1258,6 +1266,8 @@ var I18N = {
     ui_no_json: '請先貼上 JSON。',
     ui_lowercase: '全小寫', ui_uppercase: '全大寫', ui_titlecase: '首字母大寫',
     ui_snake_case: '蛇形命名', ui_camelCase: '駝峰命名', ui_PascalCase: '帕斯卡命名',
+    ui_input: '輸入', ui_output: '輸出', ui_dedup: '去重', ui_trim: '去空格', ui_stats: '統計',
+    ui_quality: '品質', ui_compressed: '壓縮後', ui_drop_click: '點擊或拖曳圖片到這裡',
     tools: [
       {id:'json',icon:'{ }',name:'JSON 格式化',desc:'美化、校驗、壓縮 JSON。錯誤自動標註。'},
       {id:'case',icon:'Aa',name:'大小寫轉換',desc:'全小寫、全大寫、蛇形、駝峰、帕斯卡，一鍵切換。'},
@@ -1275,7 +1285,7 @@ var I18N = {
       {id:'qrcode',icon:'📱',name:'QR Code 產生器',desc:'文字/網址一鍵生成 QR Code，可下載 PNG。'},
       {id:'morse',icon:'📡',name:'摩斯電碼',desc:'文字 ↔ 摩斯電碼互轉，點劃之間學密碼。'},
       {id:'color',icon:'🎨',name:'顏色轉換器',desc:'HEX ↔ RGB ↔ HSL，取色複製數值。'},
-      {id:'regex',icon:'🔍',name:'正則測試器',desc:'即時測試正則表達式，高亮匹配和分組。'},
+      {id:'regex',icon:'🧵',name:'正則表達式測試器',desc:'實時測試正則表達式，高亮匹配結果。'},
       {id:'game2048',icon:'🎮',name:'2048',desc:'經典數字合併遊戲，滑動方塊湊出 2048。'},
       {id:'reaction',icon:'⚡',name:'反應測試',desc:'你的反應有多快？點擊測試反應時間。'},
       {id:'img2base64',icon:'🖼️',name:'圖片轉Base64',desc:'圖片轉 Base64 編碼，用於嵌入程式碼或傳輸。'},
@@ -1289,7 +1299,9 @@ var I18N = {
       {id:'tictactoe',icon:'⭕',name:'井字棋',desc:'經典 XO 三連棋。雙人對戰，同屏遊玩。'},
       {id:'gomoku',icon:'⚫',name:'五子棋',desc:'五子連珠，經典棋類，15×15 棋盤。'},
       {id:'chess',icon:'♟️',name:'中國象棋',desc:'雙人對弈，同屏對局。'},
-      {id:'go',icon:'⚪',name:'圍棋 (9×9)',desc:'簡易圍棋，圍地吃子，9×9 棋盤。'}
+      {id:'go',icon:'⚪',name:'圍棋 (9×9)',desc:'簡易圍棋，圍地吃子，9×9 棋盤。'},
+      {id:'dedup',icon:'🔀',name:'文本去重排序',desc:'去重、排序、清理空格，一鍵搞定。'},
+      {id:'imgcompress',icon:'🗜️',name:'圖片壓縮器',desc:'瀏覽器內壓縮圖片，不上傳服務器。'}
     ]
   }
 };
@@ -1942,10 +1954,11 @@ function renderToolContent(id) {
       updateColorPreview();
       break;
     case 'regex':
-      html = makeToolPage('🔍 ' + L.tools[16].name,
-        '<div style="margin-bottom:12px"><label style="font-size:.82rem;color:var(--muted);display:block">'+t('ui_pattern')+'</label><div style="display:flex;gap:8px"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexPattern" placeholder="\\d+" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none" oninput="runRegex()"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexFlags" placeholder="g" style="width:50px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="runRegex()"></div></div>'+
-        txt('regexInput','Test string...') +
-        '<div class="result-bar show" id="regexResult" style="color:var(--text);margin-top:8px"><em style="color:var(--muted)">'+(t('ui_enter_regex'))+'</em></div>');
+      html = makeToolPage('🧵 ' + L.tools[16].name,
+        '<div style="margin-bottom:12px"><label style="font-size:.82rem;color:var(--muted);display:block">'+(t('ui_pattern'))+'</label><div style="display:flex;gap:8px"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexPattern" placeholder="\\d+" style="flex:1;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none" oninput="runRegex()"><span style="font-size:1.2rem;padding:8px 4px">/</span><input id="regexFlags" placeholder="g" style="width:50px;padding:10px;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:monospace;outline:none;text-align:center" oninput="runRegex()"></div></div>'+
+        txt('regexInput','Test string') +
+        '<div class="result-bar show" id="regexResult" style="color:var(--text);margin-top:8px"><em style="color:var(--muted)">'+(t('ui_enter_regex'))+'</em></div>'+
+        '<div id="regexMatchList" style="margin-top:10px;font-size:.82rem;color:var(--muted)"></div>');
       tc.innerHTML = html;
       document.getElementById('regexInput').oninput = runRegex;
       break;
@@ -2061,6 +2074,42 @@ function renderToolContent(id) {
         '<button class="btn small" onclick="initGo()" style="margin-top:8px">'+(t('ui_new_game'))+'</button></div>');
       tc.innerHTML = html;
       initGo();
+      break;
+    case 'dedup':
+      html = makeToolPage('🔀 ' + L.tools[L.tools.length-2].name,
+        '<label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:6px">'+(t('ui_input'))+'</label>'+
+        txt('dedupInput','Paste or type text here...') +
+        '<div class="btn-row" style="flex-wrap:wrap">'+
+          btn(t('ui_dedup'),'dedupAction("dedup")','primary')+
+          btn('A→Z','dedupAction("asc")')+
+          btn('Z→A','dedupAction("desc")')+
+          btn(t('ui_trim'),'dedupAction("trim")')+
+          btn(t('ui_stats'),'dedupAction("stats")')+'</div>'+
+        '<label style="font-size:.82rem;color:var(--muted);display:block;margin:12px 0 6px">'+(t('ui_output'))+'</label>'+
+        '<textarea id="dedupOutput" readonly style="width:100%;min-height:200px;padding:12px;border:1px solid var(--border);border-radius:8px;font-family:monospace;font-size:.85rem;resize:vertical;background:var(--bg);color:var(--text);outline:none"></textarea>'+
+        '<div class="btn-row">'+btn(t('ui_copy'),'copyDedupResult()','small')+'</div>');
+      break;
+    case 'imgcompress':
+      html = makeToolPage('🗜️ ' + L.tools[L.tools.length-1].name,
+        '<div id="imgCompDropZone" style="border:2px dashed var(--border);border-radius:12px;padding:40px 20px;text-align:center;cursor:pointer;transition:border-color .2s;background:var(--bg)" onclick="document.getElementById(\'imgCompFile\').click()">'+
+          '<div style="font-size:3rem;margin-bottom:8px">🖼️</div>'+
+          '<p style="color:var(--muted);font-size:.9rem">'+(t('ui_drop_click'))+'</p>'+
+          '<p style="color:var(--muted);font-size:.75rem">JPEG / PNG / WebP</p>'+
+          '<input type="file" accept="image/*" id="imgCompFile" style="display:none" onchange="loadCompressImage(this.files[0])">'+
+        '</div>'+
+        '<div style="margin:16px 0"><label style="font-size:.82rem;color:var(--muted);display:block;margin-bottom:4px">'+(t('ui_quality'))+': <strong id="imgCompQVal">70</strong>%</label>'+
+        '<input type="range" id="imgCompQuality" min="1" max="100" value="70" style="width:100%" oninput="document.getElementById(\'imgCompQVal\').textContent=this.value;autoCompress()">'+
+        '</div>'+
+        '<div id="imgCompResult" style="display:none">'+
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">'+
+        '<div><label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">'+(t('ui_original'))+'</label><img id="imgCompOrig" style="max-width:100%;max-height:200px;border:1px solid var(--border);border-radius:8px;display:block"></div>'+
+        '<div><label style="font-size:.8rem;color:var(--muted);display:block;margin-bottom:4px">'+(t('ui_compressed'))+'</label><img id="imgCompPreview" style="max-width:100%;max-height:200px;border:1px solid var(--border);border-radius:8px;display:block"></div>'+
+        '</div>'+
+        '<div class="result-bar show" id="imgCompInfo" style="margin-top:12px;color:var(--text)"></div>'+
+        '<button class="btn primary" id="imgCompDownload" onclick="downloadCompressed()" style="margin-top:8px;display:none">📥 '+(t('ui_download'))+'</button>'+
+        '</div>');
+      tc.innerHTML = html;
+      initImgCompress();
       break;
   }
   tc.innerHTML = html;
@@ -2742,8 +2791,84 @@ function getHSL(r,g,b){r/=255;g/=255;b/=255;var M=Math.max(r,g,b),m=Math.min(r,g
 function copyColor(t){var v=t==='hex'?window._colorHex:t==='rgb'?window._colorRgb:window._colorHsl;if(v)navigator.clipboard.writeText(v)}
 
 // Regex
-function runRegex(){var p=document.getElementById('regexPattern').value,f=document.getElementById('regexFlags').value,inp=document.getElementById('regexInput').value,r=document.getElementById('regexResult');if(!p){r.innerHTML='<em style="color:var(--muted)">Enter a pattern...</em>';return}try{var re=new RegExp(p,f),ms=[],m;while((m=re.exec(inp))!==null){ms.push({i:m.index,l:m[0].length,g:m.slice(1)});if(!f.includes('g'))break}if(ms.length===0){r.innerHTML='<span style="color:var(--muted)">No matches</span>';return}var h='<strong>'+ms.length+' match(es)</strong>',last=0,hl='';ms.forEach(function(x){hl+=escHtml2(inp.slice(last,x.i));hl+='<mark style="background:#ffeb3b;padding:1px 2px;border-radius:2px">'+escHtml2(inp.slice(x.i,x.i+x.l))+'</mark>';last=x.i+x.l});hl+=escHtml2(inp.slice(last));r.innerHTML=h+'<div style="background:var(--bg);padding:8px;border-radius:6px;margin-top:6px;font-family:monospace;font-size:.82rem;white-space:pre-wrap;word-break:break-all">'+hl+'</div>';if(ms[0]&&ms[0].g.length)r.innerHTML+='<div style="margin-top:6px;font-size:.82rem">Groups: '+ms[0].g.map(function(x,i){return(i+1)+': '+x}).join(', ')+'</div>'}catch(e){r.innerHTML='<span style="color:var(--red)">\u2717 '+e.message+'</span>'}}
+function runRegex(){var p=document.getElementById('regexPattern').value,f=document.getElementById('regexFlags').value,inp=document.getElementById('regexInput').value,r=document.getElementById('regexResult'),ml=document.getElementById('regexMatchList');if(!p){r.innerHTML='<em style="color:var(--muted)">Enter a pattern...</em>';ml.innerHTML='';return}try{var re=new RegExp(p,f),ms=[],m;while((m=re.exec(inp))!==null){ms.push({i:m.index,l:m[0].length,g:m.slice(1),t:m[0]});if(!f.includes('g'))break}if(ms.length===0){r.innerHTML='<span style="color:var(--muted)">No matches</span>';ml.innerHTML='';return}var h='<strong>'+ms.length+' match(es)</strong>',last=0,hl='';ms.forEach(function(x){hl+=escHtml2(inp.slice(last,x.i));hl+='<mark style="background:#ffeb3b;padding:1px 2px;border-radius:2px">'+escHtml2(inp.slice(x.i,x.i+x.l))+'</mark>';last=x.i+x.l});hl+=escHtml2(inp.slice(last));r.innerHTML=h+'<div style="background:var(--bg);padding:8px;border-radius:6px;margin-top:6px;font-family:monospace;font-size:.82rem;white-space:pre-wrap;word-break:break-all">'+hl+'</div>';if(ms[0]&&ms[0].g.length)r.innerHTML+='<div style="margin-top:6px;font-size:.82rem">Groups: '+ms[0].g.map(function(x,i){return(i+1)+': '+x}).join(', ')+'</div>';var mlh='';if(ms.length<=50){mlh='<div style="font-weight:600;margin-bottom:4px">Match List ('+ms.length+'):</div>';ms.forEach(function(x,i){mlh+='<div style="padding:2px 0;font-family:monospace;border-bottom:1px solid var(--border)"><span style="color:var(--accent)">#'+(i+1)+'</span> <code style="background:var(--bg);padding:1px 4px;border-radius:3px">'+escHtml2(x.t)+'</code></div>'});}else{mlh='<em>Too many matches to list ('+ms.length+')</em>';}ml.innerHTML=mlh}catch(e){r.innerHTML='<span style="color:var(--red)">\u2717 '+e.message+'</span>';ml.innerHTML=''}}
 function escHtml2(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+// ═══════════════════════════════════════════
+//  Text Dedup & Sort
+// ═══════════════════════════════════════════
+function dedupAction(type){
+  var v = document.getElementById('dedupInput').value, lines = v.split('\n'), out = document.getElementById('dedupOutput');
+  switch(type){
+    case 'dedup':
+      var seen={}, result=[]; lines.forEach(function(l){ if(!seen.hasOwnProperty(l)){seen[l]=true;result.push(l)} });
+      out.value = result.join('\n'); break;
+    case 'asc':
+      out.value = lines.filter(function(l){return l.trim()}).sort().join('\n'); break;
+    case 'desc':
+      out.value = lines.filter(function(l){return l.trim()}).sort(function(a,b){return b.localeCompare(a)}).join('\n'); break;
+    case 'trim':
+      out.value = lines.map(function(l){return l.trim()}).join('\n'); break;
+    case 'stats':
+      var filtered = lines.filter(function(l){return l.trim()}), total=filtered.length;
+      var seen2={}; filtered.forEach(function(l){ if(!seen2.hasOwnProperty(l)) seen2[l]=true });
+      out.value = 'Total lines: '+lines.length+'\nNon-empty: '+filtered.length+'\nUnique: '+Object.keys(seen2).length+'\nDuplicates: '+(filtered.length-Object.keys(seen2).length);
+      break;
+  }
+}
+function copyDedupResult(){var ta=document.getElementById('dedupOutput');if(ta.value){ta.select();document.execCommand('copy')}}
+
+// ═══════════════════════════════════════════
+//  Image Compressor
+// ═══════════════════════════════════════════
+var _imgCompData = null;
+function initImgCompress(){
+  var zone = document.getElementById('imgCompDropZone');
+  zone.ondragover = function(e){e.preventDefault();zone.style.borderColor='var(--accent)'};
+  zone.ondragleave = function(){zone.style.borderColor='var(--border)'};
+  zone.ondrop = function(e){e.preventDefault();zone.style.borderColor='var(--border)';if(e.dataTransfer.files[0])loadCompressImage(e.dataTransfer.files[0])};
+}
+function loadCompressImage(file){
+  if(!file||!file.type.match(/image\//))return;
+  _imgCompData = file;
+  var reader = new FileReader();
+  reader.onload = function(e){
+    document.getElementById('imgCompOrig').src = e.target.result;
+    document.getElementById('imgCompResult').style.display = 'block';
+    document.getElementById('imgCompDropZone').style.display = 'none';
+    autoCompress();
+  };
+  reader.readAsDataURL(file);
+}
+function autoCompress(){
+  if(!_imgCompData)return;
+  var q = parseInt(document.getElementById('imgCompQuality').value) / 100;
+  var img = new Image();
+  img.onload = function(){
+    var c = document.createElement('canvas'), w = img.naturalWidth, h = img.naturalHeight;
+    c.width = w; c.height = h;
+    var ctx = c.getContext('2d'); ctx.drawImage(img,0,0);
+    c.toBlob(function(blob){
+      var url = URL.createObjectURL(blob);
+      document.getElementById('imgCompPreview').src = url;
+      document.getElementById('imgCompInfo').innerHTML =
+        '<strong>Original:</strong> ' + formatSize(_imgCompData.size) +
+        ' → <strong>Compressed:</strong> ' + formatSize(blob.size) +
+        ' (<span style="color:var(--accent)">-'+Math.round((1-blob.size/_imgCompData.size)*100)+'%</span>)';
+      document.getElementById('imgCompDownload').style.display = 'inline-block';
+      window._imgCompBlob = blob;
+    }, 'image/jpeg', q);
+  };
+  img.src = URL.createObjectURL(_imgCompData);
+}
+function downloadCompressed(){
+  if(!window._imgCompBlob)return;
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(window._imgCompBlob);
+  a.download = 'compressed.jpg';
+  a.click();
+}
+function formatSize(b){return b<1024?b+' B':b<1048576?(b/1024).toFixed(1)+' KB':(b/1048576).toFixed(2)+' MB'}
 
 // 2048
 var g2048b=[],g2048s=0;
@@ -3001,13 +3126,17 @@ var SIDEBAR = {
   'en': [
     {cat:'📝 Text', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON Formatter'},
-      {id:'regex',icon:'🔍',label:'Regex Tester'},
+      {id:'regex',icon:'🧵',label:'Regex Tester'},
       {id:'count',icon:'📊',label:'Word Counter'},
       {id:'diff',icon:'≠',label:'Text Diff'},
       {id:'case',icon:'Aa',label:'Case Converter'},
       {id:'filename',icon:'📁',label:'Filename Extract'},
       {id:'htmlpreview',icon:'👁️',label:'HTML Preview'},
-      {id:'mdpreview',icon:'📝',label:'Markdown Preview'}
+      {id:'mdpreview',icon:'📝',label:'Markdown Preview'},
+      {id:'dedup',icon:'🔀',label:'Text Dedup & Sort'}
+    ]},
+    {cat:'🖼️ Image', open:false, items:[
+      {id:'imgcompress',icon:'🗜️',label:'Image Compressor'}
     ]},
     {cat:'🔐 Encode & Crypto', open:false, items:[
       {id:'url',icon:'🔗',label:'URL Encode/Decode'},
@@ -3050,13 +3179,17 @@ var SIDEBAR = {
   'zh-CN': [
     {cat:'📝 文本工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
-      {id:'regex',icon:'🔍',label:'正则测试'},
+      {id:'regex',icon:'🧵',label:'正则表达式测试'},
       {id:'count',icon:'📊',label:'字数统计'},
       {id:'diff',icon:'≠',label:'文本对比'},
       {id:'case',icon:'Aa',label:'大小写转换'},
       {id:'filename',icon:'📁',label:'文件名提取'},
       {id:'htmlpreview',icon:'👁️',label:'HTML 预览'},
-      {id:'mdpreview',icon:'📝',label:'Markdown 预览'}
+      {id:'mdpreview',icon:'📝',label:'Markdown 预览'},
+      {id:'dedup',icon:'🔀',label:'文本去重排序'}
+    ]},
+    {cat:'🖼️ 图片', open:false, items:[
+      {id:'imgcompress',icon:'🗜️',label:'图片压缩器'}
     ]},
     {cat:'🔐 编码加密', open:false, items:[
       {id:'url',icon:'🔗',label:'URL 编解码'},
@@ -3100,13 +3233,17 @@ var SIDEBAR = {
   'zh-TW': [
     {cat:'📝 文字工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
-      {id:'regex',icon:'🔍',label:'正則測試'},
+      {id:'regex',icon:'🧵',label:'正則表達式測試'},
       {id:'count',icon:'📊',label:'字數統計'},
       {id:'diff',icon:'≠',label:'文字對比'},
       {id:'case',icon:'Aa',label:'大小寫轉換'},
       {id:'filename',icon:'📁',label:'檔名提取'},
       {id:'htmlpreview',icon:'👁️',label:'HTML 預覽'},
-      {id:'mdpreview',icon:'📝',label:'Markdown 預覽'}
+      {id:'mdpreview',icon:'📝',label:'Markdown 預覽'},
+      {id:'dedup',icon:'🔀',label:'文本去重排序'}
+    ]},
+    {cat:'🖼️ 圖片', open:false, items:[
+      {id:'imgcompress',icon:'🗜️',label:'圖片壓縮器'}
     ]},
     {cat:'🔐 編碼加密', open:false, items:[
       {id:'url',icon:'🔗',label:'URL 編解碼'},
