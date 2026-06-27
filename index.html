@@ -982,6 +982,22 @@ function renderToolCards() {
   document.getElementById('toolGrid').innerHTML = html;
 }
 
+// Category tabs for Apps & Tools
+var _allCatProducts = [];
+function showCat(cat) {
+  document.querySelectorAll('.cat-tab').forEach(function(b){ b.classList.toggle('active', b.getAttribute('onclick').indexOf("'"+cat+"'")>0); });
+  var filtered = cat === 'all' ? _allCatProducts : _allCatProducts.filter(function(p){ return p.category === cat; });
+  var el = document.getElementById('appToolList');
+  if (!filtered.length) { el.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px;font-size:.85rem">No products in this category</div>'; return; }
+  el.innerHTML = filtered.map(function(p){
+    return '<div class="tool-item"><span class="ti-icon">'+(p.icon||'📦')+'</span><span class="ti-name">'+(p.name[lang]||p.name.en)+'</span><span class="ti-desc">'+(p.desc[lang]||p.desc.en||'')+'</span><span class="ti-price">$'+(p.price||0).toFixed(2)+'</span><button class="ti-btn" onclick="openOrder(\''+p.id+'\',\''+(p.name[lang]||p.name.en).replace(/'/g,"\\'")+'\','+(p.price||0)+',\''+(p.type||'digital')+'\')">'+t('buy_now')+'</button></div>';
+  }).join('');
+}
+fetch('products.json').then(function(r){return r.json();}).then(function(ps){
+  _allCatProducts = ps.map(function(p){ if(!p.icon) p.icon = p.type==='digital'?'💿':'📦'; if(!p.category) p.category = p.type==='digital'?'utility':'physical'; return p; });
+  showCat('all');
+}).catch(function(){ document.getElementById('appToolList').innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">Loading...</div>'; });
+
 function renderScriptCards() {
   var L = I18N[lang];
   var tools = [
@@ -1908,7 +1924,10 @@ function submitOrder(){
         orders.push({id:d.order_id, product:productName, price:price, email:email, time:new Date().toISOString(), method:_payMethod});
         localStorage.setItem('slowbuild_orders', JSON.stringify(orders));
       }catch(e){}
-      if(d.status==='confirmed'){
+      if(d.download_url){
+        msg.textContent = '✅ '+(lang==='zh-CN'?'确认！正在跳转下载...':lang==='zh-TW'?'確認！正在跳轉下載...':'Confirmed! Redirecting to download...');
+        setTimeout(function(){ window.location.href = d.download_url; }, 1200);
+      }else if(d.status==='confirmed'){
         msg.textContent = '✅ '+(lang==='zh-CN'?'已确认！下载链接已发送到你的邮箱。':lang==='zh-TW'?'已確認！下載連結已發送到你的郵箱。':'Confirmed! Download link sent to your email.');
       }else if(d.redirect_url){
         setTimeout(function(){ window.open(d.redirect_url, '_blank'); }, 1200);

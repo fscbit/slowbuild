@@ -13,7 +13,7 @@ from flask import request, jsonify
 BASE_DIR = Path(__file__).parent
 PRODUCTS_FILE = BASE_DIR.parent / "products.json"
 DB_FILE = BASE_DIR / "orders.db"
-DOWNLOAD_BASE = "https://www.slowbuild.top/downloads"
+DOWNLOAD_BASE = "https://api.slowbuild.top/downloads"
 
 SMTP_HOST = "smtp.qq.com"
 SMTP_PORT = 465
@@ -149,6 +149,17 @@ def register_order_routes(app):
 
         pay_urls = {"payoneer": PAYONEER_LINK, "paypal": PAYPAL_ME}
         redirect_url = pay_urls.get(payment_method)
+        ptype = product.get("type", "digital")
+
+        # Digital products: instant download
+        if ptype == "digital":
+            conn.execute("UPDATE orders SET status='confirmed', payment_txid='instant' WHERE id=?", (order_id,))
+            conn.commit()
+            exe_file = product.get("exeFile", (product.get("name", "tool")).replace(" ", "_") + ".zip")
+            download_url = f"{DOWNLOAD_BASE}/{order_id}/{exe_file}"
+            conn.close()
+            return jsonify({"ok": True, "order_id": order_id, "status": "confirmed",
+                           "download_url": download_url})
 
         if product.get("price", 0) <= 0:
             conn.execute("UPDATE orders SET status='confirmed', payment_txid='free' WHERE id=?", (order_id,))
@@ -290,3 +301,33 @@ def register_order_routes(app):
                         "revenue_usd": round(revenue, 2), "today_orders": today_orders})
 
     print("📋 Order routes registered on /api/order*")
+
+    @app.route("/downloads/<order_id>/<filename>")
+    def download_page(order_id, filename):
+        conn = _get_db()
+        order = conn.execute("SELECT * FROM orders WHERE id=?", (order_id,)).fetchone()
+        conn.close()
+        pname = order["product_name"] if order else "Product"
+        return f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Download — {pname}</title>
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:system-ui,sans-serif;background:#fafaf8;display:flex;align-items:center;justify-content:center;min-height:100vh}}
+.card{{background:#fff;border:1px solid #e5e5e0;border-radius:12px;padding:40px;max-width:440px;width:90%;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.04)}}
+h1{{font-size:1.2rem;margin-bottom:8px}}.sub{{color:#666;font-size:.88rem;margin-bottom:20px}}
+.oid{{font-size:.78rem;color:#999;background:#f3f0eb;padding:6px 12px;border-radius:6px;display:inline-block;margin-bottom:20px}}
+.btn{{display:inline-block;padding:12px 32px;background:#1e1e1e;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}}
+.btn:hover{{opacity:.88}}.note{{font-size:.78rem;color:#999;margin-top:16px;line-height:1.5}}
+.back{{color:#e87d4b;text-decoration:none;font-size:.82rem;margin-top:12px;display:inline-block}}
+</style></head>
+<body>
+<div class="card">
+<h1>{pname}</h1>
+<p class="sub">✅ Order confirmed</p>
+<div class="oid">Order #{order_id[:8] if order else ''}</div>
+<p><a class="btn" href="/downloads/{order_id}/{filename}" download>📥 Download</a></p>
+<p class="note">If download doesn't start, click the button above.<br>Having issues? Check your purchase email.</p>
+<a class="back" href="https://www.slowbuild.top">← Back to slowbuild.top</a>
+</div></body></html>"""
