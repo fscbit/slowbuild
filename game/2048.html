@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>2048 Game — Free Online Puzzle | slowbuild</title>
+  <meta name="description" content="Play 2048 online for free. The classic number puzzle game — swipe to merge tiles and reach 2048. No download, no ads. Works on mobile and desktop.">
+  <meta name="keywords" content="2048 game, free online puzzle, number game, brain teaser, slowbuild">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.slowbuild.top/game/2048.html">
+  <meta property="og:title" content="2048 Game — Free Online Puzzle | slowbuild">
+  <meta property="og:description" content="Play the classic 2048 number puzzle online for free. Swipe to merge tiles and reach 2048. No download needed.">
+  <meta property="og:url" content="https://www.slowbuild.top/game/2048.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="slowbuild">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <style>
+    :root{--bg:#fafaf8;--surface:#fff;--text:#1e1e1e;--muted:#666;--border:#e5e5e0;--accent:#e87d4b;--code-bg:#f3f0eb;--green:#067d3b;--radius:10px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh}
+    a{color:inherit}
+
+    nav{width:100%;position:sticky;top:0;z-index:10;background:rgba(250,250,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav-inner{max-width:1024px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:8px;text-decoration:none}
+    .logo-dot{width:7px;height:7px;background:var(--accent);border-radius:50%}
+
+    .game-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;width:100%}
+    .game-container{max-width:500px;width:100%}
+
+    .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:12px}
+    .header h1{font-size:2rem;font-weight:800;color:var(--text)}
+    .scores{display:flex;gap:8px}
+    .score-box{background:var(--code-bg);border-radius:8px;padding:8px 16px;text-align:center;min-width:70px}
+    .score-box .label{font-size:.65rem;text-transform:uppercase;color:var(--muted);letter-spacing:.5px}
+    .score-box .val{font-size:1.3rem;font-weight:700;color:var(--text)}
+
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:var(--radius);font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:all .15s;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+
+    .grid-wrap{position:relative;background:#bbada0;border-radius:12px;padding:8px;width:100%;aspect-ratio:1;max-width:500px;max-height:500px;margin:0 auto;touch-action:none}
+    .grid-bg{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);gap:8px;width:100%;height:100%}
+    .cell-bg{background:rgba(238,228,218,.35);border-radius:8px}
+    .tiles{position:absolute;top:8px;left:8px;right:8px;bottom:8px}
+    .tile{position:absolute;display:flex;align-items:center;justify-content:center;font-weight:700;border-radius:8px;transition:transform .1s ease-in-out;z-index:1;font-size:calc(min(18vw, 36px));line-height:1}
+
+    .tile-2{background:#eee4da;color:#776e65}
+    .tile-4{background:#ede0c8;color:#776e65}
+    .tile-8{background:#f2b179;color:#f9f6f2}
+    .tile-16{background:#f59563;color:#f9f6f2}
+    .tile-32{background:#f67c5f;color:#f9f6f2}
+    .tile-64{background:#f65e3b;color:#f9f6f2}
+    .tile-128{background:#edcf72;color:#f9f6f2;font-size:calc(min(15vw, 28px))}
+    .tile-256{background:#edcc61;color:#f9f6f2;font-size:calc(min(15vw, 28px))}
+    .tile-512{background:#edc850;color:#f9f6f2;font-size:calc(min(15vw, 28px))}
+    .tile-1024{background:#edc53f;color:#f9f6f2;font-size:calc(min(12vw, 22px))}
+    .tile-2048{background:#edc22e;color:#f9f6f2;font-size:calc(min(12vw, 22px))}
+    .tile-super{background:#3c3a32;color:#f9f6f2;font-size:calc(min(10vw, 18px))}
+
+    .tile-new{animation:tile-pop .2s ease}
+    @keyframes tile-pop{0%{transform:scale(0)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+
+    .tile-merged{animation:tile-merge .2s ease}
+    @keyframes tile-merge{0%{transform:scale(1)}50%{transform:scale(1.15)}100%{transform:scale(1)}}
+
+    .overlay{position:fixed;inset:0;background:rgba(238,228,218,.73);display:flex;align-items:center;justify-content:center;z-index:20;backdrop-filter:blur(2px)}
+    .overlay-box{background:var(--surface);border-radius:16px;padding:32px;text-align:center;max-width:360px;box-shadow:0 8px 32px rgba(0,0,0,.12)}
+    .overlay-box h2{font-size:1.8rem;margin-bottom:8px}
+    .overlay-box p{color:var(--muted);margin-bottom:20px}
+
+    footer{width:100%;max-width:1024px;margin:0 auto;padding:20px;text-align:center;border-top:1px solid var(--border);margin-top:auto}
+    footer a{color:var(--accent);text-decoration:none;font-weight:500}
+    footer a:hover{text-decoration:underline}
+
+    @media(max-width:480px){
+      .header h1{font-size:1.5rem}
+      .score-box{padding:6px 12px;min-width:60px}
+      .score-box .val{font-size:1.1rem}
+      .grid-wrap{max-width:100vw;max-height:100vw;padding:6px}
+      .tiles{top:6px;left:6px;right:6px;bottom:6px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="https://www.slowbuild.top/" class="logo"><span class="logo-dot"></span>slowbuild</a>
+      <span style="color:var(--muted);font-size:.9rem">🎮 2048</span>
+    </div>
+  </nav>
+
+  <div class="game-wrap">
+    <div class="game-container">
+      <div class="header">
+        <h1>2048</h1>
+        <div class="scores">
+          <div class="score-box"><div class="label">Score</div><div class="val" id="score">0</div></div>
+          <div class="score-box"><div class="label">Best</div><div class="val" id="best">0</div></div>
+        </div>
+        <button class="btn btn-primary" onclick="restart()">New Game</button>
+      </div>
+      <div class="grid-wrap" id="grid-wrap">
+        <div class="grid-bg">
+          <div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div>
+          <div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div>
+          <div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div>
+          <div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div><div class="cell-bg"></div>
+        </div>
+        <div class="tiles" id="tiles"></div>
+      </div>
+      <p style="text-align:center;color:var(--muted);font-size:.8rem;margin-top:12px">Use <strong>arrow keys</strong> or <strong>swipe</strong> to move tiles. Merge numbers to reach <strong>2048</strong>!</p>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.slowbuild.top/">← Back to slowbuild.top</a>
+  </footer>
+
+  <div class="overlay" id="gameover" style="display:none">
+    <div class="overlay-box">
+      <h2 id="overlay-title">Game Over!</h2>
+      <p id="overlay-msg">Good try! Play again?</p>
+      <button class="btn btn-primary" onclick="restart()">New Game</button>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const SIZE = 4;
+  let board = [];
+  let score = 0;
+  let best = parseInt(localStorage.getItem('sb_2048_best')||'0');
+  let gameOver = false;
+  let won = false;
+
+  const tilesEl = document.getElementById('tiles');
+  const scoreEl = document.getElementById('score');
+  const bestEl = document.getElementById('best');
+  const overlay = document.getElementById('gameover');
+  const overlayTitle = document.getElementById('overlay-title');
+  const overlayMsg = document.getElementById('overlay-msg');
+
+  bestEl.textContent = best;
+
+  function init(){
+    board = Array.from({length:SIZE},()=>Array(SIZE).fill(0));
+    score = 0;
+    gameOver = false;
+    won = false;
+    scoreEl.textContent = '0';
+    overlay.style.display = 'none';
+    tilesEl.innerHTML = '';
+    addRandom();
+    addRandom();
+    render();
+  }
+
+  function addRandom(){
+    const empty = [];
+    for(let r=0;r<SIZE;r++) for(let c=0;c<SIZE;c++) if(board[r][c]===0) empty.push({r,c});
+    if(empty.length===0) return;
+    const {r,c} = empty[Math.floor(Math.random()*empty.length)];
+    board[r][c] = Math.random()<0.9 ? 2 : 4;
+  }
+
+  function render(){
+    tilesEl.innerHTML = '';
+    for(let r=0;r<SIZE;r++){
+      for(let c=0;c<SIZE;c++){
+        const v = board[r][c];
+        if(v===0) continue;
+        const pct = 100/SIZE;
+        const tile = document.createElement('div');
+        tile.className = 'tile tile-'+(v<=2048?v:'super')+' tile-new';
+        tile.textContent = v;
+        tile.style.width = `calc(${pct}% - 8px)`;
+        tile.style.height = `calc(${pct}% - 8px)`;
+        tile.style.left = `calc(${c*pct}% + 4px)`;
+        tile.style.top = `calc(${r*pct}% + 4px)`;
+        tilesEl.appendChild(tile);
+      }
+    }
+  }
+
+  function slide(row){
+    let arr = row.filter(v=>v!==0);
+    for(let i=0;i<arr.length-1;i++){
+      if(arr[i]===arr[i+1]){
+        arr[i] *= 2;
+        score += arr[i];
+        arr.splice(i+1,1);
+      }
+    }
+    while(arr.length<SIZE) arr.push(0);
+    return arr;
+  }
+
+  function move(dr,dc){
+    let moved = false;
+    const old = board.map(r=>[...r]);
+
+    if(dr!==0){
+      for(let c=0;c<SIZE;c++){
+        let col = [];
+        for(let r=0;r<SIZE;r++) col.push(board[r][c]);
+        if(dr===1) col.reverse();
+        col = slide(col);
+        if(dr===1) col.reverse();
+        for(let r=0;r<SIZE;r++) board[r][c] = col[r];
+      }
+    }else{
+      for(let r=0;r<SIZE;r++){
+        let row = [...board[r]];
+        if(dc===1) row.reverse();
+        row = slide(row);
+        if(dc===1) row.reverse();
+        board[r] = row;
+      }
+    }
+
+    for(let r=0;r<SIZE;r++) for(let c=0;c<SIZE;c++) if(board[r][c]!==old[r][c]) moved=true;
+
+    if(moved){
+      addRandom();
+      render();
+      scoreEl.textContent = score;
+      if(score>best){
+        best = score;
+        bestEl.textContent = best;
+        localStorage.setItem('sb_2048_best',best);
+      }
+      checkGameOver();
+    }
+  }
+
+  function checkGameOver(){
+    // Check for 2048 win (only once)
+    if(!won){
+      for(let r=0;r<SIZE;r++) for(let c=0;c<SIZE;c++) if(board[r][c]>=2048){won=true;break}
+      if(won){
+        overlayTitle.textContent = '🎉 You Win!';
+        overlayMsg.textContent = 'You reached 2048! Keep playing or start a new game.';
+        overlay.style.display = 'flex';
+        return;
+      }
+    }
+
+    // Check for available moves
+    for(let r=0;r<SIZE;r++) for(let c=0;c<SIZE;c++) if(board[r][c]===0) return;
+    for(let r=0;r<SIZE;r++) for(let c=0;c<SIZE-1;c++) if(board[r][c]===board[r][c+1]) return;
+    for(let c=0;c<SIZE;c++) for(let r=0;r<SIZE-1;r++) if(board[r][c]===board[r+1][c]) return;
+
+    gameOver = true;
+    overlayTitle.textContent = 'Game Over';
+    overlayMsg.textContent = `Final score: ${score}. Try again?`;
+    overlay.style.display = 'flex';
+  }
+
+  window.restart = function(){
+    overlay.style.display = 'none';
+    init();
+  };
+
+  // Keyboard
+  document.addEventListener('keydown',e=>{
+    if(gameOver && e.key!=='r') return;
+    if(overlay.style.display==='flex' && won) overlay.style.display='none';
+    switch(e.key){
+      case 'ArrowUp': e.preventDefault(); move(-1,0); break;
+      case 'ArrowDown': e.preventDefault(); move(1,0); break;
+      case 'ArrowLeft': e.preventDefault(); move(0,-1); break;
+      case 'ArrowRight': e.preventDefault(); move(0,1); break;
+    }
+  });
+
+  // Touch swipe
+  let touchStartX=0, touchStartY=0;
+  const gridWrap = document.getElementById('grid-wrap');
+  gridWrap.addEventListener('touchstart',e=>{
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  },{passive:true});
+  gridWrap.addEventListener('touchend',e=>{
+    if(gameOver) return;
+    if(overlay.style.display==='flex' && won) overlay.style.display='none';
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    const absDx = Math.abs(dx), absDy = Math.abs(dy);
+    if(Math.max(absDx,absDy)<30) return;
+    if(absDx>absDy){
+      move(0, dx>0?1:-1);
+    }else{
+      move(dy>0?1:-1, 0);
+    }
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>
