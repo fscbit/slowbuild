@@ -353,6 +353,9 @@
     .tool-card-compact:hover{border-color:var(--accent);transform:translateY(-1px)}
     .tool-card-compact .icon{font-size:1.5rem;margin-bottom:6px}
     .tool-card-compact .name{font-size:.82rem;font-weight:500}
+    /* online convert cards — visually distinct */
+    .online-convert-card{background:linear-gradient(135deg,var(--surface) 0%,#f0fdf4 100%);border-color:#86efac}
+    .online-convert-card:hover{border-color:var(--accent)}
     /* Details expand */
     .tools-expand{margin-top:12px}
     .tools-expand summary{cursor:pointer;color:var(--accent);font-size:.85rem;font-weight:500;padding:8px 0}
@@ -480,17 +483,18 @@
     <h2 class="sec-title">🛠️ <span data-i18n="tools_head">Free Online Tools</span></h2>
     <p class="sec-sub" data-i18n="tools_head_sub">Runs in your browser. No upload. No signup.</p>
 
-    <!-- ☁️ 在线转换 — 放在最前面，高使用率优先 -->
+    <!-- ☁️ 在线转换 — 不用下载，直接上传就能用 -->
+    <p class="online-label" style="margin:8px 0 6px;font-size:.8rem;color:var(--accent);font-weight:500">☁️ <span data-i18n="online_label">Online Convert — No install, just upload & use</span></p>
     <div class="tool-grid-compact" style="margin-top:10px" id="onlineConvertGrid">
-      <div class="tool-card-compact" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">📄➡️📕</div>
         <div class="name"><span data-i18n="script_word2pdf">Word → PDF</span></div>
       </div>
-      <div class="tool-card-compact" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">🧹</div>
         <div class="name"><span data-i18n="script_dedup">Duplicate Finder</span></div>
       </div>
-      <div class="tool-card-compact" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">🖼️</div>
         <div class="name"><span data-i18n="script_extract_images">Image Lister</span></div>
       </div>
@@ -781,7 +785,7 @@ var I18N = {
     about_content: '<h2>About slowbuild</h2><p>slowbuild is a collection of free, no-sign-up micro tools. Built one at a time, with care. No tracking, no ads (yet), no nonsense.</p><p>Every tool runs entirely in your browser. Your data never leaves your device.</p><p>I\'m an indie maker who writes scripts to solve real problems. slowbuild is where I share them with the world.</p><p>Got a tool idea? <a href="#" onclick="showPage(\'home\');setTimeout(function(){document.getElementById(\'reqInput\').focus()},200);return false">Request it →</a></p>',
     privacy_content: '<h2>Privacy Policy</h2><p><strong>Last updated:</strong> June 2026</p><p>slowbuild does not collect, store, or share any personal data. All tools run locally in your browser.</p><ul><li><strong>No cookies</strong> — except localStorage to remember your language preference.</li><li><strong>No analytics</strong> — we don\'t track you.</li><li><strong>No data upload</strong> — everything stays on your device.</li><li><strong>No third-party scripts</strong> — this site loads nothing external.</li></ul><p>If this changes in the future, this page will be updated. Questions? Contact: hello@slowbuild.top</p>',
     sec_scripts: '📦 My Tools', scripts_desc: 'Standalone EXE files — my own tools, no install needed.',
-    sec_online: '☁️ Online Convert', online_desc: 'Upload a file → our server converts → download result.',
+    sec_online: '☁️ Online Convert', online_label: 'Online Convert — No install, just upload & use', online_desc: 'Upload a file → our server converts → download result.',
     online_convert: 'Convert', online_word2pdf_desc: 'Upload .docx, get PDF. Max 20MB.',
     online_dedup_desc: 'Upload a .zip of files. See which are duplicates.',
     online_images_desc: 'Upload a .zip of folders. List all images found.',
@@ -955,7 +959,7 @@ var I18N = {
     tag_more: '还有更多',
     sec_tools: '工具', tools_desc: '点开即用 — 全部在浏览器本地运行，不上传数据。',
     sec_scripts: '📦 我的工具', scripts_desc: '独立 EXE 文件 — 我自己写的工具，无需安装，双击即用。',
-    sec_online: '☁️ 在线转换', online_desc: '上传文件 → 服务器转换 → 下载结果。由你自己的虚拟机驱动。',
+    sec_online: '☁️ 在线转换', online_label: '在线转换 — 不用安装，直接上传就能用', online_desc: '上传文件 → 服务器转换 → 下载结果。由你自己的虚拟机驱动。',
     online_convert: '转换', online_word2pdf_desc: '上传 .docx，返回 PDF。最大 20MB。',
     online_dedup_desc: '上传 .zip 文件包。查看哪些是重复的。',
     online_images_desc: '上传 .zip 文件夹。列出里面所有图片。',
@@ -1134,7 +1138,7 @@ var I18N = {
     tag_more: '還有更多',
     sec_tools: '工具', tools_desc: '點開即用 — 全部在瀏覽器本機運行，不上傳資料。',
     sec_scripts: '📦 我的工具', scripts_desc: '獨立 EXE 檔案 — 我自己寫的工具，無需安裝，雙擊即用。',
-    sec_online: '☁️ 線上轉換', online_desc: '上傳檔案 → 伺服器轉換 → 下載結果。由你自己的虛擬機驅動。',
+    sec_online: '☁️ 線上轉換', online_label: '線上轉換 — 不用安裝，直接上傳就能用', online_desc: '上傳檔案 → 伺服器轉換 → 下載結果。由你自己的虛擬機驅動。',
     online_convert: '轉換', online_word2pdf_desc: '上傳 .docx，返回 PDF。最大 20MB。',
     online_dedup_desc: '上傳 .zip 檔案包。查看哪些是重複的。',
     online_images_desc: '上傳 .zip 資料夾。列出裡面所有圖片。',
