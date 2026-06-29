@@ -170,10 +170,25 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "MerchantReturnPolicy",
+  "@id": "https://www.slowbuild.top/#return-policy",
+  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+  "merchantReturnDays": 30,
+  "returnMethod": "https://schema.org/ReturnByMail",
+  "returnFees": "https://schema.org/FreeReturn",
+  "applicableCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG"],
+  "refundType": "https://schema.org/FullRefund",
+  "description": "30-day money-back guarantee. If you are not satisfied with your purchase, return the item in its original condition within 30 days for a full refund.",
+  "url": "https://www.slowbuild.top/"
+}
+  </script>
+  <script type="application/ld+json" id="product-jsonld">
+{
+  "@context": "https://schema.org",
   "@type": "ItemList",
   "@id": "https://www.slowbuild.top/#products",
   "name": "slowbuild Products — Factory Direct Electronics & Tools",
-  "description": "Factory-direct electronics, tools, and DIY kits shipped worldwide with free shipping",
+  "description": "Factory-direct electronics, tools, DIY kits, and digital software shipped worldwide with free shipping",
   "numberOfItems": 5,
   "itemListElement": [
     {
@@ -181,9 +196,40 @@
       "position": 1,
       "item": {
         "@type": "Product",
+        "@id": "https://www.slowbuild.top/#product-pcb1",
+        "sku": "PCB-PD-001",
         "name": "Type-C PD Fast Charge Power Bank PCB Board",
         "description": "DIY power bank module with bidirectional Type-C, USB-A output, digital battery display, and LED light. Supports PD/QC fast charging protocols.",
-        "offers": {"@type": "Offer", "price": "21.00", "priceCurrency": "USD"}
+        "image": "https://www.slowbuild.top/images/pcb-main.jpg",
+        "brand": {"@type": "Brand", "name": "slowbuild"},
+        "category": "Electronics",
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://www.slowbuild.top/#offer-pcb1",
+          "price": "21.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.slowbuild.top/",
+          "priceValidUntil": "2027-12-31",
+          "hasMerchantReturnPolicy": {"@id": "https://www.slowbuild.top/#return-policy"},
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG", "CN", "BR", "MX", "IN", "IT", "ES", "NL", "SE", "PL", "TR", "AE"]
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 20, "unitCode": "DAY"}
+            }
+          }
+        }
       }
     },
     {
@@ -191,9 +237,40 @@
       "position": 2,
       "item": {
         "@type": "Product",
+        "@id": "https://www.slowbuild.top/#product-mold1",
+        "sku": "MOLD-3D-001",
         "name": "3D Stereoscopic Resin Coaster Silicone Mold Set (4 Styles)",
         "description": "Create stunning 3D-effect epoxy resin coasters. High-quality silicone molds with detailed patterns — mountains, ocean love, galaxy, and cherry blossoms.",
-        "offers": {"@type": "Offer", "price": "15.00", "priceCurrency": "USD"}
+        "image": "https://www.slowbuild.top/images/mold-main.jpg",
+        "brand": {"@type": "Brand", "name": "slowbuild"},
+        "category": "Craft Supplies",
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://www.slowbuild.top/#offer-mold1",
+          "price": "15.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.slowbuild.top/",
+          "priceValidUntil": "2027-12-31",
+          "hasMerchantReturnPolicy": {"@id": "https://www.slowbuild.top/#return-policy"},
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG", "CN", "BR", "MX", "IN", "IT", "ES", "NL", "SE", "PL", "TR", "AE"]
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 20, "unitCode": "DAY"}
+            }
+          }
+        }
       }
     },
     {
@@ -201,9 +278,40 @@
       "position": 3,
       "item": {
         "@type": "Product",
+        "@id": "https://www.slowbuild.top/#product-hinge1",
+        "sku": "HINGE-HD-001",
         "name": "Heavy-Duty Cabinet Door Hinges Set (4-Pack)",
         "description": "Premium concealed cabinet hinges with soft-close mechanism. Suitable for kitchen cabinets, wardrobe doors, and furniture installation.",
-        "offers": {"@type": "Offer", "price": "21.00", "priceCurrency": "USD"}
+        "image": "https://www.slowbuild.top/images/hinge-main.jpg",
+        "brand": {"@type": "Brand", "name": "slowbuild"},
+        "category": "Hardware",
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://www.slowbuild.top/#offer-hinge1",
+          "price": "21.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.slowbuild.top/",
+          "priceValidUntil": "2027-12-31",
+          "hasMerchantReturnPolicy": {"@id": "https://www.slowbuild.top/#return-policy"},
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG", "CN", "BR", "MX", "IN", "IT", "ES", "NL", "SE", "PL", "TR", "AE"]
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 20, "unitCode": "DAY"}
+            }
+          }
+        }
       }
     },
     {
@@ -211,9 +319,40 @@
       "position": 4,
       "item": {
         "@type": "Product",
-        "name": "USB-C PD Tester & Multimeter (6-in-1)",
+        "@id": "https://www.slowbuild.top/#product-usbtest1",
+        "sku": "USB-PDT-001",
+        "name": "USB-C PD Tester &amp; Multimeter (6-in-1)",
         "description": "Compact USB power tester with color LCD. Measure voltage, current, power, capacity, and supported fast-charge protocols.",
-        "offers": {"@type": "Offer", "price": "9.99", "priceCurrency": "USD"}
+        "image": "https://www.slowbuild.top/images/usb-tester.jpg",
+        "brand": {"@type": "Brand", "name": "slowbuild"},
+        "category": "Electronics",
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://www.slowbuild.top/#offer-usbtest1",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.slowbuild.top/",
+          "priceValidUntil": "2027-12-31",
+          "hasMerchantReturnPolicy": {"@id": "https://www.slowbuild.top/#return-policy"},
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG", "CN", "BR", "MX", "IN", "IT", "ES", "NL", "SE", "PL", "TR", "AE"]
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 20, "unitCode": "DAY"}
+            }
+          }
+        }
       }
     },
     {
@@ -221,9 +360,40 @@
       "position": 5,
       "item": {
         "@type": "Product",
+        "@id": "https://www.slowbuild.top/#product-screwdriver1",
+        "sku": "SCREW-45-001",
         "name": "45-in-1 Precision Screwdriver Set with Magnetic Bits",
         "description": "Compact precision screwdriver kit for phone repair, laptop disassembly, glasses, watches, drones, and all electronics.",
-        "offers": {"@type": "Offer", "price": "15.99", "priceCurrency": "USD"}
+        "image": "https://www.slowbuild.top/images/screwdriver-set.jpg",
+        "brand": {"@type": "Brand", "name": "slowbuild"},
+        "category": "Tools",
+        "offers": {
+          "@type": "Offer",
+          "@id": "https://www.slowbuild.top/#offer-screwdriver1",
+          "price": "15.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.slowbuild.top/",
+          "priceValidUntil": "2027-12-31",
+          "hasMerchantReturnPolicy": {"@id": "https://www.slowbuild.top/#return-policy"},
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "CA", "GB", "AU", "DE", "FR", "JP", "KR", "SG", "CN", "BR", "MX", "IN", "IT", "ES", "NL", "SE", "PL", "TR", "AE"]
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 7, "maxValue": 20, "unitCode": "DAY"}
+            }
+          }
+        }
       }
     }
   ]
@@ -3369,6 +3539,74 @@ setLang = function(l){
 
 // Ensure sidebar renders on initial load
 if(document.getElementById('sidebarContent')) renderSidebar();
+</script>
+
+<!-- Dynamic Product JSON-LD (covers ALL products from products.json) -->
+<script>
+(function(){
+  if(!window.fetch) return;
+  fetch('products.json').then(function(r){ return r.json(); }).then(function(products){
+    var returnPolicyId = 'https://www.slowbuild.top/#return-policy';
+    var countries = ['US','CA','GB','AU','DE','FR','JP','KR','SG','CN','BR','MX','IN','IT','ES','NL','SE','PL','TR','AE'];
+    var pos = 0;
+    var items = [];
+    products.forEach(function(p){
+      if(!p.id) return;
+      pos++;
+      var img = p.image;
+      var absImg = img ? (img.indexOf('http')===0 ? img : 'https://www.slowbuild.top/'+img.replace(/^\//,'')) : null;
+      var isDigital = p.type === 'digital';
+      var offer = {
+        '@type': 'Offer',
+        '@id': 'https://www.slowbuild.top/#offer-'+p.id,
+        'price': String(p.price||0),
+        'priceCurrency': 'USD',
+        'availability': 'https://schema.org/InStock',
+        'url': 'https://www.slowbuild.top/',
+        'priceValidUntil': '2027-12-31',
+        'hasMerchantReturnPolicy': {'@id': returnPolicyId}
+      };
+      // Shipping only for physical items
+      if(!isDigital){
+        offer.shippingDetails = {
+          '@type': 'OfferShippingDetails',
+          'shippingRate': {'@type':'MonetaryAmount','value':'0','currency':'USD'},
+          'shippingDestination': {'@type':'DefinedRegion','addressCountry':countries},
+          'deliveryTime': {
+            '@type':'ShippingDeliveryTime',
+            'handlingTime':{'@type':'QuantitativeValue','minValue':1,'maxValue':3,'unitCode':'DAY'},
+            'transitTime':{'@type':'QuantitativeValue','minValue':7,'maxValue':20,'unitCode':'DAY'}
+          }
+        };
+      }
+      var item = {
+        '@type': 'Product',
+        '@id': 'https://www.slowbuild.top/#product-'+p.id,
+        'sku': (p.id||'').toUpperCase(),
+        'name': (p.name||{}).en || p.name || '',
+        'offers': offer
+      };
+      if((p.desc||{}).en || p.desc) item.description = (p.desc||{}).en || p.desc || '';
+      if(absImg) item.image = absImg;
+      item.brand = {'@type':'Brand','name':'slowbuild'};
+      if(isDigital) item.category = 'Software'; else item.category = 'Electronics';
+      items.push({'@type':'ListItem','position':pos,'item':item});
+    });
+    var jsonld = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      '@id': 'https://www.slowbuild.top/#all-products',
+      'name': 'slowbuild Products — All Items',
+      'description': 'Factory-direct electronics, tools, DIY kits, and digital software. Free worldwide shipping.',
+      'numberOfItems': items.length,
+      'itemListElement': items
+    };
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(jsonld);
+    document.head.appendChild(script);
+  }).catch(function(){ /* products.json not available, static JSON-LD suffices */ });
+})();
 </script>
 </div><!-- /main-wrap -->
 </body>
