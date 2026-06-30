@@ -267,6 +267,28 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- ====== Priority 0.6 EN Office Blog Series ====== -->
+  <url><loc>https://www.slowbuild.top/blog/en/office-01-quiet-quitting.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-02-passive-aggressive.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-03-meeting-hell.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-04-toxic-boss.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-05-open-office.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-06-remote-isolation.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-07-unlimited-pto.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-08-performance-review.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-09-corporate-gaslighting.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-10-imposter-syndrome.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-11-fridge-politics.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-12-cc-culture.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-13-micromanagement.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-14-team-building.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-15-burnout-recovery.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-16-singapore-office.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-17-grab-gossip.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-18-salary-negotiation.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-19-great-resignation.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.slowbuild.top/blog/en/office-20-boundaries.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
   <!-- ====== Priority 0.5 Other Languages ====== -->
   <!-- 日本語 -->
   <url>
