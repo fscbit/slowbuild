@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 522538,
+    "stars": 522542,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:36:37Z"
+    "updated": "2026-07-05T09:50:48Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 481637,
+    "stars": 481639,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:36:24Z"
+    "updated": "2026-07-05T09:46:37Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451097,
+    "stars": 451098,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:35:16Z"
+    "updated": "2026-07-05T09:40:04Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 446706,
+    "stars": 446710,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:35:21Z"
+    "updated": "2026-07-05T09:52:34Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391297,
+    "stars": 391299,
     "language": "Python",
     "topics": [
       "books",
@@ -82,7 +82,7 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:35:26Z"
+    "updated": "2026-07-05T09:45:58Z"
   },
   {
     "name": "sharkdp/bat",
@@ -123,7 +123,7 @@
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43611,
+    "stars": 43612,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,7 +133,7 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-05T08:55:36Z"
+    "updated": "2026-07-05T09:38:01Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
@@ -225,14 +225,20 @@
     "updated": "2026-07-04T20:56:05Z"
   },
   {
-    "name": "valkor-ai/loom",
-    "description": "Loop engineering for agentic software delivery.",
-    "url": "https://github.com/valkor-ai/loom",
+    "name": "zengxiao-he/tessera",
+    "description": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation,",
+    "url": "https://github.com/zengxiao-he/tessera",
     "homepage": "",
-    "stars": 496,
-    "language": "Rust",
-    "topics": [],
+    "stars": 497,
+    "language": "Python",
+    "topics": [
+      "cuda",
+      "flash-attention",
+      "fsdp",
+      "inference-engine",
+      "jax"
+    ],
     "source": "new",
-    "updated": "2026-07-05T02:04:14Z"
+    "updated": "2026-07-05T09:48:31Z"
   }
 ]

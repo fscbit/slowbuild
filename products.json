@@ -5438,5 +5438,335 @@
       ]
     },
     "category": "bundle"
+  },
+  {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 522542,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐522542)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐522542)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 522542+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 522542+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 481639,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐481639)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐481639)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": null,
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 451098,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐451098)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐451098)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451098+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451098+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 446710,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐446710)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐446710)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 446710+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 446710+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": null,
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 391299,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐391299)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐391299)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 391299+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 391299+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 59570,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐59570)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐59570)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 59570+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 59570+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": null,
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44206,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44206)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44206)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": null,
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43612,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43612)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43612)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43612+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43612+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": null,
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 39894,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐39894)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐39894)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39894+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39894+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": null,
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39654,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39654)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39654)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39654+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39654+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mykolaharmash-notelet",
+    "type": "digital",
+    "image": null,
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/mykolaharmash/notelet",
+    "github": "mykolaharmash/notelet",
+    "github_stars": 500,
+    "name": {
+      "en": "mykolaharmash/notelet",
+      "zh-CN": "mykolaharmash/notelet (GitHub ⭐500)",
+      "zh-TW": "mykolaharmash/notelet (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "SwiftUI component for displaying rich release notes inside an app",
+      "zh-CN": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 开源项目",
+      "zh-TW": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-huohua325-memslides",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/huohua325/Memslides",
+    "github": "huohua325/Memslides",
+    "github_stars": 498,
+    "name": {
+      "en": "huohua325/Memslides",
+      "zh-CN": "huohua325/Memslides (GitHub ⭐498)",
+      "zh-TW": "huohua325/Memslides (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.",
+      "zh-CN": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com. | GitHub 498+ Stars 开源项目",
+      "zh-TW": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com. | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-c0dejedi-nbd-vram",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/c0deJedi/nbd-vram",
+    "github": "c0deJedi/nbd-vram",
+    "github_stars": 497,
+    "name": {
+      "en": "c0deJedi/nbd-vram",
+      "zh-CN": "c0deJedi/nbd-vram (GitHub ⭐497)",
+      "zh-TW": "c0deJedi/nbd-vram (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w",
+      "zh-CN": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 开源项目",
+      "zh-TW": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kng7-p-se7en-pro",
+    "type": "digital",
+    "image": null,
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/KNG7-P/Se7en-Pro",
+    "github": "KNG7-P/Se7en-Pro",
+    "github_stars": 497,
+    "name": {
+      "en": "KNG7-P/Se7en-Pro",
+      "zh-CN": "KNG7-P/Se7en-Pro (GitHub ⭐497)",
+      "zh-TW": "KNG7-P/Se7en-Pro (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "KNG7-P/Se7en-Pro - Open source tool",
+      "zh-CN": "KNG7-P/Se7en-Pro - Open source tool | GitHub 497+ Stars 开源项目",
+      "zh-TW": "KNG7-P/Se7en-Pro - Open source tool | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-zengxiao-he-tessera",
+    "type": "digital",
+    "image": null,
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/zengxiao-he/tessera",
+    "github": "zengxiao-he/tessera",
+    "github_stars": 497,
+    "name": {
+      "en": "zengxiao-he/tessera",
+      "zh-CN": "zengxiao-he/tessera (GitHub ⭐497)",
+      "zh-TW": "zengxiao-he/tessera (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching,",
+      "zh-CN": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, | GitHub 497+ Stars 开源项目",
+      "zh-TW": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
   }
 ]
