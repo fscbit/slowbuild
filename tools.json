@@ -1,0 +1,238 @@
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 522538,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-07-05T09:36:37Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 481637,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-07-05T09:36:24Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 451097,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-07-05T09:35:16Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 446706,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-07-05T09:35:21Z"
+  },
+  {
+    "name": "EbookFoundation/free-programming-books",
+    "description": ":books: Freely available programming books",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "homepage": "https://ebookfoundation.github.io/free-programming-books/",
+    "stars": 391297,
+    "language": "Python",
+    "topics": [
+      "books",
+      "education",
+      "hacktoberfest",
+      "list",
+      "resource"
+    ],
+    "source": "hot",
+    "updated": "2026-07-05T09:35:26Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 59570,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-07-05T08:47:03Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44206,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-07-05T07:18:44Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 43611,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-07-05T08:55:36Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 39894,
+    "language": "Rust",
+    "topics": [
+      "application",
+      "gui",
+      "iced",
+      "linux",
+      "macos"
+    ],
+    "source": "tool",
+    "updated": "2026-07-05T09:11:39Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 39654,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-07-05T09:07:05Z"
+  },
+  {
+    "name": "mykolaharmash/notelet",
+    "description": "SwiftUI component for displaying rich release notes inside an app",
+    "url": "https://github.com/mykolaharmash/notelet",
+    "homepage": "",
+    "stars": 500,
+    "language": "Swift",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-05T06:42:44Z"
+  },
+  {
+    "name": "huohua325/Memslides",
+    "description": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.",
+    "url": "https://github.com/huohua325/Memslides",
+    "homepage": "https://arxiv.org/abs/2606.17162",
+    "stars": 498,
+    "language": "Python",
+    "topics": [
+      "agent",
+      "deck",
+      "llm-tools",
+      "slides"
+    ],
+    "source": "new",
+    "updated": "2026-07-05T09:24:35Z"
+  },
+  {
+    "name": "c0deJedi/nbd-vram",
+    "description": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you ha",
+    "url": "https://github.com/c0deJedi/nbd-vram",
+    "homepage": "https://www.seanlobjoit.com",
+    "stars": 497,
+    "language": "Shell",
+    "topics": [
+      "cuda",
+      "gpu",
+      "laptop",
+      "linux",
+      "memory"
+    ],
+    "source": "new",
+    "updated": "2026-07-04T09:51:45Z"
+  },
+  {
+    "name": "KNG7-P/Se7en-Pro",
+    "description": "",
+    "url": "https://github.com/KNG7-P/Se7en-Pro",
+    "homepage": "",
+    "stars": 497,
+    "language": "C#",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-04T20:56:05Z"
+  },
+  {
+    "name": "valkor-ai/loom",
+    "description": "Loop engineering for agentic software delivery.",
+    "url": "https://github.com/valkor-ai/loom",
+    "homepage": "",
+    "stars": 496,
+    "language": "Rust",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-05T02:04:14Z"
+  }
+]
