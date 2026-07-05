@@ -3327,7 +3327,12 @@ if(document.getElementById('sidebarContent')) renderSidebar();
 <!-- Dynamic Product JSON-LD (covers ALL products from products.json) -->
 <script>
 (function(){
+  // Guard: prevent double-execution (Google rendering can trigger twice)
+  if(window.__productSchemaInjected) return;
+  window.__productSchemaInjected = true;
   if(!window.fetch) return;
+  // Default placeholder for products without images (Google requires image for Product)
+  var DEFAULT_IMG = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect fill="#1a1a2e" width="600" height="400"/><text fill="#e87d4b" font-size="48" x="300" y="180" text-anchor="middle">🛠️</text><text fill="#fff" font-size="24" x="300" y="230" text-anchor="middle">slowbuild</text></svg>');
   fetch('products.json').then(function(r){ return r.json(); }).then(function(products){
     var returnPolicyId = 'https://www.slowbuild.top/#return-policy';
     var countries = ['US','CA','GB','AU','DE','FR','JP','KR','SG','CN','BR','MX','IN','IT','ES','NL','SE','PL','TR','AE'];
@@ -3337,7 +3342,7 @@ if(document.getElementById('sidebarContent')) renderSidebar();
       if(!p.id) return;
       pos++;
       var img = p.image;
-      var absImg = img ? (img.indexOf('http')===0 ? img : 'https://www.slowbuild.top/'+img.replace(/^\//,'')) : null;
+      var absImg = img ? (img.indexOf('http')===0 ? img : 'https://www.slowbuild.top/'+img.replace(/^\//,'')) : DEFAULT_IMG;
       var isDigital = p.type === 'digital';
       var offer = {
         '@type': 'Offer',
@@ -3369,8 +3374,8 @@ if(document.getElementById('sidebarContent')) renderSidebar();
         'name': (p.name||{}).en || p.name || '',
         'offers': offer
       };
+      item.image = absImg;  // always set (default placeholder if missing)
       if((p.desc||{}).en || p.desc) item.description = (p.desc||{}).en || p.desc || '';
-      if(absImg) item.image = absImg;
       item.brand = {'@type':'Brand','name':'slowbuild'};
       if(isDigital) item.category = 'Software'; else item.category = 'Electronics';
       items.push({'@type':'ListItem','position':pos,'item':item});
