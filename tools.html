@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GitHub 热门开源工具导航 | SlowBuild Tools</title>
+<meta name="description" content="每天自动更新的 GitHub 热门开源工具导航。发现实用的开发工具、效率软件、AI 工具，全部免费开源。SlowBuild 精选推荐。">
+<meta name="keywords" content="GitHub工具,开源工具,免费软件,开发工具,效率工具,在线工具导航">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.slowbuild.top/tools">
+<meta property="og:title" content="GitHub 热门开源工具导航 | SlowBuild">
+<meta property="og:description" content="每天自动更新的 GitHub 热门开源工具导航。全部免费开源。">
+<meta property="og:url" content="https://www.slowbuild.top/tools">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SlowBuild">
+<style>
+:root{--bg:#0a0a0f;--surface:#12121a;--border:#1e1e2e;--text:#d4d4e0;--muted:#707088;--gold:#d4a853;--teal:#38bdf8;--green:#22c55e;--red:#ef4444}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:20px 24px}
+.breadcrumb{font-size:.8rem;color:var(--muted);margin-bottom:20px}
+.breadcrumb a{color:var(--teal);text-decoration:none}
+.hero{text-align:center;padding:40px 0 30px}
+.hero h1{font-size:2rem;background:linear-gradient(135deg,#d4a853,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+.hero p{color:var(--muted);font-size:.9rem}
+.meta-bar{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.meta-item{text-align:center}
+.meta-item .num{font-size:1.5rem;font-weight:700;color:var(--gold)}
+.meta-item .label{font-size:.75rem;color:var(--muted)}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+.filter-btn{padding:6px 16px;border:1px solid var(--border);border-radius:20px;background:var(--surface);color:var(--text);font-size:.8rem;cursor:pointer;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{border-color:var(--teal);color:var(--teal)}
+
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.tool-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;transition:all .2s;display:flex;flex-direction:column}
+.tool-card:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 4px 20px rgba(56,189,248,.08)}
+.tool-name{font-size:1rem;font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.tool-name a{color:var(--teal);text-decoration:none}
+.tool-name a:hover{text-decoration:underline}
+.tool-name .lang-badge{font-size:.65rem;padding:2px 8px;border-radius:10px;background:rgba(56,189,248,.15);color:var(--teal)}
+.tool-desc{font-size:.82rem;color:var(--muted);line-height:1.5;margin-bottom:12px;flex:1}
+.tool-meta{display:flex;align-items:center;gap:12px;font-size:.75rem;color:var(--muted)}
+.tool-meta .stars{color:var(--gold);font-weight:600}
+.tool-meta .star-icon{font-size:.85rem}
+.tool-meta a{color:var(--teal);text-decoration:none;font-size:.75rem;margin-left:auto}
+.tool-meta a:hover{text-decoration:underline}
+.tool-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+.tool-tag{font-size:.65rem;padding:2px 8px;border-radius:10px;background:rgba(212,168,83,.1);color:var(--gold)}
+
+.cta{text-align:center;padding:40px 20px;margin-top:30px;background:linear-gradient(135deg,rgba(212,168,83,.08),rgba(56,189,248,.05));border-radius:12px;border:1px solid var(--border)}
+.cta h3{color:var(--gold);margin-bottom:8px}
+.cta p{color:var(--muted);font-size:.85rem;margin-bottom:16px}
+.cta a{display:inline-block;background:var(--gold);color:#000;padding:10px 28px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.85rem;transition:all .2s}
+.cta a:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,168,83,.3)}
+
+.loading{text-align:center;padding:60px;color:var(--muted)}
+.spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--teal);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.empty{text-align:center;padding:60px;color:var(--muted);font-size:.9rem}
+
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:20px}
+footer a{color:var(--teal)}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="breadcrumb"><a href="/">首页</a> / 工具导航</div>
+
+<div class="hero">
+  <h1>🧭 GitHub 开源工具导航</h1>
+  <p>每天自动更新 · 精选热门开源项目 · 全部免费</p>
+</div>
+
+<div class="meta-bar" id="metaBar"></div>
+
+<div class="filters" id="filters">
+  <button class="filter-btn active" data-filter="all">全部</button>
+</div>
+
+<div class="tool-grid" id="toolGrid">
+  <div class="loading"><div class="spinner"></div><p>加载中...</p></div>
+</div>
+
+<div class="cta" id="updateTime">
+  <h3>🔧 更多免费在线工具</h3>
+  <p>PDF转换 · JSON格式化 · 二维码生成 · 八字算命 — 无需注册</p>
+  <a href="/">回到首页 →</a>
+</div>
+</div>
+
+<footer>
+  <p>数据来源：<a href="https://github.com" target="_blank" rel="noopener">GitHub</a> · 每日自动更新 · <a href="/">slowbuild.top</a></p>
+</footer>
+
+<script>
+(async function(){
+  try {
+    var resp = await fetch('/tools.json');
+    var tools = await resp.json();
+    render(tools);
+  } catch(e) {
+    document.getElementById('toolGrid').innerHTML = '<div class="empty">⚠️ 数据加载失败，请稍后重试</div>';
+  }
+})();
+
+function render(tools){
+  // Meta
+  var languages = {};
+  var totalStars = 0;
+  tools.forEach(function(t){
+    totalStars += t.stars || 0;
+    var lang = t.language || 'Other';
+    languages[lang] = (languages[lang]||0) + 1;
+  });
+  document.getElementById('metaBar').innerHTML =
+    '<div class="meta-item"><div class="num">'+tools.length+'</div><div class="label">工具总数</div></div>'+
+    '<div class="meta-item"><div class="num">'+Object.keys(languages).length+'</div><div class="label">编程语言</div></div>'+
+    '<div class="meta-item"><div class="num">'+(totalStars/1000).toFixed(1)+'k</div><div class="label">总 Star 数</div></div>';
+
+  // Filters
+  var langKeys = Object.keys(languages).sort(function(a,b){ return languages[b]-languages[a]; });
+  var filterHtml = '<button class="filter-btn active" data-filter="all">全部 ('+tools.length+')</button>';
+  langKeys.slice(0,8).forEach(function(l){
+    filterHtml += '<button class="filter-btn" data-filter="'+l+'">'+l+' ('+languages[l]+')</button>';
+  });
+  document.getElementById('filters').innerHTML = filterHtml;
+
+  // Cards
+  renderCards(tools);
+
+  // Filter click
+  document.querySelectorAll('.filter-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.dataset.filter;
+      var filtered = f === 'all' ? tools : tools.filter(function(t){ return (t.language||'Other') === f; });
+      renderCards(filtered);
+    });
+  });
+}
+
+function renderCards(tools){
+  if(!tools.length){
+    document.getElementById('toolGrid').innerHTML = '<div class="empty">暂无数据</div>';
+    return;
+  }
+  var html = '';
+  tools.forEach(function(t){
+    var name = t.name || '';
+    var desc = (t.description||'').slice(0,100);
+    var stars = t.stars || 0;
+    var lang = t.language || '';
+    var url = t.url || '';
+    var hp = t.homepage || '';
+    var updated = (t.updated||'').slice(0,10);
+    var topics = (t.topics||[]).slice(0,3);
+
+    html += '<div class="tool-card">'+
+      '<div class="tool-name">'+
+        '<a href="'+url+'" target="_blank" rel="noopener">'+esc(name.split('/').pop()||name)+'</a>'+
+        (lang ? '<span class="lang-badge">'+esc(lang)+'</span>' : '')+
+      '</div>'+
+      '<div class="tool-desc">'+(desc||'暂无描述')+'</div>'+
+      '<div class="tool-tags">'+topics.map(function(tg){ return '<span class="tool-tag">'+esc(tg)+'</span>'; }).join('')+'</div>'+
+      '<div class="tool-meta">'+
+        '<span class="star-icon">⭐</span><span class="stars">'+(stars>999?(stars/1000).toFixed(1)+'k':stars)+'</span>'+
+        '<span>'+updated+'</span>'+
+        (hp ? '<a href="'+hp+'" target="_blank" rel="noopener">🌐 官网</a>' : '')+
+        '<a href="'+url+'" target="_blank" rel="noopener">GitHub →</a>'+
+      '</div>'+
+    '</div>';
+  });
+  document.getElementById('toolGrid').innerHTML = html;
+}
+
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+</script>
+</body>
+</html>

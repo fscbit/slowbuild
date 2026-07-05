@@ -9,6 +9,7 @@
     { "source": "/:path*", "has": [{ "type": "host", "value": "slowbuild.top" }], "destination": "https://www.slowbuild.top/:path*", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/tools", "destination": "/tools.html" }
   ]
 }
