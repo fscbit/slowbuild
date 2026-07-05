@@ -283,7 +283,73 @@ def generate_pack(tools, hn_stories, zhihu_items, devto_articles):
         "tip": "Pexels 找免费相关素材，CapCut 加文字动画",
     })
     
-    # ═══ 额外素材: Reddit 替代 — HN/DevTo 热帖 ═══
+    # ═══ Reddit 帖子文案 ═══
+    reddit_posts = []
+    
+    # 工具推荐帖 → r/InternetIsBeautiful 或 r/programming
+    if tools:
+        t = random.choice(tools)
+        desc = t.get('desc', '') or 'a useful open-source tool'
+        reddit_posts.append({
+            "subreddit": "r/InternetIsBeautiful",
+            "title": f"{t['name']} — {desc[:80]}",
+            "body": f"""Found this open-source tool on GitHub and thought it was worth sharing.
+
+**{t['name']}** — {desc}
+
+⭐ {t['stars']}+ stars on GitHub
+🔗 {t['url']}
+
+Free and open source — no strings attached.""",
+            "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool",
+        })
+    
+    # 今日冷知识 → r/todayilearned
+    fact_en, _ = random.choice(TODAY_ILEARNED)
+    reddit_posts.append({
+        "subreddit": "r/todayilearned",
+        "title": f"TIL {fact_en}",
+        "body": "",  # TIL posts use title-only
+        "tip": "r/todayilearned — just the title is enough, no body needed",
+    })
+    
+    # 励志/金句 → r/GetMotivated
+    quote_en, _ = random.choice(MOTIVATIONAL_QUOTES)
+    reddit_posts.append({
+        "subreddit": "r/GetMotivated",
+        "title": f"[IMAGE] {quote_en}",
+        "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+        "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free).",
+    })
+    
+    # 效率技巧 → r/productivity 或 r/LifeProTips
+    tip_en, _ = random.choice(LIFE_TIPS)
+    reddit_posts.append({
+        "subreddit": "r/LifeProTips",
+        "title": f"LPT: {tip_en}",
+        "body": f"""{tip_en}
+
+Been doing this for a while and it genuinely changed my workflow. Simple but effective.""",
+        "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you",
+    })
+    
+    # HN 热帖评论 → r/programming 或 r/technology
+    if hn_stories:
+        s = random.choice(hn_stories)
+        reddit_posts.append({
+            "subreddit": "r/programming",
+            "title": s["title"],
+            "body": f"""Interesting discussion happening on HN about this ({s.get('points',0)} points, {s.get('comments',0)} comments).
+
+🔗 {s.get('url', '')}
+
+What do you think? Is this the right approach?""",
+            "tip": "Screenshot the HN thread, post the image. Great engagement bait.",
+        })
+    
+    pack["reddit_posts"] = reddit_posts
+    
+    # ═══ 额外素材: HN/DevTo 热帖 ═══
     content_ideas = []
     for s in hn_stories[:3]:
         content_ideas.append({
@@ -406,6 +472,15 @@ def format_markdown(pack):
     for idea in pack.get("content_ideas", []):
         md += f"- **[{idea['source']}]** [{idea['title'][:60]}]({idea['url']})\n"
         md += f"  → {idea['use_for']}\n\n"
+    
+    # Reddit posts
+    md += "## 🗣️ Reddit 帖子文案（直接复制粘贴发帖）\n\n"
+    for i, rp in enumerate(pack.get("reddit_posts", [])):
+        md += f"### 帖子 {i+1} → {rp['subreddit']}\n\n"
+        md += f"**标题:**\n```\n{rp['title']}\n```\n\n"
+        if rp.get("body"):
+            md += f"**正文:**\n```\n{rp['body']}\n```\n\n"
+        md += f"💡 {rp.get('tip', '')}\n\n---\n\n"
     
     # Bonus
     b = pack.get("bonus", {})
