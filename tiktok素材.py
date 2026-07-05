@@ -203,12 +203,34 @@ def fetch_devto():
     except:
         return []
 
+def fetch_douban():
+    """豆瓣小组热门话题"""
+    try:
+        r = http("https://www.douban.com/group/explore",
+                 headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"})
+        topics = []
+        seen = set()
+        for m in re.finditer(r'topic/(\d+)/[^"]*"[^>]*>([^<]+)', r.text):
+            tid, title = m.group(1), m.group(2).strip()
+            if tid not in seen and len(title) > 4:
+                seen.add(tid)
+                topics.append({
+                    "id": tid,
+                    "title": title,
+                    "url": f"https://www.douban.com/group/topic/{tid}/",
+                })
+            if len(topics) >= 10:
+                break
+        return topics
+    except:
+        return []
+
 
 # ══════════════════════════════════════════
 # 素材包生成
 # ══════════════════════════════════════════
 
-def generate_pack(tools, hn_stories, zhihu_items, devto_articles):
+def generate_pack(tools, hn_stories, zhihu_items, devto_articles, douban_items):
     today = datetime.now()
     date_str = today.strftime("%Y-%m-%d")
     day_names = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
@@ -374,6 +396,13 @@ What do you think? Is this the right approach?""",
             "url": z["url"],
             "use_for": "Hot topic in China — translate/adapt for global audience"
         })
+    for db in douban_items[:5]:
+        content_ideas.append({
+            "source": "豆瓣小组",
+            "title": db["title"],
+            "url": db["url"],
+            "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+        })
     
     pack["content_ideas"] = content_ideas
     
@@ -468,10 +497,22 @@ def format_markdown(pack):
         md += "---\n\n"
     
     # Content ideas
-    md += "## 💡 额外内容灵感（来自 HN / Dev.to / 知乎）\n\n"
+    md += "## 💡 额外内容灵感\n\n"
+    
+    # Group by source
+    sources = {}
     for idea in pack.get("content_ideas", []):
-        md += f"- **[{idea['source']}]** [{idea['title'][:60]}]({idea['url']})\n"
-        md += f"  → {idea['use_for']}\n\n"
+        src = idea["source"]
+        if src not in sources:
+            sources[src] = []
+        sources[src].append(idea)
+    
+    for src, ideas in sources.items():
+        md += f"### 📌 {src}\n\n"
+        for idea in ideas:
+            md += f"- [{idea['title'][:60]}]({idea['url']})\n"
+            md += f"  → {idea['use_for']}\n"
+        md += "\n"
     
     # Reddit posts
     md += "## 🗣️ Reddit 帖子文案（直接复制粘贴发帖）\n\n"
@@ -511,11 +552,12 @@ def main():
     hn = fetch_hn_stories()
     zhihu = fetch_zhihu_hot()
     devto = fetch_devto()
-    print(f"  GitHub: {len(tools)} | HN: {len(hn)} | 知乎: {len(zhihu)} | Dev.to: {len(devto)}")
+    douban = fetch_douban()
+    print(f"  GitHub: {len(tools)} | HN: {len(hn)} | 知乎: {len(zhihu)} | Dev.to: {len(devto)} | 豆瓣: {len(douban)}")
     
     # 生成素材包
     print("[2/3] 生成视频文案...")
-    pack = generate_pack(tools, hn, zhihu, devto)
+    pack = generate_pack(tools, hn, zhihu, devto, douban)
     
     # 输出
     print("[3/3] 输出文件...")
