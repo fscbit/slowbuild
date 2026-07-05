@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 522543,
+    "stars": 522736,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:57:27Z"
+    "updated": "2026-07-05T22:59:01Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 481640,
+    "stars": 481826,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:56:43Z"
+    "updated": "2026-07-05T22:40:39Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451098,
+    "stars": 451129,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:40:04Z"
+    "updated": "2026-07-05T22:44:18Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 446713,
+    "stars": 446879,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:57:58Z"
+    "updated": "2026-07-05T22:59:29Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391300,
+    "stars": 391330,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:54:42Z"
+    "updated": "2026-07-05T22:44:55Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59570,
+    "stars": 59576,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-05T08:47:03Z"
+    "updated": "2026-07-05T22:17:07Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44206,
+    "stars": 44207,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-05T07:18:44Z"
+    "updated": "2026-07-05T19:19:34Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43612,
+    "stars": 43618,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-05T09:38:01Z"
+    "updated": "2026-07-05T20:09:49Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 39894,
+    "stars": 39896,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-05T09:11:39Z"
+    "updated": "2026-07-05T21:10:00Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39654,
+    "stars": 39659,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,24 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-05T09:07:05Z"
+    "updated": "2026-07-05T17:54:07Z"
+  },
+  {
+    "name": "c0deJedi/nbd-vram",
+    "description": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you ha",
+    "url": "https://github.com/c0deJedi/nbd-vram",
+    "homepage": "https://www.seanlobjoit.com",
+    "stars": 500,
+    "language": "Shell",
+    "topics": [
+      "cuda",
+      "gpu",
+      "laptop",
+      "linux",
+      "memory"
+    ],
+    "source": "new",
+    "updated": "2026-07-05T18:29:21Z"
   },
   {
     "name": "mykolaharmash/notelet",
@@ -181,39 +198,6 @@
     "updated": "2026-07-05T06:42:44Z"
   },
   {
-    "name": "huohua325/Memslides",
-    "description": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.",
-    "url": "https://github.com/huohua325/Memslides",
-    "homepage": "https://arxiv.org/abs/2606.17162",
-    "stars": 498,
-    "language": "Python",
-    "topics": [
-      "agent",
-      "deck",
-      "llm-tools",
-      "slides"
-    ],
-    "source": "new",
-    "updated": "2026-07-05T09:24:35Z"
-  },
-  {
-    "name": "c0deJedi/nbd-vram",
-    "description": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you ha",
-    "url": "https://github.com/c0deJedi/nbd-vram",
-    "homepage": "https://www.seanlobjoit.com",
-    "stars": 497,
-    "language": "Shell",
-    "topics": [
-      "cuda",
-      "gpu",
-      "laptop",
-      "linux",
-      "memory"
-    ],
-    "source": "new",
-    "updated": "2026-07-04T09:51:45Z"
-  },
-  {
     "name": "KNG7-P/Se7en-Pro",
     "description": "",
     "url": "https://github.com/KNG7-P/Se7en-Pro",
@@ -222,23 +206,30 @@
     "language": "C#",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-04T20:56:05Z"
+    "updated": "2026-07-05T18:50:50Z"
   },
   {
-    "name": "zengxiao-he/tessera",
-    "description": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation,",
-    "url": "https://github.com/zengxiao-he/tessera",
+    "name": "AnthonySturdy/micro-radar",
+    "description": "A tiny open-source flight radar for your desk",
+    "url": "https://github.com/AnthonySturdy/micro-radar",
     "homepage": "",
-    "stars": 497,
-    "language": "Python",
+    "stars": 496,
+    "language": "C++",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-05T22:38:28Z"
+  },
+  {
+    "name": "gajus/zod-compiler",
+    "description": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, et",
+    "url": "https://github.com/gajus/zod-compiler",
+    "homepage": "",
+    "stars": 495,
+    "language": "TypeScript",
     "topics": [
-      "cuda",
-      "flash-attention",
-      "fsdp",
-      "inference-engine",
-      "jax"
+      "zod"
     ],
     "source": "new",
-    "updated": "2026-07-05T09:48:31Z"
+    "updated": "2026-07-05T13:52:17Z"
   }
 ]

@@ -5440,6 +5440,50 @@
     "category": "bundle"
   },
   {
+    "id": "gh-anthonysturdy-micro-radar",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/AnthonySturdy/micro-radar",
+    "github": "AnthonySturdy/micro-radar",
+    "github_stars": 496,
+    "name": {
+      "en": "AnthonySturdy/micro-radar",
+      "zh-CN": "AnthonySturdy/micro-radar (GitHub ⭐496)",
+      "zh-TW": "AnthonySturdy/micro-radar (GitHub ⭐496)"
+    },
+    "desc": {
+      "en": "A tiny open-source flight radar for your desk",
+      "zh-CN": "A tiny open-source flight radar for your desk | GitHub 496+ Stars 开源项目",
+      "zh-TW": "A tiny open-source flight radar for your desk | GitHub 496+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gajus-zod-compiler",
+    "type": "digital",
+    "image": null,
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/gajus/zod-compiler",
+    "github": "gajus/zod-compiler",
+    "github_stars": 495,
+    "name": {
+      "en": "gajus/zod-compiler",
+      "zh-CN": "gajus/zod-compiler (GitHub ⭐495)",
+      "zh-TW": "gajus/zod-compiler (GitHub ⭐495)"
+    },
+    "desc": {
+      "en": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc",
+      "zh-CN": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc | GitHub 495+ Stars 开源项目",
+      "zh-TW": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc | GitHub 495+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": null,
@@ -5721,50 +5765,6 @@
       "en": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w",
       "zh-CN": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 开源项目",
       "zh-TW": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kng7-p-se7en-pro",
-    "type": "digital",
-    "image": null,
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/KNG7-P/Se7en-Pro",
-    "github": "KNG7-P/Se7en-Pro",
-    "github_stars": 497,
-    "name": {
-      "en": "KNG7-P/Se7en-Pro",
-      "zh-CN": "KNG7-P/Se7en-Pro (GitHub ⭐497)",
-      "zh-TW": "KNG7-P/Se7en-Pro (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "KNG7-P/Se7en-Pro - Open source tool",
-      "zh-CN": "KNG7-P/Se7en-Pro - Open source tool | GitHub 497+ Stars 开源项目",
-      "zh-TW": "KNG7-P/Se7en-Pro - Open source tool | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zengxiao-he-tessera",
-    "type": "digital",
-    "image": null,
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/zengxiao-he/tessera",
-    "github": "zengxiao-he/tessera",
-    "github_stars": 497,
-    "name": {
-      "en": "zengxiao-he/tessera",
-      "zh-CN": "zengxiao-he/tessera (GitHub ⭐497)",
-      "zh-TW": "zengxiao-he/tessera (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching,",
-      "zh-CN": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, | GitHub 497+ Stars 开源项目",
-      "zh-TW": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, | GitHub 497+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
