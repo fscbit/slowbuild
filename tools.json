@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 522542,
+    "stars": 522543,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:50:48Z"
+    "updated": "2026-07-05T09:57:27Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 481639,
+    "stars": 481640,
     "language": "",
     "topics": [
       "awesome",
@@ -31,7 +31,7 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:46:37Z"
+    "updated": "2026-07-05T09:56:43Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
@@ -55,7 +55,7 @@
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 446710,
+    "stars": 446713,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:52:34Z"
+    "updated": "2026-07-05T09:57:58Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391299,
+    "stars": 391300,
     "language": "Python",
     "topics": [
       "books",
@@ -82,7 +82,7 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-05T09:45:58Z"
+    "updated": "2026-07-05T09:54:42Z"
   },
   {
     "name": "sharkdp/bat",
