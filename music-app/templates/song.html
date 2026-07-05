@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block title %}{{ song.title }} — {{ song.artist }} | SlowBuild Music{% endblock %}
+{% block content %}
+<style>
+.song-header{display:flex;gap:24px;flex-wrap:wrap;margin:30px 0}
+.song-cover-lg{width:260px;height:260px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--surface)}
+.song-cover-lg img{width:100%;height:100%;object-fit:cover}
+.song-cover-lg .placeholder{font-size:6rem;opacity:.3;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.song-info{flex:1;min-width:250px}
+.song-info h1{font-size:1.8rem;margin-bottom:4px}
+.song-info .artist-name{font-size:1.2rem;color:var(--pink);margin-bottom:8px}
+.song-info .meta{color:var(--muted);font-size:.85rem;margin-bottom:16px}
+.player-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin:20px 0}
+.player-box h3{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+.player-box iframe{width:100%;border-radius:8px}
+.lyrics-section{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin:24px 0}
+.lyrics-section h3{color:var(--gold);margin-bottom:16px;font-size:1.1rem}
+.lyrics-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.88rem;line-height:2}
+.lyrics-row .original{color:var(--text)}
+.lyrics-row .translation{color:var(--muted)}
+.review-section{margin:24px 0}
+.review-section h3{color:var(--teal);font-size:1.1rem;margin-bottom:12px}
+.review-section .review{color:#c0c0d0;font-size:.9rem;line-height:1.8;white-space:pre-line}
+.cultural-note{background:linear-gradient(135deg,rgba(212,168,83,.1),rgba(236,72,153,.08));border:1px solid var(--gold);border-radius:12px;padding:20px;margin:24px 0}
+.cultural-note h4{color:var(--gold);margin-bottom:8px;font-size:.9rem}
+.cultural-note p{color:#c0c0d0;font-size:.85rem;line-height:1.7}
+.platform-links{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.platform-links a{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;text-decoration:none;font-size:.8rem;transition:all .2s}
+.platform-links a.spotify{background:#1db954;color:#000}
+.platform-links a.youtube{background:#ff0000;color:#fff}
+.platform-links a.netease{background:#c20c0c;color:#fff}
+.platform-links a:hover{transform:translateY(-1px)}
+.related{margin:40px 0}
+.related h3{color:var(--gold);margin-bottom:16px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.related-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:.8rem;text-decoration:none;color:var(--text);transition:all .2s}
+.related-card:hover{border-color:var(--teal)}
+.related-card .r-title{font-weight:600;margin-bottom:2px}
+.related-card .r-artist{color:var(--pink);font-size:.75rem}
+.tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.tag-badge{background:rgba(56,189,248,.1);color:var(--teal);padding:3px 12px;border-radius:20px;font-size:.75rem}
+@media(max-width:600px){.lyrics-row{grid-template-columns:1fr}}
+</style>
+
+<div class="breadcrumb" style="margin-top:16px;font-size:.8rem;color:var(--muted)">
+  <a href="/" style="color:var(--teal)">Home</a> / {{ song.title }}
+</div>
+
+<div class="song-header">
+  <div class="song-cover-lg">
+    {% if song.cover %}<img src="{{ song.cover }}" alt="{{ song.title }}">
+    {% else %}<span class="placeholder">🎵</span>{% endif %}
+  </div>
+  <div class="song-info">
+    <h1>{{ song.title }}</h1>
+    <p class="artist-name">{{ song.artist }}</p>
+    <p class="meta">
+      {% if song.genre %}{{ song.genre|capitalize }}{% endif %}
+      {% if song.year %} · {{ song.year }}{% endif %}
+      · {{ song.language or 'Chinese' }}
+      · Added {{ song.added }}
+    </p>
+    {% if song.tags %}
+    <div class="tags-row">
+      {% for t in song.tags %}<span class="tag-badge">{{ t }}</span>{% endfor %}
+    </div>
+    {% endif %}
+    <div class="platform-links">
+      {% if song.spotify_id %}<a href="https://open.spotify.com/track/{{ song.spotify_id }}" target="_blank" class="spotify">🎧 Spotify</a>{% endif %}
+      {% if song.youtube_id %}<a href="https://www.youtube.com/watch?v={{ song.youtube_id }}" target="_blank" class="youtube">▶ YouTube</a>{% endif %}
+      {% if song.netease_id %}<a href="https://music.163.com/song?id={{ song.netease_id }}" target="_blank" class="netease">🎵 网易云</a>{% endif %}
+    </div>
+  </div>
+</div>
+
+{% if song.spotify_id %}
+<div class="player-box">
+  <h3>🎧 Listen on Spotify</h3>
+  <iframe src="https://open.spotify.com/embed/track/{{ song.spotify_id }}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+{% elif song.youtube_id %}
+<div class="player-box">
+  <h3>▶ Watch on YouTube</h3>
+  <iframe src="https://www.youtube.com/embed/{{ song.youtube_id }}" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+</div>
+{% endif %}
+
+{% if song.review_en %}
+<div class="review-section">
+  <h3>📝 Review (EN)</h3>
+  <div class="review">{{ song.review_en }}</div>
+</div>
+{% endif %}
+{% if song.review_cn %}
+<div class="review-section">
+  <h3>📝 乐评 (中文)</h3>
+  <div class="review">{{ song.review_cn }}</div>
+</div>
+{% endif %}
+
+{% if song.lyrics_original and song.lyrics_translation_en %}
+<div class="lyrics-section">
+  <h3>🎤 Lyrics / 歌词</h3>
+  <div class="lyrics-row">
+    <div class="original">{{ song.lyrics_original }}</div>
+    <div class="translation">{{ song.lyrics_translation_en }}</div>
+  </div>
+  {% if song.lyrics_translation_cn_note %}
+  <p style="margin-top:12px;font-size:.8rem;color:var(--muted)">💬 {{ song.lyrics_translation_cn_note }}</p>
+  {% endif %}
+</div>
+{% endif %}
+
+{% if song.cultural_note %}
+<div class="cultural-note">
+  <h4>🏮 Cultural Context</h4>
+  <p>{{ song.cultural_note }}</p>
+</div>
+{% endif %}
+
+{% if related %}
+<div class="related">
+  <h3>🎶 You Might Also Like</h3>
+  <div class="related-grid">
+    {% for r in related %}
+    <a href="/song/{{ r.id }}" class="related-card">
+      <div class="r-title">{{ r.title[:30] }}</div>
+      <div class="r-artist">{{ r.artist }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}SlowBuild Music — Chinese Songs Explained in English{% endblock %}
+{% block content %}
+<div class="hero">
+  <h1>🎵 Chinese Songs, Explained</h1>
+  <p>Hand-picked Chinese music with bilingual reviews, lyric translations, and cultural context. By a native speaker in 衡水, for the world.</p>
+</div>
+
+<div class="search-bar">
+  <input type="text" placeholder="Search songs, artists, genres..." autocomplete="off">
+</div>
+
+<div class="filters">
+  <button class="filter-btn {% if not current_genre %}active{% endif %}" data-genre="all">All</button>
+  {% for g in genres %}
+  <button class="filter-btn {% if current_genre == g %}active{% endif %}" data-genre="{{ g }}">{{ g|capitalize }}</button>
+  {% endfor %}
+</div>
+
+{% if songs %}
+<div class="song-grid">
+  {% for s in songs %}
+  <div class="song-card">
+    <a href="/song/{{ s.id }}">
+    <div class="song-cover">
+      {% if s.cover %}
+      <img src="{{ s.cover }}" alt="{{ s.title }}" loading="lazy">
+      {% else %}
+      <span class="placeholder">🎵</span>
+      {% endif %}
+    </div>
+    </a>
+    <div class="song-body">
+      <h3><a href="/song/{{ s.id }}">{{ s.title }}</a></h3>
+      <p class="artist">{{ s.artist }}{% if s.year %} · {{ s.year }}{% endif %}</p>
+      <p class="desc">{{ s.review_en[:120] }}{% if s.review_en|length > 120 %}...{% endif %}</p>
+      <div class="meta">
+        <span class="tag">{{ s.genre or 'music' }}</span>
+        <span>{{ s.added }}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty">
+  <p>🎶 No songs yet. <a href="/admin" style="color:var(--teal)">Add the first one →</a></p>
+</div>
+{% endif %}
+{% endblock %}

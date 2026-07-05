@@ -1,0 +1,41 @@
+[
+  {
+    "id": "song-qingtian",
+    "title": "晴天 (Sunny Day)",
+    "artist": "周杰伦 (Jay Chou)",
+    "genre": "pop",
+    "year": "2003",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2736d9ce01904b4623d1e7b55ad",
+    "spotify_id": "6UelLqGlWMcVH1E5c4H7lY",
+    "youtube_id": "",
+    "netease_id": "186016",
+    "review_en": "If you only listen to one Jay Chou song, make it this one. 'Sunny Day' is not about good weather — it's about the ache of nostalgia, the kind that hits you on a random Tuesday when an old photo pops up on your phone.\n\nReleased in 2003 on the album 'Yeh Hui-mei', this song defined an entire generation's youth in China. The gentle piano intro, the understated guitar, and Jay's signature mumble-singing create a hazy, dreamlike atmosphere that perfectly captures how memories feel — fuzzy around the edges but sharp in the heart.\n\nThe genius of this song is in the contrast: the title says 'sunny', but the emotion is pure rain. It's about looking back at a past love, realizing you can't go back, but still feeling grateful it happened. That bittersweet tug is universal — no wonder it's still one of the most-streamed Chinese songs of all time.",
+    "review_cn": "周杰伦最伟大的情歌之一，不是写给现任的甜言蜜语，而是写给回忆的一封情书。钢琴前奏一响，瞬间穿越回高中教室。这首歌最妙的地方在于——它叫'晴天'，但整首歌都在下雨。",
+    "lyrics_original": "刮风这天 我试过握着你手\n但偏偏 雨渐渐\n大到我看你不见\n还要多久 我才能在你身边\n等到放晴的那天\n也许我会比较好一点",
+    "lyrics_translation_en": "The wind was blowing, I tried to hold your hand\nBut the rain kept falling harder\nUntil I couldn't see you anymore\nHow much longer must I wait to be by your side\nMaybe when the sky finally clears\nI'll feel a little better",
+    "lyrics_translation_cn_note": "\"放晴\" literally means 'to clear up' (weather), but here it also implies emotional healing. The double meaning is lost in direct translation.",
+    "cultural_note": "Jay Chou (周杰伦) is arguably the most influential Chinese-language musician of the 21st century. 'Sunny Day' from his 2003 album is considered one of the 'holy trinity' of Chinese pop songs every millennial knows by heart. The song's enduring popularity — still charting on streaming platforms 20+ years later — speaks to its universal theme of nostalgic longing.",
+    "tags": ["nostalgia", "love", "classic", "piano", "youth"],
+    "added": "2026-07-05",
+    "language": "zh"
+  },
+  {
+    "id": "song-guangmang",
+    "title": "光芒 (Radiance)",
+    "artist": "张靓颖 (Jane Zhang)",
+    "genre": "pop",
+    "year": "2005",
+    "cover": "",
+    "spotify_id": "",
+    "youtube_id": "",
+    "netease_id": "",
+    "review_en": "Before Chinese pop went global, there was Jane Zhang. 'Radiance' (光芒) is a masterclass in vocal control — listen to how she builds from a whisper to a full-force belt over four minutes without ever sounding strained. The lyrics are deceptively simple: a young woman declaring she won't be defined by others' expectations. But in the context of 2005 China, where young people were just beginning to embrace individualism, this song was quietly revolutionary.",
+    "review_cn": "张靓颖的声音像一把刀，能把最普通的词句劈出光来。《光芒》不只是在唱歌，是在宣告一个年轻女性的独立宣言。2005年的中国，这种态度是稀缺品。",
+    "lyrics_original": "",
+    "lyrics_translation_en": "",
+    "cultural_note": "Jane Zhang rose to fame through the 2005 Super Girl competition (a precursor to modern idol shows in China), one of the few contestants who was praised for pure vocal ability rather than marketability. She later recorded the theme song for Disney's Mulan, becoming one of the first Chinese singers to bridge into the Western mainstream.",
+    "tags": ["vocals", "empowerment", "ballad", "supergirl"],
+    "added": "2026-07-05",
+    "language": "zh"
+  }
+]
