@@ -5440,6 +5440,50 @@
     "category": "bundle"
   },
   {
+    "id": "gh-zarazhangrui-beautiful-feishu-",
+    "type": "digital",
+    "image": null,
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/zarazhangrui/beautiful-feishu-whiteboard",
+    "github": "zarazhangrui/beautiful-feishu-whiteboard",
+    "github_stars": 500,
+    "name": {
+      "en": "zarazhangrui/beautiful-feishu-whiteboard",
+      "zh-CN": "zarazhangrui/beautiful-feishu-whiteboard (GitHub ⭐500)",
+      "zh-TW": "zarazhangrui/beautiful-feishu-whiteboard (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill.",
+      "zh-CN": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-chaxiu-munk-ai",
+    "type": "digital",
+    "image": null,
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/chaxiu/munk-ai",
+    "github": "chaxiu/munk-ai",
+    "github_stars": 498,
+    "name": {
+      "en": "chaxiu/munk-ai",
+      "zh-CN": "chaxiu/munk-ai (GitHub ⭐498)",
+      "zh-TW": "chaxiu/munk-ai (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Self-improving AI testing engine across Android, iOS, and Web.",
+      "zh-CN": "Self-improving AI testing engine across Android, iOS, and Web. | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Self-improving AI testing engine across Android, iOS, and Web. | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-anthonysturdy-micro-radar",
     "type": "digital",
     "image": null,
@@ -5721,50 +5765,6 @@
       "en": "SwiftUI component for displaying rich release notes inside an app",
       "zh-CN": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 开源项目",
       "zh-TW": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-huohua325-memslides",
-    "type": "digital",
-    "image": null,
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/huohua325/Memslides",
-    "github": "huohua325/Memslides",
-    "github_stars": 498,
-    "name": {
-      "en": "huohua325/Memslides",
-      "zh-CN": "huohua325/Memslides (GitHub ⭐498)",
-      "zh-TW": "huohua325/Memslides (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.",
-      "zh-CN": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com. | GitHub 498+ Stars 开源项目",
-      "zh-TW": "A hierarchical memory framework for personalized presentation agents. Try it at memslides.com. | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-c0dejedi-nbd-vram",
-    "type": "digital",
-    "image": null,
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/c0deJedi/nbd-vram",
-    "github": "c0deJedi/nbd-vram",
-    "github_stars": 497,
-    "name": {
-      "en": "c0deJedi/nbd-vram",
-      "zh-CN": "c0deJedi/nbd-vram (GitHub ⭐497)",
-      "zh-TW": "c0deJedi/nbd-vram (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w",
-      "zh-CN": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 开源项目",
-      "zh-TW": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 497+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
