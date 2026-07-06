@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-06",
+  "day": "Monday",
+  "generated_at": "2026-07-06 06:30",
+  "videos": [
+    {
+      "id": 1,
+      "type": "motivational_quote",
+      "script_en": "Your vibe attracts your tribe.",
+      "script_cn": "你的气场吸引你的圈子。",
+      "hashtags": [
+        "#motivation",
+        "#quotes",
+        "#MondayMotivation",
+        "#mindset",
+        "#inspiration"
+      ],
+      "visual": "Dark gradient background + white text appearing word by word",
+      "music": "Lo-fi / ambient / cinematic soft piano",
+      "duration": "15-20 seconds",
+      "english_voiceover": "Your vibe attracts your tribe.",
+      "tip": "用 CapCut 文字动画模板：'Typewriter' 效果"
+    },
+    {
+      "id": 2,
+      "type": "tool_demo",
+      "tool_name": "c0deJedi/nbd-vram",
+      "tool_desc": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with solder",
+      "tool_url": "https://github.com/c0deJedi/nbd-vram",
+      "stars": 500,
+      "language": "Shell",
+      "hook": "This free tool saved me 3 hours today. Link in bio 🔗 #productivity #techtok",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#devtools",
+        "#programming",
+        "#techtok"
+      ],
+      "visual": "Screen recording showing c0deJedi/nbd-vram in action",
+      "music": "Tech/electronic light beat",
+      "duration": "25-30 seconds",
+      "english_caption": "c0deJedi/nbd-vram: Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with solder // 500+ ⭐ on GitHub // Link in bio 🔗",
+      "tip": "OBS 录屏 30 秒，加 CapCut 自动英文字幕，不用说话"
+    },
+    {
+      "id": 3,
+      "type": "did_you_know",
+      "fact_en": "The shortest war in history was between Britain and Zanzibar in 1896. It lasted 38 minutes.",
+      "fact_cn": "历史上最短的战争是 1896 年英国和桑给巴尔之战，持续了 38 分钟。",
+      "hashtags": [
+        "#didyouknow",
+        "#facts",
+        "#mindblown",
+        "#todayilearned",
+        "#interesting"
+      ],
+      "visual": "Related stock image/video + white text overlay",
+      "music": "Curious/mysterious tone",
+      "duration": "10-15 seconds",
+      "english_caption": "Did you know? 💡\nThe shortest war in history was between Britain and Zanzibar in 1896. It lasted 38 minutes.\n\nFollow for more daily facts 🔔",
+      "tip": "Pexels 找免费相关素材，CapCut 加文字动画"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "subreddit": "r/InternetIsBeautiful",
+      "title": "euzu/tuliprox — Flexible IPTV playlist processor & proxy in Rust 🦀 - supports M3U, Xtream Codes,",
+      "body": "Found this open-source tool on GitHub and thought it was worth sharing.\n\n**euzu/tuliprox** — Flexible IPTV playlist processor & proxy in Rust 🦀 - supports M3U, Xtream Codes,\n\n⭐ 500+ stars on GitHub\n🔗 https://github.com/euzu/tuliprox\n\nFree and open source — no strings attached.",
+      "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool"
+    },
+    {
+      "subreddit": "r/todayilearned",
+      "title": "TIL A day on Venus is longer than a year on Venus.",
+      "body": "",
+      "tip": "r/todayilearned — just the title is enough, no body needed"
+    },
+    {
+      "subreddit": "r/GetMotivated",
+      "title": "[IMAGE] Wake up with determination. Go to bed with satisfaction.",
+      "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+      "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free)."
+    },
+    {
+      "subreddit": "r/LifeProTips",
+      "title": "LPT: Say no to good opportunities so you can say yes to great ones.",
+      "body": "Say no to good opportunities so you can say yes to great ones.\n\nBeen doing this for a while and it genuinely changed my workflow. Simple but effective.",
+      "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you"
+    },
+    {
+      "subreddit": "r/programming",
+      "title": "Introduction to Compilers and Language Design (2021)",
+      "body": "Interesting discussion happening on HN about this (251 points, 43 comments).\n\n🔗 https://dthain.github.io/books/compiler/\n\nWhat do you think? Is this the right approach?",
+      "tip": "Screenshot the HN thread, post the image. Great engagement bait."
+    }
+  ],
+  "content_ideas": [
+    {
+      "source": "HackerNews",
+      "title": "Organic Maps",
+      "url": "https://organicmaps.app/",
+      "pts": 714,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Introduction to Compilers and Language Design (2021)",
+      "url": "https://dthain.github.io/books/compiler/",
+      "pts": 251,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "It's not about physical vs. digital games, it's about ownership",
+      "url": "https://popcar.bearblog.dev/its-about-ownership/",
+      "pts": 233,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Forward Deployed Engineers and the future of software engineering",
+      "url": "https://dev.to/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+      "tags": [
+        "agents",
+        "ai",
+        "career"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Protect Yourself, Mesh Yourself",
+      "url": "https://dev.to/eschmechel/protect-yourself-mesh-yourself-3fkn",
+      "tags": [
+        "tutorial",
+        "productivity",
+        "opensource"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "印度政府正调查塔塔电子大规模数据泄露事件， 涉及苹果、特斯拉，这种泄露影响有多大？暴露了哪些安全隐患？",
+      "url": "https://www.zhihu.com/question/2056780978534750118",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "女朋友宣称能吃出河里野生鱼和池塘里鱼的味道差别，她是在骗我吗？",
+      "url": "https://www.zhihu.com/question/549961837",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "一下就明白了什么是山舞银蛇。。。原驰蜡象。。。。",
+      "url": "https://www.douban.com/group/topic/492502779/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "和朋友 deeptalk 几次后，我突然有点下头了",
+      "url": "https://www.douban.com/group/topic/492414781/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "164/53 广东夏季穿搭分享（通勤+游玩）",
+      "url": "https://www.douban.com/group/topic/492368284/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "下班后0基础自学水彩画，非常沉浸有成就感",
+      "url": "https://www.douban.com/group/topic/492492190/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "实践低成本的有效养生方式",
+      "url": "https://www.douban.com/group/topic/492603515/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    }
+  ],
+  "bonus": {
+    "life_tip_en": "The 5-minute rule: if a task takes less than 5 minutes, do it immediately. Don't let small tasks pile up.",
+    "life_tip_cn": "5分钟法则：一件事如果5分钟内能搞定，立刻做，别堆积。",
+    "use_for": "Extra video: text-only 'Productivity Tip of the Day' — 10 seconds, no face needed"
+  }
+}

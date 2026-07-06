@@ -1,0 +1,429 @@
+{
+  "fetch_time": "2026-06-30T10:42:26.988884",
+  "repos": [
+    {
+      "name": "Yu9191/wloc",
+      "url": "https://github.com/Yu9191/wloc",
+      "description": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
+      "stars": 1527,
+      "forks": 197,
+      "language": "JavaScript",
+      "topics": [],
+      "growth": 254.5,
+      "updated": "2026-06-30T02:33:38Z",
+      "homepage": "https://wloc-pages.pages.dev/",
+      "license": ""
+    },
+    {
+      "name": "baairon/torlink",
+      "url": "https://github.com/baairon/torlink",
+      "description": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
+      "stars": 700,
+      "forks": 39,
+      "language": "TypeScript",
+      "topics": [
+        "downloader",
+        "magnet-links",
+        "p2p",
+        "torrent",
+        "torrent-client",
+        "zero-configuration"
+      ],
+      "growth": 175.0,
+      "updated": "2026-06-30T02:38:14Z",
+      "homepage": "https://www.npmjs.com/package/torlnk",
+      "license": "MIT"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "stars": 185216,
+      "forks": 46120,
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "artificial-intelligence",
+        "autonomous-agents",
+        "claude",
+        "gpt",
+        "llama-api",
+        "llm",
+        "openai",
+        "python"
+      ],
+      "growth": 154.1,
+      "updated": "2026-06-30T02:25:21Z",
+      "homepage": "https://agpt.co",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "description": "A feature-rich command-line audio/video downloader",
+      "stars": 174278,
+      "forks": 14701,
+      "language": "Python",
+      "topics": [
+        "cli",
+        "downloader",
+        "python",
+        "sponsorblock",
+        "youtube-dl",
+        "youtube-downloader",
+        "yt-dlp"
+      ],
+      "growth": 84.1,
+      "updated": "2026-06-30T02:32:53Z",
+      "homepage": "https://discord.gg/H5MNcFW63r",
+      "license": "Unlicense"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "stars": 194569,
+      "forks": 58935,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow",
+        "development",
+        "integration-framework",
+        "integrations",
+        "ipaas",
+        "low-code",
+        "low-code-platform",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "n8n",
+        "no-code",
+        "self-hosted",
+        "typescript",
+        "workflow",
+        "workflow-automation"
+      ],
+      "growth": 75.9,
+      "updated": "2026-06-30T02:38:37Z",
+      "homepage": "https://n8n.io",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "stars": 177640,
+      "forks": 30580,
+      "language": "Dart",
+      "topics": [
+        "android",
+        "app-framework",
+        "cross-platform",
+        "dart",
+        "dart-platform",
+        "desktop",
+        "flutter",
+        "flutter-package",
+        "fuchsia",
+        "ios",
+        "linux-desktop",
+        "macos",
+        "material-design",
+        "mobile",
+        "mobile-development",
+        "skia",
+        "web",
+        "web-framework",
+        "windows"
+      ],
+      "growth": 43.0,
+      "updated": "2026-06-30T01:53:43Z",
+      "homepage": "https://flutter.dev",
+      "license": "BSD-3-Clause"
+    }
+  ],
+  "products": [
+    {
+      "id": "github-wloc",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "wloc",
+        "zh-CN": "wloc (GitHub 1527⭐)",
+        "zh-TW": "wloc (GitHub 1527⭐)"
+      },
+      "desc": {
+        "en": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位\n\n⭐ 1527 stars | 🍴 197 forks | 📈 254.5/day\nLanguage: JavaScript\nLicense: \nGitHub: https://github.com/Yu9191/wloc",
+        "zh-CN": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位\n\n⭐ 1527 星标 | 🍴 197 Fork | 📈 日增 254.5 星\n语言: JavaScript\n许可: \nGitHub: https://github.com/Yu9191/wloc",
+        "zh-TW": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位\n\n⭐ 1527 星標 | 🍴 197 Fork | 📈 日增 254.5 星\n語言: JavaScript\n許可: \nGitHub: https://github.com/Yu9191/wloc"
+      },
+      "specs": {
+        "en": [
+          "⭐ 1527 GitHub Stars",
+          "📈 254.5 stars/day growth",
+          "💻 Language: JavaScript",
+          "📜 License: ",
+          "🔗 https://github.com/Yu9191/wloc"
+        ],
+        "zh-CN": [
+          "⭐ 1527 GitHub 星标",
+          "📈 日增 254.5 星",
+          "💻 语言: JavaScript",
+          "📜 许可: ",
+          "🔗 https://github.com/Yu9191/wloc"
+        ],
+        "zh-TW": [
+          "⭐ 1527 GitHub 星標",
+          "📈 日增 254.5 星",
+          "💻 語言: JavaScript",
+          "📜 許可: ",
+          "🔗 https://github.com/Yu9191/wloc"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 1527 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 1527 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 1527 GitHub 星標"
+      }
+    },
+    {
+      "id": "github-torlink",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "torlink",
+        "zh-CN": "torlink (GitHub 700⭐)",
+        "zh-TW": "torlink (GitHub 700⭐)"
+      },
+      "desc": {
+        "en": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.\n\n⭐ 700 stars | 🍴 39 forks | 📈 175.0/day\nLanguage: TypeScript\nLicense: MIT\nGitHub: https://github.com/baairon/torlink",
+        "zh-CN": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.\n\n⭐ 700 星标 | 🍴 39 Fork | 📈 日增 175.0 星\n语言: TypeScript\n许可: MIT\nGitHub: https://github.com/baairon/torlink",
+        "zh-TW": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.\n\n⭐ 700 星標 | 🍴 39 Fork | 📈 日增 175.0 星\n語言: TypeScript\n許可: MIT\nGitHub: https://github.com/baairon/torlink"
+      },
+      "specs": {
+        "en": [
+          "⭐ 700 GitHub Stars",
+          "📈 175.0 stars/day growth",
+          "💻 Language: TypeScript",
+          "📜 License: MIT",
+          "🔗 https://github.com/baairon/torlink"
+        ],
+        "zh-CN": [
+          "⭐ 700 GitHub 星标",
+          "📈 日增 175.0 星",
+          "💻 语言: TypeScript",
+          "📜 许可: MIT",
+          "🔗 https://github.com/baairon/torlink"
+        ],
+        "zh-TW": [
+          "⭐ 700 GitHub 星標",
+          "📈 日增 175.0 星",
+          "💻 語言: TypeScript",
+          "📜 許可: MIT",
+          "🔗 https://github.com/baairon/torlink"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 700 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 700 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 700 GitHub 星標"
+      }
+    },
+    {
+      "id": "github-autogpt",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "AutoGPT",
+        "zh-CN": "AutoGPT (GitHub 185216⭐)",
+        "zh-TW": "AutoGPT (GitHub 185216⭐)"
+      },
+      "desc": {
+        "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.\n\n⭐ 185216 stars | 🍴 46120 forks | 📈 154.1/day\nLanguage: Python\nLicense: NOASSERTION\nGitHub: https://github.com/Significant-Gravitas/AutoGPT",
+        "zh-CN": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.\n\n⭐ 185216 星标 | 🍴 46120 Fork | 📈 日增 154.1 星\n语言: Python\n许可: NOASSERTION\nGitHub: https://github.com/Significant-Gravitas/AutoGPT",
+        "zh-TW": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.\n\n⭐ 185216 星標 | 🍴 46120 Fork | 📈 日增 154.1 星\n語言: Python\n許可: NOASSERTION\nGitHub: https://github.com/Significant-Gravitas/AutoGPT"
+      },
+      "specs": {
+        "en": [
+          "⭐ 185216 GitHub Stars",
+          "📈 154.1 stars/day growth",
+          "💻 Language: Python",
+          "📜 License: NOASSERTION",
+          "🔗 https://github.com/Significant-Gravitas/AutoGPT"
+        ],
+        "zh-CN": [
+          "⭐ 185216 GitHub 星标",
+          "📈 日增 154.1 星",
+          "💻 语言: Python",
+          "📜 许可: NOASSERTION",
+          "🔗 https://github.com/Significant-Gravitas/AutoGPT"
+        ],
+        "zh-TW": [
+          "⭐ 185216 GitHub 星標",
+          "📈 日增 154.1 星",
+          "💻 語言: Python",
+          "📜 許可: NOASSERTION",
+          "🔗 https://github.com/Significant-Gravitas/AutoGPT"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 185216 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 185216 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 185216 GitHub 星標"
+      }
+    },
+    {
+      "id": "github-yt-dlp",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "yt-dlp",
+        "zh-CN": "yt-dlp (GitHub 174278⭐)",
+        "zh-TW": "yt-dlp (GitHub 174278⭐)"
+      },
+      "desc": {
+        "en": "A feature-rich command-line audio/video downloader\n\n⭐ 174278 stars | 🍴 14701 forks | 📈 84.1/day\nLanguage: Python\nLicense: Unlicense\nGitHub: https://github.com/yt-dlp/yt-dlp",
+        "zh-CN": "A feature-rich command-line audio/video downloader\n\n⭐ 174278 星标 | 🍴 14701 Fork | 📈 日增 84.1 星\n语言: Python\n许可: Unlicense\nGitHub: https://github.com/yt-dlp/yt-dlp",
+        "zh-TW": "A feature-rich command-line audio/video downloader\n\n⭐ 174278 星標 | 🍴 14701 Fork | 📈 日增 84.1 星\n語言: Python\n許可: Unlicense\nGitHub: https://github.com/yt-dlp/yt-dlp"
+      },
+      "specs": {
+        "en": [
+          "⭐ 174278 GitHub Stars",
+          "📈 84.1 stars/day growth",
+          "💻 Language: Python",
+          "📜 License: Unlicense",
+          "🔗 https://github.com/yt-dlp/yt-dlp"
+        ],
+        "zh-CN": [
+          "⭐ 174278 GitHub 星标",
+          "📈 日增 84.1 星",
+          "💻 语言: Python",
+          "📜 许可: Unlicense",
+          "🔗 https://github.com/yt-dlp/yt-dlp"
+        ],
+        "zh-TW": [
+          "⭐ 174278 GitHub 星標",
+          "📈 日增 84.1 星",
+          "💻 語言: Python",
+          "📜 許可: Unlicense",
+          "🔗 https://github.com/yt-dlp/yt-dlp"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 174278 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 174278 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 174278 GitHub 星標"
+      }
+    },
+    {
+      "id": "github-n8n",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "n8n",
+        "zh-CN": "n8n (GitHub 194569⭐)",
+        "zh-TW": "n8n (GitHub 194569⭐)"
+      },
+      "desc": {
+        "en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\n\n⭐ 194569 stars | 🍴 58935 forks | 📈 75.9/day\nLanguage: TypeScript\nLicense: NOASSERTION\nGitHub: https://github.com/n8n-io/n8n",
+        "zh-CN": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\n\n⭐ 194569 星标 | 🍴 58935 Fork | 📈 日增 75.9 星\n语言: TypeScript\n许可: NOASSERTION\nGitHub: https://github.com/n8n-io/n8n",
+        "zh-TW": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\n\n⭐ 194569 星標 | 🍴 58935 Fork | 📈 日增 75.9 星\n語言: TypeScript\n許可: NOASSERTION\nGitHub: https://github.com/n8n-io/n8n"
+      },
+      "specs": {
+        "en": [
+          "⭐ 194569 GitHub Stars",
+          "📈 75.9 stars/day growth",
+          "💻 Language: TypeScript",
+          "📜 License: NOASSERTION",
+          "🔗 https://github.com/n8n-io/n8n"
+        ],
+        "zh-CN": [
+          "⭐ 194569 GitHub 星标",
+          "📈 日增 75.9 星",
+          "💻 语言: TypeScript",
+          "📜 许可: NOASSERTION",
+          "🔗 https://github.com/n8n-io/n8n"
+        ],
+        "zh-TW": [
+          "⭐ 194569 GitHub 星標",
+          "📈 日增 75.9 星",
+          "💻 語言: TypeScript",
+          "📜 許可: NOASSERTION",
+          "🔗 https://github.com/n8n-io/n8n"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 194569 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 194569 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 194569 GitHub 星標"
+      }
+    },
+    {
+      "id": "github-flutter",
+      "type": "digital",
+      "price": 4.99,
+      "image": "",
+      "buyLink": "",
+      "buyLinkCN": "",
+      "name": {
+        "en": "flutter",
+        "zh-CN": "flutter (GitHub 177640⭐)",
+        "zh-TW": "flutter (GitHub 177640⭐)"
+      },
+      "desc": {
+        "en": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond\n\n⭐ 177640 stars | 🍴 30580 forks | 📈 43.0/day\nLanguage: Dart\nLicense: BSD-3-Clause\nGitHub: https://github.com/flutter/flutter",
+        "zh-CN": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond\n\n⭐ 177640 星标 | 🍴 30580 Fork | 📈 日增 43.0 星\n语言: Dart\n许可: BSD-3-Clause\nGitHub: https://github.com/flutter/flutter",
+        "zh-TW": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond\n\n⭐ 177640 星標 | 🍴 30580 Fork | 📈 日增 43.0 星\n語言: Dart\n許可: BSD-3-Clause\nGitHub: https://github.com/flutter/flutter"
+      },
+      "specs": {
+        "en": [
+          "⭐ 177640 GitHub Stars",
+          "📈 43.0 stars/day growth",
+          "💻 Language: Dart",
+          "📜 License: BSD-3-Clause",
+          "🔗 https://github.com/flutter/flutter"
+        ],
+        "zh-CN": [
+          "⭐ 177640 GitHub 星标",
+          "📈 日增 43.0 星",
+          "💻 语言: Dart",
+          "📜 许可: BSD-3-Clause",
+          "🔗 https://github.com/flutter/flutter"
+        ],
+        "zh-TW": [
+          "⭐ 177640 GitHub 星標",
+          "📈 日增 43.0 星",
+          "💻 語言: Dart",
+          "📜 許可: BSD-3-Clause",
+          "🔗 https://github.com/flutter/flutter"
+        ]
+      },
+      "shipping": {
+        "en": "📦 Source code + packaged EXE | ⭐ 177640 GitHub stars",
+        "zh-CN": "📦 源码 + 打包 EXE | ⭐ 177640 GitHub 星标",
+        "zh-TW": "📦 源碼 + 打包 EXE | ⭐ 177640 GitHub 星標"
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-05",
+  "day": "Sunday",
+  "generated_at": "2026-07-05 19:40",
+  "videos": [
+    {
+      "id": 1,
+      "type": "motivational_quote",
+      "script_en": "Wake up with determination. Go to bed with satisfaction.",
+      "script_cn": "带着决心醒来，带着满足入睡。",
+      "hashtags": [
+        "#motivation",
+        "#quotes",
+        "#SundayMotivation",
+        "#mindset",
+        "#inspiration"
+      ],
+      "visual": "Dark gradient background + white text appearing word by word",
+      "music": "Lo-fi / ambient / cinematic soft piano",
+      "duration": "15-20 seconds",
+      "english_voiceover": "Wake up with determination. Go to bed with satisfaction.",
+      "tip": "用 CapCut 文字动画模板：'Typewriter' 效果"
+    },
+    {
+      "id": 2,
+      "type": "tool_demo",
+      "tool_name": "event-driven-io/emmett",
+      "tool_desc": "Emmett - a Node.js library taking your event-driven applications back to the fut",
+      "tool_url": "https://github.com/event-driven-io/emmett",
+      "stars": 500,
+      "language": "TypeScript",
+      "hook": "The tool every developer needs but nobody talks about. #programming",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#devtools",
+        "#programming",
+        "#techtok"
+      ],
+      "visual": "Screen recording showing event-driven-io/emmett in action",
+      "music": "Tech/electronic light beat",
+      "duration": "25-30 seconds",
+      "english_caption": "event-driven-io/emmett: Emmett - a Node.js library taking your event-driven applications back to the fut // 500+ ⭐ on GitHub // Link in bio 🔗",
+      "tip": "OBS 录屏 30 秒，加 CapCut 自动英文字幕，不用说话"
+    },
+    {
+      "id": 3,
+      "type": "did_you_know",
+      "fact_en": "Sharks existed before trees.",
+      "fact_cn": "鲨鱼比树更早出现在地球上。",
+      "hashtags": [
+        "#didyouknow",
+        "#facts",
+        "#mindblown",
+        "#todayilearned",
+        "#interesting"
+      ],
+      "visual": "Related stock image/video + white text overlay",
+      "music": "Curious/mysterious tone",
+      "duration": "10-15 seconds",
+      "english_caption": "Did you know? 💡\nSharks existed before trees.\n\nFollow for more daily facts 🔔",
+      "tip": "Pexels 找免费相关素材，CapCut 加文字动画"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "subreddit": "r/InternetIsBeautiful",
+      "title": "event-driven-io/emmett — Emmett - a Node.js library taking your event-driven applications back to the fut",
+      "body": "Found this open-source tool on GitHub and thought it was worth sharing.\n\n**event-driven-io/emmett** — Emmett - a Node.js library taking your event-driven applications back to the fut\n\n⭐ 500+ stars on GitHub\n🔗 https://github.com/event-driven-io/emmett\n\nFree and open source — no strings attached.",
+      "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool"
+    },
+    {
+      "subreddit": "r/todayilearned",
+      "title": "TIL The shortest war in history was between Britain and Zanzibar in 1896. It lasted 38 minutes.",
+      "body": "",
+      "tip": "r/todayilearned — just the title is enough, no body needed"
+    },
+    {
+      "subreddit": "r/GetMotivated",
+      "title": "[IMAGE] The only way to do great work is to love what you do. — Steve Jobs",
+      "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+      "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free)."
+    },
+    {
+      "subreddit": "r/LifeProTips",
+      "title": "LPT: Use the '2-day rule': never skip a habit for more than 2 days in a row.",
+      "body": "Use the '2-day rule': never skip a habit for more than 2 days in a row.\n\nBeen doing this for a while and it genuinely changed my workflow. Simple but effective.",
+      "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you"
+    },
+    {
+      "subreddit": "r/programming",
+      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+      "body": "Interesting discussion happening on HN about this (486 points, 274 comments).\n\n🔗 https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234\n\nWhat do you think? Is this the right approach?",
+      "tip": "Screenshot the HN thread, post the image. Great engagement bait."
+    }
+  ],
+  "content_ideas": [
+    {
+      "source": "HackerNews",
+      "title": "Leaking YouTube creators' private videos",
+      "url": "https://javoriuski.com/post/youtube",
+      "pts": 630,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
+      "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+      "pts": 589,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Google Books (or similar) all book scans – $200k bounty (2025)",
+      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234",
+      "pts": 486,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Choosing the Right Tooling Layer for Your Agent",
+      "url": "https://dev.to/dailycontext/choosing-the-right-tooling-layer-for-your-agent-1eg2",
+      "tags": [
+        "aie",
+        "ai",
+        "agents"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Forward Deployed Engineers and the future of software engineering",
+      "url": "https://dev.to/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+      "tags": [
+        "agents",
+        "ai",
+        "career"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "2026年MSI 败者组越南战队 TSW 3:1 淘汰 TES，如何评价这场比赛？",
+      "url": "https://www.zhihu.com/question/2057042851272320635",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "如何看待极客湾麒麟9030芯片性能详细解析（Mate 80 Pro）视频上线？",
+      "url": "https://www.zhihu.com/question/2056487235072029858",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "一下就明白了什么是山舞银蛇。。。原驰蜡象。。。。",
+      "url": "https://www.douban.com/group/topic/492502779/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "和朋友 deeptalk 几次后，我突然有点下头了",
+      "url": "https://www.douban.com/group/topic/492414781/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "164/53 广东夏季穿搭分享（通勤+游玩）",
+      "url": "https://www.douban.com/group/topic/492368284/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "下班后0基础自学水彩画，非常沉浸有成就感",
+      "url": "https://www.douban.com/group/topic/492492190/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "实践低成本的有效养生方式",
+      "url": "https://www.douban.com/group/topic/492603515/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    }
+  ],
+  "bonus": {
+    "life_tip_en": "The best productivity system is the one you actually use. Don't over-engineer it.",
+    "life_tip_cn": "最好的效率系统就是你实际在用的那个，别过度设计。",
+    "use_for": "Extra video: text-only 'Productivity Tip of the Day' — 10 seconds, no face needed"
+  }
+}
