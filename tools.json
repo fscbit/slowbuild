@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 523019,
+    "stars": 523290,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-06T23:00:00Z"
+    "updated": "2026-07-07T22:55:59Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 482250,
+    "stars": 482812,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-06T22:59:58Z"
+    "updated": "2026-07-07T22:54:32Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451176,
+    "stars": 451250,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-06T22:56:44Z"
+    "updated": "2026-07-07T22:20:09Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 447230,
+    "stars": 447653,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-06T22:54:47Z"
+    "updated": "2026-07-07T22:59:30Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391381,
+    "stars": 391436,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-06T22:52:47Z"
+    "updated": "2026-07-07T21:34:06Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59587,
+    "stars": 59581,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-06T22:38:33Z"
+    "updated": "2026-07-07T22:12:34Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44210,
+    "stars": 44213,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-06T16:15:21Z"
+    "updated": "2026-07-07T15:59:46Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43631,
+    "stars": 43644,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-06T22:41:22Z"
+    "updated": "2026-07-07T21:12:13Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 39934,
+    "stars": 39961,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-06T22:09:19Z"
+    "updated": "2026-07-07T21:59:05Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39675,
+    "stars": 39689,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-06T19:51:14Z"
+    "updated": "2026-07-07T22:20:21Z"
   },
   {
     "name": "c0deJedi/nbd-vram",
@@ -187,17 +187,6 @@
     "updated": "2026-07-05T18:29:21Z"
   },
   {
-    "name": "zarazhangrui/beautiful-feishu-whiteboard",
-    "description": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill.",
-    "url": "https://github.com/zarazhangrui/beautiful-feishu-whiteboard",
-    "homepage": "",
-    "stars": 500,
-    "language": "Shell",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-06T12:08:51Z"
-  },
-  {
     "name": "mykolaharmash/notelet",
     "description": "SwiftUI component for displaying rich release notes inside an app",
     "url": "https://github.com/mykolaharmash/notelet",
@@ -209,27 +198,42 @@
     "updated": "2026-07-05T06:42:44Z"
   },
   {
-    "name": "gajus/zod-compiler",
-    "description": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, et",
-    "url": "https://github.com/gajus/zod-compiler",
-    "homepage": "",
+    "name": "rahilp/second-brain-cloudflare",
+    "description": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hos",
+    "url": "https://github.com/rahilp/second-brain-cloudflare",
+    "homepage": "https://www.thesecondbrain.dev",
     "stars": 499,
     "language": "TypeScript",
     "topics": [
-      "zod"
+      "ai-memory",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "cloudflare"
     ],
     "source": "new",
-    "updated": "2026-07-06T21:53:28Z"
+    "updated": "2026-07-07T09:12:38Z"
   },
   {
-    "name": "chaxiu/munk-ai",
-    "description": "Self-improving AI testing engine across Android, iOS, and Web.",
-    "url": "https://github.com/chaxiu/munk-ai",
-    "homepage": "https://www.munk.sh/",
-    "stars": 498,
+    "name": "KNG7-P/Se7en-Pro",
+    "description": "",
+    "url": "https://github.com/KNG7-P/Se7en-Pro",
+    "homepage": "",
+    "stars": 499,
+    "language": "C#",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-07T13:59:31Z"
+  },
+  {
+    "name": "asz798838958/FrciblyK12",
+    "description": "多线程全自动注册free 强上K12空间",
+    "url": "https://github.com/asz798838958/FrciblyK12",
+    "homepage": "",
+    "stars": 497,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-06T22:09:30Z"
+    "updated": "2026-07-07T14:34:34Z"
   }
 ]

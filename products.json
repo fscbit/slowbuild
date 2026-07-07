@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-c0dejedi-nbd-vram",
+    "type": "digital",
+    "image": null,
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/c0deJedi/nbd-vram",
+    "github": "c0deJedi/nbd-vram",
+    "github_stars": 500,
+    "name": {
+      "en": "c0deJedi/nbd-vram",
+      "zh-CN": "c0deJedi/nbd-vram (GitHub ⭐500)",
+      "zh-TW": "c0deJedi/nbd-vram (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w",
+      "zh-CN": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-rahilp-second-brain-cloudflare",
+    "type": "digital",
+    "image": null,
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/rahilp/second-brain-cloudflare",
+    "github": "rahilp/second-brain-cloudflare",
+    "github_stars": 499,
+    "name": {
+      "en": "rahilp/second-brain-cloudflare",
+      "zh-CN": "rahilp/second-brain-cloudflare (GitHub ⭐499)",
+      "zh-TW": "rahilp/second-brain-cloudflare (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier.",
+      "zh-CN": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kng7-p-se7en-pro",
+    "type": "digital",
+    "image": null,
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/KNG7-P/Se7en-Pro",
+    "github": "KNG7-P/Se7en-Pro",
+    "github_stars": 499,
+    "name": {
+      "en": "KNG7-P/Se7en-Pro",
+      "zh-CN": "KNG7-P/Se7en-Pro (GitHub ⭐499)",
+      "zh-TW": "KNG7-P/Se7en-Pro (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "KNG7-P/Se7en-Pro - Open source tool",
+      "zh-CN": "KNG7-P/Se7en-Pro - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "KNG7-P/Se7en-Pro - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-asz798838958-frciblyk12",
+    "type": "digital",
+    "image": null,
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/asz798838958/FrciblyK12",
+    "github": "asz798838958/FrciblyK12",
+    "github_stars": 497,
+    "name": {
+      "en": "asz798838958/FrciblyK12",
+      "zh-CN": "asz798838958/FrciblyK12 (GitHub ⭐497)",
+      "zh-TW": "asz798838958/FrciblyK12 (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "多线程全自动注册free 强上K12空间",
+      "zh-CN": "多线程全自动注册free 强上K12空间 | GitHub 497+ Stars 开源项目",
+      "zh-TW": "多线程全自动注册free 强上K12空间 | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-zarazhangrui-beautiful-feishu-",
     "type": "digital",
     "image": null,
@@ -5677,94 +5765,6 @@
       "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
       "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 开源项目",
       "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": null,
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43612,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43612)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43612)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43612+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43612+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": null,
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 39894,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐39894)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐39894)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39894+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39894+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": null,
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39654,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39654)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39654)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39654+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39654+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mykolaharmash-notelet",
-    "type": "digital",
-    "image": null,
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/mykolaharmash/notelet",
-    "github": "mykolaharmash/notelet",
-    "github_stars": 500,
-    "name": {
-      "en": "mykolaharmash/notelet",
-      "zh-CN": "mykolaharmash/notelet (GitHub ⭐500)",
-      "zh-TW": "mykolaharmash/notelet (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "SwiftUI component for displaying rich release notes inside an app",
-      "zh-CN": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 开源项目",
-      "zh-TW": "SwiftUI component for displaying rich release notes inside an app | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
