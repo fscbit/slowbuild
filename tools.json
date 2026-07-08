@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 523290,
+    "stars": 523554,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-07T22:55:59Z"
+    "updated": "2026-07-08T22:56:28Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 482812,
+    "stars": 483126,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-07T22:54:32Z"
+    "updated": "2026-07-08T22:59:45Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451250,
+    "stars": 451304,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-07T22:20:09Z"
+    "updated": "2026-07-08T22:57:22Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 447653,
+    "stars": 448056,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-07T22:59:30Z"
+    "updated": "2026-07-08T23:00:02Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391436,
+    "stars": 391483,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-07T21:34:06Z"
+    "updated": "2026-07-08T22:31:33Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59581,
+    "stars": 59610,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-07T22:12:34Z"
+    "updated": "2026-07-08T21:30:35Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44213,
+    "stars": 44212,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-07T15:59:46Z"
+    "updated": "2026-07-08T21:46:14Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43644,
+    "stars": 43661,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-07T21:12:13Z"
+    "updated": "2026-07-08T20:48:25Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 39961,
+    "stars": 39963,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-07T21:59:05Z"
+    "updated": "2026-07-08T16:17:57Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39689,
+    "stars": 39708,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,42 +167,25 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-07T22:20:21Z"
+    "updated": "2026-07-08T22:34:29Z"
   },
   {
-    "name": "c0deJedi/nbd-vram",
-    "description": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you ha",
-    "url": "https://github.com/c0deJedi/nbd-vram",
-    "homepage": "https://www.seanlobjoit.com",
+    "name": "ComputeRoyale/Compute-Royale",
+    "description": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live",
+    "url": "https://github.com/ComputeRoyale/Compute-Royale",
+    "homepage": "https://www.computeroyale.com/",
     "stars": 500,
-    "language": "Shell",
-    "topics": [
-      "cuda",
-      "gpu",
-      "laptop",
-      "linux",
-      "memory"
-    ],
-    "source": "new",
-    "updated": "2026-07-05T18:29:21Z"
-  },
-  {
-    "name": "mykolaharmash/notelet",
-    "description": "SwiftUI component for displaying rich release notes inside an app",
-    "url": "https://github.com/mykolaharmash/notelet",
-    "homepage": "",
-    "stars": 500,
-    "language": "Swift",
+    "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-05T06:42:44Z"
+    "updated": "2026-07-08T08:58:41Z"
   },
   {
     "name": "rahilp/second-brain-cloudflare",
     "description": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hos",
     "url": "https://github.com/rahilp/second-brain-cloudflare",
     "homepage": "https://www.thesecondbrain.dev",
-    "stars": 499,
+    "stars": 500,
     "language": "TypeScript",
     "topics": [
       "ai-memory",
@@ -212,28 +195,45 @@
       "cloudflare"
     ],
     "source": "new",
-    "updated": "2026-07-07T09:12:38Z"
+    "updated": "2026-07-08T21:27:18Z"
   },
   {
     "name": "KNG7-P/Se7en-Pro",
     "description": "",
     "url": "https://github.com/KNG7-P/Se7en-Pro",
     "homepage": "",
-    "stars": 499,
+    "stars": 500,
     "language": "C#",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-07T13:59:31Z"
+    "updated": "2026-07-08T18:23:24Z"
   },
   {
     "name": "asz798838958/FrciblyK12",
     "description": "多线程全自动注册free 强上K12空间",
     "url": "https://github.com/asz798838958/FrciblyK12",
     "homepage": "",
-    "stars": 497,
+    "stars": 499,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-07T14:34:34Z"
+    "updated": "2026-07-08T20:52:30Z"
+  },
+  {
+    "name": "bjarneo/ku",
+    "description": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. ",
+    "url": "https://github.com/bjarneo/ku",
+    "homepage": "",
+    "stars": 494,
+    "language": "Go",
+    "topics": [
+      "bubbletea",
+      "charmlibs",
+      "cli",
+      "client-go",
+      "devops"
+    ],
+    "source": "new",
+    "updated": "2026-07-08T21:42:03Z"
   }
 ]

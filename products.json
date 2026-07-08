@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": null,
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43661,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43661)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43661)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": null,
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 39963,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐39963)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐39963)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39963+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39963+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": null,
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39708,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39708)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39708)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39708+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39708+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-computeroyale-compute-royale",
+    "type": "digital",
+    "image": null,
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/ComputeRoyale/Compute-Royale",
+    "github": "ComputeRoyale/Compute-Royale",
+    "github_stars": 500,
+    "name": {
+      "en": "ComputeRoyale/Compute-Royale",
+      "zh-CN": "ComputeRoyale/Compute-Royale (GitHub ⭐500)",
+      "zh-TW": "ComputeRoyale/Compute-Royale (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana.",
+      "zh-CN": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-bjarneo-ku",
+    "type": "digital",
+    "image": null,
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/bjarneo/ku",
+    "github": "bjarneo/ku",
+    "github_stars": 494,
+    "name": {
+      "en": "bjarneo/ku",
+      "zh-CN": "bjarneo/ku (GitHub ⭐494)",
+      "zh-TW": "bjarneo/ku (GitHub ⭐494)"
+    },
+    "desc": {
+      "en": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods.",
+      "zh-CN": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 494+ Stars 开源项目",
+      "zh-TW": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 494+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-c0dejedi-nbd-vram",
     "type": "digital",
     "image": null,
@@ -5655,116 +5765,6 @@
       "en": "😎 Awesome lists about all kinds of interesting topics",
       "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 开源项目",
       "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": null,
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 451098,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐451098)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐451098)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451098+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451098+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": null,
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 446710,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐446710)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐446710)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 446710+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 446710+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": null,
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 391299,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐391299)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐391299)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 391299+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 391299+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": null,
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59570,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59570)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59570)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59570+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59570+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": null,
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44206,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44206)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44206)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44206+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
