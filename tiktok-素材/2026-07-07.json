@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-07",
+  "day": "Tuesday",
+  "generated_at": "2026-07-07 06:30",
+  "videos": [
+    {
+      "id": 1,
+      "type": "motivational_quote",
+      "script_en": "The only way to do great work is to love what you do. — Steve Jobs",
+      "script_cn": "做伟大的工作的唯一方法就是热爱你所做的事。",
+      "hashtags": [
+        "#motivation",
+        "#quotes",
+        "#TuesdayMotivation",
+        "#mindset",
+        "#inspiration"
+      ],
+      "visual": "Dark gradient background + white text appearing word by word",
+      "music": "Lo-fi / ambient / cinematic soft piano",
+      "duration": "15-20 seconds",
+      "english_voiceover": "The only way to do great work is to love what you do. — Steve Jobs",
+      "tip": "用 CapCut 文字动画模板：'Typewriter' 效果"
+    },
+    {
+      "id": 2,
+      "type": "tool_demo",
+      "tool_name": "event-driven-io/emmett",
+      "tool_desc": "Emmett - a Node.js library taking your event-driven applications back to the fut",
+      "tool_url": "https://github.com/event-driven-io/emmett",
+      "stars": 500,
+      "language": "TypeScript",
+      "hook": "One command. That's all it takes. 🤯 #coding #programmer",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#devtools",
+        "#programming",
+        "#techtok"
+      ],
+      "visual": "Screen recording showing event-driven-io/emmett in action",
+      "music": "Tech/electronic light beat",
+      "duration": "25-30 seconds",
+      "english_caption": "event-driven-io/emmett: Emmett - a Node.js library taking your event-driven applications back to the fut // 500+ ⭐ on GitHub // Link in bio 🔗",
+      "tip": "OBS 录屏 30 秒，加 CapCut 自动英文字幕，不用说话"
+    },
+    {
+      "id": 3,
+      "type": "did_you_know",
+      "fact_en": "Bananas are berries, but strawberries aren't.",
+      "fact_cn": "香蕉是浆果，草莓不是。",
+      "hashtags": [
+        "#didyouknow",
+        "#facts",
+        "#mindblown",
+        "#todayilearned",
+        "#interesting"
+      ],
+      "visual": "Related stock image/video + white text overlay",
+      "music": "Curious/mysterious tone",
+      "duration": "10-15 seconds",
+      "english_caption": "Did you know? 💡\nBananas are berries, but strawberries aren't.\n\nFollow for more daily facts 🔔",
+      "tip": "Pexels 找免费相关素材，CapCut 加文字动画"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "subreddit": "r/InternetIsBeautiful",
+      "title": "sophgo/sophon-demo — a useful open-source tool",
+      "body": "Found this open-source tool on GitHub and thought it was worth sharing.\n\n**sophgo/sophon-demo** — a useful open-source tool\n\n⭐ 500+ stars on GitHub\n🔗 https://github.com/sophgo/sophon-demo\n\nFree and open source — no strings attached.",
+      "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool"
+    },
+    {
+      "subreddit": "r/todayilearned",
+      "title": "TIL The shortest war in history was between Britain and Zanzibar in 1896. It lasted 38 minutes.",
+      "body": "",
+      "tip": "r/todayilearned — just the title is enough, no body needed"
+    },
+    {
+      "subreddit": "r/GetMotivated",
+      "title": "[IMAGE] It's not about having time. It's about making time.",
+      "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+      "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free)."
+    },
+    {
+      "subreddit": "r/LifeProTips",
+      "title": "LPT: Before bed, write down your top 3 priorities for tomorrow. Wake up with clarity.",
+      "body": "Before bed, write down your top 3 priorities for tomorrow. Wake up with clarity.\n\nBeen doing this for a while and it genuinely changed my workflow. Simple but effective.",
+      "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you"
+    },
+    {
+      "subreddit": "r/programming",
+      "title": "Real-time map of Great Britain's rail network",
+      "body": "Interesting discussion happening on HN about this (368 points, 137 comments).\n\n🔗 https://www.map.signalbox.io\n\nWhat do you think? Is this the right approach?",
+      "tip": "Screenshot the HN thread, post the image. Great engagement bait."
+    }
+  ],
+  "content_ideas": [
+    {
+      "source": "HackerNews",
+      "title": "Resetting Xbox",
+      "url": "https://news.xbox.com/en-us/2026/07/06/resetting-xbox/",
+      "pts": 409,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Real-time map of Great Britain's rail network",
+      "url": "https://www.map.signalbox.io",
+      "pts": 368,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "OpenWrt One – Open Hardware Router",
+      "url": "https://openwrt.org/toh/openwrt/one",
+      "pts": 308,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Forward Deployed Engineers and the future of software engineering",
+      "url": "https://dev.to/dailycontext/forward-deployed-engineers-and-the-future-of-software-engineering-jll",
+      "tags": [
+        "agents",
+        "ai",
+        "career"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Protect Yourself, Mesh Yourself",
+      "url": "https://dev.to/eschmechel/protect-yourself-mesh-yourself-3fkn",
+      "tags": [
+        "tutorial",
+        "productivity",
+        "opensource"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "中公教育因股民「荒诞赌约」涨停，发生了什么？A 股市场投机风气会否加剧？",
+      "url": "https://www.zhihu.com/question/2057430773481968954",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "上海女子私自安装「座椅式爬楼机」给全楼用遭抵制，为何会面临被强制拆除的困境？",
+      "url": "https://www.zhihu.com/question/2056192994538214771",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "硫华菊一开花，奥森又拥有了油画样的风景",
+      "url": "https://www.douban.com/group/topic/492631657/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "煮了一碗面，我觉得很好，家人让我端出去",
+      "url": "https://www.douban.com/group/topic/492709352/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "轻舟已过万重山",
+      "url": "https://www.douban.com/group/topic/492704891/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "分享一个豆瓣好帖的读后感",
+      "url": "https://www.douban.com/group/topic/492748727/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "穿搭分享合集",
+      "url": "https://www.douban.com/group/topic/492844643/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    }
+  ],
+  "bonus": {
+    "life_tip_en": "Write down 3 things you're grateful for every night. It rewires your brain for positivity.",
+    "life_tip_cn": "每晚写下 3 件感恩的事，这能重新训练你的大脑。",
+    "use_for": "Extra video: text-only 'Productivity Tip of the Day' — 10 seconds, no face needed"
+  }
+}

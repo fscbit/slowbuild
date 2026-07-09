@@ -524,7 +524,7 @@ def gen_shop_products(repos):
         product = {
             "id": pid,
             "type": "digital",
-            "image": None,
+            "image": "https://www.slowbuild.top/images/default-tool.png",
             "icon": random.choice(SHOP_ICONS),
             "price": 0,  # 免费开源工具
             "buyLink": r.get("url", ""),  # 直接链到 GitHub

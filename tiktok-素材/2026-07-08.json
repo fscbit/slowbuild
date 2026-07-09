@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-08",
+  "day": "Wednesday",
+  "generated_at": "2026-07-08 06:30",
+  "videos": [
+    {
+      "id": 1,
+      "type": "motivational_quote",
+      "script_en": "The secret of getting ahead is getting started. — Mark Twain",
+      "script_cn": "成功的秘诀就是开始行动。",
+      "hashtags": [
+        "#motivation",
+        "#quotes",
+        "#WednesdayMotivation",
+        "#mindset",
+        "#inspiration"
+      ],
+      "visual": "Dark gradient background + white text appearing word by word",
+      "music": "Lo-fi / ambient / cinematic soft piano",
+      "duration": "15-20 seconds",
+      "english_voiceover": "The secret of getting ahead is getting started. — Mark Twain",
+      "tip": "用 CapCut 文字动画模板：'Typewriter' 效果"
+    },
+    {
+      "id": 2,
+      "type": "tool_demo",
+      "tool_name": "event-driven-io/emmett",
+      "tool_desc": "Emmett - a Node.js library taking your event-driven applications back to the fut",
+      "tool_url": "https://github.com/event-driven-io/emmett",
+      "stars": 500,
+      "language": "TypeScript",
+      "hook": "One command. That's all it takes. 🤯 #coding #programmer",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#devtools",
+        "#programming",
+        "#techtok"
+      ],
+      "visual": "Screen recording showing event-driven-io/emmett in action",
+      "music": "Tech/electronic light beat",
+      "duration": "25-30 seconds",
+      "english_caption": "event-driven-io/emmett: Emmett - a Node.js library taking your event-driven applications back to the fut // 500+ ⭐ on GitHub // Link in bio 🔗",
+      "tip": "OBS 录屏 30 秒，加 CapCut 自动英文字幕，不用说话"
+    },
+    {
+      "id": 3,
+      "type": "did_you_know",
+      "fact_en": "Wombat poop is cube-shaped.",
+      "fact_cn": "袋熊的💩是方形的。",
+      "hashtags": [
+        "#didyouknow",
+        "#facts",
+        "#mindblown",
+        "#todayilearned",
+        "#interesting"
+      ],
+      "visual": "Related stock image/video + white text overlay",
+      "music": "Curious/mysterious tone",
+      "duration": "10-15 seconds",
+      "english_caption": "Did you know? 💡\nWombat poop is cube-shaped.\n\nFollow for more daily facts 🔔",
+      "tip": "Pexels 找免费相关素材，CapCut 加文字动画"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "subreddit": "r/InternetIsBeautiful",
+      "title": "c0deJedi/nbd-vram — Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with solder",
+      "body": "Found this open-source tool on GitHub and thought it was worth sharing.\n\n**c0deJedi/nbd-vram** — Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with solder\n\n⭐ 500+ stars on GitHub\n🔗 https://github.com/c0deJedi/nbd-vram\n\nFree and open source — no strings attached.",
+      "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool"
+    },
+    {
+      "subreddit": "r/todayilearned",
+      "title": "TIL There's a species of jellyfish that is biologically immortal.",
+      "body": "",
+      "tip": "r/todayilearned — just the title is enough, no body needed"
+    },
+    {
+      "subreddit": "r/GetMotivated",
+      "title": "[IMAGE] Don't stop when you're tired. Stop when you're done.",
+      "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+      "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free)."
+    },
+    {
+      "subreddit": "r/LifeProTips",
+      "title": "LPT: Keep a 'Done List' next to your To-Do list. Seeing what you've accomplished builds momentum.",
+      "body": "Keep a 'Done List' next to your To-Do list. Seeing what you've accomplished builds momentum.\n\nBeen doing this for a while and it genuinely changed my workflow. Simple but effective.",
+      "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you"
+    },
+    {
+      "subreddit": "r/programming",
+      "title": "98% isn't much",
+      "body": "Interesting discussion happening on HN about this (446 points, 284 comments).\n\n🔗 https://whynothugo.nl/journal/2026/07/03/98-isnt-very-much/\n\nWhat do you think? Is this the right approach?",
+      "tip": "Screenshot the HN thread, post the image. Great engagement bait."
+    }
+  ],
+  "content_ideas": [
+    {
+      "source": "HackerNews",
+      "title": "StreetComplete: Fixing OpenStreetMap, one tiny quest at a time",
+      "url": "https://streetcomplete.app/",
+      "pts": 637,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Chat Control passed first round in EU Parliament",
+      "url": "https://www.heise.de/en/news/Showdown-in-Strasbourg-The-unexpected-return-of-Chat-Control-1-0-11356680.html",
+      "pts": 503,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Microsoft fire idTech team at Id software",
+      "url": "https://gamefromscratch.com/microsoft-fire-idtech-team-at-id-software/",
+      "pts": 467,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Top 7 Featured DEV Posts of the Week",
+      "url": "https://dev.to/devteam/top-7-featured-dev-posts-of-the-week-144b",
+      "tags": [
+        "top7",
+        "discuss"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Your Career Matters. So Does the Person Building It.",
+      "url": "https://dev.to/hemapriya_kanagala/your-career-matters-so-does-the-person-building-it-2jle",
+      "tags": [
+        "discuss",
+        "career",
+        "productivity"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "世界杯 1/8 决赛，阿根廷 vs 埃及，如何评价本场比赛？",
+      "url": "https://www.zhihu.com/question/2057777297399321503",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "2026年美加墨世界杯1/8决赛阿根廷 3:2 埃及，如何评价这场比赛？",
+      "url": "https://www.zhihu.com/question/2057979001201766943",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "看极简博主vlog有感",
+      "url": "https://www.douban.com/group/topic/492827426/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "可以感受雨，也可以被淋湿～",
+      "url": "https://www.douban.com/group/topic/492677441/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "𝐌𝐨𝐧𝐭𝐡𝐥𝐲｜𝟐𝟎𝟐𝟔-𝟎𝟔",
+      "url": "https://www.douban.com/group/topic/492528889/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "音乐是天空的镜子",
+      "url": "https://www.douban.com/group/topic/492854834/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "高端的食材请不要煮火锅",
+      "url": "https://www.douban.com/group/topic/492869223/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    }
+  ],
+  "bonus": {
+    "life_tip_en": "Your morning routine sets the tone for your entire day. Protect it.",
+    "life_tip_cn": "早晨的节奏决定一天的基调，保护它。",
+    "use_for": "Extra video: text-only 'Productivity Tip of the Day' — 10 seconds, no face needed"
+  }
+}

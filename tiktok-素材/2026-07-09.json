@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-09",
+  "day": "Thursday",
+  "generated_at": "2026-07-09 06:30",
+  "videos": [
+    {
+      "id": 1,
+      "type": "motivational_quote",
+      "script_en": "The only way to do great work is to love what you do. — Steve Jobs",
+      "script_cn": "做伟大的工作的唯一方法就是热爱你所做的事。",
+      "hashtags": [
+        "#motivation",
+        "#quotes",
+        "#ThursdayMotivation",
+        "#mindset",
+        "#inspiration"
+      ],
+      "visual": "Dark gradient background + white text appearing word by word",
+      "music": "Lo-fi / ambient / cinematic soft piano",
+      "duration": "15-20 seconds",
+      "english_voiceover": "The only way to do great work is to love what you do. — Steve Jobs",
+      "tip": "用 CapCut 文字动画模板：'Typewriter' 效果"
+    },
+    {
+      "id": 2,
+      "type": "tool_demo",
+      "tool_name": "mxstbr/mxstbr.com",
+      "tool_desc": "",
+      "tool_url": "https://github.com/mxstbr/mxstbr.com",
+      "stars": 500,
+      "language": "TypeScript",
+      "hook": "I found this on GitHub and now I use it every day. #opensource #tools",
+      "hashtags": [
+        "#opensource",
+        "#github",
+        "#devtools",
+        "#programming",
+        "#techtok"
+      ],
+      "visual": "Screen recording showing mxstbr/mxstbr.com in action",
+      "music": "Tech/electronic light beat",
+      "duration": "25-30 seconds",
+      "english_caption": "mxstbr/mxstbr.com:  // 500+ ⭐ on GitHub // Link in bio 🔗",
+      "tip": "OBS 录屏 30 秒，加 CapCut 自动英文字幕，不用说话"
+    },
+    {
+      "id": 3,
+      "type": "did_you_know",
+      "fact_en": "Scotland's national animal is the unicorn.",
+      "fact_cn": "苏格兰的国兽是独角兽🦄。",
+      "hashtags": [
+        "#didyouknow",
+        "#facts",
+        "#mindblown",
+        "#todayilearned",
+        "#interesting"
+      ],
+      "visual": "Related stock image/video + white text overlay",
+      "music": "Curious/mysterious tone",
+      "duration": "10-15 seconds",
+      "english_caption": "Did you know? 💡\nScotland's national animal is the unicorn.\n\nFollow for more daily facts 🔔",
+      "tip": "Pexels 找免费相关素材，CapCut 加文字动画"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "subreddit": "r/InternetIsBeautiful",
+      "title": "mxstbr/mxstbr.com — a useful open-source tool",
+      "body": "Found this open-source tool on GitHub and thought it was worth sharing.\n\n**mxstbr/mxstbr.com** — a useful open-source tool\n\n⭐ 500+ stars on GitHub\n🔗 https://github.com/mxstbr/mxstbr.com\n\nFree and open source — no strings attached.",
+      "tip": "Post to r/InternetIsBeautiful if it's a web tool, r/programming if developer tool"
+    },
+    {
+      "subreddit": "r/todayilearned",
+      "title": "TIL The Eiffel Tower can be 15 cm taller during summer due to thermal expansion.",
+      "body": "",
+      "tip": "r/todayilearned — just the title is enough, no body needed"
+    },
+    {
+      "subreddit": "r/GetMotivated",
+      "title": "[IMAGE] Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "body": "Sharing some Monday motivation 💪 (create a simple text-on-background image for this)",
+      "tip": "Upload a text-on-dark-background image with the quote. Use Canva (free)."
+    },
+    {
+      "subreddit": "r/LifeProTips",
+      "title": "LPT: Batch similar tasks together. Context switching costs 20+ minutes each time.",
+      "body": "Batch similar tasks together. Context switching costs 20+ minutes each time.\n\nBeen doing this for a while and it genuinely changed my workflow. Simple but effective.",
+      "tip": "r/LifeProTips requires the title to start with 'LPT:' — already done for you"
+    },
+    {
+      "subreddit": "r/programming",
+      "title": "GPT‑Live",
+      "body": "Interesting discussion happening on HN about this (529 points, 365 comments).\n\n🔗 https://openai.com/index/introducing-gpt-live/\n\nWhat do you think? Is this the right approach?",
+      "tip": "Screenshot the HN thread, post the image. Great engagement bait."
+    }
+  ],
+  "content_ideas": [
+    {
+      "source": "HackerNews",
+      "title": "Decoding the obfuscated bash script on a Uniqlo t-shirt",
+      "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+      "pts": 1234,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "Chatto is now open source",
+      "url": "https://www.hmans.dev/blog/chatto-is-open-source",
+      "pts": 608,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "HackerNews",
+      "title": "GPT‑Live",
+      "url": "https://openai.com/index/introducing-gpt-live/",
+      "pts": 529,
+      "use_for": "Discussion starter: screenshot the title, add your take, ask followers their opinion"
+    },
+    {
+      "source": "Dev.to",
+      "title": "Top 7 Featured DEV Posts of the Week",
+      "url": "https://dev.to/devteam/top-7-featured-dev-posts-of-the-week-144b",
+      "tags": [
+        "top7",
+        "discuss"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "Dev.to",
+      "title": "✨Cool Effects, TTS, and Fun Animations (AI Avatar v15: VS Code and Chrome Extens",
+      "url": "https://dev.to/webdeveloperhyper/cool-effects-tts-and-fun-animations-ai-avatar-v15-vs-code-and-chrome-extension-3oec",
+      "tags": [
+        "ai",
+        "webdev",
+        "discuss"
+      ],
+      "use_for": "Tool/app review or tutorial idea"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "如何评价韦东奕正式获得国家自然科学二等奖？",
+      "url": "https://www.zhihu.com/question/2058217368153756272",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "知乎热榜",
+      "title": "网友吐槽「等退休」是一场巨大的骗局，称年轻时透支身体退休后只能养病，对此你有哪些感触？",
+      "url": "https://www.zhihu.com/question/2057838508215988928",
+      "use_for": "Hot topic in China — translate/adapt for global audience"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "突然发现，大部分人接收到的公共信息越来越少了",
+      "url": "https://www.douban.com/group/topic/493151435/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "四川绵竹地震居然是08年地震余震",
+      "url": "https://www.douban.com/group/topic/493118624/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "数独爱好者速玩murdoku。。。",
+      "url": "https://www.douban.com/group/topic/492802411/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "挑战1k在上海躺平一个月（6月总结）",
+      "url": "https://www.douban.com/group/topic/492487828/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    },
+    {
+      "source": "豆瓣小组",
+      "title": "分享一个夏日青花椒酱，可以调凉菜夹馍做凉面",
+      "url": "https://www.douban.com/group/topic/493073116/",
+      "use_for": "Real people conversations — adapt for TikTok/Reddit storytelling, drama, life tips"
+    }
+  ],
+  "bonus": {
+    "life_tip_en": "Drink a glass of water first thing in the morning. Your brain is 75% water.",
+    "life_tip_cn": "起床先喝一杯水，你的大脑 75% 是水。",
+    "use_for": "Extra video: text-only 'Productivity Tip of the Day' — 10 seconds, no face needed"
+  }
+}

@@ -410,7 +410,7 @@
   {
     "id": "exe-pdfmerge",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📎",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -458,7 +458,7 @@
   {
     "id": "exe-video2mp3",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎵",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -506,7 +506,7 @@
   {
     "id": "exe-dupfinder",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔍",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -554,7 +554,7 @@
   {
     "id": "exe-img2pdf",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🖼️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -602,7 +602,7 @@
   {
     "id": "exe-renamer",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🏷️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -650,7 +650,7 @@
   {
     "id": "exe-csvjson",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔄",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -698,7 +698,7 @@
   {
     "id": "exe-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎁",
     "price": 22.0,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -754,7 +754,7 @@
   {
     "id": "exe-fba-calc",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📊",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -802,7 +802,7 @@
   {
     "id": "exe-sku-gen",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🏷️",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -850,7 +850,7 @@
   {
     "id": "exe-listing-opt",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📝",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -898,7 +898,7 @@
   {
     "id": "exe-invoice-gen",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📋",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -946,7 +946,7 @@
   {
     "id": "exe-shopify-csv",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📦",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -994,7 +994,7 @@
   {
     "id": "exe-keyword-tool",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔍",
     "price": 7.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -1042,7 +1042,7 @@
   {
     "id": "exe-currency",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💱",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -1090,7 +1090,7 @@
   {
     "id": "exe-translator",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🌐",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -1138,7 +1138,7 @@
   {
     "id": "exe-ecom-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🚀",
     "price": 35.0,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3179,7 +3179,7 @@
   {
     "id": "exe-bg-remover",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎯",
     "price": 7.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3227,7 +3227,7 @@
   {
     "id": "exe-img-compress",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🗜️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3275,7 +3275,7 @@
   {
     "id": "exe-img-resize",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📐",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3323,7 +3323,7 @@
   {
     "id": "exe-watermark",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💧",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3371,7 +3371,7 @@
   {
     "id": "exe-screenshot-pdf",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📸",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3419,7 +3419,7 @@
   {
     "id": "exe-photo-renamer",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📷",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3467,7 +3467,7 @@
   {
     "id": "exe-qrcode-gen",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📱",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3515,7 +3515,7 @@
   {
     "id": "exe-gif-maker",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎞️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3563,7 +3563,7 @@
   {
     "id": "exe-pdf-split",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "✂️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3611,7 +3611,7 @@
   {
     "id": "exe-pdf-compress",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📦",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3659,7 +3659,7 @@
   {
     "id": "exe-pdf-rotate",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔄",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3707,7 +3707,7 @@
   {
     "id": "exe-pdf-unlock",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔓",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3755,7 +3755,7 @@
   {
     "id": "exe-pdf-extract",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📋",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3803,7 +3803,7 @@
   {
     "id": "exe-pdf-protect",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔐",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3851,7 +3851,7 @@
   {
     "id": "exe-audio-cutter",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "✂️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3899,7 +3899,7 @@
   {
     "id": "exe-audio-merge",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔗",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3947,7 +3947,7 @@
   {
     "id": "exe-mp3-tag",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🏷️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -3995,7 +3995,7 @@
   {
     "id": "exe-subtitle-tool",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💬",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4043,7 +4043,7 @@
   {
     "id": "exe-youtube-dl",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⬇️",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4091,7 +4091,7 @@
   {
     "id": "exe-screen-rec",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎥",
     "price": 7.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4139,7 +4139,7 @@
   {
     "id": "exe-json-fmt",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🧹",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4187,7 +4187,7 @@
   {
     "id": "exe-sql-fmt",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🗄️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4235,7 +4235,7 @@
   {
     "id": "exe-base64-tool",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔣",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4283,7 +4283,7 @@
   {
     "id": "exe-diff-tool",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚖️",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4331,7 +4331,7 @@
   {
     "id": "exe-regex-tester",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔍",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4379,7 +4379,7 @@
   {
     "id": "exe-color-picker",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎨",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4427,7 +4427,7 @@
   {
     "id": "exe-password-gen",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔑",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4475,7 +4475,7 @@
   {
     "id": "exe-word-count",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📊",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4523,7 +4523,7 @@
   {
     "id": "exe-timestamp",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🕐",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4571,7 +4571,7 @@
   {
     "id": "exe-clipboard-mgr",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📋",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4619,7 +4619,7 @@
   {
     "id": "exe-hash-tool",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔐",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4667,7 +4667,7 @@
   {
     "id": "exe-roi-calc",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📈",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4715,7 +4715,7 @@
   {
     "id": "exe-competitor",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🕵️",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4763,7 +4763,7 @@
   {
     "id": "exe-ship-label",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🏷️",
     "price": 5.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4811,7 +4811,7 @@
   {
     "id": "exe-review-analyzer",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⭐",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4859,7 +4859,7 @@
   {
     "id": "exe-photo-resizer-ecom",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🖼️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4907,7 +4907,7 @@
   {
     "id": "exe-file-shredder",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔥",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -4952,7 +4952,7 @@
   {
     "id": "exe-sysinfo",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💻",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5000,7 +5000,7 @@
   {
     "id": "exe-folder-size",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📊",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5048,7 +5048,7 @@
   {
     "id": "exe-text-merger",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📝",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5096,7 +5096,7 @@
   {
     "id": "exe-file-splitter",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "✂️",
     "price": 4.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5144,7 +5144,7 @@
   {
     "id": "exe-file-encrypt",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔒",
     "price": 6.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5192,7 +5192,7 @@
   {
     "id": "exe-pdf-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📚",
     "price": 19.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5252,7 +5252,7 @@
   {
     "id": "exe-image-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎨",
     "price": 22.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5316,7 +5316,7 @@
   {
     "id": "exe-dev-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚙️",
     "price": 22.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5384,7 +5384,7 @@
   {
     "id": "exe-ultimate-bundle",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "👑",
     "price": 69.99,
     "buyLink": "https://link.payoneer.com/Token?t=6DA42646128B4562913488D8DABA0DC3&src=pl",
@@ -5442,7 +5442,7 @@
   {
     "id": "gh-sharkdp-fd",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💡",
     "price": 0,
     "buyLink": "https://github.com/sharkdp/fd",
@@ -5464,7 +5464,7 @@
   {
     "id": "gh-gyulyvgc-sniffnet",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📦",
     "price": 0,
     "buyLink": "https://github.com/GyulyVGC/sniffnet",
@@ -5486,7 +5486,7 @@
   {
     "id": "gh-corentinth-it-tools",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚡",
     "price": 0,
     "buyLink": "https://github.com/CorentinTh/it-tools",
@@ -5508,7 +5508,7 @@
   {
     "id": "gh-computeroyale-compute-royale",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🎯",
     "price": 0,
     "buyLink": "https://github.com/ComputeRoyale/Compute-Royale",
@@ -5530,7 +5530,7 @@
   {
     "id": "gh-bjarneo-ku",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔮",
     "price": 0,
     "buyLink": "https://github.com/bjarneo/ku",
@@ -5552,7 +5552,7 @@
   {
     "id": "gh-c0dejedi-nbd-vram",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚙️",
     "price": 0,
     "buyLink": "https://github.com/c0deJedi/nbd-vram",
@@ -5574,7 +5574,7 @@
   {
     "id": "gh-rahilp-second-brain-cloudflare",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔮",
     "price": 0,
     "buyLink": "https://github.com/rahilp/second-brain-cloudflare",
@@ -5596,7 +5596,7 @@
   {
     "id": "gh-kng7-p-se7en-pro",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "📦",
     "price": 0,
     "buyLink": "https://github.com/KNG7-P/Se7en-Pro",
@@ -5618,7 +5618,7 @@
   {
     "id": "gh-asz798838958-frciblyk12",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🚀",
     "price": 0,
     "buyLink": "https://github.com/asz798838958/FrciblyK12",
@@ -5640,7 +5640,7 @@
   {
     "id": "gh-zarazhangrui-beautiful-feishu-",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "💡",
     "price": 0,
     "buyLink": "https://github.com/zarazhangrui/beautiful-feishu-whiteboard",
@@ -5662,7 +5662,7 @@
   {
     "id": "gh-chaxiu-munk-ai",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🔮",
     "price": 0,
     "buyLink": "https://github.com/chaxiu/munk-ai",
@@ -5684,7 +5684,7 @@
   {
     "id": "gh-anthonysturdy-micro-radar",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚡",
     "price": 0,
     "buyLink": "https://github.com/AnthonySturdy/micro-radar",
@@ -5706,7 +5706,7 @@
   {
     "id": "gh-gajus-zod-compiler",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "🛠️",
     "price": 0,
     "buyLink": "https://github.com/gajus/zod-compiler",
@@ -5728,7 +5728,7 @@
   {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚡",
     "price": 0,
     "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
@@ -5750,7 +5750,7 @@
   {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
-    "image": null,
+    "image": "https://www.slowbuild.top/images/default-tool.png",
     "icon": "⚡",
     "price": 0,
     "buyLink": "https://github.com/sindresorhus/awesome",
