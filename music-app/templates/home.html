@@ -51,8 +51,8 @@
 </style>
 
 <div class="hero">
-  <h1>Chinese Songs, Actually Explained</h1>
-  <p>Spotify has the songs. We have the story behind them. English reviews, original lyrics, cultural context — for music lovers tired of algorithms.</p>
+  <h1>Great Songs, Actually Understood</h1>
+  <p>From TikTok's "Xue Hua Piao Piao" to Jay Chou's hidden masterpieces — English reviews of Chinese songs that the world is curious about.</p>
 </div>
 
 <!-- ═══ 精选 ═══ -->
@@ -80,7 +80,47 @@
 </div>
 {% endif %}
 
-<!-- ═══ 中文歌按风格 ═══ -->
+<!-- ═══ 全球热门（Tier 1-3: 老外真实搜索的中文歌） ═══ -->
+{% set hits = songs|selectattr('global_tier','in',[1,2,3])|list %}
+{% if hits %}
+<div class="song-list">
+  <h2 class="section-title">Global Hits & Hidden Gems <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ hits|length }} songs foreigners actually search for</span></h2>
+  <div class="song-row">
+    {% for s in hits[:36] %}
+    <a href="/song/{{ s.id }}" class="song-item">
+      <span class="si-num">{% if s.global_tier == 1 %}🔥{% elif s.global_tier == 2 %}⭐{% else %}💡{% endif %}</span>
+      <div class="si-info">
+        <div class="si-title">{{ s.title }} {% if s.language == 'en' %}🎸{% elif s.language == 'ko' %}🇰🇷{% endif %}</div>
+        <div class="si-artist">{{ s.artist }}</div>
+      </div>
+      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- ═══ 深度精选（Tier 0: 中国人知道的宝藏） ═══ -->
+{% set deep = songs|selectattr('global_tier','equalto',0)|list %}
+{% if deep %}
+<div class="song-list">
+  <h2 class="section-title">Deep Cuts: Chinese Songs Worth Discovering <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ deep|length }} hidden gems</span></h2>
+  <div class="song-row">
+    {% for s in deep[:24] %}
+    <a href="/song/{{ s.id }}" class="song-item">
+      <span class="si-num" style="font-size:.9rem">💎</span>
+      <div class="si-info">
+        <div class="si-title">{{ s.title }}</div>
+        <div class="si-artist">{{ s.artist }}</div>
+      </div>
+      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- ═══ 按风格分类 ═══ -->
 {% set genres_all = ['pop','rock','folk','indie','hiphop','electronic','rnb','punk','jazz'] %}
 {% set genre_labels = {
   'pop':'Mandopop',
@@ -137,25 +177,5 @@
 
 {% if not songs %}
 <div class="empty-state">Coming soon — we're hand-picking the best Chinese songs for you.</div>
-{% endif %}
-
-<!-- ═══ 国际精选 ═══ -->
-{% set intls = songs|selectattr('language','in',['en','ko'])|list %}
-{% if intls %}
-<div class="song-list">
-  <h2 class="section-title">Also on Our Radar <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ intls|length }} songs</span></h2>
-  <div class="song-row">
-    {% for s in intls %}
-    <a href="/song/{{ s.id }}" class="song-item">
-      <span class="si-num" style="font-size:1rem">{% if s.language=='ko' %}🇰🇷{% elif s.language=='en' %}🎸{% endif %}</span>
-      <div class="si-info">
-        <div class="si-title">{{ s.title }}</div>
-        <div class="si-artist">{{ s.artist }}</div>
-      </div>
-      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
-    </a>
-    {% endfor %}
-  </div>
-</div>
 {% endif %}
 {% endblock %}
