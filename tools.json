@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 523554,
+    "stars": 523818,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-08T22:56:28Z"
+    "updated": "2026-07-09T22:56:19Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 483126,
+    "stars": 483426,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-08T22:59:45Z"
+    "updated": "2026-07-09T22:53:15Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451304,
+    "stars": 451384,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-08T22:57:22Z"
+    "updated": "2026-07-09T22:51:14Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 448056,
+    "stars": 448371,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-08T23:00:02Z"
+    "updated": "2026-07-09T22:55:57Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391483,
+    "stars": 391534,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-08T22:31:33Z"
+    "updated": "2026-07-09T22:59:20Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59610,
+    "stars": 59618,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-08T21:30:35Z"
+    "updated": "2026-07-09T19:16:45Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44212,
+    "stars": 44215,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-08T21:46:14Z"
+    "updated": "2026-07-09T18:59:44Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43661,
+    "stars": 43685,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-08T20:48:25Z"
+    "updated": "2026-07-09T22:32:26Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 39963,
+    "stars": 39986,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-08T16:17:57Z"
+    "updated": "2026-07-09T19:29:29Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39708,
+    "stars": 39727,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,64 +167,14 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-08T22:34:29Z"
-  },
-  {
-    "name": "ComputeRoyale/Compute-Royale",
-    "description": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live",
-    "url": "https://github.com/ComputeRoyale/Compute-Royale",
-    "homepage": "https://www.computeroyale.com/",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-08T08:58:41Z"
-  },
-  {
-    "name": "rahilp/second-brain-cloudflare",
-    "description": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hos",
-    "url": "https://github.com/rahilp/second-brain-cloudflare",
-    "homepage": "https://www.thesecondbrain.dev",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "ai-memory",
-      "claude",
-      "claude-ai",
-      "claude-code",
-      "cloudflare"
-    ],
-    "source": "new",
-    "updated": "2026-07-08T21:27:18Z"
-  },
-  {
-    "name": "KNG7-P/Se7en-Pro",
-    "description": "",
-    "url": "https://github.com/KNG7-P/Se7en-Pro",
-    "homepage": "",
-    "stars": 500,
-    "language": "C#",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-08T18:23:24Z"
-  },
-  {
-    "name": "asz798838958/FrciblyK12",
-    "description": "多线程全自动注册free 强上K12空间",
-    "url": "https://github.com/asz798838958/FrciblyK12",
-    "homepage": "",
-    "stars": 499,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-08T20:52:30Z"
+    "updated": "2026-07-09T20:15:05Z"
   },
   {
     "name": "bjarneo/ku",
     "description": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. ",
     "url": "https://github.com/bjarneo/ku",
     "homepage": "",
-    "stars": 494,
+    "stars": 496,
     "language": "Go",
     "topics": [
       "bubbletea",
@@ -234,6 +184,45 @@
       "devops"
     ],
     "source": "new",
-    "updated": "2026-07-08T21:42:03Z"
+    "updated": "2026-07-09T18:28:20Z"
+  },
+  {
+    "name": "tantara/openbrief",
+    "description": "",
+    "url": "https://github.com/tantara/openbrief",
+    "homepage": "https://openbrief-phi.vercel.app",
+    "stars": 494,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-09T15:47:49Z"
+  },
+  {
+    "name": "nickvasilescu/hermes-desktop-os1",
+    "description": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts",
+    "url": "https://github.com/nickvasilescu/hermes-desktop-os1",
+    "homepage": "",
+    "stars": 493,
+    "language": "Swift",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-09T07:57:15Z"
+  },
+  {
+    "name": "ai4s-research/open-science",
+    "description": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude ",
+    "url": "https://github.com/ai4s-research/open-science",
+    "homepage": "https://openedscience.com/",
+    "stars": 493,
+    "language": "TypeScript",
+    "topics": [
+      "ai-agent",
+      "ai-for-science",
+      "ai-scientist",
+      "ai4s",
+      "claude-science"
+    ],
+    "source": "new",
+    "updated": "2026-07-09T22:43:06Z"
   }
 ]

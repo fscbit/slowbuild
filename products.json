@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 451384,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐451384)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐451384)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451384+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451384+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 448371,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐448371)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐448371)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 448371+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 448371+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 391534,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐391534)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐391534)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 391534+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 391534+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 59618,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐59618)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐59618)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 59618+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 59618+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44215,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44215)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44215)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44215+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44215+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tantara-openbrief",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/tantara/openbrief",
+    "github": "tantara/openbrief",
+    "github_stars": 494,
+    "name": {
+      "en": "tantara/openbrief",
+      "zh-CN": "tantara/openbrief (GitHub ⭐494)",
+      "zh-TW": "tantara/openbrief (GitHub ⭐494)"
+    },
+    "desc": {
+      "en": "tantara/openbrief - Open source tool",
+      "zh-CN": "tantara/openbrief - Open source tool | GitHub 494+ Stars 开源项目",
+      "zh-TW": "tantara/openbrief - Open source tool | GitHub 494+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nickvasilescu-hermes-desktop-o",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/nickvasilescu/hermes-desktop-os1",
+    "github": "nickvasilescu/hermes-desktop-os1",
+    "github_stars": 493,
+    "name": {
+      "en": "nickvasilescu/hermes-desktop-os1",
+      "zh-CN": "nickvasilescu/hermes-desktop-os1 (GitHub ⭐493)",
+      "zh-TW": "nickvasilescu/hermes-desktop-os1 (GitHub ⭐493)"
+    },
+    "desc": {
+      "en": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts",
+      "zh-CN": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts | GitHub 493+ Stars 开源项目",
+      "zh-TW": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts | GitHub 493+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ai4s-research-open-science",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/ai4s-research/open-science",
+    "github": "ai4s-research/open-science",
+    "github_stars": 493,
+    "name": {
+      "en": "ai4s-research/open-science",
+      "zh-CN": "ai4s-research/open-science (GitHub ⭐493)",
+      "zh-TW": "ai4s-research/open-science (GitHub ⭐493)"
+    },
+    "desc": {
+      "en": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu",
+      "zh-CN": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu | GitHub 493+ Stars 开源项目",
+      "zh-TW": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu | GitHub 493+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-fd",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier.",
       "zh-CN": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 开源项目",
       "zh-TW": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kng7-p-se7en-pro",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/KNG7-P/Se7en-Pro",
-    "github": "KNG7-P/Se7en-Pro",
-    "github_stars": 499,
-    "name": {
-      "en": "KNG7-P/Se7en-Pro",
-      "zh-CN": "KNG7-P/Se7en-Pro (GitHub ⭐499)",
-      "zh-TW": "KNG7-P/Se7en-Pro (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "KNG7-P/Se7en-Pro - Open source tool",
-      "zh-CN": "KNG7-P/Se7en-Pro - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "KNG7-P/Se7en-Pro - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-asz798838958-frciblyk12",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/asz798838958/FrciblyK12",
-    "github": "asz798838958/FrciblyK12",
-    "github_stars": 497,
-    "name": {
-      "en": "asz798838958/FrciblyK12",
-      "zh-CN": "asz798838958/FrciblyK12 (GitHub ⭐497)",
-      "zh-TW": "asz798838958/FrciblyK12 (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "多线程全自动注册free 强上K12空间",
-      "zh-CN": "多线程全自动注册free 强上K12空间 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "多线程全自动注册free 强上K12空间 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zarazhangrui-beautiful-feishu-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/zarazhangrui/beautiful-feishu-whiteboard",
-    "github": "zarazhangrui/beautiful-feishu-whiteboard",
-    "github_stars": 500,
-    "name": {
-      "en": "zarazhangrui/beautiful-feishu-whiteboard",
-      "zh-CN": "zarazhangrui/beautiful-feishu-whiteboard (GitHub ⭐500)",
-      "zh-TW": "zarazhangrui/beautiful-feishu-whiteboard (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill.",
-      "zh-CN": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "35 curated colour palette styles for building beautiful, editable Feishu / Lark (飞书) whiteboards. An agent skill. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-chaxiu-munk-ai",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/chaxiu/munk-ai",
-    "github": "chaxiu/munk-ai",
-    "github_stars": 498,
-    "name": {
-      "en": "chaxiu/munk-ai",
-      "zh-CN": "chaxiu/munk-ai (GitHub ⭐498)",
-      "zh-TW": "chaxiu/munk-ai (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Self-improving AI testing engine across Android, iOS, and Web.",
-      "zh-CN": "Self-improving AI testing engine across Android, iOS, and Web. | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Self-improving AI testing engine across Android, iOS, and Web. | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-anthonysturdy-micro-radar",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/AnthonySturdy/micro-radar",
-    "github": "AnthonySturdy/micro-radar",
-    "github_stars": 496,
-    "name": {
-      "en": "AnthonySturdy/micro-radar",
-      "zh-CN": "AnthonySturdy/micro-radar (GitHub ⭐496)",
-      "zh-TW": "AnthonySturdy/micro-radar (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "A tiny open-source flight radar for your desk",
-      "zh-CN": "A tiny open-source flight radar for your desk | GitHub 496+ Stars 开源项目",
-      "zh-TW": "A tiny open-source flight radar for your desk | GitHub 496+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gajus-zod-compiler",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/gajus/zod-compiler",
-    "github": "gajus/zod-compiler",
-    "github_stars": 495,
-    "name": {
-      "en": "gajus/zod-compiler",
-      "zh-CN": "gajus/zod-compiler (GitHub ⭐495)",
-      "zh-TW": "gajus/zod-compiler (GitHub ⭐495)"
-    },
-    "desc": {
-      "en": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc",
-      "zh-CN": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc | GitHub 495+ Stars 开源项目",
-      "zh-TW": "Compile Zod schemas into zero-overhead validation functions at build time. Works with Vite, webpack, esbuild, Rollup, etc | GitHub 495+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 522542,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐522542)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐522542)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 522542+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 522542+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 481639,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐481639)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐481639)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 481639+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
