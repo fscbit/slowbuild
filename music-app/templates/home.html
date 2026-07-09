@@ -51,8 +51,8 @@
 </style>
 
 <div class="hero">
-  <h1>Discover Great Music</h1>
-  <p>Hand-picked songs from China and beyond — with English reviews, original lyrics, and cultural context for curious listeners worldwide.</p>
+  <h1>Discover Music That Moves You</h1>
+  <p>Hand-picked songs from around the world — with original lyrics, English reviews, and cultural context. The Chinese and Korean gems you'd never find on your own.</p>
 </div>
 
 <!-- ═══ 精选 ═══ -->
@@ -80,7 +80,27 @@
 </div>
 {% endif %}
 
-<!-- ═══ 按风格 ═══ -->
+<!-- ═══ 国际精选（英文+韩流） ═══ -->
+{% set intls = songs|selectattr('language','in',['en','ko'])|list %}
+{% if intls %}
+<div class="song-list">
+  <h2 class="section-title">International Picks <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ intls|length }} songs</span></h2>
+  <div class="song-row">
+    {% for s in intls|sort(attribute='sort_order',reverse=True) %}
+    <a href="/song/{{ s.id }}" class="song-item">
+      <span class="si-num">{{ loop.index }}</span>
+      <div class="si-info">
+        <div class="si-title">{{ s.title }} {% if s.language=='ko' %}🇰🇷{% elif s.language=='en' %}🎸{% endif %}</div>
+        <div class="si-artist">{{ s.artist }} · {{ s.language|upper if s.language else '' }}</div>
+      </div>
+      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- ═══ 中文歌按风格 ═══ -->
 {% set genres_all = ['pop','rock','folk','indie','hiphop','electronic','rnb','punk','jazz'] %}
 {% set genre_labels = {
   'pop':'Mandopop',

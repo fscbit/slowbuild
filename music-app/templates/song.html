@@ -141,7 +141,7 @@
     <div class="meta-line">
       {% if song.genre %}<span>{{ song.genre }}</span>{% endif %}
       {% if song.year %}<span class="sep">·</span><span>{{ song.year }}</span>{% endif %}
-      <span class="sep">·</span>{% if song.language == 'en' %}<span>English</span>{% else %}<span>Chinese</span>{% endif %}
+      <span class="sep">·</span>{% if song.language == 'en' %}<span>English</span>{% elif song.language == 'ko' %}<span>Korean</span>{% else %}<span>Chinese</span>{% endif %}
       {% if not song.premium %}<span class="sep">·</span><span style="color:var(--jade);font-weight:600">Free</span>{% endif %}
     </div>
     {% if song.tags %}

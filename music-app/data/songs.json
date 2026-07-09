@@ -1,5 +1,114 @@
 [
   {
+    "id": "ko-haruharu",
+    "title": "하루하루 (Haru Haru)",
+    "title_en": "Day by Day",
+    "artist": "BIGBANG",
+    "genre": "pop",
+    "year": "2008",
+    "language": "ko",
+    "featured": true,
+    "premium": false,
+    "sort_order": 1006,
+    "youtube_id": "",
+    "tags": [
+      "kpop",
+      "ballad",
+      "emotional",
+      "legendary"
+    ],
+    "review_en": "Arguably BIGBANG's finest moment — a piano-driven ballad that builds into an emotional tidal wave. The MV (directed by Seo Hyun-seung) is a 10-minute mini-film. G-Dragon's rap verse in the bridge is one of the most quoted in K-pop history. For many international fans, this was the song that proved K-pop wasn't just manufactured idols — it was art.",
+    "lyrics_original": "떠나지마 제발\n가지 말라고\n네가 없인 난 안되니까\n하루하루\n잊혀질까 두려워",
+    "cultural_note": "BIGBANG is widely credited with globalizing K-pop before BTS. 'Haru Haru' means 'day by day' in Korean."
+  },
+  {
+    "id": "ko-bangbang",
+    "title": "뱅뱅뱅 (BANG BANG BANG)",
+    "title_en": "BANG BANG BANG",
+    "artist": "BIGBANG",
+    "genre": "electronic",
+    "year": "2015",
+    "language": "ko",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1007,
+    "youtube_id": "",
+    "tags": [
+      "kpop",
+      "party",
+      "anthem",
+      "electronic"
+    ],
+    "review_en": "The song that turns any room into a festival. The drop — 'BANG BANG BANG!' — is pure serotonin. Released during BIGBANG's 'MADE' series, this track dominated Korean charts for weeks and became the go-to hype song across Asia. The bass-synth riff is so infectious that even if you don't know a word of Korean, you'll be shouting the chorus by the second listen.",
+    "lyrics_original": "난 깨어나 까만 밤과 함께\n다 들어와 담엔 누구 차례\n한 치 앞도 볼 수 없는 막장 게릴라\n경배하라 목청이 터지게",
+    "cultural_note": "'MADE' was BIGBANG's most ambitious project — releasing 2 singles every month for 4 months, each topping charts."
+  },
+  {
+    "id": "ko-los",
+    "title": "LOSER",
+    "title_en": "LOSER",
+    "artist": "BIGBANG",
+    "genre": "pop",
+    "year": "2015",
+    "language": "ko",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1008,
+    "youtube_id": "",
+    "tags": [
+      "kpop",
+      "confessional",
+      "emotional"
+    ],
+    "review_en": "A self-deprecating anthem from the biggest boyband in Asia. 'LOSER' flips the script — instead of bragging, BIGBANG sings about feeling worthless, lonely, and lost. It resonated globally because it's honest. The chorus is haunting: 'I'm a loser, loner — a coward who pretends to be tough.' Proof that vulnerability in pop music transcends language.",
+    "lyrics_original": "I'm a loser, loner\n겁쟁이 못된 양아치\n거울 속에 비친 혼자인 loser\nI'm a loser, I'm a loser",
+    "cultural_note": "G-Dragon wrote this during a period of depression after a series of scandals. The raw honesty shocked Korea's idol industry."
+  },
+  {
+    "id": "ko-blue",
+    "title": "BLUE",
+    "title_en": "BLUE",
+    "artist": "BIGBANG",
+    "genre": "pop",
+    "year": "2012",
+    "language": "ko",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1009,
+    "youtube_id": "",
+    "tags": [
+      "kpop",
+      "ballad",
+      "melancholy",
+      "spring"
+    ],
+    "review_en": "BIGBANG at their most vulnerable. 'BLUE' is about the ache after a breakup — 'I'm singing my blues' — wrapped in a deceptively gentle acoustic-electro production. The music video, shot in New York, captures urban loneliness perfectly. This song proved BIGBANG could strip away the spectacle and still deliver something unforgettable.",
+    "lyrics_original": "겨울이 가고 봄이 찾아오죠\n우린 시들고 그리움 속에 맘이 멍들었죠\nI'm singing my blues\n사랑에 눈물이란 게",
+    "cultural_note": "Released as part of BIGBANG's 'ALIVE' comeback, this was their first album after a 2-year hiatus that nearly ended the group."
+  },
+  {
+    "id": "en-dynamite",
+    "title": "Dynamite",
+    "title_en": "Dynamite",
+    "artist": "BTS",
+    "genre": "pop",
+    "year": "2020",
+    "language": "en",
+    "featured": true,
+    "premium": false,
+    "sort_order": 1010,
+    "youtube_id": "",
+    "tags": [
+      "kpop",
+      "disco",
+      "global hit",
+      "english"
+    ],
+    "review_en": "BTS's first all-English single — and it became the first Korean act to debut at #1 on Billboard Hot 100. Pure disco-pop joy. The bassline, the horns, the choreography in the MV — it's impossible not to move. Recorded entirely in English as a deliberate choice to reach global audiences during the pandemic, it succeeded beyond imagination. A song about wanting to be a 'little star' became a supernova.",
+    "lyrics_original": "'Cause I, I, I'm in the stars tonight\nSo watch me bring the fire and set the night alight\nShining through the city with a little funk and soul\nSo I'ma light it up like dynamite, woah",
+    "cultural_note": "BTS is the biggest music act in the world by album sales. 'Dynamite' was released during COVID-19 as a 'healing song' and broke 101 Guinness World Records."
+  },
+  {
     "id": "en-badguy",
     "title": "bad guy",
     "title_en": "bad guy",
@@ -128,7 +237,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": true,
+    "featured": false,
     "premium": true,
     "sort_order": 0
   },
@@ -158,7 +267,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": true,
+    "featured": false,
     "premium": true,
     "sort_order": 0
   },
@@ -188,7 +297,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": true,
+    "featured": false,
     "premium": false,
     "sort_order": 1000
   },
@@ -218,7 +327,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": true,
+    "featured": false,
     "premium": false,
     "sort_order": 1000
   },
@@ -248,7 +357,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": true,
+    "featured": false,
     "premium": true,
     "sort_order": 0
   },
