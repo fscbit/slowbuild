@@ -1,5 +1,108 @@
 [
   {
+    "id": "en-badguy",
+    "title": "bad guy",
+    "title_en": "bad guy",
+    "artist": "Billie Eilish",
+    "genre": "pop",
+    "year": "2019",
+    "language": "en",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1005,
+    "tags": [
+      "modern",
+      "bass",
+      "viral",
+      "alternative pop"
+    ],
+    "review_en": "Recorded in her brother's bedroom. The bass line was made by recording Finneas playing a synth through a cheap distortion pedal. The 'duh' was a happy accident — Billie was goofing around in the booth and they kept it. This song dethroned 'Old Town Road' from its 19-week Billboard #1 streak. It proved you don't need a studio, a label, or even a chorus to make a generation-defining hit. Just siblings, a bedroom, and absolute fearlessness.",
+    "lyrics_original": "White shirt now red, my bloody nose\nSleepin', you're on your tippy toes\nCreepin' around like no one knows\nThink you're so criminal\nBruises on both my knees for you\nDon't say thank you or please\nI do what I want when I'm wanting to\nMy soul? So cynical",
+    "cultural_note": "Billie and Finneas recorded the entire debut album in their childhood home in Highland Park, LA — proving that bedroom production can top global charts."
+  },
+  {
+    "id": "en-hotelcalifornia",
+    "title": "Hotel California",
+    "title_en": "Hotel California",
+    "artist": "Eagles",
+    "genre": "rock",
+    "year": "1977",
+    "language": "en",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1004,
+    "tags": [
+      "classic rock",
+      "guitar",
+      "mysterious"
+    ],
+    "review_en": "The guitar duel at the end — between Don Felder and Joe Walsh — is two and a half minutes of the finest twin-guitar work in rock history. The song itself is an allegory wrapped in a mystery: is it about excess? Addiction? The music industry? Don Henley says it's about 'the dark underbelly of the American dream.' The reggae-inflected rhythm and that 12-string intro make it instantly recognizable from the first chord. Over 40 years later, you still can't check out.",
+    "lyrics_original": "On a dark desert highway, cool wind in my hair\nWarm smell of colitas, rising up through the air\nUp ahead in the distance, I saw a shimmering light\nMy head grew heavy and my sight grew dim\nI had to stop for the night",
+    "cultural_note": "'Colitas' is Mexican Spanish slang for the buds of the cannabis plant. The song was banned in some countries upon release."
+  },
+  {
+    "id": "en-blowin",
+    "title": "Blowin' in the Wind",
+    "title_en": "Blowin' in the Wind",
+    "artist": "Bob Dylan",
+    "genre": "folk",
+    "year": "1963",
+    "language": "en",
+    "featured": false,
+    "premium": false,
+    "sort_order": 1003,
+    "tags": [
+      "protest",
+      "folk",
+      "classic",
+      "poetry"
+    ],
+    "review_en": "Dylan was 21 when he wrote this. He borrowed the melody from an old spiritual called 'No More Auction Block,' but the lyrics are pure genius — nine rhetorical questions that still don't have answers 60 years later. Sam Cooke was so moved he wrote 'A Change Is Gonna Come' in response. The song became the anthem of the 1960s civil rights movement, yet Dylan insisted it wasn't a protest song — just 'a feeling.' That's the point: the most powerful statements often feel like questions.",
+    "lyrics_original": "How many roads must a man walk down\nBefore you call him a man?\nHow many seas must a white dove sail\nBefore she sleeps in the sand?\nYes, and how many times must the cannonballs fly\nBefore they're forever banned?\nThe answer, my friend, is blowin' in the wind\nThe answer is blowin' in the wind",
+    "cultural_note": "Dylan was awarded the 2016 Nobel Prize in Literature — the first songwriter to receive it."
+  },
+  {
+    "id": "en-bohemian",
+    "title": "Bohemian Rhapsody",
+    "title_en": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "genre": "rock",
+    "year": "1975",
+    "language": "en",
+    "featured": true,
+    "premium": false,
+    "sort_order": 1002,
+    "tags": [
+      "opera",
+      "epic",
+      "legendary",
+      "experimental"
+    ],
+    "review_en": "Six minutes. No chorus. Opera section in the middle. Freddie Mercury told the label 'it's either going to be number one or a complete flop.' It was number one for nine weeks. Decades later, the 2018 biopic of the same name pushed it past 1.6 billion streams. The song bends genre like nothing before or since — ballad, opera, hard rock stacked into one continuous piece. Brian May's guitar solo is 20 seconds of perfection. Nobody knows what 'Scaramouche' means here. It doesn't matter.",
+    "lyrics_original": "Is this the real life? Is this just fantasy?\nCaught in a landslide, no escape from reality\nOpen your eyes, look up to the skies and see\nI'm just a poor boy, I need no sympathy\nBecause I'm easy come, easy go, little high, little low\nAny way the wind blows doesn't really matter to me, to me",
+    "cultural_note": "The opera section references Scaramouche (commedia dell'arte character), Galileo (Italian astronomer), and Bismillah (Arabic for 'in the name of God')."
+  },
+  {
+    "id": "en-yesterday",
+    "title": "Yesterday",
+    "title_en": "Yesterday",
+    "artist": "The Beatles",
+    "genre": "pop",
+    "year": "1965",
+    "language": "en",
+    "featured": true,
+    "premium": false,
+    "sort_order": 1001,
+    "tags": [
+      "classic",
+      "ballad",
+      "legendary"
+    ],
+    "review_en": "The most covered song in history. Paul McCartney wrote it in a dream — literally woke up with the melody in his head and spent weeks asking everyone if they'd heard it before. Over 2,200 cover versions exist. It's only 2 minutes long, backed by a string quartet, and somehow says everything about loss and nostalgia that needs saying. The Beatles recorded it without Ringo — just Paul on acoustic guitar and a string arrangement by George Martin. A perfect song.",
+    "lyrics_original": "Yesterday, all my troubles seemed so far away\nNow it looks as though they're here to stay\nOh, I believe in yesterday\n\nSuddenly, I'm not half the man I used to be\nThere's a shadow hanging over me\nOh, yesterday came suddenly\n\nWhy she had to go I don't know, she wouldn't say\nI said something wrong, now I long for yesterday",
+    "cultural_note": "McCartney originally called it 'Scrambled Eggs' as a placeholder while working out the melody."
+  },
+  {
     "id": "song-guangnianzhiwai",
     "title": "光年之外",
     "title_en": "Light Years Away",

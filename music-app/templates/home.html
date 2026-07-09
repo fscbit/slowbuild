@@ -51,8 +51,8 @@
 </style>
 
 <div class="hero">
-  <h1>Discover Chinese Music</h1>
-  <p>Hand-picked songs with English translations, cultural notes, and reviews. For music lovers and Chinese learners worldwide.</p>
+  <h1>Discover Great Music</h1>
+  <p>Hand-picked songs from China and beyond — with English reviews, original lyrics, and cultural context for curious listeners worldwide.</p>
 </div>
 
 <!-- ═══ 精选 ═══ -->
@@ -63,11 +63,11 @@
   {% for s in featured[:6] %}
   <a href="/song/{{ s.id }}" class="feat-card">
     <div class="fc-cover">
-      {% if s.cover %}<img src="{{ s.cover }}" alt="{{ s.title_en or s.title }}">
+      {% if s.cover %}<img src="{{ s.cover }}" alt="{{ s.title }}">
       {% else %}<span class="ph-icon">🎵</span>{% endif %}
     </div>
     <div class="fc-body">
-      <div class="fc-title">{{ s.title_en or s.title }}</div>
+      <div class="fc-title">{{ s.title }}</div>
       <div class="fc-artist">{{ s.artist }}</div>
       {% if s.review_en %}<div class="fc-snippet">{{ s.review_en[:100] }}…</div>{% endif %}
       <div class="fc-meta">
@@ -104,7 +104,7 @@
       <a href="/song/{{ s.id }}" class="song-item">
         <span class="si-num">{{ loop.index }}</span>
         <div class="si-info">
-          <div class="si-title">{{ s.title_en or s.title }}</div>
+          <div class="si-title">{{ s.title }}</div>
           <div class="si-artist">{{ s.artist }}</div>
         </div>
         <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>

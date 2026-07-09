@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ song.title_en or song.title }} — {{ song.artist }} | SlowBuild Music{% endblock %}
-{% block og_title %}{{ song.title_en or song.title }} — {{ song.artist }}{% endblock %}
+{% block title %}{{ song.title }} — {{ song.artist }} | SlowBuild Music{% endblock %}
+{% block og_title %}{{ song.title }} — {{ song.artist }}{% endblock %}
 {% block og_desc %}{{ song.review_en[:200] if song.review_en else 'A Chinese song with English translation and cultural notes.' }}{% endblock %}
 {% block og_type %}article{% endblock %}
 {% block og_image %}{% if song.cover %}{{ song.cover }}{% endif %}{% endblock %}
@@ -11,7 +11,7 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"MusicRecording",
-  "name":"{{ song.title_en or song.title }}",
+  "name":"{{ song.title }}",
   "byArtist":{"@type":"MusicGroup","name":"{{ song.artist }}"},
   "inLanguage":"{{ song.language or 'zh' }}",
   "dateCreated":"{{ song.year or song.added }}",
@@ -127,20 +127,21 @@
 </style>
 
 <div class="article-page">
-<div class="breadcrumb"><a href="/">Discover</a> / {{ song.title_en or song.title }}</div>
+<div class="breadcrumb"><a href="/">Discover</a> / {{ song.title }}</div>
 
 <div class="song-header">
   <div class="song-cover-wrap">
-    {% if song.cover %}<img src="{{ song.cover }}" alt="{{ song.title_en or song.title }}">
+    {% if song.cover %}<img src="{{ song.cover }}" alt="{{ song.title }}">
     {% else %}<div class="ph">🎵</div>{% endif %}
   </div>
   <div class="song-meta">
-    <h1>{{ song.title_en or song.title }}</h1>
+    <h1>{{ song.title }}</h1>
+    {% if song.title_en and song.title_en != song.title %}<div class="cn-title">{{ song.title_en }}</div>{% endif %}
     <div class="artist-name">{{ song.artist }}</div>
     <div class="meta-line">
       {% if song.genre %}<span>{{ song.genre }}</span>{% endif %}
       {% if song.year %}<span class="sep">·</span><span>{{ song.year }}</span>{% endif %}
-      <span class="sep">·</span><span>{{ song.language or 'Chinese' }}</span>
+      <span class="sep">·</span>{% if song.language == 'en' %}<span>English</span>{% else %}<span>Chinese</span>{% endif %}
       {% if not song.premium %}<span class="sep">·</span><span style="color:var(--jade);font-weight:600">Free</span>{% endif %}
     </div>
     {% if song.tags %}
@@ -175,12 +176,20 @@
   {% if song.review_en %}
   <div class="content-block"><h3>Review</h3><div class="review-text">{{ song.review_en }}</div></div>
   {% endif %}
-  {% if song.lyrics_translation_en %}
+  {% if song.lyrics_original %}
   <div class="content-block">
-    <h3>Lyrics (English)</h3>
-    <div class="lyrics-text lyrics-translation">{{ song.lyrics_translation_en }}</div>
-    {% if song.lyrics_translation_cn_note %}<div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>{% endif %}
+    <h3>Lyrics</h3>
+    <div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div>
   </div>
+  {% endif %}
+  {% if song.lyrics_original %}
+  <div class="content-block">
+    <h3>Lyrics</h3>
+    <div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div>
+  </div>
+  {% endif %}
+  {% if song.lyrics_translation_cn_note %}
+  <div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>
   {% endif %}
   {% if song.cultural_note %}
   <div class="cultural-box"><h4>Cultural Context</h4><p>{{ song.cultural_note }}</p></div>
@@ -214,7 +223,7 @@
   <div class="related-grid">
     {% for r in related %}
     <a href="/song/{{ r.id }}" class="rel-card">
-      <div class="r-title">{{ r.title_en or r.title }}</div>
+      <div class="r-title">{{ r.title }}</div>
       <div class="r-artist">{{ r.artist }}</div>
     </a>
     {% endfor %}
