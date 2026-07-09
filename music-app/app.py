@@ -131,6 +131,7 @@ def admin_add():
     song = {
         "id": song_id,
         "title": title,
+        "title_en": request.form.get("title_en", "").strip(),
         "artist": artist,
         "genre": request.form.get("genre", "").strip().lower(),
         "year": request.form.get("year", "").strip(),
