@@ -172,12 +172,9 @@
 
 <!-- ═══ 内容区 ═══ -->
 {% if not song.premium %}
-  {# 免费内容 #}
+  {# Free content #}
   {% if song.review_en %}
   <div class="content-block"><h3>Review</h3><div class="review-text">{{ song.review_en }}</div></div>
-  {% endif %}
-  {% if song.review_cn %}
-  <div class="content-block"><h3>乐评</h3><div class="review-text">{{ song.review_cn }}</div></div>
   {% endif %}
   {% if song.lyrics_translation_en %}
   <div class="content-block">
@@ -191,7 +188,7 @@
   {% endif %}
 
 {% else %}
-  {# 付费内容：预览 + 解锁 #}
+  {# Premium: preview + unlock CTA #}
   {% if song.review_en %}
   <div class="content-block">
     <h3>Preview</h3>
