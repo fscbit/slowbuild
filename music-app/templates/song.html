@@ -179,13 +179,10 @@
   {% if song.review_cn %}
   <div class="content-block"><h3>乐评</h3><div class="review-text">{{ song.review_cn }}</div></div>
   {% endif %}
-  {% if song.lyrics_original and song.lyrics_translation_en %}
+  {% if song.lyrics_translation_en %}
   <div class="content-block">
-    <h3>Lyrics · 歌词</h3>
-    <div class="lyrics-grid">
-      <div class="lyrics-col lyrics-original">{{ song.lyrics_original }}</div>
-      <div class="lyrics-col lyrics-translation">{{ song.lyrics_translation_en }}</div>
-    </div>
+    <h3>Lyrics (English)</h3>
+    <div class="lyrics-text lyrics-translation">{{ song.lyrics_translation_en }}</div>
     {% if song.lyrics_translation_cn_note %}<div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>{% endif %}
   </div>
   {% endif %}
