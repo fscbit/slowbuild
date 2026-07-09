@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 music.slowbuild.top — 中国歌曲英文解读站
-端口 5003 | Flask + JSON 数据
+端口 5003 | Flask + JSON 数据 | YouTube 播放
 """
 
 from flask import Flask, render_template, request, redirect, url_for, jsonify
@@ -12,7 +12,7 @@ from pathlib import Path
 
 app = Flask(__name__)
 DATA_FILE = Path(__file__).parent / "data" / "songs.json"
-ADMIN_PASSWORD = "slowbuild2026"  # 简单保护，改掉
+ADMIN_PASSWORD = "slowbuild2026"
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 
 # ═══════════════════════════════════════════
@@ -39,6 +39,7 @@ def get_genres(songs):
             genres.add(g)
     return sorted(genres)
 
+
 # ═══════════════════════════════════════════
 # 公开页面
 # ═══════════════════════════════════════════
@@ -49,10 +50,10 @@ def index():
     genre = request.args.get("genre", "").strip().lower()
     if genre:
         songs = [s for s in songs if s.get("genre", "").lower() == genre]
-    # 最新在前
     songs.sort(key=lambda s: s.get("added", ""), reverse=True)
     genres = get_genres(load_songs())
     return render_template("home.html", songs=songs, genres=genres, current_genre=genre)
+
 
 @app.route("/song/<song_id>")
 def song_detail(song_id):
@@ -60,12 +61,12 @@ def song_detail(song_id):
     song = next((s for s in songs if s.get("id") == song_id), None)
     if not song:
         return "Song not found", 404
-    # 找相关歌曲（同类型或同艺人）
     related = [s for s in songs
                if s.get("id") != song_id
                and (s.get("genre") == song.get("genre") or s.get("artist") == song.get("artist"))
               ][:3]
     return render_template("song.html", song=song, related=related)
+
 
 @app.route("/api/songs")
 def api_songs():
@@ -77,8 +78,9 @@ def api_songs():
                  or q in s.get("review_en","").lower()]
     return jsonify(songs[:20])
 
+
 # ═══════════════════════════════════════════
-# 管理员（简单密码保护）
+# 管理员
 # ═══════════════════════════════════════════
 
 def admin_required(f):
@@ -90,6 +92,7 @@ def admin_required(f):
             return redirect(url_for("admin_login"))
         return f(*args, **kwargs)
     return decorated
+
 
 @app.route("/admin/login", methods=["GET", "POST"])
 def admin_login():
@@ -103,12 +106,14 @@ def admin_login():
         return render_template("login.html", error="Wrong password")
     return render_template("login.html")
 
+
 @app.route("/admin")
 @admin_required
 def admin():
     songs = load_songs()
     songs.sort(key=lambda s: s.get("added", ""), reverse=True)
     return render_template("admin.html", songs=songs)
+
 
 @app.route("/admin/add", methods=["POST"])
 @admin_required
@@ -120,7 +125,6 @@ def admin_add():
         return redirect(url_for("admin"))
     
     song_id = "song-" + re.sub(r'[^a-z0-9-]', '', title.lower().replace(" ", "-"))[:30]
-    # 去重
     if any(s.get("id") == song_id for s in songs):
         song_id += "-" + str(len(songs))
     
@@ -134,6 +138,7 @@ def admin_add():
         "spotify_id": request.form.get("spotify_id", "").strip(),
         "youtube_id": request.form.get("youtube_id", "").strip(),
         "netease_id": request.form.get("netease_id", "").strip(),
+        "direct_audio_url": request.form.get("direct_audio_url", "").strip(),
         "review_en": request.form.get("review_en", "").strip(),
         "review_cn": request.form.get("review_cn", "").strip(),
         "lyrics_original": request.form.get("lyrics_original", "").strip(),
@@ -148,30 +153,25 @@ def admin_add():
     save_songs(songs)
     return redirect(url_for("admin"))
 
+
 @app.route("/admin/edit/<song_id>", methods=["POST"])
 @admin_required
 def admin_edit(song_id):
+    editable = ["title","artist","genre","year","cover","spotify_id","youtube_id",
+                "netease_id","direct_audio_url","review_en","review_cn",
+                "lyrics_original","lyrics_translation_en","cultural_note","language"]
     songs = load_songs()
     for s in songs:
         if s.get("id") == song_id:
-            s["title"] = request.form.get("title", s["title"])
-            s["artist"] = request.form.get("artist", s["artist"])
-            s["genre"] = request.form.get("genre", s.get("genre",""))
-            s["year"] = request.form.get("year", s.get("year",""))
-            s["cover"] = request.form.get("cover", s.get("cover",""))
-            s["spotify_id"] = request.form.get("spotify_id", s.get("spotify_id",""))
-            s["youtube_id"] = request.form.get("youtube_id", s.get("youtube_id",""))
-            s["netease_id"] = request.form.get("netease_id", s.get("netease_id",""))
-            s["review_en"] = request.form.get("review_en", s.get("review_en",""))
-            s["review_cn"] = request.form.get("review_cn", s.get("review_cn",""))
-            s["lyrics_original"] = request.form.get("lyrics_original", s.get("lyrics_original",""))
-            s["lyrics_translation_en"] = request.form.get("lyrics_translation_en", s.get("lyrics_translation_en",""))
-            s["cultural_note"] = request.form.get("cultural_note", s.get("cultural_note",""))
-            s["tags"] = [t.strip() for t in request.form.get("tags", "").split(",") if t.strip()]
-            s["language"] = request.form.get("language", s.get("language",""))
+            for key in editable:
+                if key in request.form:
+                    s[key] = request.form.get(key, s.get(key,""))
+            tags_val = request.form.get("tags", "")
+            s["tags"] = [t.strip() for t in tags_val.split(",") if t.strip()] if tags_val else s.get("tags",[])
             break
     save_songs(songs)
     return redirect(url_for("admin"))
+
 
 @app.route("/admin/delete/<song_id>", methods=["POST"])
 @admin_required
@@ -180,6 +180,7 @@ def admin_delete(song_id):
     songs = [s for s in songs if s.get("id") != song_id]
     save_songs(songs)
     return redirect(url_for("admin"))
+
 
 # ═══════════════════════════════════════════
 # 启动

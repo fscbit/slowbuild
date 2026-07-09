@@ -79,22 +79,33 @@
   </div>
 </div>
 
+{# ═══ YouTube 嵌入（首选） ═══ #}
 {% if song.youtube_id %}
 <div class="player-box">
-  <h3>▶ Watch on YouTube</h3>
-  <iframe src="https://www.youtube.com/embed/{{ song.youtube_id }}" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+  <h3>🎬 Official Video</h3>
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}"
+            style="position:absolute;top:0;left:0;width:100%;height:100%"
+            frameborder="0" allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  </div>
+</div>
+{% elif song.direct_audio_url %}
+{# ═══ 自托管 MP3（备选） ═══ #}
+<div class="player-box">
+  <h3>🎵 Listen</h3>
+  <audio controls preload="metadata" style="width:100%;border-radius:8px">
+    <source src="{{ song.direct_audio_url }}" type="audio/mpeg">
+  </audio>
 </div>
 {% elif song.spotify_id %}
+{# ═══ Spotify（降级） ═══ #}
 <div class="player-box">
   <h3>🎧 Listen on Spotify</h3>
-  <iframe src="https://open.spotify.com/embed/track/{{ song.spotify_id }}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-</div>
-{% elif song.netease_id %}
-<div class="player-box">
-  <h3>🎵 网易云音乐</h3>
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0"
-    width="100%" height="86"
-    src="//music.163.com/outchain/player?type=2&id={{ song.netease_id }}&auto=0&height=66">
+  <iframe src="https://open.spotify.com/embed/track/{{ song.spotify_id }}"
+          width="100%" height="80" frameborder="0"
+          allowtransparency="true" allow="encrypted-media">
   </iframe>
 </div>
 {% endif %}
