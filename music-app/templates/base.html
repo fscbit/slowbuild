@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>{% block title %}SlowBuild Music — Chinese Songs Explained{% endblock %}</title>
-<meta name="description" content="{% block description %}Discover Chinese music through English reviews, lyric translations, and cultural context. Hand-picked songs explained for a global audience.{% endblock %}">
+<meta name="description" content="{% block description %}Discover Chinese music through English reviews, lyric translations, and cultural context.{% endblock %}">
 {% block og %}
 <meta property="og:title" content="{% block og_title %}SlowBuild Music — Chinese Songs Explained{% endblock %}">
 <meta property="og:description" content="{% block og_desc %}Discover Chinese music through English reviews, lyric translations, and cultural context.{% endblock %}">
@@ -16,88 +16,146 @@
 <meta name="twitter:title" content="{% block tw_title %}SlowBuild Music — Chinese Songs Explained{% endblock %}">
 <meta name="twitter:description" content="{% block tw_desc %}Discover Chinese music through English reviews, lyric translations, and cultural context.{% endblock %}">{% endblock %}
 <link rel="canonical" href="https://music.slowbuild.top{{ request.path }}">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {% block schema %}{% endblock %}
 <style>
-:root{--bg:#0a0a0f;--surface:#12121a;--border:#1e1e2e;--text:#d4d4e0;--muted:#707088;--gold:#d4a853;--teal:#38bdf8;--pink:#ec4899}
+:root{
+  --bg: #fdfaf4;
+  --bg2: #f6efe2;
+  --surface: #ffffff;
+  --card: #fefdfb;
+  --border: #e8dcc8;
+  --border-light: #f0e8d5;
+  --text: #3c3628;
+  --text2: #6b6355;
+  --muted: #9b917a;
+  --gold: #b8860b;
+  --gold-light: #daa520;
+  --red: #c53030;
+  --rose: #e07a5f;
+  --jade: #5b8c7a;
+  --jade-light: #81b29a;
+  --ink: #2d2b26;
+  --shadow: 0 1px 3px rgba(60,54,40,.06), 0 4px 16px rgba(60,54,40,.04);
+  --shadow-lg: 0 2px 8px rgba(60,54,40,.08), 0 8px 32px rgba(60,54,40,.06);
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-.container{max-width:1100px;margin:0 auto;padding:20px 24px}
-nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid var(--border);background:var(--surface)}
-nav .logo{font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,#d4a853,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
-nav .links{display:flex;gap:20px}
-nav .links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
-nav .links a:hover{color:var(--text)}
-.hero{text-align:center;padding:60px 20px 40px}
-.hero h1{font-size:2rem;background:linear-gradient(135deg,#d4a853,#ec4899,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
-.hero p{color:var(--muted);font-size:.95rem;max-width:600px;margin:0 auto}
-.search-bar{max-width:500px;margin:0 auto 30px;position:relative}
-.search-bar input{width:100%;padding:12px 20px;border-radius:30px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.9rem;outline:none}
-.search-bar input:focus{border-color:var(--teal)}
-.filters{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:30px}
-.filter-btn{padding:6px 16px;border:1px solid var(--border);border-radius:20px;background:var(--surface);color:var(--muted);font-size:.8rem;cursor:pointer;transition:all .2s}
-.filter-btn:hover,.filter-btn.active{border-color:var(--teal);color:var(--teal)}
-.song-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
-.song-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all .2s;display:flex;flex-direction:column}
-.song-card:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 8px 24px rgba(56,189,248,.08)}
-.song-cover{width:100%;height:200px;background:var(--code-bg);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
-.song-cover img{width:100%;height:100%;object-fit:cover}
-.song-cover .placeholder{font-size:4rem;opacity:.3}
-.song-body{padding:16px 20px;flex:1;display:flex;flex-direction:column}
-.song-body h3{font-size:1rem;margin-bottom:4px}
-.song-body h3 a{color:var(--text);text-decoration:none}
-.song-body h3 a:hover{color:var(--teal)}
-.song-body .artist{color:var(--pink);font-size:.85rem;margin-bottom:8px}
-.song-body .desc{color:var(--muted);font-size:.8rem;line-height:1.5;margin-bottom:12px;flex:1}
-.song-body .meta{display:flex;gap:12px;font-size:.7rem;color:var(--muted)}
-.song-body .tag{color:var(--teal)}
-footer{text-align:center;padding:40px 20px;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:40px}
-footer a{color:var(--teal)}
-.empty{text-align:center;padding:60px;color:var(--muted)}
-.admin-link{font-size:.7rem;color:var(--muted);opacity:.3;transition:opacity .3s}
-.admin-link:hover{opacity:1}
+body{
+  font-family:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';position:fixed;inset:0;
+  background:radial-gradient(ellipse at 20% 0%, rgba(218,165,32,.03) 0%, transparent 50%),
+             radial-gradient(ellipse at 80% 100%, rgba(91,140,122,.03) 0%, transparent 50%);
+  pointer-events:none;z-index:0;
+}
+.container{max-width:1140px;margin:0 auto;padding:20px 28px;position:relative;z-index:1}
+nav{
+  background:rgba(255,255,255,.85);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border-light);
+  position:sticky;top:0;z-index:50;
+  padding:0 28px;
+}
+nav .nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .logo{
+  font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:600;
+  color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px;
+  letter-spacing:-.01em;
+}
+nav .logo .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:2px}
+nav .links{display:flex;gap:6px}
+nav .links a{
+  color:var(--text2);text-decoration:none;font-size:.78rem;font-weight:500;
+  padding:6px 14px;border-radius:18px;transition:all .2s;letter-spacing:.01em;
+}
+nav .links a:hover{color:var(--ink);background:var(--bg2)}
+.hero{text-align:center;padding:70px 20px 50px;position:relative}
+.hero::after{
+  content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);
+}
+.hero h1{
+  font-family:'Noto Serif SC',serif;font-size:2.2rem;font-weight:600;
+  color:var(--ink);margin-bottom:14px;letter-spacing:-.02em;
+  background:linear-gradient(135deg,var(--ink) 20%,var(--jade) 60%,var(--gold-light) 90%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p{color:var(--text2);font-size:.95rem;max-width:520px;margin:0 auto;line-height:1.7}
+
+footer{
+  text-align:center;padding:50px 20px 36px;color:var(--muted);font-size:.75rem;
+  border-top:1px solid var(--border-light);margin-top:60px;
+}
+footer a{color:var(--jade);text-decoration:none}
+footer a:hover{color:var(--gold)}
+.footer-line{margin-bottom:8px}
+.footer-line span{font-family:'Noto Serif SC',serif;color:var(--text2);font-size:.85rem}
+
+/* 通用组件 */
+.section-title{
+  font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:600;
+  color:var(--ink);margin:44px 0 18px;padding-bottom:10px;
+  border-bottom:1px solid var(--border-light);
+  display:flex;align-items:center;gap:10px;
+}
+.section-title::before{content:'';display:inline-block;width:4px;height:18px;background:var(--gold);border-radius:2px}
+.tag{border-radius:18px;padding:2px 10px;font-size:.68rem;font-weight:500;letter-spacing:.02em}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:6px;padding:10px 22px;
+  background:var(--ink);color:#fff;border:none;border-radius:24px;
+  font-size:.82rem;font-weight:600;cursor:pointer;text-decoration:none;
+  transition:all .2s;letter-spacing:.01em;
+}
+.btn-primary:hover{background:#444;transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 18px;
+  border:1.5px solid var(--border);border-radius:24px;color:var(--text2);
+  font-size:.78rem;font-weight:500;cursor:pointer;text-decoration:none;
+  transition:all .2s;background:transparent;
+}
+.btn-outline:hover{border-color:var(--jade);color:var(--jade)}
+.admin-link{font-size:.68rem;color:var(--muted);opacity:.35;transition:opacity .3s;margin-left:8px}
+.admin-link:hover{opacity:.7}
+@media(max-width:768px){
+  .hero h1{font-size:1.6rem}
+  .container{padding:16px}
+  nav{padding:0 16px}
+  nav .links a{font-size:.72rem;padding:5px 10px}
+}
 </style>
 </head>
 <body>
 <nav>
-  <a href="/" class="logo">🎵 SlowBuild Music</a>
-  <div class="links">
-    <a href="/">Home</a>
-    <a href="/?genre=pop">Pop</a>
-    <a href="/?genre=rock">Rock</a>
-    <a href="/?genre=folk">Folk</a>
-    <a href="/?genre=rnb">R&B</a>
-    <a href="/?genre=hiphop">Hip Hop</a>
-    <a href="/?genre=indie">Indie</a>
-    <a href="/admin" class="admin-link" title="Admin">⚙</a>
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="dot"></span>SlowBuild Music</a>
+    <div class="links">
+      <a href="/">Discover</a>
+      <a href="/?genre=pop">Pop</a>
+      <a href="/?genre=rock">Rock</a>
+      <a href="/?genre=folk">Folk</a>
+      <a href="/?genre=indie">Indie</a>
+      <a href="/admin" class="admin-link" title="Admin">▪</a>
+    </div>
   </div>
 </nav>
 
-<div class="container">
-{% block content %}{% endblock %}
-</div>
+<div class="container">{% block content %}{% endblock %}</div>
 
 <footer>
-  <p>SlowBuild Music · Chinese songs explained in English · By a native speaker in 衡水</p>
-  <p><a href="https://music.slowbuild.top">music.slowbuild.top</a> · <a href="/admin">Admin</a></p>
+  <div class="footer-line"><span>樂</span></div>
+  <p>SlowBuild Music · Chinese songs explained · <a href="https://music.slowbuild.top">music.slowbuild.top</a></p>
 </footer>
 
 <script>
-// Live search
 document.querySelector('.search-bar input')?.addEventListener('input', function(e){
   var q = e.target.value.toLowerCase();
-  document.querySelectorAll('.song-card').forEach(function(card){
-    var text = card.textContent.toLowerCase();
-    card.style.display = text.includes(q) ? '' : 'none';
-  });
-});
-
-// Filter active state
-document.querySelectorAll('.filter-btn').forEach(function(btn){
-  var params = new URLSearchParams(window.location.search);
-  if(params.get('genre') === btn.dataset.genre) btn.classList.add('active');
-  btn.addEventListener('click', function(){
-    if(btn.dataset.genre === 'all') window.location = '/';
-    else window.location = '/?genre=' + btn.dataset.genre;
+  document.querySelectorAll('.song-card').forEach(function(c){
+    c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
 });
 </script>

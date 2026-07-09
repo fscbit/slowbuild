@@ -1,235 +1,232 @@
 {% extends "base.html" %}
-{% block title %}{{ song.title }} — {{ song.artist }} | SlowBuild Music{% endblock %}
-{% block og_title %}{{ song.title }} — {{ song.artist }}{% endblock %}
-{% block og_desc %}{{ song.review_en[:200] }}{% endblock %}
+{% block title %}{{ song.title_en or song.title }} — {{ song.artist }} | SlowBuild Music{% endblock %}
+{% block og_title %}{{ song.title_en or song.title }} — {{ song.artist }}{% endblock %}
+{% block og_desc %}{{ song.review_en[:200] if song.review_en else 'A Chinese song with English translation and cultural notes.' }}{% endblock %}
 {% block og_type %}article{% endblock %}
 {% block og_image %}{% if song.cover %}{{ song.cover }}{% endif %}{% endblock %}
-{% block tw_title %}{{ song.title }} — {{ song.artist }}{% endblock %}
-{% block tw_desc %}{{ song.review_en[:200] }}{% endblock %}
+{% block tw_title %}{{ song.title_en or song.title }} — {{ song.artist }}{% endblock %}
+{% block tw_desc %}{{ song.review_en[:200] if song.review_en else 'Discover Chinese music through English translations and cultural context.' }}{% endblock %}
 
-{# ═══ JSON-LD 结构化数据 ═══ #}
 {% block schema %}
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MusicRecording",
-  "name": "{{ song.title }}",
-  "byArtist": {
-    "@type": "MusicGroup",
-    "name": "{{ song.artist }}"
-  },
-  "inLanguage": "{{ song.language or 'zh' }}",
-  "dateCreated": "{{ song.year or song.added }}",
-  "genre": "{{ song.genre or '' }}",
-  "description": "{{ song.review_en[:300] }}",
-  "url": "https://music.slowbuild.top/song/{{ song.id }}",
-  "image": "{{ song.cover or '' }}",
-  "thumbnailUrl": "{{ song.cover or '' }}",
-  {% if song.youtube_id %}
-  "subjectOf": {
-    "@type": "VideoObject",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}",
-    "url": "https://www.youtube.com/watch?v={{ song.youtube_id }}"
-  },
-  {% endif %}
-  "publisher": {
-    "@type": "Organization",
-    "name": "SlowBuild Music",
-    "url": "https://music.slowbuild.top"
-  },
-  "educationalUse": "Chinese language learning through music",
-  "about": {
-    "@type": "Thing",
-    "name": "Chinese music and culture",
-    "description": "{{ song.cultural_note[:200] }}"
-  }
+  "@context":"https://schema.org","@type":"MusicRecording",
+  "name":"{{ song.title_en or song.title }}",
+  "byArtist":{"@type":"MusicGroup","name":"{{ song.artist }}"},
+  "inLanguage":"{{ song.language or 'zh' }}",
+  "dateCreated":"{{ song.year or song.added }}",
+  "genre":"{{ song.genre or '' }}",
+  "description":"{{ song.review_en[:300] if song.review_en else '' }}",
+  "url":"https://music.slowbuild.top/song/{{ song.id }}",
+  "image":"{{ song.cover or '' }}",
+  {% if song.youtube_id %}"subjectOf":{"@type":"VideoObject","embedUrl":"https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}","url":"https://www.youtube.com/watch?v={{ song.youtube_id }}"},{% endif %}
+  "publisher":{"@type":"Organization","name":"SlowBuild Music","url":"https://music.slowbuild.top"}
 }
 </script>
 {% endblock %}
 
 {% block content %}
 <style>
-.song-header{display:flex;gap:24px;flex-wrap:wrap;margin:30px 0}
-.song-cover-lg{width:260px;height:260px;border-radius:12px;overflow:hidden;flex-shrink:0;background:var(--surface)}
-.song-cover-lg img{width:100%;height:100%;object-fit:cover}
-.song-cover-lg .placeholder{font-size:6rem;opacity:.3;width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-.song-info{flex:1;min-width:250px}
-.song-info h1{font-size:1.8rem;margin-bottom:4px}
-.song-info .artist-name{font-size:1.2rem;color:var(--pink);margin-bottom:8px}
-.song-info .meta{color:var(--muted);font-size:.85rem;margin-bottom:16px}
-.player-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin:20px 0}
-.player-box h3{font-size:.9rem;color:var(--muted);margin-bottom:12px}
-.player-box iframe{width:100%;border-radius:8px}
-.lyrics-section{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin:24px 0}
-.lyrics-section h3{color:var(--gold);margin-bottom:16px;font-size:1.1rem}
-.lyrics-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.88rem;line-height:2}
-.lyrics-row .original{color:var(--text)}
-.lyrics-row .translation{color:var(--muted)}
-.review-section{margin:24px 0}
-.review-section h3{color:var(--teal);font-size:1.1rem;margin-bottom:12px}
-.review-section .review{color:#c0c0d0;font-size:.9rem;line-height:1.8;white-space:pre-line}
-.cultural-note{background:linear-gradient(135deg,rgba(212,168,83,.1),rgba(236,72,153,.08));border:1px solid var(--gold);border-radius:12px;padding:20px;margin:24px 0}
-.cultural-note h4{color:var(--gold);margin-bottom:8px;font-size:.9rem}
-.cultural-note p{color:#c0c0d0;font-size:.85rem;line-height:1.7}
-.platform-links{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
-.platform-links a{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;text-decoration:none;font-size:.8rem;transition:all .2s}
-.platform-links a.spotify{background:#1db954;color:#000}
-.platform-links a.youtube{background:#ff0000;color:#fff}
-.platform-links a.netease{background:#c20c0c;color:#fff}
-.platform-links a:hover{transform:translateY(-1px)}
-.related{margin:40px 0}
-.related h3{color:var(--gold);margin-bottom:16px}
+.article-page{max-width:780px;margin:0 auto}
+.breadcrumb{font-size:.72rem;color:var(--muted);margin:18px 0 8px}
+.breadcrumb a{color:var(--jade);text-decoration:none}
+.breadcrumb a:hover{color:var(--gold)}
+
+.song-header{display:flex;gap:28px;margin:24px 0 32px;align-items:flex-start;flex-wrap:wrap}
+.song-cover-wrap{
+  width:220px;height:220px;flex-shrink:0;border-radius:16px;overflow:hidden;
+  background:linear-gradient(135deg,var(--bg2),var(--border-light));
+  box-shadow:var(--shadow-lg);
+}
+.song-cover-wrap img{width:100%;height:100%;object-fit:cover}
+.song-cover-wrap .ph{display:flex;align-items:center;justify-content:center;height:100%;font-size:4rem;opacity:.2;color:var(--jade)}
+.song-meta{flex:1;min-width:260px}
+.song-meta h1{font-size:1.7rem;font-weight:700;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em;line-height:1.3}
+.song-meta .cn-title{font-family:'Noto Serif SC',serif;font-size:.85rem;color:var(--muted);margin-bottom:12px}
+.song-meta .artist-name{font-size:1rem;color:var(--rose);font-weight:600;margin-bottom:10px}
+.song-meta .meta-line{font-size:.78rem;color:var(--muted);margin-bottom:14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.song-meta .meta-line span{background:var(--bg2);padding:2px 10px;border-radius:10px;font-size:.7rem}
+.song-meta .meta-line .sep{color:var(--border)}
+.tags-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tag-item{background:rgba(91,140,122,.06);color:var(--jade);padding:3px 12px;border-radius:14px;font-size:.7rem;font-weight:500}
+.platform-btns{display:flex;flex-wrap:wrap;gap:8px}
+.platform-btn{
+  display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:18px;
+  text-decoration:none;font-size:.72rem;font-weight:500;transition:all .2s;border:1.5px solid var(--border);
+  color:var(--text2);background:var(--surface);
+}
+.platform-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.platform-btn.yt:hover{border-color:#c00;color:#c00}
+.platform-btn.sp:hover{border-color:#1db954;color:#1db954}
+
+.player-wrap{margin:28px 0}
+.player-wrap h3{font-size:.82rem;color:var(--muted);margin-bottom:10px;font-weight:500}
+.player-wrap .video-box{
+  position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
+  border-radius:14px;background:var(--bg2);box-shadow:var(--shadow-lg);
+}
+.player-wrap .video-box iframe{
+  position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+}
+.player-wrap .audio-box{padding:16px;background:var(--bg2);border-radius:14px}
+.player-wrap .audio-box audio{width:100%}
+
+.content-block{margin:28px 0}
+.content-block h3{
+  font-family:'Noto Serif SC',serif;font-size:1.05rem;font-weight:600;color:var(--ink);
+  margin-bottom:14px;display:flex;align-items:center;gap:8px;
+}
+.content-block h3::after{content:'';flex:1;height:1px;background:var(--border-light)}
+.review-text{color:var(--text);font-size:.9rem;line-height:1.85;white-space:pre-line}
+
+.lyrics-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.lyrics-col{font-size:.85rem;line-height:2.2}
+.lyrics-original{color:var(--ink);font-weight:500}
+.lyrics-translation{color:var(--text2)}
+.lyrics-note{margin-top:14px;padding:12px 16px;background:rgba(91,140,122,.05);border-left:3px solid var(--jade);border-radius:0 10px 10px 0;font-size:.75rem;color:var(--text2);line-height:1.6}
+
+.cultural-box{
+  padding:22px 24px;margin:28px 0;
+  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(224,122,95,.04));
+  border:1px solid rgba(184,134,11,.15);border-radius:14px;
+}
+.cultural-box h4{font-size:.85rem;font-weight:600;color:var(--gold);margin-bottom:10px}
+.cultural-box p{font-size:.82rem;color:var(--text2);line-height:1.8}
+
+.premium-wall{
+  text-align:center;padding:36px 24px;margin:28px 0;
+  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(60,54,40,.03));
+  border:1.5px solid rgba(184,134,11,.15);border-radius:16px;
+}
+.premium-wall h3{font-size:1.1rem;color:var(--gold);margin-bottom:10px}
+.premium-wall ul{list-style:none;padding:0;font-size:.82rem;color:var(--text2);line-height:2.2;margin-bottom:18px}
+.premium-wall .cta{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;
+  background:linear-gradient(135deg,var(--gold),var(--rose));color:#fff;
+  border-radius:24px;text-decoration:none;font-weight:600;font-size:.85rem;
+  transition:all .2s;letter-spacing:.01em;
+}
+.premium-wall .cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,134,11,.25)}
+.premium-wall .hint{font-size:.7rem;color:var(--muted);margin-top:14px}
+.premium-wall .hint a{color:var(--jade)}
+
+.related-section{margin:48px 0 30px}
 .related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.related-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:.8rem;text-decoration:none;color:var(--text);transition:all .2s}
-.related-card:hover{border-color:var(--teal)}
-.related-card .r-title{font-weight:600;margin-bottom:2px}
-.related-card .r-artist{color:var(--pink);font-size:.75rem}
-.tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-.tag-badge{background:rgba(56,189,248,.1);color:var(--teal);padding:3px 12px;border-radius:20px;font-size:.75rem}
-.btn-gold{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#d4a853,#ec4899);color:#fff;border-radius:30px;text-decoration:none;font-weight:700;font-size:.9rem;transition:all .2s}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,168,83,.3)}
-@media(max-width:600px){.lyrics-row{grid-template-columns:1fr}}
+.rel-card{
+  padding:14px 16px;background:var(--surface);border:1px solid var(--border-light);
+  border-radius:12px;text-decoration:none;color:inherit;transition:all .2s;box-shadow:var(--shadow);
+}
+.rel-card:hover{border-color:var(--jade);transform:translateY(-2px)}
+.rel-card .r-title{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:2px}
+.rel-card .r-artist{font-size:.7rem;color:var(--rose);font-weight:500}
+
+@media(max-width:640px){
+  .song-cover-wrap{width:140px;height:140px}
+  .song-meta h1{font-size:1.35rem}
+  .lyrics-grid{grid-template-columns:1fr}
+}
 </style>
 
-<div class="breadcrumb" style="margin-top:16px;font-size:.8rem;color:var(--muted)">
-  <a href="/" style="color:var(--teal)">Home</a> / {{ song.title }}
-</div>
+<div class="article-page">
+<div class="breadcrumb"><a href="/">Discover</a> / {{ song.title_en or song.title }}</div>
 
 <div class="song-header">
-  <div class="song-cover-lg">
-    {% if song.cover %}<img src="{{ song.cover }}" alt="{{ song.title }}">
-    {% else %}<span class="placeholder">🎵</span>{% endif %}
+  <div class="song-cover-wrap">
+    {% if song.cover %}<img src="{{ song.cover }}" alt="{{ song.title_en or song.title }}">
+    {% else %}<div class="ph">🎵</div>{% endif %}
   </div>
-  <div class="song-info">
+  <div class="song-meta">
     <h1>{{ song.title_en or song.title }}</h1>
-    <p class="artist-name">{{ song.artist }}</p>
-    {% if song.title_en and song.title_en != song.title %}
-    <p style="font-size:.85rem;color:var(--muted);margin-top:-4px">{{ song.title }}</p>
-    {% endif %}
-    <p class="meta">
-      {% if song.genre %}{{ song.genre|capitalize }}{% endif %}
-      {% if song.year %} · {{ song.year }}{% endif %}
-      · {{ song.language or 'Chinese' }}
-      · Added {{ song.added }}
-    </p>
-    {% if song.tags %}
-    <div class="tags-row">
-      {% for t in song.tags %}<span class="tag-badge">{{ t }}</span>{% endfor %}
+    {% if song.title_en and song.title_en != song.title %}<div class="cn-title">{{ song.title }}</div>{% endif %}
+    <div class="artist-name">{{ song.artist }}</div>
+    <div class="meta-line">
+      {% if song.genre %}<span>{{ song.genre }}</span>{% endif %}
+      {% if song.year %}<span class="sep">·</span><span>{{ song.year }}</span>{% endif %}
+      <span class="sep">·</span><span>{{ song.language or 'Chinese' }}</span>
+      {% if not song.premium %}<span class="sep">·</span><span style="color:var(--jade);font-weight:600">Free</span>{% endif %}
     </div>
+    {% if song.tags %}
+    <div class="tags-row">{% for t in song.tags %}<span class="tag-item">{{ t }}</span>{% endfor %}</div>
     {% endif %}
-    <div class="platform-links">
-      {% if song.netease_id %}<a href="https://music.163.com/song?id={{ song.netease_id }}" target="_blank" class="netease">🎵 网易云</a>{% endif %}
-      {% if song.spotify_id %}<a href="https://open.spotify.com/track/{{ song.spotify_id }}" target="_blank" class="spotify">🎧 Spotify</a>{% endif %}
-      {% if song.youtube_id %}<a href="https://www.youtube.com/watch?v={{ song.youtube_id }}" target="_blank" class="youtube">▶ YouTube</a>{% endif %}
+    <div class="platform-btns">
+      {% if song.youtube_id %}<a href="https://www.youtube.com/watch?v={{ song.youtube_id }}" target="_blank" class="platform-btn yt">▶ YouTube</a>{% endif %}
+      {% if song.spotify_id %}<a href="https://open.spotify.com/track/{{ song.spotify_id }}" target="_blank" class="platform-btn sp">🎧 Spotify</a>{% endif %}
     </div>
   </div>
 </div>
 
-{# ═══ YouTube 嵌入（首选） ═══ #}
+<!-- ═══ 播放器 ═══ -->
 {% if song.youtube_id %}
-<div class="player-box">
-  <h3>🎬 Official Video</h3>
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px">
-    <iframe src="https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}"
-            style="position:absolute;top:0;left:0;width:100%;height:100%"
-            frameborder="0" allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-    </iframe>
+<div class="player-wrap">
+  <h3>Official Video</h3>
+  <div class="video-box">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}" allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
   </div>
 </div>
 {% elif song.direct_audio_url %}
-{# ═══ 自托管 MP3（备选） ═══ #}
-<div class="player-box">
-  <h3>🎵 Listen</h3>
-  <audio controls preload="metadata" style="width:100%;border-radius:8px">
-    <source src="{{ song.direct_audio_url }}" type="audio/mpeg">
-  </audio>
-</div>
-{% elif song.spotify_id %}
-{# ═══ Spotify（降级） ═══ #}
-<div class="player-box">
-  <h3>🎧 Listen on Spotify</h3>
-  <iframe src="https://open.spotify.com/embed/track/{{ song.spotify_id }}"
-          width="100%" height="80" frameborder="0"
-          allowtransparency="true" allow="encrypted-media">
-  </iframe>
+<div class="player-wrap">
+  <h3>Listen</h3>
+  <div class="audio-box"><audio controls preload="metadata"><source src="{{ song.direct_audio_url }}" type="audio/mpeg"></audio></div>
 </div>
 {% endif %}
 
-{# ═══ 付费/免费内容 ═══ #}
+<!-- ═══ 内容区 ═══ -->
 {% if not song.premium %}
-{# ——— 免费歌曲：完整内容 ——— #}
-
-{% if song.review_en %}
-<div class="review-section">
-  <h3>📝 Review (EN)</h3>
-  <div class="review">{{ song.review_en }}</div>
-</div>
-{% endif %}
-{% if song.review_cn %}
-<div class="review-section">
-  <h3>📝 乐评 (中文)</h3>
-  <div class="review">{{ song.review_cn }}</div>
-</div>
-{% endif %}
-{% if song.lyrics_original and song.lyrics_translation_en %}
-<div class="lyrics-section">
-  <h3>🎤 Lyrics / 歌词</h3>
-  <div class="lyrics-row">
-    <div class="original">{{ song.lyrics_original }}</div>
-    <div class="translation">{{ song.lyrics_translation_en }}</div>
-  </div>
-  {% if song.lyrics_translation_cn_note %}
-  <p style="margin-top:12px;font-size:.8rem;color:var(--muted)">💬 {{ song.lyrics_translation_cn_note }}</p>
+  {# 免费内容 #}
+  {% if song.review_en %}
+  <div class="content-block"><h3>Review</h3><div class="review-text">{{ song.review_en }}</div></div>
   {% endif %}
-</div>
-{% endif %}
-{% if song.cultural_note %}
-<div class="cultural-note">
-  <h4>🏮 Cultural Context</h4>
-  <p>{{ song.cultural_note }}</p>
-</div>
-{% endif %}
+  {% if song.review_cn %}
+  <div class="content-block"><h3>乐评</h3><div class="review-text">{{ song.review_cn }}</div></div>
+  {% endif %}
+  {% if song.lyrics_original and song.lyrics_translation_en %}
+  <div class="content-block">
+    <h3>Lyrics · 歌词</h3>
+    <div class="lyrics-grid">
+      <div class="lyrics-col lyrics-original">{{ song.lyrics_original }}</div>
+      <div class="lyrics-col lyrics-translation">{{ song.lyrics_translation_en }}</div>
+    </div>
+    {% if song.lyrics_translation_cn_note %}<div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>{% endif %}
+  </div>
+  {% endif %}
+  {% if song.cultural_note %}
+  <div class="cultural-box"><h4>Cultural Context</h4><p>{{ song.cultural_note }}</p></div>
+  {% endif %}
 
 {% else %}
-{# ——— 付费歌曲：预览 + 解锁CTA ——— #}
-
-{% if song.review_en %}
-<div class="review-section">
-  <h3>📝 Preview</h3>
-  <div class="review">{{ song.review_en[:200] }}...</div>
-</div>
-{% endif %}
-
-<div class="cultural-note" style="border-color:var(--gold);text-align:center;padding:30px">
-  <h4 style="font-size:1.2rem">🔒 Premium Content</h4>
-  <p style="font-size:.9rem;margin:12px 0">Unlock the full experience:</p>
-  <ul style="list-style:none;padding:0;font-size:.85rem;color:#c0c0d0;line-height:2;margin-bottom:16px">
-    <li>✅ Full English review & analysis</li>
-    <li>✅ Complete lyrics with pinyin & translation</li>
-    <li>✅ Cultural context & background notes</li>
-    <li>✅ HD video / audio playback</li>
-  </ul>
-  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-    <a href="https://slowbuild.top/shop" target="_blank" class="btn-gold">🎵 Unlock — $4.99/All Access</a>
+  {# 付费内容：预览 + 解锁 #}
+  {% if song.review_en %}
+  <div class="content-block">
+    <h3>Preview</h3>
+    <div class="review-text">{{ song.review_en[:250] }}…</div>
   </div>
-  <p style="font-size:.7rem;color:var(--muted);margin-top:12px">
-    Or <a href="/" style="color:var(--teal)">browse free songs</a> to get started.
-  </p>
-</div>
+  {% endif %}
+  
+  <div class="premium-wall">
+    <h3>🔒 Premium Content</h3>
+    <ul>
+      <li>Full English review & analysis</li>
+      <li>Complete lyrics with translation</li>
+      <li>Cultural context & background notes</li>
+      <li>Curated listening experience</li>
+    </ul>
+    <a href="https://slowbuild.top/shop" class="cta" target="_blank">Unlock All Access — $4.99</a>
+    <div class="hint">or <a href="/">browse free songs</a> to get started</div>
+  </div>
 {% endif %}
 
 {% if related %}
-<div class="related">
-  <h3>🎶 You Might Also Like</h3>
+<div class="related-section">
+  <h2 class="section-title">You Might Like</h2>
   <div class="related-grid">
     {% for r in related %}
-    <a href="/song/{{ r.id }}" class="related-card">
-      <div class="r-title">{{ r.title[:30] }}</div>
+    <a href="/song/{{ r.id }}" class="rel-card">
+      <div class="r-title">{{ r.title_en or r.title }}</div>
       <div class="r-artist">{{ r.artist }}</div>
     </a>
     {% endfor %}
   </div>
 </div>
 {% endif %}
+</div>
 {% endblock %}

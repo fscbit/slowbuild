@@ -3,269 +3,225 @@
 {% block content %}
 <style>
 .admin-wrap{max-width:1200px;margin:0 auto}
-.admin-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin:20px 0 24px}
-.admin-header h1{margin:0;font-size:1.5rem}
-.stats{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap}
-.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 20px;min-width:120px}
-.stat-card .num{font-size:1.6rem;font-weight:700;color:var(--teal)}
-.stat-card .label{font-size:.75rem;color:var(--muted);margin-top:2px}
-.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
-.toolbar input,.toolbar select{padding:8px 14px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-size:.85rem;outline:none}
-.toolbar input:focus,.toolbar select:focus{border-color:var(--teal)}
-.toolbar input{min-width:280px}
-.btn{padding:8px 18px;border-radius:8px;border:none;font-size:.85rem;cursor:pointer;font-weight:600;transition:all .15s}
-.btn:hover{opacity:.9;transform:translateY(-1px)}
-.btn-primary{background:var(--teal);color:#000}
-.btn-success{background:#22c55e;color:#000}
-.btn-danger{background:#ef4444;color:#fff}
-.btn-sm{padding:4px 10px;font-size:.72rem;border-radius:6px}
-.song-table{width:100%;border-collapse:collapse;font-size:.85rem}
-.song-table th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--border);color:var(--muted);font-weight:600;font-size:.75rem;position:sticky;top:0;background:var(--bg);z-index:1}
-.song-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
-.song-table tr:hover td{background:rgba(56,189,248,.03)}
-.song-table .title-cell{font-weight:600;cursor:pointer}
-.song-table .title-cell:hover{color:var(--teal)}
-.song-table .artist-cell{color:var(--pink)}
-.badges{display:flex;gap:4px;flex-wrap:wrap}
-.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:.68rem}
-.badge-ok{background:rgba(34,197,94,.15);color:#22c55e}
-.badge-miss{background:rgba(239,68,68,.1);color:#ef4444}
-.badge-warn{background:rgba(234,179,8,.15);color:#eab308}
-.badge-tag{background:rgba(56,189,248,.1);color:var(--teal)}
+.admin-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:10px 0 20px}
+.admin-top h1{font-family:'Noto Serif SC',serif;font-size:1.3rem;color:var(--ink);margin:0}
+.stat-row{display:flex;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.stat-cell{background:var(--surface);border:1px solid var(--border-light);border-radius:12px;padding:16px 22px;box-shadow:var(--shadow)}
+.stat-cell .num{font-size:1.5rem;font-weight:700;color:var(--jade)}
+.stat-cell .num.gold{color:var(--gold)}
+.stat-cell .label{font-size:.7rem;color:var(--muted);margin-top:3px}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.toolbar input,.toolbar select{padding:8px 14px;border:1.5px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:.82rem;outline:none;transition:border-color .2s}
+.toolbar input:focus,.toolbar select:focus{border-color:var(--jade)}
+.toolbar input{min-width:260px}
+.btn{padding:8px 18px;border-radius:10px;border:none;font-size:.8rem;cursor:pointer;font-weight:600;transition:all .15s;font-family:inherit}
+.btn:hover{transform:translateY(-1px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-green{background:var(--jade);color:#fff}
+.btn-red{background:var(--rose);color:#fff}
+.btn-line{background:transparent;border:1.5px solid var(--border);color:var(--text2)}
 
-/* 编辑弹窗 */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:100;align-items:center;justify-content:center}
+.song-list{margin-top:8px}
+.song-list table{width:100%;border-collapse:collapse;font-size:.82rem}
+.song-list th{text-align:left;padding:10px 14px;border-bottom:2px solid var(--border-light);color:var(--muted);font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.song-list td{padding:10px 14px;border-bottom:1px solid var(--border-light);vertical-align:middle}
+.song-list tr:hover td{background:rgba(91,140,122,.03)}
+.song-list .s-title{font-weight:600;color:var(--ink);cursor:pointer}
+.song-list .s-title:hover{color:var(--jade)}
+.song-list .s-artist{font-size:.72rem;color:var(--rose);font-weight:500}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.dot.green{background:var(--jade)}
+.dot.gold{background:var(--gold)}
+.dot.gray{background:var(--border)}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(45,43,38,.5);backdrop-filter:blur(3px);z-index:100;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
-.modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;max-width:720px;width:95%;max-height:85vh;overflow-y:auto}
-.modal h2{margin:0 0 20px;font-size:1.2rem}
-.modal .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.modal .form-group{display:flex;flex-direction:column;gap:4px}
-.modal .form-group.full{grid-column:1/-1}
-.modal label{font-size:.78rem;color:var(--muted);font-weight:600}
-.modal input,.modal textarea,.modal select{width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font-size:.85rem;font-family:inherit;resize:vertical}
-.modal textarea{min-height:80px}
-.modal input:focus,.modal textarea:focus{border-color:var(--teal);outline:none}
-.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
-.empty-state{text-align:center;padding:60px;color:var(--muted)}
-@media(max-width:768px){.song-table{font-size:.75rem}.song-table th,.song-table td{padding:8px 6px}}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:30px;max-width:740px;width:95%;max-height:88vh;overflow-y:auto;box-shadow:0 16px 48px rgba(60,54,40,.15)}
+.modal h2{font-size:1.1rem;color:var(--ink);margin:0 0 20px;font-weight:600}
+.modal .fg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.modal .fg .full{grid-column:1/-1}
+.modal label{font-size:.72rem;color:var(--muted);font-weight:600;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.02em}
+.modal input,.modal textarea,.modal select{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font-size:.84rem;font-family:inherit;resize:vertical;transition:border-color .2s}
+.modal input:focus,.modal textarea:focus{border-color:var(--jade);outline:none}
+.modal textarea{min-height:70px}
+.modal .checks{display:flex;gap:20px;align-items:center;padding-top:10px}
+.modal .checks label{display:flex;align-items:center;gap:6px;cursor:pointer;text-transform:none;font-size:.78rem;font-weight:500;color:var(--text)}
+.modal .checks input[type=checkbox]{width:auto}
+.modal .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+@media(max-width:768px){.modal .fg{grid-template-columns:1fr}}
 </style>
 
 <div class="admin-wrap">
-<div class="admin-header">
-  <h1>🎵 音乐管理后台</h1>
+<div class="admin-top">
+  <h1>Music Admin</h1>
   <div style="display:flex;gap:8px">
-    <button class="btn btn-primary" onclick="openAdd()">+ 新增歌曲</button>
-    <a href="/admin/login" style="font-size:.7rem;color:var(--muted);align-self:center">退出</a>
+    <button class="btn btn-dark" onclick="openAdd()">+ New Song</button>
+    <a href="/admin/login" style="font-size:.65rem;color:var(--muted);align-self:center;text-decoration:none">exit</a>
   </div>
 </div>
 
-<div class="stats" id="stats"></div>
+<div class="stat-row" id="stats"></div>
 
 <div class="toolbar">
-  <input id="searchInput" placeholder="🔍 搜索歌名/歌手..." oninput="renderTable()">
-  <select id="genreFilter" onchange="renderTable()">
-    <option value="">全部风格</option>
+  <input id="searchInput" placeholder="Search title or artist…" oninput="render()">
+  <select id="genreFilter" onchange="render()"><option value="">All genres</option></select>
+  <select id="statusFilter" onchange="render()">
+    <option value="">All status</option><option value="has_yt">Has YouTube</option><option value="no_yt">No YouTube</option>
+    <option value="has_review">Has review</option><option value="no_review">No review</option>
+    <option value="free">Free</option><option value="premium">Premium</option>
   </select>
-  <select id="tagFilter" onchange="renderTable()">
-    <option value="">全部标签</option>
-  </select>
-  <select id="statusFilter" onchange="renderTable()">
-    <option value="">全部状态</option>
-    <option value="has_yt">✅ 有YouTube</option>
-    <option value="no_yt">❌ 缺YouTube</option>
-    <option value="has_review">📝 有乐评</option>
-    <option value="no_review">📝 缺乐评</option>
-  </select>
-  <span style="font-size:.78rem;color:var(--muted)" id="resultCount"></span>
+  <span style="font-size:.75rem;color:var(--muted)" id="count"></span>
 </div>
 
-<table class="song-table">
-<thead><tr>
-  <th style="width:30%">歌曲</th>
-  <th>风格</th>
-  <th>状态</th>
-  <th style="width:100px">操作</th>
+<div class="song-list">
+<table><thead><tr>
+  <th>Song</th><th>Genre</th><th>Status</th><th style="width:110px"></th>
 </tr></thead>
-<tbody id="songTableBody"></tbody>
-</table>
-<div class="empty-state" id="emptyState" style="display:none">没有匹配的歌曲</div>
+<tbody id="tbody"></tbody></table>
+</div>
+<div id="empty" style="display:none;text-align:center;padding:50px;color:var(--muted);font-size:.85rem">No matches</div>
 </div>
 
-<!-- 编辑弹窗 -->
-<div class="modal-overlay" id="editModal">
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
 <div class="modal">
-  <h2 id="modalTitle">编辑歌曲</h2>
+  <h2 id="modalTitle">Edit Song</h2>
   <form id="editForm" onsubmit="saveSong(event)">
-    <input type="hidden" name="song_id" id="editSongId">
-    <div class="form-grid">
-      <div class="form-group"><label>中文歌名 *</label><input name="title" required></div>
-      <div class="form-group"><label>歌手 *</label><input name="artist" required></div>
-      <div class="form-group"><label>英文歌名</label><input name="title_en"></div>
-      <div class="form-group"><label>风格</label><input name="genre" placeholder="pop/rock/folk/indie..."></div>
-      <div class="form-group"><label>年份</label><input name="year" placeholder="2023"></div>
-      <div class="form-group"><label>语言</label><select name="language"><option value="zh">普通话</option><option value="yue">粤语</option><option value="nan">闽南语</option></select></div>
-      <div class="form-group"><label>🎬 YouTube ID</label><input name="youtube_id" placeholder="e.g. dQw4w9WgXcQ"></div>
-      <div class="form-group"><label>🎧 Spotify ID</label><input name="spotify_id" placeholder="track ID"></div>
-      <div class="form-group"><label>🎵 网易云 ID</label><input name="netease_id" placeholder="e.g. 186016"></div>
-      <div class="form-group"><label>📁 自托管 MP3 URL</label><input name="direct_audio_url" placeholder="https://..."></div>
-      <div class="form-group"><label>🖼️ 封面图 URL</label><input name="cover" placeholder="https://..."></div>
-      <div class="form-group"><label>🏷️ 标签 (逗号分隔)</label><input name="tags" placeholder="pop, viral, youth"></div>
-      <div class="form-group"><label>⭐ 排序权重 (越大越靠前)</label><input name="sort_order" type="number" value="0"></div>
-      <div class="form-group" style="display:flex;align-items:center;gap:8px;padding-top:20px">
-        <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
-          <input type="checkbox" name="featured" value="true" style="width:auto"> 首页精选
-        </label>
-        <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
-          <input type="checkbox" name="premium" value="true" checked style="width:auto"> 付费内容
-        </label>
+    <input type="hidden" name="song_id" id="editId">
+    <div class="fg">
+      <div><label>Title (CN)</label><input name="title" required></div>
+      <div><label>Title (EN)</label><input name="title_en"></div>
+      <div><label>Artist</label><input name="artist" required></div>
+      <div><label>Genre</label><input name="genre" placeholder="pop/rock/folk…"></div>
+      <div><label>Year</label><input name="year"></div>
+      <div><label>Language</label><select name="language"><option value="zh">Mandarin</option><option value="yue">Cantonese</option><option value="nan">Hokkien</option></select></div>
+      <div><label>YouTube ID</label><input name="youtube_id" placeholder="Video ID from URL"></div>
+      <div><label>Spotify ID</label><input name="spotify_id" placeholder="Track ID"></div>
+      <div><label>Cover Image URL</label><input name="cover" placeholder="https://…"></div>
+      <div><label>Direct MP3 URL</label><input name="direct_audio_url" placeholder="https://…"></div>
+      <div class="full"><label>Tags (comma)</label><input name="tags" placeholder="pop, viral, youth"></div>
+      <div class="full"><label>Review (EN)</label><textarea name="review_en" rows="3"></textarea></div>
+      <div class="full"><label>乐评 (CN)</label><textarea name="review_cn" rows="2"></textarea></div>
+      <div class="full"><label>Lyrics (CN)</label><textarea name="lyrics_original" rows="2"></textarea></div>
+      <div class="full"><label>Lyrics Translation (EN)</label><textarea name="lyrics_translation_en" rows="2"></textarea></div>
+      <div class="full"><label>Language Note</label><textarea name="lyrics_translation_cn_note" rows="2"></textarea></div>
+      <div class="full"><label>Cultural Context (EN)</label><textarea name="cultural_note" rows="3"></textarea></div>
+      <div class="full">
+        <div class="checks">
+          <label><input type="checkbox" name="featured" value="true"> Featured on homepage</label>
+          <label><input type="checkbox" name="premium" value="true" checked> Premium content</label>
+          <label style="gap:4px">Sort: <input name="sort_order" type="number" value="0" style="width:60px;padding:4px 8px;font-size:.78rem"></label>
+        </div>
       </div>
-      <div class="form-group full"><label>📝 英文乐评</label><textarea name="review_en" rows="4" placeholder="150-250 word English music review..."></textarea></div>
-      <div class="form-group full"><label>📝 中文乐评</label><textarea name="review_cn" rows="2" placeholder="50-100字中文简短乐评"></textarea></div>
-      <div class="form-group full"><label>🎤 歌词原文 (每行一句)</label><textarea name="lyrics_original" rows="3" placeholder="歌词原文..."></textarea></div>
-      <div class="form-group full"><label>🎤 歌词英文翻译</label><textarea name="lyrics_translation_en" rows="3" placeholder="English translation..."></textarea></div>
-      <div class="form-group full"><label>💬 歌词文化注解 (英文)</label><textarea name="lyrics_translation_cn_note" rows="2" placeholder="Language/cultural notes..."></textarea></div>
-      <div class="form-group full"><label>🏮 文化背景 (英文, 100-150字)</label><textarea name="cultural_note" rows="4" placeholder="Cultural context for foreign listeners..."></textarea></div>
     </div>
-    <div class="modal-actions">
-      <button type="button" class="btn" onclick="closeModal()" style="background:var(--border);color:var(--text)">取消</button>
-      <button type="button" class="btn btn-danger btn-sm" id="deleteBtn" style="display:none" onclick="deleteSong()">🗑 删除</button>
-      <button type="submit" class="btn btn-primary">💾 保存</button>
+    <div class="actions">
+      <button type="button" class="btn btn-line" onclick="closeModal()">Cancel</button>
+      <button type="button" class="btn btn-red" id="delBtn" style="display:none" onclick="delSong()">Delete</button>
+      <button type="submit" class="btn btn-dark">Save</button>
     </div>
   </form>
 </div>
 </div>
 
 <script>
-var allSongs = {{ songs|tojson }};
-var allGenres = [...new Set(allSongs.map(s=>s.genre).filter(Boolean))].sort();
-var allTags = [...new Set(allSongs.flatMap(s=>s.tags||[]).filter(Boolean))].sort();
-
-// 初始化
+var songs = {{ songs|tojson }};
+var genres = [...new Set(songs.map(s=>s.genre).filter(Boolean))].sort();
 (function init(){
-  // 填充筛选器
   var gf = document.getElementById('genreFilter');
-  allGenres.forEach(g => { var o = document.createElement('option'); o.value=g; o.textContent=g; gf.appendChild(o); });
-  var tf = document.getElementById('tagFilter');
-  allTags.forEach(t => { var o = document.createElement('option'); o.value=t; o.textContent=t; tf.appendChild(o); });
-  // 统计
+  genres.forEach(g=>{var o=document.createElement('option');o.value=g;o.textContent=g;gf.appendChild(o)});
+  render();
   updateStats();
-  renderTable();
 })();
 
 function updateStats(){
-  var total = allSongs.length;
-  var hasYT = allSongs.filter(s=>s.youtube_id).length;
-  var hasReview = allSongs.filter(s=>s.review_en&&s.review_en.length>50).length;
-  var hasCover = allSongs.filter(s=>s.cover).length;
-  document.getElementById('stats').innerHTML = 
-    '<div class="stat-card"><div class="num">'+total+'</div><div class="label">总歌曲</div></div>'+
-    '<div class="stat-card"><div class="num" style="color:#22c55e">'+hasYT+'</div><div class="label">有YouTube</div></div>'+
-    '<div class="stat-card"><div class="num" style="color:var(--gold)">'+hasReview+'</div><div class="label">有乐评</div></div>'+
-    '<div class="stat-card"><div class="num">'+hasCover+'</div><div class="label">有封面</div></div>';
+  var t=songs.length,yt=songs.filter(s=>s.youtube_id).length,
+      rv=songs.filter(s=>s.review_en&&s.review_en.length>50).length,
+      cv=songs.filter(s=>s.cover).length;
+  document.getElementById('stats').innerHTML=
+    '<div class="stat-cell"><div class="num">'+t+'</div><div class="label">Total</div></div>'+
+    '<div class="stat-cell"><div class="num">'+yt+'</div><div class="label">YouTube</div></div>'+
+    '<div class="stat-cell"><div class="num gold">'+rv+'</div><div class="label">Reviewed</div></div>'+
+    '<div class="stat-cell"><div class="num">'+cv+'</div><div class="label">Cover Art</div></div>';
 }
 
-function getFiltered(){
-  var q = (document.getElementById('searchInput').value||'').toLowerCase();
-  var gf = document.getElementById('genreFilter').value;
-  var tf = document.getElementById('tagFilter').value;
-  var sf = document.getElementById('statusFilter').value;
-  return allSongs.filter(s=>{
-    if (q && !(s.title+s.artist+s.title_en+(s.review_en||'')).toLowerCase().includes(q)) return false;
-    if (gf && s.genre !== gf) return false;
-    if (tf && !(s.tags||[]).includes(tf)) return false;
-    if (sf==='has_yt' && !s.youtube_id) return false;
-    if (sf==='no_yt' && s.youtube_id) return false;
-    if (sf==='has_review' && (!s.review_en||s.review_en.length<50)) return false;
-    if (sf==='no_review' && s.review_en&&s.review_en.length>=50) return false;
+function filtered(){
+  var q=(document.getElementById('searchInput').value||'').toLowerCase();
+  var gf=document.getElementById('genreFilter').value;
+  var sf=document.getElementById('statusFilter').value;
+  return songs.filter(s=>{
+    if(q&&!(s.title+s.artist+(s.title_en||'')+(s.review_en||'')).toLowerCase().includes(q))return false;
+    if(gf&&s.genre!==gf)return false;
+    if(sf=='has_yt'&&!s.youtube_id)return false; if(sf=='no_yt'&&s.youtube_id)return false;
+    if(sf=='has_review'&&(!s.review_en||s.review_en.length<50))return false;
+    if(sf=='no_review'&&s.review_en&&s.review_en.length>=50)return false;
+    if(sf=='free'&&s.premium!==false)return false; if(sf=='premium'&&s.premium===false)return false;
     return true;
   });
 }
 
-function renderTable(){
-  var songs = getFiltered();
-  var tbody = document.getElementById('songTableBody');
-  var empty = document.getElementById('emptyState');
-  document.getElementById('resultCount').textContent = '共 '+songs.length+' 首';
-  
-  if (songs.length===0){ tbody.innerHTML=''; empty.style.display='block'; return; }
-  empty.style.display='none';
-  
-  tbody.innerHTML = songs.map(s=>{
-    var badges = [];
-    if (s.youtube_id) badges.push('<span class="badge badge-ok">YT</span>'); else badges.push('<span class="badge badge-miss">YT</span>');
-    if (s.review_en&&s.review_en.length>50) badges.push('<span class="badge badge-ok">乐评</span>'); else badges.push('<span class="badge badge-warn">乐评</span>');
-    if (s.cover) badges.push('<span class="badge badge-ok">封面</span>');
-    var tags = (s.tags||[]).slice(0,2).map(t=>'<span class="badge badge-tag">'+t+'</span>').join('');
-    return '<tr>'+
-      '<td><div class="title-cell" onclick="openEdit(\''+s.id+'\')">'+escHtml(s.title)+'</div>'+
-          '<div class="artist-cell" style="font-size:.75rem">'+escHtml(s.artist)+'</div></td>'+
-      '<td><span style="font-size:.75rem">'+(s.genre||'-')+'</span><br>'+tags+'</td>'+
-      '<td><div class="badges">'+badges.join(' ')+'</div></td>'+
-      '<td><button class="btn btn-primary btn-sm" onclick="openEdit(\''+s.id+'\')">编辑</button>'+
-          ' <a href="/song/'+s.id+'" target="_blank" class="btn btn-sm" style="background:var(--border);color:var(--text)">看</a></td>'+
-      '</tr>';
+function render(){
+  var items=filtered();
+  document.getElementById('count').textContent=items.length+' songs';
+  document.getElementById('empty').style.display=items.length?'none':'block';
+  document.getElementById('tbody').innerHTML=items.map(s=>{
+    var dots=[];
+    if(s.youtube_id)dots.push('<span class="dot green"></span>YT');
+    else dots.push('<span class="dot gray"></span>YT');
+    if(s.review_en&&s.review_en.length>50)dots.push('<span class="dot green"></span>Review');
+    else dots.push('<span class="dot gray"></span>Review');
+    if(s.cover)dots.push('<span class="dot green"></span>Cover');
+    var prem=s.premium===false?'Free <span style="color:var(--jade);font-weight:600;font-size:.7rem">FREE</span>':'<span style="color:var(--gold);font-size:.7rem">🔒</span>';
+    return '<tr><td><div class="s-title" onclick="openEdit(\''+s.id+'\')">'+
+      e(s.title_en||s.title)+'</div><div class="s-artist">'+e(s.artist)+'</div></td>'+
+      '<td><span style="font-size:.72rem">'+(s.genre||'—')+'</span></td>'+
+      '<td style="font-size:.7rem">'+dots.join(' ')+'<br>'+prem+'</td>'+
+      '<td><button class="btn btn-line" style="font-size:.7rem;padding:4px 10px" onclick="openEdit(\''+s.id+'\')">Edit</button> '+
+      '<a href="/song/'+s.id+'" target="_blank" class="btn btn-line" style="font-size:.7rem;padding:4px 10px;text-decoration:none">View</a></td></tr>';
   }).join('');
 }
 
-function escHtml(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function e(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
-function openEdit(songId){
-  var song = allSongs.find(s=>s.id===songId);
-  if (!song) return;
-  document.getElementById('editSongId').value = song.id;
-  document.getElementById('modalTitle').textContent = '编辑: '+song.title;
-  document.getElementById('deleteBtn').style.display = 'inline-block';
-  // 填充表单
-  var form = document.getElementById('editForm');
-  ['title','artist','title_en','genre','year','youtube_id','spotify_id','netease_id','direct_audio_url','cover','sort_order'].forEach(k=>{
-    form.querySelector('[name="'+k+'"]').value = song[k]||'';
-  });
-  form.querySelector('[name="tags"]').value = (song.tags||[]).join(', ');
-  form.querySelector('[name="language"]').value = song.language||'zh';
-  form.querySelector('[name="featured"]').checked = !!song.featured;
-  form.querySelector('[name="premium"]').checked = song.premium !== false;
-  ['review_en','review_cn','lyrics_original','lyrics_translation_en','lyrics_translation_cn_note','cultural_note'].forEach(k=>{
-    form.querySelector('[name="'+k+'"]').value = song[k]||'';
-  });
-  document.getElementById('editModal').classList.add('active');
+function openEdit(id){
+  var s=songs.find(x=>x.id===id); if(!s)return;
+  document.getElementById('editId').value=id;
+  document.getElementById('modalTitle').textContent='Edit: '+(s.title_en||s.title);
+  document.getElementById('delBtn').style.display='inline-block';
+  var f=document.getElementById('editForm');
+  ['title','title_en','artist','genre','year','youtube_id','spotify_id','cover','direct_audio_url','sort_order'].forEach(k=>{f.querySelector('[name="'+k+'"]').value=s[k]||'';});
+  f.querySelector('[name="tags"]').value=(s.tags||[]).join(', ');
+  f.querySelector('[name="language"]').value=s.language||'zh';
+  f.querySelector('[name="featured"]').checked=!!s.featured;
+  f.querySelector('[name="premium"]').checked=s.premium!==false;
+  ['review_en','review_cn','lyrics_original','lyrics_translation_en','lyrics_translation_cn_note','cultural_note'].forEach(k=>{f.querySelector('[name="'+k+'"]').value=s[k]||'';});
+  document.getElementById('modal').classList.add('active');
 }
 
 function openAdd(){
-  document.getElementById('editSongId').value = '';
-  document.getElementById('modalTitle').textContent = '新增歌曲';
-  document.getElementById('deleteBtn').style.display = 'none';
+  document.getElementById('editId').value='';
+  document.getElementById('modalTitle').textContent='New Song';
+  document.getElementById('delBtn').style.display='none';
   document.getElementById('editForm').reset();
-  document.getElementById('editModal').classList.add('active');
+  document.getElementById('modal').classList.add('active');
 }
 
-function closeModal(){ document.getElementById('editModal').classList.remove('active'); }
+function closeModal(){document.getElementById('modal').classList.remove('active');}
 
 function saveSong(e){
-  e.preventDefault();
-  var form = document.getElementById('editForm');
-  var fd = new FormData(form);
-  var songId = fd.get('song_id');
-  var isNew = !songId;
-
-  var body = new URLSearchParams();
-  for (var [k,v] of fd.entries()) { if(k!=='song_id') body.append(k,v); }
-  
-  var url = isNew ? '/admin/add' : '/admin/edit/'+songId;
-  fetch(url, {method:'POST', body:body, headers:{'Content-Type':'application/x-www-form-urlencoded'}})
-    .then(r=>{ if(r.redirected) window.location.reload(); else window.location.reload(); })
-    .catch(err=>{ alert('保存失败: '+err); });
-  return false;
+  e.preventDefault();var f=document.getElementById('editForm'),fd=new FormData(f);
+  var id=fd.get('song_id'),url=id?'/admin/edit/'+id:'/admin/add';
+  var body=new URLSearchParams();for(var[k,v]of fd.entries())if(k!=='song_id')body.append(k,v);
+  fetch(url,{method:'POST',body:body,headers:{'Content-Type':'application/x-www-form-urlencoded'}})
+    .then(r=>{window.location.reload();});
 }
 
-function deleteSong(){
-  var songId = document.getElementById('editSongId').value;
-  if (!songId) return;
-  if (!confirm('确定删除这首歌？此操作不可撤销。')) return;
-  fetch('/admin/delete/'+songId, {method:'POST'}).then(()=>window.location.reload());
+function delSong(){
+  var id=document.getElementById('editId').value;if(!id)return;
+  if(!confirm('Delete this song?'))return;
+  fetch('/admin/delete/'+id,{method:'POST'}).then(r=>window.location.reload());
 }
 
-// 关闭弹窗
-document.getElementById('editModal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
-document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
 </script>
 {% endblock %}
