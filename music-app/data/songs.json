@@ -94,7 +94,7 @@
     "genre": "pop",
     "year": "2020",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "premium": false,
     "sort_order": 1010,
     "youtube_id": "",
@@ -178,7 +178,7 @@
     "genre": "rock",
     "year": "1975",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "premium": false,
     "sort_order": 1002,
     "tags": [
@@ -199,7 +199,7 @@
     "genre": "pop",
     "year": "1965",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "premium": false,
     "sort_order": 1001,
     "tags": [
@@ -357,7 +357,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": false,
+    "featured": true,
     "premium": true,
     "sort_order": 0
   },
@@ -537,7 +537,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": false,
+    "featured": true,
     "premium": false,
     "sort_order": 1000
   },
@@ -567,7 +567,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": false,
+    "featured": true,
     "premium": false,
     "sort_order": 1000
   },
@@ -657,7 +657,7 @@
     ],
     "added": "2026-07-09",
     "language": "zh",
-    "featured": false,
+    "featured": true,
     "premium": true,
     "sort_order": 0
   },
