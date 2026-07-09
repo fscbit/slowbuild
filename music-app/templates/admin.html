@@ -171,8 +171,9 @@ function render(){
     else dots.push('<span class="dot gray"></span>Review');
     if(s.cover)dots.push('<span class="dot green"></span>Cover');
     var prem=s.premium===false?'Free <span style="color:var(--jade);font-weight:600;font-size:.7rem">FREE</span>':'<span style="color:var(--gold);font-size:.7rem">🔒</span>';
+    var enSub = s.title_en && s.title_en !== s.title ? ' <span style="color:var(--muted);font-weight:400;font-size:.7rem">'+e(s.title_en)+'</span>' : '';
     return '<tr><td><div class="s-title" onclick="openEdit(\''+s.id+'\')">'+
-      e(s.title_en||s.title)+'</div><div class="s-artist">'+e(s.artist)+'</div></td>'+
+      e(s.title)+enSub+'</div><div class="s-artist">'+e(s.artist)+'</div></td>'+
       '<td><span style="font-size:.72rem">'+(s.genre||'—')+'</span></td>'+
       '<td style="font-size:.7rem">'+dots.join(' ')+'<br>'+prem+'</td>'+
       '<td><button class="btn btn-line" style="font-size:.7rem;padding:4px 10px" onclick="openEdit(\''+s.id+'\')">Edit</button> '+
@@ -185,7 +186,7 @@ function e(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/
 function openEdit(id){
   var s=songs.find(x=>x.id===id); if(!s)return;
   document.getElementById('editId').value=id;
-  document.getElementById('modalTitle').textContent='Edit: '+(s.title_en||s.title);
+  document.getElementById('modalTitle').textContent='Edit: '+(s.title)+ (s.title_en && s.title_en !== s.title ? ' ('+s.title_en+')' : '');
   document.getElementById('delBtn').style.display='inline-block';
   var f=document.getElementById('editForm');
   ['title','title_en','artist','genre','year','youtube_id','spotify_id','cover','direct_audio_url','sort_order'].forEach(k=>{f.querySelector('[name="'+k+'"]').value=s[k]||'';});

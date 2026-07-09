@@ -136,7 +136,6 @@
   </div>
   <div class="song-meta">
     <h1>{{ song.title_en or song.title }}</h1>
-    {% if song.title_en and song.title_en != song.title %}<div class="cn-title">{{ song.title }}</div>{% endif %}
     <div class="artist-name">{{ song.artist }}</div>
     <div class="meta-line">
       {% if song.genre %}<span>{{ song.genre }}</span>{% endif %}
