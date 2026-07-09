@@ -57,7 +57,7 @@
     "language": "zh",
     "featured": true,
     "premium": true,
-    "sort_order": 10
+    "sort_order": 0
   },
   {
     "id": "song-weiyi",
@@ -86,8 +86,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": true,
-    "premium": true,
-    "sort_order": 20
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-shuixingji",
@@ -116,8 +116,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": true,
-    "premium": true,
-    "sort_order": 30
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-qimeidi",
@@ -147,7 +147,7 @@
     "language": "zh",
     "featured": true,
     "premium": true,
-    "sort_order": 40
+    "sort_order": 0
   },
   {
     "id": "song-zheshijienameduoren",
@@ -176,8 +176,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 50
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-nofearinmyheart",
@@ -206,8 +206,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": true,
-    "premium": false,
-    "sort_order": 60
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-nijiubuyaoxiangqiwo",
@@ -236,8 +236,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 70
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-chengquan",
@@ -266,8 +266,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 80
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-yuelaiyuebudong",
@@ -296,8 +296,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": false,
-    "sort_order": 90
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-cengjingdeni",
@@ -327,7 +327,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 100
+    "sort_order": 1000
   },
   {
     "id": "song-lianqu1980",
@@ -357,7 +357,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 110
+    "sort_order": 1000
   },
   {
     "id": "song-langzihuitou",
@@ -386,8 +386,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": false,
-    "sort_order": 120
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-haiou",
@@ -416,8 +416,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 130
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-zouma",
@@ -446,8 +446,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": false,
-    "sort_order": 140
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-huozhe",
@@ -476,8 +476,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 150
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-meihaodeshikebukeyifashengzaiwoshenshang",
@@ -507,7 +507,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 160
+    "sort_order": 1000
   },
   {
     "id": "song-guanyuwoaini",
@@ -537,7 +537,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 170
+    "sort_order": 1000
   },
   {
     "id": "song-mengma",
@@ -567,7 +567,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 180
+    "sort_order": 1000
   },
   {
     "id": "song-younidekuaile",
@@ -597,7 +597,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 190
+    "sort_order": 1000
   },
   {
     "id": "song-woxiangniyaozoule",
@@ -627,7 +627,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 200
+    "sort_order": 1000
   },
   {
     "id": "song-wanfeng",
@@ -657,7 +657,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 210
+    "sort_order": 1000
   },
   {
     "id": "song-biechudexiyang",
@@ -687,7 +687,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 220
+    "sort_order": 1000
   },
   {
     "id": "song-biezaiwenwoshenmeshidisike",
@@ -717,7 +717,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 230
+    "sort_order": 1000
   },
   {
     "id": "song-chuanzi",
@@ -747,7 +747,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 240
+    "sort_order": 1000
   },
   {
     "id": "song-zuimeibuguoshizhaohui",
@@ -777,7 +777,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 250
+    "sort_order": 1000
   },
   {
     "id": "song-qianfang",
@@ -807,7 +807,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 260
+    "sort_order": 1000
   },
   {
     "id": "song-zaijianlinneier",
@@ -837,7 +837,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 270
+    "sort_order": 1000
   },
   {
     "id": "song-rihouxiangyu",
@@ -867,7 +867,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 280
+    "sort_order": 1000
   },
   {
     "id": "song-nanpingwanzhong",
@@ -896,8 +896,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": false,
-    "sort_order": 290
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-shini",
@@ -927,7 +927,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 300
+    "sort_order": 1000
   },
   {
     "id": "song-zaomianye",
@@ -957,7 +957,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 310
+    "sort_order": 1000
   },
   {
     "id": "song-buruhuijiahezhilaishui",
@@ -987,7 +987,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 320
+    "sort_order": 1000
   },
   {
     "id": "song-womenzhonghuiyongyoumeihaodeweilai",
@@ -1017,7 +1017,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 330
+    "sort_order": 1000
   },
   {
     "id": "song-ruoyueliangmeilai",
@@ -1047,7 +1047,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 340
+    "sort_order": 1000
   },
   {
     "id": "song-xinzaoderen",
@@ -1077,7 +1077,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 350
+    "sort_order": 1000
   },
   {
     "id": "song-nide",
@@ -1107,7 +1107,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 360
+    "sort_order": 1000
   },
   {
     "id": "song-yuanzougaofei",
@@ -1136,8 +1136,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": false,
-    "sort_order": 370
+    "premium": true,
+    "sort_order": 0
   },
   {
     "id": "song-daoge",
@@ -1167,7 +1167,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 380
+    "sort_order": 1000
   },
   {
     "id": "song-hua",
@@ -1197,7 +1197,7 @@
     "language": "zh",
     "featured": false,
     "premium": false,
-    "sort_order": 390
+    "sort_order": 1000
   },
   {
     "added": "2026-07-07",
@@ -1225,8 +1225,8 @@
     "year": "2010",
     "youtube_id": "",
     "featured": false,
-    "premium": true,
-    "sort_order": 400
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "added": "2026-07-07",
@@ -1254,8 +1254,8 @@
     "year": "2023",
     "youtube_id": "",
     "featured": false,
-    "premium": true,
-    "sort_order": 410
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "added": "2026-07-07",
@@ -1282,8 +1282,8 @@
     "year": "2024",
     "youtube_id": "",
     "featured": false,
-    "premium": true,
-    "sort_order": 420
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "added": "2026-07-05",
@@ -1311,8 +1311,8 @@
     "year": "2003",
     "youtube_id": "",
     "featured": false,
-    "premium": true,
-    "sort_order": 430
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "added": "2026-07-05",
@@ -1338,8 +1338,8 @@
     "year": "2005",
     "youtube_id": "",
     "featured": false,
-    "premium": true,
-    "sort_order": 440
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-",
@@ -1367,8 +1367,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 450
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--1",
@@ -1396,8 +1396,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 460
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--2",
@@ -1425,8 +1425,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 470
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-everywhere-we-go",
@@ -1454,8 +1454,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 480
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--3",
@@ -1483,8 +1483,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 490
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--live",
@@ -1512,8 +1512,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 500
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--live-1",
@@ -1541,8 +1541,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 510
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-dear-john",
@@ -1570,8 +1570,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 520
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--4",
@@ -1599,8 +1599,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 530
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--5",
@@ -1628,8 +1628,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 540
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--6",
@@ -1657,8 +1657,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 550
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--7",
@@ -1686,8 +1686,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 560
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song-9420-skr",
@@ -1715,8 +1715,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 570
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--live-2",
@@ -1744,8 +1744,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 580
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--",
@@ -1773,8 +1773,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 590
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--8",
@@ -1802,8 +1802,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 600
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--9",
@@ -1831,8 +1831,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 610
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--10",
@@ -1860,8 +1860,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 620
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song---1",
@@ -1889,8 +1889,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 630
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song--11",
@@ -1918,8 +1918,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 640
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song---2",
@@ -1947,8 +1947,8 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 650
+    "premium": false,
+    "sort_order": 1000
   },
   {
     "id": "song---3",
@@ -1976,7 +1976,7 @@
     "added": "2026-07-09",
     "language": "zh",
     "featured": false,
-    "premium": true,
-    "sort_order": 660
+    "premium": false,
+    "sort_order": 1000
   }
 ]
