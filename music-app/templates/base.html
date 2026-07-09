@@ -68,7 +68,10 @@ nav .logo{
   letter-spacing:-.01em;
 }
 nav .logo .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:2px}
-nav .links{display:flex;gap:6px}
+nav .links{display:flex;gap:6px;align-items:center}
+nav .search-form{display:flex;align-items:center;margin-left:12px}
+nav .search-form input{padding:5px 12px;border:1.5px solid var(--border);border-radius:16px;background:var(--bg);color:var(--text);font-size:.72rem;width:140px;outline:none;transition:all .2s}
+nav .search-form input:focus{border-color:var(--jade);width:200px}
 nav .links a{
   color:var(--text2);text-decoration:none;font-size:.78rem;font-weight:500;
   padding:6px 14px;border-radius:18px;transition:all .2s;letter-spacing:.01em;
@@ -141,6 +144,9 @@ footer a:hover{color:var(--gold)}
       <a href="/?genre=indie">Indie</a>
       <a href="/admin" class="admin-link" title="Admin">▪</a>
     </div>
+    <form class="search-form" action="/" method="get" onsubmit="return false">
+      <input type="text" name="q" id="navSearch" placeholder="Search…" oninput="doSearch()">
+    </form>
   </div>
 </nav>
 
@@ -152,12 +158,18 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
-document.querySelector('.search-bar input')?.addEventListener('input', function(e){
-  var q = e.target.value.toLowerCase();
-  document.querySelectorAll('.song-card').forEach(function(c){
+function doSearch(){
+  var q = document.getElementById('navSearch').value.toLowerCase();
+  document.querySelectorAll('.song-item,.feat-card,.rel-card').forEach(function(c){
     c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
-});
+  // 显示/隐藏分区标题
+  document.querySelectorAll('.song-list').forEach(function(section){
+    var visible = section.querySelectorAll('.song-item[style*="display: none"],.feat-card[style*="display: none"]').length;
+    var total = section.querySelectorAll('.song-item,.feat-card').length;
+    section.style.display = (visible === total && q) ? 'none' : '';
+  });
+}
 </script>
 </body>
 </html>
