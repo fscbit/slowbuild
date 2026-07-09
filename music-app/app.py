@@ -183,6 +183,30 @@ def admin_delete(song_id):
 
 
 # ═══════════════════════════════════════════
+# SEO & robots
+# ═══════════════════════════════════════════
+
+@app.route("/robots.txt")
+def robots_txt():
+    return """User-agent: *
+Allow: /
+Sitemap: https://music.slowbuild.top/sitemap.xml
+""", 200, {"Content-Type": "text/plain"}
+
+
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    songs = load_songs()
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    xml += '  <url><loc>https://music.slowbuild.top/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>\n'
+    for s in songs:
+        xml += f'  <url><loc>https://music.slowbuild.top/song/{s["id"]}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>\n'
+    xml += '</urlset>'
+    return xml, 200, {"Content-Type": "application/xml"}
+
+
+# ═══════════════════════════════════════════
 # 启动
 # ═══════════════════════════════════════════
 
