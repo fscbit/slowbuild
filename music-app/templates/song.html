@@ -86,6 +86,8 @@
 .related-card .r-artist{color:var(--pink);font-size:.75rem}
 .tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
 .tag-badge{background:rgba(56,189,248,.1);color:var(--teal);padding:3px 12px;border-radius:20px;font-size:.75rem}
+.btn-gold{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#d4a853,#ec4899);color:#fff;border-radius:30px;text-decoration:none;font-weight:700;font-size:.9rem;transition:all .2s}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,168,83,.3)}
 @media(max-width:600px){.lyrics-row{grid-template-columns:1fr}}
 </style>
 
@@ -99,8 +101,11 @@
     {% else %}<span class="placeholder">🎵</span>{% endif %}
   </div>
   <div class="song-info">
-    <h1>{{ song.title }}</h1>
+    <h1>{{ song.title_en or song.title }}</h1>
     <p class="artist-name">{{ song.artist }}</p>
+    {% if song.title_en and song.title_en != song.title %}
+    <p style="font-size:.85rem;color:var(--muted);margin-top:-4px">{{ song.title }}</p>
+    {% endif %}
     <p class="meta">
       {% if song.genre %}{{ song.genre|capitalize }}{% endif %}
       {% if song.year %} · {{ song.year }}{% endif %}
@@ -151,6 +156,10 @@
 </div>
 {% endif %}
 
+{# ═══ 付费/免费内容 ═══ #}
+{% if not song.premium %}
+{# ——— 免费歌曲：完整内容 ——— #}
+
 {% if song.review_en %}
 <div class="review-section">
   <h3>📝 Review (EN)</h3>
@@ -163,7 +172,6 @@
   <div class="review">{{ song.review_cn }}</div>
 </div>
 {% endif %}
-
 {% if song.lyrics_original and song.lyrics_translation_en %}
 <div class="lyrics-section">
   <h3>🎤 Lyrics / 歌词</h3>
@@ -176,11 +184,38 @@
   {% endif %}
 </div>
 {% endif %}
-
 {% if song.cultural_note %}
 <div class="cultural-note">
   <h4>🏮 Cultural Context</h4>
   <p>{{ song.cultural_note }}</p>
+</div>
+{% endif %}
+
+{% else %}
+{# ——— 付费歌曲：预览 + 解锁CTA ——— #}
+
+{% if song.review_en %}
+<div class="review-section">
+  <h3>📝 Preview</h3>
+  <div class="review">{{ song.review_en[:200] }}...</div>
+</div>
+{% endif %}
+
+<div class="cultural-note" style="border-color:var(--gold);text-align:center;padding:30px">
+  <h4 style="font-size:1.2rem">🔒 Premium Content</h4>
+  <p style="font-size:.9rem;margin:12px 0">Unlock the full experience:</p>
+  <ul style="list-style:none;padding:0;font-size:.85rem;color:#c0c0d0;line-height:2;margin-bottom:16px">
+    <li>✅ Full English review & analysis</li>
+    <li>✅ Complete lyrics with pinyin & translation</li>
+    <li>✅ Cultural context & background notes</li>
+    <li>✅ HD video / audio playback</li>
+  </ul>
+  <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+    <a href="https://slowbuild.top/shop" target="_blank" class="btn-gold">🎵 Unlock — $4.99/All Access</a>
+  </div>
+  <p style="font-size:.7rem;color:var(--muted);margin-top:12px">
+    Or <a href="/" style="color:var(--teal)">browse free songs</a> to get started.
+  </p>
 </div>
 {% endif %}
 

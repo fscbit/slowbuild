@@ -50,7 +50,7 @@ def index():
     genre = request.args.get("genre", "").strip().lower()
     if genre:
         songs = [s for s in songs if s.get("genre", "").lower() == genre]
-    songs.sort(key=lambda s: s.get("added", ""), reverse=True)
+    songs.sort(key=lambda s: (s.get("featured", False), s.get("sort_order", 0)), reverse=True)
     genres = get_genres(load_songs())
     return render_template("home.html", songs=songs, genres=genres, current_genre=genre)
 
@@ -111,7 +111,7 @@ def admin_login():
 @admin_required
 def admin():
     songs = load_songs()
-    songs.sort(key=lambda s: s.get("added", ""), reverse=True)
+    songs.sort(key=lambda s: (s.get("featured", False), s.get("sort_order", 0)), reverse=True)
     return render_template("admin.html", songs=songs)
 
 
@@ -148,6 +148,9 @@ def admin_add():
         "tags": [t.strip() for t in request.form.get("tags", "").split(",") if t.strip()],
         "added": datetime.now().strftime("%Y-%m-%d"),
         "language": request.form.get("language", "zh").strip(),
+        "featured": request.form.get("featured") == "true",
+        "premium": request.form.get("premium") == "true",
+        "sort_order": int(request.form.get("sort_order", "0") or "0"),
     }
     songs.append(song)
     save_songs(songs)
@@ -157,9 +160,10 @@ def admin_add():
 @app.route("/admin/edit/<song_id>", methods=["POST"])
 @admin_required
 def admin_edit(song_id):
-    editable = ["title","artist","genre","year","cover","spotify_id","youtube_id",
+    editable = ["title","artist","title_en","genre","year","cover","spotify_id","youtube_id",
                 "netease_id","direct_audio_url","review_en","review_cn",
-                "lyrics_original","lyrics_translation_en","cultural_note","language"]
+                "lyrics_original","lyrics_translation_en","lyrics_translation_cn_note",
+                "cultural_note","language"]
     songs = load_songs()
     for s in songs:
         if s.get("id") == song_id:
@@ -168,6 +172,9 @@ def admin_edit(song_id):
                     s[key] = request.form.get(key, s.get(key,""))
             tags_val = request.form.get("tags", "")
             s["tags"] = [t.strip() for t in tags_val.split(",") if t.strip()] if tags_val else s.get("tags",[])
+            s["featured"] = request.form.get("featured") == "true"
+            s["premium"] = request.form.get("premium") == "true"
+            s["sort_order"] = int(request.form.get("sort_order", "0") or "0")
             break
     save_songs(songs)
     return redirect(url_for("admin"))

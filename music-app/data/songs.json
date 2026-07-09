@@ -24,7 +24,10 @@
       "sci-fi-theme"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 0
   },
   {
     "id": "song-laizitiantangdemogui",
@@ -51,7 +54,10 @@
       "female-vocalist"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 10
   },
   {
     "id": "song-weiyi",
@@ -78,7 +84,10 @@
       "heartbreak"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 20
   },
   {
     "id": "song-shuixingji",
@@ -105,7 +114,10 @@
       "sleeper-hit"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 30
   },
   {
     "id": "song-qimeidi",
@@ -132,7 +144,10 @@
       "indie-rock"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 40
   },
   {
     "id": "song-zheshijienameduoren",
@@ -159,7 +174,10 @@
       "female-vocalist"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 50
   },
   {
     "id": "song-nofearinmyheart",
@@ -186,7 +204,10 @@
       "comeback"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": true,
+    "premium": false,
+    "sort_order": 60
   },
   {
     "id": "song-nijiubuyaoxiangqiwo",
@@ -213,7 +234,10 @@
       "breakup-anthem"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 70
   },
   {
     "id": "song-chengquan",
@@ -240,7 +264,10 @@
       "KTV-anthem"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 80
   },
   {
     "id": "song-yuelaiyuebudong",
@@ -267,7 +294,10 @@
       "coming-of-age"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 90
   },
   {
     "id": "song-cengjingdeni",
@@ -294,7 +324,10 @@
       "xi'an-scene"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 100
   },
   {
     "id": "song-lianqu1980",
@@ -321,7 +354,10 @@
       "taiwanese-new-wave"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 110
   },
   {
     "id": "song-langzihuitou",
@@ -348,7 +384,10 @@
       "viral-hit"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 120
   },
   {
     "id": "song-haiou",
@@ -375,7 +414,10 @@
       "beijing-band"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 130
   },
   {
     "id": "song-zouma",
@@ -402,7 +444,10 @@
       "female-songwriter"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 140
   },
   {
     "id": "song-huozhe",
@@ -429,7 +474,10 @@
       "satire"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 150
   },
   {
     "id": "song-meihaodeshikebukeyifashengzaiwoshenshang",
@@ -456,7 +504,10 @@
       "pandemic-anthem"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 160
   },
   {
     "id": "song-guanyuwoaini",
@@ -483,7 +534,10 @@
       "literary"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 170
   },
   {
     "id": "song-mengma",
@@ -510,7 +564,10 @@
       "female-fronted"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 180
   },
   {
     "id": "song-younidekuaile",
@@ -537,7 +594,10 @@
       "bilingual"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 190
   },
   {
     "id": "song-woxiangniyaozoule",
@@ -564,7 +624,10 @@
       "minimalist"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 200
   },
   {
     "id": "song-wanfeng",
@@ -591,7 +654,10 @@
       "nostalgia"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 210
   },
   {
     "id": "song-biechudexiyang",
@@ -618,7 +684,10 @@
       "introspective"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 220
   },
   {
     "id": "song-biezaiwenwoshenmeshidisike",
@@ -645,7 +714,10 @@
       "irony"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 230
   },
   {
     "id": "song-chuanzi",
@@ -672,7 +744,10 @@
       "literary"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 240
   },
   {
     "id": "song-zuimeibuguoshizhaohui",
@@ -699,7 +774,10 @@
       "unpolished"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 250
   },
   {
     "id": "song-qianfang",
@@ -726,7 +804,10 @@
       "mantra"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 260
   },
   {
     "id": "song-zaijianlinneier",
@@ -753,7 +834,10 @@
       "breakup-song"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 270
   },
   {
     "id": "song-rihouxiangyu",
@@ -780,7 +864,10 @@
       "gen-z"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 280
   },
   {
     "id": "song-nanpingwanzhong",
@@ -807,7 +894,10 @@
       "audiophile"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 290
   },
   {
     "id": "song-shini",
@@ -834,7 +924,10 @@
       "intergenerational"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 300
   },
   {
     "id": "song-zaomianye",
@@ -861,7 +954,10 @@
       "literary"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 310
   },
   {
     "id": "song-buruhuijiahezhilaishui",
@@ -888,7 +984,10 @@
       "lying-flat"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 320
   },
   {
     "id": "song-womenzhonghuiyongyoumeihaodeweilai",
@@ -915,7 +1014,10 @@
       "working-class"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 330
   },
   {
     "id": "song-ruoyueliangmeilai",
@@ -942,7 +1044,10 @@
       "chinese-moon-motif"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 340
   },
   {
     "id": "song-xinzaoderen",
@@ -969,7 +1074,10 @@
       "art-rock"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 350
   },
   {
     "id": "song-nide",
@@ -996,7 +1104,10 @@
       "internet-era"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 360
   },
   {
     "id": "song-yuanzougaofei",
@@ -1023,7 +1134,10 @@
       "hong-kong"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 370
   },
   {
     "id": "song-daoge",
@@ -1050,7 +1164,10 @@
       "acoustic"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 380
   },
   {
     "id": "song-hua",
@@ -1077,7 +1194,10 @@
       "teen-angst"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 390
   },
   {
     "added": "2026-07-07",
@@ -1103,7 +1223,10 @@
     ],
     "title": "杀死那个石家庄人 (Kill That Man from Shijiazhuang)",
     "year": "2010",
-    "youtube_id": "6CkUjHhQnFM"
+    "youtube_id": "6CkUjHhQnFM",
+    "featured": false,
+    "premium": true,
+    "sort_order": 400
   },
   {
     "added": "2026-07-07",
@@ -1129,7 +1252,10 @@
     ],
     "title": "江声入旧年 (River Sounds Enter the Old Year)",
     "year": "2023",
-    "youtube_id": ""
+    "youtube_id": "",
+    "featured": false,
+    "premium": true,
+    "sort_order": 410
   },
   {
     "added": "2026-07-07",
@@ -1154,7 +1280,10 @@
     ],
     "title": "一点 (A Little)",
     "year": "2024",
-    "youtube_id": ""
+    "youtube_id": "",
+    "featured": false,
+    "premium": true,
+    "sort_order": 420
   },
   {
     "added": "2026-07-05",
@@ -1180,7 +1309,10 @@
     ],
     "title": "晴天 (Sunny Day)",
     "year": "2003",
-    "youtube_id": ""
+    "youtube_id": "",
+    "featured": false,
+    "premium": true,
+    "sort_order": 430
   },
   {
     "added": "2026-07-05",
@@ -1204,7 +1336,10 @@
     ],
     "title": "光芒 (Radiance)",
     "year": "2005",
-    "youtube_id": ""
+    "youtube_id": "",
+    "featured": false,
+    "premium": true,
+    "sort_order": 440
   },
   {
     "id": "song-",
@@ -1230,7 +1365,10 @@
       "farewell"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 450
   },
   {
     "id": "song--1",
@@ -1256,7 +1394,10 @@
       "tragedy"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 460
   },
   {
     "id": "song--2",
@@ -1282,7 +1423,10 @@
       "philosophical"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 470
   },
   {
     "id": "song-everywhere-we-go",
@@ -1308,7 +1452,10 @@
       "collaboration"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 480
   },
   {
     "id": "song--3",
@@ -1334,7 +1481,10 @@
       "beijing"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 490
   },
   {
     "id": "song--live",
@@ -1360,7 +1510,10 @@
       "nostalgia"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 500
   },
   {
     "id": "song--live-1",
@@ -1386,7 +1539,10 @@
       "ordinary-people"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 510
   },
   {
     "id": "song-dear-john",
@@ -1412,7 +1568,10 @@
       "female-vocal"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 520
   },
   {
     "id": "song--4",
@@ -1438,7 +1597,10 @@
       "playful"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 530
   },
   {
     "id": "song--5",
@@ -1464,7 +1626,10 @@
       "idol"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 540
   },
   {
     "id": "song--6",
@@ -1490,7 +1655,10 @@
       "dedication"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 550
   },
   {
     "id": "song--7",
@@ -1516,7 +1684,10 @@
       "inspirational"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 560
   },
   {
     "id": "song-9420-skr",
@@ -1542,7 +1713,10 @@
       "playful"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 570
   },
   {
     "id": "song--live-2",
@@ -1568,7 +1742,10 @@
       "life"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 580
   },
   {
     "id": "song--",
@@ -1594,7 +1771,10 @@
       "viral"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 590
   },
   {
     "id": "song--8",
@@ -1620,7 +1800,10 @@
       "nature"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 600
   },
   {
     "id": "song--9",
@@ -1646,7 +1829,10 @@
       "acoustic"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 610
   },
   {
     "id": "song--10",
@@ -1672,7 +1858,10 @@
       "experimental"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 620
   },
   {
     "id": "song---1",
@@ -1698,7 +1887,10 @@
       "tribute"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 630
   },
   {
     "id": "song--11",
@@ -1724,7 +1916,10 @@
       "sentimental"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 640
   },
   {
     "id": "song---2",
@@ -1750,7 +1945,10 @@
       "pure"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 650
   },
   {
     "id": "song---3",
@@ -1776,6 +1974,9 @@
       "summer"
     ],
     "added": "2026-07-09",
-    "language": "zh"
+    "language": "zh",
+    "featured": false,
+    "premium": true,
+    "sort_order": 660
   }
 ]
