@@ -5440,6 +5440,72 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 524097,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐524097)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐524097)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 524097+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 524097+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 483710,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐483710)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐483710)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 483710+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 483710+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sky22333-skyadb",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sky22333/skyadb",
+    "github": "sky22333/skyadb",
+    "github_stars": 499,
+    "name": {
+      "en": "sky22333/skyadb",
+      "zh-CN": "sky22333/skyadb (GitHub ⭐499)",
+      "zh-TW": "sky22333/skyadb (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Android 上的 adb 助手，可以很方便的管理安卓手机、平板、电视和盒子。",
+      "zh-CN": "Android 上的 adb 助手，可以很方便的管理安卓手机、平板、电视和盒子。 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Android 上的 adb 助手，可以很方便的管理安卓手机、平板、电视和盒子。 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5699,72 +5765,6 @@
       "en": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana.",
       "zh-CN": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 开源项目",
       "zh-TW": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-bjarneo-ku",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/bjarneo/ku",
-    "github": "bjarneo/ku",
-    "github_stars": 494,
-    "name": {
-      "en": "bjarneo/ku",
-      "zh-CN": "bjarneo/ku (GitHub ⭐494)",
-      "zh-TW": "bjarneo/ku (GitHub ⭐494)"
-    },
-    "desc": {
-      "en": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods.",
-      "zh-CN": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 494+ Stars 开源项目",
-      "zh-TW": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 494+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-c0dejedi-nbd-vram",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/c0deJedi/nbd-vram",
-    "github": "c0deJedi/nbd-vram",
-    "github_stars": 500,
-    "name": {
-      "en": "c0deJedi/nbd-vram",
-      "zh-CN": "c0deJedi/nbd-vram (GitHub ⭐500)",
-      "zh-TW": "c0deJedi/nbd-vram (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w",
-      "zh-CN": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Use your NVIDIA GPU's VRAM as swap space on Linux. Built for laptops with soldered memory and no upgrade path. If you have an RTX card sitting there w | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-rahilp-second-brain-cloudflare",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/rahilp/second-brain-cloudflare",
-    "github": "rahilp/second-brain-cloudflare",
-    "github_stars": 499,
-    "name": {
-      "en": "rahilp/second-brain-cloudflare",
-      "zh-CN": "rahilp/second-brain-cloudflare (GitHub ⭐499)",
-      "zh-TW": "rahilp/second-brain-cloudflare (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier.",
-      "zh-CN": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier. | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
