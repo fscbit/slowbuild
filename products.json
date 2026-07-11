@@ -5440,6 +5440,72 @@
     "category": "bundle"
   },
   {
+    "id": "gh-lingbol088-spec-reverse-flow-s",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/lingbol088-spec/reverse-flow-skill",
+    "github": "lingbol088-spec/reverse-flow-skill",
+    "github_stars": 500,
+    "name": {
+      "en": "lingbol088-spec/reverse-flow-skill",
+      "zh-CN": "lingbol088-spec/reverse-flow-skill (GitHub ⭐500)",
+      "zh-TW": "lingbol088-spec/reverse-flow-skill (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞研判 → 用户选择下一步”的流程推进。",
+      "zh-CN": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞研判 → 用户选择下一步”的流程推进。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞研判 → 用户选择下一步”的流程推进。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-bjarneo-ku",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/bjarneo/ku",
+    "github": "bjarneo/ku",
+    "github_stars": 499,
+    "name": {
+      "en": "bjarneo/ku",
+      "zh-CN": "bjarneo/ku (GitHub ⭐499)",
+      "zh-TW": "bjarneo/ku (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods.",
+      "zh-CN": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-0xshug0-audiocpp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/0xShug0/audio.cpp",
+    "github": "0xShug0/audio.cpp",
+    "github_stars": 498,
+    "name": {
+      "en": "0xShug0/audio.cpp",
+      "zh-CN": "0xShug0/audio.cpp (GitHub ⭐498)",
+      "zh-TW": "0xShug0/audio.cpp (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with",
+      "zh-CN": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with | GitHub 498+ Stars 开源项目",
+      "zh-TW": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5699,72 +5765,6 @@
       "en": "A simple, fast and user-friendly alternative to 'find'",
       "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 开源项目",
       "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 39963,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐39963)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐39963)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39963+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 39963+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39708,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39708)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39708)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39708+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39708+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-computeroyale-compute-royale",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/ComputeRoyale/Compute-Royale",
-    "github": "ComputeRoyale/Compute-Royale",
-    "github_stars": 500,
-    "name": {
-      "en": "ComputeRoyale/Compute-Royale",
-      "zh-CN": "ComputeRoyale/Compute-Royale (GitHub ⭐500)",
-      "zh-TW": "ComputeRoyale/Compute-Royale (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana.",
-      "zh-CN": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

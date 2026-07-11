@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 524097,
+    "stars": 524317,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-10T22:54:23Z"
+    "updated": "2026-07-11T22:56:38Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 483710,
+    "stars": 484021,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-10T22:44:36Z"
+    "updated": "2026-07-11T22:46:37Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451519,
+    "stars": 451596,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-10T22:53:38Z"
+    "updated": "2026-07-11T22:34:43Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 448643,
+    "stars": 449034,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-10T22:50:38Z"
+    "updated": "2026-07-11T22:43:01Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 391610,
+    "stars": 391673,
     "language": "Python",
     "topics": [
       "books",
@@ -82,25 +82,110 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-10T22:52:37Z"
+    "updated": "2026-07-11T22:41:12Z"
   },
   {
-    "name": "ComputeRoyale/Compute-Royale",
-    "description": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live",
-    "url": "https://github.com/ComputeRoyale/Compute-Royale",
-    "homepage": "https://www.computeroyale.com/",
-    "stars": 500,
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 59649,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-07-11T22:32:03Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44231,
     "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-07-11T21:34:51Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 43713,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-07-11T21:12:09Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 40076,
+    "language": "Rust",
+    "topics": [
+      "application",
+      "gui",
+      "iced",
+      "linux",
+      "macos"
+    ],
+    "source": "tool",
+    "updated": "2026-07-11T21:55:58Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 39749,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-07-11T20:27:54Z"
+  },
+  {
+    "name": "lingbol088-spec/reverse-flow-skill",
+    "description": "面向 AI Agent / Codex 的本地 CTF 逆向工程流程技能。加载后通过“真心为你”进入逆向模式，默认在本地沙盒、CTF、crackme、wargame 或训练靶场环境中工作，按“分析 → 报告 → 逆向 → 深度逆向 → 漏洞",
+    "url": "https://github.com/lingbol088-spec/reverse-flow-skill",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-10T17:50:06Z"
+    "updated": "2026-07-11T16:03:18Z"
   },
   {
     "name": "sky22333/skyadb",
     "description": "Android 上的 adb 助手，可以很方便的管理安卓手机、平板、电视和盒子。",
     "url": "https://github.com/sky22333/skyadb",
     "homepage": "",
-    "stars": 499,
+    "stars": 500,
     "language": "Kotlin",
     "topics": [
       "adb",
@@ -110,14 +195,14 @@
       "magisk"
     ],
     "source": "new",
-    "updated": "2026-07-07T09:50:34Z"
+    "updated": "2026-07-11T13:51:24Z"
   },
   {
     "name": "bjarneo/ku",
     "description": "A fast, keyboard-driven Kubernetes TUI. Browse any resource, edit objects, follow logs, and shell into pods. ",
     "url": "https://github.com/bjarneo/ku",
     "homepage": "",
-    "stars": 497,
+    "stars": 499,
     "language": "Go",
     "topics": [
       "bubbletea",
@@ -127,17 +212,17 @@
       "devops"
     ],
     "source": "new",
-    "updated": "2026-07-10T10:06:12Z"
+    "updated": "2026-07-11T16:33:11Z"
   },
   {
-    "name": "nickvasilescu/hermes-desktop-os1",
-    "description": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts",
-    "url": "https://github.com/nickvasilescu/hermes-desktop-os1",
+    "name": "0xShug0/audio.cpp",
+    "description": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, mu",
+    "url": "https://github.com/0xShug0/audio.cpp",
     "homepage": "",
-    "stars": 494,
-    "language": "Swift",
+    "stars": 498,
+    "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-10T06:04:09Z"
+    "updated": "2026-07-11T19:31:34Z"
   }
 ]
