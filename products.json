@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-re4-librecode",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/re4/LibreCode",
+    "github": "re4/LibreCode",
+    "github_stars": 590492,
+    "name": {
+      "en": "re4/LibreCode",
+      "zh-CN": "re4/LibreCode (GitHub ⭐590492)",
+      "zh-TW": "re4/LibreCode (GitHub ⭐590492)"
+    },
+    "desc": {
+      "en": "LibreCode - A Ollama cursor like coding / Reversing Interface",
+      "zh-CN": "LibreCode - A Ollama cursor like coding / Reversing Interface | GitHub 590492+ Stars 开源项目",
+      "zh-TW": "LibreCode - A Ollama cursor like coding / Reversing Interface | GitHub 590492+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40091,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40091)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40091)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40091+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40091+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39759,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39759)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39759)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39759+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39759+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-computeroyale-compute-royale",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/ComputeRoyale/Compute-Royale",
+    "github": "ComputeRoyale/Compute-Royale",
+    "github_stars": 500,
+    "name": {
+      "en": "ComputeRoyale/Compute-Royale",
+      "zh-CN": "ComputeRoyale/Compute-Royale (GitHub ⭐500)",
+      "zh-TW": "ComputeRoyale/Compute-Royale (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana.",
+      "zh-CN": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-internet-court-internet-court-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/internet-court/internet-court-skill",
+    "github": "internet-court/internet-court-skill",
+    "github_stars": 499,
+    "name": {
+      "en": "internet-court/internet-court-skill",
+      "zh-CN": "internet-court/internet-court-skill (GitHub ⭐499)",
+      "zh-TW": "internet-court/internet-court-skill (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution",
+      "zh-CN": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution | GitHub 499+ Stars 开源项目",
+      "zh-TW": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-texasbedouin-vibe-check",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/TexasBedouin/vibe-check",
+    "github": "TexasBedouin/vibe-check",
+    "github_stars": 498,
+    "name": {
+      "en": "TexasBedouin/vibe-check",
+      "zh-CN": "TexasBedouin/vibe-check (GitHub ⭐498)",
+      "zh-TW": "TexasBedouin/vibe-check (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co",
+      "zh-CN": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co | GitHub 498+ Stars 开源项目",
+      "zh-TW": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-m1ckc3s-claude-status-bar",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/m1ckc3s/claude-status-bar",
+    "github": "m1ckc3s/claude-status-bar",
+    "github_stars": 498,
+    "name": {
+      "en": "m1ckc3s/claude-status-bar",
+      "zh-CN": "m1ckc3s/claude-status-bar (GitHub ⭐498)",
+      "zh-TW": "m1ckc3s/claude-status-bar (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle.",
+      "zh-CN": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle. | GitHub 498+ Stars 开源项目",
+      "zh-TW": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle. | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-lingbol088-spec-reverse-flow-s",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A collective list of free APIs",
       "zh-CN": "A collective list of free APIs | GitHub 448371+ Stars 开源项目",
       "zh-TW": "A collective list of free APIs | GitHub 448371+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 391534,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐391534)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐391534)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 391534+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 391534+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59618,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59618)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59618)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59618+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59618+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44215,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44215)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44215)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44215+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44215+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tantara-openbrief",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/tantara/openbrief",
-    "github": "tantara/openbrief",
-    "github_stars": 494,
-    "name": {
-      "en": "tantara/openbrief",
-      "zh-CN": "tantara/openbrief (GitHub ⭐494)",
-      "zh-TW": "tantara/openbrief (GitHub ⭐494)"
-    },
-    "desc": {
-      "en": "tantara/openbrief - Open source tool",
-      "zh-CN": "tantara/openbrief - Open source tool | GitHub 494+ Stars 开源项目",
-      "zh-TW": "tantara/openbrief - Open source tool | GitHub 494+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nickvasilescu-hermes-desktop-o",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/nickvasilescu/hermes-desktop-os1",
-    "github": "nickvasilescu/hermes-desktop-os1",
-    "github_stars": 493,
-    "name": {
-      "en": "nickvasilescu/hermes-desktop-os1",
-      "zh-CN": "nickvasilescu/hermes-desktop-os1 (GitHub ⭐493)",
-      "zh-TW": "nickvasilescu/hermes-desktop-os1 (GitHub ⭐493)"
-    },
-    "desc": {
-      "en": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts",
-      "zh-CN": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts | GitHub 493+ Stars 开源项目",
-      "zh-TW": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts | GitHub 493+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ai4s-research-open-science",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/ai4s-research/open-science",
-    "github": "ai4s-research/open-science",
-    "github_stars": 493,
-    "name": {
-      "en": "ai4s-research/open-science",
-      "zh-CN": "ai4s-research/open-science (GitHub ⭐493)",
-      "zh-TW": "ai4s-research/open-science (GitHub ⭐493)"
-    },
-    "desc": {
-      "en": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu",
-      "zh-CN": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu | GitHub 493+ Stars 开源项目",
-      "zh-TW": "Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative bu | GitHub 493+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43661,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43661)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43661)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43661+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
