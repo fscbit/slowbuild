@@ -1,27 +1,10 @@
 [
   {
-    "name": "re4/LibreCode",
-    "description": "LibreCode - A Ollama cursor like coding / Reversing Interface",
-    "url": "https://github.com/re4/LibreCode",
-    "homepage": "",
-    "stars": 590492,
-    "language": "C#",
-    "topics": [
-      "ai",
-      "ai-agents",
-      "coding",
-      "csharp",
-      "decompiler"
-    ],
-    "source": "hot",
-    "updated": "2026-07-12T23:00:02Z"
-  },
-  {
     "name": "codecrafters-io/build-your-own-x",
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 524557,
+    "stars": 524862,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -31,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-12T22:59:26Z"
+    "updated": "2026-07-13T22:50:21Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 484317,
+    "stars": 484627,
     "language": "",
     "topics": [
       "awesome",
@@ -48,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-12T22:57:02Z"
+    "updated": "2026-07-13T22:59:47Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451654,
+    "stars": 451710,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-12T22:46:15Z"
+    "updated": "2026-07-13T22:38:27Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 449373,
+    "stars": 449716,
     "language": "Python",
     "topics": [
       "api",
@@ -82,14 +65,31 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-12T22:35:23Z"
+    "updated": "2026-07-13T22:50:23Z"
+  },
+  {
+    "name": "EbookFoundation/free-programming-books",
+    "description": ":books: Freely available programming books",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "homepage": "https://ebookfoundation.github.io/free-programming-books/",
+    "stars": 392014,
+    "language": "Python",
+    "topics": [
+      "books",
+      "education",
+      "hacktoberfest",
+      "list",
+      "resource"
+    ],
+    "source": "hot",
+    "updated": "2026-07-13T22:54:04Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59684,
+    "stars": 59704,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-12T22:39:59Z"
+    "updated": "2026-07-13T20:15:12Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44233,
+    "stars": 44236,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-12T17:21:47Z"
+    "updated": "2026-07-13T21:53:41Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43721,
+    "stars": 43734,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-12T21:43:53Z"
+    "updated": "2026-07-13T20:47:50Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40091,
+    "stars": 40107,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-12T22:39:44Z"
+    "updated": "2026-07-13T21:30:26Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39759,
+    "stars": 39791,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,70 +167,25 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-12T19:40:07Z"
+    "updated": "2026-07-13T22:38:06Z"
   },
   {
-    "name": "ComputeRoyale/Compute-Royale",
-    "description": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live",
-    "url": "https://github.com/ComputeRoyale/Compute-Royale",
-    "homepage": "https://www.computeroyale.com/",
+    "name": "mchughalex/skate3recomp",
+    "description": "",
+    "url": "https://github.com/mchughalex/skate3recomp",
+    "homepage": "",
     "stars": 500,
-    "language": "TypeScript",
+    "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-12T07:53:52Z"
-  },
-  {
-    "name": "nickvasilescu/hermes-desktop-os1",
-    "description": "Hermes Desktop - OS1 Edition: native macOS workspace for Hermes Agent on Orgo cloud computers and SSH hosts",
-    "url": "https://github.com/nickvasilescu/hermes-desktop-os1",
-    "homepage": "",
-    "stars": 499,
-    "language": "Swift",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-12T06:21:34Z"
-  },
-  {
-    "name": "internet-court/internet-court-skill",
-    "description": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, ",
-    "url": "https://github.com/internet-court/internet-court-skill",
-    "homepage": "",
-    "stars": 499,
-    "language": "TypeScript",
-    "topics": [
-      "a2a",
-      "adjudication",
-      "agent-payments",
-      "agent-skills",
-      "agentic-commerce"
-    ],
-    "source": "new",
-    "updated": "2026-07-12T22:38:41Z"
-  },
-  {
-    "name": "TexasBedouin/vibe-check",
-    "description": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the ",
-    "url": "https://github.com/TexasBedouin/vibe-check",
-    "homepage": "https://www.producthunt.com/products/vibe-check-6?launch=vibe-check-7",
-    "stars": 498,
-    "language": "HTML",
-    "topics": [
-      "ai-coding",
-      "antigravity",
-      "beginners",
-      "claude-code",
-      "claude-skill"
-    ],
-    "source": "new",
-    "updated": "2026-07-12T20:52:31Z"
+    "updated": "2026-07-13T17:44:54Z"
   },
   {
     "name": "m1ckc3s/claude-status-bar",
     "description": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle.",
     "url": "https://github.com/m1ckc3s/claude-status-bar",
     "homepage": "",
-    "stars": 498,
+    "stars": 499,
     "language": "Swift",
     "topics": [
       "anthropic",
@@ -240,6 +195,51 @@
       "claude-desktop"
     ],
     "source": "new",
-    "updated": "2026-07-12T13:14:25Z"
+    "updated": "2026-07-13T21:40:21Z"
+  },
+  {
+    "name": "WilonityLoader/Wilonity",
+    "description": "Wilonity Loader — a unified library of game hacks.",
+    "url": "https://github.com/WilonityLoader/Wilonity",
+    "homepage": "https://wilonity.xyz",
+    "stars": 499,
+    "language": "",
+    "topics": [
+      "apex",
+      "arcriders",
+      "cs2",
+      "csgo",
+      "dbd"
+    ],
+    "source": "new",
+    "updated": "2026-07-13T10:16:17Z"
+  },
+  {
+    "name": "can1357/pon",
+    "description": "Python 3.14, compiled to metal — JIT & AoT native compiler and runtime in Rust. Cranelift backend, ruff parser, Green Te",
+    "url": "https://github.com/can1357/pon",
+    "homepage": "",
+    "stars": 498,
+    "language": "Rust",
+    "topics": [
+      "aot",
+      "compiler",
+      "cranelift",
+      "garbage-collector",
+      "jit"
+    ],
+    "source": "new",
+    "updated": "2026-07-13T21:34:24Z"
+  },
+  {
+    "name": "nv-tlabs/ArtiFixer",
+    "description": "",
+    "url": "https://github.com/nv-tlabs/ArtiFixer",
+    "homepage": "",
+    "stars": 498,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-13T11:46:05Z"
   }
 ]
