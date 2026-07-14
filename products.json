@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 525165,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐525165)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐525165)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 525165+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 525165+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 484955,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐484955)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐484955)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 484955+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 484955+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 451887,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐451887)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐451887)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451887+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451887+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 450074,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐450074)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐450074)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 450074+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 450074+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jangles-byte-pythia",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/jangles-byte/Pythia",
+    "github": "jangles-byte/Pythia",
+    "github_stars": 496,
+    "name": {
+      "en": "jangles-byte/Pythia",
+      "zh-CN": "jangles-byte/Pythia (GitHub ⭐496)",
+      "zh-TW": "jangles-byte/Pythia (GitHub ⭐496)"
+    },
+    "desc": {
+      "en": "One local API call gives your agent the entire live state of the planet — every major world event at once, plus forecasts. 40+ free keyless feeds, run",
+      "zh-CN": "One local API call gives your agent the entire live state of the planet — every major world event at once, plus forecasts. 40+ free keyless feeds, run | GitHub 496+ Stars 开源项目",
+      "zh-TW": "One local API call gives your agent the entire live state of the planet — every major world event at once, plus forecasts. 40+ free keyless feeds, run | GitHub 496+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vigozhao-ai-visual-prompt-cook",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
+    "github": "VigoZhao/AI-Visual-Prompt-Cookbook",
+    "github_stars": 495,
+    "name": {
+      "en": "VigoZhao/AI-Visual-Prompt-Cookbook",
+      "zh-CN": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐495)",
+      "zh-TW": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐495)"
+    },
+    "desc": {
+      "en": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
+      "zh-CN": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 495+ Stars 开源项目",
+      "zh-TW": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 495+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-reikanysora-helios",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/ReikanYsora/Helios",
+    "github": "ReikanYsora/Helios",
+    "github_stars": 495,
+    "name": {
+      "en": "ReikanYsora/Helios",
+      "zh-CN": "ReikanYsora/Helios (GitHub ⭐495)",
+      "zh-TW": "ReikanYsora/Helios (GitHub ⭐495)"
+    },
+    "desc": {
+      "en": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
+      "zh-CN": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 495+ Stars 开源项目",
+      "zh-TW": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 495+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mokeaigc-moke-vision-one",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "github": "MOKEAIGC/MOKE-Vision-One",
+    "github_stars": 494,
+    "name": {
+      "en": "MOKEAIGC/MOKE-Vision-One",
+      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐494)",
+      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐494)"
+    },
+    "desc": {
+      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 494+ Stars 开源项目",
+      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 494+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "Python 3.14, compiled to metal — JIT & AoT native compiler and runtime in Rust. Cranelift backend, ruff parser, Green Tea GC, byte-exact differential ",
       "zh-CN": "Python 3.14, compiled to metal — JIT & AoT native compiler and runtime in Rust. Cranelift backend, ruff parser, Green Tea GC, byte-exact differential  | GitHub 498+ Stars 开源项目",
       "zh-TW": "Python 3.14, compiled to metal — JIT & AoT native compiler and runtime in Rust. Cranelift backend, ruff parser, Green Tea GC, byte-exact differential  | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nv-tlabs-artifixer",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/nv-tlabs/ArtiFixer",
-    "github": "nv-tlabs/ArtiFixer",
-    "github_stars": 498,
-    "name": {
-      "en": "nv-tlabs/ArtiFixer",
-      "zh-CN": "nv-tlabs/ArtiFixer (GitHub ⭐498)",
-      "zh-TW": "nv-tlabs/ArtiFixer (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "nv-tlabs/ArtiFixer - Open source tool",
-      "zh-CN": "nv-tlabs/ArtiFixer - Open source tool | GitHub 498+ Stars 开源项目",
-      "zh-TW": "nv-tlabs/ArtiFixer - Open source tool | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-re4-librecode",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/re4/LibreCode",
-    "github": "re4/LibreCode",
-    "github_stars": 590492,
-    "name": {
-      "en": "re4/LibreCode",
-      "zh-CN": "re4/LibreCode (GitHub ⭐590492)",
-      "zh-TW": "re4/LibreCode (GitHub ⭐590492)"
-    },
-    "desc": {
-      "en": "LibreCode - A Ollama cursor like coding / Reversing Interface",
-      "zh-CN": "LibreCode - A Ollama cursor like coding / Reversing Interface | GitHub 590492+ Stars 开源项目",
-      "zh-TW": "LibreCode - A Ollama cursor like coding / Reversing Interface | GitHub 590492+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40091,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40091)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40091)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40091+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40091+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39759,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39759)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39759)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39759+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39759+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-computeroyale-compute-royale",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/ComputeRoyale/Compute-Royale",
-    "github": "ComputeRoyale/Compute-Royale",
-    "github_stars": 500,
-    "name": {
-      "en": "ComputeRoyale/Compute-Royale",
-      "zh-CN": "ComputeRoyale/Compute-Royale (GitHub ⭐500)",
-      "zh-TW": "ComputeRoyale/Compute-Royale (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana.",
-      "zh-CN": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Bet on AI agents racing real GPUs. They rent compute, do hash-verified work, earn and you stake Solana on the best. Live on Solana. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-internet-court-internet-court-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/internet-court/internet-court-skill",
-    "github": "internet-court/internet-court-skill",
-    "github_stars": 499,
-    "name": {
-      "en": "internet-court/internet-court-skill",
-      "zh-CN": "internet-court/internet-court-skill (GitHub ⭐499)",
-      "zh-TW": "internet-court/internet-court-skill (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution",
-      "zh-CN": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution | GitHub 499+ Stars 开源项目",
-      "zh-TW": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-texasbedouin-vibe-check",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/TexasBedouin/vibe-check",
-    "github": "TexasBedouin/vibe-check",
-    "github_stars": 498,
-    "name": {
-      "en": "TexasBedouin/vibe-check",
-      "zh-CN": "TexasBedouin/vibe-check (GitHub ⭐498)",
-      "zh-TW": "TexasBedouin/vibe-check (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co",
-      "zh-CN": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co | GitHub 498+ Stars 开源项目",
-      "zh-TW": "By a 12-year product manager who builds 0-to-1: takes a beginner from a vague idea to a buildable plan, then guides the build (GitHub basics, clean-co | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-m1ckc3s-claude-status-bar",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/m1ckc3s/claude-status-bar",
-    "github": "m1ckc3s/claude-status-bar",
-    "github_stars": 498,
-    "name": {
-      "en": "m1ckc3s/claude-status-bar",
-      "zh-CN": "m1ckc3s/claude-status-bar (GitHub ⭐498)",
-      "zh-TW": "m1ckc3s/claude-status-bar (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle.",
-      "zh-CN": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle. | GitHub 498+ Stars 开源项目",
-      "zh-TW": "A tiny macOS menu bar status indicator for Claude Code: animated icons, elapsed timer, and open/close lifecycle. | GitHub 498+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
