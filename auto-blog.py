@@ -561,6 +561,75 @@ def gen_shop_products(repos):
     return merged, new_count
 
 
+
+# ══════════════════════════════════════════
+# 5.5 博客索引 + sitemap 自动收录（2026-07-15 补）
+# ══════════════════════════════════════════
+
+def _extract_title_desc(fp):
+    txt = fp.read_text(encoding="utf-8", errors="ignore")
+    t = re.search(r"<title>(.*?)</title>", txt, re.S)
+    d = re.search(r'<meta name="description" content="(.*?)"', txt, re.S)
+    title = (t.group(1).strip() if t else fp.stem)
+    title = re.split(r"\s*[|｜]\s*", title)[0].strip()
+    desc = (d.group(1).strip() if d else "")[:160]
+    return title, desc
+
+
+def update_blog_index():
+    """把 blog/tool-*.html 收录进博客首页（标记块内自动重建）"""
+    posts = sorted(BLOG_DIR.glob("tool-*.html"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if not posts:
+        return 0
+    cards = ""
+    for p in posts:
+        title, desc = _extract_title_desc(p)
+        date = datetime.fromtimestamp(p.stat().st_mtime).strftime("%Y-%m-%d")
+        en = BLOG_EN_DIR / p.name
+        enlink = f' <a href="/blog/en/{p.name}" style="color:#38bdf8;font-size:.75rem">[EN]</a>' if en.exists() else ""
+        cards += (f'<a href="/blog/{p.name}" class="card"><h3>{title}{enlink}</h3>'
+                  f'<p>{desc}</p><span class="meta">{date}</span></a>\n')
+    section = ("<!-- AUTO-TOOLS-START -->\n"
+               "<h2>🛠️ Open Source Picks — Auto-updated Daily</h2>\n"
+               + cards + "<!-- AUTO-TOOLS-END -->\n")
+    idx = BLOG_DIR / "index.html"
+    html = idx.read_text(encoding="utf-8")
+    if "<!-- AUTO-TOOLS-START -->" in html:
+        html = re.sub(r"<!-- AUTO-TOOLS-START -->.*?<!-- AUTO-TOOLS-END -->\n?", section, html, flags=re.S)
+    else:
+        anchor = "<h2>🔮 Fortune & Astrology</h2>"
+        if anchor in html:
+            html = html.replace(anchor, section + anchor)
+        else:
+            html = html.replace("<footer>", section + "<footer>")
+    idx.write_text(html, encoding="utf-8")
+    return len(posts)
+
+
+def update_sitemap():
+    """把 tool 文章（中+英）写进 sitemap.xml 标记块"""
+    sm = REPO_DIR / "sitemap.xml"
+    if not sm.exists():
+        return 0
+    xml = sm.read_text(encoding="utf-8")
+    xml = re.sub(r"\s*<!-- AUTO-TOOL-POSTS-START -->.*?<!-- AUTO-TOOL-POSTS-END -->", "", xml, flags=re.S)
+    entries, count = "", 0
+    for p in sorted(BLOG_DIR.glob("tool-*.html")):
+        locs = [f"https://www.slowbuild.top/blog/{p.name}"]
+        if (BLOG_EN_DIR / p.name).exists():
+            locs.append(f"https://www.slowbuild.top/blog/en/{p.name}")
+        for loc in locs:
+            if loc not in xml:
+                entries += (f"  <url>\n    <loc>{loc}</loc>\n"
+                            f"    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n")
+                count += 1
+    if entries:
+        block = f"\n  <!-- AUTO-TOOL-POSTS-START -->\n{entries}  <!-- AUTO-TOOL-POSTS-END -->\n"
+        xml = xml.replace("</urlset>", block + "</urlset>")
+        sm.write_text(xml, encoding="utf-8")
+    return count
+
+
 # ══════════════════════════════════════════
 # 6. 主流程
 # ══════════════════════════════════════════
@@ -619,12 +688,21 @@ def main():
     PRODUCTS_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  ✅ 商店: {len(merged)} 商品 (新增 {shop_new} 个)")
     
+    # 更新博客索引 + sitemap
+    print("[4.5/5] 更新博客首页索引 + sitemap...")
+    try:
+        n_idx = update_blog_index()
+        n_sm = update_sitemap()
+        print(f"  ✅ 首页收录 {n_idx} 篇 tool 文章, sitemap 新增 {n_sm} 条")
+    except Exception as e:
+        print(f"  ❌ 索引更新失败: {e}")
+
     # Git 提交
     print("[5/5] Git 提交...")
     os.chdir(REPO_DIR)
     
     try:
-        subprocess.run(["git", "add", "tools.json", "products.json", "blog/"], check=True, capture_output=True)
+        subprocess.run(["git", "add", "tools.json", "products.json", "blog/", "sitemap.xml"], check=True, capture_output=True)
         result = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
         if result.stdout.strip():
             parts = []
