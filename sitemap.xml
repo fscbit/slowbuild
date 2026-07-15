@@ -365,7 +365,6 @@
     <priority>0.5</priority>
   </url>
 
-
   <!-- AUTO-TOOL-POSTS-START -->
   <url>
     <loc>https://www.slowbuild.top/blog/tool-ai-visual-prompt-cookbook.html</loc>
@@ -374,6 +373,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-ai-visual-prompt-cookbook.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-bettercmdtab.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-bettercmdtab.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

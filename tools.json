@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 525165,
+    "stars": 525591,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-14T22:46:38Z"
+    "updated": "2026-07-15T22:59:24Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 484955,
+    "stars": 485333,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-14T22:59:46Z"
+    "updated": "2026-07-15T22:59:45Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451887,
+    "stars": 451984,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-14T22:25:46Z"
+    "updated": "2026-07-15T22:03:26Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 450074,
+    "stars": 450453,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-14T22:50:11Z"
+    "updated": "2026-07-15T22:56:47Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392111,
+    "stars": 392204,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-14T22:40:20Z"
+    "updated": "2026-07-15T21:37:57Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59715,
+    "stars": 59740,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-14T22:29:09Z"
+    "updated": "2026-07-15T21:38:52Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44241,
+    "stars": 44242,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-14T22:58:20Z"
+    "updated": "2026-07-15T16:19:50Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43743,
+    "stars": 43751,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-14T22:12:06Z"
+    "updated": "2026-07-15T21:44:04Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40119,
+    "stars": 40130,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-14T22:30:13Z"
+    "updated": "2026-07-15T21:57:19Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39804,
+    "stars": 39818,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,25 +167,39 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-14T22:28:09Z"
+    "updated": "2026-07-15T22:06:34Z"
   },
   {
-    "name": "jangles-byte/Pythia",
-    "description": "One local API call gives your agent the entire live state of the planet — every major world event at once, plus forecast",
-    "url": "https://github.com/jangles-byte/Pythia",
+    "name": "HangYu8123/HarnessFlow",
+    "description": "Harness coding workflow for codex, claude, github copilot",
+    "url": "https://github.com/HangYu8123/HarnessFlow",
     "homepage": "",
-    "stars": 496,
-    "language": "TypeScript",
+    "stars": 500,
+    "language": "HTML",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-14T22:47:30Z"
+    "updated": "2026-07-15T21:32:16Z"
+  },
+  {
+    "name": "Tencent/BrowserSkill",
+    "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation ac",
+    "url": "https://github.com/Tencent/BrowserSkill",
+    "homepage": "",
+    "stars": 500,
+    "language": "Rust",
+    "topics": [
+      "agent",
+      "browser-use"
+    ],
+    "source": "new",
+    "updated": "2026-07-15T16:42:58Z"
   },
   {
     "name": "VigoZhao/AI-Visual-Prompt-Cookbook",
     "description": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
     "url": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
     "homepage": "https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/site/",
-    "stars": 495,
+    "stars": 498,
     "language": "Python",
     "topics": [
       "ai",
@@ -195,34 +209,23 @@
       "json"
     ],
     "source": "new",
-    "updated": "2026-07-13T16:34:32Z"
+    "updated": "2026-07-15T16:02:07Z"
   },
   {
-    "name": "ReikanYsora/Helios",
-    "description": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
-    "url": "https://github.com/ReikanYsora/Helios",
-    "homepage": "https://github.com/ReikanYsora/Helios#readme",
-    "stars": 495,
-    "language": "TypeScript",
+    "name": "rokartur/BetterCmdTab",
+    "description": "Master your Mac’s ⌘Tab",
+    "url": "https://github.com/rokartur/BetterCmdTab",
+    "homepage": "https://bettercmdtab.app",
+    "stars": 497,
+    "language": "Swift",
     "topics": [
-      "custom-card",
-      "hacs",
-      "hacs-default",
-      "home-assistant",
-      "homeassistant"
+      "app-switcher",
+      "fuzzy-search",
+      "macos",
+      "pin-apps",
+      "window-manager"
     ],
     "source": "new",
-    "updated": "2026-07-14T22:03:06Z"
-  },
-  {
-    "name": "MOKEAIGC/MOKE-Vision-One",
-    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "homepage": "",
-    "stars": 494,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-14T15:19:09Z"
+    "updated": "2026-07-15T20:57:14Z"
   }
 ]
