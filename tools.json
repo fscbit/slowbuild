@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 526247,
+    "stars": 527279,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-16T22:57:25Z"
+    "updated": "2026-07-17T22:59:57Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 485782,
+    "stars": 486119,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-16T22:59:46Z"
+    "updated": "2026-07-17T22:56:39Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451887,
+    "stars": 451970,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-16T22:53:01Z"
+    "updated": "2026-07-17T22:37:18Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 450725,
+    "stars": 450994,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-16T22:54:09Z"
+    "updated": "2026-07-17T22:58:32Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392257,
+    "stars": 392337,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-16T22:01:35Z"
+    "updated": "2026-07-17T22:05:42Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59764,
+    "stars": 59774,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-16T22:17:28Z"
+    "updated": "2026-07-17T20:57:40Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44246,
+    "stars": 44250,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-16T15:49:46Z"
+    "updated": "2026-07-17T19:59:52Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43759,
+    "stars": 43769,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-16T19:16:56Z"
+    "updated": "2026-07-17T21:45:16Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40049,
+    "stars": 40052,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-16T18:35:27Z"
+    "updated": "2026-07-17T22:24:47Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39823,
+    "stars": 39841,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,62 +167,73 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-16T21:22:06Z"
+    "updated": "2026-07-17T20:54:17Z"
   },
   {
-    "name": "aldegad/sprite-gen",
-    "description": "Generate clean 2D game sprites & animation atlases — component-row pipeline: state rows, alpha cleanup, frame extraction",
-    "url": "https://github.com/aldegad/sprite-gen",
-    "homepage": "",
+    "name": "VigoZhao/AI-Visual-Prompt-Cookbook",
+    "description": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
+    "url": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
+    "homepage": "https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/site/",
     "stars": 500,
     "language": "Python",
     "topics": [
-      "2d-game",
-      "ai-tools",
-      "claude-code",
-      "codex",
-      "game-dev"
-    ],
-    "source": "new",
-    "updated": "2026-07-16T19:12:44Z"
-  },
-  {
-    "name": "hello245m/free-stockdb",
-    "description": "每日更新！免费股票日k、分时k线数据，etf分钟数据，截至到2026-07月最新数据，含全沪京深7000+股票",
-    "url": "https://github.com/hello245m/free-stockdb",
-    "homepage": "",
-    "stars": 499,
-    "language": "HTML",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-16T18:38:51Z"
-  },
-  {
-    "name": "soycaporal/ternlight",
-    "description": "",
-    "url": "https://github.com/soycaporal/ternlight",
-    "homepage": "https://ternlight-demo.vercel.app",
-    "stars": 499,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-16T18:32:12Z"
-  },
-  {
-    "name": "PrismML-Eng/Bonsai-Image-Demo",
-    "description": "Generate images locally",
-    "url": "https://github.com/PrismML-Eng/Bonsai-Image-Demo",
-    "homepage": "",
-    "stars": 499,
-    "language": "PowerShell",
-    "topics": [
-      "1-bit",
-      "bonsai",
+      "ai",
+      "design-resources",
+      "generative-ai",
       "image-generation",
-      "on-device-ai",
-      "small-models"
+      "json"
     ],
     "source": "new",
-    "updated": "2026-07-16T16:35:08Z"
+    "updated": "2026-07-17T17:22:08Z"
+  },
+  {
+    "name": "ingriddaleusag-dotcom/PickTV",
+    "description": "",
+    "url": "https://github.com/ingriddaleusag-dotcom/PickTV",
+    "homepage": "",
+    "stars": 498,
+    "language": "Java",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-17T19:10:07Z"
+  },
+  {
+    "name": "ReikanYsora/Helios",
+    "description": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
+    "url": "https://github.com/ReikanYsora/Helios",
+    "homepage": "https://github.com/ReikanYsora/Helios#readme",
+    "stars": 498,
+    "language": "TypeScript",
+    "topics": [
+      "custom-card",
+      "hacs",
+      "hacs-default",
+      "home-assistant",
+      "homeassistant"
+    ],
+    "source": "new",
+    "updated": "2026-07-16T20:08:04Z"
+  },
+  {
+    "name": "gostonx/uninstally",
+    "description": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifie",
+    "url": "https://github.com/gostonx/uninstally",
+    "homepage": "",
+    "stars": 497,
+    "language": "Swift",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-17T13:50:20Z"
+  },
+  {
+    "name": "UsefulSoftwareCo/integrations",
+    "description": "",
+    "url": "https://github.com/UsefulSoftwareCo/integrations",
+    "homepage": "",
+    "stars": 496,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-17T08:14:04Z"
   }
 ]

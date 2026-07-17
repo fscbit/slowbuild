@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 392337,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐392337)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐392337)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 392337+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 392337+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 59774,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐59774)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐59774)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 59774+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 59774+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vigozhao-ai-visual-prompt-cook",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
+    "github": "VigoZhao/AI-Visual-Prompt-Cookbook",
+    "github_stars": 500,
+    "name": {
+      "en": "VigoZhao/AI-Visual-Prompt-Cookbook",
+      "zh-CN": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐500)",
+      "zh-TW": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
+      "zh-CN": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ingriddaleusag-dotcom-picktv",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/ingriddaleusag-dotcom/PickTV",
+    "github": "ingriddaleusag-dotcom/PickTV",
+    "github_stars": 498,
+    "name": {
+      "en": "ingriddaleusag-dotcom/PickTV",
+      "zh-CN": "ingriddaleusag-dotcom/PickTV (GitHub ⭐498)",
+      "zh-TW": "ingriddaleusag-dotcom/PickTV (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "ingriddaleusag-dotcom/PickTV - Open source tool",
+      "zh-CN": "ingriddaleusag-dotcom/PickTV - Open source tool | GitHub 498+ Stars 开源项目",
+      "zh-TW": "ingriddaleusag-dotcom/PickTV - Open source tool | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-reikanysora-helios",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/ReikanYsora/Helios",
+    "github": "ReikanYsora/Helios",
+    "github_stars": 498,
+    "name": {
+      "en": "ReikanYsora/Helios",
+      "zh-CN": "ReikanYsora/Helios (GitHub ⭐498)",
+      "zh-TW": "ReikanYsora/Helios (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
+      "zh-CN": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gostonx-uninstally",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/gostonx/uninstally",
+    "github": "gostonx/uninstally",
+    "github_stars": 497,
+    "name": {
+      "en": "gostonx/uninstally",
+      "zh-CN": "gostonx/uninstally (GitHub ⭐497)",
+      "zh-TW": "gostonx/uninstally (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder ",
+      "zh-CN": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder  | GitHub 497+ Stars 开源项目",
+      "zh-TW": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder  | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-usefulsoftwareco-integrations",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/UsefulSoftwareCo/integrations",
+    "github": "UsefulSoftwareCo/integrations",
+    "github_stars": 496,
+    "name": {
+      "en": "UsefulSoftwareCo/integrations",
+      "zh-CN": "UsefulSoftwareCo/integrations (GitHub ⭐496)",
+      "zh-TW": "UsefulSoftwareCo/integrations (GitHub ⭐496)"
+    },
+    "desc": {
+      "en": "UsefulSoftwareCo/integrations - Open source tool",
+      "zh-CN": "UsefulSoftwareCo/integrations - Open source tool | GitHub 496+ Stars 开源项目",
+      "zh-TW": "UsefulSoftwareCo/integrations - Open source tool | GitHub 496+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Collection of handy online tools for developers, with great UX.",
       "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39818+ Stars 开源项目",
       "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39818+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hangyu8123-harnessflow",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/HangYu8123/HarnessFlow",
-    "github": "HangYu8123/HarnessFlow",
-    "github_stars": 500,
-    "name": {
-      "en": "HangYu8123/HarnessFlow",
-      "zh-CN": "HangYu8123/HarnessFlow (GitHub ⭐500)",
-      "zh-TW": "HangYu8123/HarnessFlow (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Harness coding workflow for codex, claude, github copilot",
-      "zh-CN": "Harness coding workflow for codex, claude, github copilot | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Harness coding workflow for codex, claude, github copilot | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tencent-browserskill",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/Tencent/BrowserSkill",
-    "github": "Tencent/BrowserSkill",
-    "github_stars": 500,
-    "name": {
-      "en": "Tencent/BrowserSkill",
-      "zh-CN": "Tencent/BrowserSkill (GitHub ⭐500)",
-      "zh-TW": "Tencent/BrowserSkill (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agen",
-      "zh-CN": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agen | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agen | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-rokartur-bettercmdtab",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/rokartur/BetterCmdTab",
-    "github": "rokartur/BetterCmdTab",
-    "github_stars": 497,
-    "name": {
-      "en": "rokartur/BetterCmdTab",
-      "zh-CN": "rokartur/BetterCmdTab (GitHub ⭐497)",
-      "zh-TW": "rokartur/BetterCmdTab (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "Master your Mac’s ⌘Tab",
-      "zh-CN": "Master your Mac’s ⌘Tab | GitHub 497+ Stars 开源项目",
-      "zh-TW": "Master your Mac’s ⌘Tab | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 525165,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐525165)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐525165)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 525165+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 525165+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 484955,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐484955)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐484955)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 484955+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 484955+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 451887,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐451887)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐451887)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451887+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 451887+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 450074,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐450074)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐450074)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 450074+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 450074+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
