@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 527279,
+    "stars": 528208,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-17T22:59:57Z"
+    "updated": "2026-07-18T22:59:13Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 486119,
+    "stars": 486427,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-17T22:56:39Z"
+    "updated": "2026-07-18T22:55:58Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 451970,
+    "stars": 452019,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-17T22:37:18Z"
+    "updated": "2026-07-18T22:48:55Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 450994,
+    "stars": 451194,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-17T22:58:32Z"
+    "updated": "2026-07-18T22:54:44Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392337,
+    "stars": 392414,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-17T22:05:42Z"
+    "updated": "2026-07-18T22:33:53Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59774,
+    "stars": 59799,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-17T20:57:40Z"
+    "updated": "2026-07-18T22:43:48Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44250,
+    "stars": 44255,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-17T19:59:52Z"
+    "updated": "2026-07-18T20:14:23Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43769,
+    "stars": 43781,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-17T21:45:16Z"
+    "updated": "2026-07-18T21:07:19Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40052,
+    "stars": 40057,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-17T22:24:47Z"
+    "updated": "2026-07-18T19:22:00Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39841,
+    "stars": 39856,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,73 +167,67 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-17T20:54:17Z"
+    "updated": "2026-07-18T22:21:58Z"
   },
   {
-    "name": "VigoZhao/AI-Visual-Prompt-Cookbook",
-    "description": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
-    "url": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
-    "homepage": "https://vigozhao.github.io/AI-Visual-Prompt-Cookbook/site/",
+    "name": "tianma-if/edgeever",
+    "description": "Serverless, 100% free, and open-source Evernote alternative on Cloudflare with native MCP | 无需服务器、0费用、原生支持 AI Agent 的开源自",
+    "url": "https://github.com/tianma-if/edgeever",
+    "homepage": "https://edgeever.org",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "ai",
-      "design-resources",
-      "generative-ai",
-      "image-generation",
-      "json"
-    ],
-    "source": "new",
-    "updated": "2026-07-17T17:22:08Z"
-  },
-  {
-    "name": "ingriddaleusag-dotcom/PickTV",
-    "description": "",
-    "url": "https://github.com/ingriddaleusag-dotcom/PickTV",
-    "homepage": "",
-    "stars": 498,
-    "language": "Java",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-17T19:10:07Z"
-  },
-  {
-    "name": "ReikanYsora/Helios",
-    "description": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
-    "url": "https://github.com/ReikanYsora/Helios",
-    "homepage": "https://github.com/ReikanYsora/Helios#readme",
-    "stars": 498,
     "language": "TypeScript",
     "topics": [
-      "custom-card",
-      "hacs",
-      "hacs-default",
-      "home-assistant",
-      "homeassistant"
+      "cloudflare",
+      "cloudflare-d1",
+      "cloudflare-r2",
+      "cloudflare-workers",
+      "evernote"
     ],
     "source": "new",
-    "updated": "2026-07-16T20:08:04Z"
+    "updated": "2026-07-18T21:04:13Z"
   },
   {
-    "name": "gostonx/uninstally",
-    "description": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifie",
-    "url": "https://github.com/gostonx/uninstally",
+    "name": "canwhite/AgentEval",
+    "description": "The agent responsible for conducting the agent evaluation",
+    "url": "https://github.com/canwhite/AgentEval",
     "homepage": "",
-    "stars": 497,
-    "language": "Swift",
+    "stars": 500,
+    "language": "Rust",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-17T13:50:20Z"
+    "updated": "2026-07-18T22:48:07Z"
+  },
+  {
+    "name": "jiguang132/storyai-3d-director-desk",
+    "description": "A browser-based 3D director desk demo built with React, Vite, and Three.js.",
+    "url": "https://github.com/jiguang132/storyai-3d-director-desk",
+    "homepage": "",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-18T15:42:44Z"
   },
   {
     "name": "UsefulSoftwareCo/integrations",
     "description": "",
     "url": "https://github.com/UsefulSoftwareCo/integrations",
     "homepage": "",
-    "stars": 496,
+    "stars": 499,
     "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-17T08:14:04Z"
+    "updated": "2026-07-18T15:29:14Z"
+  },
+  {
+    "name": "V4bel/Januscape",
+    "description": "",
+    "url": "https://github.com/V4bel/Januscape",
+    "homepage": "",
+    "stars": 498,
+    "language": "C",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-18T20:00:17Z"
   }
 ]
