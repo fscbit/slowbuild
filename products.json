@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44257,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44257)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44257)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44257+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44257+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43789,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43789)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43789)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43789+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43789+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40070,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40070)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40070)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39867,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39867)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39867)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39867+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39867+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-safijari-openpuck",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/safijari/openpuck",
+    "github": "safijari/openpuck",
+    "github_stars": 498,
+    "name": {
+      "en": "safijari/openpuck",
+      "zh-CN": "safijari/openpuck (GitHub ⭐498)",
+      "zh-TW": "safijari/openpuck (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode",
+      "zh-CN": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jimparis-qr-font",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/jimparis/qr-font",
+    "github": "jimparis/qr-font",
+    "github_stars": 498,
+    "name": {
+      "en": "jimparis/qr-font",
+      "zh-CN": "jimparis/qr-font (GitHub ⭐498)",
+      "zh-TW": "jimparis/qr-font (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "A QR code generator in a TrueType font: https://qr.jim.sh/",
+      "zh-CN": "A QR code generator in a TrueType font: https://qr.jim.sh/ | GitHub 498+ Stars 开源项目",
+      "zh-TW": "A QR code generator in a TrueType font: https://qr.jim.sh/ | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mokeaigc-moke-vision-one",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "github": "MOKEAIGC/MOKE-Vision-One",
+    "github_stars": 497,
+    "name": {
+      "en": "MOKEAIGC/MOKE-Vision-One",
+      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
+      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
+      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nv-tlabs-ardy",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/nv-tlabs/ardy",
+    "github": "nv-tlabs/ardy",
+    "github_stars": 496,
+    "name": {
+      "en": "nv-tlabs/ardy",
+      "zh-CN": "nv-tlabs/ardy (GitHub ⭐496)",
+      "zh-TW": "nv-tlabs/ardy (GitHub ⭐496)"
+    },
+    "desc": {
+      "en": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).",
+      "zh-CN": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). | GitHub 496+ Stars 开源项目",
+      "zh-TW": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). | GitHub 496+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "A browser-based 3D director desk demo built with React, Vite, and Three.js.",
       "zh-CN": "A browser-based 3D director desk demo built with React, Vite, and Three.js. | GitHub 500+ Stars 开源项目",
       "zh-TW": "A browser-based 3D director desk demo built with React, Vite, and Three.js. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-v4bel-januscape",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/V4bel/Januscape",
-    "github": "V4bel/Januscape",
-    "github_stars": 498,
-    "name": {
-      "en": "V4bel/Januscape",
-      "zh-CN": "V4bel/Januscape (GitHub ⭐498)",
-      "zh-TW": "V4bel/Januscape (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "V4bel/Januscape - Open source tool",
-      "zh-CN": "V4bel/Januscape - Open source tool | GitHub 498+ Stars 开源项目",
-      "zh-TW": "V4bel/Januscape - Open source tool | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 392337,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐392337)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐392337)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 392337+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 392337+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59774,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59774)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59774)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59774+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59774+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vigozhao-ai-visual-prompt-cook",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/VigoZhao/AI-Visual-Prompt-Cookbook",
-    "github": "VigoZhao/AI-Visual-Prompt-Cookbook",
-    "github_stars": 500,
-    "name": {
-      "en": "VigoZhao/AI-Visual-Prompt-Cookbook",
-      "zh-CN": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐500)",
-      "zh-TW": "VigoZhao/AI-Visual-Prompt-Cookbook (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily.",
-      "zh-CN": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Curated collection of reusable JSON prompt templates & style references for AI image generation. Updated daily. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ingriddaleusag-dotcom-picktv",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/ingriddaleusag-dotcom/PickTV",
-    "github": "ingriddaleusag-dotcom/PickTV",
-    "github_stars": 498,
-    "name": {
-      "en": "ingriddaleusag-dotcom/PickTV",
-      "zh-CN": "ingriddaleusag-dotcom/PickTV (GitHub ⭐498)",
-      "zh-TW": "ingriddaleusag-dotcom/PickTV (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "ingriddaleusag-dotcom/PickTV - Open source tool",
-      "zh-CN": "ingriddaleusag-dotcom/PickTV - Open source tool | GitHub 498+ Stars 开源项目",
-      "zh-TW": "ingriddaleusag-dotcom/PickTV - Open source tool | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-reikanysora-helios",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/ReikanYsora/Helios",
-    "github": "ReikanYsora/Helios",
-    "github_stars": 498,
-    "name": {
-      "en": "ReikanYsora/Helios",
-      "zh-CN": "ReikanYsora/Helios (GitHub ⭐498)",
-      "zh-TW": "ReikanYsora/Helios (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant",
-      "zh-CN": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Helios - Make your energy visible, in 2.5D in a Lovelace card for Home Assistant | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gostonx-uninstally",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/gostonx/uninstally",
-    "github": "gostonx/uninstally",
-    "github_stars": 497,
-    "name": {
-      "en": "gostonx/uninstally",
-      "zh-CN": "gostonx/uninstally (GitHub ⭐497)",
-      "zh-TW": "gostonx/uninstally (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder ",
-      "zh-CN": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder  | GitHub 497+ Stars 开源项目",
-      "zh-TW": "A clean, native macOS uninstaller. Completely removes apps and every file they leave behind using smart bundle-identifier detection. SwiftUI + Finder  | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-usefulsoftwareco-integrations",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/UsefulSoftwareCo/integrations",
-    "github": "UsefulSoftwareCo/integrations",
-    "github_stars": 496,
-    "name": {
-      "en": "UsefulSoftwareCo/integrations",
-      "zh-CN": "UsefulSoftwareCo/integrations (GitHub ⭐496)",
-      "zh-TW": "UsefulSoftwareCo/integrations (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "UsefulSoftwareCo/integrations - Open source tool",
-      "zh-CN": "UsefulSoftwareCo/integrations - Open source tool | GitHub 496+ Stars 开源项目",
-      "zh-TW": "UsefulSoftwareCo/integrations - Open source tool | GitHub 496+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

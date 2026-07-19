@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 528208,
+    "stars": 528886,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-18T22:59:13Z"
+    "updated": "2026-07-19T23:00:01Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 486427,
+    "stars": 486736,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-18T22:55:58Z"
+    "updated": "2026-07-19T22:46:53Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452019,
+    "stars": 452093,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-18T22:48:55Z"
+    "updated": "2026-07-19T22:36:19Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 451194,
+    "stars": 451398,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-18T22:54:44Z"
+    "updated": "2026-07-19T22:50:42Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392414,
+    "stars": 392495,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-18T22:33:53Z"
+    "updated": "2026-07-19T22:25:37Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59799,
+    "stars": 59810,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-18T22:43:48Z"
+    "updated": "2026-07-19T21:10:44Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44255,
+    "stars": 44257,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-18T20:14:23Z"
+    "updated": "2026-07-19T15:54:15Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43781,
+    "stars": 43789,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-18T21:07:19Z"
+    "updated": "2026-07-19T22:04:54Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40057,
+    "stars": 40070,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-18T19:22:00Z"
+    "updated": "2026-07-19T21:58:00Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39856,
+    "stars": 39867,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,67 +167,50 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-18T22:21:58Z"
+    "updated": "2026-07-19T18:44:36Z"
   },
   {
-    "name": "tianma-if/edgeever",
-    "description": "Serverless, 100% free, and open-source Evernote alternative on Cloudflare with native MCP | 无需服务器、0费用、原生支持 AI Agent 的开源自",
-    "url": "https://github.com/tianma-if/edgeever",
-    "homepage": "https://edgeever.org",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "cloudflare",
-      "cloudflare-d1",
-      "cloudflare-r2",
-      "cloudflare-workers",
-      "evernote"
-    ],
-    "source": "new",
-    "updated": "2026-07-18T21:04:13Z"
-  },
-  {
-    "name": "canwhite/AgentEval",
-    "description": "The agent responsible for conducting the agent evaluation",
-    "url": "https://github.com/canwhite/AgentEval",
-    "homepage": "",
-    "stars": 500,
-    "language": "Rust",
+    "name": "safijari/openpuck",
+    "description": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode",
+    "url": "https://github.com/safijari/openpuck",
+    "homepage": "https://safijari.github.io/openpuck/",
+    "stars": 498,
+    "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-18T22:48:07Z"
+    "updated": "2026-07-19T22:42:51Z"
   },
   {
-    "name": "jiguang132/storyai-3d-director-desk",
-    "description": "A browser-based 3D director desk demo built with React, Vite, and Three.js.",
-    "url": "https://github.com/jiguang132/storyai-3d-director-desk",
-    "homepage": "",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-18T15:42:44Z"
-  },
-  {
-    "name": "UsefulSoftwareCo/integrations",
-    "description": "",
-    "url": "https://github.com/UsefulSoftwareCo/integrations",
-    "homepage": "",
-    "stars": 499,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-18T15:29:14Z"
-  },
-  {
-    "name": "V4bel/Januscape",
-    "description": "",
-    "url": "https://github.com/V4bel/Januscape",
+    "name": "jimparis/qr-font",
+    "description": "A QR code generator in a TrueType font: https://qr.jim.sh/",
+    "url": "https://github.com/jimparis/qr-font",
     "homepage": "",
     "stars": 498,
-    "language": "C",
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-18T20:00:17Z"
+    "updated": "2026-07-19T15:55:38Z"
+  },
+  {
+    "name": "MOKEAIGC/MOKE-Vision-One",
+    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "homepage": "",
+    "stars": 497,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-19T09:33:44Z"
+  },
+  {
+    "name": "nv-tlabs/ardy",
+    "description": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Genera",
+    "url": "https://github.com/nv-tlabs/ardy",
+    "homepage": "",
+    "stars": 496,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-19T22:20:02Z"
   }
 ]
