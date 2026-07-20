@@ -413,8 +413,8 @@
         <button data-lang="zh-TW" onclick="setLang('zh-TW')">繁</button>
       </div>
       <div class="nav-links">
-        <a href="#" data-i18n="nav_shop" onclick="showPage('shop');return false">Shop</a>
-        <a href="#" data-i18n="nav_about" onclick="showPage('about');return false">About</a>
+        <a href="/shop" data-i18n="nav_shop" onclick="showPage('shop');return false">Shop</a>
+        <a href="/about" data-i18n="nav_about" onclick="showPage('about');return false">About</a>
       </div>
     </div>
   </div>
@@ -584,7 +584,7 @@
 
   <!-- ④ 免费在线工具 -->
   <section id="shop-entry" class="section" style="padding-top:0">
-    <a href="#" onclick="showPage('shop');return false" class="shop-entry-card">
+    <a href="/shop" onclick="showPage('shop');return false" class="shop-entry-card">
       <span>🛒</span>
       <div style="flex:1">
         <h2 style="font-size:1.15rem;font-weight:700;margin-bottom:4px" data-i18n="shop_entry_head">Shop — DIY &amp; Gadgets</h2>
@@ -623,7 +623,7 @@
 
   <div class="section"><div class="ad-placeholder" data-i18n="ad_placeholder">📢 Ad space — coming when traffic grows</div></div>
   <footer>
-    <p>© 2026 slowbuild · <a href="#" onclick="showPage('about');return false" data-i18n="footer_about">About</a> · <a href="#" onclick="showPage('privacy');return false" data-i18n="footer_privacy">Privacy</a> · <a href="/game/2048.html" title="2048 Game">🎮</a></p>
+    <p>© 2026 slowbuild · <a href="/about" onclick="showPage('about');return false" data-i18n="footer_about">About</a> · <a href="/privacy" onclick="showPage('privacy');return false" data-i18n="footer_privacy">Privacy</a> · <a href="/game/2048.html" title="2048 Game">🎮</a></p>
   </footer>
 </div>
 
@@ -1470,6 +1470,14 @@ renderCompactTools();
 renderFortuneBlogs();
 renderScriptCards();
 renderShop();
+
+// Auto-show page from URL path (e.g. /shop → show shop tab)
+(function(){
+  var path = window.location.pathname.replace(/\/+$/,'').replace(/\.html$/,'');
+  if (path === '/shop') showPage('shop');
+  if (path === '/about') showPage('about');
+  if (path === '/privacy') showPage('privacy');
+})();
 
 // ═══════════════════════════════════════════
 //  Page nav
