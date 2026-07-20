@@ -34,26 +34,26 @@
 
 .song-header{display:flex;gap:28px;margin:24px 0 32px;align-items:flex-start;flex-wrap:wrap}
 .song-cover-wrap{
-  width:220px;height:220px;flex-shrink:0;border-radius:16px;overflow:hidden;
-  background:linear-gradient(135deg,var(--bg2),var(--border-light));
-  box-shadow:var(--shadow-lg);
+  width:200px;height:200px;flex-shrink:0;border-radius:16px;overflow:hidden;
+  background:linear-gradient(135deg,var(--bg2),rgba(200,190,170,.5));
+  box-shadow:0 4px 24px rgba(30,28,22,.1);
 }
 .song-cover-wrap img{width:100%;height:100%;object-fit:cover}
-.song-cover-wrap .ph{display:flex;align-items:center;justify-content:center;height:100%;font-size:4rem;opacity:.2;color:var(--jade)}
+.song-cover-wrap .ph{display:flex;align-items:center;justify-content:center;height:100%;font-size:4rem;opacity:.15;color:var(--jade)}
 .song-meta{flex:1;min-width:260px}
 .song-meta h1{font-size:1.7rem;font-weight:700;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em;line-height:1.3}
 .song-meta .cn-title{font-family:'Noto Serif SC',serif;font-size:.85rem;color:var(--muted);margin-bottom:12px}
 .song-meta .artist-name{font-size:1rem;color:var(--rose);font-weight:600;margin-bottom:10px}
-.song-meta .meta-line{font-size:.78rem;color:var(--muted);margin-bottom:14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.song-meta .meta-line span{background:var(--bg2);padding:2px 10px;border-radius:10px;font-size:.7rem}
+.song-meta .meta-line{font-size:.78rem;color:var(--muted);margin-bottom:14px;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.song-meta .meta-line span{background:rgba(255,255,255,.4);padding:3px 10px;border-radius:10px;font-size:.7rem;backdrop-filter:blur(4px)}
 .song-meta .meta-line .sep{color:var(--border)}
 .tags-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-.tag-item{background:rgba(91,140,122,.06);color:var(--jade);padding:3px 12px;border-radius:14px;font-size:.7rem;font-weight:500}
+.tag-item{background:rgba(74,140,111,.06);color:var(--jade);padding:3px 12px;border-radius:14px;font-size:.7rem;font-weight:500}
 .platform-btns{display:flex;flex-wrap:wrap;gap:8px}
 .platform-btn{
-  display:inline-flex;align-items:center;gap:5px;padding:6px 14px;border-radius:18px;
-  text-decoration:none;font-size:.72rem;font-weight:500;transition:all .2s;border:1.5px solid var(--border);
-  color:var(--text2);background:var(--surface);
+  display:inline-flex;align-items:center;gap:5px;padding:7px 16px;border-radius:18px;
+  text-decoration:none;font-size:.72rem;font-weight:500;transition:all .25s;border:1.5px solid var(--border);
+  color:var(--text2);background:var(--card);backdrop-filter:blur(6px);
 }
 .platform-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
 .platform-btn.yt:hover{border-color:#c00;color:#c00}
@@ -63,12 +63,10 @@
 .player-wrap h3{font-size:.82rem;color:var(--muted);margin-bottom:10px;font-weight:500}
 .player-wrap .video-box{
   position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
-  border-radius:14px;background:var(--bg2);box-shadow:var(--shadow-lg);
+  border-radius:14px;background:var(--bg2);box-shadow:0 4px 24px rgba(30,28,22,.08);
 }
-.player-wrap .video-box iframe{
-  position:absolute;top:0;left:0;width:100%;height:100%;border:0;
-}
-.player-wrap .audio-box{padding:16px;background:var(--bg2);border-radius:14px}
+.player-wrap .video-box iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.player-wrap .audio-box{padding:16px;background:rgba(255,255,255,.5);border-radius:14px;backdrop-filter:blur(8px)}
 .player-wrap .audio-box audio{width:100%}
 
 .content-block{margin:28px 0}
@@ -83,39 +81,42 @@
 .lyrics-col{font-size:.85rem;line-height:2.2}
 .lyrics-original{color:var(--ink);font-weight:500}
 .lyrics-translation{color:var(--text2)}
-.lyrics-note{margin-top:14px;padding:12px 16px;background:rgba(91,140,122,.05);border-left:3px solid var(--jade);border-radius:0 10px 10px 0;font-size:.75rem;color:var(--text2);line-height:1.6}
+.lyrics-note{margin-top:14px;padding:12px 16px;background:rgba(74,140,111,.04);border-left:3px solid var(--jade);border-radius:0 10px 10px 0;font-size:.75rem;color:var(--text2);line-height:1.6}
 
 .cultural-box{
   padding:22px 24px;margin:28px 0;
-  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(224,122,95,.04));
+  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(192,96,74,.04));
   border:1px solid rgba(184,134,11,.15);border-radius:14px;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
 }
 .cultural-box h4{font-size:.85rem;font-weight:600;color:var(--gold);margin-bottom:10px}
 .cultural-box p{font-size:.82rem;color:var(--text2);line-height:1.8}
 
 .premium-wall{
   text-align:center;padding:36px 24px;margin:28px 0;
-  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(60,54,40,.03));
+  background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(30,28,22,.02));
   border:1.5px solid rgba(184,134,11,.15);border-radius:16px;
+  backdrop-filter:blur(8px);
 }
 .premium-wall h3{font-size:1.1rem;color:var(--gold);margin-bottom:10px}
 .premium-wall ul{list-style:none;padding:0;font-size:.82rem;color:var(--text2);line-height:2.2;margin-bottom:18px}
 .premium-wall .cta{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;
   background:linear-gradient(135deg,var(--gold),var(--rose));color:#fff;
   border-radius:24px;text-decoration:none;font-weight:600;font-size:.85rem;
-  transition:all .2s;letter-spacing:.01em;
+  transition:all .25s;letter-spacing:.01em;
 }
 .premium-wall .cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(184,134,11,.25)}
 .premium-wall .hint{font-size:.7rem;color:var(--muted);margin-top:14px}
 .premium-wall .hint a{color:var(--jade)}
 
 .related-section{margin:48px 0 30px}
-.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
 .rel-card{
-  padding:14px 16px;background:var(--surface);border:1px solid var(--border-light);
-  border-radius:12px;text-decoration:none;color:inherit;transition:all .2s;box-shadow:var(--shadow);
+  padding:14px 16px;background:var(--card);backdrop-filter:blur(6px);
+  border:1px solid var(--glass-border);border-radius:12px;
+  text-decoration:none;color:inherit;transition:all .25s;box-shadow:var(--shadow);
 }
-.rel-card:hover{border-color:var(--jade);transform:translateY(-2px)}
+.rel-card:hover{border-color:var(--jade);transform:translateY(-2px);box-shadow:0 6px 20px rgba(30,28,22,.08)}
 .rel-card .r-title{font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:2px}
 .rel-card .r-artist{font-size:.7rem;color:var(--rose);font-weight:500}
 
@@ -154,15 +155,22 @@
   </div>
 </div>
 
-<!-- ═══ 播放器 ═══ -->
+<!-- ═══ 播放器（懒加载） ═══ -->
 {% if song.youtube_id %}
 <div class="player-wrap">
-  <h3>Official Video</h3>
-  <div class="video-box">
-    <iframe src="https://www.youtube-nocookie.com/embed/{{ song.youtube_id }}" allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  <h3>▶ Official Video</h3>
+  <div class="video-box" id="ytPlayer" data-vid="{{ song.youtube_id }}">
+    <div style="display:flex;align-items:center;justify-content:center;height:100%;background:var(--bg2);border-radius:14px;cursor:pointer" onclick="loadYoutube()">
+      <span style="font-size:3rem;opacity:.3">▶</span>
+    </div>
   </div>
 </div>
+<script>
+function loadYoutube(){
+  var box = document.getElementById('ytPlayer');
+  box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+box.dataset.vid+'" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"></iframe>';
+}
+</script>
 {% elif song.direct_audio_url %}
 <div class="player-wrap">
   <h3>Listen</h3>
@@ -170,40 +178,24 @@
 </div>
 {% endif %}
 
-<!-- ═══ 内容区 ═══ -->
+<!-- ═══ 内容 ═══ -->
 {% if not song.premium %}
-  {# Free content #}
   {% if song.review_en %}
   <div class="content-block"><h3>Review</h3><div class="review-text">{{ song.review_en }}</div></div>
   {% endif %}
   {% if song.lyrics_original %}
-  <div class="content-block">
-    <h3>Lyrics</h3>
-    <div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div>
-  </div>
-  {% endif %}
-  {% if song.lyrics_original %}
-  <div class="content-block">
-    <h3>Lyrics</h3>
-    <div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div>
-  </div>
+  <div class="content-block"><h3>Lyrics</h3><div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div></div>
   {% endif %}
   {% if song.lyrics_translation_cn_note %}
   <div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>
   {% endif %}
   {% if song.cultural_note %}
-  <div class="cultural-box"><h4>Cultural Context</h4><p>{{ song.cultural_note }}</p></div>
+  <div class="cultural-box"><h4>🏮 Cultural Context</h4><p>{{ song.cultural_note }}</p></div>
   {% endif %}
-
 {% else %}
-  {# Premium: preview + unlock CTA #}
   {% if song.review_en %}
-  <div class="content-block">
-    <h3>Preview</h3>
-    <div class="review-text">{{ song.review_en[:250] }}…</div>
-  </div>
+  <div class="content-block"><h3>Preview</h3><div class="review-text">{{ song.review_en[:250] }}…</div></div>
   {% endif %}
-  
   <div class="premium-wall">
     <h3>🔒 Premium Content</h3>
     <ul>

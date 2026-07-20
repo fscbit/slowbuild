@@ -1,181 +1,115 @@
 {% extends "base.html" %}
 {% block title %}Discover Chinese Music — SlowBuild Music{% endblock %}
-{% block description %}Explore Chinese songs through English reviews, translations, and cultural notes. From Mandopop to indie — hand-picked for music lovers worldwide.{% endblock %}
 {% block og_title %}SlowBuild Music — Discover Chinese Songs{% endblock %}
 {% block og_desc %}English-language guide to Chinese music. Hand-picked songs with translations, cultural context, and reviews.{% endblock %}
 {% block content %}
 <style>
-.hero-featured{margin:10px 0 30px}
-.featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
-.feat-card{
-  background:var(--surface);border:1px solid var(--border-light);
-  border-radius:16px;overflow:hidden;display:flex;text-decoration:none;
-  color:inherit;transition:all .3s;box-shadow:var(--shadow);
-}
-.feat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--gold-light)}
-.feat-card .fc-cover{
-  width:110px;height:110px;flex-shrink:0;background:linear-gradient(135deg, var(--bg2), var(--border-light));
-  display:flex;align-items:center;justify-content:center;overflow:hidden;
-}
+.featured-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.feat-card{background:var(--card);backdrop-filter:blur(12px);border:1px solid var(--glass-border);border-radius:16px;overflow:hidden;display:flex;text-decoration:none;color:inherit;transition:all .35s;box-shadow:var(--shadow)}
+.feat-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(30,28,22,.12);border-color:rgba(184,134,11,.25)}
+.feat-card .fc-cover{width:110px;height:110px;flex-shrink:0;background:linear-gradient(135deg,var(--bg2),rgba(200,190,170,.4));display:flex;align-items:center;justify-content:center;overflow:hidden}
 .feat-card .fc-cover img{width:100%;height:100%;object-fit:cover}
-.feat-card .fc-cover .ph-icon{font-size:2.2rem;opacity:.25;color:var(--jade)}
+.feat-card .fc-cover .ph-icon{font-size:2.2rem;opacity:.2;color:var(--jade)}
 .feat-card .fc-body{padding:16px 18px;flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0}
-.feat-card .fc-body .fc-title{font-size:.95rem;font-weight:600;color:var(--ink);margin-bottom:3px;line-height:1.3}
+.feat-card .fc-body .fc-title{font-size:.95rem;font-weight:600;color:var(--ink);margin-bottom:3px}
 .feat-card .fc-body .fc-artist{font-size:.75rem;color:var(--rose);margin-bottom:6px;font-weight:500}
-.feat-card .fc-body .fc-snippet{font-size:.72rem;color:var(--muted);line-height:1.5;margin-bottom:8px;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.feat-card .fc-body .fc-snippet{font-size:.72rem;color:var(--muted);line-height:1.5;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .feat-card .fc-body .fc-meta{display:flex;align-items:center;gap:6px;margin-top:auto}
-.feat-card .fc-body .fc-genre{font-size:.65rem;color:var(--jade);background:rgba(91,140,122,.08);padding:2px 10px;border-radius:10px;font-weight:500}
+.feat-card .fc-body .fc-genre{font-size:.65rem;color:var(--jade);background:rgba(74,140,111,.08);padding:2px 10px;border-radius:10px;font-weight:500}
 .feat-card .fc-body .fc-badge{font-size:.65rem;font-weight:600;padding:2px 10px;border-radius:10px}
-.feat-card .fc-body .fc-badge.free{color:var(--jade);background:rgba(91,140,122,.1)}
-.feat-card .fc-body .fc-badge.premium{color:var(--gold);background:rgba(184,134,11,.08)}
+.feat-card .fc-body .fc-badge.free{color:var(--jade);background:rgba(74,140,111,.1)}
 
 .song-list{margin-bottom:40px}
-.song-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px}
-.song-item{
-  display:flex;align-items:center;gap:14px;padding:14px 18px;
-  background:var(--surface);border:1px solid var(--border-light);
-  border-radius:12px;text-decoration:none;color:inherit;
-  transition:all .2s;box-shadow:var(--shadow);
-}
-.song-item:hover{border-color:var(--jade-light);transform:translateX(3px)}
+.song-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:8px}
+.song-item{display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--glass-border);border-radius:12px;text-decoration:none;color:inherit;transition:all .3s;box-shadow:var(--shadow)}
+.song-item:hover{border-color:rgba(74,140,111,.3);transform:translateX(4px)}
 .song-item .si-num{font-family:'Noto Serif SC',serif;font-size:1.3rem;font-weight:700;color:var(--border);width:32px;text-align:center;flex-shrink:0}
 .song-item .si-info{flex:1;min-width:0}
 .song-item .si-title{font-size:.88rem;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .song-item .si-artist{font-size:.72rem;color:var(--rose);margin-top:1px;font-weight:500}
 .song-item .si-badge{font-size:.62rem;font-weight:600;padding:2px 10px;border-radius:10px;flex-shrink:0}
-.song-item .si-badge.free{color:var(--jade);border:1px solid rgba(91,140,122,.2)}
-.song-item .si-badge.premium{color:var(--gold);border:1px solid rgba(184,134,11,.2)}
-
-.empty-state{text-align:center;padding:60px 20px;color:var(--muted);font-size:.9rem}
+.song-item .si-badge.free{color:var(--jade);border:1px solid rgba(74,140,111,.2)}
+.empty-state{text-align:center;padding:60px 20px;color:var(--muted)}
+@media(max-width:640px){.featured-grid{grid-template-columns:1fr}.song-row{grid-template-columns:1fr}}
 </style>
 
 <div class="hero">
   <h1>Great Songs, Actually Understood</h1>
-  <p>From TikTok's "Xue Hua Piao Piao" to Jay Chou's hidden masterpieces — English reviews of Chinese songs that the world is curious about.</p>
+  <p>English reviews of Chinese songs the world is curious about.</p>
 </div>
 
-<!-- ═══ 精选 ═══ -->
-{% set featured = songs|selectattr('featured')|list %}
 {% if featured %}
 <h2 class="section-title">Curated Picks</h2>
 <div class="featured-grid">
-  {% for s in featured[:6] %}
+  {% for s in featured %}
   <a href="/song/{{ s.id }}" class="feat-card">
-    <div class="fc-cover">
-      {% if s.cover %}<img src="{{ s.cover }}" alt="{{ s.title }}">
-      {% else %}<span class="ph-icon">🎵</span>{% endif %}
-    </div>
+    <div class="fc-cover">{% if s.cover %}<img src="{{ s.cover }}" alt="{{ s.title }}">{% else %}<span class="ph-icon">🎵</span>{% endif %}</div>
     <div class="fc-body">
-      <div class="fc-title">{{ s.title }}</div>
-      <div class="fc-artist">{{ s.artist }}</div>
+      <div class="fc-title">{{ s.title }}</div><div class="fc-artist">{{ s.artist }}</div>
       {% if s.review_en %}<div class="fc-snippet">{{ s.review_en[:100] }}…</div>{% endif %}
-      <div class="fc-meta">
-        {% if s.genre %}<span class="fc-genre">{{ s.genre }}</span>{% endif %}
-        <span class="fc-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else 'Premium' }}</span>
-      </div>
+      <div class="fc-meta">{% if s.genre %}<span class="fc-genre">{{ s.genre }}</span>{% endif %}<span class="fc-badge free">Free</span></div>
     </div>
-  </a>
-  {% endfor %}
+  </a>{% endfor %}
 </div>
 {% endif %}
 
-<!-- ═══ 全球热门（Tier 1-3: 老外真实搜索的中文歌） ═══ -->
-{% set hits = songs|selectattr('global_tier','in',[1,2,3])|list %}
-{% if hits %}
+{% if global_hits %}
 <div class="song-list">
-  <h2 class="section-title">Global Hits & Hidden Gems <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ hits|length }} songs foreigners actually search for</span></h2>
+  <h2 class="section-title">Global Hits <span style="font-size:.7rem;color:var(--muted);font-weight:400">{{ global_hits|length }} songs</span></h2>
   <div class="song-row">
-    {% for s in hits[:36] %}
+    {% for s in global_hits %}
     <a href="/song/{{ s.id }}" class="song-item">
       <span class="si-num">{% if s.global_tier == 1 %}🔥{% elif s.global_tier == 2 %}⭐{% else %}💡{% endif %}</span>
-      <div class="si-info">
-        <div class="si-title">{{ s.title }} {% if s.language == 'en' %}🎸{% elif s.language == 'ko' %}🇰🇷{% endif %}</div>
-        <div class="si-artist">{{ s.artist }}</div>
-      </div>
-      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
-    </a>
-    {% endfor %}
+      <div class="si-info"><div class="si-title">{{ s.title }}</div><div class="si-artist">{{ s.artist }}</div></div>
+      <span class="si-badge free">Free</span>
+    </a>{% endfor %}
   </div>
 </div>
 {% endif %}
 
-<!-- ═══ 深度精选（Tier 0: 中国人知道的宝藏） ═══ -->
-{% set deep = songs|selectattr('global_tier','equalto',0)|list %}
-{% if deep %}
+{% if deep_cuts %}
 <div class="song-list">
-  <h2 class="section-title">Deep Cuts: Chinese Songs Worth Discovering <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ deep|length }} hidden gems</span></h2>
+  <h2 class="section-title">Deep Cuts <span style="font-size:.7rem;color:var(--muted);font-weight:400">{{ deep_cuts|length }} hidden gems</span></h2>
   <div class="song-row">
-    {% for s in deep[:24] %}
+    {% for s in deep_cuts %}
     <a href="/song/{{ s.id }}" class="song-item">
-      <span class="si-num" style="font-size:.9rem">💎</span>
-      <div class="si-info">
-        <div class="si-title">{{ s.title }}</div>
-        <div class="si-artist">{{ s.artist }}</div>
-      </div>
-      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
-    </a>
-    {% endfor %}
+      <span class="si-num">💎</span>
+      <div class="si-info"><div class="si-title">{{ s.title }}</div><div class="si-artist">{{ s.artist }}</div></div>
+      <span class="si-badge free">Free</span>
+    </a>{% endfor %}
   </div>
 </div>
 {% endif %}
 
-<!-- ═══ 按风格分类 ═══ -->
-{% set genres_all = ['pop','rock','folk','indie','hiphop','electronic','rnb','punk','jazz'] %}
-{% set genre_labels = {
-  'pop':'Mandopop',
-  'rock':'Rock & Indie Rock',
-  'folk':'Folk & Acoustic',
-  'indie':'Indie & Experimental',
-  'hiphop':'Hip Hop',
-  'electronic':'Electronic',
-  'rnb':'R&B & Soul',
-  'punk':'Punk & Post-Punk',
-  'jazz':'Jazz'
-} %}
-
-{% for genre in genres_all %}
-  {% set gs = songs|selectattr('genre','equalto',genre)|list %}
-  {% if gs %}
-  <div class="song-list">
-    <h2 class="section-title">{{ genre_labels.get(genre, genre) }} <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ gs|length }} songs</span></h2>
-    <div class="song-row">
-      {% for s in gs %}
-      <a href="/song/{{ s.id }}" class="song-item">
-        <span class="si-num">{{ loop.index }}</span>
-        <div class="si-info">
-          <div class="si-title">{{ s.title }}</div>
-          <div class="si-artist">{{ s.artist }}</div>
-        </div>
-        <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
-      </a>
-      {% endfor %}
-    </div>
+{% for genre, gs in genre_groups.items() if gs and genre in genre_labels %}
+<div class="song-list">
+  <h2 class="section-title">{{ genre_labels[genre] }} <span style="font-size:.7rem;color:var(--muted);font-weight:400">{{ gs|length }} songs</span></h2>
+  <div class="song-row">
+    {% for s in gs %}
+    <a href="/song/{{ s.id }}" class="song-item">
+      <span class="si-num">{{ loop.index }}</span>
+      <div class="si-info"><div class="si-title">{{ s.title }}</div><div class="si-artist">{{ s.artist }}</div></div>
+      <span class="si-badge free">Free</span>
+    </a>{% endfor %}
   </div>
-  {% endif %}
+</div>
 {% endfor %}
 
-<!-- ═══ 其他 ═══ -->
-{% set others = songs|rejectattr('genre','in',genres_all)|list %}
 {% if others %}
 <div class="song-list">
-  <h2 class="section-title">More Discoveries <span style="font-size:.7rem;color:var(--muted);font-weight:400;font-family:Inter,sans-serif">{{ others|length }} songs</span></h2>
+  <h2 class="section-title">More Discoveries <span style="font-size:.7rem;color:var(--muted);font-weight:400">{{ others|length }} songs</span></h2>
   <div class="song-row">
     {% for s in others %}
     <a href="/song/{{ s.id }}" class="song-item">
       <span class="si-num">{{ loop.index }}</span>
-      <div class="si-info">
-        <div class="si-title">{{ s.title_en or s.title }}</div>
-        <div class="si-artist">{{ s.artist }}</div>
-      </div>
-      <span class="si-badge {{ 'free' if not s.premium else 'premium' }}">{{ 'Free' if not s.premium else '🔒' }}</span>
-    </a>
-    {% endfor %}
+      <div class="si-info"><div class="si-title">{{ s.title_en or s.title }}</div><div class="si-artist">{{ s.artist }}</div></div>
+      <span class="si-badge free">Free</span>
+    </a>{% endfor %}
   </div>
 </div>
 {% endif %}
 
 {% if not songs %}
-<div class="empty-state">Coming soon — we're hand-picking the best Chinese songs for you.</div>
+<div class="empty-state">Coming soon — hand-picking the best Chinese songs for you.</div>
 {% endif %}
 {% endblock %}

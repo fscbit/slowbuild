@@ -87,3 +87,270 @@ To github.com:fscbit/slowbuild.git
   ✅ 已推送: auto: 5 shop items + auto update (2026-07-09 07:00)
 
 🎉 完成! 0 文章 | 15 工具 | 5 新商品
+[master c651cfb] auto: 2 posts + 8 shop items + auto update (2026-07-10 07:00)
+ 4 files changed, 415 insertions(+), 230 deletions(-)
+ create mode 100644 blog/en/tool-open-science.html
+ create mode 100644 blog/tool-open-science.html
+To github.com:fscbit/slowbuild.git
+   72afbab..c651cfb  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-10 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-open-science.html (ai4s-research/open-science)
+  ✅ CN: tool-open-science.html (ai4s-research/open-science)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 8 shop items + auto update (2026-07-10 07:00)
+
+🎉 完成! 2 文章 | 14 工具 | 8 新商品
+[master 5841740] auto: 2 posts + 3 shop items + auto update (2026-07-11 07:00)
+ 4 files changed, 296 insertions(+), 185 deletions(-)
+ create mode 100644 blog/en/tool-skyadb.html
+ create mode 100644 blog/tool-skyadb.html
+To github.com:fscbit/slowbuild.git
+   c651cfb..5841740  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-11 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 9 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (9 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-skyadb.html (sky22333/skyadb)
+  ✅ CN: tool-skyadb.html (sky22333/skyadb)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 3 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 3 shop items + auto update (2026-07-11 07:00)
+
+🎉 完成! 2 文章 | 9 工具 | 3 新商品
+[master fa91bb0] auto: 3 shop items + auto update (2026-07-12 07:00)
+ 2 files changed, 177 insertions(+), 92 deletions(-)
+To github.com:fscbit/slowbuild.git
+   c6d8585..fa91bb0  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-12 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-skyadb.html
+  ⏭️ CN 已有: tool-skyadb.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 3 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 3 shop items + auto update (2026-07-12 07:00)
+
+🎉 完成! 0 文章 | 14 工具 | 3 新商品
+[master a818562] auto: 4 posts + 7 shop items + auto update (2026-07-13 07:00)
+ 6 files changed, 633 insertions(+), 224 deletions(-)
+ create mode 100644 blog/en/tool-internet-court-skill.html
+ create mode 100644 blog/en/tool-vibe-check.html
+ create mode 100644 blog/tool-internet-court-skill.html
+ create mode 100644 blog/tool-vibe-check.html
+To github.com:fscbit/slowbuild.git
+   fa91bb0..a818562  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-13 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-vibe-check.html (TexasBedouin/vibe-check)
+  ✅ CN: tool-vibe-check.html (TexasBedouin/vibe-check)
+  ✅ EN: tool-internet-court-skill.html (internet-court/internet-court-skill)
+  ✅ CN: tool-internet-court-skill.html (internet-court/internet-court-skill)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 7 shop items + auto update (2026-07-13 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+[master f355af0] auto: 4 posts + 8 shop items + auto update (2026-07-14 07:00)
+ 6 files changed, 632 insertions(+), 240 deletions(-)
+ create mode 100644 blog/en/tool-pon.html
+ create mode 100644 blog/en/tool-wilonity.html
+ create mode 100644 blog/tool-pon.html
+ create mode 100644 blog/tool-wilonity.html
+To github.com:fscbit/slowbuild.git
+   a818562..f355af0  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-14 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-wilonity.html (WilonityLoader/Wilonity)
+  ✅ CN: tool-wilonity.html (WilonityLoader/Wilonity)
+  ✅ EN: tool-pon.html (can1357/pon)
+  ✅ CN: tool-pon.html (can1357/pon)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 8 shop items + auto update (2026-07-14 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 8 新商品
+[master 7833d47] auto: 4 posts + 8 shop items + auto update (2026-07-15 07:00)
+ 6 files changed, 607 insertions(+), 232 deletions(-)
+ create mode 100644 blog/en/tool-ai-visual-prompt-cookbook.html
+ create mode 100644 blog/en/tool-helios.html
+ create mode 100644 blog/tool-ai-visual-prompt-cookbook.html
+ create mode 100644 blog/tool-helios.html
+To github.com:fscbit/slowbuild.git
+   f355af0..7833d47  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-15 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-ai-visual-prompt-cookbook.html (VigoZhao/AI-Visual-Prompt-Cookbook)
+  ✅ CN: tool-ai-visual-prompt-cookbook.html (VigoZhao/AI-Visual-Prompt-Cookbook)
+  ✅ EN: tool-helios.html (ReikanYsora/Helios)
+  ✅ CN: tool-helios.html (ReikanYsora/Helios)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 8 shop items + auto update (2026-07-15 07:00)
+
+🎉 完成! 4 文章 | 14 工具 | 8 新商品
+[master 13a5a7e] auto: 2 posts + 5 shop items + auto update (2026-07-16 07:00)
+ 6 files changed, 371 insertions(+), 162 deletions(-)
+ create mode 100644 blog/en/tool-bettercmdtab.html
+ create mode 100644 blog/tool-bettercmdtab.html
+To github.com:fscbit/slowbuild.git
+   9c29e4c..13a5a7e  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-16 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-ai-visual-prompt-cookbook.html
+  ⏭️ CN 已有: tool-ai-visual-prompt-cookbook.html
+  ✅ EN: tool-bettercmdtab.html (rokartur/BetterCmdTab)
+  ✅ CN: tool-bettercmdtab.html (rokartur/BetterCmdTab)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 12 篇 tool 文章, sitemap 新增 24 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-07-16 07:00)
+
+🎉 完成! 2 文章 | 14 工具 | 5 新商品
+[master 20f7e0f] auto: 2 posts + 6 shop items + auto update (2026-07-17 07:00)
+ 6 files changed, 397 insertions(+), 193 deletions(-)
+ create mode 100644 blog/en/tool-sprite-gen.html
+ create mode 100644 blog/tool-sprite-gen.html
+To github.com:fscbit/slowbuild.git
+   13a5a7e..20f7e0f  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-17 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-sprite-gen.html (aldegad/sprite-gen)
+  ✅ CN: tool-sprite-gen.html (aldegad/sprite-gen)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 13 篇 tool 文章, sitemap 新增 26 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-07-17 07:00)
+
+🎉 完成! 2 文章 | 14 工具 | 6 新商品
+[master 5fecad7] auto: 7 shop items + auto update (2026-07-18 07:00)
+ 2 files changed, 221 insertions(+), 210 deletions(-)
+To github.com:fscbit/slowbuild.git
+   20f7e0f..5fecad7  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-18 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-ai-visual-prompt-cookbook.html
+  ⏭️ CN 已有: tool-ai-visual-prompt-cookbook.html
+  ⏭️ EN 已有: tool-helios.html
+  ⏭️ CN 已有: tool-helios.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 13 篇 tool 文章, sitemap 新增 26 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 7 shop items + auto update (2026-07-18 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 7 新商品
+[master 71d7270] auto: 2 posts + 8 shop items + auto update (2026-07-19 07:00)
+ 6 files changed, 426 insertions(+), 225 deletions(-)
+ create mode 100644 blog/en/tool-edgeever.html
+ create mode 100644 blog/tool-edgeever.html
+To github.com:fscbit/slowbuild.git
+   5fecad7..71d7270  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-19 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-edgeever.html (tianma-if/edgeever)
+  ✅ CN: tool-edgeever.html (tianma-if/edgeever)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 14 篇 tool 文章, sitemap 新增 28 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 8 shop items + auto update (2026-07-19 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 8 新商品
+[master edb282f] auto: 2 posts + 8 shop items + auto update (2026-07-20 07:00)
+ 6 files changed, 415 insertions(+), 225 deletions(-)
+ create mode 100644 blog/en/tool-jsoncrackcom.html
+ create mode 100644 blog/tool-jsoncrackcom.html
+To github.com:fscbit/slowbuild.git
+   71d7270..edb282f  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-20 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ✅ EN: tool-jsoncrackcom.html (AykutSarac/jsoncrack.com)
+  ✅ CN: tool-jsoncrackcom.html (AykutSarac/jsoncrack.com)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 15 篇 tool 文章, sitemap 新增 30 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 8 shop items + auto update (2026-07-20 07:00)
+
+🎉 完成! 2 文章 | 14 工具 | 8 新商品

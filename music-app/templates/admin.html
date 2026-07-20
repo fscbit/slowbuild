@@ -2,52 +2,99 @@
 {% block title %}Admin — SlowBuild Music{% endblock %}
 {% block content %}
 <style>
-.admin-wrap{max-width:1200px;margin:0 auto}
+.admin-wrap{max-width:1240px;margin:0 auto}
 .admin-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:10px 0 20px}
 .admin-top h1{font-family:'Noto Serif SC',serif;font-size:1.3rem;color:var(--ink);margin:0}
-.stat-row{display:flex;gap:14px;margin-bottom:18px;flex-wrap:wrap}
-.stat-cell{background:var(--surface);border:1px solid var(--border-light);border-radius:12px;padding:16px 22px;box-shadow:var(--shadow)}
-.stat-cell .num{font-size:1.5rem;font-weight:700;color:var(--jade)}
+
+/* 统计 */
+.stat-row{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.stat-cell{
+  background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--glass-border);
+  border-radius:12px;padding:14px 20px;box-shadow:var(--shadow);min-width:100px
+}
+.stat-cell .num{font-size:1.4rem;font-weight:700;color:var(--jade)}
 .stat-cell .num.gold{color:var(--gold)}
-.stat-cell .label{font-size:.7rem;color:var(--muted);margin-top:3px}
+.stat-cell .num.red{color:var(--rose)}
+.stat-cell .label{font-size:.68rem;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.03em}
+
+/* ⚡ 一键上架面板 */
+.auto-panel{
+  background:linear-gradient(135deg,rgba(74,140,111,.05),rgba(184,134,11,.03));
+  border:2px solid rgba(74,140,111,.2);border-radius:16px;
+  padding:20px 24px;margin-bottom:20px;backdrop-filter:blur(8px);
+}
+.auto-panel h3{font-size:.95rem;color:var(--ink);margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.auto-panel .sub{font-size:.72rem;color:var(--muted);margin-bottom:14px}
+.auto-panel .flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.auto-panel .flow .step{
+  background:rgba(255,255,255,.85);border:1.5px solid var(--border);
+  border-radius:10px;padding:8px 14px;font-size:.74rem;font-weight:500;color:var(--text2);
+  white-space:nowrap;backdrop-filter:blur(4px);
+}
+.auto-panel .flow .step.active{border-color:var(--jade);color:var(--jade);background:rgba(74,140,111,.06)}
+.auto-panel .flow .step.done{border-color:var(--gold);color:var(--gold);background:rgba(184,134,11,.06)}
+.auto-panel .flow .arrow{color:var(--muted);font-size:.85rem}
+.auto-panel form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.auto-panel form input,.auto-panel form select{
+  padding:9px 14px;border:1.5px solid var(--border);border-radius:10px;
+  background:var(--surface);color:var(--text);font-size:.82rem;outline:none;
+  transition:border-color .25s;font-family:inherit;
+}
+.auto-panel form input:focus,.auto-panel form select:focus{border-color:var(--jade)}
+.auto-panel form input{min-width:180px;flex:1}
+.auto-panel form select{min-width:100px}
+#taskBox{margin-top:8px;font-size:.72rem;max-height:120px;overflow-y:auto}
+#taskBox .task-line{display:flex;align-items:center;gap:6px;padding:3px 0}
+
+/* 工具栏 */
 .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
-.toolbar input,.toolbar select{padding:8px 14px;border:1.5px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:.82rem;outline:none;transition:border-color .2s}
+.toolbar input,.toolbar select{
+  padding:8px 14px;border:1.5px solid var(--border);border-radius:10px;
+  background:var(--surface);color:var(--text);font-size:.82rem;outline:none;
+  transition:border-color .2s;font-family:inherit
+}
 .toolbar input:focus,.toolbar select:focus{border-color:var(--jade)}
 .toolbar input{min-width:260px}
-.btn{padding:8px 18px;border-radius:10px;border:none;font-size:.8rem;cursor:pointer;font-weight:600;transition:all .15s;font-family:inherit}
+.btn{
+  padding:8px 18px;border-radius:10px;border:none;font-size:.8rem;
+  cursor:pointer;font-weight:600;transition:all .2s;font-family:inherit;white-space:nowrap;
+}
 .btn:hover{transform:translateY(-1px)}
 .btn-dark{background:var(--ink);color:#fff}
 .btn-green{background:var(--jade);color:#fff}
+.btn-gold{background:var(--gold);color:#fff}
 .btn-red{background:var(--rose);color:#fff}
 .btn-line{background:transparent;border:1.5px solid var(--border);color:var(--text2)}
 
-.song-list{margin-top:8px}
+/* 表格 */
 .song-list table{width:100%;border-collapse:collapse;font-size:.82rem}
-.song-list th{text-align:left;padding:10px 14px;border-bottom:2px solid var(--border-light);color:var(--muted);font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.song-list th{text-align:left;padding:10px 14px;border-bottom:2px solid var(--border-light);color:var(--muted);font-weight:600;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
 .song-list td{padding:10px 14px;border-bottom:1px solid var(--border-light);vertical-align:middle}
-.song-list tr:hover td{background:rgba(91,140,122,.03)}
+.song-list tr:hover td{background:rgba(74,140,111,.03)}
 .song-list .s-title{font-weight:600;color:var(--ink);cursor:pointer}
 .song-list .s-title:hover{color:var(--jade)}
 .song-list .s-artist{font-size:.72rem;color:var(--rose);font-weight:500}
-.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px}
 .dot.green{background:var(--jade)}
 .dot.gold{background:var(--gold)}
 .dot.gray{background:var(--border)}
 
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(45,43,38,.5);backdrop-filter:blur(3px);z-index:100;align-items:center;justify-content:center}
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(26,24,20,.45);backdrop-filter:blur(4px);z-index:100;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
-.modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:30px;max-width:740px;width:95%;max-height:88vh;overflow-y:auto;box-shadow:0 16px 48px rgba(60,54,40,.15)}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:30px;max-width:740px;width:95%;max-height:88vh;overflow-y:auto;box-shadow:0 16px 48px rgba(30,28,22,.15)}
 .modal h2{font-size:1.1rem;color:var(--ink);margin:0 0 20px;font-weight:600}
 .modal .fg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .modal .fg .full{grid-column:1/-1}
-.modal label{font-size:.72rem;color:var(--muted);font-weight:600;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.02em}
+.modal label{font-size:.7rem;color:var(--muted);font-weight:600;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.02em}
 .modal input,.modal textarea,.modal select{width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font-size:.84rem;font-family:inherit;resize:vertical;transition:border-color .2s}
 .modal input:focus,.modal textarea:focus{border-color:var(--jade);outline:none}
 .modal textarea{min-height:70px}
-.modal .checks{display:flex;gap:20px;align-items:center;padding-top:10px}
+.modal .checks{display:flex;gap:20px;align-items:center;padding-top:10px;flex-wrap:wrap}
 .modal .checks label{display:flex;align-items:center;gap:6px;cursor:pointer;text-transform:none;font-size:.78rem;font-weight:500;color:var(--text)}
 .modal .checks input[type=checkbox]{width:auto}
-.modal .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.modal .actions{display:flex;gap:10px;justify-content:space-between;margin-top:20px}
+.modal .actions .right-btns{display:flex;gap:10px}
 @media(max-width:768px){.modal .fg{grid-template-columns:1fr}}
 </style>
 
@@ -55,9 +102,34 @@
 <div class="admin-top">
   <h1>Music Admin</h1>
   <div style="display:flex;gap:8px">
-    <button class="btn btn-dark" onclick="openAdd()">+ New Song</button>
     <a href="/admin/login" style="font-size:.65rem;color:var(--muted);align-self:center;text-decoration:none">exit</a>
   </div>
+</div>
+
+<!-- ⚡ 一键上架面板 -->
+<div class="auto-panel">
+  <h3>⚡ 一键上架 · Auto Publish</h3>
+  <div class="sub">输入歌名+歌手 → 自动搜YouTube视频 → 自动AI生成乐评 → 直接上架</div>
+  <div class="flow">
+    <span class="step active">1. 输入歌名</span><span class="arrow">→</span>
+    <span class="step">2. YouTube搜索</span><span class="arrow">→</span>
+    <span class="step">3. AI生成乐评</span><span class="arrow">→</span>
+    <span class="step">4. 自动上架 ✅</span>
+  </div>
+  <form id="quickForm" onsubmit="quickAdd(event)">
+    <input name="title" placeholder="歌名（必填）" required>
+    <input name="artist" placeholder="歌手（必填）" required>
+    <select name="genre">
+      <option value="pop">Pop</option><option value="rock">Rock</option>
+      <option value="folk">Folk</option><option value="ballad">Ballad</option>
+      <option value="rnb">R&amp;B</option><option value="hiphop">Hip Hop</option>
+      <option value="indie">Indie</option><option value="ost">OST</option>
+      <option value="traditional">Traditional</option>
+    </select>
+    <button type="submit" class="btn btn-gold">🚀 发布</button>
+    <button type="button" class="btn btn-line" onclick="batchAutoReview()" title="为所有缺乐评的歌曲自动生成AI乐评">🤖 批量补乐评</button>
+  </form>
+  <div id="taskBox"></div>
 </div>
 
 <div class="stat-row" id="stats"></div>
@@ -70,12 +142,13 @@
     <option value="has_review">Has review</option><option value="no_review">No review</option>
     <option value="free">Free</option><option value="premium">Premium</option>
   </select>
+  <button class="btn btn-dark" onclick="openAdd()">+ New Song</button>
   <span style="font-size:.75rem;color:var(--muted)" id="count"></span>
 </div>
 
 <div class="song-list">
 <table><thead><tr>
-  <th>Song</th><th>Genre</th><th>Status</th><th style="width:110px"></th>
+  <th>Song</th><th>Genre</th><th>YT</th><th>Review</th><th style="width:140px">Actions</th>
 </tr></thead>
 <tbody id="tbody"></tbody></table>
 </div>
@@ -108,16 +181,18 @@
       <div class="full"><label>Cultural Context (EN)</label><textarea name="cultural_note" rows="3"></textarea></div>
       <div class="full">
         <div class="checks">
-          <label><input type="checkbox" name="featured" value="true"> Featured on homepage</label>
-          <label><input type="checkbox" name="premium" value="true" checked> Premium content</label>
+          <label><input type="checkbox" name="featured" value="true"> Featured</label>
+          <label><input type="checkbox" name="premium" value="true" checked> Premium</label>
           <label style="gap:4px">Sort: <input name="sort_order" type="number" value="0" style="width:60px;padding:4px 8px;font-size:.78rem"></label>
         </div>
       </div>
     </div>
     <div class="actions">
-      <button type="button" class="btn btn-line" onclick="closeModal()">Cancel</button>
       <button type="button" class="btn btn-red" id="delBtn" style="display:none" onclick="delSong()">Delete</button>
-      <button type="submit" class="btn btn-dark">Save</button>
+      <div class="right-btns">
+        <button type="button" class="btn btn-line" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-dark">Save</button>
+      </div>
     </div>
   </form>
 </div>
@@ -127,21 +202,24 @@
 var songs = {{ songs|tojson }};
 var genres = [...new Set(songs.map(s=>s.genre).filter(Boolean))].sort();
 (function init(){
-  var gf = document.getElementById('genreFilter');
+  var gf=document.getElementById('genreFilter');
   genres.forEach(g=>{var o=document.createElement('option');o.value=g;o.textContent=g;gf.appendChild(o)});
   render();
   updateStats();
+  pollTasks();
 })();
 
 function updateStats(){
   var t=songs.length,yt=songs.filter(s=>s.youtube_id).length,
       rv=songs.filter(s=>s.review_en&&s.review_en.length>50).length,
-      cv=songs.filter(s=>s.cover).length;
+      noYt=songs.filter(s=>!s.youtube_id).length,
+      noRv=songs.filter(s=>!s.review_en||s.review_en.length<50).length;
   document.getElementById('stats').innerHTML=
     '<div class="stat-cell"><div class="num">'+t+'</div><div class="label">Total</div></div>'+
     '<div class="stat-cell"><div class="num">'+yt+'</div><div class="label">YouTube</div></div>'+
     '<div class="stat-cell"><div class="num gold">'+rv+'</div><div class="label">Reviewed</div></div>'+
-    '<div class="stat-cell"><div class="num">'+cv+'</div><div class="label">Cover Art</div></div>';
+    (noYt>0?'<div class="stat-cell"><div class="num red">'+noYt+'</div><div class="label">Need YT</div></div>':'')+
+    (noRv>0?'<div class="stat-cell"><div class="num red">'+noRv+'</div><div class="label">Need Review</div></div>':'');
 }
 
 function filtered(){
@@ -151,10 +229,10 @@ function filtered(){
   return songs.filter(s=>{
     if(q&&!(s.title+s.artist+(s.title_en||'')+(s.review_en||'')).toLowerCase().includes(q))return false;
     if(gf&&s.genre!==gf)return false;
-    if(sf=='has_yt'&&!s.youtube_id)return false; if(sf=='no_yt'&&s.youtube_id)return false;
+    if(sf=='has_yt'&&!s.youtube_id)return false;if(sf=='no_yt'&&s.youtube_id)return false;
     if(sf=='has_review'&&(!s.review_en||s.review_en.length<50))return false;
     if(sf=='no_review'&&s.review_en&&s.review_en.length>=50)return false;
-    if(sf=='free'&&s.premium!==false)return false; if(sf=='premium'&&s.premium===false)return false;
+    if(sf=='free'&&s.premium!==false)return false;if(sf=='premium'&&s.premium===false)return false;
     return true;
   });
 }
@@ -164,29 +242,24 @@ function render(){
   document.getElementById('count').textContent=items.length+' songs';
   document.getElementById('empty').style.display=items.length?'none':'block';
   document.getElementById('tbody').innerHTML=items.map(s=>{
-    var dots=[];
-    if(s.youtube_id)dots.push('<span class="dot green"></span>YT');
-    else dots.push('<span class="dot gray"></span>YT');
-    if(s.review_en&&s.review_en.length>50)dots.push('<span class="dot green"></span>Review');
-    else dots.push('<span class="dot gray"></span>Review');
-    if(s.cover)dots.push('<span class="dot green"></span>Cover');
-    var prem=s.premium===false?'Free <span style="color:var(--jade);font-weight:600;font-size:.7rem">FREE</span>':'<span style="color:var(--gold);font-size:.7rem">🔒</span>';
-    var enSub = s.title_en && s.title_en !== s.title ? ' <span style="color:var(--muted);font-weight:400;font-size:.7rem">'+e(s.title_en)+'</span>' : '';
-    return '<tr><td><div class="s-title" onclick="openEdit(\''+s.id+'\')">'+
-      e(s.title)+enSub+'</div><div class="s-artist">'+e(s.artist)+'</div></td>'+
+    var ytIcon=s.youtube_id?'<span class="dot green"></span>':'<span class="dot gray"></span>';
+    var rvIcon=s.review_en&&s.review_en.length>50?'<span class="dot green"></span>':'<span class="dot gray"></span>';
+    return '<tr><td><div class="s-title" onclick="openEdit(\''+s.id+'\')">'+e(s.title)+'</div><div class="s-artist">'+e(s.artist)+'</div></td>'+
       '<td><span style="font-size:.72rem">'+(s.genre||'—')+'</span></td>'+
-      '<td style="font-size:.7rem">'+dots.join(' ')+'<br>'+prem+'</td>'+
-      '<td><button class="btn btn-line" style="font-size:.7rem;padding:4px 10px" onclick="openEdit(\''+s.id+'\')">Edit</button> '+
-      '<a href="/song/'+s.id+'" target="_blank" class="btn btn-line" style="font-size:.7rem;padding:4px 10px;text-decoration:none">View</a></td></tr>';
+      '<td>'+ytIcon+'</td><td>'+rvIcon+'</td>'+
+      '<td style="white-space:nowrap">'+
+      '<button class="btn btn-line" style="font-size:.68rem;padding:4px 10px" onclick="openEdit(\''+s.id+'\')">Edit</button> '+
+      '<a href="/song/'+s.id+'" target="_blank" class="btn btn-line" style="font-size:.68rem;padding:4px 10px;text-decoration:none">View</a></td></tr>';
   }).join('');
 }
 
 function e(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
 function openEdit(id){
-  var s=songs.find(x=>x.id===id); if(!s)return;
+  var s=songs.find(x=>x.id===id);if(!s)return;
   document.getElementById('editId').value=id;
-  document.getElementById('modalTitle').textContent='Edit: '+(s.title)+ (s.title_en && s.title_en !== s.title ? ' ('+s.title_en+')' : '');
+  var t=s.title+(s.title_en&&s.title_en!==s.title?' ('+s.title_en+')':'');
+  document.getElementById('modalTitle').textContent='Edit: '+t;
   document.getElementById('delBtn').style.display='inline-block';
   var f=document.getElementById('editForm');
   ['title','title_en','artist','genre','year','youtube_id','spotify_id','cover','direct_audio_url','sort_order'].forEach(k=>{f.querySelector('[name="'+k+'"]').value=s[k]||'';});
@@ -213,7 +286,7 @@ function saveSong(e){
   var id=fd.get('song_id'),url=id?'/admin/edit/'+id:'/admin/add';
   var body=new URLSearchParams();for(var[k,v]of fd.entries())if(k!=='song_id')body.append(k,v);
   fetch(url,{method:'POST',body:body,headers:{'Content-Type':'application/x-www-form-urlencoded'}})
-    .then(r=>{window.location.reload();});
+    .then(r=>window.location.reload());
 }
 
 function delSong(){
@@ -224,5 +297,47 @@ function delSong(){
 
 document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+
+// ⚡ 快速添加
+function quickAdd(e){
+  e.preventDefault();
+  var f=document.getElementById('quickForm'),fd=new FormData(f);
+  var tb=document.getElementById('taskBox');
+  tb.innerHTML='<div class="task-line"><span style="color:var(--jade)">⏳ 提交中...</span></div>';
+  fetch('/admin/quick-add',{method:'POST',body:new URLSearchParams(fd),headers:{'Content-Type':'application/x-www-form-urlencoded'}})
+    .then(r=>{
+      if(r.ok){f.reset();pollTasks();}
+      else tb.innerHTML='<div class="task-line"><span style="color:var(--rose)">❌ 失败</span></div>';
+    });
+}
+
+// 🤖 批量补乐评
+function batchAutoReview(){
+  if(!confirm('为所有缺乐评的歌曲自动生成AI乐评？'))return;
+  var tb=document.getElementById('taskBox');
+  tb.innerHTML='<div class="task-line"><span style="color:var(--gold)">🤖 批量生成中...</span></div>';
+  fetch('/admin/auto-review-all',{method:'POST'}).then(r=>r.json()).then(d=>{
+    tb.innerHTML='<div class="task-line"><span style="color:var(--jade)">✅ '+d.message+'</span></div>';
+    setTimeout(function(){window.location.reload();},2000);
+  });
+}
+
+function pollTasks(){
+  fetch('/admin/task-status').then(r=>r.json()).then(tasks=>{
+    var tb=document.getElementById('taskBox');
+    if(!tasks.length)return;
+    var html='';
+    tasks.forEach(function(t){
+      var color=t.status==='done'?'var(--jade)':t.status==='failed'?'var(--rose)':'var(--gold)';
+      var icon=t.status==='done'?'✅':t.status==='failed'?'❌':t.status==='ai_gen'?'🤖':'⏳';
+      html+='<div class="task-line"><span style="color:'+color+'">'+icon+' '+e(t.status_cn||'')+'</span> '+
+        '<span style="font-size:.65rem;color:var(--muted)">'+e(t.title)+'</span></div>';
+    });
+    tb.innerHTML=html;
+    var hasPending=tasks.some(function(t){return t.status!='done'&&t.status!='failed'});
+    if(hasPending){setTimeout(pollTasks,4000);}
+    else{setTimeout(function(){window.location.reload();},2000);}
+  });
+}
 </script>
 {% endblock %}

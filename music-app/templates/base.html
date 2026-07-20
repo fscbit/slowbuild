@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>{% block title %}SlowBuild Music — Hand-Picked Songs, Explained{% endblock %}</title>
+<title>{% block title %}SlowBuild Music — Chinese Songs, Explained{% endblock %}</title>
 <meta name="description" content="{% block description %}Discover Chinese music through English reviews, lyric translations, and cultural context.{% endblock %}">
 {% block og %}
 <meta property="og:title" content="{% block og_title %}SlowBuild Music — Chinese Songs Explained{% endblock %}">
@@ -16,28 +16,31 @@
 <meta name="twitter:title" content="{% block tw_title %}SlowBuild Music — Chinese Songs Explained{% endblock %}">
 <meta name="twitter:description" content="{% block tw_desc %}Discover Chinese music through English reviews, lyric translations, and cultural context.{% endblock %}">{% endblock %}
 <link rel="canonical" href="https://music.slowbuild.top{{ request.path }}">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 {% block schema %}{% endblock %}
 <style>
 :root{
-  --bg: #fdfaf4;
-  --bg2: #f6efe2;
-  --surface: #ffffff;
-  --card: #fefdfb;
-  --border: #e8dcc8;
-  --border-light: #f0e8d5;
-  --text: #3c3628;
-  --text2: #6b6355;
-  --muted: #9b917a;
+  --bg: #f5f2eb;
+  --bg2: #ede6d9;
+  --surface: rgba(255,255,255,.72);
+  --card: rgba(255,255,255,.88);
+  --border: rgba(139,119,90,.18);
+  --border-light: rgba(139,119,90,.1);
+  --text: #2c2820;
+  --text2: #5c5548;
+  --muted: #968b78;
   --gold: #b8860b;
   --gold-light: #daa520;
   --red: #c53030;
-  --rose: #e07a5f;
-  --jade: #5b8c7a;
-  --jade-light: #81b29a;
-  --ink: #2d2b26;
-  --shadow: 0 1px 3px rgba(60,54,40,.06), 0 4px 16px rgba(60,54,40,.04);
-  --shadow-lg: 0 2px 8px rgba(60,54,40,.08), 0 8px 32px rgba(60,54,40,.06);
+  --rose: #c0604a;
+  --jade: #4a8c6f;
+  --jade-light: #6aab8c;
+  --ink: #1a1814;
+  --mist: rgba(200,195,182,.45);
+  --shadow: 0 1px 3px rgba(30,28,22,.05), 0 4px 14px rgba(30,28,22,.04);
+  --shadow-lg: 0 2px 8px rgba(30,28,22,.08), 0 8px 28px rgba(30,28,22,.06);
+  --glass: rgba(255,255,255,.55);
+  --glass-border: rgba(255,255,255,.35);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
@@ -47,17 +50,46 @@ body{
   min-height:100vh;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
-body::before{
-  content:'';position:fixed;inset:0;
-  background:radial-gradient(ellipse at 20% 0%, rgba(218,165,32,.03) 0%, transparent 50%),
-             radial-gradient(ellipse at 80% 100%, rgba(91,140,122,.03) 0%, transparent 50%);
-  pointer-events:none;z-index:0;
+
+/* ═══ 苏州园林 — 右下角亭台楼阁 + 雨 ═══ */
+.garden-corner{
+  position:fixed;bottom:0;right:0;z-index:0;pointer-events:none;
+  width:420px;height:380px;overflow:hidden;opacity:.7;
 }
+.garden-svg{position:absolute;bottom:0;right:0;width:100%;height:100%}
+
+/* 雨滴动画 */
+.rain-container{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.raindrop{
+  position:absolute;top:-40px;
+  width:2px;height:16px;
+  background:linear-gradient(to bottom,transparent,rgba(160,170,180,.35));
+  animation:rain linear infinite;
+  border-radius:0 0 3px 3px;
+}
+@keyframes rain{
+  0%{transform:translateY(-40px);opacity:0}
+  5%{opacity:.6}
+  80%{opacity:.4}
+  100%{transform:translateY(105vh);opacity:0}
+}
+
+/* 整体水雾效果 */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at 85% 85%,rgba(74,140,111,.04) 0%,transparent 55%),
+             radial-gradient(ellipse at 15% 15%,rgba(184,134,11,.025) 0%,transparent 45%),
+             radial-gradient(ellipse at 50% 0%,rgba(90,95,100,.02) 0%,transparent 60%);
+}
+
 .container{max-width:1140px;margin:0 auto;padding:20px 28px;position:relative;z-index:1}
+
+/* ═══ 导航 ═══ */
 nav{
-  background:rgba(255,255,255,.85);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border-light);
+  background:var(--glass);backdrop-filter:blur(20px) saturate(1.4);
+  -webkit-backdrop-filter:blur(20px) saturate(1.4);
+  border-bottom:1px solid var(--glass-border);
   position:sticky;top:0;z-index:50;
   padding:0 28px;
 }
@@ -70,23 +102,30 @@ nav .logo{
 nav .logo .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:2px}
 nav .links{display:flex;gap:6px;align-items:center}
 nav .search-form{display:flex;align-items:center;margin-left:12px}
-nav .search-form input{padding:5px 12px;border:1.5px solid var(--border);border-radius:16px;background:var(--bg);color:var(--text);font-size:.72rem;width:140px;outline:none;transition:all .2s}
-nav .search-form input:focus{border-color:var(--jade);width:200px}
+nav .search-form input{
+  padding:5px 12px;border:1.5px solid var(--border);border-radius:16px;
+  background:rgba(255,255,255,.4);color:var(--text);font-size:.72rem;width:140px;
+  outline:none;transition:all .3s;backdrop-filter:blur(8px);
+}
+nav .search-form input:focus{border-color:var(--jade);width:200px;background:rgba(255,255,255,.7)}
 nav .links a{
   color:var(--text2);text-decoration:none;font-size:.78rem;font-weight:500;
-  padding:6px 14px;border-radius:18px;transition:all .2s;letter-spacing:.01em;
+  padding:6px 14px;border-radius:18px;transition:all .25s;letter-spacing:.01em;
 }
-nav .links a:hover{color:var(--ink);background:var(--bg2)}
+nav .links a:hover{color:var(--ink);background:rgba(255,255,255,.5)}
+
 .hero{text-align:center;padding:70px 20px 50px;position:relative}
 .hero::after{
   content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);
-  width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);
+  width:100px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold-light),transparent);
 }
 .hero h1{
   font-family:'Noto Serif SC',serif;font-size:2.2rem;font-weight:600;
   color:var(--ink);margin-bottom:14px;letter-spacing:-.02em;
-  background:linear-gradient(135deg,var(--ink) 20%,var(--jade) 60%,var(--gold-light) 90%);
+  background:linear-gradient(135deg,var(--ink) 20%,var(--jade) 55%,var(--gold-light) 85%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 .hero p{color:var(--text2);font-size:.95rem;max-width:520px;margin:0 auto;line-height:1.7}
 
@@ -112,27 +151,87 @@ footer a:hover{color:var(--gold)}
   display:inline-flex;align-items:center;gap:6px;padding:10px 22px;
   background:var(--ink);color:#fff;border:none;border-radius:24px;
   font-size:.82rem;font-weight:600;cursor:pointer;text-decoration:none;
-  transition:all .2s;letter-spacing:.01em;
+  transition:all .25s;letter-spacing:.01em;
 }
-.btn-primary:hover{background:#444;transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+.btn-primary:hover{background:#333;transform:translateY(-1px);box-shadow:var(--shadow-lg)}
 .btn-outline{
   display:inline-flex;align-items:center;gap:6px;padding:8px 18px;
   border:1.5px solid var(--border);border-radius:24px;color:var(--text2);
   font-size:.78rem;font-weight:500;cursor:pointer;text-decoration:none;
-  transition:all .2s;background:transparent;
+  transition:all .25s;background:transparent;
 }
 .btn-outline:hover{border-color:var(--jade);color:var(--jade)}
-.admin-link{font-size:.68rem;color:var(--muted);opacity:.35;transition:opacity .3s;margin-left:8px}
+.admin-link{font-size:.68rem;color:var(--muted);opacity:.3;transition:opacity .3s;margin-left:8px}
 .admin-link:hover{opacity:.7}
+
 @media(max-width:768px){
   .hero h1{font-size:1.6rem}
   .container{padding:16px}
   nav{padding:0 16px}
   nav .links a{font-size:.72rem;padding:5px 10px}
+  .garden-corner{width:240px;height:220px;opacity:.5}
 }
 </style>
 </head>
 <body>
+
+<!-- ═══ 下雨动画 ═══ -->
+<div class="rain-container" id="rain"></div>
+
+<!-- ═══ 园林角 ═══ -->
+<div class="garden-corner">
+  <svg class="garden-svg" viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5c5040"/><stop offset="100%" stop-color="#3a3228"/></linearGradient>
+      <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8e0d2"/><stop offset="100%" stop-color="#d4ccbc"/></linearGradient>
+      <linearGradient id="treeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3a5c44"/><stop offset="100%" stop-color="#2a4032"/></linearGradient>
+      <filter id="mist"><feGaussianBlur stdDeviation="3"/></filter>
+    </defs>
+    <!-- 远景山 -->
+    <path d="M300,280 Q340,240 380,260 L420,280 L420,380 L300,380Z" fill="rgba(100,115,105,.12)"/>
+    <path d="M260,290 Q300,255 350,270 L400,290 L400,380 L260,380Z" fill="rgba(90,105,95,.1)"/>
+    <!-- 树 -->
+    <ellipse cx="340" cy="280" rx="55" ry="70" fill="rgba(40,65,50,.15)" filter="url(#mist)"/>
+    <ellipse cx="370" cy="275" rx="40" ry="55" fill="rgba(45,70,55,.12)" filter="url(#mist)"/>
+    <!-- 竹子 -->
+    <line x1="310" y1="180" x2="310" y2="350" stroke="rgba(60,90,70,.25)" stroke-width="3"/>
+    <line x1="325" y1="200" x2="325" y2="355" stroke="rgba(60,90,70,.2)" stroke-width="2.5"/>
+    <line x1="295" y1="210" x2="295" y2="345" stroke="rgba(60,90,70,.18)" stroke-width="2"/>
+    <ellipse cx="310" cy="200" rx="18" ry="6" fill="rgba(60,90,70,.15)"/>
+    <ellipse cx="325" cy="215" rx="14" ry="5" fill="rgba(60,90,70,.12)"/>
+    <ellipse cx="295" cy="225" rx="14" ry="5" fill="rgba(60,90,70,.12)"/>
+    <!-- 亭子 -->
+    <g transform="translate(250,160)">
+      <!-- 柱子 -->
+      <rect x="10" y="80" width="6" height="90" fill="#7a6854" rx="2"/>
+      <rect x="90" y="80" width="6" height="90" fill="#7a6854" rx="2"/>
+      <!-- 亭身/围栏 -->
+      <rect x="4" y="100" width="100" height="4" fill="#8a7864" rx="1"/>
+      <rect x="4" y="140" width="100" height="3" fill="#8a7864" rx="1"/>
+      <!-- 飞檐屋顶 -->
+      <path d="M0,60 Q0,30 25,20 L50,0 L75,20 Q100,30 100,60 Z" fill="url(#roofGrad)"/>
+      <path d="M-8,62 Q-6,42 20,32 L50,12 L80,32 Q106,42 108,62 Z" fill="rgba(58,50,40,.5)"/>
+      <!-- 屋顶脊线 -->
+      <path d="M0,60 Q20,35 50,8 Q80,35 100,60" fill="none" stroke="rgba(180,160,120,.6)" stroke-width="1.5"/>
+      <!-- 翘角 -->
+      <path d="M0,60 Q-5,48 5,42" fill="none" stroke="rgba(180,160,120,.5)" stroke-width="1.5"/>
+      <path d="M100,60 Q105,48 95,42" fill="none" stroke="rgba(180,160,120,.5)" stroke-width="1.5"/>
+      <!-- 台基 -->
+      <rect x="-6" y="168" width="116" height="8" fill="#a89880" rx="2"/>
+    </g>
+    <!-- 石桥 -->
+    <path d="M160,310 Q190,290 220,310" fill="none" stroke="rgba(120,108,90,.3)" stroke-width="3"/>
+    <ellipse cx="190" cy="305" rx="30" ry="10" fill="none" stroke="rgba(120,108,90,.18)" stroke-width="2"/>
+    <!-- 水纹 -->
+    <path d="M140,340 Q165,335 190,340 Q215,345 240,340 Q265,335 290,340" fill="none" stroke="rgba(100,140,160,.12)" stroke-width="1.5"/>
+    <path d="M150,355 Q175,350 200,355 Q225,360 250,355 Q275,350 300,355" fill="none" stroke="rgba(100,140,160,.08)" stroke-width="1"/>
+    <!-- 远处柳树 -->
+    <path d="M90,260 Q80,220 95,200 Q85,195 90,180" fill="none" stroke="rgba(60,85,60,.18)" stroke-width="2"/>
+    <path d="M95,200 Q110,190 120,195" fill="none" stroke="rgba(60,85,60,.14)" stroke-width="1.5"/>
+    <path d="M95,200 Q80,195 75,185" fill="none" stroke="rgba(60,85,60,.14)" stroke-width="1.5"/>
+  </svg>
+</div>
+
 <nav>
   <div class="nav-inner">
     <a href="/" class="logo"><span class="dot"></span>SlowBuild Music</a>
@@ -158,16 +257,31 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
+// ═══ 动态生成雨滴 ═══
+(function(){
+  var rain=document.getElementById('rain');
+  function createDrop(){
+    var d=document.createElement('div');d.className='raindrop';
+    d.style.left=Math.random()*100+'%';
+    d.style.animationDuration=(.5+Math.random()*.8)+'s';
+    d.style.animationDelay=Math.random()*2+'s';
+    d.style.opacity=.2+Math.random()*.4;
+    rain.appendChild(d);
+    setTimeout(function(){d.remove()},2000);
+  }
+  for(var i=0;i<35;i++)createDrop();
+  setInterval(function(){if(rain.children.length<40)createDrop()},300);
+})();
+
 function doSearch(){
-  var q = document.getElementById('navSearch').value.toLowerCase();
+  var q=document.getElementById('navSearch').value.toLowerCase();
   document.querySelectorAll('.song-item,.feat-card,.rel-card').forEach(function(c){
-    c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';
+    c.style.display=c.textContent.toLowerCase().includes(q)?'':'none';
   });
-  // 显示/隐藏分区标题
   document.querySelectorAll('.song-list').forEach(function(section){
-    var visible = section.querySelectorAll('.song-item[style*="display: none"],.feat-card[style*="display: none"]').length;
-    var total = section.querySelectorAll('.song-item,.feat-card').length;
-    section.style.display = (visible === total && q) ? 'none' : '';
+    var visible=section.querySelectorAll('.song-item[style*="display: none"],.feat-card[style*="display: none"]').length;
+    var total=section.querySelectorAll('.song-item,.feat-card').length;
+    section.style.display=(visible===total&&q)?'none':'';
   });
 }
 </script>
