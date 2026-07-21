@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 529424,
+    "stars": 529848,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-20T22:54:14Z"
+    "updated": "2026-07-21T22:59:13Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 487051,
+    "stars": 487417,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-20T22:48:37Z"
+    "updated": "2026-07-21T22:52:20Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452138,
+    "stars": 452327,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-20T21:50:13Z"
+    "updated": "2026-07-21T22:05:57Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 451616,
+    "stars": 451831,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-20T22:56:11Z"
+    "updated": "2026-07-21T22:57:19Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392568,
+    "stars": 392651,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-20T22:41:02Z"
+    "updated": "2026-07-21T22:41:19Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59820,
+    "stars": 59829,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,7 +99,7 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-20T22:16:52Z"
+    "updated": "2026-07-21T22:40:21Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-20T09:36:08Z"
+    "updated": "2026-07-21T05:48:43Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43804,
+    "stars": 43827,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-20T20:58:26Z"
+    "updated": "2026-07-21T22:44:26Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40092,
+    "stars": 40095,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-20T22:09:31Z"
+    "updated": "2026-07-21T19:11:24Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39879,
+    "stars": 39887,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,24 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-20T21:15:32Z"
+    "updated": "2026-07-21T21:32:12Z"
   },
   {
-    "name": "DannyMac180/skills",
-    "description": "AI agent skills created by me: Dan McAteer",
-    "url": "https://github.com/DannyMac180/skills",
+    "name": "Lularible/storage-book",
+    "description": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — c",
+    "url": "https://github.com/Lularible/storage-book",
     "homepage": "",
     "stars": 500,
-    "language": "JavaScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-20T22:56:12Z"
-  },
-  {
-    "name": "ongridio/ongrid",
-    "description": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, L",
-    "url": "https://github.com/ongridio/ongrid",
-    "homepage": "https://ongrid.cloud",
-    "stars": 500,
-    "language": "Go",
+    "language": "C",
     "topics": [
-      "ai-agents",
-      "aiops",
-      "alerting",
-      "chatbot",
-      "chatops"
+      "book",
+      "c",
+      "data-storage",
+      "embedded-storage",
+      "filesystem"
     ],
     "source": "new",
-    "updated": "2026-07-20T12:07:15Z"
+    "updated": "2026-07-21T09:42:39Z"
   },
   {
     "name": "jimparis/qr-font",
@@ -209,25 +198,36 @@
     "updated": "2026-07-20T18:56:57Z"
   },
   {
-    "name": "stackblitz/bolt-slides",
-    "description": "Use any agent to create stunning, interactive presentations",
-    "url": "https://github.com/stackblitz/bolt-slides",
-    "homepage": "",
-    "stars": 499,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-20T21:42:25Z"
-  },
-  {
     "name": "Tencent-Hunyuan/Hy-MT2",
     "description": "",
     "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
     "homepage": "",
-    "stars": 497,
+    "stars": 499,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-20T07:28:02Z"
+    "updated": "2026-07-21T11:59:30Z"
+  },
+  {
+    "name": "WhiteNightShadow/firefox-reverse",
+    "description": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法",
+    "url": "https://github.com/WhiteNightShadow/firefox-reverse",
+    "homepage": "",
+    "stars": 499,
+    "language": "JavaScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-21T13:21:16Z"
+  },
+  {
+    "name": "lorettawillow-lele/yozu-web",
+    "description": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, app",
+    "url": "https://github.com/lorettawillow-lele/yozu-web",
+    "homepage": "https://yozu.me",
+    "stars": 498,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-21T22:42:31Z"
   }
 ]

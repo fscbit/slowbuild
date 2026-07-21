@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 487417,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐487417)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐487417)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 487417+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 487417+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 452327,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐452327)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐452327)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452327+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452327+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 451831,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐451831)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐451831)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 451831+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 451831+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-lularible-storage-book",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/Lularible/storage-book",
+    "github": "Lularible/storage-book",
+    "github_stars": 500,
+    "name": {
+      "en": "Lularible/storage-book",
+      "zh-CN": "Lularible/storage-book (GitHub ⭐500)",
+      "zh-TW": "Lularible/storage-book (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin",
+      "zh-CN": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin | GitHub 500+ Stars 开源项目",
+      "zh-TW": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-whitenightshadow-firefox-rever",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/WhiteNightShadow/firefox-reverse",
+    "github": "WhiteNightShadow/firefox-reverse",
+    "github_stars": 499,
+    "name": {
+      "en": "WhiteNightShadow/firefox-reverse",
+      "zh-CN": "WhiteNightShadow/firefox-reverse (GitHub ⭐499)",
+      "zh-TW": "WhiteNightShadow/firefox-reverse (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法",
+      "zh-CN": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-lorettawillow-lele-yozu-web",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/lorettawillow-lele/yozu-web",
+    "github": "lorettawillow-lele/yozu-web",
+    "github_stars": 498,
+    "name": {
+      "en": "lorettawillow-lele/yozu-web",
+      "zh-CN": "lorettawillow-lele/yozu-web (GitHub ⭐498)",
+      "zh-TW": "lorettawillow-lele/yozu-web (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and ",
+      "zh-CN": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and  | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and  | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
       "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 开源项目",
       "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39867,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39867)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39867)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39867+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39867+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-safijari-openpuck",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/safijari/openpuck",
-    "github": "safijari/openpuck",
-    "github_stars": 498,
-    "name": {
-      "en": "safijari/openpuck",
-      "zh-CN": "safijari/openpuck (GitHub ⭐498)",
-      "zh-TW": "safijari/openpuck (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode",
-      "zh-CN": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Opensource firmware for NRF52840 Pro Micro that copycats the Steam Controller 2 Puck and adds an Xbox and Switch mode | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jimparis-qr-font",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/jimparis/qr-font",
-    "github": "jimparis/qr-font",
-    "github_stars": 498,
-    "name": {
-      "en": "jimparis/qr-font",
-      "zh-CN": "jimparis/qr-font (GitHub ⭐498)",
-      "zh-TW": "jimparis/qr-font (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "A QR code generator in a TrueType font: https://qr.jim.sh/",
-      "zh-CN": "A QR code generator in a TrueType font: https://qr.jim.sh/ | GitHub 498+ Stars 开源项目",
-      "zh-TW": "A QR code generator in a TrueType font: https://qr.jim.sh/ | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mokeaigc-moke-vision-one",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "github": "MOKEAIGC/MOKE-Vision-One",
-    "github_stars": 497,
-    "name": {
-      "en": "MOKEAIGC/MOKE-Vision-One",
-      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
-      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nv-tlabs-ardy",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/nv-tlabs/ardy",
-    "github": "nv-tlabs/ardy",
-    "github_stars": 496,
-    "name": {
-      "en": "nv-tlabs/ardy",
-      "zh-CN": "nv-tlabs/ardy (GitHub ⭐496)",
-      "zh-TW": "nv-tlabs/ardy (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026).",
-      "zh-CN": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). | GitHub 496+ Stars 开源项目",
-      "zh-TW": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). | GitHub 496+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 528208,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐528208)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐528208)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 528208+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 528208+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
