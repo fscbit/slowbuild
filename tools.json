@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 529848,
+    "stars": 530186,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-21T22:59:13Z"
+    "updated": "2026-07-22T22:58:07Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 487417,
+    "stars": 487767,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-21T22:52:20Z"
+    "updated": "2026-07-22T22:54:38Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452327,
+    "stars": 452454,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-21T22:05:57Z"
+    "updated": "2026-07-22T22:59:27Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 451831,
+    "stars": 452015,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-21T22:57:19Z"
+    "updated": "2026-07-22T22:43:16Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392651,
+    "stars": 392734,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-21T22:41:19Z"
+    "updated": "2026-07-22T22:14:17Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59829,
+    "stars": 59840,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-21T22:40:21Z"
+    "updated": "2026-07-22T17:10:04Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44262,
+    "stars": 44261,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-21T05:48:43Z"
+    "updated": "2026-07-22T21:35:34Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43827,
+    "stars": 43836,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-21T22:44:26Z"
+    "updated": "2026-07-22T15:59:28Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40095,
+    "stars": 40107,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-21T19:11:24Z"
+    "updated": "2026-07-22T22:09:23Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39887,
+    "stars": 39901,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-21T21:32:12Z"
+    "updated": "2026-07-22T20:11:05Z"
   },
   {
-    "name": "Lularible/storage-book",
-    "description": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — c",
-    "url": "https://github.com/Lularible/storage-book",
-    "homepage": "",
-    "stars": 500,
-    "language": "C",
-    "topics": [
-      "book",
-      "c",
-      "data-storage",
-      "embedded-storage",
-      "filesystem"
-    ],
-    "source": "new",
-    "updated": "2026-07-21T09:42:39Z"
-  },
-  {
-    "name": "jimparis/qr-font",
-    "description": "A QR code generator in a TrueType font: https://qr.jim.sh/",
-    "url": "https://github.com/jimparis/qr-font",
+    "name": "taoufik123-collab/claude-watch",
+    "description": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook m",
+    "url": "https://github.com/taoufik123-collab/claude-watch",
     "homepage": "",
     "stars": 500,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-20T18:56:57Z"
+    "updated": "2026-07-22T09:57:54Z"
   },
   {
     "name": "Tencent-Hunyuan/Hy-MT2",
@@ -209,25 +192,45 @@
     "updated": "2026-07-21T11:59:30Z"
   },
   {
-    "name": "WhiteNightShadow/firefox-reverse",
-    "description": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法",
-    "url": "https://github.com/WhiteNightShadow/firefox-reverse",
+    "name": "HmnDev-Tech/shevery",
+    "description": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements.",
+    "url": "https://github.com/HmnDev-Tech/shevery",
     "homepage": "",
     "stars": 499,
-    "language": "JavaScript",
-    "topics": [],
+    "language": "Kotlin",
+    "topics": [
+      "adb",
+      "android17",
+      "dhizuku",
+      "privileges",
+      "root"
+    ],
     "source": "new",
-    "updated": "2026-07-21T13:21:16Z"
+    "updated": "2026-07-22T21:12:02Z"
   },
   {
-    "name": "lorettawillow-lele/yozu-web",
-    "description": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, app",
-    "url": "https://github.com/lorettawillow-lele/yozu-web",
-    "homepage": "https://yozu.me",
+    "name": "phuryn/pm-brain",
+    "description": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
+    "url": "https://github.com/phuryn/pm-brain",
+    "homepage": "https://www.productcompass.pm/p/pm-brain-os",
     "stars": 498,
-    "language": "TypeScript",
+    "language": "Python",
+    "topics": [
+      "claude-code",
+      "second-brain"
+    ],
+    "source": "new",
+    "updated": "2026-07-22T19:13:42Z"
+  },
+  {
+    "name": "meituan-longcat/LongCat-2.0",
+    "description": "",
+    "url": "https://github.com/meituan-longcat/LongCat-2.0",
+    "homepage": "",
+    "stars": 498,
+    "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-21T22:42:31Z"
+    "updated": "2026-07-22T10:57:44Z"
   }
 ]

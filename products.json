@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 530186,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐530186)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐530186)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 530186+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 530186+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39901,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39901)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39901)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39901+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39901+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-taoufik123-collab-claude-watch",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/taoufik123-collab/claude-watch",
+    "github": "taoufik123-collab/claude-watch",
+    "github_stars": 500,
+    "name": {
+      "en": "taoufik123-collab/claude-watch",
+      "zh-CN": "taoufik123-collab/claude-watch (GitHub ⭐500)",
+      "zh-TW": "taoufik123-collab/claude-watch (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia",
+      "zh-CN": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hmndev-tech-shevery",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/HmnDev-Tech/shevery",
+    "github": "HmnDev-Tech/shevery",
+    "github_stars": 499,
+    "name": {
+      "en": "HmnDev-Tech/shevery",
+      "zh-CN": "HmnDev-Tech/shevery (GitHub ⭐499)",
+      "zh-TW": "HmnDev-Tech/shevery (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements.",
+      "zh-CN": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-phuryn-pm-brain",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/phuryn/pm-brain",
+    "github": "phuryn/pm-brain",
+    "github_stars": 498,
+    "name": {
+      "en": "phuryn/pm-brain",
+      "zh-CN": "phuryn/pm-brain (GitHub ⭐498)",
+      "zh-TW": "phuryn/pm-brain (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
+      "zh-CN": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown | GitHub 498+ Stars 开源项目",
+      "zh-TW": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-meituan-longcat-longcat-20",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/meituan-longcat/LongCat-2.0",
+    "github": "meituan-longcat/LongCat-2.0",
+    "github_stars": 498,
+    "name": {
+      "en": "meituan-longcat/LongCat-2.0",
+      "zh-CN": "meituan-longcat/LongCat-2.0 (GitHub ⭐498)",
+      "zh-TW": "meituan-longcat/LongCat-2.0 (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "meituan-longcat/LongCat-2.0 - Open source tool",
+      "zh-CN": "meituan-longcat/LongCat-2.0 - Open source tool | GitHub 498+ Stars 开源项目",
+      "zh-TW": "meituan-longcat/LongCat-2.0 - Open source tool | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "AI agent skills created by me: Dan McAteer",
       "zh-CN": "AI agent skills created by me: Dan McAteer | GitHub 500+ Stars 开源项目",
       "zh-TW": "AI agent skills created by me: Dan McAteer | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ongridio-ongrid",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/ongridio/ongrid",
-    "github": "ongridio/ongrid",
-    "github_stars": 500,
-    "name": {
-      "en": "ongridio/ongrid",
-      "zh-CN": "ongridio/ongrid (GitHub ⭐500)",
-      "zh-TW": "ongridio/ongrid (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk.",
-      "zh-CN": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-stackblitz-bolt-slides",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/stackblitz/bolt-slides",
-    "github": "stackblitz/bolt-slides",
-    "github_stars": 499,
-    "name": {
-      "en": "stackblitz/bolt-slides",
-      "zh-CN": "stackblitz/bolt-slides (GitHub ⭐499)",
-      "zh-TW": "stackblitz/bolt-slides (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Use any agent to create stunning, interactive presentations",
-      "zh-CN": "Use any agent to create stunning, interactive presentations | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Use any agent to create stunning, interactive presentations | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tencent-hunyuan-hy-mt2",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/Tencent-Hunyuan/Hy-MT2",
-    "github": "Tencent-Hunyuan/Hy-MT2",
-    "github_stars": 497,
-    "name": {
-      "en": "Tencent-Hunyuan/Hy-MT2",
-      "zh-CN": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐497)",
-      "zh-TW": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "Tencent-Hunyuan/Hy-MT2 - Open source tool",
-      "zh-CN": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 497+ Stars 开源项目",
-      "zh-TW": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44257,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44257)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44257)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44257+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44257+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43789,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43789)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43789)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43789+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43789+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40070,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40070)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40070)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40070+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
