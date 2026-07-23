@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 530186,
+    "stars": 530815,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-22T22:58:07Z"
+    "updated": "2026-07-23T22:58:58Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 487767,
+    "stars": 488124,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-22T22:54:38Z"
+    "updated": "2026-07-23T22:58:19Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452454,
+    "stars": 452563,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-22T22:59:27Z"
+    "updated": "2026-07-23T22:47:45Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 452015,
+    "stars": 452202,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-22T22:43:16Z"
+    "updated": "2026-07-23T22:51:19Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392734,
+    "stars": 392847,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-22T22:14:17Z"
+    "updated": "2026-07-23T23:00:00Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59840,
+    "stars": 59851,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-22T17:10:04Z"
+    "updated": "2026-07-23T21:43:57Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44261,
+    "stars": 44267,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-22T21:35:34Z"
+    "updated": "2026-07-23T19:30:47Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43836,
+    "stars": 43854,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-22T15:59:28Z"
+    "updated": "2026-07-23T21:39:24Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40107,
+    "stars": 40122,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-22T22:09:23Z"
+    "updated": "2026-07-23T21:38:08Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39901,
+    "stars": 39907,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,32 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-22T20:11:05Z"
+    "updated": "2026-07-23T21:55:51Z"
   },
   {
-    "name": "taoufik123-collab/claude-watch",
-    "description": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook m",
-    "url": "https://github.com/taoufik123-collab/claude-watch",
-    "homepage": "",
+    "name": "phuryn/pm-brain",
+    "description": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
+    "url": "https://github.com/phuryn/pm-brain",
+    "homepage": "https://www.productcompass.pm/p/pm-brain-os",
     "stars": 500,
     "language": "Python",
+    "topics": [
+      "claude-code",
+      "second-brain"
+    ],
+    "source": "new",
+    "updated": "2026-07-23T06:13:42Z"
+  },
+  {
+    "name": "zarazhangrui/zarazhangrui",
+    "description": "",
+    "url": "https://github.com/zarazhangrui/zarazhangrui",
+    "homepage": "",
+    "stars": 500,
+    "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-22T09:57:54Z"
+    "updated": "2026-07-23T17:07:41Z"
   },
   {
     "name": "Tencent-Hunyuan/Hy-MT2",
@@ -192,45 +206,29 @@
     "updated": "2026-07-21T11:59:30Z"
   },
   {
-    "name": "HmnDev-Tech/shevery",
-    "description": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements.",
-    "url": "https://github.com/HmnDev-Tech/shevery",
-    "homepage": "",
-    "stars": 499,
-    "language": "Kotlin",
-    "topics": [
-      "adb",
-      "android17",
-      "dhizuku",
-      "privileges",
-      "root"
-    ],
-    "source": "new",
-    "updated": "2026-07-22T21:12:02Z"
-  },
-  {
-    "name": "phuryn/pm-brain",
-    "description": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
-    "url": "https://github.com/phuryn/pm-brain",
-    "homepage": "https://www.productcompass.pm/p/pm-brain-os",
-    "stars": 498,
-    "language": "Python",
-    "topics": [
-      "claude-code",
-      "second-brain"
-    ],
-    "source": "new",
-    "updated": "2026-07-22T19:13:42Z"
-  },
-  {
     "name": "meituan-longcat/LongCat-2.0",
     "description": "",
     "url": "https://github.com/meituan-longcat/LongCat-2.0",
     "homepage": "",
-    "stars": 498,
+    "stars": 499,
     "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-22T10:57:44Z"
+    "updated": "2026-07-23T04:26:17Z"
+  },
+  {
+    "name": "cellinlab/how-pi-agent-works",
+    "description": "Pi Agent 原理与实现",
+    "url": "https://github.com/cellinlab/how-pi-agent-works",
+    "homepage": "https://how-pi-agent-works.vercel.app",
+    "stars": 498,
+    "language": "",
+    "topics": [
+      "agent",
+      "ai",
+      "pi"
+    ],
+    "source": "new",
+    "updated": "2026-07-23T14:46:41Z"
   }
 ]

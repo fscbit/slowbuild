@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44267,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44267)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44267)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43854,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43854)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43854)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43854+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43854+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40122,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40122)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40122)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40122+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40122+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-zarazhangrui-zarazhangrui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/zarazhangrui/zarazhangrui",
+    "github": "zarazhangrui/zarazhangrui",
+    "github_stars": 500,
+    "name": {
+      "en": "zarazhangrui/zarazhangrui",
+      "zh-CN": "zarazhangrui/zarazhangrui (GitHub ⭐500)",
+      "zh-TW": "zarazhangrui/zarazhangrui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "zarazhangrui/zarazhangrui - Open source tool",
+      "zh-CN": "zarazhangrui/zarazhangrui - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "zarazhangrui/zarazhangrui - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tencent-hunyuan-hy-mt2",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+    "github": "Tencent-Hunyuan/Hy-MT2",
+    "github_stars": 499,
+    "name": {
+      "en": "Tencent-Hunyuan/Hy-MT2",
+      "zh-CN": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐499)",
+      "zh-TW": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Tencent-Hunyuan/Hy-MT2 - Open source tool",
+      "zh-CN": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cellinlab-how-pi-agent-works",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/cellinlab/how-pi-agent-works",
+    "github": "cellinlab/how-pi-agent-works",
+    "github_stars": 498,
+    "name": {
+      "en": "cellinlab/how-pi-agent-works",
+      "zh-CN": "cellinlab/how-pi-agent-works (GitHub ⭐498)",
+      "zh-TW": "cellinlab/how-pi-agent-works (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Pi Agent 原理与实现",
+      "zh-CN": "Pi Agent 原理与实现 | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Pi Agent 原理与实现 | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "A collective list of free APIs",
       "zh-CN": "A collective list of free APIs | GitHub 451831+ Stars 开源项目",
       "zh-TW": "A collective list of free APIs | GitHub 451831+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-lularible-storage-book",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/Lularible/storage-book",
-    "github": "Lularible/storage-book",
-    "github_stars": 500,
-    "name": {
-      "en": "Lularible/storage-book",
-      "zh-CN": "Lularible/storage-book (GitHub ⭐500)",
-      "zh-TW": "Lularible/storage-book (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin",
-      "zh-CN": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin | GitHub 500+ Stars 开源项目",
-      "zh-TW": "An open-source book on storage technology and file systems. From knot records to Flash physics, from FAT to LittleFS — complete with KnotFS, a teachin | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-whitenightshadow-firefox-rever",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/WhiteNightShadow/firefox-reverse",
-    "github": "WhiteNightShadow/firefox-reverse",
-    "github_stars": 499,
-    "name": {
-      "en": "WhiteNightShadow/firefox-reverse",
-      "zh-CN": "WhiteNightShadow/firefox-reverse (GitHub ⭐499)",
-      "zh-TW": "WhiteNightShadow/firefox-reverse (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法",
-      "zh-CN": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "🦊 内置 AI 逆向 Agent 的 Firefox — 通用 JS/JSVMP/WASM/签名逆向工作站，SpiderMonkey 引擎层非侵入 trace，把加密参数从黑盒还原成不依赖浏览器的纯算法 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-lorettawillow-lele-yozu-web",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/lorettawillow-lele/yozu-web",
-    "github": "lorettawillow-lele/yozu-web",
-    "github_stars": 498,
-    "name": {
-      "en": "lorettawillow-lele/yozu-web",
-      "zh-CN": "lorettawillow-lele/yozu-web (GitHub ⭐498)",
-      "zh-TW": "lorettawillow-lele/yozu-web (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and ",
-      "zh-CN": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and  | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Yozu web app scaffold for an AI travel decision and execution layer: landing, demo flow, source-backed trip options, approval-gated coordination, and  | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 392568,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐392568)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐392568)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 392568+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 392568+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59820,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59820)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59820)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59820+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59820+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-dannymac180-skills",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/DannyMac180/skills",
-    "github": "DannyMac180/skills",
-    "github_stars": 500,
-    "name": {
-      "en": "DannyMac180/skills",
-      "zh-CN": "DannyMac180/skills (GitHub ⭐500)",
-      "zh-TW": "DannyMac180/skills (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "AI agent skills created by me: Dan McAteer",
-      "zh-CN": "AI agent skills created by me: Dan McAteer | GitHub 500+ Stars 开源项目",
-      "zh-TW": "AI agent skills created by me: Dan McAteer | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
