@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 530815,
+    "stars": 531260,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-23T22:58:58Z"
+    "updated": "2026-07-24T22:59:48Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 488124,
+    "stars": 488594,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-23T22:58:19Z"
+    "updated": "2026-07-24T22:57:55Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452563,
+    "stars": 452698,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-23T22:47:45Z"
+    "updated": "2026-07-24T22:16:01Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 452202,
+    "stars": 452384,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-23T22:51:19Z"
+    "updated": "2026-07-24T22:53:42Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392847,
+    "stars": 392932,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-23T23:00:00Z"
+    "updated": "2026-07-24T22:31:30Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59851,
+    "stars": 59861,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-23T21:43:57Z"
+    "updated": "2026-07-24T21:57:55Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44267,
+    "stars": 44264,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-23T19:30:47Z"
+    "updated": "2026-07-24T19:35:01Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43854,
+    "stars": 43862,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-23T21:39:24Z"
+    "updated": "2026-07-24T21:44:44Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40122,
+    "stars": 40142,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-23T21:38:08Z"
+    "updated": "2026-07-24T21:07:37Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39907,
+    "stars": 39920,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,68 +167,65 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-23T21:55:51Z"
-  },
-  {
-    "name": "phuryn/pm-brain",
-    "description": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
-    "url": "https://github.com/phuryn/pm-brain",
-    "homepage": "https://www.productcompass.pm/p/pm-brain-os",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "claude-code",
-      "second-brain"
-    ],
-    "source": "new",
-    "updated": "2026-07-23T06:13:42Z"
-  },
-  {
-    "name": "zarazhangrui/zarazhangrui",
-    "description": "",
-    "url": "https://github.com/zarazhangrui/zarazhangrui",
-    "homepage": "",
-    "stars": 500,
-    "language": "",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-23T17:07:41Z"
+    "updated": "2026-07-24T22:43:24Z"
   },
   {
     "name": "Tencent-Hunyuan/Hy-MT2",
     "description": "",
     "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
     "homepage": "",
-    "stars": 499,
+    "stars": 500,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-21T11:59:30Z"
+    "updated": "2026-07-24T19:24:57Z"
   },
   {
-    "name": "meituan-longcat/LongCat-2.0",
-    "description": "",
-    "url": "https://github.com/meituan-longcat/LongCat-2.0",
+    "name": "OpenSenseNova/SenseNova-Vision",
+    "description": "Vision as Unified Multimodal Generation",
+    "url": "https://github.com/OpenSenseNova/SenseNova-Vision",
     "homepage": "",
-    "stars": 499,
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "mllm",
+      "mllm-for-cv",
+      "unified-cv"
+    ],
+    "source": "new",
+    "updated": "2026-07-24T11:00:31Z"
+  },
+  {
+    "name": "hustvl/Moebius",
+    "description": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance",
+    "url": "https://github.com/hustvl/Moebius",
+    "homepage": "https://hustvl.github.io/Moebius/",
+    "stars": 498,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-24T03:33:08Z"
+  },
+  {
+    "name": "J-jaeyoung/bad-epoll",
+    "description": "",
+    "url": "https://github.com/J-jaeyoung/bad-epoll",
+    "homepage": "",
+    "stars": 498,
     "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-23T04:26:17Z"
+    "updated": "2026-07-24T11:58:29Z"
   },
   {
-    "name": "cellinlab/how-pi-agent-works",
-    "description": "Pi Agent 原理与实现",
-    "url": "https://github.com/cellinlab/how-pi-agent-works",
-    "homepage": "https://how-pi-agent-works.vercel.app",
-    "stars": 498,
-    "language": "",
-    "topics": [
-      "agent",
-      "ai",
-      "pi"
-    ],
+    "name": "MOKEAIGC/MOKE-Vision-One",
+    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "homepage": "",
+    "stars": 497,
+    "language": "TypeScript",
+    "topics": [],
     "source": "new",
-    "updated": "2026-07-23T14:46:41Z"
+    "updated": "2026-07-19T09:33:44Z"
   }
 ]

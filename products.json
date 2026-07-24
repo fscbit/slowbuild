@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 392932,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐392932)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐392932)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 392932+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 392932+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 59861,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐59861)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐59861)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 59861+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 59861+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-opensensenova-sensenova-vision",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/OpenSenseNova/SenseNova-Vision",
+    "github": "OpenSenseNova/SenseNova-Vision",
+    "github_stars": 500,
+    "name": {
+      "en": "OpenSenseNova/SenseNova-Vision",
+      "zh-CN": "OpenSenseNova/SenseNova-Vision (GitHub ⭐500)",
+      "zh-TW": "OpenSenseNova/SenseNova-Vision (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Vision as Unified Multimodal Generation",
+      "zh-CN": "Vision as Unified Multimodal Generation | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Vision as Unified Multimodal Generation | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hustvl-moebius",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/hustvl/Moebius",
+    "github": "hustvl/Moebius",
+    "github_stars": 498,
+    "name": {
+      "en": "hustvl/Moebius",
+      "zh-CN": "hustvl/Moebius (GitHub ⭐498)",
+      "zh-TW": "hustvl/Moebius (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance",
+      "zh-CN": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance | GitHub 498+ Stars 开源项目",
+      "zh-TW": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-j-jaeyoung-bad-epoll",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/J-jaeyoung/bad-epoll",
+    "github": "J-jaeyoung/bad-epoll",
+    "github_stars": 498,
+    "name": {
+      "en": "J-jaeyoung/bad-epoll",
+      "zh-CN": "J-jaeyoung/bad-epoll (GitHub ⭐498)",
+      "zh-TW": "J-jaeyoung/bad-epoll (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "J-jaeyoung/bad-epoll - Open source tool",
+      "zh-CN": "J-jaeyoung/bad-epoll - Open source tool | GitHub 498+ Stars 开源项目",
+      "zh-TW": "J-jaeyoung/bad-epoll - Open source tool | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mokeaigc-moke-vision-one",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "github": "MOKEAIGC/MOKE-Vision-One",
+    "github_stars": 497,
+    "name": {
+      "en": "MOKEAIGC/MOKE-Vision-One",
+      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
+      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
+      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia",
       "zh-CN": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 开源项目",
       "zh-TW": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hmndev-tech-shevery",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/HmnDev-Tech/shevery",
-    "github": "HmnDev-Tech/shevery",
-    "github_stars": 499,
-    "name": {
-      "en": "HmnDev-Tech/shevery",
-      "zh-CN": "HmnDev-Tech/shevery (GitHub ⭐499)",
-      "zh-TW": "HmnDev-Tech/shevery (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements.",
-      "zh-CN": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Shevery - Modernized Android manager with Jetpack Compose, Material 3, and compatibility enhancements. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-phuryn-pm-brain",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/phuryn/pm-brain",
-    "github": "phuryn/pm-brain",
-    "github_stars": 498,
-    "name": {
-      "en": "phuryn/pm-brain",
-      "zh-CN": "phuryn/pm-brain (GitHub ⭐498)",
-      "zh-TW": "phuryn/pm-brain (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown",
-      "zh-CN": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown | GitHub 498+ Stars 开源项目",
-      "zh-TW": "PM Brain OS: The Second Brain for Product Managers, Made of Markdown | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-meituan-longcat-longcat-20",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/meituan-longcat/LongCat-2.0",
-    "github": "meituan-longcat/LongCat-2.0",
-    "github_stars": 498,
-    "name": {
-      "en": "meituan-longcat/LongCat-2.0",
-      "zh-CN": "meituan-longcat/LongCat-2.0 (GitHub ⭐498)",
-      "zh-TW": "meituan-longcat/LongCat-2.0 (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "meituan-longcat/LongCat-2.0 - Open source tool",
-      "zh-CN": "meituan-longcat/LongCat-2.0 - Open source tool | GitHub 498+ Stars 开源项目",
-      "zh-TW": "meituan-longcat/LongCat-2.0 - Open source tool | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 487417,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐487417)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐487417)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 487417+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 487417+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 452327,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐452327)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐452327)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452327+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452327+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 451831,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐451831)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐451831)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 451831+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 451831+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
