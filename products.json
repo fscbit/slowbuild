@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 488994,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐488994)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐488994)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 452817,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐452817)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐452817)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452817+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452817+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 452529,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐452529)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐452529)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 452529+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 452529+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-beswanglobal-beswanglobal",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/BeSwanGlobal/BeSwanGlobal",
+    "github": "BeSwanGlobal/BeSwanGlobal",
+    "github_stars": 499,
+    "name": {
+      "en": "BeSwanGlobal/BeSwanGlobal",
+      "zh-CN": "BeSwanGlobal/BeSwanGlobal (GitHub ⭐499)",
+      "zh-TW": "BeSwanGlobal/BeSwanGlobal (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "BeSwanGlobal/BeSwanGlobal - Open source tool",
+      "zh-CN": "BeSwanGlobal/BeSwanGlobal - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "BeSwanGlobal/BeSwanGlobal - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "Tencent-Hunyuan/Hy-MT2 - Open source tool",
       "zh-CN": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 开源项目",
       "zh-TW": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cellinlab-how-pi-agent-works",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/cellinlab/how-pi-agent-works",
-    "github": "cellinlab/how-pi-agent-works",
-    "github_stars": 498,
-    "name": {
-      "en": "cellinlab/how-pi-agent-works",
-      "zh-CN": "cellinlab/how-pi-agent-works (GitHub ⭐498)",
-      "zh-TW": "cellinlab/how-pi-agent-works (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Pi Agent 原理与实现",
-      "zh-CN": "Pi Agent 原理与实现 | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Pi Agent 原理与实现 | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 530186,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐530186)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐530186)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 530186+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 530186+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39901,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39901)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39901)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39901+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39901+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-taoufik123-collab-claude-watch",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/taoufik123-collab/claude-watch",
-    "github": "taoufik123-collab/claude-watch",
-    "github_stars": 500,
-    "name": {
-      "en": "taoufik123-collab/claude-watch",
-      "zh-CN": "taoufik123-collab/claude-watch (GitHub ⭐500)",
-      "zh-TW": "taoufik123-collab/claude-watch (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia",
-      "zh-CN": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Give Claude the ability to watch any video — scene-change frames + transcript + a structured report, with a 0-10s hook microscope and optional Obsidia | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

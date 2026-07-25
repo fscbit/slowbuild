@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 531260,
+    "stars": 531529,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-24T22:59:48Z"
+    "updated": "2026-07-25T22:49:52Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 488594,
+    "stars": 488994,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-24T22:57:55Z"
+    "updated": "2026-07-25T22:57:43Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452698,
+    "stars": 452817,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-24T22:16:01Z"
+    "updated": "2026-07-25T22:48:02Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 452384,
+    "stars": 452529,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-24T22:53:42Z"
+    "updated": "2026-07-25T22:53:42Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 392932,
+    "stars": 393001,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-24T22:31:30Z"
+    "updated": "2026-07-25T22:50:15Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59861,
+    "stars": 59874,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-24T21:57:55Z"
+    "updated": "2026-07-25T22:17:48Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44264,
+    "stars": 44266,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-24T19:35:01Z"
+    "updated": "2026-07-25T12:01:49Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43862,
+    "stars": 43868,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-24T21:44:44Z"
+    "updated": "2026-07-25T21:57:44Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40142,
+    "stars": 40156,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-24T21:07:37Z"
+    "updated": "2026-07-25T21:39:41Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39920,
+    "stars": 39940,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-24T22:43:24Z"
+    "updated": "2026-07-25T19:41:04Z"
   },
   {
     "name": "Tencent-Hunyuan/Hy-MT2",
@@ -181,19 +181,15 @@
     "updated": "2026-07-24T19:24:57Z"
   },
   {
-    "name": "OpenSenseNova/SenseNova-Vision",
-    "description": "Vision as Unified Multimodal Generation",
-    "url": "https://github.com/OpenSenseNova/SenseNova-Vision",
+    "name": "BeSwanGlobal/BeSwanGlobal",
+    "description": "",
+    "url": "https://github.com/BeSwanGlobal/BeSwanGlobal",
     "homepage": "",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "mllm",
-      "mllm-for-cv",
-      "unified-cv"
-    ],
+    "stars": 499,
+    "language": "",
+    "topics": [],
     "source": "new",
-    "updated": "2026-07-24T11:00:31Z"
+    "updated": "2026-07-25T17:10:30Z"
   },
   {
     "name": "hustvl/Moebius",
