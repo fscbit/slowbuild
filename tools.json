@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 531529,
+    "stars": 531831,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-25T22:49:52Z"
+    "updated": "2026-07-26T22:59:22Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 488994,
+    "stars": 489338,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-25T22:57:43Z"
+    "updated": "2026-07-26T22:51:40Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452817,
+    "stars": 452882,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -48,14 +48,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-25T22:48:02Z"
+    "updated": "2026-07-26T22:14:42Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 452529,
+    "stars": 452653,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +65,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-25T22:53:42Z"
+    "updated": "2026-07-26T22:50:10Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393001,
+    "stars": 393077,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-25T22:50:15Z"
+    "updated": "2026-07-26T22:07:53Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59874,
+    "stars": 59884,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-25T22:17:48Z"
+    "updated": "2026-07-26T22:26:23Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44266,
+    "stars": 44264,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-25T12:01:49Z"
+    "updated": "2026-07-26T16:47:19Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43868,
+    "stars": 43879,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-25T21:57:44Z"
+    "updated": "2026-07-26T19:37:00Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40156,
+    "stars": 40171,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-25T21:39:41Z"
+    "updated": "2026-07-26T22:44:05Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39940,
+    "stars": 39954,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,29 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-25T19:41:04Z"
+    "updated": "2026-07-26T19:44:16Z"
   },
   {
-    "name": "Tencent-Hunyuan/Hy-MT2",
+    "name": "J-jaeyoung/bad-epoll",
     "description": "",
-    "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
-    "homepage": "",
-    "stars": 500,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-24T19:24:57Z"
-  },
-  {
-    "name": "BeSwanGlobal/BeSwanGlobal",
-    "description": "",
-    "url": "https://github.com/BeSwanGlobal/BeSwanGlobal",
+    "url": "https://github.com/J-jaeyoung/bad-epoll",
     "homepage": "",
     "stars": 499,
     "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-25T17:10:30Z"
+    "updated": "2026-07-26T22:14:20Z"
   },
   {
     "name": "hustvl/Moebius",
@@ -203,15 +192,32 @@
     "updated": "2026-07-24T03:33:08Z"
   },
   {
-    "name": "J-jaeyoung/bad-epoll",
-    "description": "",
-    "url": "https://github.com/J-jaeyoung/bad-epoll",
-    "homepage": "",
+    "name": "skydoves/compose-nav-graph",
+    "description": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rend",
+    "url": "https://github.com/skydoves/compose-nav-graph",
+    "homepage": "https://skydoves.github.io/compose-nav-graph/",
     "stars": 498,
-    "language": "",
+    "language": "Kotlin",
+    "topics": [
+      "android",
+      "compose",
+      "compose-multiplatform",
+      "jetpack-compose",
+      "jetpack-navigation"
+    ],
+    "source": "new",
+    "updated": "2026-07-26T21:38:17Z"
+  },
+  {
+    "name": "Michael-Jetson/Robotics_Tutorial",
+    "description": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等",
+    "url": "https://github.com/Michael-Jetson/Robotics_Tutorial",
+    "homepage": "https://robotics-tutorial-wiki.vercel.app",
+    "stars": 497,
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-24T11:58:29Z"
+    "updated": "2026-07-26T11:08:03Z"
   },
   {
     "name": "MOKEAIGC/MOKE-Vision-One",

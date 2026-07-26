@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 531831,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐531831)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐531831)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 531831+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 531831+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 39954,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39954)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39954)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39954+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39954+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-skydoves-compose-nav-graph",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/skydoves/compose-nav-graph",
+    "github": "skydoves/compose-nav-graph",
+    "github_stars": 498,
+    "name": {
+      "en": "skydoves/compose-nav-graph",
+      "zh-CN": "skydoves/compose-nav-graph (GitHub ⭐498)",
+      "zh-TW": "skydoves/compose-nav-graph (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments",
+      "zh-CN": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments | GitHub 498+ Stars 开源项目",
+      "zh-TW": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-michael-jetson-roboticstutoria",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/Michael-Jetson/Robotics_Tutorial",
+    "github": "Michael-Jetson/Robotics_Tutorial",
+    "github_stars": 497,
+    "name": {
+      "en": "Michael-Jetson/Robotics_Tutorial",
+      "zh-CN": "Michael-Jetson/Robotics_Tutorial (GitHub ⭐497)",
+      "zh-TW": "Michael-Jetson/Robotics_Tutorial (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等",
+      "zh-CN": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等 | GitHub 497+ Stars 开源项目",
+      "zh-TW": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等 | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
       "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 开源项目",
       "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43854,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43854)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43854)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43854+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43854+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40122,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40122)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40122)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40122+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40122+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zarazhangrui-zarazhangrui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/zarazhangrui/zarazhangrui",
-    "github": "zarazhangrui/zarazhangrui",
-    "github_stars": 500,
-    "name": {
-      "en": "zarazhangrui/zarazhangrui",
-      "zh-CN": "zarazhangrui/zarazhangrui (GitHub ⭐500)",
-      "zh-TW": "zarazhangrui/zarazhangrui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "zarazhangrui/zarazhangrui - Open source tool",
-      "zh-CN": "zarazhangrui/zarazhangrui - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "zarazhangrui/zarazhangrui - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tencent-hunyuan-hy-mt2",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/Tencent-Hunyuan/Hy-MT2",
-    "github": "Tencent-Hunyuan/Hy-MT2",
-    "github_stars": 499,
-    "name": {
-      "en": "Tencent-Hunyuan/Hy-MT2",
-      "zh-CN": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐499)",
-      "zh-TW": "Tencent-Hunyuan/Hy-MT2 (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Tencent-Hunyuan/Hy-MT2 - Open source tool",
-      "zh-CN": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Tencent-Hunyuan/Hy-MT2 - Open source tool | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
