@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43894,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43894)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43894)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43894+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43894+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40186,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40186)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40186)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40186+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40186+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-x4gking-all-project",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/x4gKing/All-Project",
+    "github": "x4gKing/All-Project",
+    "github_stars": 499,
+    "name": {
+      "en": "x4gKing/All-Project",
+      "zh-CN": "x4gKing/All-Project (GitHub ⭐499)",
+      "zh-TW": "x4gKing/All-Project (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "x4gKing/All-Project - Open source tool",
+      "zh-CN": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ponphil-litepan",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/Ponphil/LitePan",
+    "github": "Ponphil/LitePan",
+    "github_stars": 499,
+    "name": {
+      "en": "Ponphil/LitePan",
+      "zh-CN": "Ponphil/LitePan (GitHub ⭐499)",
+      "zh-TW": "Ponphil/LitePan (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理",
+      "zh-CN": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-datagallery-lab-datafoundry",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/datagallery-lab/datafoundry",
+    "github": "datagallery-lab/datafoundry",
+    "github_stars": 498,
+    "name": {
+      "en": "datagallery-lab/datafoundry",
+      "zh-CN": "datagallery-lab/datafoundry (GitHub ⭐498)",
+      "zh-TW": "datagallery-lab/datafoundry (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for",
+      "zh-CN": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for | GitHub 498+ Stars 开源项目",
+      "zh-TW": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "A cat(1) clone with wings.",
       "zh-CN": "A cat(1) clone with wings. | GitHub 59861+ Stars 开源项目",
       "zh-TW": "A cat(1) clone with wings. | GitHub 59861+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-opensensenova-sensenova-vision",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/OpenSenseNova/SenseNova-Vision",
-    "github": "OpenSenseNova/SenseNova-Vision",
-    "github_stars": 500,
-    "name": {
-      "en": "OpenSenseNova/SenseNova-Vision",
-      "zh-CN": "OpenSenseNova/SenseNova-Vision (GitHub ⭐500)",
-      "zh-TW": "OpenSenseNova/SenseNova-Vision (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Vision as Unified Multimodal Generation",
-      "zh-CN": "Vision as Unified Multimodal Generation | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Vision as Unified Multimodal Generation | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hustvl-moebius",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/hustvl/Moebius",
-    "github": "hustvl/Moebius",
-    "github_stars": 498,
-    "name": {
-      "en": "hustvl/Moebius",
-      "zh-CN": "hustvl/Moebius (GitHub ⭐498)",
-      "zh-TW": "hustvl/Moebius (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance",
-      "zh-CN": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance | GitHub 498+ Stars 开源项目",
-      "zh-TW": "[ECCV 2026] Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-j-jaeyoung-bad-epoll",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/J-jaeyoung/bad-epoll",
-    "github": "J-jaeyoung/bad-epoll",
-    "github_stars": 498,
-    "name": {
-      "en": "J-jaeyoung/bad-epoll",
-      "zh-CN": "J-jaeyoung/bad-epoll (GitHub ⭐498)",
-      "zh-TW": "J-jaeyoung/bad-epoll (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "J-jaeyoung/bad-epoll - Open source tool",
-      "zh-CN": "J-jaeyoung/bad-epoll - Open source tool | GitHub 498+ Stars 开源项目",
-      "zh-TW": "J-jaeyoung/bad-epoll - Open source tool | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mokeaigc-moke-vision-one",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "github": "MOKEAIGC/MOKE-Vision-One",
-    "github_stars": 497,
-    "name": {
-      "en": "MOKEAIGC/MOKE-Vision-One",
-      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
-      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44267,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44267)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44267)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44267+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
