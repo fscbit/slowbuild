@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 532177,
+    "stars": 532476,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-27T22:51:21Z"
+    "updated": "2026-07-28T22:54:43Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 489687,
+    "stars": 490032,
     "language": "",
     "topics": [
       "awesome",
@@ -31,31 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-27T22:45:16Z"
-  },
-  {
-    "name": "freeCodeCamp/freeCodeCamp",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "homepage": "https://contribute.freecodecamp.org",
-    "stars": 452974,
-    "language": "TypeScript",
-    "topics": [
-      "careers",
-      "certification",
-      "community",
-      "curriculum",
-      "d3"
-    ],
-    "source": "hot",
-    "updated": "2026-07-27T22:05:24Z"
+    "updated": "2026-07-28T22:58:58Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 452891,
+    "stars": 453124,
     "language": "Python",
     "topics": [
       "api",
@@ -65,14 +48,31 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-27T22:59:15Z"
+    "updated": "2026-07-28T22:57:53Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 453055,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-07-28T22:54:51Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393149,
+    "stars": 393216,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-27T22:16:15Z"
+    "updated": "2026-07-28T22:58:00Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59895,
+    "stars": 59898,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-27T17:06:14Z"
+    "updated": "2026-07-28T17:41:48Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44269,
+    "stars": 44268,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-27T17:29:59Z"
+    "updated": "2026-07-28T19:37:34Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43894,
+    "stars": 43900,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-27T22:39:39Z"
+    "updated": "2026-07-28T19:40:46Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40186,
+    "stars": 40197,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-27T22:54:13Z"
+    "updated": "2026-07-28T21:53:49Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39969,
+    "stars": 39984,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,67 +167,85 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-27T22:26:07Z"
+    "updated": "2026-07-28T21:52:46Z"
   },
   {
-    "name": "J-jaeyoung/bad-epoll",
-    "description": "",
-    "url": "https://github.com/J-jaeyoung/bad-epoll",
-    "homepage": "",
-    "stars": 500,
-    "language": "",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-27T09:58:18Z"
-  },
-  {
-    "name": "x4gKing/All-Project",
-    "description": "",
-    "url": "https://github.com/x4gKing/All-Project",
+    "name": "dimartarmizi/OmniCloud",
+    "description": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, co",
+    "url": "https://github.com/dimartarmizi/OmniCloud",
     "homepage": "",
     "stars": 499,
-    "language": "",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-27T22:59:53Z"
-  },
-  {
-    "name": "Ponphil/LitePan",
-    "description": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理",
-    "url": "https://github.com/Ponphil/LitePan",
-    "homepage": "",
-    "stars": 499,
-    "language": "Go",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-27T17:23:23Z"
-  },
-  {
-    "name": "MOKEAIGC/MOKE-Vision-One",
-    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "homepage": "",
-    "stars": 498,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-27T19:25:31Z"
-  },
-  {
-    "name": "datagallery-lab/datafoundry",
-    "description": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime",
-    "url": "https://github.com/datagallery-lab/datafoundry",
-    "homepage": "https://datagallery-lab.github.io/datafoundry/",
-    "stars": 498,
-    "language": "TypeScript",
+    "language": "JavaScript",
     "topics": [
-      "ag-ui",
-      "agent-runtime",
-      "ai",
-      "ai-agents",
-      "data-analysis"
+      "express",
+      "nodejs",
+      "s3-storage",
+      "storage",
+      "vuejs"
     ],
     "source": "new",
-    "updated": "2026-07-27T20:11:42Z"
+    "updated": "2026-07-28T22:54:47Z"
+  },
+  {
+    "name": "skydoves/compose-nav-graph",
+    "description": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rend",
+    "url": "https://github.com/skydoves/compose-nav-graph",
+    "homepage": "https://skydoves.github.io/compose-nav-graph/",
+    "stars": 499,
+    "language": "Kotlin",
+    "topics": [
+      "android",
+      "compose",
+      "compose-multiplatform",
+      "jetpack-compose",
+      "jetpack-navigation"
+    ],
+    "source": "new",
+    "updated": "2026-07-28T09:40:26Z"
+  },
+  {
+    "name": "ziwang-Physics/AgentChat",
+    "description": "",
+    "url": "https://github.com/ziwang-Physics/AgentChat",
+    "homepage": "",
+    "stars": 499,
+    "language": "JavaScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-28T16:53:26Z"
+  },
+  {
+    "name": "xichan96/dinotty",
+    "description": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plug",
+    "url": "https://github.com/xichan96/dinotty",
+    "homepage": "",
+    "stars": 498,
+    "language": "Rust",
+    "topics": [
+      "ai-coding",
+      "axum",
+      "claude-code",
+      "codex",
+      "coding-agent"
+    ],
+    "source": "new",
+    "updated": "2026-07-28T13:24:13Z"
+  },
+  {
+    "name": "VILA-Lab/FigMirror",
+    "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+    "url": "https://github.com/VILA-Lab/FigMirror",
+    "homepage": "",
+    "stars": 497,
+    "language": "Python",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "data-visualization"
+    ],
+    "source": "new",
+    "updated": "2026-07-27T21:23:15Z"
   }
 ]

@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44268,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44268)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44268)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-dimartarmizi-omnicloud",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/dimartarmizi/OmniCloud",
+    "github": "dimartarmizi/OmniCloud",
+    "github_stars": 499,
+    "name": {
+      "en": "dimartarmizi/OmniCloud",
+      "zh-CN": "dimartarmizi/OmniCloud (GitHub ⭐499)",
+      "zh-TW": "dimartarmizi/OmniCloud (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace.",
+      "zh-CN": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ziwang-physics-agentchat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/ziwang-Physics/AgentChat",
+    "github": "ziwang-Physics/AgentChat",
+    "github_stars": 499,
+    "name": {
+      "en": "ziwang-Physics/AgentChat",
+      "zh-CN": "ziwang-Physics/AgentChat (GitHub ⭐499)",
+      "zh-TW": "ziwang-Physics/AgentChat (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "ziwang-Physics/AgentChat - Open source tool",
+      "zh-CN": "ziwang-Physics/AgentChat - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "ziwang-Physics/AgentChat - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-xichan96-dinotty",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/xichan96/dinotty",
+    "github": "xichan96/dinotty",
+    "github_stars": 498,
+    "name": {
+      "en": "xichan96/dinotty",
+      "zh-CN": "xichan96/dinotty (GitHub ⭐498)",
+      "zh-TW": "xichan96/dinotty (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted.",
+      "zh-CN": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted. | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted. | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vila-lab-figmirror",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/VILA-Lab/FigMirror",
+    "github": "VILA-Lab/FigMirror",
+    "github_stars": 497,
+    "name": {
+      "en": "VILA-Lab/FigMirror",
+      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐497)",
+      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 开源项目",
+      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-fd",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "😎 Awesome lists about all kinds of interesting topics",
       "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 开源项目",
       "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 452817,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐452817)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐452817)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452817+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 452817+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 452529,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐452529)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐452529)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 452529+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 452529+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-beswanglobal-beswanglobal",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/BeSwanGlobal/BeSwanGlobal",
-    "github": "BeSwanGlobal/BeSwanGlobal",
-    "github_stars": 499,
-    "name": {
-      "en": "BeSwanGlobal/BeSwanGlobal",
-      "zh-CN": "BeSwanGlobal/BeSwanGlobal (GitHub ⭐499)",
-      "zh-TW": "BeSwanGlobal/BeSwanGlobal (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "BeSwanGlobal/BeSwanGlobal - Open source tool",
-      "zh-CN": "BeSwanGlobal/BeSwanGlobal - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "BeSwanGlobal/BeSwanGlobal - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 392932,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐392932)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐392932)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 392932+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 392932+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59861,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59861)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59861)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59861+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59861+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
