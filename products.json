@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 453338,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐453338)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐453338)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 453338+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 453338+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 453125,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453125)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453125)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453125+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453125+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 393282,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐393282)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐393282)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 393282+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 393282+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 59916,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐59916)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐59916)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 59916+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 59916+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-yoheinakajima-activegraph",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/yoheinakajima/activegraph",
+    "github": "yoheinakajima/activegraph",
+    "github_stars": 500,
+    "name": {
+      "en": "yoheinakajima/activegraph",
+      "zh-CN": "yoheinakajima/activegraph (GitHub ⭐500)",
+      "zh-TW": "yoheinakajima/activegraph (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Event-sourced graph runtime for durable and stateful agents",
+      "zh-CN": "Event-sourced graph runtime for durable and stateful agents | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Event-sourced graph runtime for durable and stateful agents | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-rayfish-rayfish",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/rayfish/rayfish",
+    "github": "rayfish/rayfish",
+    "github_stars": 500,
+    "name": {
+      "en": "rayfish/rayfish",
+      "zh-CN": "rayfish/rayfish (GitHub ⭐500)",
+      "zh-TW": "rayfish/rayfish (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "P2P mesh VPN powered by iroh",
+      "zh-CN": "P2P mesh VPN powered by iroh | GitHub 500+ Stars 开源项目",
+      "zh-TW": "P2P mesh VPN powered by iroh | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-scottstts-threejs-awesome-grap",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/scottstts/Threejs-Awesome-Graphics-Agent-Skills",
+    "github": "scottstts/Threejs-Awesome-Graphics-Agent-Skills",
+    "github_stars": 498,
+    "name": {
+      "en": "scottstts/Threejs-Awesome-Graphics-Agent-Skills",
+      "zh-CN": "scottstts/Threejs-Awesome-Graphics-Agent-Skills (GitHub ⭐498)",
+      "zh-TW": "scottstts/Threejs-Awesome-Graphics-Agent-Skills (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "A three.js agent skills for producing awesome graphics for scenes and games",
+      "zh-CN": "A three.js agent skills for producing awesome graphics for scenes and games | GitHub 498+ Stars 开源项目",
+      "zh-TW": "A three.js agent skills for producing awesome graphics for scenes and games | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "x4gKing/All-Project - Open source tool",
       "zh-CN": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 开源项目",
       "zh-TW": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ponphil-litepan",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/Ponphil/LitePan",
-    "github": "Ponphil/LitePan",
-    "github_stars": 499,
-    "name": {
-      "en": "Ponphil/LitePan",
-      "zh-CN": "Ponphil/LitePan (GitHub ⭐499)",
-      "zh-TW": "Ponphil/LitePan (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理",
-      "zh-CN": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "LitePan - 多网盘聚合与管理工具，支持 WebDAV、STRM、媒体整理 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-datagallery-lab-datafoundry",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/datagallery-lab/datafoundry",
-    "github": "datagallery-lab/datafoundry",
-    "github_stars": 498,
-    "name": {
-      "en": "datagallery-lab/datafoundry",
-      "zh-CN": "datagallery-lab/datafoundry (GitHub ⭐498)",
-      "zh-TW": "datagallery-lab/datafoundry (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for",
-      "zh-CN": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for | GitHub 498+ Stars 开源项目",
-      "zh-TW": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 531831,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐531831)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐531831)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 531831+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 531831+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 39954,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐39954)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐39954)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 39954+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 39954+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-skydoves-compose-nav-graph",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/skydoves/compose-nav-graph",
-    "github": "skydoves/compose-nav-graph",
-    "github_stars": 498,
-    "name": {
-      "en": "skydoves/compose-nav-graph",
-      "zh-CN": "skydoves/compose-nav-graph (GitHub ⭐498)",
-      "zh-TW": "skydoves/compose-nav-graph (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments",
-      "zh-CN": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments | GitHub 498+ Stars 开源项目",
-      "zh-TW": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rendered previews, typed arguments | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-michael-jetson-roboticstutoria",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Michael-Jetson/Robotics_Tutorial",
-    "github": "Michael-Jetson/Robotics_Tutorial",
-    "github_stars": 497,
-    "name": {
-      "en": "Michael-Jetson/Robotics_Tutorial",
-      "zh-CN": "Michael-Jetson/Robotics_Tutorial (GitHub ⭐497)",
-      "zh-TW": "Michael-Jetson/Robotics_Tutorial (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等",
-      "zh-CN": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "体系化的机器人教学文档，涵盖数学基础、C++进阶、规划控制、SLAM等 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 488994,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐488994)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐488994)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 488994+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

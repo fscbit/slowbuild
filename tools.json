@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 532476,
+    "stars": 532775,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-28T22:54:43Z"
+    "updated": "2026-07-29T22:56:07Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 490032,
+    "stars": 490405,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-28T22:58:58Z"
+    "updated": "2026-07-29T22:50:48Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 453124,
+    "stars": 453338,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-28T22:57:53Z"
+    "updated": "2026-07-29T22:52:27Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453055,
+    "stars": 453125,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-28T22:54:51Z"
+    "updated": "2026-07-29T22:16:40Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393216,
+    "stars": 393282,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-28T22:58:00Z"
+    "updated": "2026-07-29T22:57:42Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59898,
+    "stars": 59916,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-28T17:41:48Z"
+    "updated": "2026-07-29T21:27:37Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44268,
+    "stars": 44271,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-28T19:37:34Z"
+    "updated": "2026-07-29T17:51:52Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43900,
+    "stars": 43908,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-28T19:40:46Z"
+    "updated": "2026-07-29T21:42:18Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40197,
+    "stars": 40220,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-28T21:53:49Z"
+    "updated": "2026-07-29T22:10:56Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39984,
+    "stars": 39998,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,31 +167,48 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-28T21:52:46Z"
+    "updated": "2026-07-29T21:54:42Z"
   },
   {
-    "name": "dimartarmizi/OmniCloud",
-    "description": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, co",
-    "url": "https://github.com/dimartarmizi/OmniCloud",
-    "homepage": "",
-    "stars": 499,
-    "language": "JavaScript",
+    "name": "yoheinakajima/activegraph",
+    "description": "Event-sourced graph runtime for durable and stateful agents",
+    "url": "https://github.com/yoheinakajima/activegraph",
+    "homepage": "https://activegraph.ai",
+    "stars": 500,
+    "language": "Python",
     "topics": [
-      "express",
-      "nodejs",
-      "s3-storage",
-      "storage",
-      "vuejs"
+      "agentic-ai",
+      "agents",
+      "ai",
+      "ai-agents",
+      "event-sourcing"
     ],
     "source": "new",
-    "updated": "2026-07-28T22:54:47Z"
+    "updated": "2026-07-29T22:09:38Z"
+  },
+  {
+    "name": "rayfish/rayfish",
+    "description": "P2P mesh VPN powered by iroh",
+    "url": "https://github.com/rayfish/rayfish",
+    "homepage": "https://rayfish.xyz",
+    "stars": 500,
+    "language": "Rust",
+    "topics": [
+      "iroh",
+      "quic",
+      "rust",
+      "trustless",
+      "vpn"
+    ],
+    "source": "new",
+    "updated": "2026-07-29T20:54:23Z"
   },
   {
     "name": "skydoves/compose-nav-graph",
     "description": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rend",
     "url": "https://github.com/skydoves/compose-nav-graph",
     "homepage": "https://skydoves.github.io/compose-nav-graph/",
-    "stars": 499,
+    "stars": 500,
     "language": "Kotlin",
     "topics": [
       "android",
@@ -201,35 +218,18 @@
       "jetpack-navigation"
     ],
     "source": "new",
-    "updated": "2026-07-28T09:40:26Z"
+    "updated": "2026-07-28T23:02:23Z"
   },
   {
-    "name": "ziwang-Physics/AgentChat",
-    "description": "",
-    "url": "https://github.com/ziwang-Physics/AgentChat",
+    "name": "scottstts/Threejs-Awesome-Graphics-Agent-Skills",
+    "description": "A three.js agent skills for producing awesome graphics for scenes and games",
+    "url": "https://github.com/scottstts/Threejs-Awesome-Graphics-Agent-Skills",
     "homepage": "",
-    "stars": 499,
+    "stars": 498,
     "language": "JavaScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-28T16:53:26Z"
-  },
-  {
-    "name": "xichan96/dinotty",
-    "description": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plug",
-    "url": "https://github.com/xichan96/dinotty",
-    "homepage": "",
-    "stars": 498,
-    "language": "Rust",
-    "topics": [
-      "ai-coding",
-      "axum",
-      "claude-code",
-      "codex",
-      "coding-agent"
-    ],
-    "source": "new",
-    "updated": "2026-07-28T13:24:13Z"
+    "updated": "2026-07-29T19:36:46Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
