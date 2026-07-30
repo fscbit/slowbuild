@@ -417,6 +417,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-deja-vu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-deja-vu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-dinotty.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -433,6 +443,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-edgeever.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-figmirror.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-figmirror.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

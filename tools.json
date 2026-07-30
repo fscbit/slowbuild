@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 532775,
+    "stars": 533069,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-29T22:56:07Z"
+    "updated": "2026-07-30T22:59:26Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 490405,
+    "stars": 490727,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-29T22:50:48Z"
+    "updated": "2026-07-30T22:59:39Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 453338,
+    "stars": 453652,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-29T22:52:27Z"
+    "updated": "2026-07-30T22:55:32Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453125,
+    "stars": 453214,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-29T22:16:40Z"
+    "updated": "2026-07-30T22:52:46Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393282,
+    "stars": 393364,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-29T22:57:42Z"
+    "updated": "2026-07-30T22:43:57Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59916,
+    "stars": 59935,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-29T21:27:37Z"
+    "updated": "2026-07-30T22:47:54Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44271,
+    "stars": 44270,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-29T17:51:52Z"
+    "updated": "2026-07-30T22:45:04Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43908,
+    "stars": 43919,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-29T21:42:18Z"
+    "updated": "2026-07-30T21:24:34Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40220,
+    "stars": 40241,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-29T22:10:56Z"
+    "updated": "2026-07-30T22:13:24Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 39998,
+    "stars": 40009,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,69 +167,46 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-29T21:54:42Z"
+    "updated": "2026-07-30T17:43:58Z"
   },
   {
-    "name": "yoheinakajima/activegraph",
-    "description": "Event-sourced graph runtime for durable and stateful agents",
-    "url": "https://github.com/yoheinakajima/activegraph",
-    "homepage": "https://activegraph.ai",
+    "name": "di-sukharev/vibe",
+    "description": "God's chosen objectively true vibecoding template 🛕",
+    "url": "https://github.com/di-sukharev/vibe",
+    "homepage": "https://vibe.sukharev.dev",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "agentic-ai",
-      "agents",
-      "ai",
-      "ai-agents",
-      "event-sourcing"
-    ],
-    "source": "new",
-    "updated": "2026-07-29T22:09:38Z"
-  },
-  {
-    "name": "rayfish/rayfish",
-    "description": "P2P mesh VPN powered by iroh",
-    "url": "https://github.com/rayfish/rayfish",
-    "homepage": "https://rayfish.xyz",
-    "stars": 500,
-    "language": "Rust",
-    "topics": [
-      "iroh",
-      "quic",
-      "rust",
-      "trustless",
-      "vpn"
-    ],
-    "source": "new",
-    "updated": "2026-07-29T20:54:23Z"
-  },
-  {
-    "name": "skydoves/compose-nav-graph",
-    "description": "⛵️ Compose Navigation Graph plugin for Android Studio that visualizes your entire app flow as an interactive map of rend",
-    "url": "https://github.com/skydoves/compose-nav-graph",
-    "homepage": "https://skydoves.github.io/compose-nav-graph/",
-    "stars": 500,
-    "language": "Kotlin",
-    "topics": [
-      "android",
-      "compose",
-      "compose-multiplatform",
-      "jetpack-compose",
-      "jetpack-navigation"
-    ],
-    "source": "new",
-    "updated": "2026-07-28T23:02:23Z"
-  },
-  {
-    "name": "scottstts/Threejs-Awesome-Graphics-Agent-Skills",
-    "description": "A three.js agent skills for producing awesome graphics for scenes and games",
-    "url": "https://github.com/scottstts/Threejs-Awesome-Graphics-Agent-Skills",
-    "homepage": "",
-    "stars": 498,
-    "language": "JavaScript",
+    "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-29T19:36:46Z"
+    "updated": "2026-07-30T22:42:51Z"
+  },
+  {
+    "name": "vshulcz/deja-vu",
+    "description": "Your agents already solved this. deja finds it — it indexes the sessions your coding agents already wrote to disk, month",
+    "url": "https://github.com/vshulcz/deja-vu",
+    "homepage": "https://vshulcz.github.io/deja-vu/",
+    "stars": 500,
+    "language": "Go",
+    "topics": [
+      "agent-memory",
+      "ai-memory",
+      "claude",
+      "claude-code",
+      "cli"
+    ],
+    "source": "new",
+    "updated": "2026-07-30T22:56:04Z"
+  },
+  {
+    "name": "dama-cyber/Casting-Workflow",
+    "description": "",
+    "url": "https://github.com/dama-cyber/Casting-Workflow",
+    "homepage": "",
+    "stars": 498,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-30T08:15:40Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
@@ -247,5 +224,16 @@
     ],
     "source": "new",
     "updated": "2026-07-27T21:23:15Z"
+  },
+  {
+    "name": "Jia-Ethan/claude-keysmith",
+    "description": "Claude Code CLAUDE.md import-block installer for local instruction files",
+    "url": "https://github.com/Jia-Ethan/claude-keysmith",
+    "homepage": "",
+    "stars": 497,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-07-30T19:11:48Z"
   }
 ]

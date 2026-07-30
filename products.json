@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 533069,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐533069)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐533069)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 533069+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 533069+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 490727,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐490727)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐490727)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 490727+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 490727+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40009,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40009)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40009)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40009+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40009+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-di-sukharev-vibe",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/di-sukharev/vibe",
+    "github": "di-sukharev/vibe",
+    "github_stars": 500,
+    "name": {
+      "en": "di-sukharev/vibe",
+      "zh-CN": "di-sukharev/vibe (GitHub ⭐500)",
+      "zh-TW": "di-sukharev/vibe (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "God's chosen objectively true vibecoding template 🛕",
+      "zh-CN": "God's chosen objectively true vibecoding template 🛕 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "God's chosen objectively true vibecoding template 🛕 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vshulcz-deja-vu",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/vshulcz/deja-vu",
+    "github": "vshulcz/deja-vu",
+    "github_stars": 500,
+    "name": {
+      "en": "vshulcz/deja-vu",
+      "zh-CN": "vshulcz/deja-vu (GitHub ⭐500)",
+      "zh-TW": "vshulcz/deja-vu (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Your agents already solved this. deja finds it — it indexes the sessions your coding agents already wrote to disk, months of history from before you i",
+      "zh-CN": "Your agents already solved this. deja finds it — it indexes the sessions your coding agents already wrote to disk, months of history from before you i | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Your agents already solved this. deja finds it — it indexes the sessions your coding agents already wrote to disk, months of history from before you i | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-dama-cyber-casting-workflow",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/dama-cyber/Casting-Workflow",
+    "github": "dama-cyber/Casting-Workflow",
+    "github_stars": 498,
+    "name": {
+      "en": "dama-cyber/Casting-Workflow",
+      "zh-CN": "dama-cyber/Casting-Workflow (GitHub ⭐498)",
+      "zh-TW": "dama-cyber/Casting-Workflow (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "dama-cyber/Casting-Workflow - Open source tool",
+      "zh-CN": "dama-cyber/Casting-Workflow - Open source tool | GitHub 498+ Stars 开源项目",
+      "zh-TW": "dama-cyber/Casting-Workflow - Open source tool | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jia-ethan-claude-keysmith",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/Jia-Ethan/claude-keysmith",
+    "github": "Jia-Ethan/claude-keysmith",
+    "github_stars": 497,
+    "name": {
+      "en": "Jia-Ethan/claude-keysmith",
+      "zh-CN": "Jia-Ethan/claude-keysmith (GitHub ⭐497)",
+      "zh-TW": "Jia-Ethan/claude-keysmith (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "Claude Code CLAUDE.md import-block installer for local instruction files",
+      "zh-CN": "Claude Code CLAUDE.md import-block installer for local instruction files | GitHub 497+ Stars 开源项目",
+      "zh-TW": "Claude Code CLAUDE.md import-block installer for local instruction files | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
       "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 开源项目",
       "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-dimartarmizi-omnicloud",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/dimartarmizi/OmniCloud",
-    "github": "dimartarmizi/OmniCloud",
-    "github_stars": 499,
-    "name": {
-      "en": "dimartarmizi/OmniCloud",
-      "zh-CN": "dimartarmizi/OmniCloud (GitHub ⭐499)",
-      "zh-TW": "dimartarmizi/OmniCloud (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace.",
-      "zh-CN": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "OmniCloud is a full-stack cloud drive aggregation platform that presents multiple storage providers through a single, consistent workspace. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ziwang-physics-agentchat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/ziwang-Physics/AgentChat",
-    "github": "ziwang-Physics/AgentChat",
-    "github_stars": 499,
-    "name": {
-      "en": "ziwang-Physics/AgentChat",
-      "zh-CN": "ziwang-Physics/AgentChat (GitHub ⭐499)",
-      "zh-TW": "ziwang-Physics/AgentChat (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "ziwang-Physics/AgentChat - Open source tool",
-      "zh-CN": "ziwang-Physics/AgentChat - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "ziwang-Physics/AgentChat - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-xichan96-dinotty",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/xichan96/dinotty",
-    "github": "xichan96/dinotty",
-    "github_stars": 498,
-    "name": {
-      "en": "xichan96/dinotty",
-      "zh-CN": "xichan96/dinotty (GitHub ⭐498)",
-      "zh-TW": "xichan96/dinotty (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted.",
-      "zh-CN": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted. | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted. | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vila-lab-figmirror",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/VILA-Lab/FigMirror",
-    "github": "VILA-Lab/FigMirror",
-    "github_stars": 497,
-    "name": {
-      "en": "VILA-Lab/FigMirror",
-      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐497)",
-      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 开源项目",
-      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43894,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43894)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43894)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43894+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43894+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40186,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40186)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40186)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40186+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40186+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-x4gking-all-project",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/x4gKing/All-Project",
-    "github": "x4gKing/All-Project",
-    "github_stars": 499,
-    "name": {
-      "en": "x4gKing/All-Project",
-      "zh-CN": "x4gKing/All-Project (GitHub ⭐499)",
-      "zh-TW": "x4gKing/All-Project (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "x4gKing/All-Project - Open source tool",
-      "zh-CN": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "x4gKing/All-Project - Open source tool | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
