@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 533393,
+    "stars": 534050,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-07-31T22:59:14Z"
+    "updated": "2026-08-01T22:56:27Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 491011,
+    "stars": 491281,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-07-31T22:58:36Z"
+    "updated": "2026-08-01T22:58:47Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 453828,
+    "stars": 453987,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-07-31T22:57:25Z"
+    "updated": "2026-08-01T22:49:20Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453282,
+    "stars": 453324,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-07-31T22:35:35Z"
+    "updated": "2026-08-01T22:58:06Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393435,
+    "stars": 393508,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-07-31T22:51:33Z"
+    "updated": "2026-08-01T22:26:47Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 59958,
+    "stars": 59977,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-07-31T20:13:37Z"
+    "updated": "2026-08-01T22:19:22Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44269,
+    "stars": 44268,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-07-31T20:20:41Z"
+    "updated": "2026-08-01T22:06:26Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43933,
+    "stars": 43944,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-07-31T22:40:48Z"
+    "updated": "2026-08-01T22:12:19Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40257,
+    "stars": 40270,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-07-31T18:13:58Z"
+    "updated": "2026-08-01T21:39:27Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40025,
+    "stars": 40038,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,69 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-07-31T22:36:54Z"
+    "updated": "2026-08-01T19:52:41Z"
   },
   {
-    "name": "dama-cyber/Casting-Workflow",
-    "description": "",
-    "url": "https://github.com/dama-cyber/Casting-Workflow",
+    "name": "facebookresearch/meshflow",
+    "description": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Tran",
+    "url": "https://github.com/facebookresearch/meshflow",
     "homepage": "",
-    "stars": 499,
+    "stars": 498,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-31T03:39:29Z"
+    "updated": "2026-08-01T21:36:45Z"
+  },
+  {
+    "name": "manyougz/velotype",
+    "description": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡",
+    "url": "https://github.com/manyougz/velotype",
+    "homepage": "",
+    "stars": 498,
+    "language": "Rust",
+    "topics": [
+      "editor",
+      "gpui",
+      "markdown",
+      "native-ui",
+      "rust-lang"
+    ],
+    "source": "new",
+    "updated": "2026-08-01T21:32:59Z"
+  },
+  {
+    "name": "secureagentics/Adrian",
+    "description": "Open-source runtime AI agent security tool - monitors and controls AI agents, catching malicious tool use, prompt inject",
+    "url": "https://github.com/secureagentics/Adrian",
+    "homepage": "https://secureagentics.ai",
+    "stars": 498,
+    "language": "Python",
+    "topics": [
+      "aarm",
+      "agent-security",
+      "agentic-ai",
+      "agentic-security",
+      "agents"
+    ],
+    "source": "new",
+    "updated": "2026-08-01T19:58:55Z"
+  },
+  {
+    "name": "Tura-AI/tura",
+    "description": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the ",
+    "url": "https://github.com/Tura-AI/tura",
+    "homepage": "https://turaai.net/",
+    "stars": 498,
+    "language": "Rust",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "coding-agent",
+      "context-engineering",
+      "developer-tools"
+    ],
+    "source": "new",
+    "updated": "2026-08-01T15:30:37Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
@@ -196,44 +247,5 @@
     ],
     "source": "new",
     "updated": "2026-07-27T21:23:15Z"
-  },
-  {
-    "name": "MOKEAIGC/MOKE-Vision-One",
-    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "homepage": "",
-    "stars": 497,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-29T16:38:07Z"
-  },
-  {
-    "name": "facebookresearch/meshflow",
-    "description": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Tran",
-    "url": "https://github.com/facebookresearch/meshflow",
-    "homepage": "",
-    "stars": 496,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-07-31T14:36:36Z"
-  },
-  {
-    "name": "manyougz/velotype",
-    "description": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡",
-    "url": "https://github.com/manyougz/velotype",
-    "homepage": "",
-    "stars": 496,
-    "language": "Rust",
-    "topics": [
-      "editor",
-      "gpui",
-      "markdown",
-      "native-ui",
-      "rust-lang"
-    ],
-    "source": "new",
-    "updated": "2026-07-31T10:00:57Z"
   }
 ]
