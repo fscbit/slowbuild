@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 454107,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐454107)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐454107)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 454107+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 454107+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 453354,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453354)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453354)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-accio-lab-dressage",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/Accio-Lab/Dressage",
+    "github": "Accio-Lab/Dressage",
+    "github_stars": 500,
+    "name": {
+      "en": "Accio-Lab/Dressage",
+      "zh-CN": "Accio-Lab/Dressage (GitHub ⭐500)",
+      "zh-TW": "Accio-Lab/Dressage (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Scalable Agentic RL for Any Agent and Sandbox.",
+      "zh-CN": "Scalable Agentic RL for Any Agent and Sandbox. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Scalable Agentic RL for Any Agent and Sandbox. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tutusagi-ai-fishing-game",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/tutusagi/ai-fishing-game",
+    "github": "tutusagi/ai-fishing-game",
+    "github_stars": 500,
+    "name": {
+      "en": "tutusagi/ai-fishing-game",
+      "zh-CN": "tutusagi/ai-fishing-game (GitHub ⭐500)",
+      "zh-TW": "tutusagi/ai-fishing-game (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼",
+      "zh-CN": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡",
       "zh-CN": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡ | GitHub 496+ Stars 开源项目",
       "zh-TW": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡ | GitHub 496+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 533069,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐533069)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐533069)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 533069+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 533069+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 490727,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐490727)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐490727)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 490727+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 490727+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40009,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40009)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40009)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40009+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40009+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-di-sukharev-vibe",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/di-sukharev/vibe",
-    "github": "di-sukharev/vibe",
-    "github_stars": 500,
-    "name": {
-      "en": "di-sukharev/vibe",
-      "zh-CN": "di-sukharev/vibe (GitHub ⭐500)",
-      "zh-TW": "di-sukharev/vibe (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "God's chosen objectively true vibecoding template 🛕",
-      "zh-CN": "God's chosen objectively true vibecoding template 🛕 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "God's chosen objectively true vibecoding template 🛕 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
