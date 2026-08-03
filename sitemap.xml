@@ -417,12 +417,32 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-databuff.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-databuff.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-datafoundry.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-datafoundry.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-deepagent-code.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-deepagent-code.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

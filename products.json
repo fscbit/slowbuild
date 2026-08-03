@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 535634,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐535634)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐535634)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 535634+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 535634+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 492076,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐492076)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐492076)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40064,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40064)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40064)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40064+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40064+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-databufflabs-databuff",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/databufflabs/databuff",
+    "github": "databufflabs/databuff",
+    "github_stars": 500,
+    "name": {
+      "en": "databufflabs/databuff",
+      "zh-CN": "databufflabs/databuff (GitHub ⭐500)",
+      "zh-TW": "databufflabs/databuff (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology",
+      "zh-CN": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology | GitHub 500+ Stars 开源项目",
+      "zh-TW": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-davidondrej-jailbreak-autorese",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/davidondrej/jailbreak-autoresearch",
+    "github": "davidondrej/jailbreak-autoresearch",
+    "github_stars": 500,
+    "name": {
+      "en": "davidondrej/jailbreak-autoresearch",
+      "zh-CN": "davidondrej/jailbreak-autoresearch (GitHub ⭐500)",
+      "zh-TW": "davidondrej/jailbreak-autoresearch (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "We shall set the models free.",
+      "zh-CN": "We shall set the models free. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "We shall set the models free. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-deepagent-ltd-deepagent-code",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/deepagent-ltd/deepagent-code",
+    "github": "deepagent-ltd/deepagent-code",
+    "github_stars": 499,
+    "name": {
+      "en": "deepagent-ltd/deepagent-code",
+      "zh-CN": "deepagent-ltd/deepagent-code (GitHub ⭐499)",
+      "zh-TW": "deepagent-ltd/deepagent-code (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "DeepAgent Code: AI coding agent with persistent memory and control plane",
+      "zh-CN": "DeepAgent Code: AI coding agent with persistent memory and control plane | GitHub 499+ Stars 开源项目",
+      "zh-TW": "DeepAgent Code: AI coding agent with persistent memory and control plane | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16.",
       "zh-CN": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16. | GitHub 498+ Stars 开源项目",
       "zh-TW": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16. | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43933,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43933)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43933)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43933+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43933+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40257,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40257)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40257)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40257+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40257+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vila-lab-figmirror",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/VILA-Lab/FigMirror",
-    "github": "VILA-Lab/FigMirror",
-    "github_stars": 497,
-    "name": {
-      "en": "VILA-Lab/FigMirror",
-      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐497)",
-      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 开源项目",
-      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mokeaigc-moke-vision-one",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "github": "MOKEAIGC/MOKE-Vision-One",
-    "github_stars": 497,
-    "name": {
-      "en": "MOKEAIGC/MOKE-Vision-One",
-      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
-      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-facebookresearch-meshflow",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/facebookresearch/meshflow",
-    "github": "facebookresearch/meshflow",
-    "github_stars": 496,
-    "name": {
-      "en": "facebookresearch/meshflow",
-      "zh-CN": "facebookresearch/meshflow (GitHub ⭐496)",
-      "zh-TW": "facebookresearch/meshflow (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T",
-      "zh-CN": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 496+ Stars 开源项目",
-      "zh-TW": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 496+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-manyougz-velotype",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/manyougz/velotype",
-    "github": "manyougz/velotype",
-    "github_stars": 496,
-    "name": {
-      "en": "manyougz/velotype",
-      "zh-CN": "manyougz/velotype (GitHub ⭐496)",
-      "zh-TW": "manyougz/velotype (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡",
-      "zh-CN": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡ | GitHub 496+ Stars 开源项目",
-      "zh-TW": "Write at the speed of thought – Velotype is a high-performance native Markdown editor built with Rust and GPUI.⚡ | GitHub 496+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
