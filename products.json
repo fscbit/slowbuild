@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 43969,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐43969)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐43969)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43969+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43969+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40321,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40321)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40321)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40321+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40321+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-facebookresearch-meshflow",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/facebookresearch/meshflow",
+    "github": "facebookresearch/meshflow",
+    "github_stars": 499,
+    "name": {
+      "en": "facebookresearch/meshflow",
+      "zh-CN": "facebookresearch/meshflow (GitHub ⭐499)",
+      "zh-TW": "facebookresearch/meshflow (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T",
+      "zh-CN": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vila-lab-figmirror",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/VILA-Lab/FigMirror",
+    "github": "VILA-Lab/FigMirror",
+    "github_stars": 497,
+    "name": {
+      "en": "VILA-Lab/FigMirror",
+      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐497)",
+      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 开源项目",
+      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mokeaigc-moke-vision-one",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "github": "MOKEAIGC/MOKE-Vision-One",
+    "github_stars": 497,
+    "name": {
+      "en": "MOKEAIGC/MOKE-Vision-One",
+      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
+      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
+      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
+      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hoolulu-deep-research",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/hoolulu/deep-research",
+    "github": "hoolulu/deep-research",
+    "github_stars": 497,
+    "name": {
+      "en": "hoolulu/deep-research",
+      "zh-CN": "hoolulu/deep-research (GitHub ⭐497)",
+      "zh-TW": "hoolulu/deep-research (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
+      "zh-CN": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 497+ Stars 开源项目",
+      "zh-TW": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-andyhuo520-maccheck",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/andyhuo520/MacCheck",
+    "github": "andyhuo520/MacCheck",
+    "github_stars": 496,
+    "name": {
+      "en": "andyhuo520/MacCheck",
+      "zh-CN": "andyhuo520/MacCheck (GitHub ⭐496)",
+      "zh-TW": "andyhuo520/MacCheck (GitHub ⭐496)"
+    },
+    "desc": {
+      "en": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具",
+      "zh-CN": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具 | GitHub 496+ Stars 开源项目",
+      "zh-TW": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具 | GitHub 496+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 开源项目",
       "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-accio-lab-dressage",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Accio-Lab/Dressage",
-    "github": "Accio-Lab/Dressage",
-    "github_stars": 500,
-    "name": {
-      "en": "Accio-Lab/Dressage",
-      "zh-CN": "Accio-Lab/Dressage (GitHub ⭐500)",
-      "zh-TW": "Accio-Lab/Dressage (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Scalable Agentic RL for Any Agent and Sandbox.",
-      "zh-CN": "Scalable Agentic RL for Any Agent and Sandbox. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Scalable Agentic RL for Any Agent and Sandbox. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tutusagi-ai-fishing-game",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/tutusagi/ai-fishing-game",
-    "github": "tutusagi/ai-fishing-game",
-    "github_stars": 500,
-    "name": {
-      "en": "tutusagi/ai-fishing-game",
-      "zh-CN": "tutusagi/ai-fishing-game (GitHub ⭐500)",
-      "zh-TW": "tutusagi/ai-fishing-game (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼",
-      "zh-CN": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "🎣 给 AI 玩的确定性文字钓鱼小游戏 · 单文件零依赖 · 让你的 AI 伴侣来钓鱼 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 393508,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐393508)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐393508)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 393508+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 393508+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 59977,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐59977)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐59977)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 59977+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 59977+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44268,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44268)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44268)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44268+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-secureagentics-adrian",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/secureagentics/Adrian",
-    "github": "secureagentics/Adrian",
-    "github_stars": 498,
-    "name": {
-      "en": "secureagentics/Adrian",
-      "zh-CN": "secureagentics/Adrian (GitHub ⭐498)",
-      "zh-TW": "secureagentics/Adrian (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Open-source runtime AI agent security tool - monitors and controls AI agents, catching malicious tool use, prompt injection, and policy drift in real ",
-      "zh-CN": "Open-source runtime AI agent security tool - monitors and controls AI agents, catching malicious tool use, prompt injection, and policy drift in real  | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Open-source runtime AI agent security tool - monitors and controls AI agents, catching malicious tool use, prompt injection, and policy drift in real  | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tura-ai-tura",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/Tura-AI/tura",
-    "github": "Tura-AI/tura",
-    "github_stars": 498,
-    "name": {
-      "en": "Tura-AI/tura",
-      "zh-CN": "Tura-AI/tura (GitHub ⭐498)",
-      "zh-TW": "Tura-AI/tura (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16.",
-      "zh-CN": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16. | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Across 348 long-horizon benchmark sessions, Tura used up to 83.1% fewer turns on the rewrite benchmark and improved the DeepSWE pass rate by up to 16. | GitHub 498+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

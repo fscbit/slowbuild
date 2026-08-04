@@ -437,6 +437,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-deep-research.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-deep-research.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-deepagent-code.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -533,6 +543,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-jsoncrackcom.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-maccheck.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-maccheck.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
