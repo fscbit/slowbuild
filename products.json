@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 393814,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐393814)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐393814)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 393814+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 393814+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60108,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60108)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60108)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60108+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60108+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44276,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44276)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44276)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44276+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44276+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ddoemonn-interior",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/ddoemonn/interior",
+    "github": "ddoemonn/interior",
+    "github_stars": 499,
+    "name": {
+      "en": "ddoemonn/interior",
+      "zh-CN": "ddoemonn/interior (GitHub ⭐499)",
+      "zh-TW": "ddoemonn/interior (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "micro-interactions for react, built for the half-second after a click",
+      "zh-CN": "micro-interactions for react, built for the half-second after a click | GitHub 499+ Stars 开源项目",
+      "zh-TW": "micro-interactions for react, built for the half-second after a click | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mobiusquant-openmobius-skill",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/MobiusQuant/OpenMobius-skill",
+    "github": "MobiusQuant/OpenMobius-skill",
+    "github_stars": 499,
+    "name": {
+      "en": "MobiusQuant/OpenMobius-skill",
+      "zh-CN": "MobiusQuant/OpenMobius-skill (GitHub ⭐499)",
+      "zh-TW": "MobiusQuant/OpenMobius-skill (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes)",
+      "zh-CN": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes) | GitHub 499+ Stars 开源项目",
+      "zh-TW": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes) | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kacper-daftcode-vllm-moet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/kacper-daftcode/vLLM-Moet",
+    "github": "kacper-daftcode/vLLM-Moet",
+    "github_stars": 497,
+    "name": {
+      "en": "kacper-daftcode/vLLM-Moet",
+      "zh-CN": "kacper-daftcode/vLLM-Moet (GitHub ⭐497)",
+      "zh-TW": "kacper-daftcode/vLLM-Moet (GitHub ⭐497)"
+    },
+    "desc": {
+      "en": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check",
+      "zh-CN": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check | GitHub 497+ Stars 开源项目",
+      "zh-TW": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check | GitHub 497+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-fd",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "😎 Awesome lists about all kinds of interesting topics",
       "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 开源项目",
       "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40064,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40064)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40064)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40064+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40064+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-databufflabs-databuff",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/databufflabs/databuff",
-    "github": "databufflabs/databuff",
-    "github_stars": 500,
-    "name": {
-      "en": "databufflabs/databuff",
-      "zh-CN": "databufflabs/databuff (GitHub ⭐500)",
-      "zh-TW": "databufflabs/databuff (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology",
-      "zh-CN": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology | GitHub 500+ Stars 开源项目",
-      "zh-TW": "AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-davidondrej-jailbreak-autorese",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/davidondrej/jailbreak-autoresearch",
-    "github": "davidondrej/jailbreak-autoresearch",
-    "github_stars": 500,
-    "name": {
-      "en": "davidondrej/jailbreak-autoresearch",
-      "zh-CN": "davidondrej/jailbreak-autoresearch (GitHub ⭐500)",
-      "zh-TW": "davidondrej/jailbreak-autoresearch (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "We shall set the models free.",
-      "zh-CN": "We shall set the models free. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "We shall set the models free. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-deepagent-ltd-deepagent-code",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/deepagent-ltd/deepagent-code",
-    "github": "deepagent-ltd/deepagent-code",
-    "github_stars": 499,
-    "name": {
-      "en": "deepagent-ltd/deepagent-code",
-      "zh-CN": "deepagent-ltd/deepagent-code (GitHub ⭐499)",
-      "zh-TW": "deepagent-ltd/deepagent-code (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "DeepAgent Code: AI coding agent with persistent memory and control plane",
-      "zh-CN": "DeepAgent Code: AI coding agent with persistent memory and control plane | GitHub 499+ Stars 开源项目",
-      "zh-TW": "DeepAgent Code: AI coding agent with persistent memory and control plane | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 454107,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐454107)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐454107)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 454107+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 454107+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 453354,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453354)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453354)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453354+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

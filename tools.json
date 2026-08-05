@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 536049,
+    "stars": 536483,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-04T22:55:33Z"
+    "updated": "2026-08-05T22:58:37Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 492411,
+    "stars": 492788,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-04T22:59:57Z"
+    "updated": "2026-08-05T22:59:08Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 454381,
+    "stars": 454529,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-04T22:56:49Z"
+    "updated": "2026-08-05T22:52:02Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453486,
+    "stars": 453551,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-04T22:43:22Z"
+    "updated": "2026-08-05T22:13:32Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393720,
+    "stars": 393814,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-04T22:54:51Z"
+    "updated": "2026-08-05T22:57:05Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60088,
+    "stars": 60108,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-04T21:46:26Z"
+    "updated": "2026-08-05T22:50:01Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44272,
+    "stars": 44276,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-04T20:40:20Z"
+    "updated": "2026-08-05T22:26:18Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43969,
+    "stars": 43979,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-04T22:43:27Z"
+    "updated": "2026-08-05T18:38:12Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40321,
+    "stars": 40327,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-04T22:43:35Z"
+    "updated": "2026-08-05T21:38:23Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40084,
+    "stars": 40099,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,52 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-04T19:22:15Z"
+    "updated": "2026-08-05T21:52:22Z"
   },
   {
-    "name": "facebookresearch/meshflow",
-    "description": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Tran",
-    "url": "https://github.com/facebookresearch/meshflow",
-    "homepage": "",
+    "name": "ddoemonn/interior",
+    "description": "micro-interactions for react, built for the half-second after a click",
+    "url": "https://github.com/ddoemonn/interior",
+    "homepage": "https://interior.dev",
+    "stars": 499,
+    "language": "TypeScript",
+    "topics": [
+      "animation",
+      "micro-interactions",
+      "motion",
+      "react",
+      "ui-components"
+    ],
+    "source": "new",
+    "updated": "2026-08-05T21:28:34Z"
+  },
+  {
+    "name": "MobiusQuant/OpenMobius-skill",
+    "description": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes)",
+    "url": "https://github.com/MobiusQuant/OpenMobius-skill",
+    "homepage": "https://www.mobiusquant.ai/",
     "stars": 499,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-04T10:44:23Z"
+    "updated": "2026-08-05T21:55:30Z"
+  },
+  {
+    "name": "andyhuo520/MacCheck",
+    "description": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具",
+    "url": "https://github.com/andyhuo520/MacCheck",
+    "homepage": "",
+    "stars": 498,
+    "language": "Swift",
+    "topics": [
+      "hardware-diagnostics",
+      "mac-check",
+      "macos",
+      "second-hand-mac",
+      "swiftui"
+    ],
+    "source": "new",
+    "updated": "2026-08-05T18:36:35Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
@@ -198,48 +232,14 @@
     "updated": "2026-08-04T10:44:11Z"
   },
   {
-    "name": "MOKEAIGC/MOKE-Vision-One",
-    "description": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-    "url": "https://github.com/MOKEAIGC/MOKE-Vision-One",
+    "name": "kacper-daftcode/vLLM-Moet",
+    "description": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — match",
+    "url": "https://github.com/kacper-daftcode/vLLM-Moet",
     "homepage": "",
     "stars": 497,
-    "language": "TypeScript",
+    "language": "Sass",
     "topics": [],
     "source": "new",
-    "updated": "2026-07-29T16:38:07Z"
-  },
-  {
-    "name": "hoolulu/deep-research",
-    "description": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
-    "url": "https://github.com/hoolulu/deep-research",
-    "homepage": "https://www.h33.top",
-    "stars": 497,
-    "language": "HTML",
-    "topics": [
-      "ai-agent",
-      "chinese",
-      "deep-research",
-      "intelligence-report",
-      "market-research"
-    ],
-    "source": "new",
-    "updated": "2026-08-04T05:01:56Z"
-  },
-  {
-    "name": "andyhuo520/MacCheck",
-    "description": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具",
-    "url": "https://github.com/andyhuo520/MacCheck",
-    "homepage": "",
-    "stars": 496,
-    "language": "Swift",
-    "topics": [
-      "hardware-diagnostics",
-      "mac-check",
-      "macos",
-      "second-hand-mac",
-      "swiftui"
-    ],
-    "source": "new",
-    "updated": "2026-08-04T10:45:59Z"
+    "updated": "2026-08-05T16:04:26Z"
   }
 ]
