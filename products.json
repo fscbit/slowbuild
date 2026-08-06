@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 454742,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐454742)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐454742)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 454742+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 454742+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 453604,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453604)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453604)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453604+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453604+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40106,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40106)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40106)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40106+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40106+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-marcossete-awesome-free-ai-boo",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/MarcosSete/awesome-free-ai-books",
+    "github": "MarcosSete/awesome-free-ai-books",
+    "github_stars": 500,
+    "name": {
+      "en": "MarcosSete/awesome-free-ai-books",
+      "zh-CN": "MarcosSete/awesome-free-ai-books (GitHub ⭐500)",
+      "zh-TW": "MarcosSete/awesome-free-ai-books (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A curated list of free, legitimate AI/ML books",
+      "zh-CN": "A curated list of free, legitimate AI/ML books | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A curated list of free, legitimate AI/ML books | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sandbaseai-managed-agents",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sandbaseai/managed-agents",
+    "github": "sandbaseai/managed-agents",
+    "github_stars": 499,
+    "name": {
+      "en": "sandbaseai/managed-agents",
+      "zh-CN": "sandbaseai/managed-agents (GitHub ⭐499)",
+      "zh-TW": "sandbaseai/managed-agents (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and ",
+      "zh-CN": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and  | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and  | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-heyputer-firefox-wasm",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/HeyPuter/firefox-wasm",
+    "github": "HeyPuter/firefox-wasm",
+    "github_stars": 499,
+    "name": {
+      "en": "HeyPuter/firefox-wasm",
+      "zh-CN": "HeyPuter/firefox-wasm (GitHub ⭐499)",
+      "zh-TW": "HeyPuter/firefox-wasm (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "🦊 Firefox in WebAssembly",
+      "zh-CN": "🦊 Firefox in WebAssembly | GitHub 499+ Stars 开源项目",
+      "zh-TW": "🦊 Firefox in WebAssembly | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T",
       "zh-CN": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 开源项目",
       "zh-TW": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vila-lab-figmirror",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/VILA-Lab/FigMirror",
-    "github": "VILA-Lab/FigMirror",
-    "github_stars": 497,
-    "name": {
-      "en": "VILA-Lab/FigMirror",
-      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐497)",
-      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 开源项目",
-      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mokeaigc-moke-vision-one",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/MOKEAIGC/MOKE-Vision-One",
-    "github": "MOKEAIGC/MOKE-Vision-One",
-    "github_stars": 497,
-    "name": {
-      "en": "MOKEAIGC/MOKE-Vision-One",
-      "zh-CN": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)",
-      "zh-TW": "MOKEAIGC/MOKE-Vision-One (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。",
-      "zh-CN": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 开源项目",
-      "zh-TW": "搭载10亿像素曲面有机传感器与平面超构透镜的次世代虚拟相机。支持量子计算级实时降噪，在绝对黑暗中捕捉白昼般的清晰画质。 | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hoolulu-deep-research",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/hoolulu/deep-research",
-    "github": "hoolulu/deep-research",
-    "github_stars": 497,
-    "name": {
-      "en": "hoolulu/deep-research",
-      "zh-CN": "hoolulu/deep-research (GitHub ⭐497)",
-      "zh-TW": "hoolulu/deep-research (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
-      "zh-CN": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 497+ Stars 开源项目",
-      "zh-TW": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-andyhuo520-maccheck",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/andyhuo520/MacCheck",
-    "github": "andyhuo520/MacCheck",
-    "github_stars": 496,
-    "name": {
-      "en": "andyhuo520/MacCheck",
-      "zh-CN": "andyhuo520/MacCheck (GitHub ⭐496)",
-      "zh-TW": "andyhuo520/MacCheck (GitHub ⭐496)"
-    },
-    "desc": {
-      "en": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具",
-      "zh-CN": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具 | GitHub 496+ Stars 开源项目",
-      "zh-TW": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具 | GitHub 496+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 535634,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐535634)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐535634)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 535634+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 535634+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 492076,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐492076)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐492076)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 492076+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
