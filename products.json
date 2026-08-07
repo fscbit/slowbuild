@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 537500,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐537500)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐537500)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 537500+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 537500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 493415,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐493415)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐493415)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 493415+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 493415+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kulaxyz-token-diet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/Kulaxyz/token-diet",
+    "github": "Kulaxyz/token-diet",
+    "github_stars": 500,
+    "name": {
+      "en": "Kulaxyz/token-diet",
+      "zh-CN": "Kulaxyz/token-diet (GitHub ⭐500)",
+      "zh-TW": "Kulaxyz/token-diet (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness.",
+      "zh-CN": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hoolulu-deep-research",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/hoolulu/deep-research",
+    "github": "hoolulu/deep-research",
+    "github_stars": 500,
+    "name": {
+      "en": "hoolulu/deep-research",
+      "zh-CN": "hoolulu/deep-research (GitHub ⭐500)",
+      "zh-TW": "hoolulu/deep-research (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
+      "zh-CN": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 500+ Stars 开源项目",
+      "zh-TW": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-weifeng2333-phistory",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/WEIFENG2333/phistory",
+    "github": "WEIFENG2333/phistory",
+    "github_stars": 500,
+    "name": {
+      "en": "WEIFENG2333/phistory",
+      "zh-CN": "WEIFENG2333/phistory (GitHub ⭐500)",
+      "zh-TW": "WEIFENG2333/phistory (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and Hermes.",
+      "zh-CN": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and Hermes. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and Hermes. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-dpejoh-specter",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/dpejoh/specter",
+    "github": "dpejoh/specter",
+    "github_stars": 499,
+    "name": {
+      "en": "dpejoh/specter",
+      "zh-CN": "dpejoh/specter (GitHub ⭐499)",
+      "zh-TW": "dpejoh/specter (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Unified Play Integrity and root hiding stack for Android",
+      "zh-CN": "Unified Play Integrity and root hiding stack for Android | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Unified Play Integrity and root hiding stack for Android | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vila-lab-figmirror",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/VILA-Lab/FigMirror",
+    "github": "VILA-Lab/FigMirror",
+    "github_stars": 498,
+    "name": {
+      "en": "VILA-Lab/FigMirror",
+      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐498)",
+      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 498+ Stars 开源项目",
+      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A cat(1) clone with wings.",
       "zh-CN": "A cat(1) clone with wings. | GitHub 60108+ Stars 开源项目",
       "zh-TW": "A cat(1) clone with wings. | GitHub 60108+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44276,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44276)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44276)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44276+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44276+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ddoemonn-interior",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/ddoemonn/interior",
-    "github": "ddoemonn/interior",
-    "github_stars": 499,
-    "name": {
-      "en": "ddoemonn/interior",
-      "zh-CN": "ddoemonn/interior (GitHub ⭐499)",
-      "zh-TW": "ddoemonn/interior (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "micro-interactions for react, built for the half-second after a click",
-      "zh-CN": "micro-interactions for react, built for the half-second after a click | GitHub 499+ Stars 开源项目",
-      "zh-TW": "micro-interactions for react, built for the half-second after a click | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mobiusquant-openmobius-skill",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/MobiusQuant/OpenMobius-skill",
-    "github": "MobiusQuant/OpenMobius-skill",
-    "github_stars": 499,
-    "name": {
-      "en": "MobiusQuant/OpenMobius-skill",
-      "zh-CN": "MobiusQuant/OpenMobius-skill (GitHub ⭐499)",
-      "zh-TW": "MobiusQuant/OpenMobius-skill (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes)",
-      "zh-CN": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes) | GitHub 499+ Stars 开源项目",
-      "zh-TW": "ICT/SMC trading-knowledge skill for AI coding agents (Claude Code / Codex / OpenClaw / Hermes) | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kacper-daftcode-vllm-moet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/kacper-daftcode/vLLM-Moet",
-    "github": "kacper-daftcode/vLLM-Moet",
-    "github_stars": 497,
-    "name": {
-      "en": "kacper-daftcode/vLLM-Moet",
-      "zh-CN": "kacper-daftcode/vLLM-Moet (GitHub ⭐497)",
-      "zh-TW": "kacper-daftcode/vLLM-Moet (GitHub ⭐497)"
-    },
-    "desc": {
-      "en": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check",
-      "zh-CN": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check | GitHub 497+ Stars 开源项目",
-      "zh-TW": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — matching the official (NV)FP4 check | GitHub 497+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 43969,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐43969)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐43969)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 43969+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 43969+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40321,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40321)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40321)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40321+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40321+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-facebookresearch-meshflow",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/facebookresearch/meshflow",
-    "github": "facebookresearch/meshflow",
-    "github_stars": 499,
-    "name": {
-      "en": "facebookresearch/meshflow",
-      "zh-CN": "facebookresearch/meshflow (GitHub ⭐499)",
-      "zh-TW": "facebookresearch/meshflow (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T",
-      "zh-CN": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Repository for the CVPR 2026 paper MeshFlow Efficient Artistic Mesh Generation via MeshVAE and Flow-based Diffusion Transformer by Weiyu Li, Antoine T | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

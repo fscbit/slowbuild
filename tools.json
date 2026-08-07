@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 536854,
+    "stars": 537500,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-06T22:59:09Z"
+    "updated": "2026-08-07T22:56:03Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 493102,
+    "stars": 493415,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-06T22:55:06Z"
+    "updated": "2026-08-07T22:52:32Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 454742,
+    "stars": 454961,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-06T22:56:26Z"
+    "updated": "2026-08-07T22:46:15Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453604,
+    "stars": 453647,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-06T22:10:07Z"
+    "updated": "2026-08-07T21:38:28Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393885,
+    "stars": 393948,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-06T22:44:03Z"
+    "updated": "2026-08-07T22:06:26Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60126,
+    "stars": 60135,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-06T19:00:23Z"
+    "updated": "2026-08-07T20:55:11Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44278,
+    "stars": 44280,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-06T18:18:45Z"
+    "updated": "2026-08-07T16:26:09Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43988,
+    "stars": 43999,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-06T20:12:16Z"
+    "updated": "2026-08-07T19:22:45Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40335,
+    "stars": 40347,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-06T21:15:39Z"
+    "updated": "2026-08-07T19:00:05Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40106,
+    "stars": 40125,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,71 +167,73 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-06T20:24:57Z"
+    "updated": "2026-08-07T22:55:33Z"
   },
   {
-    "name": "MarcosSete/awesome-free-ai-books",
-    "description": "A curated list of free, legitimate AI/ML books",
-    "url": "https://github.com/MarcosSete/awesome-free-ai-books",
+    "name": "Kulaxyz/token-diet",
+    "description": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on ave",
+    "url": "https://github.com/Kulaxyz/token-diet",
     "homepage": "",
     "stars": 500,
-    "language": "",
+    "language": "Shell",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-06T20:12:17Z"
+    "updated": "2026-08-07T08:51:16Z"
   },
   {
-    "name": "andyhuo520/MacCheck",
-    "description": "MacCheck 验机宝：本地 Mac 硬件检测、交互验机与 PDF/PNG 报告导出工具",
-    "url": "https://github.com/andyhuo520/MacCheck",
-    "homepage": "",
-    "stars": 499,
-    "language": "Swift",
+    "name": "hoolulu/deep-research",
+    "description": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
+    "url": "https://github.com/hoolulu/deep-research",
+    "homepage": "https://www.h33.top",
+    "stars": 500,
+    "language": "HTML",
     "topics": [
-      "hardware-diagnostics",
-      "mac-check",
-      "macos",
-      "second-hand-mac",
-      "swiftui"
+      "ai-agent",
+      "chinese",
+      "deep-research",
+      "intelligence-report",
+      "market-research"
     ],
     "source": "new",
-    "updated": "2026-08-06T02:16:56Z"
+    "updated": "2026-08-07T11:02:56Z"
   },
   {
-    "name": "sandbaseai/managed-agents",
-    "description": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP t",
-    "url": "https://github.com/sandbaseai/managed-agents",
-    "homepage": "",
+    "name": "WEIFENG2333/phistory",
+    "description": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and",
+    "url": "https://github.com/WEIFENG2333/phistory",
+    "homepage": "https://phistory.cc",
+    "stars": 500,
+    "language": "HTML",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-07T20:47:19Z"
+  },
+  {
+    "name": "dpejoh/specter",
+    "description": "Unified Play Integrity and root hiding stack for Android",
+    "url": "https://github.com/dpejoh/specter",
+    "homepage": "https://specter.dpejoh.com",
     "stars": 499,
     "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-06T12:31:15Z"
+    "updated": "2026-08-07T16:31:47Z"
   },
   {
-    "name": "HeyPuter/firefox-wasm",
-    "description": "🦊 Firefox in WebAssembly",
-    "url": "https://github.com/HeyPuter/firefox-wasm",
-    "homepage": "https://developer.puter.com/labs/firefox-wasm/",
-    "stars": 499,
-    "language": "JavaScript",
-    "topics": [
-      "firefox",
-      "puter",
-      "webassembly"
-    ],
-    "source": "new",
-    "updated": "2026-08-06T20:59:50Z"
-  },
-  {
-    "name": "kacper-daftcode/vLLM-Moet",
-    "description": "A vLLM patch + hand‑written SM120 SASS kernels: 2‑bit MoE experts + an FP4 \"delta\" cache that recovers precision — match",
-    "url": "https://github.com/kacper-daftcode/vLLM-Moet",
+    "name": "VILA-Lab/FigMirror",
+    "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+    "url": "https://github.com/VILA-Lab/FigMirror",
     "homepage": "",
     "stars": 498,
-    "language": "Sass",
-    "topics": [],
+    "language": "Python",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "data-visualization"
+    ],
     "source": "new",
-    "updated": "2026-08-06T16:16:35Z"
+    "updated": "2026-08-07T08:56:04Z"
   }
 ]
