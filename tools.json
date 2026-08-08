@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 537500,
+    "stars": 537830,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-07T22:56:03Z"
+    "updated": "2026-08-08T22:57:30Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 493415,
+    "stars": 493719,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-07T22:52:32Z"
+    "updated": "2026-08-08T22:52:49Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 454961,
+    "stars": 455093,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-07T22:46:15Z"
+    "updated": "2026-08-08T22:52:57Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453647,
+    "stars": 453677,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-07T21:38:28Z"
+    "updated": "2026-08-08T22:53:12Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393948,
+    "stars": 393983,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-07T22:06:26Z"
+    "updated": "2026-08-08T21:32:59Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60135,
+    "stars": 60144,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-07T20:55:11Z"
+    "updated": "2026-08-08T21:38:12Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44280,
+    "stars": 44282,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-07T16:26:09Z"
+    "updated": "2026-08-08T15:48:00Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 43999,
+    "stars": 44012,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-07T19:22:45Z"
+    "updated": "2026-08-08T21:38:23Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40347,
+    "stars": 40357,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-07T19:00:05Z"
+    "updated": "2026-08-08T22:50:02Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40125,
+    "stars": 40138,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-07T22:55:33Z"
+    "updated": "2026-08-08T22:59:02Z"
+  },
+  {
+    "name": "Charles-0509/Grok-Register",
+    "description": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
+    "url": "https://github.com/Charles-0509/Grok-Register",
+    "homepage": "",
+    "stars": 500,
+    "language": "Go",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-08T22:02:18Z"
   },
   {
     "name": "Kulaxyz/token-diet",
@@ -198,42 +209,37 @@
     "updated": "2026-08-07T11:02:56Z"
   },
   {
-    "name": "WEIFENG2333/phistory",
-    "description": "Phistory automatically archives versioned system prompt snapshots from agent CLIs like Claude Code, Codex, OpenClaw, and",
-    "url": "https://github.com/WEIFENG2333/phistory",
-    "homepage": "https://phistory.cc",
-    "stars": 500,
-    "language": "HTML",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-07T20:47:19Z"
-  },
-  {
-    "name": "dpejoh/specter",
-    "description": "Unified Play Integrity and root hiding stack for Android",
-    "url": "https://github.com/dpejoh/specter",
-    "homepage": "https://specter.dpejoh.com",
+    "name": "RareSense/Nova3D",
+    "description": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
+    "url": "https://github.com/RareSense/Nova3D",
+    "homepage": "https://nova3d.xyz",
     "stars": 499,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-07T16:31:47Z"
-  },
-  {
-    "name": "VILA-Lab/FigMirror",
-    "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-    "url": "https://github.com/VILA-Lab/FigMirror",
-    "homepage": "",
-    "stars": 498,
-    "language": "Python",
+    "language": "Dart",
     "topics": [
-      "agent",
-      "agent-skills",
-      "claude-code",
-      "codex",
-      "data-visualization"
+      "3d-generation",
+      "blen",
+      "cad",
+      "claude",
+      "flutter"
     ],
     "source": "new",
-    "updated": "2026-08-07T08:56:04Z"
+    "updated": "2026-08-08T15:04:29Z"
+  },
+  {
+    "name": "gykim80/perfectpixel-studio",
+    "description": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single t",
+    "url": "https://github.com/gykim80/perfectpixel-studio",
+    "homepage": "",
+    "stars": 499,
+    "language": "Go",
+    "topics": [
+      "ai",
+      "game-development",
+      "golang",
+      "pixel-art",
+      "sprite"
+    ],
+    "source": "new",
+    "updated": "2026-08-08T14:00:22Z"
   }
 ]

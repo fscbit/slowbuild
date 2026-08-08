@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44282,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44282)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44282)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44282+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44282+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44012,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44012)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44012)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44012+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44012+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40357,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40357)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40357)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40357+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40357+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-charles-0509-grok-register",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/Charles-0509/Grok-Register",
+    "github": "Charles-0509/Grok-Register",
+    "github_stars": 500,
+    "name": {
+      "en": "Charles-0509/Grok-Register",
+      "zh-CN": "Charles-0509/Grok-Register (GitHub ⭐500)",
+      "zh-TW": "Charles-0509/Grok-Register (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
+      "zh-CN": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-raresense-nova3d",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/RareSense/Nova3D",
+    "github": "RareSense/Nova3D",
+    "github_stars": 499,
+    "name": {
+      "en": "RareSense/Nova3D",
+      "zh-CN": "RareSense/Nova3D (GitHub ⭐499)",
+      "zh-TW": "RareSense/Nova3D (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
+      "zh-CN": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gykim80-perfectpixel-studio",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/gykim80/perfectpixel-studio",
+    "github": "gykim80/perfectpixel-studio",
+    "github_stars": 499,
+    "name": {
+      "en": "gykim80/perfectpixel-studio",
+      "zh-CN": "gykim80/perfectpixel-studio (GitHub ⭐499)",
+      "zh-TW": "gykim80/perfectpixel-studio (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React",
+      "zh-CN": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React | GitHub 499+ Stars 开源项目",
+      "zh-TW": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453604+ Stars 开源项目",
       "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453604+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40106,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40106)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40106)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40106+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40106+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-marcossete-awesome-free-ai-boo",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/MarcosSete/awesome-free-ai-books",
-    "github": "MarcosSete/awesome-free-ai-books",
-    "github_stars": 500,
-    "name": {
-      "en": "MarcosSete/awesome-free-ai-books",
-      "zh-CN": "MarcosSete/awesome-free-ai-books (GitHub ⭐500)",
-      "zh-TW": "MarcosSete/awesome-free-ai-books (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A curated list of free, legitimate AI/ML books",
-      "zh-CN": "A curated list of free, legitimate AI/ML books | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A curated list of free, legitimate AI/ML books | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sandbaseai-managed-agents",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sandbaseai/managed-agents",
-    "github": "sandbaseai/managed-agents",
-    "github_stars": 499,
-    "name": {
-      "en": "sandbaseai/managed-agents",
-      "zh-CN": "sandbaseai/managed-agents (GitHub ⭐499)",
-      "zh-TW": "sandbaseai/managed-agents (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and ",
-      "zh-CN": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and  | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Open-source CMA-compatible agent runtime. Run multi-agent systems locally with any model (Ollama/vLLM/Claude/GPT), MCP tools, scenario templates, and  | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-heyputer-firefox-wasm",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/HeyPuter/firefox-wasm",
-    "github": "HeyPuter/firefox-wasm",
-    "github_stars": 499,
-    "name": {
-      "en": "HeyPuter/firefox-wasm",
-      "zh-CN": "HeyPuter/firefox-wasm (GitHub ⭐499)",
-      "zh-TW": "HeyPuter/firefox-wasm (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "🦊 Firefox in WebAssembly",
-      "zh-CN": "🦊 Firefox in WebAssembly | GitHub 499+ Stars 开源项目",
-      "zh-TW": "🦊 Firefox in WebAssembly | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 393814,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐393814)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐393814)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 393814+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 393814+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60108,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60108)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60108)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60108+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60108+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
