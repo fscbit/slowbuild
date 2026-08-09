@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 537830,
+    "stars": 538112,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-08T22:57:30Z"
+    "updated": "2026-08-09T22:57:36Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 493719,
+    "stars": 494033,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-08T22:52:49Z"
+    "updated": "2026-08-09T22:48:54Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 455093,
+    "stars": 455217,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-08T22:52:57Z"
+    "updated": "2026-08-09T22:37:33Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453677,
+    "stars": 453707,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-08T22:53:12Z"
+    "updated": "2026-08-09T22:33:01Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 393983,
+    "stars": 394036,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-08T21:32:59Z"
+    "updated": "2026-08-09T22:37:08Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60144,
+    "stars": 60164,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-08T21:38:12Z"
+    "updated": "2026-08-09T22:18:58Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44282,
+    "stars": 44283,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-08T15:48:00Z"
+    "updated": "2026-08-09T12:12:12Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44012,
+    "stars": 44022,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-08T21:38:23Z"
+    "updated": "2026-08-09T22:00:20Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40357,
+    "stars": 40434,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-08T22:50:02Z"
+    "updated": "2026-08-09T21:21:11Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40138,
+    "stars": 40150,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,24 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-08T22:59:02Z"
+    "updated": "2026-08-09T22:59:24Z"
   },
   {
-    "name": "Charles-0509/Grok-Register",
-    "description": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
-    "url": "https://github.com/Charles-0509/Grok-Register",
-    "homepage": "",
+    "name": "RareSense/Nova3D",
+    "description": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
+    "url": "https://github.com/RareSense/Nova3D",
+    "homepage": "https://nova3d.xyz",
     "stars": 500,
-    "language": "Go",
-    "topics": [],
+    "language": "Dart",
+    "topics": [
+      "3d-generation",
+      "blen",
+      "cad",
+      "claude",
+      "flutter"
+    ],
     "source": "new",
-    "updated": "2026-08-08T22:02:18Z"
+    "updated": "2026-08-09T04:21:19Z"
   },
   {
     "name": "Kulaxyz/token-diet",
@@ -192,54 +198,42 @@
     "updated": "2026-08-07T08:51:16Z"
   },
   {
-    "name": "hoolulu/deep-research",
-    "description": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
-    "url": "https://github.com/hoolulu/deep-research",
-    "homepage": "https://www.h33.top",
+    "name": "AMAP-ML/LongHorizon-Harness",
+    "description": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preservi",
+    "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+    "homepage": "https://lh-harness.pages.dev",
     "stars": 500,
-    "language": "HTML",
+    "language": "Python",
     "topics": [
-      "ai-agent",
-      "chinese",
-      "deep-research",
-      "intelligence-report",
-      "market-research"
-    ],
-    "source": "new",
-    "updated": "2026-08-07T11:02:56Z"
-  },
-  {
-    "name": "RareSense/Nova3D",
-    "description": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
-    "url": "https://github.com/RareSense/Nova3D",
-    "homepage": "https://nova3d.xyz",
-    "stars": 499,
-    "language": "Dart",
-    "topics": [
-      "3d-generation",
-      "blen",
-      "cad",
+      "agent",
       "claude",
-      "flutter"
+      "claude-code",
+      "claude-plugin",
+      "cli"
     ],
     "source": "new",
-    "updated": "2026-08-08T15:04:29Z"
+    "updated": "2026-08-09T22:30:36Z"
   },
   {
-    "name": "gykim80/perfectpixel-studio",
-    "description": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single t",
-    "url": "https://github.com/gykim80/perfectpixel-studio",
+    "name": "Einsia/Browser-BC",
+    "description": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting.",
+    "url": "https://github.com/Einsia/Browser-BC",
+    "homepage": "",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-09T15:53:39Z"
+  },
+  {
+    "name": "Charles-0509/Grok-Register",
+    "description": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
+    "url": "https://github.com/Charles-0509/Grok-Register",
     "homepage": "",
     "stars": 499,
     "language": "Go",
-    "topics": [
-      "ai",
-      "game-development",
-      "golang",
-      "pixel-art",
-      "sprite"
-    ],
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-08T14:00:22Z"
+    "updated": "2026-08-09T00:11:02Z"
   }
 ]
