@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 455360,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐455360)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐455360)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 455360+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 455360+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 453753,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453753)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453753)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453753+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453753+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vila-lab-figmirror",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/VILA-Lab/FigMirror",
+    "github": "VILA-Lab/FigMirror",
+    "github_stars": 499,
+    "name": {
+      "en": "VILA-Lab/FigMirror",
+      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐499)",
+      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
+      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cupidbity-cupid-music-player",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/cupidbity/cupid-music-player",
+    "github": "cupidbity/cupid-music-player",
+    "github_stars": 499,
+    "name": {
+      "en": "cupidbity/cupid-music-player",
+      "zh-CN": "cupidbity/cupid-music-player (GitHub ⭐499)",
+      "zh-TW": "cupidbity/cupid-music-player (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "cupidbity/cupid-music-player - Open source tool",
+      "zh-CN": "cupidbity/cupid-music-player - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "cupidbity/cupid-music-player - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-yukkcat-chatgpt2api",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/yukkcat/chatgpt2api",
+    "github": "yukkcat/chatgpt2api",
+    "github_stars": 499,
+    "name": {
+      "en": "yukkcat/chatgpt2api",
+      "zh-CN": "yukkcat/chatgpt2api (GitHub ⭐499)",
+      "zh-TW": "yukkcat/chatgpt2api (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件",
+      "zh-CN": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-buynao-aipath",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/buynao/aipath",
+    "github": "buynao/aipath",
+    "github_stars": 498,
+    "name": {
+      "en": "buynao/aipath",
+      "zh-CN": "buynao/aipath (GitHub ⭐498)",
+      "zh-TW": "buynao/aipath (GitHub ⭐498)"
+    },
+    "desc": {
+      "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
+      "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 开源项目",
+      "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
       "zh-CN": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 开源项目",
       "zh-TW": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-raresense-nova3d",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/RareSense/Nova3D",
-    "github": "RareSense/Nova3D",
-    "github_stars": 499,
-    "name": {
-      "en": "RareSense/Nova3D",
-      "zh-CN": "RareSense/Nova3D (GitHub ⭐499)",
-      "zh-TW": "RareSense/Nova3D (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz.",
-      "zh-CN": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Editable, part-aware 3D generation from text or reference images. Open-source client for nova3d.xyz. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gykim80-perfectpixel-studio",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/gykim80/perfectpixel-studio",
-    "github": "gykim80/perfectpixel-studio",
-    "github_stars": 499,
-    "name": {
-      "en": "gykim80/perfectpixel-studio",
-      "zh-CN": "gykim80/perfectpixel-studio (GitHub ⭐499)",
-      "zh-TW": "gykim80/perfectpixel-studio (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React",
-      "zh-CN": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React | GitHub 499+ Stars 开源项目",
-      "zh-TW": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 537500,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐537500)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐537500)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 537500+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 537500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 493415,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐493415)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐493415)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 493415+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 493415+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kulaxyz-token-diet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Kulaxyz/token-diet",
-    "github": "Kulaxyz/token-diet",
-    "github_stars": 500,
-    "name": {
-      "en": "Kulaxyz/token-diet",
-      "zh-CN": "Kulaxyz/token-diet (GitHub ⭐500)",
-      "zh-TW": "Kulaxyz/token-diet (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness.",
-      "zh-CN": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hoolulu-deep-research",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/hoolulu/deep-research",
-    "github": "hoolulu/deep-research",
-    "github_stars": 500,
-    "name": {
-      "en": "hoolulu/deep-research",
-      "zh-CN": "hoolulu/deep-research (GitHub ⭐500)",
-      "zh-TW": "hoolulu/deep-research (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages",
-      "zh-CN": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 500+ Stars 开源项目",
-      "zh-TW": "深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告 / Professional deep research report generation Skill · Supports 19 languages | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
