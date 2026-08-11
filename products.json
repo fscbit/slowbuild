@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 538809,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐538809)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐538809)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 538809+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 538809+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 494620,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐494620)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐494620)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 494620+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 494620+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-l0ng-ai-papr",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/l0ng-ai/papr",
+    "github": "l0ng-ai/papr",
+    "github_stars": 500,
+    "name": {
+      "en": "l0ng-ai/papr",
+      "zh-CN": "l0ng-ai/papr (GitHub ⭐500)",
+      "zh-TW": "l0ng-ai/papr (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell.",
+      "zh-CN": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-berabuddies-redis-poc",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/berabuddies/redis-poc",
+    "github": "berabuddies/redis-poc",
+    "github_stars": 499,
+    "name": {
+      "en": "berabuddies/redis-poc",
+      "zh-CN": "berabuddies/redis-poc (GitHub ⭐499)",
+      "zh-TW": "berabuddies/redis-poc (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
+      "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting.",
       "zh-CN": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting. | GitHub 500+ Stars 开源项目",
       "zh-TW": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44282,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44282)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44282)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44282+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44282+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44012,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44012)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44012)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44012+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44012+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40357,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40357)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40357)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your Internet traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40357+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your Internet traffic 🕵️‍♂️ | GitHub 40357+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-charles-0509-grok-register",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/Charles-0509/Grok-Register",
-    "github": "Charles-0509/Grok-Register",
-    "github_stars": 500,
-    "name": {
-      "en": "Charles-0509/Grok-Register",
-      "zh-CN": "Charles-0509/Grok-Register (GitHub ⭐500)",
-      "zh-TW": "Charles-0509/Grok-Register (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Grok free-register CLI: register → OAuth → CPA JSON (Go)",
-      "zh-CN": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Grok free-register CLI: register → OAuth → CPA JSON (Go) | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
