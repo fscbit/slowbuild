@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 538809,
+    "stars": 539118,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-11T22:49:08Z"
+    "updated": "2026-08-12T22:58:38Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 494620,
+    "stars": 494966,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-11T22:45:57Z"
+    "updated": "2026-08-12T22:59:40Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 455508,
+    "stars": 455706,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-11T22:59:52Z"
+    "updated": "2026-08-12T22:55:14Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453822,
+    "stars": 453898,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-11T22:48:47Z"
+    "updated": "2026-08-12T22:49:35Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394168,
+    "stars": 394259,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-11T22:44:36Z"
+    "updated": "2026-08-12T22:57:12Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60207,
+    "stars": 60216,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-11T22:45:48Z"
+    "updated": "2026-08-12T20:39:02Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44288,
+    "stars": 44289,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-11T18:51:51Z"
+    "updated": "2026-08-12T22:47:37Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44050,
+    "stars": 44057,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-11T21:33:10Z"
+    "updated": "2026-08-12T22:54:29Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
-    "description": "Comfortably monitor your Internet traffic 🕵️‍♂️",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40501,
+    "stars": 40520,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-11T21:42:37Z"
+    "updated": "2026-08-12T22:28:14Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40187,
+    "stars": 40211,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,42 +167,14 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-11T21:22:14Z"
-  },
-  {
-    "name": "l0ng-ai/papr",
-    "description": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the sh",
-    "url": "https://github.com/l0ng-ai/papr",
-    "homepage": "",
-    "stars": 500,
-    "language": "Rust",
-    "topics": [
-      "agent-skills",
-      "agentic",
-      "ai-agents",
-      "claude-code",
-      "cli"
-    ],
-    "source": "new",
-    "updated": "2026-08-11T12:32:05Z"
-  },
-  {
-    "name": "cupidbity/cupid-music-player",
-    "description": "",
-    "url": "https://github.com/cupidbity/cupid-music-player",
-    "homepage": "",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-11T19:12:36Z"
+    "updated": "2026-08-12T22:42:33Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
     "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
     "url": "https://github.com/VILA-Lab/FigMirror",
     "homepage": "",
-    "stars": 499,
+    "stars": 500,
     "language": "Python",
     "topics": [
       "agent",
@@ -212,7 +184,38 @@
       "data-visualization"
     ],
     "source": "new",
-    "updated": "2026-08-10T11:44:17Z"
+    "updated": "2026-08-12T15:46:38Z"
+  },
+  {
+    "name": "buynao/aipath",
+    "description": "Interactive AI General Education Course — 30 Lessons, Zero Math",
+    "url": "https://github.com/buynao/aipath",
+    "homepage": "https://aipath.buynao.com",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "ai",
+      "machine-learning"
+    ],
+    "source": "new",
+    "updated": "2026-08-12T06:07:32Z"
+  },
+  {
+    "name": "Radiant303/SpringNote",
+    "description": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, maki",
+    "url": "https://github.com/Radiant303/SpringNote",
+    "homepage": "https://radiant303.github.io/SpringNote/",
+    "stars": 500,
+    "language": "Dart",
+    "topics": [
+      "chatgpt",
+      "claude",
+      "deepseek",
+      "flutter",
+      "gemini"
+    ],
+    "source": "new",
+    "updated": "2026-08-12T12:27:33Z"
   },
   {
     "name": "berabuddies/redis-poc",
@@ -226,17 +229,20 @@
     "updated": "2026-08-11T08:00:06Z"
   },
   {
-    "name": "buynao/aipath",
-    "description": "Interactive AI General Education Course — 30 Lessons, Zero Math",
-    "url": "https://github.com/buynao/aipath",
-    "homepage": "https://aipath.buynao.com",
+    "name": "FrizzleM/SideInstaller",
+    "description": "An an app that installs Sidestore on iOS 27, fully on-device ",
+    "url": "https://github.com/FrizzleM/SideInstaller",
+    "homepage": "https://SideInstaller.net",
     "stars": 499,
-    "language": "JavaScript",
+    "language": "C",
     "topics": [
-      "ai",
-      "machine-learning"
+      "exploit",
+      "ios",
+      "ipa",
+      "sideloading",
+      "sidestore"
     ],
     "source": "new",
-    "updated": "2026-08-11T08:33:31Z"
+    "updated": "2026-08-12T22:49:36Z"
   }
 ]

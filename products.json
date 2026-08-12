@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44289,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44289)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44289)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44289+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44289+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44057,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44057)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44057)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44057+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44057+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40520,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40520)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40520)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40520+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40520+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-radiant303-springnote",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Radiant303/SpringNote",
+    "github": "Radiant303/SpringNote",
+    "github_stars": 500,
+    "name": {
+      "en": "Radiant303/SpringNote",
+      "zh-CN": "Radiant303/SpringNote (GitHub ⭐500)",
+      "zh-TW": "Radiant303/SpringNote (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless.",
+      "zh-CN": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-frizzlem-sideinstaller",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/FrizzleM/SideInstaller",
+    "github": "FrizzleM/SideInstaller",
+    "github_stars": 499,
+    "name": {
+      "en": "FrizzleM/SideInstaller",
+      "zh-CN": "FrizzleM/SideInstaller (GitHub ⭐499)",
+      "zh-TW": "FrizzleM/SideInstaller (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "An an app that installs Sidestore on iOS 27, fully on-device",
+      "zh-CN": "An an app that installs Sidestore on iOS 27, fully on-device | GitHub 499+ Stars 开源项目",
+      "zh-TW": "An an app that installs Sidestore on iOS 27, fully on-device | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
       "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 开源项目",
       "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 394036,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394036)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394036)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 394036+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 394036+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60164,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60164)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60164)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60164+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60164+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40150,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40150)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40150)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40150+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40150+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-amap-ml-longhorizon-harness",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/AMAP-ML/LongHorizon-Harness",
-    "github": "AMAP-ML/LongHorizon-Harness",
-    "github_stars": 500,
-    "name": {
-      "en": "AMAP-ML/LongHorizon-Harness",
-      "zh-CN": "AMAP-ML/LongHorizon-Harness (GitHub ⭐500)",
-      "zh-TW": "AMAP-ML/LongHorizon-Harness (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making relia",
-      "zh-CN": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making relia | GitHub 500+ Stars 开源项目",
-      "zh-TW": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making relia | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-einsia-browser-bc",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/Einsia/Browser-BC",
-    "github": "Einsia/Browser-BC",
-    "github_stars": 500,
-    "name": {
-      "en": "Einsia/Browser-BC",
-      "zh-CN": "Einsia/Browser-BC (GitHub ⭐500)",
-      "zh-TW": "Einsia/Browser-BC (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting.",
-      "zh-CN": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Agent behavior clone for browser using, targeting general GUI using and distributed trajectory collecting. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
