@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 539118,
+    "stars": 539445,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-12T22:58:38Z"
+    "updated": "2026-08-13T22:59:58Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 494966,
+    "stars": 495377,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-12T22:59:40Z"
+    "updated": "2026-08-13T22:56:18Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 455706,
+    "stars": 455949,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-12T22:55:14Z"
+    "updated": "2026-08-13T22:59:58Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453898,
+    "stars": 453959,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-12T22:49:35Z"
+    "updated": "2026-08-13T22:37:25Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394259,
+    "stars": 394337,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-12T22:57:12Z"
+    "updated": "2026-08-13T21:59:01Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60216,
+    "stars": 60231,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-12T20:39:02Z"
+    "updated": "2026-08-13T20:05:10Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44289,
+    "stars": 44290,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-12T22:47:37Z"
+    "updated": "2026-08-13T22:47:23Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44057,
+    "stars": 44074,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-12T22:54:29Z"
+    "updated": "2026-08-13T20:44:08Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40520,
+    "stars": 40530,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-12T22:28:14Z"
+    "updated": "2026-08-13T22:25:37Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40211,
+    "stars": 40224,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-12T22:42:33Z"
+    "updated": "2026-08-13T22:53:55Z"
   },
   {
     "name": "VILA-Lab/FigMirror",
@@ -201,48 +201,42 @@
     "updated": "2026-08-12T06:07:32Z"
   },
   {
-    "name": "Radiant303/SpringNote",
-    "description": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, maki",
-    "url": "https://github.com/Radiant303/SpringNote",
-    "homepage": "https://radiant303.github.io/SpringNote/",
+    "name": "CodeAbra/iai-personal-memory-engine",
+    "description": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time",
+    "url": "https://github.com/CodeAbra/iai-personal-memory-engine",
+    "homepage": "",
     "stars": 500,
-    "language": "Dart",
+    "language": "Python",
     "topics": [
-      "chatgpt",
+      "agent-memory",
+      "ai-memory",
       "claude",
-      "deepseek",
-      "flutter",
-      "gemini"
+      "claude-code",
+      "codex"
     ],
     "source": "new",
-    "updated": "2026-08-12T12:27:33Z"
+    "updated": "2026-08-13T16:04:02Z"
   },
   {
-    "name": "berabuddies/redis-poc",
-    "description": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
-    "url": "https://github.com/berabuddies/redis-poc",
+    "name": "XboxNahida/ghostty-blackhole-main",
+    "description": "适用于Windows环境的黑洞屏保",
+    "url": "https://github.com/XboxNahida/ghostty-blackhole-main",
     "homepage": "",
-    "stars": 499,
-    "language": "Python",
+    "stars": 500,
+    "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-11T08:00:06Z"
+    "updated": "2026-08-13T12:57:49Z"
   },
   {
-    "name": "FrizzleM/SideInstaller",
-    "description": "An an app that installs Sidestore on iOS 27, fully on-device ",
-    "url": "https://github.com/FrizzleM/SideInstaller",
-    "homepage": "https://SideInstaller.net",
+    "name": "jtydhr88/ComfyTV",
+    "description": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
+    "url": "https://github.com/jtydhr88/ComfyTV",
+    "homepage": "comfytv.org",
     "stars": 499,
-    "language": "C",
-    "topics": [
-      "exploit",
-      "ios",
-      "ipa",
-      "sideloading",
-      "sidestore"
-    ],
+    "language": "JavaScript",
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-12T22:49:36Z"
+    "updated": "2026-08-13T20:16:59Z"
   }
 ]

@@ -537,6 +537,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-iai-personal-memory-engine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-iai-personal-memory-engine.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-interior.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

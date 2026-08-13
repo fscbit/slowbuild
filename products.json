@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 394337,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394337)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394337)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 394337+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 394337+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60231,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60231)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60231)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60231+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60231+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40224,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40224)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40224)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40224+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40224+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-codeabra-iai-personal-memory-e",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/CodeAbra/iai-personal-memory-engine",
+    "github": "CodeAbra/iai-personal-memory-engine",
+    "github_stars": 500,
+    "name": {
+      "en": "CodeAbra/iai-personal-memory-engine",
+      "zh-CN": "CodeAbra/iai-personal-memory-engine (GitHub ⭐500)",
+      "zh-TW": "CodeAbra/iai-personal-memory-engine (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs",
+      "zh-CN": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-xboxnahida-ghostty-blackhole-m",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/XboxNahida/ghostty-blackhole-main",
+    "github": "XboxNahida/ghostty-blackhole-main",
+    "github_stars": 500,
+    "name": {
+      "en": "XboxNahida/ghostty-blackhole-main",
+      "zh-CN": "XboxNahida/ghostty-blackhole-main (GitHub ⭐500)",
+      "zh-TW": "XboxNahida/ghostty-blackhole-main (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "适用于Windows环境的黑洞屏保",
+      "zh-CN": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jtydhr88-comfytv",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/jtydhr88/ComfyTV",
+    "github": "jtydhr88/ComfyTV",
+    "github_stars": 499,
+    "name": {
+      "en": "jtydhr88/ComfyTV",
+      "zh-CN": "jtydhr88/ComfyTV (GitHub ⭐499)",
+      "zh-TW": "jtydhr88/ComfyTV (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
+      "zh-CN": "ComfyTV — the canvas-based app that truly belongs to ComfyUI. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "ComfyTV — the canvas-based app that truly belongs to ComfyUI. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
       "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 开源项目",
       "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 455360,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐455360)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐455360)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 455360+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 455360+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 453753,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐453753)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐453753)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453753+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 453753+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vila-lab-figmirror",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/VILA-Lab/FigMirror",
-    "github": "VILA-Lab/FigMirror",
-    "github_stars": 499,
-    "name": {
-      "en": "VILA-Lab/FigMirror",
-      "zh-CN": "VILA-Lab/FigMirror (GitHub ⭐499)",
-      "zh-TW": "VILA-Lab/FigMirror (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-      "zh-CN": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cupidbity-cupid-music-player",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/cupidbity/cupid-music-player",
-    "github": "cupidbity/cupid-music-player",
-    "github_stars": 499,
-    "name": {
-      "en": "cupidbity/cupid-music-player",
-      "zh-CN": "cupidbity/cupid-music-player (GitHub ⭐499)",
-      "zh-TW": "cupidbity/cupid-music-player (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "cupidbity/cupid-music-player - Open source tool",
-      "zh-CN": "cupidbity/cupid-music-player - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "cupidbity/cupid-music-player - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yukkcat-chatgpt2api",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/yukkcat/chatgpt2api",
-    "github": "yukkcat/chatgpt2api",
-    "github_stars": 499,
-    "name": {
-      "en": "yukkcat/chatgpt2api",
-      "zh-CN": "yukkcat/chatgpt2api (GitHub ⭐499)",
-      "zh-TW": "yukkcat/chatgpt2api (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件",
-      "zh-CN": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "ChatGPT官网接口纯协议的逆向实现，支持注册机维持号池额度，支持GPT-Image-2模型、文本模型，兼容OpenAI接口协议，在线批量生图/编辑图，号池管理，支持可编辑PPT/PSD文件逆向，支持导入CPA、sub2api号池 、支持接入Cherry Studio、New Api 等软件 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-buynao-aipath",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/buynao/aipath",
-    "github": "buynao/aipath",
-    "github_stars": 498,
-    "name": {
-      "en": "buynao/aipath",
-      "zh-CN": "buynao/aipath (GitHub ⭐498)",
-      "zh-TW": "buynao/aipath (GitHub ⭐498)"
-    },
-    "desc": {
-      "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
-      "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 开源项目",
-      "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 498+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
