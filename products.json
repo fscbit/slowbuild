@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 458545,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐458545)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐458545)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 458545+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 458545+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 454027,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐454027)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐454027)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454027+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454027+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mira-wm-mira",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/mira-wm/mira",
+    "github": "mira-wm/mira",
+    "github_stars": 500,
+    "name": {
+      "en": "mira-wm/mira",
+      "zh-CN": "mira-wm/mira (GitHub ⭐500)",
+      "zh-TW": "mira-wm/mira (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders",
+      "zh-CN": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-buynao-aipath",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/buynao/aipath",
+    "github": "buynao/aipath",
+    "github_stars": 500,
+    "name": {
+      "en": "buynao/aipath",
+      "zh-CN": "buynao/aipath (GitHub ⭐500)",
+      "zh-TW": "buynao/aipath (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
+      "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-rosemarycox5334-debug-alphamas",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/rosemarycox5334-debug/AlphaMaster",
+    "github": "rosemarycox5334-debug/AlphaMaster",
+    "github_stars": 500,
+    "name": {
+      "en": "rosemarycox5334-debug/AlphaMaster",
+      "zh-CN": "rosemarycox5334-debug/AlphaMaster (GitHub ⭐500)",
+      "zh-TW": "rosemarycox5334-debug/AlphaMaster (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "MT5 factor mining, backtest, and web training UI",
+      "zh-CN": "MT5 factor mining, backtest, and web training UI | GitHub 500+ Stars 开源项目",
+      "zh-TW": "MT5 factor mining, backtest, and web training UI | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless.",
       "zh-CN": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 开源项目",
       "zh-TW": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-frizzlem-sideinstaller",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/FrizzleM/SideInstaller",
-    "github": "FrizzleM/SideInstaller",
-    "github_stars": 499,
-    "name": {
-      "en": "FrizzleM/SideInstaller",
-      "zh-CN": "FrizzleM/SideInstaller (GitHub ⭐499)",
-      "zh-TW": "FrizzleM/SideInstaller (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "An an app that installs Sidestore on iOS 27, fully on-device",
-      "zh-CN": "An an app that installs Sidestore on iOS 27, fully on-device | GitHub 499+ Stars 开源项目",
-      "zh-TW": "An an app that installs Sidestore on iOS 27, fully on-device | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 538809,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐538809)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐538809)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 538809+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 538809+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 494620,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐494620)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐494620)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 494620+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 494620+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-l0ng-ai-papr",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/l0ng-ai/papr",
-    "github": "l0ng-ai/papr",
-    "github_stars": 500,
-    "name": {
-      "en": "l0ng-ai/papr",
-      "zh-CN": "l0ng-ai/papr (GitHub ⭐500)",
-      "zh-TW": "l0ng-ai/papr (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell.",
-      "zh-CN": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A fast, native RSS reader — plus an agent-facing CLI so your AI agent can read, search and triage your feeds from the shell. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-berabuddies-redis-poc",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/berabuddies/redis-poc",
-    "github": "berabuddies/redis-poc",
-    "github_stars": 499,
-    "name": {
-      "en": "berabuddies/redis-poc",
-      "zh-CN": "berabuddies/redis-poc (GitHub ⭐499)",
-      "zh-TW": "berabuddies/redis-poc (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
-      "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

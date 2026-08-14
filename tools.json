@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 539445,
+    "stars": 539730,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-13T22:59:58Z"
+    "updated": "2026-08-14T22:57:29Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 495377,
+    "stars": 495778,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-13T22:56:18Z"
+    "updated": "2026-08-14T22:55:02Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 455949,
+    "stars": 458545,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-13T22:59:58Z"
+    "updated": "2026-08-14T22:53:04Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 453959,
+    "stars": 454027,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-13T22:37:25Z"
+    "updated": "2026-08-14T22:48:14Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394337,
+    "stars": 394417,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-13T21:59:01Z"
+    "updated": "2026-08-14T22:48:09Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60231,
+    "stars": 60225,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,7 +99,7 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-13T20:05:10Z"
+    "updated": "2026-08-14T22:48:11Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-13T22:47:23Z"
+    "updated": "2026-08-14T21:52:19Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44074,
+    "stars": 44085,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-13T20:44:08Z"
+    "updated": "2026-08-14T21:00:59Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40530,
+    "stars": 40536,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-13T22:25:37Z"
+    "updated": "2026-08-14T22:23:00Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40224,
+    "stars": 40229,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,24 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-13T22:53:55Z"
+    "updated": "2026-08-14T21:56:57Z"
   },
   {
-    "name": "VILA-Lab/FigMirror",
-    "description": "An Automated AI Agent Tool for Plotting Your Data in Any Paper's Figure Style.",
-    "url": "https://github.com/VILA-Lab/FigMirror",
-    "homepage": "",
+    "name": "mira-wm/mira",
+    "description": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders",
+    "url": "https://github.com/mira-wm/mira",
+    "homepage": "https://mira-wm.com/",
     "stars": 500,
     "language": "Python",
-    "topics": [
-      "agent",
-      "agent-skills",
-      "claude-code",
-      "codex",
-      "data-visualization"
-    ],
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-12T15:46:38Z"
+    "updated": "2026-08-14T14:06:24Z"
   },
   {
     "name": "buynao/aipath",
@@ -215,7 +209,18 @@
       "codex"
     ],
     "source": "new",
-    "updated": "2026-08-13T16:04:02Z"
+    "updated": "2026-08-14T20:40:55Z"
+  },
+  {
+    "name": "rosemarycox5334-debug/AlphaMaster",
+    "description": "MT5 factor mining, backtest, and web training UI",
+    "url": "https://github.com/rosemarycox5334-debug/AlphaMaster",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-14T08:07:44Z"
   },
   {
     "name": "XboxNahida/ghostty-blackhole-main",
@@ -226,17 +231,6 @@
     "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-13T12:57:49Z"
-  },
-  {
-    "name": "jtydhr88/ComfyTV",
-    "description": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
-    "url": "https://github.com/jtydhr88/ComfyTV",
-    "homepage": "comfytv.org",
-    "stars": 499,
-    "language": "JavaScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-13T20:16:59Z"
+    "updated": "2026-08-14T10:04:52Z"
   }
 ]
