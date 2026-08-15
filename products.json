@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 539997,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐539997)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐539997)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 539997+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 539997+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 496130,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐496130)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐496130)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 496130+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 496130+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-berabuddies-redis-poc",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/berabuddies/redis-poc",
+    "github": "berabuddies/redis-poc",
+    "github_stars": 500,
+    "name": {
+      "en": "berabuddies/redis-poc",
+      "zh-CN": "berabuddies/redis-poc (GitHub ⭐500)",
+      "zh-TW": "berabuddies/redis-poc (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
+      "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aigclink-geolook",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/aigclink/geolook",
+    "github": "aigclink/geolook",
+    "github_stars": 500,
+    "name": {
+      "en": "aigclink/geolook",
+      "zh-CN": "aigclink/geolook (GitHub ⭐500)",
+      "zh-TW": "aigclink/geolook (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification",
+      "zh-CN": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-criptogus-hermesoffice",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/criptogus/HermesOffice",
+    "github": "criptogus/HermesOffice",
+    "github_stars": 499,
+    "name": {
+      "en": "criptogus/HermesOffice",
+      "zh-CN": "criptogus/HermesOffice (GitHub ⭐499)",
+      "zh-TW": "criptogus/HermesOffice (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local.",
+      "zh-CN": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "适用于Windows环境的黑洞屏保",
       "zh-CN": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 开源项目",
       "zh-TW": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jtydhr88-comfytv",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/jtydhr88/ComfyTV",
-    "github": "jtydhr88/ComfyTV",
-    "github_stars": 499,
-    "name": {
-      "en": "jtydhr88/ComfyTV",
-      "zh-CN": "jtydhr88/ComfyTV (GitHub ⭐499)",
-      "zh-TW": "jtydhr88/ComfyTV (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "ComfyTV — the canvas-based app that truly belongs to ComfyUI.",
-      "zh-CN": "ComfyTV — the canvas-based app that truly belongs to ComfyUI. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "ComfyTV — the canvas-based app that truly belongs to ComfyUI. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44289,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44289)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44289)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44289+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44289+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44057,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44057)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44057)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44057+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44057+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40520,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40520)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40520)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40520+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40520+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-radiant303-springnote",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Radiant303/SpringNote",
-    "github": "Radiant303/SpringNote",
-    "github_stars": 500,
-    "name": {
-      "en": "Radiant303/SpringNote",
-      "zh-CN": "Radiant303/SpringNote (GitHub ⭐500)",
-      "zh-TW": "Radiant303/SpringNote (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless.",
-      "zh-CN": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "SpringNote is a note-taking tool for the lazy. Just jot things down, and AI tidies up the scattered pieces for you, making recording effortless. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
