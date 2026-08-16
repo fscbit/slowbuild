@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 539997,
+    "stars": 540261,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-15T22:58:56Z"
+    "updated": "2026-08-16T22:43:42Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 496130,
+    "stars": 496560,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-15T22:59:42Z"
+    "updated": "2026-08-16T22:51:52Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 460112,
+    "stars": 461659,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-15T23:00:02Z"
+    "updated": "2026-08-16T22:58:57Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454066,
+    "stars": 454151,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-15T22:23:50Z"
+    "updated": "2026-08-16T22:52:43Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394472,
+    "stars": 394574,
     "language": "Python",
     "topics": [
       "books",
@@ -82,7 +82,7 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-15T22:58:49Z"
+    "updated": "2026-08-16T22:09:36Z"
   },
   {
     "name": "sharkdp/bat",
@@ -99,7 +99,7 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-15T21:36:51Z"
+    "updated": "2026-08-16T21:49:18Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-15T21:08:28Z"
+    "updated": "2026-08-16T13:33:57Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44094,
+    "stars": 44104,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-15T21:00:52Z"
+    "updated": "2026-08-16T20:59:22Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40553,
+    "stars": 40565,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-15T22:51:46Z"
+    "updated": "2026-08-16T22:26:10Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40233,
+    "stars": 40246,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-15T21:49:33Z"
+    "updated": "2026-08-16T22:22:48Z"
   },
   {
-    "name": "berabuddies/redis-poc",
-    "description": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
-    "url": "https://github.com/berabuddies/redis-poc",
+    "name": "openai/role-specific-plugins",
+    "description": "Role-specific Codex plugin templates",
+    "url": "https://github.com/openai/role-specific-plugins",
     "homepage": "",
     "stars": 500,
-    "language": "Python",
+    "language": "JavaScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-15T17:56:29Z"
+    "updated": "2026-08-16T22:41:42Z"
   },
   {
     "name": "buynao/aipath",
@@ -195,54 +195,42 @@
     "updated": "2026-08-12T06:07:32Z"
   },
   {
-    "name": "CodeAbra/iai-personal-memory-engine",
-    "description": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time",
-    "url": "https://github.com/CodeAbra/iai-personal-memory-engine",
+    "name": "XboxNahida/ghostty-blackhole-main",
+    "description": "适用于Windows环境的黑洞屏保",
+    "url": "https://github.com/XboxNahida/ghostty-blackhole-main",
     "homepage": "",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "agent-memory",
-      "ai-memory",
-      "claude",
-      "claude-code",
-      "codex"
-    ],
+    "language": "C++",
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-15T21:40:13Z"
+    "updated": "2026-08-16T09:00:19Z"
   },
   {
-    "name": "aigclink/geolook",
-    "description": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification",
-    "url": "https://github.com/aigclink/geolook",
-    "homepage": "https://geolook.cc",
+    "name": "AARomanov1985/Audio-Cassette-Simulation",
+    "description": "This project simulates cassette tape audio profiles using ffmpeg",
+    "url": "https://github.com/AARomanov1985/Audio-Cassette-Simulation",
+    "homepage": "",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "aeo",
-      "ai-search",
-      "ai-visibility",
-      "answer-engine-optimization",
-      "generative-engine-optimization"
-    ],
+    "language": "Shell",
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-15T17:13:23Z"
+    "updated": "2026-08-16T10:54:11Z"
   },
   {
-    "name": "criptogus/HermesOffice",
-    "description": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving",
-    "url": "https://github.com/criptogus/HermesOffice",
+    "name": "GiraffePlunder/Better-Discord-2026",
+    "description": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extens",
+    "url": "https://github.com/GiraffePlunder/Better-Discord-2026",
     "homepage": "",
     "stars": 499,
-    "language": "TypeScript",
+    "language": "",
     "topics": [
-      "agent",
-      "ai-native",
-      "docx",
-      "electron",
-      "hermes"
+      "account-switching",
+      "bandagedbetterdiscord",
+      "better-discord",
+      "betterdiscord",
+      "betterdiscord-addon"
     ],
     "source": "new",
-    "updated": "2026-08-15T14:32:15Z"
+    "updated": "2026-08-15T15:19:20Z"
   }
 ]

@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44290,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44290)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44290)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44290+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44290+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44104,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44104)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44104)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44104+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44104+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40565,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40565)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40565)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40565+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40565+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-openai-role-specific-plugins",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/openai/role-specific-plugins",
+    "github": "openai/role-specific-plugins",
+    "github_stars": 500,
+    "name": {
+      "en": "openai/role-specific-plugins",
+      "zh-CN": "openai/role-specific-plugins (GitHub ⭐500)",
+      "zh-TW": "openai/role-specific-plugins (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Role-specific Codex plugin templates",
+      "zh-CN": "Role-specific Codex plugin templates | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Role-specific Codex plugin templates | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aaromanov1985-audio-cassette-s",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/AARomanov1985/Audio-Cassette-Simulation",
+    "github": "AARomanov1985/Audio-Cassette-Simulation",
+    "github_stars": 500,
+    "name": {
+      "en": "AARomanov1985/Audio-Cassette-Simulation",
+      "zh-CN": "AARomanov1985/Audio-Cassette-Simulation (GitHub ⭐500)",
+      "zh-TW": "AARomanov1985/Audio-Cassette-Simulation (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "This project simulates cassette tape audio profiles using ffmpeg",
+      "zh-CN": "This project simulates cassette tape audio profiles using ffmpeg | GitHub 500+ Stars 开源项目",
+      "zh-TW": "This project simulates cassette tape audio profiles using ffmpeg | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-giraffeplunder-better-discord-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/GiraffePlunder/Better-Discord-2026",
+    "github": "GiraffePlunder/Better-Discord-2026",
+    "github_stars": 499,
+    "name": {
+      "en": "GiraffePlunder/Better-Discord-2026",
+      "zh-CN": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)",
+      "zh-TW": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w",
+      "zh-CN": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 开源项目",
+      "zh-TW": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
       "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 开源项目",
       "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-rosemarycox5334-debug-alphamas",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/rosemarycox5334-debug/AlphaMaster",
-    "github": "rosemarycox5334-debug/AlphaMaster",
-    "github_stars": 500,
-    "name": {
-      "en": "rosemarycox5334-debug/AlphaMaster",
-      "zh-CN": "rosemarycox5334-debug/AlphaMaster (GitHub ⭐500)",
-      "zh-TW": "rosemarycox5334-debug/AlphaMaster (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "MT5 factor mining, backtest, and web training UI",
-      "zh-CN": "MT5 factor mining, backtest, and web training UI | GitHub 500+ Stars 开源项目",
-      "zh-TW": "MT5 factor mining, backtest, and web training UI | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 394337,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394337)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394337)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 394337+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 394337+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60231,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60231)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60231)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60231+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60231+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40224,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40224)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40224)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40224+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40224+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codeabra-iai-personal-memory-e",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/CodeAbra/iai-personal-memory-engine",
-    "github": "CodeAbra/iai-personal-memory-engine",
-    "github_stars": 500,
-    "name": {
-      "en": "CodeAbra/iai-personal-memory-engine",
-      "zh-CN": "CodeAbra/iai-personal-memory-engine (GitHub ⭐500)",
-      "zh-TW": "CodeAbra/iai-personal-memory-engine (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs",
-      "zh-CN": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Curs | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-xboxnahida-ghostty-blackhole-m",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/XboxNahida/ghostty-blackhole-main",
-    "github": "XboxNahida/ghostty-blackhole-main",
-    "github_stars": 500,
-    "name": {
-      "en": "XboxNahida/ghostty-blackhole-main",
-      "zh-CN": "XboxNahida/ghostty-blackhole-main (GitHub ⭐500)",
-      "zh-TW": "XboxNahida/ghostty-blackhole-main (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "适用于Windows环境的黑洞屏保",
-      "zh-CN": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "适用于Windows环境的黑洞屏保 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
