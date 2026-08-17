@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 394630,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394630)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394630)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 394630+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 394630+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60196,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60196)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60196)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60196+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60196+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40261,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40261)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40261)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40261+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40261+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-stanuwu-sunrise",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/stanuwu/Sunrise",
+    "github": "stanuwu/Sunrise",
+    "github_stars": 500,
+    "name": {
+      "en": "stanuwu/Sunrise",
+      "zh-CN": "stanuwu/Sunrise (GitHub ⭐500)",
+      "zh-TW": "stanuwu/Sunrise (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Destiny 2 Offline Exploration Mod",
+      "zh-CN": "Destiny 2 Offline Exploration Mod | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Destiny 2 Offline Exploration Mod | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-quartzlanceawaken-autodesk-inv",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
+    "github": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
+    "github_stars": 499,
+    "name": {
+      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
+      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)",
+      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool",
+      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-w3cj-how-llms-work",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/w3cj/how-llms-work",
+    "github": "w3cj/how-llms-work",
+    "github_stars": 499,
+    "name": {
+      "en": "w3cj/how-llms-work",
+      "zh-CN": "w3cj/how-llms-work (GitHub ⭐499)",
+      "zh-TW": "w3cj/how-llms-work (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code",
+      "zh-CN": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code | GitHub 499+ Stars 开源项目",
+      "zh-TW": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
       "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 开源项目",
       "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aigclink-geolook",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/aigclink/geolook",
-    "github": "aigclink/geolook",
-    "github_stars": 500,
-    "name": {
-      "en": "aigclink/geolook",
-      "zh-CN": "aigclink/geolook (GitHub ⭐500)",
-      "zh-TW": "aigclink/geolook (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification",
-      "zh-CN": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-criptogus-hermesoffice",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/criptogus/HermesOffice",
-    "github": "criptogus/HermesOffice",
-    "github_stars": 499,
-    "name": {
-      "en": "criptogus/HermesOffice",
-      "zh-CN": "criptogus/HermesOffice (GitHub ⭐499)",
-      "zh-TW": "criptogus/HermesOffice (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local.",
-      "zh-CN": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "AI-native office suite (Docs, Sheets, Slides, PDF) where the Hermes Agent is the brain — open standards, byte-preserving round-trip, 100% local. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 458545,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐458545)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐458545)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 458545+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 458545+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 454027,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐454027)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐454027)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454027+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454027+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mira-wm-mira",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/mira-wm/mira",
-    "github": "mira-wm/mira",
-    "github_stars": 500,
-    "name": {
-      "en": "mira-wm/mira",
-      "zh-CN": "mira-wm/mira (GitHub ⭐500)",
-      "zh-TW": "mira-wm/mira (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders",
-      "zh-CN": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Code for MIRA: Multiplayer Interactive World Models with Representation Autoencoders | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-buynao-aipath",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/buynao/aipath",
-    "github": "buynao/aipath",
-    "github_stars": 500,
-    "name": {
-      "en": "buynao/aipath",
-      "zh-CN": "buynao/aipath (GitHub ⭐500)",
-      "zh-TW": "buynao/aipath (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Interactive AI General Education Course — 30 Lessons, Zero Math",
-      "zh-CN": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Interactive AI General Education Course — 30 Lessons, Zero Math | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

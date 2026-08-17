@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 540261,
+    "stars": 540522,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-16T22:43:42Z"
+    "updated": "2026-08-17T22:48:12Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 496560,
+    "stars": 496981,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-16T22:51:52Z"
+    "updated": "2026-08-17T22:56:34Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 461659,
+    "stars": 463179,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-16T22:58:57Z"
+    "updated": "2026-08-17T22:57:08Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454151,
+    "stars": 454206,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-16T22:52:43Z"
+    "updated": "2026-08-17T22:58:11Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394574,
+    "stars": 394630,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-16T22:09:36Z"
+    "updated": "2026-08-17T22:46:44Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60190,
+    "stars": 60196,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-16T21:49:18Z"
+    "updated": "2026-08-17T19:49:32Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44290,
+    "stars": 44291,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-16T13:33:57Z"
+    "updated": "2026-08-17T19:33:56Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44104,
+    "stars": 44113,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-16T20:59:22Z"
+    "updated": "2026-08-17T22:17:37Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40565,
+    "stars": 40584,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-16T22:26:10Z"
+    "updated": "2026-08-17T22:20:57Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40246,
+    "stars": 40261,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-16T22:22:48Z"
+    "updated": "2026-08-17T21:04:53Z"
   },
   {
     "name": "openai/role-specific-plugins",
@@ -195,42 +195,42 @@
     "updated": "2026-08-12T06:07:32Z"
   },
   {
-    "name": "XboxNahida/ghostty-blackhole-main",
-    "description": "适用于Windows环境的黑洞屏保",
-    "url": "https://github.com/XboxNahida/ghostty-blackhole-main",
+    "name": "stanuwu/Sunrise",
+    "description": "Destiny 2 Offline Exploration Mod",
+    "url": "https://github.com/stanuwu/Sunrise",
     "homepage": "",
     "stars": 500,
     "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-16T09:00:19Z"
+    "updated": "2026-08-17T22:44:24Z"
   },
   {
-    "name": "AARomanov1985/Audio-Cassette-Simulation",
-    "description": "This project simulates cassette tape audio profiles using ffmpeg",
-    "url": "https://github.com/AARomanov1985/Audio-Cassette-Simulation",
-    "homepage": "",
-    "stars": 500,
-    "language": "Shell",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-16T10:54:11Z"
-  },
-  {
-    "name": "GiraffePlunder/Better-Discord-2026",
-    "description": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extens",
-    "url": "https://github.com/GiraffePlunder/Better-Discord-2026",
+    "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
+    "description": "",
+    "url": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
     "homepage": "",
     "stars": 499,
     "language": "",
     "topics": [
-      "account-switching",
-      "bandagedbetterdiscord",
-      "better-discord",
-      "betterdiscord",
-      "betterdiscord-addon"
+      "autocad",
+      "autodesk-inventor-pro-pc",
+      "first-robotics-competition",
+      "fusion360",
+      "inventor"
     ],
     "source": "new",
-    "updated": "2026-08-15T15:19:20Z"
+    "updated": "2026-08-17T14:51:58Z"
+  },
+  {
+    "name": "w3cj/how-llms-work",
+    "description": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer f",
+    "url": "https://github.com/w3cj/how-llms-work",
+    "homepage": "",
+    "stars": 499,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-17T22:45:08Z"
   }
 ]
