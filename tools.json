@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 540522,
+    "stars": 540875,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-17T22:48:12Z"
+    "updated": "2026-08-18T22:57:40Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 496981,
+    "stars": 497407,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-17T22:56:34Z"
+    "updated": "2026-08-18T22:58:43Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 463179,
+    "stars": 464473,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-17T22:57:08Z"
+    "updated": "2026-08-18T22:59:10Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454206,
+    "stars": 454277,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-17T22:58:11Z"
+    "updated": "2026-08-18T22:25:02Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394630,
+    "stars": 394702,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-17T22:46:44Z"
+    "updated": "2026-08-18T22:52:11Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60196,
+    "stars": 60207,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-17T19:49:32Z"
+    "updated": "2026-08-18T21:20:23Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44291,
+    "stars": 44293,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-17T19:33:56Z"
+    "updated": "2026-08-18T20:12:09Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44113,
+    "stars": 44124,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-17T22:17:37Z"
+    "updated": "2026-08-18T20:15:24Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40584,
+    "stars": 40594,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-17T22:20:57Z"
+    "updated": "2026-08-18T21:59:11Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40261,
+    "stars": 40276,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,43 +167,23 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-17T21:04:53Z"
+    "updated": "2026-08-18T21:35:57Z"
   },
   {
-    "name": "openai/role-specific-plugins",
-    "description": "Role-specific Codex plugin templates",
-    "url": "https://github.com/openai/role-specific-plugins",
+    "name": "SheberDavid/v4-flash-godmode-opencode-go",
+    "description": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset",
+    "url": "https://github.com/SheberDavid/v4-flash-godmode-opencode-go",
     "homepage": "",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-16T22:41:42Z"
-  },
-  {
-    "name": "buynao/aipath",
-    "description": "Interactive AI General Education Course — 30 Lessons, Zero Math",
-    "url": "https://github.com/buynao/aipath",
-    "homepage": "https://aipath.buynao.com",
     "stars": 500,
     "language": "JavaScript",
     "topics": [
-      "ai",
-      "machine-learning"
+      "agent",
+      "deepseek",
+      "dsh",
+      "flash"
     ],
     "source": "new",
-    "updated": "2026-08-12T06:07:32Z"
-  },
-  {
-    "name": "stanuwu/Sunrise",
-    "description": "Destiny 2 Offline Exploration Mod",
-    "url": "https://github.com/stanuwu/Sunrise",
-    "homepage": "",
-    "stars": 500,
-    "language": "C++",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-17T22:44:24Z"
+    "updated": "2026-08-18T18:54:36Z"
   },
   {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -223,14 +203,47 @@
     "updated": "2026-08-17T14:51:58Z"
   },
   {
-    "name": "w3cj/how-llms-work",
-    "description": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer f",
-    "url": "https://github.com/w3cj/how-llms-work",
+    "name": "datawhalechina/quant-for-beginners",
+    "description": "",
+    "url": "https://github.com/datawhalechina/quant-for-beginners",
+    "homepage": "",
+    "stars": 499,
+    "language": "Jupyter Notebook",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-18T10:54:54Z"
+  },
+  {
+    "name": "Nagi-ovo/dsh-ads",
+    "description": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI",
+    "url": "https://github.com/Nagi-ovo/dsh-ads",
     "homepage": "",
     "stars": 499,
     "language": "TypeScript",
-    "topics": [],
+    "topics": [
+      "deepseek-harness",
+      "dsh-plugin",
+      "trolling",
+      "web-ui"
+    ],
     "source": "new",
-    "updated": "2026-08-17T22:45:08Z"
+    "updated": "2026-08-18T17:41:45Z"
+  },
+  {
+    "name": "GiraffePlunder/Better-Discord-2026",
+    "description": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extens",
+    "url": "https://github.com/GiraffePlunder/Better-Discord-2026",
+    "homepage": "",
+    "stars": 499,
+    "language": "",
+    "topics": [
+      "account-switching",
+      "bandagedbetterdiscord",
+      "better-discord",
+      "betterdiscord",
+      "betterdiscord-addon"
+    ],
+    "source": "new",
+    "updated": "2026-08-15T15:19:20Z"
   }
 ]

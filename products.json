@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 464473,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐464473)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐464473)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 464473+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 464473+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 454277,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐454277)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐454277)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454277+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454277+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sheberdavid-v4-flash-godmode-o",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/SheberDavid/v4-flash-godmode-opencode-go",
+    "github": "SheberDavid/v4-flash-godmode-opencode-go",
+    "github_stars": 500,
+    "name": {
+      "en": "SheberDavid/v4-flash-godmode-opencode-go",
+      "zh-CN": "SheberDavid/v4-flash-godmode-opencode-go (GitHub ⭐500)",
+      "zh-TW": "SheberDavid/v4-flash-godmode-opencode-go (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset",
+      "zh-CN": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset | GitHub 500+ Stars 开源项目",
+      "zh-TW": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-datawhalechina-quant-for-begin",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/datawhalechina/quant-for-beginners",
+    "github": "datawhalechina/quant-for-beginners",
+    "github_stars": 499,
+    "name": {
+      "en": "datawhalechina/quant-for-beginners",
+      "zh-CN": "datawhalechina/quant-for-beginners (GitHub ⭐499)",
+      "zh-TW": "datawhalechina/quant-for-beginners (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "datawhalechina/quant-for-beginners - Open source tool",
+      "zh-CN": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nagi-ovo-dsh-ads",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/Nagi-ovo/dsh-ads",
+    "github": "Nagi-ovo/dsh-ads",
+    "github_stars": 499,
+    "name": {
+      "en": "Nagi-ovo/dsh-ads",
+      "zh-CN": "Nagi-ovo/dsh-ads (GitHub ⭐499)",
+      "zh-TW": "Nagi-ovo/dsh-ads (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI",
+      "zh-CN": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI | GitHub 499+ Stars 开源项目",
+      "zh-TW": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "Role-specific Codex plugin templates",
       "zh-CN": "Role-specific Codex plugin templates | GitHub 500+ Stars 开源项目",
       "zh-TW": "Role-specific Codex plugin templates | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aaromanov1985-audio-cassette-s",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/AARomanov1985/Audio-Cassette-Simulation",
-    "github": "AARomanov1985/Audio-Cassette-Simulation",
-    "github_stars": 500,
-    "name": {
-      "en": "AARomanov1985/Audio-Cassette-Simulation",
-      "zh-CN": "AARomanov1985/Audio-Cassette-Simulation (GitHub ⭐500)",
-      "zh-TW": "AARomanov1985/Audio-Cassette-Simulation (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "This project simulates cassette tape audio profiles using ffmpeg",
-      "zh-CN": "This project simulates cassette tape audio profiles using ffmpeg | GitHub 500+ Stars 开源项目",
-      "zh-TW": "This project simulates cassette tape audio profiles using ffmpeg | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-giraffeplunder-better-discord-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/GiraffePlunder/Better-Discord-2026",
-    "github": "GiraffePlunder/Better-Discord-2026",
-    "github_stars": 499,
-    "name": {
-      "en": "GiraffePlunder/Better-Discord-2026",
-      "zh-CN": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)",
-      "zh-TW": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w",
-      "zh-CN": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 开源项目",
-      "zh-TW": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 539997,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐539997)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐539997)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 539997+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 539997+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 496130,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐496130)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐496130)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 496130+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 496130+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-berabuddies-redis-poc",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/berabuddies/redis-poc",
-    "github": "berabuddies/redis-poc",
-    "github_stars": 500,
-    "name": {
-      "en": "berabuddies/redis-poc",
-      "zh-CN": "berabuddies/redis-poc (GitHub ⭐500)",
-      "zh-TW": "berabuddies/redis-poc (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1",
-      "zh-CN": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "RCE PoC for Redis 6.2.22, 7.4.9, 8.6.4, 8.8.0, 8.8.1 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
