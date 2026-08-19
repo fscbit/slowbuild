@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 541292,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐541292)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐541292)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 497818,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐497818)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐497818)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 497818+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 497818+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-benmakeseverything-pocket-lab-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/BenMakesEverything/Pocket-Lab-Power-Supply",
+    "github": "BenMakesEverything/Pocket-Lab-Power-Supply",
+    "github_stars": 499,
+    "name": {
+      "en": "BenMakesEverything/Pocket-Lab-Power-Supply",
+      "zh-CN": "BenMakesEverything/Pocket-Lab-Power-Supply (GitHub ⭐499)",
+      "zh-TW": "BenMakesEverything/Pocket-Lab-Power-Supply (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A lab bench power supply, but pocket-sized and battery powered.",
+      "zh-CN": "A lab bench power supply, but pocket-sized and battery powered. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A lab bench power supply, but pocket-sized and battery powered. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-dolphinai2026-dolphin-code",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/DolphinAI2026/dolphin-code",
+    "github": "DolphinAI2026/dolphin-code",
+    "github_stars": 499,
+    "name": {
+      "en": "DolphinAI2026/dolphin-code",
+      "zh-CN": "DolphinAI2026/dolphin-code (GitHub ⭐499)",
+      "zh-TW": "DolphinAI2026/dolphin-code (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "DolphinAI2026/dolphin-code - Open source tool",
+      "zh-CN": "DolphinAI2026/dolphin-code - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "DolphinAI2026/dolphin-code - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-giraffeplunder-better-discord-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GiraffePlunder/Better-Discord-2026",
+    "github": "GiraffePlunder/Better-Discord-2026",
+    "github_stars": 499,
+    "name": {
+      "en": "GiraffePlunder/Better-Discord-2026",
+      "zh-CN": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)",
+      "zh-TW": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w",
+      "zh-CN": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 开源项目",
+      "zh-TW": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool",
       "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 开源项目",
       "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-w3cj-how-llms-work",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/w3cj/how-llms-work",
-    "github": "w3cj/how-llms-work",
-    "github_stars": 499,
-    "name": {
-      "en": "w3cj/how-llms-work",
-      "zh-CN": "w3cj/how-llms-work (GitHub ⭐499)",
-      "zh-TW": "w3cj/how-llms-work (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code",
-      "zh-CN": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code | GitHub 499+ Stars 开源项目",
-      "zh-TW": "An interactive app that walks through every stage of the LLM pipeline, from pattern matching to training a transformer from scratch, with working code | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44290,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44290)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44290)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44290+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44290+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44104,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44104)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44104)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44104+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44104+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40565,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40565)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40565)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40565+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40565+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-openai-role-specific-plugins",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/openai/role-specific-plugins",
-    "github": "openai/role-specific-plugins",
-    "github_stars": 500,
-    "name": {
-      "en": "openai/role-specific-plugins",
-      "zh-CN": "openai/role-specific-plugins (GitHub ⭐500)",
-      "zh-TW": "openai/role-specific-plugins (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Role-specific Codex plugin templates",
-      "zh-CN": "Role-specific Codex plugin templates | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Role-specific Codex plugin templates | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
