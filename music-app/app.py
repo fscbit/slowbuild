@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 """
-music.slowbuild.top — 中国歌曲英文解读站
+music.slowbuild.top — 中国歌曲英文解读站（优化版）
 端口 5003 | Flask + JSON 数据 | YouTube 播放
+
+优化点（2026-08-20）：
+1. load_songs 加内存缓存（文件 mtime 变化才重读），解决每次请求都读 200KB+ JSON 的问题
+2. index() 补全 home.html 需要的分组变量（featured/global_hits/deep_cuts/genre_groups/genre_labels/others）
+3. gzip 压缩响应（HTML/JSON/XML 传输体积大幅减小）
+4. 修复 index() 里重复 load_songs 的问题
 """
 
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for, jsonify, Response
 from functools import wraps
-import json, os, re, hashlib
+import json, os, re, hashlib, gzip
+from io import BytesIO
 from datetime import datetime
 from pathlib import Path
 
@@ -16,20 +23,36 @@ ADMIN_PASSWORD = "slowbuild2026"
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 
 # ═══════════════════════════════════════════
-# 数据读写
+# 数据读写（带内存缓存）
 # ═══════════════════════════════════════════
 
+_cache = {"mtime": None, "songs": None}
+
 def load_songs():
-    if not DATA_FILE.exists():
-        return []
+    """带缓存的歌曲加载：文件 mtime 没变就直接用内存数据，不再每次读盘 + 解析"""
     try:
-        return json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    except:
+        mtime = DATA_FILE.stat().st_mtime
+    except OSError:
         return []
+    if _cache["mtime"] == mtime and _cache["songs"] is not None:
+        return _cache["songs"]
+    try:
+        songs = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        songs = []
+    _cache["mtime"] = mtime
+    _cache["songs"] = songs
+    return songs
 
 def save_songs(songs):
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(json.dumps(songs, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 同步更新缓存，避免下次请求又读盘
+    try:
+        _cache["mtime"] = DATA_FILE.stat().st_mtime
+    except OSError:
+        pass
+    _cache["songs"] = songs
 
 def get_genres(songs):
     genres = set()
@@ -40,6 +63,23 @@ def get_genres(songs):
     return sorted(genres)
 
 
+# genre 英文标签（home.html 展示用）
+GENRE_LABELS = {
+    "pop": "Mandopop Essentials",
+    "rock": "Rock & Roll",
+    "folk": "Folk & Ballads",
+    "indie": "Indie & Alternative",
+    "hiphop": "Hip-Hop & Rap",
+    "punk": "Punk",
+    "electronic": "Electronic",
+    "jazz": "Jazz",
+    "rnb": "R&B",
+    "ballad": "Ballads",
+    "ost": "Soundtracks",
+    "cantopop": "Cantopop",
+}
+
+
 # ═══════════════════════════════════════════
 # 公开页面
 # ═══════════════════════════════════════════
@@ -48,11 +88,35 @@ def get_genres(songs):
 def index():
     songs = load_songs()
     genre = request.args.get("genre", "").strip().lower()
+
+    # —— 分组（每首歌按优先级进入一个区块，避免首页重复）——
+    featured = [s for s in songs if s.get("featured")]
+    global_hits = [s for s in songs if s.get("global_tier") in (1, 2, 3)]
+    global_hits.sort(key=lambda s: s.get("global_tier", 0))
+    deep_cuts = [s for s in songs
+                 if not s.get("featured") and s.get("global_tier") in (0, None)][:24]
+
+    genre_groups = {}
+    for s in songs:
+        g = s.get("genre", "").strip().lower()
+        if g:
+            genre_groups.setdefault(g, []).append(s)
+    for g in genre_groups:
+        genre_groups[g].sort(key=lambda s: (s.get("featured", False), s.get("sort_order", 0)), reverse=True)
+
+    others = [s for s in songs if not s.get("genre") and not s.get("featured")
+              and s.get("global_tier") in (0, None)][:24]
+
     if genre:
         songs = [s for s in songs if s.get("genre", "").lower() == genre]
-    songs.sort(key=lambda s: (s.get("featured", False), s.get("sort_order", 0)), reverse=True)
+
     genres = get_genres(load_songs())
-    return render_template("home.html", songs=songs, genres=genres, current_genre=genre)
+    return render_template(
+        "home.html",
+        songs=songs, genres=genres, current_genre=genre,
+        featured=featured, global_hits=global_hits, deep_cuts=deep_cuts,
+        genre_groups=genre_groups, genre_labels=GENRE_LABELS, others=others,
+    )
 
 
 @app.route("/song/<song_id>")
@@ -123,11 +187,11 @@ def admin_add():
     artist = request.form.get("artist", "").strip()
     if not title or not artist:
         return redirect(url_for("admin"))
-    
+
     song_id = "song-" + re.sub(r'[^a-z0-9-]', '', title.lower().replace(" ", "-"))[:30]
     if any(s.get("id") == song_id for s in songs):
         song_id += "-" + str(len(songs))
-    
+
     song = {
         "id": song_id,
         "title": title,
@@ -191,6 +255,28 @@ def admin_delete(song_id):
 
 
 # ═══════════════════════════════════════════
+# gzip 压缩（HTML/JSON/XML 传输体积大幅减小）
+# ═══════════════════════════════════════════
+
+COMPRESSIBLE = ("text/", "application/json", "application/xml", "application/javascript", "text/javascript")
+
+@app.after_request
+def compress_response(response):
+    accept = request.headers.get("Accept-Encoding", "")
+    ct = response.content_type or ""
+    if response.status_code == 200 and "gzip" in accept.lower() and any(ct.startswith(c) for c in COMPRESSIBLE):
+        if len(response.get_data()) > 500:  # 小响应不值得压
+            buf = BytesIO()
+            with gzip.GzipFile(mode="wb", fileobj=buf, compresslevel=6) as f:
+                f.write(response.get_data())
+            response.set_data(buf.getvalue())
+            response.headers["Content-Encoding"] = "gzip"
+            response.headers["Content-Length"] = len(response.get_data())
+            response.headers["Vary"] = "Accept-Encoding"
+    return response
+
+
+# ═══════════════════════════════════════════
 # SEO & robots
 # ═══════════════════════════════════════════
 
@@ -220,7 +306,7 @@ def sitemap_xml():
 
 if __name__ == "__main__":
     PORT = int(os.environ.get("PORT", 5003))
-    print(f"🎵 music.slowbuild.top 启动")
+    print(f"🎵 music.slowbuild.top 启动（优化版）")
     print(f"   端口: {PORT}")
     print(f"   管理后台: /admin (密码: {ADMIN_PASSWORD})")
-    app.run(host="0.0.0.0", port=PORT, debug=False)
+    app.run(host="0.0.0.0", port=PORT, debug=False, threaded=True)
