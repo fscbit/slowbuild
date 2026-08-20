@@ -207,6 +207,112 @@ EN_PROBLEMS = {
 
 EN_TECH_TAGS = ["open source", "GitHub trending", "dev tools", "free software", "productivity"]
 
+
+
+def fetch_readme(repo, max_len=4000):
+    """抓取 GitHub README，提取真实的功能列表 / 安装命令 / 使用示例。
+    目的：让博客有真实内容，而不是模板套话。"""
+    name = repo.get("full_name", "")
+    result = {"features": [], "install": "", "usage": "", "has_readme": False}
+    if not name:
+        return result
+    raw = ""
+    try:
+        r = http(f"https://api.github.com/repos/{name}/readme",
+                 headers={"Accept": "application/vnd.github.raw"})
+        raw = (r.text or "")[:max_len]
+    except Exception:
+        try:
+            # 兜底：README.md / readme.md 常见命名
+            for fn in ("README.md", "readme.md", "README.rst"):
+                r2 = http(f"https://raw.githubusercontent.com/{name}/master/{fn}")
+                if r2.status_code == 200:
+                    raw = (r2.text or "")[:max_len]
+                    break
+        except Exception:
+            pass
+
+    if not raw.strip():
+        return result
+    result["has_readme"] = True
+
+    # —— 提取功能列表（Features 段落里 - 或 * 开头的行）——
+    lines = raw.split("\n")
+    in_features = False
+    for line in lines:
+        s = line.strip()
+        low = s.lower()
+        if low.startswith(("## features", "## key features", "## highlights",
+                           "## main features", "# features", "### features")):
+            in_features = True
+            continue
+        if in_features and s.startswith(("#", "##")):
+            break
+        if in_features and (s.startswith("-") or s.startswith("*")):
+            feat = s.lstrip("-* ").strip()
+            # 去掉 markdown 链接/加粗标记
+            feat = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", feat)
+            feat = re.sub(r"[*_`]", "", feat)
+            if feat and len(feat) < 150:
+                result["features"].append(feat)
+            if len(result["features"]) >= 8:
+                break
+
+    # —— 提取安装命令（Install 段落里的代码块）——
+    in_install = False
+    for i, line in enumerate(lines):
+        s = line.strip()
+        low = s.lower()
+        if low.startswith(("## install", "## installation", "## quick install",
+                           "## getting started", "### install", "### installation")):
+            in_install = True
+            continue
+        if in_install and s.startswith(("#", "##")):
+            break
+        if in_install and s.startswith("```"):
+            # 收集代码块内容
+            code = []
+            j = i + 1
+            while j < len(lines) and not lines[j].strip().startswith("```"):
+                code.append(lines[j].rstrip())
+                j += 1
+                if len(code) > 8:
+                    break
+            result["install"] = "\n".join(code).strip()[:500]
+            break
+
+    # —— 提取使用示例（Usage 段落里的代码块）——
+    in_usage = False
+    for i, line in enumerate(lines):
+        s = line.strip()
+        low = s.lower()
+        if low.startswith(("## usage", "## quick start", "## example",
+                           "### usage", "### quick start")):
+            in_usage = True
+            continue
+        if in_usage and s.startswith(("#", "##")):
+            break
+        if in_usage and s.startswith("```"):
+            code = []
+            j = i + 1
+            while j < len(lines) and not lines[j].strip().startswith("```"):
+                code.append(lines[j].rstrip())
+                j += 1
+                if len(code) > 8:
+                    break
+            result["usage"] = "\n".join(code).strip()[:500]
+            break
+
+    return result
+
+
+def _build_feature_html(features, fallback):
+    """把真实功能列表转成 HTML <li>，没有就退回 fallback"""
+    if features:
+        return "\n".join(f"  <li>{f}</li>" for f in features)
+    return "  <li>{fallback}</li>".format(fallback=fallback)
+
+
 def _gen_filename(repo):
     return "tool-" + re.sub(r'[^a-z0-9-]', '', repo.get("name","tool").lower().replace(" ", "-"))[:40] + ".html"
 
@@ -223,11 +329,13 @@ def gen_blog_html_en(repo):
     problem = repo.get("_problem_tag", "daily workflow tasks")
     problem_en = EN_PROBLEMS.get(repo.get("_problem_keyword", ""), problem)
     today = datetime.now().strftime("%B %d, %Y")
+    readme = fetch_readme(repo)
     intro = random.choice(EN_INTROS).format(problem=problem_en)
     filename = _gen_filename(repo)
     tags = topics[:3] if topics else []
     tags += random.sample(EN_TECH_TAGS, min(2, len(EN_TECH_TAGS)))
 
+    feature_list = _build_feature_html(readme["features"], f"{stars}+ stars on GitHub — community-validated")
     return filename, f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -295,12 +403,9 @@ footer a{{color:var(--teal)}}
 </div>
 <h2>What does it do?</h2>
 <p><code>{name}</code> solves a real problem: <strong>{problem_en}</strong>. {random.choice(EN_USE_CASES).format(use_case=problem_en)}</p>
-<p>Key highlights:</p>
+<p>Key highlights (from the README):</p>
 <ul>
-  <li>100% open source — code on GitHub</li>
-  <li>Active community, actively maintained</li>
-  <li>{lang_name + ' project — easy to deploy and customize' if lang_name else 'Cross-platform — works on Windows, Mac & Linux'}</li>
-  <li>{stars}+ stars = community trust</li>
+{feature_list}
 </ul>
 <h2>Who is it for?</h2>
 <p>If {problem_en} comes up in your daily work, give this tool a try. Whether you&apos;re working solo or on a team, it&apos;ll save you real time.</p>
@@ -339,6 +444,8 @@ def gen_blog_html_zh(repo):
     slug = re.sub(r'[^a-z0-9-]', '', repo.get("name","tool").lower().replace(" ", "-"))[:40]
     filename = f"tool-{slug}.html"
     
+    # 抓取真实 README 内容
+    readme = fetch_readme(repo)
     # 选一个不同的介绍
     intro = random.choice(TOOL_INTROS).format(problem=problem)
     
@@ -349,6 +456,7 @@ def gen_blog_html_zh(repo):
     tags = topics[:3] if topics else []
     tags += random.sample(TECK_TAGS, min(2, len(TECK_TAGS)))
     
+    feature_list = _build_feature_html(readme["features"], f"GitHub {stars}+ Stars，社区认可度很高")
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -420,12 +528,9 @@ footer a{{color:var(--teal);text-decoration:none}}
 
 <h2>这个工具有什么用？</h2>
 <p>简单来说，<code>{name}</code> 解决的核心问题是<strong>{problem}</strong>。{random.choice(USE_CASES).format(use_case=problem)}</p>
-<p>它的主要特点包括：</p>
+<p>它的主要特点（来自官方 README）：</p>
 <ul>
-  <li>完全开源免费，代码托管在 GitHub</li>
-  <li>社区活跃，持续维护更新</li>
-  <li>{lang_name + ' 编写，部署简单' if lang_name else '跨平台支持，Windows/Mac/Linux 都能用'}</li>
-  <li>Star 数 {stars}+，说明社区认可度很高</li>
+{feature_list}
 </ul>
 
 <h2>适合谁用？</h2>
