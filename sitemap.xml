@@ -555,6 +555,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-parastore.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-parastore.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-pon.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -621,6 +631,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-velotype.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-vendo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-vendo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

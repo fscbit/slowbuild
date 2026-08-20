@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44310,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44310)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44310)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44151,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44151)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44151)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44151+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44151+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40618,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40618)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40618)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40618+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40618+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-spotui-spotui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/Spotui/Spotui",
+    "github": "Spotui/Spotui",
+    "github_stars": 500,
+    "name": {
+      "en": "Spotui/Spotui",
+      "zh-CN": "Spotui/Spotui (GitHub ⭐500)",
+      "zh-TW": "Spotui/Spotui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Spotify clone with deep integration",
+      "zh-CN": "Spotify clone with deep integration | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Spotify clone with deep integration | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-runvendo-vendo",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/runvendo/vendo",
+    "github": "runvendo/vendo",
+    "github_stars": 500,
+    "name": {
+      "en": "runvendo/vendo",
+      "zh-CN": "runvendo/vendo (GitHub ⭐500)",
+      "zh-TW": "runvendo/vendo (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Embedded agents your customers use to automate work, build views, and connect their tools.",
+      "zh-CN": "Embedded agents your customers use to automate work, build views, and connect their tools. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Embedded agents your customers use to automate work, build views, and connect their tools. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-intellicia-public-parastore",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/intellicia-public/parastore",
+    "github": "intellicia-public/parastore",
+    "github_stars": 499,
+    "name": {
+      "en": "intellicia-public/parastore",
+      "zh-CN": "intellicia-public/parastore (GitHub ⭐499)",
+      "zh-TW": "intellicia-public/parastore (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments.",
+      "zh-CN": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "datawhalechina/quant-for-beginners - Open source tool",
       "zh-CN": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 开源项目",
       "zh-TW": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nagi-ovo-dsh-ads",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Nagi-ovo/dsh-ads",
-    "github": "Nagi-ovo/dsh-ads",
-    "github_stars": 499,
-    "name": {
-      "en": "Nagi-ovo/dsh-ads",
-      "zh-CN": "Nagi-ovo/dsh-ads (GitHub ⭐499)",
-      "zh-TW": "Nagi-ovo/dsh-ads (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI",
-      "zh-CN": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI | GitHub 499+ Stars 开源项目",
-      "zh-TW": "把 DSH 变成 2005 年门户网站｜Parody ads, fake games, and popups for the DSH Web UI | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 394630,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394630)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394630)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 394630+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 394630+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60196,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60196)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60196)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60196+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60196+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40261,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40261)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40261)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40261+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40261+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-stanuwu-sunrise",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/stanuwu/Sunrise",
-    "github": "stanuwu/Sunrise",
-    "github_stars": 500,
-    "name": {
-      "en": "stanuwu/Sunrise",
-      "zh-CN": "stanuwu/Sunrise (GitHub ⭐500)",
-      "zh-TW": "stanuwu/Sunrise (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Destiny 2 Offline Exploration Mod",
-      "zh-CN": "Destiny 2 Offline Exploration Mod | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Destiny 2 Offline Exploration Mod | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-quartzlanceawaken-autodesk-inv",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "github": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "github_stars": 499,
-    "name": {
-      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
-      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)",
-      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool",
-      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

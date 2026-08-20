@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 541292,
+    "stars": 541608,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-19T22:56:50Z"
+    "updated": "2026-08-20T22:55:37Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 497818,
+    "stars": 498226,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-19T22:58:25Z"
+    "updated": "2026-08-20T22:56:14Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 465981,
+    "stars": 467164,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-19T22:58:26Z"
+    "updated": "2026-08-20T22:58:17Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454334,
+    "stars": 454370,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-19T22:46:48Z"
+    "updated": "2026-08-20T22:52:12Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394794,
+    "stars": 394867,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-19T22:49:50Z"
+    "updated": "2026-08-20T22:53:28Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60219,
+    "stars": 60230,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-19T21:26:00Z"
+    "updated": "2026-08-20T21:26:14Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44301,
+    "stars": 44310,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-19T22:53:05Z"
+    "updated": "2026-08-20T22:55:46Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44140,
+    "stars": 44151,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-19T20:40:24Z"
+    "updated": "2026-08-20T20:53:42Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40602,
+    "stars": 40618,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-19T22:54:36Z"
+    "updated": "2026-08-20T22:55:11Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40292,
+    "stars": 40296,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,35 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-19T22:36:02Z"
+    "updated": "2026-08-20T22:03:56Z"
+  },
+  {
+    "name": "Spotui/Spotui",
+    "description": "Spotify clone with deep integration ",
+    "url": "https://github.com/Spotui/Spotui",
+    "homepage": "",
+    "stars": 500,
+    "language": "Kotlin",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-20T17:42:54Z"
+  },
+  {
+    "name": "runvendo/vendo",
+    "description": "Embedded agents your customers use to automate work, build views, and connect their tools.",
+    "url": "https://github.com/runvendo/vendo",
+    "homepage": "https://vendo.run",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "automation",
+      "devtools"
+    ],
+    "source": "new",
+    "updated": "2026-08-20T22:30:40Z"
   },
   {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -187,6 +215,23 @@
     "updated": "2026-08-17T14:51:58Z"
   },
   {
+    "name": "intellicia-public/parastore",
+    "description": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments.",
+    "url": "https://github.com/intellicia-public/parastore",
+    "homepage": "",
+    "stars": 499,
+    "language": "TypeScript",
+    "topics": [
+      "agent-simulation",
+      "fastapi",
+      "isometric",
+      "litellm",
+      "llm"
+    ],
+    "source": "new",
+    "updated": "2026-08-20T15:11:34Z"
+  },
+  {
     "name": "BenMakesEverything/Pocket-Lab-Power-Supply",
     "description": "A lab bench power supply, but pocket-sized and battery powered.",
     "url": "https://github.com/BenMakesEverything/Pocket-Lab-Power-Supply",
@@ -196,49 +241,5 @@
     "topics": [],
     "source": "new",
     "updated": "2026-08-19T19:02:36Z"
-  },
-  {
-    "name": "SheberDavid/v4-flash-godmode-opencode-go",
-    "description": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset",
-    "url": "https://github.com/SheberDavid/v4-flash-godmode-opencode-go",
-    "homepage": "",
-    "stars": 499,
-    "language": "JavaScript",
-    "topics": [
-      "agent",
-      "deepseek",
-      "dsh",
-      "flash"
-    ],
-    "source": "new",
-    "updated": "2026-08-19T16:39:23Z"
-  },
-  {
-    "name": "DolphinAI2026/dolphin-code",
-    "description": "",
-    "url": "https://github.com/DolphinAI2026/dolphin-code",
-    "homepage": "",
-    "stars": 499,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-19T21:19:35Z"
-  },
-  {
-    "name": "GiraffePlunder/Better-Discord-2026",
-    "description": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extens",
-    "url": "https://github.com/GiraffePlunder/Better-Discord-2026",
-    "homepage": "",
-    "stars": 499,
-    "language": "",
-    "topics": [
-      "account-switching",
-      "bandagedbetterdiscord",
-      "better-discord",
-      "betterdiscord",
-      "betterdiscord-addon"
-    ],
-    "source": "new",
-    "updated": "2026-08-15T15:19:20Z"
   }
 ]
