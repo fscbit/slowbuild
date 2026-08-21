@@ -545,6 +545,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-opentag.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-opentag.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-papr.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -611,6 +621,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-sprite-gen.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-token-tracker.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-token-tracker.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

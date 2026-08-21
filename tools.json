@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 541608,
+    "stars": 541874,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-20T22:55:37Z"
+    "updated": "2026-08-21T22:53:43Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 498226,
+    "stars": 498639,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-20T22:56:14Z"
+    "updated": "2026-08-21T22:59:06Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 467164,
+    "stars": 467956,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-20T22:58:17Z"
+    "updated": "2026-08-21T22:59:52Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454370,
+    "stars": 454419,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-20T22:52:12Z"
+    "updated": "2026-08-21T22:34:18Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394867,
+    "stars": 394945,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-20T22:53:28Z"
+    "updated": "2026-08-21T22:55:18Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60230,
+    "stars": 60225,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,7 +99,7 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-20T21:26:14Z"
+    "updated": "2026-08-21T22:42:05Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-20T22:55:46Z"
+    "updated": "2026-08-21T22:12:32Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44151,
+    "stars": 44159,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-20T20:53:42Z"
+    "updated": "2026-08-21T19:13:52Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40618,
+    "stars": 40634,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-20T22:55:11Z"
+    "updated": "2026-08-21T20:16:23Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40296,
+    "stars": 40309,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,52 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-20T22:03:56Z"
+    "updated": "2026-08-21T22:54:05Z"
   },
   {
-    "name": "Spotui/Spotui",
-    "description": "Spotify clone with deep integration ",
-    "url": "https://github.com/Spotui/Spotui",
+    "name": "stormzhang/token-tracker",
+    "description": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Cod",
+    "url": "https://github.com/stormzhang/token-tracker",
     "homepage": "",
     "stars": 500,
-    "language": "Kotlin",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-20T17:42:54Z"
-  },
-  {
-    "name": "runvendo/vendo",
-    "description": "Embedded agents your customers use to automate work, build views, and connect their tools.",
-    "url": "https://github.com/runvendo/vendo",
-    "homepage": "https://vendo.run",
-    "stars": 500,
-    "language": "TypeScript",
+    "language": "Python",
     "topics": [
-      "agents",
-      "ai",
-      "ai-agents",
-      "automation",
-      "devtools"
+      "ai-agent",
+      "anthropic-claude",
+      "claude-code",
+      "cli",
+      "codex"
     ],
     "source": "new",
-    "updated": "2026-08-20T22:30:40Z"
+    "updated": "2026-08-21T15:56:20Z"
+  },
+  {
+    "name": "DanielPan12/JobHuntBot",
+    "description": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can re",
+    "url": "https://github.com/DanielPan12/JobHuntBot",
+    "homepage": "",
+    "stars": 500,
+    "language": "HTML",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-21T16:56:13Z"
+  },
+  {
+    "name": "linxidnju/OpenTag",
+    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
+    "url": "https://github.com/linxidnju/OpenTag",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "agent-gateway",
+      "ai-agents",
+      "automation",
+      "claude",
+      "claude-code"
+    ],
+    "source": "new",
+    "updated": "2026-08-21T13:38:54Z"
   },
   {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -212,34 +229,23 @@
       "inventor"
     ],
     "source": "new",
-    "updated": "2026-08-17T14:51:58Z"
+    "updated": "2026-08-21T11:30:25Z"
   },
   {
-    "name": "intellicia-public/parastore",
-    "description": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments.",
-    "url": "https://github.com/intellicia-public/parastore",
-    "homepage": "",
+    "name": "tornikegomareli/Talkify",
+    "description": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription",
+    "url": "https://github.com/tornikegomareli/Talkify",
+    "homepage": "https://usetalkify.app",
     "stars": 499,
-    "language": "TypeScript",
+    "language": "Swift",
     "topics": [
-      "agent-simulation",
-      "fastapi",
-      "isometric",
-      "litellm",
-      "llm"
+      "appkit",
+      "apple-silicon",
+      "dictation",
+      "macos",
+      "menubar-app"
     ],
     "source": "new",
-    "updated": "2026-08-20T15:11:34Z"
-  },
-  {
-    "name": "BenMakesEverything/Pocket-Lab-Power-Supply",
-    "description": "A lab bench power supply, but pocket-sized and battery powered.",
-    "url": "https://github.com/BenMakesEverything/Pocket-Lab-Power-Supply",
-    "homepage": "",
-    "stars": 499,
-    "language": "C++",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-19T19:02:36Z"
+    "updated": "2026-08-21T22:21:25Z"
   }
 ]

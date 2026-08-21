@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 394945,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐394945)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐394945)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 394945+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 394945+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60225,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60225)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60225)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60225+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60225+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40309,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40309)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40309)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40309+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40309+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-stormzhang-token-tracker",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/stormzhang/token-tracker",
+    "github": "stormzhang/token-tracker",
+    "github_stars": 500,
+    "name": {
+      "en": "stormzhang/token-tracker",
+      "zh-CN": "stormzhang/token-tracker (GitHub ⭐500)",
+      "zh-TW": "stormzhang/token-tracker (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus",
+      "zh-CN": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-danielpan12-jobhuntbot",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/DanielPan12/JobHuntBot",
+    "github": "DanielPan12/JobHuntBot",
+    "github_stars": 500,
+    "name": {
+      "en": "DanielPan12/JobHuntBot",
+      "zh-CN": "DanielPan12/JobHuntBot (GitHub ⭐500)",
+      "zh-TW": "DanielPan12/JobHuntBot (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio",
+      "zh-CN": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-linxidnju-opentag",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/linxidnju/OpenTag",
+    "github": "linxidnju/OpenTag",
+    "github_stars": 500,
+    "name": {
+      "en": "linxidnju/OpenTag",
+      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
+      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
+      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-quartzlanceawaken-autodesk-inv",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
+    "github": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
+    "github_stars": 499,
+    "name": {
+      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
+      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)",
+      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool",
+      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tornikegomareli-talkify",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/tornikegomareli/Talkify",
+    "github": "tornikegomareli/Talkify",
+    "github_stars": 499,
+    "name": {
+      "en": "tornikegomareli/Talkify",
+      "zh-CN": "tornikegomareli/Talkify (GitHub ⭐499)",
+      "zh-TW": "tornikegomareli/Talkify (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription",
+      "zh-CN": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "Master programming by recreating your favorite technologies from scratch.",
       "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 开源项目",
       "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 497818,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐497818)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐497818)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics | GitHub 497818+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics | GitHub 497818+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-benmakeseverything-pocket-lab-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/BenMakesEverything/Pocket-Lab-Power-Supply",
-    "github": "BenMakesEverything/Pocket-Lab-Power-Supply",
-    "github_stars": 499,
-    "name": {
-      "en": "BenMakesEverything/Pocket-Lab-Power-Supply",
-      "zh-CN": "BenMakesEverything/Pocket-Lab-Power-Supply (GitHub ⭐499)",
-      "zh-TW": "BenMakesEverything/Pocket-Lab-Power-Supply (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A lab bench power supply, but pocket-sized and battery powered.",
-      "zh-CN": "A lab bench power supply, but pocket-sized and battery powered. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A lab bench power supply, but pocket-sized and battery powered. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-dolphinai2026-dolphin-code",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/DolphinAI2026/dolphin-code",
-    "github": "DolphinAI2026/dolphin-code",
-    "github_stars": 499,
-    "name": {
-      "en": "DolphinAI2026/dolphin-code",
-      "zh-CN": "DolphinAI2026/dolphin-code (GitHub ⭐499)",
-      "zh-TW": "DolphinAI2026/dolphin-code (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "DolphinAI2026/dolphin-code - Open source tool",
-      "zh-CN": "DolphinAI2026/dolphin-code - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "DolphinAI2026/dolphin-code - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-giraffeplunder-better-discord-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/GiraffePlunder/Better-Discord-2026",
-    "github": "GiraffePlunder/Better-Discord-2026",
-    "github_stars": 499,
-    "name": {
-      "en": "GiraffePlunder/Better-Discord-2026",
-      "zh-CN": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)",
-      "zh-TW": "GiraffePlunder/Better-Discord-2026 (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w",
-      "zh-CN": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 开源项目",
-      "zh-TW": "🚀 BetterDiscord Tool – An open-source utility for managing local layout files, custom web styles, and development extensions. Simplify your workflow w | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 464473,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐464473)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐464473)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 464473+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 464473+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 454277,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐454277)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐454277)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454277+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454277+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sheberdavid-v4-flash-godmode-o",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/SheberDavid/v4-flash-godmode-opencode-go",
-    "github": "SheberDavid/v4-flash-godmode-opencode-go",
-    "github_stars": 500,
-    "name": {
-      "en": "SheberDavid/v4-flash-godmode-opencode-go",
-      "zh-CN": "SheberDavid/v4-flash-godmode-opencode-go (GitHub ⭐500)",
-      "zh-TW": "SheberDavid/v4-flash-godmode-opencode-go (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset",
-      "zh-CN": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset | GitHub 500+ Stars 开源项目",
-      "zh-TW": "V4 Flash 神模式 (opencode-go)：让 opencode-go 的 DeepSeek V4 Flash 从鬼模式切换到神模式的 dsh agent preset | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-datawhalechina-quant-for-begin",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/datawhalechina/quant-for-beginners",
-    "github": "datawhalechina/quant-for-beginners",
-    "github_stars": 499,
-    "name": {
-      "en": "datawhalechina/quant-for-beginners",
-      "zh-CN": "datawhalechina/quant-for-beginners (GitHub ⭐499)",
-      "zh-TW": "datawhalechina/quant-for-beginners (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "datawhalechina/quant-for-beginners - Open source tool",
-      "zh-CN": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "datawhalechina/quant-for-beginners - Open source tool | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
