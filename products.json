@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 498977,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐498977)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐498977)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 498977+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 498977+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 468608,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐468608)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐468608)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 468608+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 468608+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 454451,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐454451)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐454451)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454451+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 454451+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-dasterprokio-awesome-ai-compan",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/DasterProkio/awesome-ai-companion",
+    "github": "DasterProkio/awesome-ai-companion",
+    "github_stars": 500,
+    "name": {
+      "en": "DasterProkio/awesome-ai-companion",
+      "zh-CN": "DasterProkio/awesome-ai-companion (GitHub ⭐500)",
+      "zh-TW": "DasterProkio/awesome-ai-companion (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Curated index of open-source AI companion projects: long-term memory, proactive behavior, voice, embodiment, and shared activities. 157 entries tagged",
+      "zh-CN": "Curated index of open-source AI companion projects: long-term memory, proactive behavior, voice, embodiment, and shared activities. 157 entries tagged | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Curated index of open-source AI companion projects: long-term memory, proactive behavior, voice, embodiment, and shared activities. 157 entries tagged | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-lbouaraba-comfyui-krea2edit",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/lbouaraba/comfyui-krea2edit",
+    "github": "lbouaraba/comfyui-krea2edit",
+    "github_stars": 500,
+    "name": {
+      "en": "lbouaraba/comfyui-krea2edit",
+      "zh-CN": "lbouaraba/comfyui-krea2edit (GitHub ⭐500)",
+      "zh-TW": "lbouaraba/comfyui-krea2edit (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity Edit LoRA",
+      "zh-CN": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity Edit LoRA | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity Edit LoRA | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ckissi-kinetics",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/ckissi/kinetics",
+    "github": "ckissi/kinetics",
+    "github_stars": 500,
+    "name": {
+      "en": "ckissi/kinetics",
+      "zh-CN": "ckissi/kinetics (GitHub ⭐500)",
+      "zh-TW": "ckissi/kinetics (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A library of interface animations built on spring physics instead of fixed-duration easing.",
+      "zh-CN": "A library of interface animations built on spring physics instead of fixed-duration easing. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A library of interface animations built on spring physics instead of fixed-duration easing. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
       "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 开源项目",
       "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44151,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44151)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44151)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44151+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44151+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 40618,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40618)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40618)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40618+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40618+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-spotui-spotui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Spotui/Spotui",
-    "github": "Spotui/Spotui",
-    "github_stars": 500,
-    "name": {
-      "en": "Spotui/Spotui",
-      "zh-CN": "Spotui/Spotui (GitHub ⭐500)",
-      "zh-TW": "Spotui/Spotui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Spotify clone with deep integration",
-      "zh-CN": "Spotify clone with deep integration | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Spotify clone with deep integration | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-runvendo-vendo",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/runvendo/vendo",
-    "github": "runvendo/vendo",
-    "github_stars": 500,
-    "name": {
-      "en": "runvendo/vendo",
-      "zh-CN": "runvendo/vendo (GitHub ⭐500)",
-      "zh-TW": "runvendo/vendo (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Embedded agents your customers use to automate work, build views, and connect their tools.",
-      "zh-CN": "Embedded agents your customers use to automate work, build views, and connect their tools. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Embedded agents your customers use to automate work, build views, and connect their tools. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-intellicia-public-parastore",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/intellicia-public/parastore",
-    "github": "intellicia-public/parastore",
-    "github_stars": 499,
-    "name": {
-      "en": "intellicia-public/parastore",
-      "zh-CN": "intellicia-public/parastore (GitHub ⭐499)",
-      "zh-TW": "intellicia-public/parastore (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments.",
-      "zh-CN": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Draw a store, generate LLM personas, and watch them shop — an isometric 3D sandbox for synthetic-consumer experiments. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 541292,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐541292)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐541292)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 541292+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

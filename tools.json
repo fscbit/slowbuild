@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 541874,
+    "stars": 542127,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-21T22:53:43Z"
+    "updated": "2026-08-22T22:59:08Z"
   },
   {
     "name": "sindresorhus/awesome",
-    "description": "😎 Awesome lists about all kinds of interesting topics",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 498639,
+    "stars": 498977,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-21T22:59:06Z"
+    "updated": "2026-08-22T22:56:06Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 467956,
+    "stars": 468608,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-21T22:59:52Z"
+    "updated": "2026-08-22T22:56:57Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454419,
+    "stars": 454451,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-21T22:34:18Z"
+    "updated": "2026-08-22T22:59:12Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 394945,
+    "stars": 395033,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-21T22:55:18Z"
+    "updated": "2026-08-22T22:57:56Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60225,
+    "stars": 60233,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-21T22:42:05Z"
+    "updated": "2026-08-22T18:40:58Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44310,
+    "stars": 44320,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-21T22:12:32Z"
+    "updated": "2026-08-22T19:15:50Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44159,
+    "stars": 44173,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-21T19:13:52Z"
+    "updated": "2026-08-22T22:16:14Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40634,
+    "stars": 40644,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-21T20:16:23Z"
+    "updated": "2026-08-22T20:47:15Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40309,
+    "stars": 40319,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,24 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-21T22:54:05Z"
+    "updated": "2026-08-22T22:41:38Z"
   },
   {
-    "name": "stormzhang/token-tracker",
-    "description": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Cod",
-    "url": "https://github.com/stormzhang/token-tracker",
-    "homepage": "",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "ai-agent",
-      "anthropic-claude",
-      "claude-code",
-      "cli",
-      "codex"
-    ],
-    "source": "new",
-    "updated": "2026-08-21T15:56:20Z"
-  },
-  {
-    "name": "DanielPan12/JobHuntBot",
-    "description": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can re",
-    "url": "https://github.com/DanielPan12/JobHuntBot",
-    "homepage": "",
+    "name": "DasterProkio/awesome-ai-companion",
+    "description": "Curated index of open-source AI companion projects: long-term memory, proactive behavior, voice, embodiment, and shared ",
+    "url": "https://github.com/DasterProkio/awesome-ai-companion",
+    "homepage": "https://lutopia.app/companion/",
     "stars": 500,
     "language": "HTML",
-    "topics": [],
+    "topics": [
+      "ai-agents",
+      "ai-companion",
+      "ai-girlfriend",
+      "awesome",
+      "awesome-list"
+    ],
     "source": "new",
-    "updated": "2026-08-21T16:56:13Z"
+    "updated": "2026-08-22T22:12:24Z"
   },
   {
     "name": "linxidnju/OpenTag",
@@ -215,6 +204,28 @@
     "updated": "2026-08-21T13:38:54Z"
   },
   {
+    "name": "lbouaraba/comfyui-krea2edit",
+    "description": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity E",
+    "url": "https://github.com/lbouaraba/comfyui-krea2edit",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-22T21:01:20Z"
+  },
+  {
+    "name": "ckissi/kinetics",
+    "description": "A library of interface animations built on spring physics instead of fixed-duration easing.",
+    "url": "https://github.com/ckissi/kinetics",
+    "homepage": "https://kinetics.colorion.co",
+    "stars": 500,
+    "language": "HTML",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-22T08:37:54Z"
+  },
+  {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
     "description": "",
     "url": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -230,22 +241,5 @@
     ],
     "source": "new",
     "updated": "2026-08-21T11:30:25Z"
-  },
-  {
-    "name": "tornikegomareli/Talkify",
-    "description": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription",
-    "url": "https://github.com/tornikegomareli/Talkify",
-    "homepage": "https://usetalkify.app",
-    "stars": 499,
-    "language": "Swift",
-    "topics": [
-      "appkit",
-      "apple-silicon",
-      "dictation",
-      "macos",
-      "menubar-app"
-    ],
-    "source": "new",
-    "updated": "2026-08-21T22:21:25Z"
   }
 ]
