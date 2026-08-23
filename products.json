@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 542349,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐542349)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐542349)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 542349+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 542349+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44183,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44183)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44183)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44183+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44183+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 40660,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐40660)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐40660)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40660+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 40660+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-rennakira-spicy-monopoly",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/RennAkira/spicy-monopoly",
+    "github": "RennAkira/spicy-monopoly",
+    "github_stars": 500,
+    "name": {
+      "en": "RennAkira/spicy-monopoly",
+      "zh-CN": "RennAkira/spicy-monopoly (GitHub ⭐500)",
+      "zh-TW": "RennAkira/spicy-monopoly (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "和你的 AI 一起玩的双人棋盘小游戏 · 18+ （A two-player board game you play with your AI — dice, tiles, spicy tasks, all run by code (18+））",
+      "zh-CN": "和你的 AI 一起玩的双人棋盘小游戏 · 18+ （A two-player board game you play with your AI — dice, tiles, spicy tasks, all run by code (18+）） | GitHub 500+ Stars 开源项目",
+      "zh-TW": "和你的 AI 一起玩的双人棋盘小游戏 · 18+ （A two-player board game you play with your AI — dice, tiles, spicy tasks, all run by code (18+）） | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-pulkitxm-claude-directory",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/pulkitxm/claude-directory",
+    "github": "pulkitxm/claude-directory",
+    "github_stars": 500,
+    "name": {
+      "en": "pulkitxm/claude-directory",
+      "zh-CN": "pulkitxm/claude-directory (GitHub ⭐500)",
+      "zh-TW": "pulkitxm/claude-directory (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source AI interfaces built with Claude (Fable 5) including hero sections, GLSL shaders, design systems, animations, 3D components  and and landin",
+      "zh-CN": "Open-source AI interfaces built with Claude (Fable 5) including hero sections, GLSL shaders, design systems, animations, 3D components  and and landin | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source AI interfaces built with Claude (Fable 5) including hero sections, GLSL shaders, design systems, animations, 3D components  and and landin | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-haradakashiwa-ternssh",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/haradakashiwa/ternssh",
+    "github": "haradakashiwa/ternssh",
+    "github_stars": 499,
+    "name": {
+      "en": "haradakashiwa/ternssh",
+      "zh-CN": "haradakashiwa/ternssh (GitHub ⭐499)",
+      "zh-TW": "haradakashiwa/ternssh (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A web-based SSH solution that can be deployed on Cloudflare Workers.",
+      "zh-CN": "A web-based SSH solution that can be deployed on Cloudflare Workers. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A web-based SSH solution that can be deployed on Cloudflare Workers. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Collection of handy online tools for developers, with great UX.",
       "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40309+ Stars 开源项目",
       "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40309+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-stormzhang-token-tracker",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/stormzhang/token-tracker",
-    "github": "stormzhang/token-tracker",
-    "github_stars": 500,
-    "name": {
-      "en": "stormzhang/token-tracker",
-      "zh-CN": "stormzhang/token-tracker (GitHub ⭐500)",
-      "zh-TW": "stormzhang/token-tracker (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus",
-      "zh-CN": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Claude Code & Codex 本地 token 追踪 — 状态栏（Codex 业界首创伪 statusline）、GitHub 风格热力图、多模型成本分析。 | Local token tracker for Claude Code & Codex — status line (indus | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-danielpan12-jobhuntbot",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/DanielPan12/JobHuntBot",
-    "github": "DanielPan12/JobHuntBot",
-    "github_stars": 500,
-    "name": {
-      "en": "DanielPan12/JobHuntBot",
-      "zh-CN": "DanielPan12/JobHuntBot (GitHub ⭐500)",
-      "zh-TW": "DanielPan12/JobHuntBot (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio",
-      "zh-CN": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Agent-led job application workflow with a local progress-tracking dashboard — works with any AI coding agent that can read files and follow instructio | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-linxidnju-opentag",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/linxidnju/OpenTag",
-    "github": "linxidnju/OpenTag",
-    "github_stars": 500,
-    "name": {
-      "en": "linxidnju/OpenTag",
-      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
-      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
-      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-quartzlanceawaken-autodesk-inv",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "github": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "github_stars": 499,
-    "name": {
-      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
-      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)",
-      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool",
-      "zh-CN": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "QuartzLanceAwaken/Autodesk-Inventor-Tool - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tornikegomareli-talkify",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/tornikegomareli/Talkify",
-    "github": "tornikegomareli/Talkify",
-    "github_stars": 499,
-    "name": {
-      "en": "tornikegomareli/Talkify",
-      "zh-CN": "tornikegomareli/Talkify (GitHub ⭐499)",
-      "zh-TW": "tornikegomareli/Talkify (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription",
-      "zh-CN": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Lightning-fast, free, local first voice dictation for macOS with on-device transcription | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44310,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44310)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44310)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44310+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
