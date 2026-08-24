@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 542349,
+    "stars": 542634,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-23T22:57:11Z"
+    "updated": "2026-08-24T22:52:33Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 499296,
+    "stars": 499609,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-23T22:56:30Z"
+    "updated": "2026-08-24T22:57:52Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 469184,
+    "stars": 469860,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-23T22:58:49Z"
+    "updated": "2026-08-24T22:53:02Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454483,
+    "stars": 454545,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-23T22:31:12Z"
+    "updated": "2026-08-24T22:29:51Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 395084,
+    "stars": 395161,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-23T22:29:33Z"
+    "updated": "2026-08-24T22:36:59Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60240,
+    "stars": 60245,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-23T19:35:33Z"
+    "updated": "2026-08-24T22:35:38Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44326,
+    "stars": 44334,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-23T18:12:27Z"
+    "updated": "2026-08-24T18:34:25Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44183,
+    "stars": 44189,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-23T20:02:07Z"
+    "updated": "2026-08-24T16:36:53Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40660,
+    "stars": 40674,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-23T22:38:46Z"
+    "updated": "2026-08-24T22:47:34Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40326,
+    "stars": 40344,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,18 +167,18 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-23T20:57:22Z"
+    "updated": "2026-08-24T22:05:00Z"
   },
   {
-    "name": "RennAkira/spicy-monopoly",
-    "description": "和你的 AI 一起玩的双人棋盘小游戏 · 18+ （A two-player board game you play with your AI — dice, tiles, spicy tasks, all run by code (18+",
-    "url": "https://github.com/RennAkira/spicy-monopoly",
+    "name": "EstebanPdN/zelda-tmc-3ds",
+    "description": "Native Nintendo 3DS port of The Legend of Zelda: The Minish Cap based on Project Picori",
+    "url": "https://github.com/EstebanPdN/zelda-tmc-3ds",
     "homepage": "",
     "stars": 500,
-    "language": "Python",
+    "language": "C",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-23T17:29:07Z"
+    "updated": "2026-08-24T18:48:06Z"
   },
   {
     "name": "linxidnju/OpenTag",
@@ -198,21 +198,15 @@
     "updated": "2026-08-21T13:38:54Z"
   },
   {
-    "name": "pulkitxm/claude-directory",
-    "description": "Open-source AI interfaces built with Claude (Fable 5) including hero sections, GLSL shaders, design systems, animations,",
-    "url": "https://github.com/pulkitxm/claude-directory",
-    "homepage": "https://pulkit.page/claude-directory",
+    "name": "smontlouis/bible-strong-avatar-lab",
+    "description": "",
+    "url": "https://github.com/smontlouis/bible-strong-avatar-lab",
+    "homepage": "https://bible-strong-avatar-lab.vercel.app",
     "stars": 500,
-    "language": "HTML",
-    "topics": [
-      "ai-generated",
-      "anthropic",
-      "claude",
-      "claude-ai",
-      "design-system"
-    ],
+    "language": "TypeScript",
+    "topics": [],
     "source": "new",
-    "updated": "2026-08-23T09:06:18Z"
+    "updated": "2026-08-24T22:27:00Z"
   },
   {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -232,14 +226,14 @@
     "updated": "2026-08-21T11:30:25Z"
   },
   {
-    "name": "haradakashiwa/ternssh",
-    "description": "A web-based SSH solution that can be deployed on Cloudflare Workers.",
-    "url": "https://github.com/haradakashiwa/ternssh",
-    "homepage": "https://ternssh.com",
+    "name": "esthersjw/esther-design-system",
+    "description": "不二的个人IP设计系统",
+    "url": "https://github.com/esthersjw/esther-design-system",
+    "homepage": "",
     "stars": 499,
-    "language": "TypeScript",
+    "language": "HTML",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-23T13:21:57Z"
+    "updated": "2026-08-23T14:43:59Z"
   }
 ]
