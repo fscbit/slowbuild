@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 542634,
+    "stars": 542940,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-24T22:52:33Z"
+    "updated": "2026-08-25T22:49:40Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 499609,
+    "stars": 499910,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-24T22:57:52Z"
+    "updated": "2026-08-25T22:59:26Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 469860,
+    "stars": 470443,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-24T22:53:02Z"
+    "updated": "2026-08-25T22:57:02Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454545,
+    "stars": 454601,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-24T22:29:51Z"
+    "updated": "2026-08-25T22:40:15Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 395161,
+    "stars": 395221,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-24T22:36:59Z"
+    "updated": "2026-08-25T22:22:23Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60245,
+    "stars": 60256,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-24T22:35:38Z"
+    "updated": "2026-08-25T22:42:48Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44334,
+    "stars": 44339,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -116,14 +116,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-08-24T18:34:25Z"
+    "updated": "2026-08-25T17:30:35Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44189,
+    "stars": 44201,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,14 +133,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-24T16:36:53Z"
+    "updated": "2026-08-25T22:39:42Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40674,
+    "stars": 40685,
     "language": "Rust",
     "topics": [
       "application",
@@ -150,14 +150,14 @@
       "macos"
     ],
     "source": "tool",
-    "updated": "2026-08-24T22:47:34Z"
+    "updated": "2026-08-25T22:48:30Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40344,
+    "stars": 40357,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,46 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-24T22:05:00Z"
-  },
-  {
-    "name": "EstebanPdN/zelda-tmc-3ds",
-    "description": "Native Nintendo 3DS port of The Legend of Zelda: The Minish Cap based on Project Picori",
-    "url": "https://github.com/EstebanPdN/zelda-tmc-3ds",
-    "homepage": "",
-    "stars": 500,
-    "language": "C",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-24T18:48:06Z"
-  },
-  {
-    "name": "linxidnju/OpenTag",
-    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
-    "url": "https://github.com/linxidnju/OpenTag",
-    "homepage": "",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [
-      "agent-gateway",
-      "ai-agents",
-      "automation",
-      "claude",
-      "claude-code"
-    ],
-    "source": "new",
-    "updated": "2026-08-21T13:38:54Z"
-  },
-  {
-    "name": "smontlouis/bible-strong-avatar-lab",
-    "description": "",
-    "url": "https://github.com/smontlouis/bible-strong-avatar-lab",
-    "homepage": "https://bible-strong-avatar-lab.vercel.app",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-24T22:27:00Z"
+    "updated": "2026-08-25T22:42:39Z"
   },
   {
     "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
@@ -226,14 +187,59 @@
     "updated": "2026-08-21T11:30:25Z"
   },
   {
-    "name": "esthersjw/esther-design-system",
-    "description": "不二的个人IP设计系统",
-    "url": "https://github.com/esthersjw/esther-design-system",
+    "name": "privatenumber/mac-ocr",
+    "description": "macOS CLI for OCR and searchable PDFs using Apple's Vision framework",
+    "url": "https://github.com/privatenumber/mac-ocr",
     "homepage": "",
     "stars": 499,
-    "language": "HTML",
+    "language": "Swift",
+    "topics": [
+      "apple-vision",
+      "cli",
+      "command-line-tool",
+      "image-to-text",
+      "macos"
+    ],
+    "source": "new",
+    "updated": "2026-08-25T07:21:16Z"
+  },
+  {
+    "name": "theswerd/brainless",
+    "description": "Claude Code, Codex, and Grok interfaces as shadcn components",
+    "url": "https://github.com/theswerd/brainless",
+    "homepage": "https://brainless.swerdlow.dev",
+    "stars": 499,
+    "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-23T14:43:59Z"
+    "updated": "2026-08-25T17:54:31Z"
+  },
+  {
+    "name": "linxidnju/OpenTag",
+    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
+    "url": "https://github.com/linxidnju/OpenTag",
+    "homepage": "",
+    "stars": 499,
+    "language": "JavaScript",
+    "topics": [
+      "agent-gateway",
+      "ai-agents",
+      "automation",
+      "claude",
+      "claude-code"
+    ],
+    "source": "new",
+    "updated": "2026-08-25T06:55:04Z"
+  },
+  {
+    "name": "microsoft/Resource2Skill",
+    "description": "A general framework for distilling human-created multimodal resources into reusable, executable skills that AI agents ca",
+    "url": "https://github.com/microsoft/Resource2Skill",
+    "homepage": "https://aka.ms/Resource2Skill",
+    "stars": 499,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-08-24T11:25:22Z"
   }
 ]
