@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>按 Excel 清单批量重命名工具</title>
+<style>
+:root{--blue:#4472C4;--bg:#f5f7fa;--card:#fff;--line:#e3e8ef;--txt:#1f2937;--sub:#6b7280;--ok:#C6EFCE;--err:#FFC7CE;--warn:#FFEB9C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+header{margin-bottom:16px}
+h1{font-size:22px}h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
+select:focus{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;background:var(--blue);color:#fff}
+.btn:hover{background:#365a9c}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:120px}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:20px;text-align:center;cursor:pointer;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.muted{color:var(--sub);font-size:12px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left}
+th{background:#f4f6f9;font-weight:600}
+.table-scroll{max-height:300px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.hidden{display:none}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.stat{font-size:13px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🏷️ <span>按 Excel 清单批量重命名</span>工具</h1>
+    <div class="sub">Excel 两列（原文件名 / 新文件名），把 zip 里的文件批量改名</div>
+  </header>
+
+  <div class="card">
+    <h2>1. 上传文件</h2>
+    <label>Excel 清单（两列：A=原文件名，B=新文件名，不含扩展名）</label>
+    <div class="drop" id="dropExcel">
+      <span class="icon">📊</span><span id="excelLabel">点击选择 或 拖入 Excel</span>
+      <input type="file" id="excelInput" accept=".xlsx,.xlsm,.csv" class="hidden">
+    </div>
+    <label>要改名的文件（打包成 zip）</label>
+    <div class="drop" id="dropZip">
+      <span class="icon">🗂️</span><span id="zipLabel">点击选择 zip</span>
+      <input type="file" id="zipInput" accept=".zip" class="hidden">
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card hidden" id="configCard">
+    <h2>2. 列设置</h2>
+    <div class="row">
+      <div><label>原文件名列</label><select id="oldCol"></select></div>
+      <div><label>新文件名列</label><select id="newCol"></select></div>
+    </div>
+    <div class="actions"><button class="btn" id="runBtn">执行重命名</button></div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>3. 结果</h2>
+    <div class="stat" id="stat"></div>
+    <div class="table-scroll"><table id="tbl"><thead><tr><th>原文件名</th><th>新文件名</th><th>状态</th></tr></thead><tbody></tbody></table></div>
+    <div class="actions"><button class="btn" id="dlBtn">下载改名后的文件（zip）</button></div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:5000' : 'https://api.slowbuild.top';
+var JOB = null, EXCEL = null, ZIP = null;
+
+function bindDrop(el, inp, cb){
+  el.onclick = function(){ inp.click(); };
+  inp.onchange = function(){ if(inp.files[0]) cb(inp.files[0]); };
+  ['dragover','dragenter'].forEach(function(ev){ el.addEventListener(ev, function(e){e.preventDefault();el.classList.add('drag');}); });
+  ['dragleave','drop'].forEach(function(ev){ el.addEventListener(ev, function(e){e.preventDefault();el.classList.remove('drag');}); });
+  el.addEventListener('drop', function(e){ if(e.dataTransfer.files[0]){ inp.files = e.dataTransfer.files; cb(e.dataTransfer.files[0]); } });
+}
+function setStatus(t){ document.getElementById('status').textContent = t; }
+
+bindDrop(document.getElementById('dropExcel'), document.getElementById('excelInput'), function(f){
+  EXCEL = f; document.getElementById('excelLabel').textContent = '已选: ' + f.name; tryAnalyze();
+});
+bindDrop(document.getElementById('dropZip'), document.getElementById('zipInput'), function(f){
+  ZIP = f; document.getElementById('zipLabel').textContent = '已选: ' + f.name; tryAnalyze();
+});
+
+function tryAnalyze(){
+  if(!EXCEL || !ZIP) return;
+  var fd = new FormData(); fd.append('excel', EXCEL); fd.append('zip', ZIP);
+  setStatus('解析中...');
+  fetch(BACKEND + '/api/rename/analyze', {method:'POST', body:fd})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      JOB = d.job_id;
+      var o = document.getElementById('oldCol'), n = document.getElementById('newCol');
+      o.innerHTML = d.headers.map(function(h){ return '<option>'+h+'</option>'; }).join('');
+      n.innerHTML = d.headers.map(function(h){ return '<option>'+h+'</option>'; }).join('');
+      document.getElementById('configCard').classList.remove('hidden');
+      setStatus('✅ 清单 '+ d.rows_count +' 行，文件 '+ d.files_count +' 个');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); });
+}
+
+document.getElementById('runBtn').onclick = function(){
+  if(!JOB) return;
+  var body = {job_id: JOB, old_col: document.getElementById('oldCol').value, new_col: document.getElementById('newCol').value};
+  this.disabled = true; setStatus('处理中...');
+  fetch(BACKEND + '/api/rename/run', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      document.getElementById('stat').innerHTML =
+        '✅ 已改名 <b>'+d.renamed_count+'</b> 个 · 未找到 <b>'+d.missing_count+'</b> 个 · 无需改 <b>'+d.skipped_count+'</b> 个' +
+        (d.dup_count ? ' · ⚠️ 清单有 <b>'+d.dup_count+'</b> 个重复原名' : '');
+      var tb = document.querySelector('#tbl tbody'); tb.innerHTML = '';
+      d.renamed.forEach(function(r){ tb.innerHTML += '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>✅ 已改名</td></tr>'; });
+      d.missing.forEach(function(m){ tb.innerHTML += '<tr><td>'+m+'</td><td>-</td><td>❌ 未找到</td></tr>'; });
+      document.getElementById('resultCard').classList.remove('hidden');
+      setStatus('完成');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); })
+    .finally(function(){ document.getElementById('runBtn').disabled = false; });
+};
+
+document.getElementById('dlBtn').onclick = function(){
+  if(JOB) window.location.href = BACKEND + '/api/rename/download/' + JOB;
+};
+</script>
+</body>
+</html>

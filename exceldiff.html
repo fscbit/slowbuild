@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>两个 Excel 对比工具</title>
+<style>
+:root{--blue:#4472C4;--bg:#f5f7fa;--card:#fff;--line:#e3e8ef;--txt:#1f2937;--sub:#6b7280}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+header{margin-bottom:16px}
+h1{font-size:22px}h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;background:var(--blue);color:#fff}
+.btn:hover{background:#365a9c}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:160px}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:20px;text-align:center;cursor:pointer;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+.hidden{display:none}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.summary{font-family:Consolas,monospace;font-size:13px;background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:14px;white-space:pre-wrap}
+.muted{color:var(--sub);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🔍 <span>两个 Excel 对比</span>工具</h1>
+    <div class="sub">上传两个文件，逐单元格比对差异，下载带高亮的对比表</div>
+  </header>
+
+  <div class="card">
+    <h2>1. 上传两个文件</h2>
+    <div class="row">
+      <div class="drop" id="drop1">
+        <span class="icon">📄</span><span id="label1">文件 1（旧版）</span>
+        <input type="file" id="input1" accept=".xlsx,.xlsm,.csv" class="hidden">
+      </div>
+      <div class="drop" id="drop2">
+        <span class="icon">📄</span><span id="label2">文件 2（新版）</span>
+        <input type="file" id="input2" accept=".xlsx,.xlsm,.csv" class="hidden">
+      </div>
+    </div>
+    <div class="muted" style="margin-top:8px">说明：按行号对齐逐格对比；新增行标蓝、删除行标红、变动单元格标黄</div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>2. 对比结果</h2>
+    <div class="summary" id="summary"></div>
+    <div class="actions"><button class="btn" id="dlBtn">下载高亮对比表（xlsx）</button></div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:5000' : 'https://api.slowbuild.top';
+var JOB = null, F1 = null, F2 = null;
+
+function bindDrop(el, inp, label, cb){
+  el.onclick = function(){ inp.click(); };
+  inp.onchange = function(){ if(inp.files[0]) cb(inp.files[0]); };
+  ['dragover','dragenter'].forEach(function(ev){ el.addEventListener(ev, function(e){e.preventDefault();el.classList.add('drag');}); });
+  ['dragleave','drop'].forEach(function(ev){ el.addEventListener(ev, function(e){e.preventDefault();el.classList.remove('drag');}); });
+  el.addEventListener('drop', function(e){ if(e.dataTransfer.files[0]){ inp.files = e.dataTransfer.files; cb(e.dataTransfer.files[0]); } });
+}
+function setStatus(t){ document.getElementById('status').textContent = t; }
+
+bindDrop(document.getElementById('drop1'), document.getElementById('input1'), document.getElementById('label1'), function(f){ F1=f; document.getElementById('label1').textContent='已选: '+f.name; tryRun(); });
+bindDrop(document.getElementById('drop2'), document.getElementById('input2'), document.getElementById('label2'), function(f){ F2=f; document.getElementById('label2').textContent='已选: '+f.name; tryRun(); });
+
+function tryRun(){
+  if(!F1 || !F2) return;
+  var fd = new FormData(); fd.append('file1', F1); fd.append('file2', F2);
+  setStatus('对比中...');
+  fetch(BACKEND + '/api/exceldiff/run', {method:'POST', body:fd})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      JOB = d.job_id;
+      var s = d.summary;
+      var same = s.same ? '✅ 两个文件完全一致' : '⚠️ 存在差异';
+      document.getElementById('summary').textContent =
+        same + '\n' +
+        '文件1行数: ' + s.rows1 + '\n' +
+        '文件2行数: ' + s.rows2 + '\n' +
+        '变动单元格: ' + s.changed_cells + '\n' +
+        '新增行: ' + s.added_rows + '\n' +
+        '删除行: ' + s.removed_rows;
+      document.getElementById('resultCard').classList.remove('hidden');
+      setStatus('完成');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); });
+}
+
+document.getElementById('dlBtn').onclick = function(){
+  if(JOB) window.location.href = BACKEND + '/api/exceldiff/download/' + JOB;
+};
+</script>
+</body>
+</html>

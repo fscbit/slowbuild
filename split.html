@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excel 按列拆分工具</title>
+<style>
+:root{--blue:#4472C4;--bg:#f5f7fa;--card:#fff;--line:#e3e8ef;--txt:#1f2937;--sub:#6b7280;--ok:#C6EFCE;--err:#FFC7CE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+header{margin-bottom:16px}
+h1{font-size:22px}h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+input[type=text],input[type=number],select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
+input:focus,select:focus{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;background:var(--blue);color:#fff}
+.btn:hover{background:#365a9c}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--txt)}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:120px}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:20px;text-align:center;cursor:pointer;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.muted{color:var(--sub);font-size:12px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left}
+th{background:#f4f6f9;font-weight:600}
+.table-scroll{max-height:400px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.hidden{display:none}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#eef2f8;border-radius:14px;padding:4px 12px;font-size:12px}
+.chip b{color:var(--blue)}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📊 <span>Excel 按列拆分</span>工具</h1>
+    <div class="sub">上传一个 Excel/CSV，按某一列的不同取值拆成多个文件，一次性下载</div>
+  </header>
+
+  <div class="card">
+    <h2>1. 上传文件</h2>
+    <div class="drop" id="drop">
+      <span class="icon">📁</span>
+      <span id="fileLabel">点击选择 或 拖入 .xlsx / .csv 文件</span>
+      <input type="file" id="fileInput" accept=".xlsx,.xlsm,.csv" class="hidden">
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card hidden" id="configCard">
+    <h2>2. 拆分设置</h2>
+    <label>按哪一列拆分</label>
+    <select id="col"></select>
+    <div class="row">
+      <div>
+        <label>导出格式</label>
+        <select id="fmt"><option value="xlsx">Excel (.xlsx)</option><option value="csv">CSV</option></select>
+      </div>
+      <div>
+        <label>拆分方式</label>
+        <select id="mode"><option value="files">多个文件（zip）</option><option value="sheets">一个文件多个 Sheet</option></select>
+      </div>
+    </div>
+    <div class="actions"><button class="btn" id="runBtn">开始拆分</button></div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>3. 拆分结果</h2>
+    <div class="chips" id="chips"></div>
+    <div class="actions"><button class="btn" id="dlBtn">下载结果</button></div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:5000' : 'https://api.slowbuild.top';
+var JOB = null;
+
+var drop = document.getElementById('drop');
+var input = document.getElementById('fileInput');
+drop.onclick = function(){ input.click(); };
+input.onchange = function(){ if(input.files[0]) upload(); };
+['dragover','dragenter'].forEach(function(ev){ drop.addEventListener(ev, function(e){e.preventDefault();drop.classList.add('drag');}); });
+['dragleave','drop'].forEach(function(ev){ drop.addEventListener(ev, function(e){e.preventDefault();drop.classList.remove('drag');}); });
+drop.addEventListener('drop', function(e){ if(e.dataTransfer.files[0]){ input.files = e.dataTransfer.files; upload(); } });
+
+function setStatus(t){ document.getElementById('status').textContent = t; }
+
+function upload(){
+  var f = input.files[0];
+  document.getElementById('fileLabel').textContent = '已选: ' + f.name;
+  var fd = new FormData(); fd.append('file', f);
+  setStatus('上传解析中...');
+  fetch(BACKEND + '/api/split/analyze', {method:'POST', body:fd})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      JOB = d.job_id;
+      var sel = document.getElementById('col');
+      sel.innerHTML = d.headers.map(function(h){ return '<option>'+h+'</option>'; }).join('');
+      document.getElementById('configCard').classList.remove('hidden');
+      setStatus('✅ 已解析 '+ d.rows_count +' 行数据');
+    })
+    .catch(function(e){ setStatus('❌ 请求失败: ' + e); });
+}
+
+document.getElementById('runBtn').onclick = function(){
+  if(!JOB) return;
+  var body = {job_id: JOB, col: document.getElementById('col').value,
+              fmt: document.getElementById('fmt').value, mode: document.getElementById('mode').value};
+  this.disabled = true; setStatus('拆分中...');
+  fetch(BACKEND + '/api/split/run', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      var chips = document.getElementById('chips');
+      chips.innerHTML = d.groups.map(function(g){ return '<span class="chip">'+g.value+' <b>'+g.count+'行</b></span>'; }).join('');
+      document.getElementById('resultCard').classList.remove('hidden');
+      setStatus('✅ 拆成 '+ d.group_count +' 组');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); })
+    .finally(function(){ document.getElementById('runBtn').disabled = false; });
+};
+
+document.getElementById('dlBtn').onclick = function(){
+  if(JOB) window.location.href = BACKEND + '/api/split/download/' + JOB;
+};
+</script>
+</body>
+</html>

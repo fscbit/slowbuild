@@ -451,12 +451,56 @@
         <div class="name"><span data-i18n="script_word2pdf">Word → PDF</span></div>
       </div>
       <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+        <div class="icon">📊➡️📕</div>
+        <div class="name">Excel → PDF</div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+        <div class="icon">📊➡️📄</div>
+        <div class="name">Excel → CSV</div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+        <div class="icon">📽️➡️📕</div>
+        <div class="name">PPT → PDF</div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+        <div class="icon">🌐➡️📕</div>
+        <div class="name">HTML → PDF</div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
+        <div class="icon">📕➡️📊</div>
+        <div class="name">PDF → Excel</div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">🧹</div>
         <div class="name"><span data-i18n="script_dedup">Duplicate Finder</span></div>
       </div>
       <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
         <div class="icon">🖼️</div>
         <div class="name"><span data-i18n="script_extract_images">Image Lister</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/filecheck.html'" style="border-color:var(--accent)">
+        <div class="icon">📁</div>
+        <div class="name">文件名核对 <span style="font-size:.68rem;color:var(--muted)">Excel ↔ Files</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/split.html'">
+        <div class="icon">📊</div>
+        <div class="name">Excel 拆分 <span style="font-size:.68rem;color:var(--muted)">Split by Column</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/rename.html'">
+        <div class="icon">🏷️</div>
+        <div class="name">批量重命名 <span style="font-size:.68rem;color:var(--muted)">Batch Rename</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/exceldiff.html'">
+        <div class="icon">🔍</div>
+        <div class="name">Excel 对比 <span style="font-size:.68rem;color:var(--muted)">Compare 2 Files</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/merge.html'">
+        <div class="icon">➕</div>
+        <div class="name">合并表格 <span style="font-size:.68rem;color:var(--muted)">Merge Tables</span></div>
+      </div>
+      <div class="tool-card-compact online-convert-card" onclick="location.href='/dedup.html'">
+        <div class="icon">🧹</div>
+        <div class="name">按列去重 <span style="font-size:.68rem;color:var(--muted)">Dedup Rows</span></div>
       </div>
     </div>
 
@@ -471,6 +515,46 @@
           <input type="file" id="word2pdfFile" accept=".doc,.docx" style="font-size:.8rem;max-width:100%">
           <button class="btn primary small" onclick="uploadConvert('word2pdf')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
           <div class="result-bar" id="word2pdfResult"></div>
+        </div>
+        <div class="tool-card" style="cursor:default">
+          <div class="icon">📊➡️📕</div>
+          <h3>Excel → PDF</h3>
+          <p class="desc" style="margin-bottom:12px">Upload .xls/.xlsx, get PDF.</p>
+          <input type="file" id="excel2pdfFile" accept=".xls,.xlsx" style="font-size:.8rem;max-width:100%">
+          <button class="btn primary small" onclick="uploadConvert('excel2pdf')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
+          <div class="result-bar" id="excel2pdfResult"></div>
+        </div>
+        <div class="tool-card" style="cursor:default">
+          <div class="icon">📊➡️📄</div>
+          <h3>Excel → CSV</h3>
+          <p class="desc" style="margin-bottom:12px">Upload .xls/.xlsx, get CSV.</p>
+          <input type="file" id="excel2csvFile" accept=".xls,.xlsx" style="font-size:.8rem;max-width:100%">
+          <button class="btn primary small" onclick="uploadConvert('excel2csv')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
+          <div class="result-bar" id="excel2csvResult"></div>
+        </div>
+        <div class="tool-card" style="cursor:default">
+          <div class="icon">📽️➡️📕</div>
+          <h3>PPT → PDF</h3>
+          <p class="desc" style="margin-bottom:12px">Upload .ppt/.pptx, get PDF.</p>
+          <input type="file" id="ppt2pdfFile" accept=".ppt,.pptx" style="font-size:.8rem;max-width:100%">
+          <button class="btn primary small" onclick="uploadConvert('ppt2pdf')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
+          <div class="result-bar" id="ppt2pdfResult"></div>
+        </div>
+        <div class="tool-card" style="cursor:default">
+          <div class="icon">🌐➡️📕</div>
+          <h3>HTML → PDF</h3>
+          <p class="desc" style="margin-bottom:12px">Upload .html/.htm, get PDF.</p>
+          <input type="file" id="html2pdfFile" accept=".html,.htm" style="font-size:.8rem;max-width:100%">
+          <button class="btn primary small" onclick="uploadConvert('html2pdf')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
+          <div class="result-bar" id="html2pdfResult"></div>
+        </div>
+        <div class="tool-card" style="cursor:default">
+          <div class="icon">📕➡️📊</div>
+          <h3>PDF → Excel</h3>
+          <p class="desc" style="margin-bottom:12px">Upload .pdf, extract tables to .xlsx. (Text-based PDFs only)</p>
+          <input type="file" id="pdf2excelFile" accept=".pdf" style="font-size:.8rem;max-width:100%">
+          <button class="btn primary small" onclick="uploadConvert('pdf2excel')" style="margin-top:8px" data-i18n="online_convert">Convert</button>
+          <div class="result-bar" id="pdf2excelResult"></div>
         </div>
         <div class="tool-card" style="cursor:default">
           <div class="icon">🧹</div>
@@ -2384,26 +2468,23 @@ function submitOrder(){
 // ═══════════════════════════════════════════
 var BACKEND = 'https://api.slowbuild.top';
 
+var CONVERT_TOOLS = {
+  word2pdf:  {input:'word2pdfFile',  result:'word2pdfResult',  endpoint:'/api/convert',     type:'word2pdf',  ext:'.pdf'},
+  excel2pdf: {input:'excel2pdfFile', result:'excel2pdfResult', endpoint:'/api/convert',     type:'excel2pdf', ext:'.pdf'},
+  excel2csv: {input:'excel2csvFile', result:'excel2csvResult', endpoint:'/api/convert',     type:'excel2csv', ext:'.csv'},
+  ppt2pdf:   {input:'ppt2pdfFile',   result:'ppt2pdfResult',   endpoint:'/api/convert',     type:'ppt2pdf',   ext:'.pdf'},
+  html2pdf:  {input:'html2pdfFile',  result:'html2pdfResult',  endpoint:'/api/convert',     type:'html2pdf',  ext:'.pdf'},
+  pdf2excel: {input:'pdf2excelFile', result:'pdf2excelResult', endpoint:'/api/pdf2excel',   type:null,        ext:'.xlsx'},
+  dedup:     {input:'dedupFile',     result:'dedupResult',     endpoint:'/api/dedup',       type:null,        ext:null},
+  images:    {input:'imagesFile',    result:'imagesResult',    endpoint:'/api/images_list', type:null,        ext:null}
+};
+
 function uploadConvert(tool) {
-  var fileInput, resultDiv, endpoint, method;
-  
-  if (tool === 'word2pdf') {
-    fileInput = document.getElementById('word2pdfFile');
-    resultDiv = document.getElementById('word2pdfResult');
-    endpoint = '/api/convert';
-    method = 'POST_FORM_PDF';
-  } else if (tool === 'dedup') {
-    fileInput = document.getElementById('dedupFile');
-    resultDiv = document.getElementById('dedupResult');
-    endpoint = '/api/dedup';
-    method = 'POST_JSON';
-  } else if (tool === 'images') {
-    fileInput = document.getElementById('imagesFile');
-    resultDiv = document.getElementById('imagesResult');
-    endpoint = '/api/images_list';
-    method = 'POST_JSON';
-  }
-  
+  var cfg = CONVERT_TOOLS[tool];
+  if (!cfg) return;
+  var fileInput = document.getElementById(cfg.input);
+  var resultDiv = document.getElementById(cfg.result);
+
   var file = fileInput.files[0];
   if (!file) {
     resultDiv.className = 'result-bar error show';
@@ -2416,31 +2497,31 @@ function uploadConvert(tool) {
   
   var formData = new FormData();
   formData.append('file', file);
-  if (endpoint === '/api/convert') formData.append('type', 'word2pdf');
+  if (cfg.type) formData.append('type', cfg.type);
 
-  // 60秒超时
+  var isBlob = !!cfg.ext; // 有 ext → 下载文件；无 ext → JSON 结果
   var controller = new AbortController();
   var timeout = setTimeout(function() { controller.abort(); }, 60000);
   
-  fetch(BACKEND + endpoint, { method: 'POST', body: formData, signal: controller.signal })
+  fetch(BACKEND + cfg.endpoint, { method: 'POST', body: formData, signal: controller.signal })
     .then(function(resp) {
-      if (!resp.ok && method === 'POST_FORM_PDF') {
+      if (!resp.ok && isBlob) {
         return resp.json().then(function(err) { throw new Error(err.error || 'Failed'); });
       }
       if (!resp.ok) throw new Error('Server error: ' + resp.status);
       
-      if (method === 'POST_FORM_PDF') {
+      if (isBlob) {
         return resp.blob().then(function(blob) {
           var url = URL.createObjectURL(blob);
           var a = document.createElement('a');
           a.href = url;
-          a.download = file.name.replace(/\.(docx?)$/i, '.pdf');
+          a.download = file.name.replace(/\.[^.]+$/, cfg.ext);
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
           URL.revokeObjectURL(url);
           resultDiv.className = 'result-bar success show';
-          resultDiv.textContent = '✓ ' + (lang === 'zh-CN' ? '转换完成！PDF 已下载。' : 'Done! PDF downloaded.');
+          resultDiv.textContent = '✓ ' + (lang === 'zh-CN' ? '转换完成！文件已下载。' : 'Done! File downloaded.');
         });
       } else {
         return resp.json().then(function(data) {

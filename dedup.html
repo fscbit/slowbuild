@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>按列去重工具</title>
+<style>
+:root{--blue:#4472C4;--bg:#f5f7fa;--card:#fff;--line:#e3e8ef;--txt:#1f2937;--sub:#6b7280}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+header{margin-bottom:16px}
+h1{font-size:22px}h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;background:var(--blue);color:#fff}
+.btn:hover{background:#365a9c}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:20px;text-align:center;cursor:pointer;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+.hidden{display:none}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{background:#eef2f8;border:1px solid var(--line);border-radius:14px;padding:4px 12px;font-size:13px;cursor:pointer;user-select:none}
+.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.muted{color:var(--sub);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧹 <span>按列去重</span>工具</h1>
+    <div class="sub">上传 Excel/CSV，按指定列组合去重，下载干净的数据</div>
+  </header>
+
+  <div class="card">
+    <h2>1. 上传文件</h2>
+    <div class="drop" id="drop">
+      <span class="icon">📁</span><span id="fileLabel">点击选择 或 拖入 .xlsx / .csv</span>
+      <input type="file" id="fileInput" accept=".xlsx,.xlsm,.csv" class="hidden">
+    </div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card hidden" id="configCard">
+    <h2>2. 选择去重依据列（可多选）</h2>
+    <div class="chips" id="chips"></div>
+    <div class="muted" style="margin-top:8px">多列时：所有选中列的值完全相同的行才视为重复</div>
+    <div class="actions"><button class="btn" id="runBtn">去重</button></div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>3. 结果</h2>
+    <div class="status" id="resultStatus"></div>
+    <div class="actions"><button class="btn" id="dlBtn">下载去重结果（xlsx）</button></div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:5000' : 'https://api.slowbuild.top';
+var JOB = null, HEADERS = [];
+
+var drop = document.getElementById('drop');
+var input = document.getElementById('fileInput');
+drop.onclick = function(){ input.click(); };
+input.onchange = function(){ if(input.files[0]) upload(); };
+['dragover','dragenter'].forEach(function(ev){ drop.addEventListener(ev, function(e){e.preventDefault();drop.classList.add('drag');}); });
+['dragleave','drop'].forEach(function(ev){ drop.addEventListener(ev, function(e){e.preventDefault();drop.classList.remove('drag');}); });
+drop.addEventListener('drop', function(e){ if(e.dataTransfer.files[0]){ input.files = e.dataTransfer.files; upload(); } });
+
+function setStatus(t){ document.getElementById('status').textContent = t; }
+
+function upload(){
+  var f = input.files[0];
+  document.getElementById('fileLabel').textContent = '已选: ' + f.name;
+  var fd = new FormData(); fd.append('file', f);
+  setStatus('解析中...');
+  fetch(BACKEND + '/api/dedup/analyze', {method:'POST', body:fd})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      JOB = d.job_id; HEADERS = d.headers;
+      var chips = document.getElementById('chips');
+      chips.innerHTML = d.headers.map(function(h, i){
+        return '<span class="chip" data-i="'+i+'">'+h+'</span>';
+      }).join('');
+      Array.prototype.forEach.call(chips.children, function(c){
+        c.onclick = function(){ c.classList.toggle('on'); };
+      });
+      document.getElementById('configCard').classList.remove('hidden');
+      setStatus('✅ '+ d.rows_count +' 行数据');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); });
+}
+
+document.getElementById('runBtn').onclick = function(){
+  if(!JOB) return;
+  var cols = [];
+  Array.prototype.forEach.call(document.getElementById('chips').children, function(c){
+    if(c.classList.contains('on')) cols.push(c.textContent);
+  });
+  if(!cols.length){ setStatus('请至少选一列'); return; }
+  this.disabled = true; setStatus('去重中...');
+  fetch(BACKEND + '/api/dedup/run', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({job_id:JOB, cols:cols})})
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if(d.error){ setStatus('❌ ' + d.error); return; }
+      document.getElementById('resultStatus').innerHTML =
+        '✅ 保留 <b>'+d.kept+'</b> 行 · 删除重复 <b>'+d.removed+'</b> 行';
+      document.getElementById('resultCard').classList.remove('hidden');
+      setStatus('完成');
+    })
+    .catch(function(e){ setStatus('❌ ' + e); })
+    .finally(function(){ document.getElementById('runBtn').disabled = false; });
+};
+
+document.getElementById('dlBtn').onclick = function(){
+  if(JOB) window.location.href = BACKEND + '/api/dedup/download/' + JOB;
+};
+</script>
+</body>
+</html>
