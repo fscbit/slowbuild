@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文件名与 Excel 核对工具</title>
+<style>
+:root{
+  --blue:#4472C4; --blue-d:#365a9c;
+  --bg:#f5f7fa; --card:#fff; --line:#e3e8ef;
+  --txt:#1f2937; --sub:#6b7280;
+  --ok:#C6EFCE; --ok-t:#2f7d32;
+  --warn:#FFEB9C; --warn-t:#8a6d00;
+  --err:#FFC7CE; --err-t:#a33232;
+  --info:#DDEBF7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px}
+h1{font-size:22px;font-weight:700}
+h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.grid{display:grid;grid-template-columns:420px 1fr;gap:16px}
+@media(max-width:960px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h2 .num{background:var(--blue);color:#fff;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:none}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+input[type=text],input[type=number],select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none;background:#fff}
+input:focus,select:focus{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;transition:.15s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-sm{padding:7px 13px;font-size:13px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>*{flex:1;min-width:120px}
+.inline{display:flex;align-items:center;gap:8px}
+.inline input[type=checkbox]{width:16px;height:16px}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:22px;text-align:center;cursor:pointer;transition:.15s;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.drop.ready{border-style:solid;border-color:#9ecb9e;background:#f4fbf4}
+.muted{color:var(--sub);font-size:12px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+.preview{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:10px;font-family:Consolas,monospace;font-size:12px;max-height:180px;overflow:auto;white-space:pre-wrap;word-break:break-all}
+/* 结果 */
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);margin-bottom:12px}
+.tab{padding:8px 16px;cursor:pointer;font-size:14px;color:var(--sub);border-bottom:2px solid transparent;margin-bottom:-2px;font-weight:600}
+.tab.active{color:var(--blue);border-color:var(--blue)}
+.tab .badge{background:#eef2f8;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px}
+.panel{display:none}
+.panel.active{display:block}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f4f6f9;font-weight:600;position:sticky;top:0}
+tr.ok td{background:var(--ok)}
+tr.warn td{background:var(--warn)}
+tr.err td{background:var(--err)}
+tr.info td{background:var(--info)}
+.table-scroll{max-height:560px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.summary{font-family:Consolas,monospace;font-size:13px;background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:14px;white-space:pre-wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#eef2f8;border-radius:14px;padding:4px 12px;font-size:12px;color:#374151}
+.chip b{color:var(--blue)}
+.guide{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:14px}
+.guide img{width:100%;display:block}
+.actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.hidden{display:none}
+.file-list{max-height:140px;overflow:auto;font-size:12px;color:var(--sub);margin-top:6px}
+.file-list div{padding:2px 0;border-bottom:1px dashed #eef0f4}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>📁 <span>文件名</span> 与 Excel 核对工具</h1>
+      <div class="sub">上传 Excel + 文件夹，自动比对哪些文件缺失、哪些多余</div>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="#guide">使用说明 ↓</a>
+  </header>
+
+  <div class="grid">
+    <!-- 左栏：配置 -->
+    <div>
+      <div class="card">
+        <h2><span class="num">1</span> 上传文件</h2>
+        <label>Excel 文件（.xlsx）</label>
+        <div class="drop" id="dropExcel">
+          <span class="icon">📊</span>
+          <span id="excelLabel">点击选择 或 拖入 Excel 文件</span>
+          <input type="file" id="excelInput" accept=".xlsx,.xlsm" class="hidden">
+        </div>
+
+        <label>目标文件（打包成 zip，或直接拖入文件夹）</label>
+        <div class="drop" id="dropFiles">
+          <span class="icon">🗂️</span>
+          <span id="filesLabel">点击选择 zip / 文件夹</span>
+          <input type="file" id="zipInput" accept=".zip" class="hidden">
+          <input type="file" id="folderInput" webkitdirectory multiple class="hidden">
+        </div>
+
+        <label>文件扩展名过滤（可选，如 .docx,.doc 留空则全部）</label>
+        <input type="text" id="extFilter" placeholder=".docx,.doc" value="">
+
+        <div class="status" id="status"></div>
+        <div class="file-list" id="fileList"></div>
+      </div>
+
+      <div class="card" id="configCard" style="display:none">
+        <h2><span class="num">2</span> 核对设置</h2>
+
+        <label>主核对列（Excel 列名）</label>
+        <select id="keyCol"></select>
+        <label>文件名切法</label>
+        <select id="keyMethod"></select>
+        <label>参数 <span class="muted">（取前N字填数字；分隔符填 -:2；正则填 ^(\d+)）</span></label>
+        <input type="text" id="keyParam" value="9">
+
+        <div class="inline" style="margin-top:14px">
+          <input type="checkbox" id="subEnable">
+          <label style="margin:0">启用副核对字段（可选）</label>
+        </div>
+        <div id="subBox" style="display:none">
+          <label>副核对列</label>
+          <select id="subCol"></select>
+          <label>副字段切法</label>
+          <select id="subMethod"></select>
+          <label>副字段参数</label>
+          <input type="text" id="subParam" value="">
+          <label>日期容差（天）</label>
+          <input type="number" id="subTol" value="0" min="0" max="30">
+        </div>
+
+        <label>实时预览（前 10 个文件提取结果）</label>
+        <div class="preview" id="preview">—</div>
+
+        <div class="actions">
+          <button class="btn btn-primary" id="btnCheck">▶ 开始核对</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 右栏：结果 -->
+    <div>
+      <div class="card" id="resultCard" style="display:none">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <h2 style="margin:0">核对结果</h2>
+          <button class="btn btn-ghost btn-sm" id="btnExport">💾 下载报告 Excel</button>
+        </div>
+        <div class="chips" id="statChips"></div>
+        <div class="tabs">
+          <div class="tab active" data-tab="t1">逐行核对 <span class="badge" id="b1">0</span></div>
+          <div class="tab" data-tab="t2">多余文件 <span class="badge" id="b2">0</span></div>
+          <div class="tab" data-tab="t3">汇总</div>
+        </div>
+        <div class="panel active" id="t1">
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>行号</th><th>主值</th><th>副值</th><th>状态</th><th>匹配文件</th><th>备注</th></tr></thead>
+              <tbody id="tbody1"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel" id="t2">
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>文件名</th><th>主字段</th><th>副字段</th><th>说明</th></tr></thead>
+              <tbody id="tbody2"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel" id="t3"><div class="summary" id="summary"></div></div>
+      </div>
+
+      <div class="guide" id="guide">
+        <img src="guide.png" alt="使用示例" onerror="this.style.display='none';document.getElementById('guideText').style.display='block'">
+        <div id="guideText" style="display:none;background:#fff;padding:18px">
+          <h3 style="margin-bottom:10px">📖 使用示例</h3>
+          <p style="font-size:14px;margin-bottom:8px">1. 准备一个 Excel，第一行是列名（比如「编号」「日期」）</p>
+          <p style="font-size:14px;margin-bottom:8px">2. 把要核对的文件打包成 zip（或直接拖入文件夹）</p>
+          <p style="font-size:14px;margin-bottom:8px">3. 选主核对列 + 文件名切法，点「开始核对」</p>
+          <p style="font-size:14px;margin-bottom:8px">4. 绿色=匹配，黄色=待核对，红色=缺失；点「下载报告」导出 Excel</p>
+          <p style="font-size:13px;color:#6b7280">切法示例：文件名 <code>2026-10-10_张三_报告.docx</code><br>
+          · 取前 10 个字 → <code>2026-10-10</code>　· 按 <code>-:1</code> 取第 1 段 → <code>2026</code><br>
+          · 按 <code>_:2</code> 取第 2 段 → <code>张三</code>　· 正则 <code>^\d{4}-\d{2}-\d{2}</code> → <code>2026-10-10</code></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// 后端地址：同域部署用空串，跨域部署用 https://api.slowbuild.top
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+  ? '' : 'https://api.slowbuild.top';
+let JOB_ID = null;
+let METHODS = [];
+
+const $ = id => document.getElementById(id);
+
+// ── 上传区 ──
+$('dropExcel').addEventListener('click', ()=>$('excelInput').click());
+$('dropFiles').addEventListener('click', ()=>{
+  // 简单交互：优先弹文件夹选择（支持 zip 需另选），这里弹文件选择含 zip
+  const ch = confirm('点击「确定」选择文件夹（拖入整个文件夹）\n点击「取消」选择 zip 压缩包');
+  if(ch){ $('folderInput').click(); } else { $('zipInput').click(); }
+});
+$('excelInput').addEventListener('change', onExcelPicked);
+$('zipInput').addEventListener('change', ()=>{ if($('zipInput').files.length) uploadAnalyze(); });
+$('folderInput').addEventListener('change', ()=>{ if($('folderInput').files.length) uploadAnalyze(); });
+
+// 拖拽支持
+['dropExcel','dropFiles'].forEach(id=>{
+  const el = $(id);
+  el.addEventListener('dragover', e=>{e.preventDefault(); el.classList.add('drag');});
+  el.addEventListener('dragleave', ()=>el.classList.remove('drag'));
+  el.addEventListener('drop', e=>{
+    e.preventDefault(); el.classList.remove('drag');
+    const isExcel = id === 'dropExcel';
+    const items = e.dataTransfer.items;
+    if(items && items.length){
+      const files = [];
+      const entries = [];
+      for(const it of items){
+        const entry = it.webkitGetAsEntry ? it.webkitGetAsEntry() : null;
+        if(entry){ entries.push(entry); }
+        else if(it.getAsFile){ files.push(it.getAsFile()); }
+      }
+      if(isExcel){
+        const f = files.find(x=>/\.(xlsx|xlsm)$/i.test(x.name));
+        if(f){ setExcel(f); }
+        return;
+      }
+      // 文件夹递归
+      if(entries.length){ readEntries(entries, files, ()=>setZipFiles(files)); }
+      else if(files.length){ setZipFiles(files); }
+    }
+  });
+});
+
+function readEntries(entries, out, done){
+  let pending = entries.length;
+  if(!pending) return done();
+  for(const entry of entries){
+    if(entry.isFile){
+      entry.file(f=>{ out.push(f); if(--pending===0) done(); });
+    } else if(entry.isDirectory){
+      const reader = entry.createReader();
+      const readAll = ()=>{
+        reader.readEntries(batch=>{
+          if(batch.length){
+            readEntries(batch, out, ()=>{
+              readAll();
+            });
+          } else if(--pending===0){ done(); }
+        });
+      };
+      readAll();
+    } else { if(--pending===0) done(); }
+  }
+}
+
+function onExcelPicked(){
+  const f = $('excelInput').files[0];
+  if(f) setExcel(f);
+}
+function setExcel(f){
+  $('excelLabel').textContent = '📊 ' + f.name;
+  $('dropExcel').classList.add('ready');
+  uploadAnalyze();
+}
+
+// 保存已选文件（供 analyze 使用）
+let pickedFiles = [];
+function setZipFiles(files){
+  pickedFiles = files;
+  $('filesLabel').textContent = '🗂️ 已选 ' + files.length + ' 个文件';
+  $('dropFiles').classList.add('ready');
+  uploadAnalyze();
+}
+
+// ── 上传分析 ──
+function uploadAnalyze(){
+  const excel = $('excelInput').files[0];
+  if(!excel){
+    $('status').textContent = '⚠️ 请先上传 Excel 文件';
+    return;
+  }
+  const zip = $('zipInput').files[0];
+  const folder = $('folderInput').files;
+  const hasZip = !!zip;
+  const hasFolder = pickedFiles.length > 0 || folder.length > 0;
+
+  if(!hasZip && !hasFolder){
+    $('status').textContent = '⚠️ 请上传 zip 或文件夹';
+    return;
+  }
+
+  const fd = new FormData();
+  fd.append('excel', excel);
+  fd.append('exts', $('extFilter').value);
+  if(hasZip){ fd.append('zip', zip); }
+  else {
+    const fs = pickedFiles.length ? pickedFiles : Array.from(folder);
+    fs.forEach(f=> fd.append('files', f, f.webkitRelativePath || f.name));
+  }
+
+  $('status').textContent = '⏳ 正在读取 Excel 和文件...';
+  fetch(BACKEND + '/api/filecheck/analyze', {method:'POST', body:fd})
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.error){ $('status').textContent = '❌ ' + d.error; return; }
+      JOB_ID = d.job_id;
+      METHODS = d.methods || [];
+      fillSelect($('keyMethod'), METHODS, '取前N个字');
+      fillSelect($('subMethod'), METHODS, '取开头连续数字字母横杠');
+      fillHeaders($('keyCol'), d.headers, d.guess_key);
+      fillHeaders($('subCol'), d.headers, null);
+      $('status').textContent = '✅ Excel ' + d.rows_count + ' 行 / 文件 ' + d.files_count + ' 个';
+      $('configCard').style.display = 'block';
+      renderFileList(d.files);
+      updatePreview();
+    })
+    .catch(e=>{ $('status').textContent = '❌ 请求失败: ' + e; });
+}
+
+function fillSelect(sel, values, val){
+  sel.innerHTML = '';
+  (values||[]).forEach(v=>{
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    if(v === val) o.selected = true;
+    sel.appendChild(o);
+  });
+}
+function fillHeaders(sel, headers, guess){
+  sel.innerHTML = '';
+  (headers||[]).forEach(h=>{
+    const o = document.createElement('option');
+    o.value = h; o.textContent = h;
+    if(h === guess) o.selected = true;
+    sel.appendChild(o);
+  });
+}
+function renderFileList(files){
+  const el = $('fileList');
+  el.innerHTML = '';
+  const show = files.slice(0, 50);
+  show.forEach(n=>{
+    const d = document.createElement('div');
+    d.textContent = n;
+    el.appendChild(d);
+  });
+  if(files.length > 50){
+    const d = document.createElement('div');
+    d.textContent = '... 共 ' + files.length + ' 个文件';
+    el.appendChild(d);
+  }
+}
+
+// ── 预览 ──
+function updatePreview(){
+  if(!JOB_ID) return;
+  const fd = new FormData();
+  const excel = $('excelInput').files[0];
+  // 预览直接本地用后端 analyze 返回的 files 列表做前端提取不可靠，
+  // 这里改为调一次 check 的轻量方式前先只展示提示
+  $('preview').textContent = '点击「开始核对」后显示逐行结果';
+}
+
+$('subEnable').addEventListener('change', e=>{
+  $('subBox').style.display = e.target.checked ? 'block' : 'none';
+});
+
+// ── 核对 ──
+$('btnCheck').addEventListener('click', ()=>{
+  if(!JOB_ID){ $('status').textContent = '请先上传文件'; return; }
+  const body = {
+    job_id: JOB_ID,
+    key_col: $('keyCol').value,
+    key_method: $('keyMethod').value,
+    key_param: $('keyParam').value,
+    sub_enable: $('subEnable').checked,
+    sub_col: $('subEnable').checked ? $('subCol').value : null,
+    sub_method: $('subEnable').checked ? $('subMethod').value : '',
+    sub_param: $('subEnable').checked ? $('subParam').value : '',
+    tol: parseInt($('subTol').value || '0'),
+  };
+  $('status').textContent = '⏳ 正在核对...';
+  fetch(BACKEND + '/api/filecheck/check', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.error){ $('status').textContent = '❌ ' + d.error; return; }
+      renderResult(d.result);
+      $('status').textContent = '✅ 完成';
+    })
+    .catch(e=>{ $('status').textContent = '❌ 请求失败: ' + e; });
+});
+
+function renderResult(res){
+  $('resultCard').style.display = 'block';
+  const s = res.stats;
+  $('statChips').innerHTML =
+    '<span class="chip">完全匹配 <b>'+s.ok+'</b></span>'+
+    '<span class="chip">待核对 <b>'+s.warn+'</b></span>'+
+    '<span class="chip">缺失 <b>'+s.err+'</b></span>'+
+    '<span class="chip">多余 <b>'+s.extra+'</b></span>'+
+    '<span class="chip">齐全率 <b>'+s.rate+'%</b></span>';
+  $('b1').textContent = res.rows.length;
+  $('b2').textContent = res.extra.length;
+
+  const t1 = $('tbody1'); t1.innerHTML = '';
+  res.rows.forEach(r=>{
+    const tr = document.createElement('tr');
+    tr.className = r.tag;
+    tr.innerHTML = '<td>'+r.rownum+'</td><td>'+esc(r.key)+'</td><td>'+esc(r.sub)+'</td><td>'+esc(r.status)+'</td><td>'+esc(r.file)+'</td><td>'+esc(r.note)+'</td>';
+    t1.appendChild(tr);
+  });
+  const t2 = $('tbody2'); t2.innerHTML = '';
+  res.extra.forEach(e=>{
+    const tr = document.createElement('tr');
+    tr.className = 'info';
+    tr.innerHTML = '<td>'+esc(e.name)+'</td><td>'+esc(e.key)+'</td><td>'+esc(e.sub)+'</td><td>'+esc(e.note)+'</td>';
+    t2.appendChild(tr);
+  });
+  $('summary').textContent =
+    '════════════════════════════════════\n'+
+    '        文件名 与 Excel 核对汇总\n'+
+    '════════════════════════════════════\n'+
+    'Excel 数据行数 : '+s.excel_rows+'\n'+
+    '文件夹内文件数 : '+s.files_total+'\n'+
+    '────────────────────────────────────\n'+
+    '完全匹配 : '+s.ok+'\n'+
+    '待核对   : '+s.warn+'\n'+
+    '缺失文件 : '+s.err+'\n'+
+    '多余文件 : '+s.extra+'\n'+
+    '────────────────────────────────────\n'+
+    '齐全率   : '+s.rate+' %\n'+
+    '════════════════════════════════════';
+}
+
+// ── 导出 ──
+$('btnExport').addEventListener('click', ()=>{
+  if(!JOB_ID){ return; }
+  window.location.href = BACKEND + '/api/filecheck/export/' + JOB_ID;
+});
+
+// ── Tab 切换 ──
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    $(t.dataset.tab).classList.add('active');
+  });
+});
+
+function esc(s){
+  return String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+</script>
+</body>
+</html>
