@@ -285,12 +285,62 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-agent-inspect.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-agent-inspect.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-ai-engineer-notebooks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-ai-engineer-notebooks.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-ai-engineering-interview-questions-compa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-ai-engineering-interview-questions-compa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-ai-visual-prompt-cookbook.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-ai-visual-prompt-cookbook.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-airport-recommendation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-airport-recommendation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-audar-asr-v1.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-audar-asr-v1.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -305,12 +355,72 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-bag-ui.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-bag-ui.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-baocut.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-baocut.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-bettercmdtab.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-bettercmdtab.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-bilibinggo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-bilibinggo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-browser-search.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-browser-search.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-build-your-own-x.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-build-your-own-x.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-cap-cut-professional.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-cap-cut-professional.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -331,6 +441,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-claude-directory.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-clearwater.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-clearwater.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -405,12 +525,62 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-dsha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-dsha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-easel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-easel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-easyeda-agent.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-easyeda-agent.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-edgeever.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-edgeever.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-email-sdk.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-email-sdk.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-fable51-worlds.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-fable51-worlds.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -435,6 +605,36 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-funes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-funes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-gamefactory-3a.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-gamefactory-3a.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-gemini-web2api-go.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-gemini-web2api-go.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-geolook.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -445,12 +645,32 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-harness-score.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-harness-score.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-helios.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-helios.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-histopia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-histopia.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -475,6 +695,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-ian-xiaohei-scenes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-ian-xiaohei-scenes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-interior.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -495,12 +725,52 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-itsaplan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-itsaplan.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-jsoncrackcom.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-jsoncrackcom.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-kotlin-footguns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-kotlin-footguns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-laya.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-laya.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-livecontext-ce.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-livecontext-ce.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -535,6 +805,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-multi-dcord.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-multi-dcord.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-nbd-vram.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -545,12 +825,42 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-nomi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-nomi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-nova3d.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-nova3d.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-official-design-md.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-official-design-md.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-onebox.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-onebox.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -585,6 +895,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-orkas-videostudio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-orkas-videostudio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-owntv.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-owntv.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-papr.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -615,6 +945,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-recoverit-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-recoverit-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-run-abroad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-run-abroad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-second-brain-cloudflare.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -625,12 +975,32 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-skilldock.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-skilldock.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-skyadb.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-skyadb.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-soundcli.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-soundcli.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -655,12 +1025,42 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-superscreencontrol.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-superscreencontrol.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-termio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-termio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-token-tracker.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-token-tracker.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-tracesurface.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-tracesurface.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -695,6 +1095,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-veridrop.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-veridrop.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-vibe-check.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -705,12 +1115,32 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-video-talkcraft.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-video-talkcraft.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-wilonity.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-wilonity.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-wmkeyboard.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-wmkeyboard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

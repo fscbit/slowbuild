@@ -354,3 +354,1860 @@ To github.com:fscbit/slowbuild.git
   ✅ 已推送: auto: 2 posts + 8 shop items + auto update (2026-07-20 07:00)
 
 🎉 完成! 2 文章 | 14 工具 | 8 新商品
+[master 8d6d883] auto: 2 posts + 6 shop items + auto update (2026-07-21 07:00)
+ 6 files changed, 409 insertions(+), 185 deletions(-)
+ create mode 100644 blog/en/tool-ongrid.html
+ create mode 100644 blog/tool-ongrid.html
+To github.com:fscbit/slowbuild.git
+   df7fa60..8d6d883  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-21 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-ongrid.html (ongridio/ongrid)
+  ✅ CN: tool-ongrid.html (ongridio/ongrid)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 16 篇 tool 文章, sitemap 新增 32 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-07-21 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master a47119b] auto: 6 shop items + auto update (2026-07-22 07:00)
+ 2 files changed, 183 insertions(+), 183 deletions(-)
+To github.com:fscbit/slowbuild.git
+   8d6d883..a47119b  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-22 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 16 篇 tool 文章, sitemap 新增 32 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-07-22 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master c247779] auto: 6 shop items + auto update (2026-07-23 07:00)
+ 2 files changed, 188 insertions(+), 185 deletions(-)
+To github.com:fscbit/slowbuild.git
+   a47119b..c247779  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-23 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 16 篇 tool 文章, sitemap 新增 32 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-07-23 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master 6536a14] auto: 2 posts + 6 shop items + auto update (2026-07-24 07:00)
+ 6 files changed, 393 insertions(+), 188 deletions(-)
+ create mode 100644 blog/en/tool-how-pi-agent-works.html
+ create mode 100644 blog/tool-how-pi-agent-works.html
+To github.com:fscbit/slowbuild.git
+   c247779..6536a14  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-24 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-how-pi-agent-works.html (cellinlab/how-pi-agent-works)
+  ✅ CN: tool-how-pi-agent-works.html (cellinlab/how-pi-agent-works)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 17 篇 tool 文章, sitemap 新增 34 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-07-24 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master a0274bb] auto: 6 shop items + auto update (2026-07-25 07:00)
+ 2 files changed, 186 insertions(+), 189 deletions(-)
+To github.com:fscbit/slowbuild.git
+   6536a14..a0274bb  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-25 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 17 篇 tool 文章, sitemap 新增 34 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-07-25 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master 5254a48] auto: 4 shop items + auto update (2026-07-26 07:00)
+ 2 files changed, 115 insertions(+), 119 deletions(-)
+To github.com:fscbit/slowbuild.git
+   a0274bb..5254a48  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-26 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 17 篇 tool 文章, sitemap 新增 34 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 shop items + auto update (2026-07-26 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 4 新商品
+[master d9275ec] auto: 2 posts + 4 shop items + auto update (2026-07-27 07:00)
+ 6 files changed, 341 insertions(+), 128 deletions(-)
+ create mode 100644 blog/en/tool-compose-nav-graph.html
+ create mode 100644 blog/tool-compose-nav-graph.html
+To github.com:fscbit/slowbuild.git
+   5254a48..d9275ec  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-27 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-compose-nav-graph.html (skydoves/compose-nav-graph)
+  ✅ CN: tool-compose-nav-graph.html (skydoves/compose-nav-graph)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 18 篇 tool 文章, sitemap 新增 36 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 4 shop items + auto update (2026-07-27 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 4 新商品
+[master 751f65a] auto: 2 posts + 5 shop items + auto update (2026-07-28 07:00)
+ 6 files changed, 372 insertions(+), 165 deletions(-)
+ create mode 100644 blog/en/tool-datafoundry.html
+ create mode 100644 blog/tool-datafoundry.html
+To github.com:fscbit/slowbuild.git
+   d9275ec..751f65a  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-28 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-datafoundry.html (datagallery-lab/datafoundry)
+  ✅ CN: tool-datafoundry.html (datagallery-lab/datafoundry)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 19 篇 tool 文章, sitemap 新增 38 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-07-28 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+[master d302e8b] auto: 2 posts + 5 shop items + auto update (2026-07-29 07:00)
+ 6 files changed, 407 insertions(+), 182 deletions(-)
+ create mode 100644 blog/en/tool-dinotty.html
+ create mode 100644 blog/tool-dinotty.html
+To github.com:fscbit/slowbuild.git
+   751f65a..d302e8b  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-29 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-compose-nav-graph.html
+  ⏭️ CN 已有: tool-compose-nav-graph.html
+  ✅ EN: tool-dinotty.html (xichan96/dinotty)
+  ✅ CN: tool-dinotty.html (xichan96/dinotty)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 20 篇 tool 文章, sitemap 新增 40 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-07-29 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+[master fe0afa6] auto: 2 posts + 7 shop items + auto update (2026-07-30 07:00)
+ 6 files changed, 417 insertions(+), 210 deletions(-)
+ create mode 100644 blog/en/tool-activegraph.html
+ create mode 100644 blog/tool-activegraph.html
+To github.com:fscbit/slowbuild.git
+   d302e8b..fe0afa6  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-30 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-activegraph.html (yoheinakajima/activegraph)
+  ✅ CN: tool-activegraph.html (yoheinakajima/activegraph)
+  ⏭️ EN 已有: tool-compose-nav-graph.html
+  ⏭️ CN 已有: tool-compose-nav-graph.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 21 篇 tool 文章, sitemap 新增 42 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 7 shop items + auto update (2026-07-30 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 7 新商品
+[master 409f7a6] auto: 4 posts + 7 shop items + auto update (2026-07-31 07:00)
+ 8 files changed, 622 insertions(+), 220 deletions(-)
+ create mode 100644 blog/en/tool-deja-vu.html
+ create mode 100644 blog/en/tool-figmirror.html
+ create mode 100644 blog/tool-deja-vu.html
+ create mode 100644 blog/tool-figmirror.html
+To github.com:fscbit/slowbuild.git
+   3793920..409f7a6  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-07-31 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-deja-vu.html (vshulcz/deja-vu)
+  ✅ CN: tool-deja-vu.html (vshulcz/deja-vu)
+  ✅ EN: tool-figmirror.html (VILA-Lab/FigMirror)
+  ✅ CN: tool-figmirror.html (VILA-Lab/FigMirror)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 23 篇 tool 文章, sitemap 新增 46 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 7 shop items + auto update (2026-07-31 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+[master f6da7cf] auto: 2 posts + 6 shop items + auto update (2026-08-01 07:00)
+ 6 files changed, 393 insertions(+), 186 deletions(-)
+ create mode 100644 blog/en/tool-velotype.html
+ create mode 100644 blog/tool-velotype.html
+To github.com:fscbit/slowbuild.git
+   409f7a6..f6da7cf  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-01 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+  ✅ EN: tool-velotype.html (manyougz/velotype)
+  ✅ CN: tool-velotype.html (manyougz/velotype)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 24 篇 tool 文章, sitemap 新增 48 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-08-01 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master 7cc0fbb] auto: 4 posts + 5 shop items + auto update (2026-08-02 07:00)
+ 8 files changed, 599 insertions(+), 173 deletions(-)
+ create mode 100644 blog/en/tool-adrian.html
+ create mode 100644 blog/en/tool-tura.html
+ create mode 100644 blog/tool-adrian.html
+ create mode 100644 blog/tool-tura.html
+To github.com:fscbit/slowbuild.git
+   84e66de..7cc0fbb  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-02 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-adrian.html (secureagentics/Adrian)
+  ✅ CN: tool-adrian.html (secureagentics/Adrian)
+  ✅ EN: tool-tura.html (Tura-AI/tura)
+  ✅ CN: tool-tura.html (Tura-AI/tura)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 26 篇 tool 文章, sitemap 新增 52 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 5 shop items + auto update (2026-08-02 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 5 新商品
+[master 7614e2e] auto: 4 shop items + auto update (2026-08-03 07:00)
+ 2 files changed, 131 insertions(+), 143 deletions(-)
+To github.com:fscbit/slowbuild.git
+   7cc0fbb..7614e2e  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-03 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-adrian.html
+  ⏭️ CN 已有: tool-adrian.html
+  ⏭️ EN 已有: tool-velotype.html
+  ⏭️ CN 已有: tool-velotype.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 26 篇 tool 文章, sitemap 新增 52 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 shop items + auto update (2026-08-03 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 4 新商品
+[master 779f5e7] auto: 4 posts + 6 shop items + auto update (2026-08-04 07:00)
+ 8 files changed, 614 insertions(+), 195 deletions(-)
+ create mode 100644 blog/en/tool-databuff.html
+ create mode 100644 blog/en/tool-deepagent-code.html
+ create mode 100644 blog/tool-databuff.html
+ create mode 100644 blog/tool-deepagent-code.html
+To github.com:fscbit/slowbuild.git
+   7614e2e..779f5e7  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-04 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-databuff.html (databufflabs/databuff)
+  ✅ CN: tool-databuff.html (databufflabs/databuff)
+  ✅ EN: tool-deepagent-code.html (deepagent-ltd/deepagent-code)
+  ✅ CN: tool-deepagent-code.html (deepagent-ltd/deepagent-code)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 28 篇 tool 文章, sitemap 新增 56 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 6 shop items + auto update (2026-08-04 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 6 新商品
+[master 17574b2] auto: 4 posts + 7 shop items + auto update (2026-08-05 07:00)
+ 8 files changed, 634 insertions(+), 219 deletions(-)
+ create mode 100644 blog/en/tool-deep-research.html
+ create mode 100644 blog/en/tool-maccheck.html
+ create mode 100644 blog/tool-deep-research.html
+ create mode 100644 blog/tool-maccheck.html
+To github.com:fscbit/slowbuild.git
+   779f5e7..17574b2  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-05 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-deep-research.html (hoolulu/deep-research)
+  ✅ CN: tool-deep-research.html (hoolulu/deep-research)
+  ✅ EN: tool-maccheck.html (andyhuo520/MacCheck)
+  ✅ CN: tool-maccheck.html (andyhuo520/MacCheck)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 30 篇 tool 文章, sitemap 新增 60 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 4 posts + 7 shop items + auto update (2026-08-05 07:00)
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+[master 02a0908] auto: 2 posts + 6 shop items + auto update (2026-08-06 07:00)
+ 6 files changed, 403 insertions(+), 196 deletions(-)
+ create mode 100644 blog/en/tool-interior.html
+ create mode 100644 blog/tool-interior.html
+To github.com:fscbit/slowbuild.git
+   17574b2..02a0908  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-06 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-maccheck.html
+  ⏭️ CN 已有: tool-maccheck.html
+  ✅ EN: tool-interior.html (ddoemonn/interior)
+  ✅ CN: tool-interior.html (ddoemonn/interior)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 31 篇 tool 文章, sitemap 新增 62 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-08-06 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master 6d2a72e] auto: 6 shop items + auto update (2026-08-07 07:00)
+ 2 files changed, 183 insertions(+), 191 deletions(-)
+To github.com:fscbit/slowbuild.git
+   02a0908..6d2a72e  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-07 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-maccheck.html
+  ⏭️ CN 已有: tool-maccheck.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 31 篇 tool 文章, sitemap 新增 62 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-08-07 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master bbfaaff] auto: 7 shop items + auto update (2026-08-08 07:00)
+ 2 files changed, 217 insertions(+), 215 deletions(-)
+To github.com:fscbit/slowbuild.git
+   6d2a72e..bbfaaff  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-08 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-deep-research.html
+  ⏭️ CN 已有: tool-deep-research.html
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 31 篇 tool 文章, sitemap 新增 62 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 7 shop items + auto update (2026-08-08 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 7 新商品
+[master 303bd6e] auto: 2 posts + 6 shop items + auto update (2026-08-09 07:00)
+ 6 files changed, 394 insertions(+), 181 deletions(-)
+ create mode 100644 blog/en/tool-nova3d.html
+ create mode 100644 blog/tool-nova3d.html
+To github.com:fscbit/slowbuild.git
+   bbfaaff..303bd6e  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-09 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-deep-research.html
+  ⏭️ CN 已有: tool-deep-research.html
+  ✅ EN: tool-nova3d.html (RareSense/Nova3D)
+  ✅ CN: tool-nova3d.html (RareSense/Nova3D)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 32 篇 tool 文章, sitemap 新增 64 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-08-09 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master 1ce7b6b] auto: 2 posts + 5 shop items + auto update (2026-08-10 07:00)
+ 6 files changed, 374 insertions(+), 173 deletions(-)
+ create mode 100644 blog/en/tool-longhorizon-harness.html
+ create mode 100644 blog/tool-longhorizon-harness.html
+To github.com:fscbit/slowbuild.git
+   303bd6e..1ce7b6b  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-10 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-nova3d.html
+  ⏭️ CN 已有: tool-nova3d.html
+  ✅ EN: tool-longhorizon-harness.html (AMAP-ML/LongHorizon-Harness)
+  ✅ CN: tool-longhorizon-harness.html (AMAP-ML/LongHorizon-Harness)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 33 篇 tool 文章, sitemap 新增 66 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-08-10 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+[master c94c707] auto: 2 posts + 6 shop items + auto update (2026-08-11 07:00)
+ 6 files changed, 406 insertions(+), 196 deletions(-)
+ create mode 100644 blog/en/tool-chatgpt2api.html
+ create mode 100644 blog/tool-chatgpt2api.html
+To github.com:fscbit/slowbuild.git
+   1ce7b6b..c94c707  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-11 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-chatgpt2api.html (yukkcat/chatgpt2api)
+  ✅ CN: tool-chatgpt2api.html (yukkcat/chatgpt2api)
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 34 篇 tool 文章, sitemap 新增 68 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-08-11 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master 59b465f] auto: 2 posts + 4 shop items + auto update (2026-08-12 07:00)
+ 6 files changed, 349 insertions(+), 142 deletions(-)
+ create mode 100644 blog/en/tool-papr.html
+ create mode 100644 blog/tool-papr.html
+To github.com:fscbit/slowbuild.git
+   c94c707..59b465f  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-12 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-papr.html (l0ng-ai/papr)
+  ✅ CN: tool-papr.html (l0ng-ai/papr)
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 35 篇 tool 文章, sitemap 新增 70 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 4 shop items + auto update (2026-08-12 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 4 新商品
+[master f0a230d] auto: 2 posts + 5 shop items + auto update (2026-08-13 07:00)
+ 6 files changed, 378 insertions(+), 165 deletions(-)
+ create mode 100644 blog/en/tool-springnote.html
+ create mode 100644 blog/tool-springnote.html
+To github.com:fscbit/slowbuild.git
+   59b465f..f0a230d  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-13 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-springnote.html (Radiant303/SpringNote)
+  ✅ CN: tool-springnote.html (Radiant303/SpringNote)
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 36 篇 tool 文章, sitemap 新增 72 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-08-13 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+[master 6393ae6] auto: 2 posts + 6 shop items + auto update (2026-08-14 07:00)
+ 6 files changed, 382 insertions(+), 181 deletions(-)
+ create mode 100644 blog/en/tool-iai-personal-memory-engine.html
+ create mode 100644 blog/tool-iai-personal-memory-engine.html
+To github.com:fscbit/slowbuild.git
+   f0a230d..6393ae6  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-14 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-figmirror.html
+  ⏭️ CN 已有: tool-figmirror.html
+  ✅ EN: tool-iai-personal-memory-engine.html (CodeAbra/iai-personal-memory-engine)
+  ✅ CN: tool-iai-personal-memory-engine.html (CodeAbra/iai-personal-memory-engine)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 37 篇 tool 文章, sitemap 新增 74 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 6 shop items + auto update (2026-08-14 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master ae83c36] auto: 5 shop items + auto update (2026-08-15 07:00)
+ 2 files changed, 148 insertions(+), 154 deletions(-)
+To github.com:fscbit/slowbuild.git
+   6393ae6..ae83c36  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-15 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-iai-personal-memory-engine.html
+  ⏭️ CN 已有: tool-iai-personal-memory-engine.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 37 篇 tool 文章, sitemap 新增 74 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 5 shop items + auto update (2026-08-15 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 5 新商品
+[master da99125] auto: 2 posts + 5 shop items + auto update (2026-08-16 07:00)
+ 6 files changed, 367 insertions(+), 148 deletions(-)
+ create mode 100644 blog/en/tool-geolook.html
+ create mode 100644 blog/tool-geolook.html
+To github.com:fscbit/slowbuild.git
+   ae83c36..da99125  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-16 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-geolook.html (aigclink/geolook)
+  ✅ CN: tool-geolook.html (aigclink/geolook)
+  ⏭️ EN 已有: tool-iai-personal-memory-engine.html
+  ⏭️ CN 已有: tool-iai-personal-memory-engine.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 38 篇 tool 文章, sitemap 新增 76 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 2 posts + 5 shop items + auto update (2026-08-16 07:00)
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+[master 8668240] auto: 6 shop items + auto update (2026-08-17 07:00)
+ 2 files changed, 178 insertions(+), 190 deletions(-)
+To github.com:fscbit/slowbuild.git
+   da99125..8668240  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-17 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 38 篇 tool 文章, sitemap 新增 76 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-08-17 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master db8d17f] auto: 6 shop items + auto update (2026-08-18 07:00)
+ 2 files changed, 175 insertions(+), 175 deletions(-)
+To github.com:fscbit/slowbuild.git
+   8668240..db8d17f  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-18 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 38 篇 tool 文章, sitemap 新增 76 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 6 shop items + auto update (2026-08-18 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master a1854a2] auto: 5 shop items + auto update (2026-08-19 07:00)
+ 2 files changed, 176 insertions(+), 163 deletions(-)
+To github.com:fscbit/slowbuild.git
+   db8d17f..a1854a2  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-19 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 38 篇 tool 文章, sitemap 新增 76 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 5 shop items + auto update (2026-08-19 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 5 新商品
+[master c4ec3e3] auto: 5 shop items + auto update (2026-08-20 07:00)
+ 2 files changed, 155 insertions(+), 160 deletions(-)
+To github.com:fscbit/slowbuild.git
+   a1854a2..c4ec3e3  master -> master
+🤖 SlowBuild 自动内容生成 - 2026-08-20 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 38 篇 tool 文章, sitemap 新增 76 条
+[5/5] Git 提交...
+  ✅ 已推送: auto: 5 shop items + auto update (2026-08-20 07:00)
+
+🎉 完成! 0 文章 | 15 工具 | 5 新商品
+[master 0b35794] auto: 4 posts + 6 shop items + auto update (2026-08-21 07:00)
+ 8 files changed, 609 insertions(+), 194 deletions(-)
+ create mode 100644 blog/en/tool-parastore.html
+ create mode 100644 blog/en/tool-vendo.html
+ create mode 100644 blog/tool-parastore.html
+ create mode 100644 blog/tool-vendo.html
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-21 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-vendo.html (runvendo/vendo)
+  ✅ CN: tool-vendo.html (runvendo/vendo)
+  ✅ EN: tool-parastore.html (intellicia-public/parastore)
+  ✅ CN: tool-parastore.html (intellicia-public/parastore)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 40 篇 tool 文章, sitemap 新增 80 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 4 文章 | 15 工具 | 6 新商品
+[master 42230ea] auto: 4 posts + 8 shop items + auto update (2026-08-22 07:00)
+ 8 files changed, 638 insertions(+), 218 deletions(-)
+ create mode 100644 blog/en/tool-opentag.html
+ create mode 100644 blog/en/tool-token-tracker.html
+ create mode 100644 blog/tool-opentag.html
+ create mode 100644 blog/tool-token-tracker.html
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-22 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-token-tracker.html (stormzhang/token-tracker)
+  ✅ CN: tool-token-tracker.html (stormzhang/token-tracker)
+  ✅ EN: tool-opentag.html (linxidnju/OpenTag)
+  ✅ CN: tool-opentag.html (linxidnju/OpenTag)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 42 篇 tool 文章, sitemap 新增 84 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 4 文章 | 15 工具 | 8 新商品
+[master 66167be] auto: 2 posts + 6 shop items + auto update (2026-08-23 07:00)
+ 6 files changed, 393 insertions(+), 192 deletions(-)
+ create mode 100644 blog/en/tool-awesome-ai-companion.html
+ create mode 100644 blog/tool-awesome-ai-companion.html
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-23 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-awesome-ai-companion.html (DasterProkio/awesome-ai-companion)
+  ✅ CN: tool-awesome-ai-companion.html (DasterProkio/awesome-ai-companion)
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 43 篇 tool 文章, sitemap 新增 86 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master 300f946] auto: 2 posts + 6 shop items + auto update (2026-08-24 07:00)
+ 6 files changed, 389 insertions(+), 182 deletions(-)
+ create mode 100644 blog/en/tool-claude-directory.html
+ create mode 100644 blog/tool-claude-directory.html
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-24 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-claude-directory.html (pulkitxm/claude-directory)
+  ✅ CN: tool-claude-directory.html (pulkitxm/claude-directory)
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 44 篇 tool 文章, sitemap 新增 88 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+[master e6a9a5c] auto: 6 shop items + auto update (2026-08-25 07:00)
+ 2 files changed, 170 insertions(+), 176 deletions(-)
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-25 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 44 篇 tool 文章, sitemap 新增 88 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+[master 182467d] auto: 2 posts + 6 shop items + auto update (2026-08-26 07:00)
+ 6 files changed, 405 insertions(+), 192 deletions(-)
+ create mode 100644 blog/en/tool-mac-ocr.html
+ create mode 100644 blog/tool-mac-ocr.html
+To github.com:fscbit/slowbuild.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:fscbit/slowbuild.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+🤖 SlowBuild 自动内容生成 - 2026-08-26 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-mac-ocr.html (privatenumber/mac-ocr)
+  ✅ CN: tool-mac-ocr.html (privatenumber/mac-ocr)
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 45 篇 tool 文章, sitemap 新增 90 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'push', 'origin', 'master']' returned non-zero exit status 1.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-08-27 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-mac-ocr.html
+  ⏭️ CN 已有: tool-mac-ocr.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 45 篇 tool 文章, sitemap 新增 90 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-08-28 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-airport-recommendation.html (Zirakin/airport-recommendation)
+  ✅ CN: tool-airport-recommendation.html (Zirakin/airport-recommendation)
+  ✅ EN: tool-browser-search.html (Johell1NS/browser-search)
+  ✅ CN: tool-browser-search.html (Johell1NS/browser-search)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 47 篇 tool 文章, sitemap 新增 94 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-08-29 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-mac-ocr.html
+  ⏭️ CN 已有: tool-mac-ocr.html
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 47 篇 tool 文章, sitemap 新增 94 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-08-30 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-ai-engineer-notebooks.html (calmrocks/ai-engineer-notebooks)
+  ✅ CN: tool-ai-engineer-notebooks.html (calmrocks/ai-engineer-notebooks)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 48 篇 tool 文章, sitemap 新增 96 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-08-31 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 48 篇 tool 文章, sitemap 新增 96 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-01 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 48 篇 tool 文章, sitemap 新增 96 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-02 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-skilldock.html (wanghuan9/skilldock)
+  ✅ CN: tool-skilldock.html (wanghuan9/skilldock)
+  ✅ EN: tool-video-talkcraft.html (Vincentwei1021/video-talkcraft)
+  ✅ CN: tool-video-talkcraft.html (Vincentwei1021/video-talkcraft)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 50 篇 tool 文章, sitemap 新增 100 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-03 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-ian-xiaohei-scenes.html (helloianneo/ian-xiaohei-scenes)
+  ✅ CN: tool-ian-xiaohei-scenes.html (helloianneo/ian-xiaohei-scenes)
+  ✅ EN: tool-audar-asr-v1.html (AudarAI/Audar-ASR-V1)
+  ✅ CN: tool-audar-asr-v1.html (AudarAI/Audar-ASR-V1)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 52 篇 tool 文章, sitemap 新增 104 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-04 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-ian-xiaohei-scenes.html
+  ⏭️ CN 已有: tool-ian-xiaohei-scenes.html
+  ✅ EN: tool-agent-inspect.html (rajudandigam/agent-inspect)
+  ✅ CN: tool-agent-inspect.html (rajudandigam/agent-inspect)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 53 篇 tool 文章, sitemap 新增 106 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-05 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-ian-xiaohei-scenes.html
+  ⏭️ CN 已有: tool-ian-xiaohei-scenes.html
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 53 篇 tool 文章, sitemap 新增 106 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-06 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-ian-xiaohei-scenes.html
+  ⏭️ CN 已有: tool-ian-xiaohei-scenes.html
+  ✅ EN: tool-soundcli.html (baairon/soundcli)
+  ✅ CN: tool-soundcli.html (baairon/soundcli)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 54 篇 tool 文章, sitemap 新增 108 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-07 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-nomi.html (aqm857886159/Nomi)
+  ✅ CN: tool-nomi.html (aqm857886159/Nomi)
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 55 篇 tool 文章, sitemap 新增 110 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-08 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ✅ EN: tool-gamefactory-3a.html (OpenDCAI/GameFactory-3A)
+  ✅ CN: tool-gamefactory-3a.html (OpenDCAI/GameFactory-3A)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 56 篇 tool 文章, sitemap 新增 112 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 8 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-09 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-easel.html (ZJU-REAL/Easel)
+  ✅ CN: tool-easel.html (ZJU-REAL/Easel)
+  ✅ EN: tool-cap-cut-professional.html (atomcustodianvilla2/Cap-Cut-Professional)
+  ✅ CN: tool-cap-cut-professional.html (atomcustodianvilla2/Cap-Cut-Professional)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 58 篇 tool 文章, sitemap 新增 116 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-10 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-opentag.html
+  ⏭️ CN 已有: tool-opentag.html
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 58 篇 tool 文章, sitemap 新增 116 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 14 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-11 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-histopia.html (oncologylab/histopia)
+  ✅ CN: tool-histopia.html (oncologylab/histopia)
+  ✅ EN: tool-official-design-md.html (VoltAgent/official-design-md)
+  ✅ CN: tool-official-design-md.html (VoltAgent/official-design-md)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 60 篇 tool 文章, sitemap 新增 120 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 5 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-12 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-veridrop.html (canarybyte/veridrop)
+  ✅ CN: tool-veridrop.html (canarybyte/veridrop)
+  ✅ EN: tool-multi-dcord.html (basephasewarehouse/multi-dcord)
+  ✅ CN: tool-multi-dcord.html (basephasewarehouse/multi-dcord)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 62 篇 tool 文章, sitemap 新增 124 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-13 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-recoverit-2026.html (OutpostWizard/RecoverIt-2026)
+  ✅ CN: tool-recoverit-2026.html (OutpostWizard/RecoverIt-2026)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 9 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 63 篇 tool 文章, sitemap 新增 126 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 9 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-14 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-itsaplan.html (croffasia/itsaplan)
+  ✅ CN: tool-itsaplan.html (croffasia/itsaplan)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 64 篇 tool 文章, sitemap 新增 128 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-15 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ⚠️ 搜索 'stars:>100 pushed:>2026-06-01' 失败: Expecting value: line 1 column 1 (char 0)
+  ⚠️ 搜索 'stars:50..500 created:>2026-05-01' 失败: Expecting value: line 1 column 1 (char 0)
+  ⚠️ 搜索 'stars:>200 topic:tool' 失败: Expecting value: line 1 column 1 (char 0)
+  ✅ 抓取 0 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (0 个工具)
+[3/5] 写博客（EN + 中文）...
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 0 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 64 篇 tool 文章, sitemap 新增 128 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 0 工具 | 0 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-16 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 64 篇 tool 文章, sitemap 新增 128 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-17 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-dsha.html (DSH-APP/DSHA)
+  ✅ CN: tool-dsha.html (DSH-APP/DSHA)
+  ✅ EN: tool-termio.html (termio-sh/termio)
+  ✅ CN: tool-termio.html (termio-sh/termio)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 66 篇 tool 文章, sitemap 新增 132 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-18 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-fable51-worlds.html (PhiloLabs/fable51-worlds)
+  ✅ CN: tool-fable51-worlds.html (PhiloLabs/fable51-worlds)
+  ✅ EN: tool-kotlin-footguns.html (maxrave-dev/kotlin-footguns)
+  ✅ CN: tool-kotlin-footguns.html (maxrave-dev/kotlin-footguns)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 68 篇 tool 文章, sitemap 新增 136 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-19 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-harness-score.html (paladini/harness-score)
+  ✅ CN: tool-harness-score.html (paladini/harness-score)
+  ✅ EN: tool-baocut.html (JimLiu/baocut)
+  ✅ CN: tool-baocut.html (JimLiu/baocut)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 70 篇 tool 文章, sitemap 新增 140 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-20 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-livecontext-ce.html (livecontext-ai/livecontext-ce)
+  ✅ CN: tool-livecontext-ce.html (livecontext-ai/livecontext-ce)
+  ⏭️ EN 已有: tool-baocut.html
+  ⏭️ CN 已有: tool-baocut.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 71 篇 tool 文章, sitemap 新增 142 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-21 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-ai-engineering-interview-questions-compa.html (pallavi-shekhar/ai-engineering-interview-questions-company-wise)
+  ✅ CN: tool-ai-engineering-interview-questions-compa.html (pallavi-shekhar/ai-engineering-interview-questions-company-wise)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 72 篇 tool 文章, sitemap 新增 144 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-22 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-easyeda-agent.html (zhoushoujianwork/easyeda-agent)
+  ✅ CN: tool-easyeda-agent.html (zhoushoujianwork/easyeda-agent)
+  ✅ EN: tool-run-abroad.html (RadishXN/run-abroad)
+  ✅ CN: tool-run-abroad.html (RadishXN/run-abroad)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 74 篇 tool 文章, sitemap 新增 148 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-23 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-jsoncrackcom.html
+  ⏭️ CN 已有: tool-jsoncrackcom.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 74 篇 tool 文章, sitemap 新增 148 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 8 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-24 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 5 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (5 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ✅ EN: tool-build-your-own-x.html (codecrafters-io/build-your-own-x)
+  ✅ CN: tool-build-your-own-x.html (codecrafters-io/build-your-own-x)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 1 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 75 篇 tool 文章, sitemap 新增 150 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 5 工具 | 1 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-25 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-tracesurface.html (pis10/TraceSurface)
+  ✅ CN: tool-tracesurface.html (pis10/TraceSurface)
+  ⏭️ EN 已有: tool-run-abroad.html
+  ⏭️ CN 已有: tool-run-abroad.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 76 篇 tool 文章, sitemap 新增 152 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 5 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-26 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 14 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (14 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ⏭️ EN 已有: tool-run-abroad.html
+  ⏭️ CN 已有: tool-run-abroad.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 2 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 76 篇 tool 文章, sitemap 新增 152 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 14 工具 | 2 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-27 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ✅ EN: tool-bag-ui.html (anelkabag/bag-ui)
+  ✅ CN: tool-bag-ui.html (anelkabag/bag-ui)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 3 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 77 篇 tool 文章, sitemap 新增 154 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 3 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-28 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ⏭️ EN 已有: tool-bag-ui.html
+  ⏭️ CN 已有: tool-bag-ui.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 1 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 77 篇 tool 文章, sitemap 新增 154 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 1 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-29 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ⏭️ EN 已有: tool-run-abroad.html
+  ⏭️ CN 已有: tool-run-abroad.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 77 篇 tool 文章, sitemap 新增 154 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-09-30 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-onebox.html (wangzhishou/OneBox)
+  ✅ CN: tool-onebox.html (wangzhishou/OneBox)
+  ⏭️ EN 已有: tool-run-abroad.html
+  ⏭️ CN 已有: tool-run-abroad.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 8 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 78 篇 tool 文章, sitemap 新增 156 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 8 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-01 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-superscreencontrol.html (voevie/SuperScreenControl)
+  ✅ CN: tool-superscreencontrol.html (voevie/SuperScreenControl)
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 79 篇 tool 文章, sitemap 新增 158 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-02 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-laya.html (aayushch/laya)
+  ✅ CN: tool-laya.html (aayushch/laya)
+  ✅ EN: tool-funes.html (huggingface/funes)
+  ✅ CN: tool-funes.html (huggingface/funes)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 5 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 81 篇 tool 文章, sitemap 新增 162 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 5 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-03 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 10 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (10 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ⏭️ EN 已有: tool-funes.html
+  ⏭️ CN 已有: tool-funes.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 2 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 81 篇 tool 文章, sitemap 新增 162 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 10 工具 | 2 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-04 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 0 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (0 个工具)
+[3/5] 写博客（EN + 中文）...
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 0 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 81 篇 tool 文章, sitemap 新增 162 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 0 工具 | 0 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-05 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 0 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (0 个工具)
+[3/5] 写博客（EN + 中文）...
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 0 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 81 篇 tool 文章, sitemap 新增 162 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 0 工具 | 0 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-06 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 5 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (5 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+  ⏭️ EN 已有: tool-build-your-own-x.html
+  ⏭️ CN 已有: tool-build-your-own-x.html
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 1 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 81 篇 tool 文章, sitemap 新增 162 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 5 工具 | 1 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-07 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ✅ EN: tool-clearwater.html (Aureliengmz/clearwater)
+  ✅ CN: tool-clearwater.html (Aureliengmz/clearwater)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 82 篇 tool 文章, sitemap 新增 164 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-08 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ⏭️ EN 已有: tool-tracesurface.html
+  ⏭️ CN 已有: tool-tracesurface.html
+  ✅ EN: tool-owntv.html (ahXN00/OwnTV)
+  ✅ CN: tool-owntv.html (ahXN00/OwnTV)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 7 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 83 篇 tool 文章, sitemap 新增 166 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 7 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-09 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-bilibinggo.html (luovicter-collab/bilibinggo)
+  ✅ CN: tool-bilibinggo.html (luovicter-collab/bilibinggo)
+  ⏭️ EN 已有: tool-free-programming-books.html
+  ⏭️ CN 已有: tool-free-programming-books.html
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 84 篇 tool 文章, sitemap 新增 168 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 2 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-10 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-email-sdk.html (opencoredev/email-sdk)
+  ✅ CN: tool-email-sdk.html (opencoredev/email-sdk)
+  ✅ EN: tool-wmkeyboard.html (wasi-master/wmkeyboard)
+  ✅ CN: tool-wmkeyboard.html (wasi-master/wmkeyboard)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 4 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 86 篇 tool 文章, sitemap 新增 172 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 4 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-11 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 15 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (15 个工具)
+[3/5] 写博客（EN + 中文）...
+  ✅ EN: tool-gemini-web2api-go.html (zexadev/gemini-web2api-go)
+  ✅ CN: tool-gemini-web2api-go.html (zexadev/gemini-web2api-go)
+  ✅ EN: tool-orkas-videostudio.html (Orkas-AI/Orkas-VideoStudio)
+  ✅ CN: tool-orkas-videostudio.html (Orkas-AI/Orkas-VideoStudio)
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 6 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 88 篇 tool 文章, sitemap 新增 176 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 4 文章 | 15 工具 | 6 新商品
+🤖 SlowBuild 自动内容生成 - 2026-10-12 07:00
+==================================================
+[1/5] 抓取 GitHub 热门项目...
+  ✅ 抓取 0 个项目
+[2/5] 生成工具导航数据...
+  ✅ tools.json (0 个工具)
+[3/5] 写博客（EN + 中文）...
+  ℹ️ 无新项目值得写
+[4/5] 更新商店商品...
+  ✅ 商店: 127 商品 (新增 0 个)
+[4.5/5] 更新博客首页索引 + sitemap...
+  ✅ 首页收录 88 篇 tool 文章, sitemap 新增 176 条
+[5/5] Git 提交...
+  ❌ Git 失败: Command '['git', 'pull', '--rebase', 'origin', 'master']' returned non-zero exit status 128.
+
+🎉 完成! 0 文章 | 0 工具 | 0 新商品

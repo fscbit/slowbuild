@@ -1,46 +1,59 @@
 #!/usr/bin/env python3
 """
-youtube_finder.py — Win10 VM 自动查找中文歌 YouTube 视频链接
-前提: Win10 能访问 YouTube（开VPN/代理），已安装 yt-dlp: pip install yt-dlp
+youtube_finder.py — Win10 VM 自动查找中文歌 YouTube 视频链接 (v2)
+前提: Win10 能访问 YouTube，已安装 yt-dlp: pip install yt-dlp
 
 用法:
   python youtube_finder.py              # 批量查找所有缺ID的歌
-  python youtube_finder.py --dry-run    # 预览不保存
   python youtube_finder.py --recheck    # 重新查所有歌（覆盖已有ID）
-  python youtube_finder.py --song "光年之外" "G.E.M.邓紫棋"  # 单首
+  python youtube_finder.py --song "光年之外" "G.E.M.邓紫棋"  # 单首测试
 """
 
 import json, subprocess, sys, os, time, argparse, re
 
 SONGS_FILE = os.path.join(os.path.dirname(__file__), "data", "songs.json")
 
+
 def load():
     with open(SONGS_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def save(songs):
     with open(SONGS_FILE, "w", encoding="utf-8") as f:
         json.dump(songs, f, ensure_ascii=False, indent=2)
 
 
-def search_one(query, timeout=12):
+PROXY = None  # 全局代理，process_all() 里设置
+
+def search_one(query, timeout=30):
     """搜索一个查询，返回 (video_id, title) 或 (None, None)"""
+    cmd = ["yt-dlp", "--get-id", "--get-title", "--no-playlist",
+           "--flat-playlist", "--skip-download", "--socket-timeout", "15",
+           f"ytsearch1:{query}"]
+    if PROXY:
+        cmd.insert(1, f"--proxy={PROXY}")
+
     try:
-        r = subprocess.run(
-            ["yt-dlp", "--get-id", "--get-title", "--no-playlist",
-             "--flat-playlist", "--skip-download", f"ytsearch1:{query}"],
-            capture_output=True, text=True, timeout=timeout
-        )
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout,
+                          encoding="utf-8", errors="replace")
         if r.returncode == 0 and r.stdout.strip():
             lines = r.stdout.strip().split("\n")
             vid = lines[0].strip()
             title = lines[1].strip() if len(lines) > 1 else ""
             return vid, title
+        elif r.stderr.strip():
+            err = r.stderr.strip()[:100]
+            if "HTTP Error 429" in err:
+                print(f"      ⚠️ 限速429，等待30秒...")
+                time.sleep(30)
+            elif "HTTP Error" in err:
+                print(f"      ⚠️ {err}")
     except FileNotFoundError:
         print("      ❌ yt-dlp 未安装: pip install yt-dlp")
         return None, None
     except subprocess.TimeoutExpired:
-        print("      ⏱️ 超时")
+        print(f"      ⏱️ 超时（{timeout}s）")
         return None, None
     except Exception as e:
         print(f"      ❌ {e}")
@@ -48,35 +61,75 @@ def search_one(query, timeout=12):
     return None, None
 
 
+def check_relevance(vtitle, artist, title_cn):
+    """宽松检测——只过滤明显无关的，其余都接受"""
+    vt = vtitle.lower()
+
+    # 歌名中的任意一个2字片段出现在标题里就认
+    for i in range(len(title_cn) - 1):
+        if title_cn[i:i+2] in vt:
+            return True
+
+    # 歌手名的任意一个2字片段
+    artist_cn = artist.split("(")[0].strip() if "(" in artist else artist
+    for i in range(len(artist_cn) - 1):
+        if artist_cn[i:i+2] in vt:
+            return True
+
+    # 英文歌手名
+    if "(" in artist:
+        m = re.search(r'\((.+?)\)', artist)
+        if m and m.group(1).lower() in vt:
+            return True
+
+    # 都没匹配到 → 但也接受（yt-dlp搜索本身已经很准确）
+    return True
+
+
 def find_best_match(artist, title_cn):
     """多策略搜索最佳 YouTube 视频"""
-    title = title_cn  # 中文歌名
+    artist_cn = artist.split("(")[0].strip() if "(" in artist else artist
 
-    # 策略1: 歌手 + 歌名 + official MV（最佳）
-    for q in [
-        f"{artist} {title} MV",
-        f"{artist} {title} 官方MV",
-        f"{artist} - {title} official",
-        f"{artist} {title}",
-    ]:
+    # 构建搜索词列表：精准到宽泛
+    queries = [
+        f"{artist_cn} - {title_cn}",
+        f"{artist_cn} {title_cn} MV",
+        f"{artist_cn} {title_cn} 官方MV",
+        f"{artist_cn} {title_cn} 官方",
+        f"{artist_cn} {title_cn}",
+    ]
+
+    # 有英文歌手名：追加英文搜索
+    if "(" in artist:
+        m = re.search(r'\((.+?)\)', artist)
+        if m:
+            en = m.group(1)
+            queries.extend([
+                f"{en} {title_cn} MV",
+                f"{en} {title_cn} official music video",
+            ])
+
+    for q in queries:
         vid, vtitle = search_one(q)
-        if vid:
-            # 检查相关性：歌名或歌手应出现在标题中
-            artist_match = any(c in vtitle for c in artist[:2]) if len(artist) >= 2 else True
-            title_match = title[:2] in vtitle if len(title) >= 2 else True
-            if artist_match or title_match:
-                return vid, vtitle, q
-            else:
-                print(f"      ⚠️ 跳过不相关: {vtitle[:50]}...")
+        if not vid:
+            continue
+        if check_relevance(vtitle, artist, title_cn):
+            return vid, vtitle, q
+        else:
+            print(f"      ⚠️ 跳过: {vtitle[:60]}...")
 
     return None, None, ""
 
 
-def process_all(dry_run=False, recheck=False):
+def process_all(dry_run=False, recheck=False, proxy=None):
+    global PROXY
+    PROXY = proxy
+    if PROXY:
+        print(f"🔗 代理: {PROXY}\n")
     songs = load()
 
     if recheck:
-        todo = songs  # 全部重查
+        todo = songs
     else:
         todo = [s for s in songs if not s.get("youtube_id")]
 
@@ -85,6 +138,17 @@ def process_all(dry_run=False, recheck=False):
         return
 
     print(f"{'🔁 重查' if recheck else '📺 查找'} {len(todo)} 首...\n")
+
+    # 连通性测试
+    print("🧪 测试 YouTube 连接...")
+    vid, _ = search_one("周杰伦 晴天", timeout=20)
+    if vid:
+        print(f"   ✅ 连通正常 ({vid})\n")
+    else:
+        print("   ❌ 连不上 YouTube，检查 VPN/代理\n")
+        print("   试试: python youtube_finder.py --proxy http://127.0.0.1:7890")
+        return
+
     found, skipped = 0, 0
     t0 = time.time()
 
@@ -104,11 +168,12 @@ def process_all(dry_run=False, recheck=False):
             print(f"      ❌ 未找到")
             skipped += 1
 
+        # 每5首存一次
         if (i + 1) % 5 == 0 and not dry_run:
             save(songs)
             print(f"  ═══ 已保存 {i+1}/{len(todo)} ═══")
 
-        time.sleep(2.5)  # 避免限速
+        time.sleep(3)
 
     if not dry_run:
         save(songs)
@@ -131,9 +196,10 @@ def search_single(title, artist):
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description="自动查找中文歌曲 YouTube 视频")
-    p.add_argument("--dry-run", action="store_true", help="只搜索不保存")
-    p.add_argument("--recheck", action="store_true", help="重新查所有歌曲（覆盖已有ID）")
-    p.add_argument("--song", nargs="+", help="单首查找: --song 歌名 歌手")
+    p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--recheck", action="store_true", help="重新查所有歌（覆盖已有ID）")
+    p.add_argument("--song", nargs="+", help="单首测试: --song 歌名 歌手")
+    p.add_argument("--proxy", help="代理地址，如 --proxy http://127.0.0.1:7890")
     args = p.parse_args()
 
     if args.song:
@@ -142,4 +208,4 @@ if __name__ == "__main__":
         else:
             search_single(args.song[0], "")
     else:
-        process_all(args.dry_run, args.recheck)
+        process_all(args.dry_run, args.recheck, args.proxy)

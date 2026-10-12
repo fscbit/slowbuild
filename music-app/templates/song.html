@@ -83,6 +83,14 @@
 .lyrics-translation{color:var(--text2)}
 .lyrics-note{margin-top:14px;padding:12px 16px;background:rgba(74,140,111,.04);border-left:3px solid var(--jade);border-radius:0 10px 10px 0;font-size:.75rem;color:var(--text2);line-height:1.6}
 
+/* 三行对照歌词 */
+.lyrics-lines{display:flex;flex-direction:column;gap:20px}
+.lyric-line{padding-left:2px;border-left:2px solid transparent;transition:border-color .2s}
+.lyric-line:hover{border-left-color:var(--jade)}
+.lyric-cn{font-size:.98rem;font-weight:600;color:var(--ink);line-height:1.5;letter-spacing:.01em}
+.lyric-py{font-size:.78rem;color:var(--muted);line-height:1.7;letter-spacing:.03em;margin-top:3px;font-style:italic}
+.lyric-en{font-size:.88rem;color:var(--text2);line-height:1.7;margin-top:4px}
+
 .cultural-box{
   padding:22px 24px;margin:28px 0;
   background:linear-gradient(135deg,rgba(184,134,11,.04),rgba(192,96,74,.04));
@@ -183,8 +191,19 @@ function loadYoutube(){
   {% if song.review_en %}
   <div class="content-block"><h3>Review</h3><div class="review-text">{{ song.review_en }}</div></div>
   {% endif %}
-  {% if song.lyrics_original %}
-  <div class="content-block"><h3>Lyrics</h3><div class="lyrics-text lyrics-original">{{ song.lyrics_original }}</div></div>
+  {% if lyrics_lines %}
+  <div class="content-block">
+    <h3>Lyrics</h3>
+    <div class="lyrics-lines">
+      {% for line in lyrics_lines %}
+      <div class="lyric-line">
+        <div class="lyric-cn">{{ line.cn }}</div>
+        {% if line.py %}<div class="lyric-py">{{ line.py }}</div>{% endif %}
+        {% if line.en %}<div class="lyric-en">{{ line.en }}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endif %}
   {% if song.lyrics_translation_cn_note %}
   <div class="lyrics-note">{{ song.lyrics_translation_cn_note }}</div>

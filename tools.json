@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 542940,
+    "stars": 552804,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-08-25T22:49:40Z"
+    "updated": "2026-10-12T22:53:10Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 499910,
+    "stars": 518156,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-08-25T22:59:26Z"
+    "updated": "2026-10-12T22:59:50Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 470443,
+    "stars": 487985,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-08-25T22:57:02Z"
+    "updated": "2026-10-12T22:53:46Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 454601,
+    "stars": 456945,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-08-25T22:40:15Z"
+    "updated": "2026-10-12T22:57:50Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 395221,
+    "stars": 398863,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-08-25T22:22:23Z"
+    "updated": "2026-10-12T22:53:51Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60256,
+    "stars": 60781,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,31 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-08-25T22:42:48Z"
-  },
-  {
-    "name": "AykutSarac/jsoncrack.com",
-    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
-    "url": "https://github.com/AykutSarac/jsoncrack.com",
-    "homepage": "https://jsoncrack.com/",
-    "stars": 44339,
-    "language": "TypeScript",
-    "topics": [
-      "csv",
-      "diagrams",
-      "graph",
-      "json",
-      "nextjs"
-    ],
-    "source": "tool",
-    "updated": "2026-08-25T17:30:35Z"
+    "updated": "2026-10-12T22:44:51Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44201,
+    "stars": 44773,
     "language": "Rust",
     "topics": [
       "cli",
@@ -133,31 +116,48 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-08-25T22:39:42Z"
+    "updated": "2026-10-12T22:35:45Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44474,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-10-12T21:25:44Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 40685,
+    "stars": 41465,
     "language": "Rust",
     "topics": [
+      "app",
       "application",
+      "cybersecurity",
       "gui",
-      "iced",
-      "linux",
-      "macos"
+      "iced"
     ],
     "source": "tool",
-    "updated": "2026-08-25T22:48:30Z"
+    "updated": "2026-10-12T22:52:28Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40357,
+    "stars": 40831,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,79 +167,72 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-08-25T22:42:39Z"
+    "updated": "2026-10-12T17:53:43Z"
   },
   {
-    "name": "QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "description": "",
-    "url": "https://github.com/QuartzLanceAwaken/Autodesk-Inventor-Tool",
-    "homepage": "",
-    "stars": 499,
-    "language": "",
+    "name": "Orkas-AI/Orkas-VideoStudio",
+    "description": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and p",
+    "url": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+    "homepage": "https://orkas.ai?source=github",
+    "stars": 500,
+    "language": "TypeScript",
     "topics": [
-      "autocad",
-      "autodesk-inventor-pro-pc",
-      "first-robotics-competition",
-      "fusion360",
-      "inventor"
-    ],
-    "source": "new",
-    "updated": "2026-08-21T11:30:25Z"
-  },
-  {
-    "name": "privatenumber/mac-ocr",
-    "description": "macOS CLI for OCR and searchable PDFs using Apple's Vision framework",
-    "url": "https://github.com/privatenumber/mac-ocr",
-    "homepage": "",
-    "stars": 499,
-    "language": "Swift",
-    "topics": [
-      "apple-vision",
+      "ai-agents",
+      "ai-video",
       "cli",
-      "command-line-tool",
-      "image-to-text",
-      "macos"
+      "coding-agents",
+      "ffmpeg"
     ],
     "source": "new",
-    "updated": "2026-08-25T07:21:16Z"
+    "updated": "2026-10-11T03:11:33Z"
   },
   {
-    "name": "theswerd/brainless",
-    "description": "Claude Code, Codex, and Grok interfaces as shadcn components",
-    "url": "https://github.com/theswerd/brainless",
-    "homepage": "https://brainless.swerdlow.dev",
+    "name": "CristianOlivera1/Aura",
+    "description": "Ambient UI gradients built with layered CSS blend modes. Backgrounds that feel like light.",
+    "url": "https://github.com/CristianOlivera1/Aura",
+    "homepage": "https://auragradients.vercel.app",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "aura-gradients",
+      "gradient-generator",
+      "gradient-make",
+      "mesh-gradient"
+    ],
+    "source": "new",
+    "updated": "2026-10-12T07:37:11Z"
+  },
+  {
+    "name": "Sophomoresty/turnstile-bypass",
+    "description": "Cross-platform Cloudflare Turnstile solver (macOS, Windows, Linux)",
+    "url": "https://github.com/Sophomoresty/turnstile-bypass",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-12T02:27:41Z"
+  },
+  {
+    "name": "garnix-io/garnix-ci",
+    "description": "CI and hosting for nix-based, flakified github repos",
+    "url": "https://github.com/garnix-io/garnix-ci",
+    "homepage": "",
+    "stars": 500,
+    "language": "Haskell",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-11T23:35:59Z"
+  },
+  {
+    "name": "0xhype/hyperliquid-tracker",
+    "description": "Get notified when big trades happen on Hyperliquid.",
+    "url": "https://github.com/0xhype/hyperliquid-tracker",
+    "homepage": "",
     "stars": 499,
     "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-08-25T17:54:31Z"
-  },
-  {
-    "name": "linxidnju/OpenTag",
-    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
-    "url": "https://github.com/linxidnju/OpenTag",
-    "homepage": "",
-    "stars": 499,
-    "language": "JavaScript",
-    "topics": [
-      "agent-gateway",
-      "ai-agents",
-      "automation",
-      "claude",
-      "claude-code"
-    ],
-    "source": "new",
-    "updated": "2026-08-25T06:55:04Z"
-  },
-  {
-    "name": "microsoft/Resource2Skill",
-    "description": "A general framework for distilling human-created multimodal resources into reusable, executable skills that AI agents ca",
-    "url": "https://github.com/microsoft/Resource2Skill",
-    "homepage": "https://aka.ms/Resource2Skill",
-    "stars": 499,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-08-24T11:25:22Z"
+    "updated": "2026-10-08T18:55:13Z"
   }
 ]

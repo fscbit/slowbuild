@@ -36,6 +36,12 @@ TEMP_DIR = WORK_DIR / "temp"
 OUTPUT_DIR = WORK_DIR / "output"
 
 def find_libreoffice():
+    # Linux/Docker：soffice 在 PATH（/usr/bin/soffice）
+    try:
+        p = shutil.which("soffice")
+        if p: return p
+    except Exception:
+        pass
     path = r"C:\Program Files\LibreOffice\program\soffice.exe"
     if os.path.exists(path): return path
     path = r"C:\LibreOfficePortable\App\libreoffice\program\soffice.exe"
@@ -259,6 +265,61 @@ def convert():
 
     mime = "application/pdf" if config["to"] == "pdf" else "text/csv"
     return send_file(str(final_path), as_attachment=True, download_name=download_name, mimetype=mime)
+
+
+@app.route("/api/pdf2excel", methods=["POST"])
+def pdf2excel():
+    """PDF → Excel：pdfplumber 提取表格，openpyxl 生成 xlsx（多页多 Sheet）。"""
+    f = request.files.get("file")
+    if not f or not f.filename.lower().endswith(".pdf"):
+        return jsonify({"error": "请上传 .pdf 文件"}), 400
+
+    try:
+        import pdfplumber
+        import openpyxl
+    except ImportError:
+        return jsonify({"error": "pdfplumber / openpyxl 未安装"}), 500
+
+    cleanup()
+    job_dir = TEMP_DIR / uuid.uuid4().hex[:8]
+    job_dir.mkdir(exist_ok=True)
+    pdf_path = job_dir / "input.pdf"
+    f.save(str(pdf_path))
+
+    out_name = safe_filename(f.filename.rsplit(".", 1)[0] + ".xlsx")
+    final_path = OUTPUT_DIR / out_name
+    if final_path.exists():
+        final_path.unlink()
+
+    try:
+        wb = openpyxl.Workbook()
+        wb.remove(wb.active)  # 去掉默认空 Sheet
+        total_tables = 0
+        with pdfplumber.open(str(pdf_path)) as pdf:
+            for pi, page in enumerate(pdf.pages, 1):
+                tables = page.extract_tables() or []
+                for ti, table in enumerate(tables, 1):
+                    if not table:
+                        continue
+                    total_tables += 1
+                    name = f"P{pi}T{ti}" if len(tables) > 1 else f"P{pi}"
+                    ws = wb.create_sheet(title=name[:31])
+                    for row in table:
+                        ws.append(["" if c is None else str(c) for c in row])
+            # 没提取到任何表格 → 降级为整页文本，一页一个 Sheet
+            if total_tables == 0:
+                for pi, page in enumerate(pdf.pages, 1):
+                    ws = wb.create_sheet(title=f"P{pi}")
+                    for line in (page.extract_text() or "").split("\n"):
+                        ws.append([line])
+        wb.save(str(final_path))
+    except Exception as e:
+        shutil.rmtree(job_dir, ignore_errors=True)
+        return jsonify({"error": f"转换失败: {e}"}), 500
+
+    shutil.rmtree(job_dir, ignore_errors=True)
+    return send_file(str(final_path), as_attachment=True, download_name=out_name,
+                     mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 
 # ═══════════════════════════════════════════
