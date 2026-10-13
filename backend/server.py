@@ -1082,5 +1082,9 @@ register_merge_routes(app)
 from dedup_routes import register_dedup_routes
 register_dedup_routes(app)
 
+# ── Word 批量替换 ──
+from wordreplace_routes import register_wordreplace_routes
+register_wordreplace_routes(app)
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)

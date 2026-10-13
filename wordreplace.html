@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word 批量替换工具</title>
+<style>
+:root{
+  --blue:#4472C4; --blue-d:#365a9c;
+  --bg:#f5f7fa; --card:#fff; --line:#e3e8ef;
+  --txt:#1f2937; --sub:#6b7280;
+  --ok:#C6EFCE; --ok-t:#2f7d32;
+  --warn:#FFEB9C; --warn-t:#8a6d00;
+  --err:#FFC7CE; --err-t:#a33232;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px}
+h1{font-size:22px;font-weight:700}
+h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.grid{display:grid;grid-template-columns:420px 1fr;gap:16px}
+@media(max-width:960px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h2 .num{background:var(--blue);color:#fff;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:none}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+input[type=text],select{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none;background:#fff}
+input:focus,select:focus{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;transition:.15s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-sm{padding:7px 13px;font-size:13px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:22px;text-align:center;cursor:pointer;transition:.15s;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:28px;display:block;margin-bottom:6px}
+.drop.ready{border-style:solid;border-color:#9ecb9e;background:#f4fbf4}
+.muted{color:var(--sub);font-size:12px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+.file-list{max-height:140px;overflow:auto;font-size:12px;color:var(--sub);margin-top:6px}
+.file-list div{padding:2px 0;border-bottom:1px dashed #eef0f4}
+.hidden{display:none}
+.param-box{margin-top:6px}
+.param-box .prow{display:flex;align-items:center;gap:8px;margin-top:6px}
+.param-box .prow input{width:90px}
+.scope-row{display:flex;gap:16px;flex-wrap:wrap}
+.scope-row label{display:flex;align-items:center;gap:5px;font-size:14px;color:var(--txt);margin:0;cursor:pointer}
+.scope-row input[type=radio]{width:15px;height:15px;accent-color:var(--blue)}
+/* 结果 */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f4f6f9;font-weight:600;position:sticky;top:0}
+tr.ok td{background:var(--ok)}
+tr.warn td{background:var(--warn)}
+tr.err td{background:var(--err)}
+.table-scroll{max-height:560px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#eef2f8;border-radius:14px;padding:4px 12px;font-size:12px;color:#374151}
+.chip b{color:var(--blue)}
+.actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.note{font-size:12px;color:var(--sub);margin-top:8px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>📝 Word <span>批量替换</span> 工具</h1>
+      <div class="sub">上传 .docx 文档，批量替换指定文字（支持下划线/加粗/第N个等特征）</div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <!-- 左栏：配置 -->
+    <div>
+      <div class="card">
+        <h2><span class="num">1</span> 上传文档</h2>
+        <div class="drop" id="dropFiles">
+          <span class="icon">📄</span>
+          <span id="filesLabel">点击选择 .docx（可多选）或拖入 zip</span>
+          <input type="file" id="zipInput" accept=".zip" class="hidden">
+          <input type="file" id="filesInput" accept=".docx" multiple class="hidden">
+        </div>
+        <div class="file-list" id="fileList"></div>
+      </div>
+
+      <div class="card">
+        <h2><span class="num">2</span> 替换设置</h2>
+
+        <label>被替换文字</label>
+        <input type="text" id="oldInput" placeholder="如：枣强">
+
+        <label>替换为</label>
+        <input type="text" id="newInput" placeholder="如：饶阳">
+
+        <label>替换特征</label>
+        <select id="featureSel">
+          <option value="all">全部替换</option>
+          <option value="underline">只替换带下划线的</option>
+          <option value="no_underline">只替换不带下划线的</option>
+          <option value="bold">只替换加粗的</option>
+          <option value="skip_first">跳过前 N 个，从第 N+1 个开始替换</option>
+          <option value="only_nth">只替换第 N 个</option>
+          <option value="range">只替换第 N 到第 M 个</option>
+        </select>
+
+        <div class="param-box" id="paramBox" style="display:none"></div>
+
+        <label>处理范围</label>
+        <div class="scope-row">
+          <label><input type="radio" name="scope" value="all" checked> 正文 + 表格</label>
+          <label><input type="radio" name="scope" value="body"> 只正文</label>
+          <label><input type="radio" name="scope" value="table"> 只表格</label>
+        </div>
+
+        <div class="status" id="status"></div>
+        <div class="actions">
+          <button class="btn btn-primary" id="btnRun">▶ 开始替换</button>
+        </div>
+        <div class="note">说明：替换基于 run 粒度（python-docx 限制），跨格式切分开的文字不会被替换。工具不会改动你的原文件，替换结果单独打包下载。</div>
+      </div>
+    </div>
+
+    <!-- 右栏：结果 -->
+    <div>
+      <div class="card" id="resultCard" style="display:none">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <h2 style="margin:0">替换结果</h2>
+          <button class="btn btn-ghost btn-sm" id="btnDownload">📦 下载替换后的文档</button>
+        </div>
+        <div class="chips" id="statChips"></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>文件名</th><th>替换处数</th><th>状态</th></tr></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+  ? '' : 'https://api.slowbuild.top';
+let JOB_ID = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ── 上传区 ──
+$('dropFiles').addEventListener('click', ()=>{
+  const ch = confirm('点击「确定」选择 .docx 文件（可多选）\n点击「取消」选择 zip 压缩包');
+  if(ch){ $('filesInput').click(); } else { $('zipInput').click(); }
+});
+$('zipInput').addEventListener('change', ()=>{ if($('zipInput').files.length) showFiles(); });
+$('filesInput').addEventListener('change', ()=>{ if($('filesInput').files.length) showFiles(); });
+
+['dropFiles'].forEach(id=>{
+  const el = $(id);
+  el.addEventListener('dragover', e=>{e.preventDefault(); el.classList.add('drag');});
+  el.addEventListener('dragleave', ()=>el.classList.remove('drag'));
+  el.addEventListener('drop', e=>{
+    e.preventDefault(); el.classList.remove('drag');
+    const files = Array.from(e.dataTransfer.files || []);
+    if(!files.length) return;
+    if(files.some(f=>/\.zip$/i.test(f.name))){ $('zipInput').files = e.dataTransfer.files; }
+    else { $('filesInput').files = e.dataTransfer.files; }
+    showFiles();
+  });
+});
+
+function showFiles(){
+  const zip = $('zipInput').files;
+  const fs = $('filesInput').files;
+  const n = zip.length ? ('zip：' + zip[0].name) : (fs.length + ' 个 .docx 文件');
+  $('filesLabel').textContent = '📄 ' + n;
+  $('dropFiles').classList.add('ready');
+  const el = $('fileList'); el.innerHTML = '';
+  if(fs.length){
+    Array.from(fs).slice(0,50).forEach(f=>{
+      const d = document.createElement('div'); d.textContent = f.name; el.appendChild(d);
+    });
+    if(fs.length>50){ const d=document.createElement('div'); d.textContent='... 共 '+fs.length+' 个文件'; el.appendChild(d); }
+  }
+}
+
+// ── 特征参数动态显示 ──
+function onFeatureChange(){
+  const f = $('featureSel').value;
+  const box = $('paramBox');
+  box.innerHTML = '';
+  box.style.display = 'none';
+  if(f === 'skip_first' || f === 'only_nth'){
+    box.style.display = 'block';
+    box.innerHTML = '<div class="prow"><span class="muted">N =</span><input type="text" id="paramN" value="2"></div>';
+  } else if(f === 'range'){
+    box.style.display = 'block';
+    box.innerHTML = '<div class="prow"><span class="muted">起始 N =</span><input type="text" id="paramStart" value="3"><span class="muted">结束 M =</span><input type="text" id="paramEnd" value="5"></div>';
+  }
+}
+$('featureSel').addEventListener('change', onFeatureChange);
+onFeatureChange();
+
+// ── 开始替换 ──
+$('btnRun').addEventListener('click', ()=>{
+  const old = $('oldInput').value.trim();
+  const newt = $('newInput').value;
+  const feature = $('featureSel').value;
+  const scope = document.querySelector('input[name=scope]:checked').value;
+
+  if(!old){ $('status').textContent = '⚠️ 被替换文字不能为空'; return; }
+  if(old === newt){ $('status').textContent = '⚠️ 被替换文字和替换为相同'; return; }
+
+  const zip = $('zipInput').files[0];
+  const fs = $('filesInput').files;
+  if(!zip && !fs.length){ $('status').textContent = '⚠️ 请先上传 .docx 或 zip'; return; }
+
+  const fd = new FormData();
+  fd.append('old', old);
+  fd.append('new', newt);
+  fd.append('feature', feature);
+  fd.append('scope', scope);
+  if(feature === 'skip_first' || feature === 'only_nth') fd.append('n', $('paramN').value || '0');
+  if(feature === 'range'){ fd.append('start', $('paramStart').value || '0'); fd.append('end', $('paramEnd').value || '0'); }
+  if(zip){ fd.append('zip', zip); }
+  else { Array.from(fs).forEach(f=> fd.append('files', f)); }
+
+  $('btnRun').disabled = true;
+  $('status').textContent = '⏳ 正在替换...';
+  fetch(BACKEND + '/api/wordreplace/run', {method:'POST', body:fd})
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.error){ $('status').textContent = '❌ ' + d.error; return; }
+      JOB_ID = d.job_id;
+      renderResult(d);
+      $('status').textContent = '✅ 完成';
+    })
+    .catch(e=>{ $('status').textContent = '❌ 请求失败: ' + e; })
+    .finally(()=>{ $('btnRun').disabled = false; });
+});
+
+function renderResult(d){
+  $('resultCard').style.display = 'block';
+  $('statChips').innerHTML =
+    '<span class="chip">文档 <b>'+d.results.length+'</b></span>'+
+    '<span class="chip">被替换的文档 <b>'+d.changed+'</b></span>'+
+    '<span class="chip">共替换 <b>'+d.total+'</b> 处</span>';
+  const tb = $('tbody'); tb.innerHTML = '';
+  d.results.forEach(r=>{
+    const tr = document.createElement('tr');
+    let cls = 'ok', state = '已替换';
+    if(r.count === -1){ cls = 'err'; state = '出错'; }
+    else if(r.count === 0){ cls = 'warn'; state = '无匹配'; }
+    tr.className = cls;
+    tr.innerHTML = '<td>'+esc(r.name)+'</td><td>'+(r.count === -1 ? '—' : r.count)+'</td><td>'+esc(r.error || state)+'</td>';
+    tb.appendChild(tr);
+  });
+  const btn = $('btnDownload');
+  btn.style.display = d.changed > 0 ? '' : 'none';
+}
+
+// ── 下载 ──
+$('btnDownload').addEventListener('click', ()=>{
+  if(!JOB_ID) return;
+  window.location.href = BACKEND + '/api/wordreplace/download/' + JOB_ID;
+});
+</script>
+</body>
+</html>
