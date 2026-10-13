@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 553048,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐553048)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐553048)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 553048+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 553048+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 518643,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐518643)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐518643)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 518643+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 518643+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-maysudo-misceo",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/MaySudo/Misceo",
+    "github": "MaySudo/Misceo",
+    "github_stars": 500,
+    "name": {
+      "en": "MaySudo/Misceo",
+      "zh-CN": "MaySudo/Misceo (GitHub ⭐500)",
+      "zh-TW": "MaySudo/Misceo (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard.",
+      "zh-CN": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-taoliveaigc-taomate",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/TaoLiveAIGC/TaoMate",
+    "github": "TaoLiveAIGC/TaoMate",
+    "github_stars": 500,
+    "name": {
+      "en": "TaoLiveAIGC/TaoMate",
+      "zh-CN": "TaoLiveAIGC/TaoMate (GitHub ⭐500)",
+      "zh-TW": "TaoLiveAIGC/TaoMate (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "a real-time digital-human model for long-form audio-video generation",
+      "zh-CN": "a real-time digital-human model for long-form audio-video generation | GitHub 500+ Stars 开源项目",
+      "zh-TW": "a real-time digital-human model for long-form audio-video generation | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kablex-comfyui-ref2va-vsa",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/Kablex/ComfyUI-Ref2VA-VSA",
+    "github": "Kablex/ComfyUI-Ref2VA-VSA",
+    "github_stars": 500,
+    "name": {
+      "en": "Kablex/ComfyUI-Ref2VA-VSA",
+      "zh-CN": "Kablex/ComfyUI-Ref2VA-VSA (GitHub ⭐500)",
+      "zh-TW": "Kablex/ComfyUI-Ref2VA-VSA (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool",
+      "zh-CN": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-op7418-guizang-yingzao-skill",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/op7418/guizang-yingzao-skill",
+    "github": "op7418/guizang-yingzao-skill",
+    "github_stars": 500,
+    "name": {
+      "en": "op7418/guizang-yingzao-skill",
+      "zh-CN": "op7418/guizang-yingzao-skill (GitHub ⭐500)",
+      "zh-TW": "op7418/guizang-yingzao-skill (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建",
+      "zh-CN": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-lcbuaaliu-ai-jian-koubo",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/lcbuaaliu/ai-jian-koubo",
+    "github": "lcbuaaliu/ai-jian-koubo",
+    "github_stars": 500,
+    "name": {
+      "en": "lcbuaaliu/ai-jian-koubo",
+      "zh-CN": "lcbuaaliu/ai-jian-koubo (GitHub ⭐500)",
+      "zh-TW": "lcbuaaliu/ai-jian-koubo (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "lcbuaaliu/ai-jian-koubo - Open source tool",
+      "zh-CN": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A cat(1) clone with wings.",
       "zh-CN": "A cat(1) clone with wings. | GitHub 60756+ Stars 开源项目",
       "zh-TW": "A cat(1) clone with wings. | GitHub 60756+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zexadev-gemini-web2api-go",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/zexadev/gemini-web2api-go",
-    "github": "zexadev/gemini-web2api-go",
-    "github_stars": 500,
-    "name": {
-      "en": "zexadev/gemini-web2api-go",
-      "zh-CN": "zexadev/gemini-web2api-go (GitHub ⭐500)",
-      "zh-TW": "zexadev/gemini-web2api-go (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS",
-      "zh-CN": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-0xhype-hyperliquid-tracker",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/0xhype/hyperliquid-tracker",
-    "github": "0xhype/hyperliquid-tracker",
-    "github_stars": 499,
-    "name": {
-      "en": "0xhype/hyperliquid-tracker",
-      "zh-CN": "0xhype/hyperliquid-tracker (GitHub ⭐499)",
-      "zh-TW": "0xhype/hyperliquid-tracker (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Get notified when big trades happen on Hyperliquid.",
-      "zh-CN": "Get notified when big trades happen on Hyperliquid. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Get notified when big trades happen on Hyperliquid. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yuturuishi-rebucca",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/yuturuishi/rebucca",
-    "github": "yuturuishi/rebucca",
-    "github_stars": 499,
-    "name": {
-      "en": "yuturuishi/rebucca",
-      "zh-CN": "yuturuishi/rebucca (GitHub ⭐499)",
-      "zh-TW": "yuturuishi/rebucca (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。",
-      "zh-CN": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-orkas-ai-orkas-videostudio",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Orkas-AI/Orkas-VideoStudio",
-    "github": "Orkas-AI/Orkas-VideoStudio",
-    "github_stars": 499,
-    "name": {
-      "en": "Orkas-AI/Orkas-VideoStudio",
-      "zh-CN": "Orkas-AI/Orkas-VideoStudio (GitHub ⭐499)",
-      "zh-TW": "Orkas-AI/Orkas-VideoStudio (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file.",
-      "zh-CN": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 398557,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐398557)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐398557)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 398557+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 398557+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41367,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41367)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41367)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41367+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41367+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-wasi-master-wmkeyboard",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/wasi-master/wmkeyboard",
-    "github": "wasi-master/wmkeyboard",
-    "github_stars": 500,
-    "name": {
-      "en": "wasi-master/wmkeyboard",
-      "zh-CN": "wasi-master/wmkeyboard (GitHub ⭐500)",
-      "zh-TW": "wasi-master/wmkeyboard (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem.",
-      "zh-CN": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

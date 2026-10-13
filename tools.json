@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 552804,
+    "stars": 553048,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-12T22:53:10Z"
+    "updated": "2026-10-13T22:58:05Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 518156,
+    "stars": 518643,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-12T22:59:50Z"
+    "updated": "2026-10-13T22:56:07Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 487985,
+    "stars": 488414,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-12T22:53:46Z"
+    "updated": "2026-10-13T22:55:01Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 456945,
+    "stars": 457002,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-12T22:57:50Z"
+    "updated": "2026-10-13T22:59:13Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 398863,
+    "stars": 398976,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-12T22:53:51Z"
+    "updated": "2026-10-13T22:29:06Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60781,
+    "stars": 60789,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-12T22:44:51Z"
+    "updated": "2026-10-13T20:32:24Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44773,
+    "stars": 44782,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-12T22:35:45Z"
+    "updated": "2026-10-13T22:13:56Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44474,
+    "stars": 44477,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-12T21:25:44Z"
+    "updated": "2026-10-13T22:14:28Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41465,
+    "stars": 41503,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-12T22:52:28Z"
+    "updated": "2026-10-13T20:12:33Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40831,
+    "stars": 40840,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,72 +167,73 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-12T17:53:43Z"
+    "updated": "2026-10-13T19:57:43Z"
   },
   {
-    "name": "Orkas-AI/Orkas-VideoStudio",
-    "description": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and p",
-    "url": "https://github.com/Orkas-AI/Orkas-VideoStudio",
-    "homepage": "https://orkas.ai?source=github",
+    "name": "MaySudo/Misceo",
+    "description": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost",
+    "url": "https://github.com/MaySudo/Misceo",
+    "homepage": "https://www.npmjs.com/package/@misceo/cli",
     "stars": 500,
-    "language": "TypeScript",
+    "language": "",
     "topics": [
       "ai-agents",
-      "ai-video",
-      "cli",
-      "coding-agents",
-      "ffmpeg"
+      "ai-gateway",
+      "anthropic-api",
+      "claude-code",
+      "cost-optimization"
     ],
     "source": "new",
-    "updated": "2026-10-11T03:11:33Z"
+    "updated": "2026-10-13T16:59:43Z"
   },
   {
-    "name": "CristianOlivera1/Aura",
-    "description": "Ambient UI gradients built with layered CSS blend modes. Backgrounds that feel like light.",
-    "url": "https://github.com/CristianOlivera1/Aura",
-    "homepage": "https://auragradients.vercel.app",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "aura-gradients",
-      "gradient-generator",
-      "gradient-make",
-      "mesh-gradient"
-    ],
-    "source": "new",
-    "updated": "2026-10-12T07:37:11Z"
-  },
-  {
-    "name": "Sophomoresty/turnstile-bypass",
-    "description": "Cross-platform Cloudflare Turnstile solver (macOS, Windows, Linux)",
-    "url": "https://github.com/Sophomoresty/turnstile-bypass",
+    "name": "TaoLiveAIGC/TaoMate",
+    "description": "a real-time digital-human model for long-form audio-video generation",
+    "url": "https://github.com/TaoLiveAIGC/TaoMate",
     "homepage": "",
     "stars": 500,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-12T02:27:41Z"
+    "updated": "2026-10-13T18:05:43Z"
   },
   {
-    "name": "garnix-io/garnix-ci",
-    "description": "CI and hosting for nix-based, flakified github repos",
-    "url": "https://github.com/garnix-io/garnix-ci",
+    "name": "Kablex/ComfyUI-Ref2VA-VSA",
+    "description": "",
+    "url": "https://github.com/Kablex/ComfyUI-Ref2VA-VSA",
     "homepage": "",
     "stars": 500,
-    "language": "Haskell",
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-11T23:35:59Z"
+    "updated": "2026-10-13T20:44:04Z"
   },
   {
-    "name": "0xhype/hyperliquid-tracker",
-    "description": "Get notified when big trades happen on Hyperliquid.",
-    "url": "https://github.com/0xhype/hyperliquid-tracker",
+    "name": "op7418/guizang-yingzao-skill",
+    "description": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editoria",
+    "url": "https://github.com/op7418/guizang-yingzao-skill",
     "homepage": "",
-    "stars": 499,
-    "language": "TypeScript",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "agent-skill",
+      "ai-agent",
+      "anthropic",
+      "chinese-architecture",
+      "chinese-culture"
+    ],
+    "source": "new",
+    "updated": "2026-10-13T07:17:58Z"
+  },
+  {
+    "name": "lcbuaaliu/ai-jian-koubo",
+    "description": "",
+    "url": "https://github.com/lcbuaaliu/ai-jian-koubo",
+    "homepage": "",
+    "stars": 500,
+    "language": "HTML",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-08T18:55:13Z"
+    "updated": "2026-10-13T12:31:26Z"
   }
 ]

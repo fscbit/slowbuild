@@ -645,6 +645,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-guizang-yingzao-skill.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-guizang-yingzao-skill.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-harness-score.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -801,6 +811,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-maccheck.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-misceo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-misceo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
