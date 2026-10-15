@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 553251,
+    "stars": 553454,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-14T22:57:41Z"
+    "updated": "2026-10-15T22:57:34Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 518995,
+    "stars": 519487,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-14T22:55:54Z"
+    "updated": "2026-10-15T22:59:32Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 488764,
+    "stars": 489109,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-14T22:56:04Z"
+    "updated": "2026-10-15T22:57:16Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457065,
+    "stars": 457118,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-14T22:58:27Z"
+    "updated": "2026-10-15T22:45:10Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 399048,
+    "stars": 399126,
     "language": "Python",
     "topics": [
       "books",
@@ -82,6 +82,158 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-14T22:42:15Z"
+    "updated": "2026-10-15T22:54:20Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 60795,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-10-15T22:54:15Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 44754,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-10-15T21:06:39Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44476,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-10-15T22:29:13Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 41557,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-10-15T20:52:00Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 40860,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-10-15T21:54:25Z"
+  },
+  {
+    "name": "garnix-io/garnix-ci",
+    "description": "CI and hosting for nix-based, flakified github repos",
+    "url": "https://github.com/garnix-io/garnix-ci",
+    "homepage": "",
+    "stars": 500,
+    "language": "Haskell",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-11T23:35:59Z"
+  },
+  {
+    "name": "yaojingang/GEORank",
+    "description": "Open-source GEO ranking and generative engine optimization platform.",
+    "url": "https://github.com/yaojingang/GEORank",
+    "homepage": "https://www.georankhub.com",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "fastapi",
+      "generative-engine-optimization",
+      "geo",
+      "nextjs",
+      "seo"
+    ],
+    "source": "new",
+    "updated": "2026-10-15T22:49:51Z"
+  },
+  {
+    "name": "alexishida/Moji",
+    "description": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown fi",
+    "url": "https://github.com/alexishida/Moji",
+    "homepage": "https://alexishida.com/moji/",
+    "stars": 499,
+    "language": "TypeScript",
+    "topics": [
+      "codemirror",
+      "cross-platform",
+      "desktop-app",
+      "electron",
+      "markdown"
+    ],
+    "source": "new",
+    "updated": "2026-10-11T21:51:00Z"
+  },
+  {
+    "name": "hugelton/Felucca",
+    "description": "Custom firmware for M-VAVE FM-1",
+    "url": "https://github.com/hugelton/Felucca",
+    "homepage": "",
+    "stars": 499,
+    "language": "C",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-15T22:38:43Z"
+  },
+  {
+    "name": "apple/xcode-project-format",
+    "description": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. ",
+    "url": "https://github.com/apple/xcode-project-format",
+    "homepage": "",
+    "stars": 499,
+    "language": "Swift",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-15T09:43:33Z"
   }
 ]

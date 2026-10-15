@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60795,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60795)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60795)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60795+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60795+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41557,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41557)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41557)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41557+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41557+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-garnix-io-garnix-ci",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/garnix-io/garnix-ci",
+    "github": "garnix-io/garnix-ci",
+    "github_stars": 500,
+    "name": {
+      "en": "garnix-io/garnix-ci",
+      "zh-CN": "garnix-io/garnix-ci (GitHub ⭐500)",
+      "zh-TW": "garnix-io/garnix-ci (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "CI and hosting for nix-based, flakified github repos",
+      "zh-CN": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 开源项目",
+      "zh-TW": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-yaojingang-georank",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/yaojingang/GEORank",
+    "github": "yaojingang/GEORank",
+    "github_stars": 500,
+    "name": {
+      "en": "yaojingang/GEORank",
+      "zh-CN": "yaojingang/GEORank (GitHub ⭐500)",
+      "zh-TW": "yaojingang/GEORank (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source GEO ranking and generative engine optimization platform.",
+      "zh-CN": "Open-source GEO ranking and generative engine optimization platform. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source GEO ranking and generative engine optimization platform. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-alexishida-moji",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/alexishida/Moji",
+    "github": "alexishida/Moji",
+    "github_stars": 499,
+    "name": {
+      "en": "alexishida/Moji",
+      "zh-CN": "alexishida/Moji (GitHub ⭐499)",
+      "zh-TW": "alexishida/Moji (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files.",
+      "zh-CN": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hugelton-felucca",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/hugelton/Felucca",
+    "github": "hugelton/Felucca",
+    "github_stars": 499,
+    "name": {
+      "en": "hugelton/Felucca",
+      "zh-CN": "hugelton/Felucca (GitHub ⭐499)",
+      "zh-TW": "hugelton/Felucca (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Custom firmware for M-VAVE FM-1",
+      "zh-CN": "Custom firmware for M-VAVE FM-1 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Custom firmware for M-VAVE FM-1 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-apple-xcode-project-format",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/apple/xcode-project-format",
+    "github": "apple/xcode-project-format",
+    "github_stars": 499,
+    "name": {
+      "en": "apple/xcode-project-format",
+      "zh-CN": "apple/xcode-project-format (GitHub ⭐499)",
+      "zh-TW": "apple/xcode-project-format (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format.",
+      "zh-CN": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-ebookfoundation-free-programmi",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "lcbuaaliu/ai-jian-koubo - Open source tool",
       "zh-CN": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 开源项目",
       "zh-TW": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 487985,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐487985)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐487985)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 487985+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 487985+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44773,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44773)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44773)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44773+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44773+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44474,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44474)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44474)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44474+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44474+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40831,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40831)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40831)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40831+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40831+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cristianolivera1-aura",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/CristianOlivera1/Aura",
-    "github": "CristianOlivera1/Aura",
-    "github_stars": 500,
-    "name": {
-      "en": "CristianOlivera1/Aura",
-      "zh-CN": "CristianOlivera1/Aura (GitHub ⭐500)",
-      "zh-TW": "CristianOlivera1/Aura (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Ambient UI gradients built with layered CSS blend modes. Backgrounds that feel like light.",
-      "zh-CN": "Ambient UI gradients built with layered CSS blend modes. Backgrounds that feel like light. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Ambient UI gradients built with layered CSS blend modes. Backgrounds that feel like light. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sophomoresty-turnstile-bypass",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/Sophomoresty/turnstile-bypass",
-    "github": "Sophomoresty/turnstile-bypass",
-    "github_stars": 500,
-    "name": {
-      "en": "Sophomoresty/turnstile-bypass",
-      "zh-CN": "Sophomoresty/turnstile-bypass (GitHub ⭐500)",
-      "zh-TW": "Sophomoresty/turnstile-bypass (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Cross-platform Cloudflare Turnstile solver (macOS, Windows, Linux)",
-      "zh-CN": "Cross-platform Cloudflare Turnstile solver (macOS, Windows, Linux) | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Cross-platform Cloudflare Turnstile solver (macOS, Windows, Linux) | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 456835,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐456835)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐456835)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 456835+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 456835+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
