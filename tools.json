@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 553454,
+    "stars": 553800,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-15T22:57:34Z"
+    "updated": "2026-10-16T22:58:39Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 519487,
+    "stars": 519986,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-15T22:59:32Z"
+    "updated": "2026-10-16T22:56:09Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 489109,
+    "stars": 489473,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-15T22:57:16Z"
+    "updated": "2026-10-16T22:46:28Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457118,
+    "stars": 457185,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-15T22:45:10Z"
+    "updated": "2026-10-16T22:34:14Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 399126,
+    "stars": 399215,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-15T22:54:20Z"
+    "updated": "2026-10-16T22:42:34Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60795,
+    "stars": 60805,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-15T22:54:15Z"
+    "updated": "2026-10-16T22:23:23Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44754,
+    "stars": 44765,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-15T21:06:39Z"
+    "updated": "2026-10-16T22:13:25Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44476,
+    "stars": 44491,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-15T22:29:13Z"
+    "updated": "2026-10-16T22:01:24Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41557,
+    "stars": 41574,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-15T20:52:00Z"
+    "updated": "2026-10-16T22:46:21Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40860,
+    "stars": 40869,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,35 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-15T21:54:25Z"
+    "updated": "2026-10-16T21:30:21Z"
+  },
+  {
+    "name": "Tavotto/Tavotto",
+    "description": "Make AI-generated scientific figures editable without losing the code behind them.",
+    "url": "https://github.com/Tavotto/Tavotto",
+    "homepage": "https://www.tavotto.com/",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-16T22:05:18Z"
+  },
+  {
+    "name": "anysearch-team/anysearch-dsh",
+    "description": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
+    "url": "https://github.com/anysearch-team/anysearch-dsh",
+    "homepage": "https://www.anysearch.com",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "agent-tools",
+      "anysearch",
+      "deepseek-harness",
+      "dsh",
+      "dsh-plugin"
+    ],
+    "source": "new",
+    "updated": "2026-10-16T20:33:21Z"
   },
   {
     "name": "garnix-io/garnix-ci",
@@ -179,23 +207,6 @@
     "topics": [],
     "source": "new",
     "updated": "2026-10-11T23:35:59Z"
-  },
-  {
-    "name": "yaojingang/GEORank",
-    "description": "Open-source GEO ranking and generative engine optimization platform.",
-    "url": "https://github.com/yaojingang/GEORank",
-    "homepage": "https://www.georankhub.com",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "fastapi",
-      "generative-engine-optimization",
-      "geo",
-      "nextjs",
-      "seo"
-    ],
-    "source": "new",
-    "updated": "2026-10-15T22:49:51Z"
   },
   {
     "name": "alexishida/Moji",
@@ -215,25 +226,20 @@
     "updated": "2026-10-11T21:51:00Z"
   },
   {
-    "name": "hugelton/Felucca",
-    "description": "Custom firmware for M-VAVE FM-1",
-    "url": "https://github.com/hugelton/Felucca",
-    "homepage": "",
+    "name": "valkia/aramgg_client",
+    "description": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-ga",
+    "url": "https://github.com/valkia/aramgg_client",
+    "homepage": "https://aramgg.com",
     "stars": 499,
-    "language": "C",
-    "topics": [],
+    "language": "TypeScript",
+    "topics": [
+      "aram-mayhem",
+      "augments",
+      "electron",
+      "hextech",
+      "league-of-legends"
+    ],
     "source": "new",
-    "updated": "2026-10-15T22:38:43Z"
-  },
-  {
-    "name": "apple/xcode-project-format",
-    "description": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. ",
-    "url": "https://github.com/apple/xcode-project-format",
-    "homepage": "",
-    "stars": 499,
-    "language": "Swift",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-15T09:43:33Z"
+    "updated": "2026-10-16T11:34:33Z"
   }
 ]

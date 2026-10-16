@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 489473,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐489473)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐489473)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 489473+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 489473+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 457185,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457185)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457185)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457185+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457185+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44765,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44765)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44765)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44765+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44765+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44491,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44491)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44491)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44491+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44491+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40869,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40869)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40869)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40869+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40869+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tavotto-tavotto",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/Tavotto/Tavotto",
+    "github": "Tavotto/Tavotto",
+    "github_stars": 500,
+    "name": {
+      "en": "Tavotto/Tavotto",
+      "zh-CN": "Tavotto/Tavotto (GitHub ⭐500)",
+      "zh-TW": "Tavotto/Tavotto (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Make AI-generated scientific figures editable without losing the code behind them.",
+      "zh-CN": "Make AI-generated scientific figures editable without losing the code behind them. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Make AI-generated scientific figures editable without losing the code behind them. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-anysearch-team-anysearch-dsh",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/anysearch-team/anysearch-dsh",
+    "github": "anysearch-team/anysearch-dsh",
+    "github_stars": 500,
+    "name": {
+      "en": "anysearch-team/anysearch-dsh",
+      "zh-CN": "anysearch-team/anysearch-dsh (GitHub ⭐500)",
+      "zh-TW": "anysearch-team/anysearch-dsh (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
+      "zh-CN": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH) | GitHub 500+ Stars 开源项目",
+      "zh-TW": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH) | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-valkia-aramggclient",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/valkia/aramgg_client",
+    "github": "valkia/aramgg_client",
+    "github_stars": 499,
+    "name": {
+      "en": "valkia/aramgg_client",
+      "zh-CN": "valkia/aramgg_client (GitHub ⭐499)",
+      "zh-TW": "valkia/aramgg_client (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays.",
+      "zh-CN": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format.",
       "zh-CN": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 开源项目",
       "zh-TW": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 399048,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐399048)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐399048)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 399048+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 399048+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 553048,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐553048)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐553048)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 553048+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 553048+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 518643,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐518643)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐518643)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 518643+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 518643+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-maysudo-misceo",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/MaySudo/Misceo",
-    "github": "MaySudo/Misceo",
-    "github_stars": 500,
-    "name": {
-      "en": "MaySudo/Misceo",
-      "zh-CN": "MaySudo/Misceo (GitHub ⭐500)",
-      "zh-TW": "MaySudo/Misceo (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard.",
-      "zh-CN": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Local Anthropic-compatible AI gateway with cheap-first routing, quality gates, safe model handoffs, and an embedded cost dashboard. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-taoliveaigc-taomate",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/TaoLiveAIGC/TaoMate",
-    "github": "TaoLiveAIGC/TaoMate",
-    "github_stars": 500,
-    "name": {
-      "en": "TaoLiveAIGC/TaoMate",
-      "zh-CN": "TaoLiveAIGC/TaoMate (GitHub ⭐500)",
-      "zh-TW": "TaoLiveAIGC/TaoMate (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "a real-time digital-human model for long-form audio-video generation",
-      "zh-CN": "a real-time digital-human model for long-form audio-video generation | GitHub 500+ Stars 开源项目",
-      "zh-TW": "a real-time digital-human model for long-form audio-video generation | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kablex-comfyui-ref2va-vsa",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/Kablex/ComfyUI-Ref2VA-VSA",
-    "github": "Kablex/ComfyUI-Ref2VA-VSA",
-    "github_stars": 500,
-    "name": {
-      "en": "Kablex/ComfyUI-Ref2VA-VSA",
-      "zh-CN": "Kablex/ComfyUI-Ref2VA-VSA (GitHub ⭐500)",
-      "zh-TW": "Kablex/ComfyUI-Ref2VA-VSA (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool",
-      "zh-CN": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Kablex/ComfyUI-Ref2VA-VSA - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-op7418-guizang-yingzao-skill",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/op7418/guizang-yingzao-skill",
-    "github": "op7418/guizang-yingzao-skill",
-    "github_stars": 500,
-    "name": {
-      "en": "op7418/guizang-yingzao-skill",
-      "zh-CN": "op7418/guizang-yingzao-skill (GitHub ⭐500)",
-      "zh-TW": "op7418/guizang-yingzao-skill (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建",
-      "zh-CN": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-lcbuaaliu-ai-jian-koubo",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/lcbuaaliu/ai-jian-koubo",
-    "github": "lcbuaaliu/ai-jian-koubo",
-    "github_stars": 500,
-    "name": {
-      "en": "lcbuaaliu/ai-jian-koubo",
-      "zh-CN": "lcbuaaliu/ai-jian-koubo (GitHub ⭐500)",
-      "zh-TW": "lcbuaaliu/ai-jian-koubo (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "lcbuaaliu/ai-jian-koubo - Open source tool",
-      "zh-CN": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "lcbuaaliu/ai-jian-koubo - Open source tool | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
