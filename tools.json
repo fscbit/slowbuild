@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 553800,
+    "stars": 554123,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-16T22:58:39Z"
+    "updated": "2026-10-17T22:59:17Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 519986,
+    "stars": 520465,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-16T22:56:09Z"
+    "updated": "2026-10-17T22:59:34Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 489473,
+    "stars": 489766,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-16T22:46:28Z"
+    "updated": "2026-10-17T22:56:27Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457185,
+    "stars": 457320,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-16T22:34:14Z"
+    "updated": "2026-10-17T22:55:24Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 399215,
+    "stars": 399357,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-16T22:42:34Z"
+    "updated": "2026-10-17T22:56:20Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60805,
+    "stars": 60824,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-16T22:23:23Z"
+    "updated": "2026-10-17T22:20:25Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44765,
+    "stars": 44775,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-16T22:13:25Z"
+    "updated": "2026-10-17T22:10:27Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44491,
+    "stars": 44498,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-16T22:01:24Z"
+    "updated": "2026-10-17T16:16:39Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41574,
+    "stars": 41599,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-16T22:46:21Z"
+    "updated": "2026-10-17T22:27:50Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40869,
+    "stars": 40885,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,52 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-16T21:30:21Z"
+    "updated": "2026-10-17T22:10:42Z"
   },
   {
-    "name": "Tavotto/Tavotto",
-    "description": "Make AI-generated scientific figures editable without losing the code behind them.",
-    "url": "https://github.com/Tavotto/Tavotto",
-    "homepage": "https://www.tavotto.com/",
-    "stars": 500,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-16T22:05:18Z"
-  },
-  {
-    "name": "anysearch-team/anysearch-dsh",
-    "description": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
-    "url": "https://github.com/anysearch-team/anysearch-dsh",
-    "homepage": "https://www.anysearch.com",
+    "name": "jayminwest/warren",
+    "description": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and ",
+    "url": "https://github.com/jayminwest/warren",
+    "homepage": "https://app.warren.run",
     "stars": 500,
     "language": "TypeScript",
     "topics": [
-      "agent-tools",
-      "anysearch",
-      "deepseek-harness",
-      "dsh",
-      "dsh-plugin"
+      "agent-orchestration",
+      "ai-agents",
+      "autonomous-agents",
+      "bun",
+      "claude"
     ],
     "source": "new",
-    "updated": "2026-10-16T20:33:21Z"
+    "updated": "2026-10-17T10:09:03Z"
+  },
+  {
+    "name": "coccofresco/TriAevum",
+    "description": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-o",
+    "url": "https://github.com/coccofresco/TriAevum",
+    "homepage": "",
+    "stars": 500,
+    "language": "C++",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-17T22:21:45Z"
+  },
+  {
+    "name": "pizza-bot-app/pizza-bot",
+    "description": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph.",
+    "url": "https://github.com/pizza-bot-app/pizza-bot",
+    "homepage": "https://github.com/pizza-bot-app/pizza-bot/releases",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "agentic-ai",
+      "ai-agents",
+      "amazon-bedrock",
+      "deepagents",
+      "electron"
+    ],
+    "source": "new",
+    "updated": "2026-10-17T13:39:08Z"
   },
   {
     "name": "garnix-io/garnix-ci",
@@ -209,37 +226,14 @@
     "updated": "2026-10-11T23:35:59Z"
   },
   {
-    "name": "alexishida/Moji",
-    "description": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown fi",
-    "url": "https://github.com/alexishida/Moji",
-    "homepage": "https://alexishida.com/moji/",
+    "name": "gholtzap/lintapple",
+    "description": "It should be impossible for AI to make a bad UI.",
+    "url": "https://github.com/gholtzap/lintapple",
+    "homepage": "https://lintapple.vercel.app/",
     "stars": 499,
-    "language": "TypeScript",
-    "topics": [
-      "codemirror",
-      "cross-platform",
-      "desktop-app",
-      "electron",
-      "markdown"
-    ],
+    "language": "JavaScript",
+    "topics": [],
     "source": "new",
-    "updated": "2026-10-11T21:51:00Z"
-  },
-  {
-    "name": "valkia/aramgg_client",
-    "description": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-ga",
-    "url": "https://github.com/valkia/aramgg_client",
-    "homepage": "https://aramgg.com",
-    "stars": 499,
-    "language": "TypeScript",
-    "topics": [
-      "aram-mayhem",
-      "augments",
-      "electron",
-      "hextech",
-      "league-of-legends"
-    ],
-    "source": "new",
-    "updated": "2026-10-16T11:34:33Z"
+    "updated": "2026-10-17T22:00:43Z"
   }
 ]

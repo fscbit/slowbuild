@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 554123,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐554123)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐554123)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 554123+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 554123+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 520465,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐520465)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐520465)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 520465+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 520465+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 399357,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐399357)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐399357)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 399357+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 399357+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jayminwest-warren",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/jayminwest/warren",
+    "github": "jayminwest/warren",
+    "github_stars": 500,
+    "name": {
+      "en": "jayminwest/warren",
+      "zh-CN": "jayminwest/warren (GitHub ⭐500)",
+      "zh-TW": "jayminwest/warren (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co",
+      "zh-CN": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-coccofresco-triaevum",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/coccofresco/TriAevum",
+    "github": "coccofresco/TriAevum",
+    "github_stars": 500,
+    "name": {
+      "en": "coccofresco/TriAevum",
+      "zh-CN": "coccofresco/TriAevum (GitHub ⭐500)",
+      "zh-TW": "coccofresco/TriAevum (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup.",
+      "zh-CN": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-pizza-bot-app-pizza-bot",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/pizza-bot-app/pizza-bot",
+    "github": "pizza-bot-app/pizza-bot",
+    "github_stars": 500,
+    "name": {
+      "en": "pizza-bot-app/pizza-bot",
+      "zh-CN": "pizza-bot-app/pizza-bot (GitHub ⭐500)",
+      "zh-TW": "pizza-bot-app/pizza-bot (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph.",
+      "zh-CN": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gholtzap-lintapple",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/gholtzap/lintapple",
+    "github": "gholtzap/lintapple",
+    "github_stars": 499,
+    "name": {
+      "en": "gholtzap/lintapple",
+      "zh-CN": "gholtzap/lintapple (GitHub ⭐499)",
+      "zh-TW": "gholtzap/lintapple (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "It should be impossible for AI to make a bad UI.",
+      "zh-CN": "It should be impossible for AI to make a bad UI. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "It should be impossible for AI to make a bad UI. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-public-apis-public-apis",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays.",
       "zh-CN": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 开源项目",
       "zh-TW": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60795,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60795)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60795)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60795+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60795+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41557,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41557)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41557)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41557+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41557+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-garnix-io-garnix-ci",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/garnix-io/garnix-ci",
-    "github": "garnix-io/garnix-ci",
-    "github_stars": 500,
-    "name": {
-      "en": "garnix-io/garnix-ci",
-      "zh-CN": "garnix-io/garnix-ci (GitHub ⭐500)",
-      "zh-TW": "garnix-io/garnix-ci (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "CI and hosting for nix-based, flakified github repos",
-      "zh-CN": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 开源项目",
-      "zh-TW": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yaojingang-georank",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/yaojingang/GEORank",
-    "github": "yaojingang/GEORank",
-    "github_stars": 500,
-    "name": {
-      "en": "yaojingang/GEORank",
-      "zh-CN": "yaojingang/GEORank (GitHub ⭐500)",
-      "zh-TW": "yaojingang/GEORank (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source GEO ranking and generative engine optimization platform.",
-      "zh-CN": "Open-source GEO ranking and generative engine optimization platform. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source GEO ranking and generative engine optimization platform. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-alexishida-moji",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/alexishida/Moji",
-    "github": "alexishida/Moji",
-    "github_stars": 499,
-    "name": {
-      "en": "alexishida/Moji",
-      "zh-CN": "alexishida/Moji (GitHub ⭐499)",
-      "zh-TW": "alexishida/Moji (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files.",
-      "zh-CN": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Open Markdown files like PDFs. A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hugelton-felucca",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/hugelton/Felucca",
-    "github": "hugelton/Felucca",
-    "github_stars": 499,
-    "name": {
-      "en": "hugelton/Felucca",
-      "zh-CN": "hugelton/Felucca (GitHub ⭐499)",
-      "zh-TW": "hugelton/Felucca (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Custom firmware for M-VAVE FM-1",
-      "zh-CN": "Custom firmware for M-VAVE FM-1 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Custom firmware for M-VAVE FM-1 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-apple-xcode-project-format",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/apple/xcode-project-format",
-    "github": "apple/xcode-project-format",
-    "github_stars": 499,
-    "name": {
-      "en": "apple/xcode-project-format",
-      "zh-CN": "apple/xcode-project-format (GitHub ⭐499)",
-      "zh-TW": "apple/xcode-project-format (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format.",
-      "zh-CN": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A Swift library for reading, writing, and manipulating Xcode's JSON-based project.xcproj format. | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

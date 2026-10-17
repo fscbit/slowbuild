@@ -985,6 +985,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-pizza-bot.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-pizza-bot.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-pon.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1171,6 +1181,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-video-talkcraft.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-warren.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-warren.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
