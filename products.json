@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60831,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60831)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60831)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60831+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60831+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41620,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41620)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41620)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41620+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41620+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-beiyege-01-dsh-voice-ai-girlfr",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
+    "github": "beiyege-01/dsh-voice-ai-girlfriend",
+    "github_stars": 500,
+    "name": {
+      "en": "beiyege-01/dsh-voice-ai-girlfriend",
+      "zh-CN": "beiyege-01/dsh-voice-ai-girlfriend (GitHub ⭐500)",
+      "zh-TW": "beiyege-01/dsh-voice-ai-girlfriend (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。",
+      "zh-CN": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jev-chat-jev-chat-jarvis-mac",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/jev-chat/jev-chat-jarvis-mac",
+    "github": "jev-chat/jev-chat-jarvis-mac",
+    "github_stars": 500,
+    "name": {
+      "en": "jev-chat/jev-chat-jarvis-mac",
+      "zh-CN": "jev-chat/jev-chat-jarvis-mac (GitHub ⭐500)",
+      "zh-TW": "jev-chat/jev-chat-jarvis-mac (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。",
+      "zh-CN": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mabdulre9-electrical-engineeri",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/mabdulre9/electrical-engineering",
+    "github": "mabdulre9/electrical-engineering",
+    "github_stars": 500,
+    "name": {
+      "en": "mabdulre9/electrical-engineering",
+      "zh-CN": "mabdulre9/electrical-engineering (GitHub ⭐500)",
+      "zh-TW": "mabdulre9/electrical-engineering (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "🎓 Path to a free self-taught education in Electrical Engineering",
+      "zh-CN": "🎓 Path to a free self-taught education in Electrical Engineering | GitHub 500+ Stars 开源项目",
+      "zh-TW": "🎓 Path to a free self-taught education in Electrical Engineering | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-garnix-io-garnix-ci",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/garnix-io/garnix-ci",
+    "github": "garnix-io/garnix-ci",
+    "github_stars": 500,
+    "name": {
+      "en": "garnix-io/garnix-ci",
+      "zh-CN": "garnix-io/garnix-ci (GitHub ⭐500)",
+      "zh-TW": "garnix-io/garnix-ci (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "CI and hosting for nix-based, flakified github repos",
+      "zh-CN": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 开源项目",
+      "zh-TW": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-wanshuiyin-hero-anti-overdefen",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
+    "github": "wanshuiyin/HERO-Anti-OverDefense",
+    "github_stars": 500,
+    "name": {
+      "en": "wanshuiyin/HERO-Anti-OverDefense",
+      "zh-CN": "wanshuiyin/HERO-Anti-OverDefense (GitHub ⭐500)",
+      "zh-TW": "wanshuiyin/HERO-Anti-OverDefense (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau",
+      "zh-CN": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 开源项目",
+      "zh-TW": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A collective list of free APIs",
       "zh-CN": "A collective list of free APIs | GitHub 489473+ Stars 开源项目",
       "zh-TW": "A collective list of free APIs | GitHub 489473+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 457185,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457185)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457185)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457185+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457185+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44765,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44765)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44765)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44765+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44765+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44491,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44491)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44491)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44491+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44491+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40869,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40869)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40869)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40869+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40869+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tavotto-tavotto",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Tavotto/Tavotto",
-    "github": "Tavotto/Tavotto",
-    "github_stars": 500,
-    "name": {
-      "en": "Tavotto/Tavotto",
-      "zh-CN": "Tavotto/Tavotto (GitHub ⭐500)",
-      "zh-TW": "Tavotto/Tavotto (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Make AI-generated scientific figures editable without losing the code behind them.",
-      "zh-CN": "Make AI-generated scientific figures editable without losing the code behind them. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Make AI-generated scientific figures editable without losing the code behind them. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-anysearch-team-anysearch-dsh",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/anysearch-team/anysearch-dsh",
-    "github": "anysearch-team/anysearch-dsh",
-    "github_stars": 500,
-    "name": {
-      "en": "anysearch-team/anysearch-dsh",
-      "zh-CN": "anysearch-team/anysearch-dsh (GitHub ⭐500)",
-      "zh-TW": "anysearch-team/anysearch-dsh (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
-      "zh-CN": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH) | GitHub 500+ Stars 开源项目",
-      "zh-TW": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH) | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-valkia-aramggclient",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/valkia/aramgg_client",
-    "github": "valkia/aramgg_client",
-    "github_stars": 499,
-    "name": {
-      "en": "valkia/aramgg_client",
-      "zh-CN": "valkia/aramgg_client (GitHub ⭐499)",
-      "zh-TW": "valkia/aramgg_client (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays.",
-      "zh-CN": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Windows companion for League of Legends ARAM Mayhem with read-only LCU recommendations, Hextech Augment stats, and in-game OCR overlays. | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
