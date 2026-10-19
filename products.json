@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 457522,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457522)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457522)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457522+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457522+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44799,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44799)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44799)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44509,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44509)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44509)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44509+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44509+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40910,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40910)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40910)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40910+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40910+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-shadcndashboard-shadcndashboar",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/shadcndashboard/shadcndashboard",
+    "github": "shadcndashboard/shadcndashboard",
+    "github_stars": 500,
+    "name": {
+      "en": "shadcndashboard/shadcndashboard",
+      "zh-CN": "shadcndashboard/shadcndashboard (GitHub ⭐500)",
+      "zh-TW": "shadcndashboard/shadcndashboard (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript.",
+      "zh-CN": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-moonlit-pages-aigc-detector-re",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "github": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "github_stars": 499,
+    "name": {
+      "en": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+      "zh-CN": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐499)",
+      "zh-TW": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r",
+      "zh-CN": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-xinian-dada-fuckmyshitmountain",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/XiNian-dada/Fuck_My_Shit_Mountain",
+    "github": "XiNian-dada/Fuck_My_Shit_Mountain",
+    "github_stars": 499,
+    "name": {
+      "en": "XiNian-dada/Fuck_My_Shit_Mountain",
+      "zh-CN": "XiNian-dada/Fuck_My_Shit_Mountain (GitHub ⭐499)",
+      "zh-TW": "XiNian-dada/Fuck_My_Shit_Mountain (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit.",
+      "zh-CN": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-pengchujin-livecanvas",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/pengchujin/livecanvas",
+    "github": "pengchujin/livecanvas",
+    "github_stars": 499,
+    "name": {
+      "en": "pengchujin/livecanvas",
+      "zh-CN": "pengchujin/livecanvas (GitHub ⭐499)",
+      "zh-TW": "pengchujin/livecanvas (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation.",
+      "zh-CN": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau",
       "zh-CN": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 开源项目",
       "zh-TW": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 554123,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐554123)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐554123)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 554123+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 554123+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 520465,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐520465)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐520465)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 520465+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 520465+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 399357,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐399357)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐399357)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 399357+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 399357+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jayminwest-warren",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/jayminwest/warren",
-    "github": "jayminwest/warren",
-    "github_stars": 500,
-    "name": {
-      "en": "jayminwest/warren",
-      "zh-CN": "jayminwest/warren (GitHub ⭐500)",
-      "zh-TW": "jayminwest/warren (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co",
-      "zh-CN": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Run coding agents like infrastructure, not terminal sessions. Warren manages isolation, lifecycle, spend, recovery, and Git delivery on compute you co | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-coccofresco-triaevum",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/coccofresco/TriAevum",
-    "github": "coccofresco/TriAevum",
-    "github_stars": 500,
-    "name": {
-      "en": "coccofresco/TriAevum",
-      "zh-CN": "coccofresco/TriAevum (GitHub ⭐500)",
-      "zh-TW": "coccofresco/TriAevum (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup.",
-      "zh-CN": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Experimental native PC recompilation runtime for Ocarina of Time 3D. Windows x64, NRI/Vulkan, single-screen UI and ROM-only setup. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-pizza-bot-app-pizza-bot",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/pizza-bot-app/pizza-bot",
-    "github": "pizza-bot-app/pizza-bot",
-    "github_stars": 500,
-    "name": {
-      "en": "pizza-bot-app/pizza-bot",
-      "zh-CN": "pizza-bot-app/pizza-bot (GitHub ⭐500)",
-      "zh-TW": "pizza-bot-app/pizza-bot (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph.",
-      "zh-CN": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A local-first inbox for long-running AI agents, built with DeepAgents and LangGraph. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gholtzap-lintapple",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/gholtzap/lintapple",
-    "github": "gholtzap/lintapple",
-    "github_stars": 499,
-    "name": {
-      "en": "gholtzap/lintapple",
-      "zh-CN": "gholtzap/lintapple (GitHub ⭐499)",
-      "zh-TW": "gholtzap/lintapple (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "It should be impossible for AI to make a bad UI.",
-      "zh-CN": "It should be impossible for AI to make a bad UI. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "It should be impossible for AI to make a bad UI. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 489473,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐489473)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐489473)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 489473+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 489473+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

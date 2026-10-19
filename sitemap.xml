@@ -815,6 +815,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-livecanvas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-livecanvas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-livecontext-ce.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1051,6 +1061,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-second-brain-cloudflare.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-shadcndashboard.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-shadcndashboard.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
