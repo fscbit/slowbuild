@@ -5440,6 +5440,204 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 554839,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐554839)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐554839)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 554839+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 554839+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 521921,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐521921)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐521921)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 521921+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 521921+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 490854,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐490854)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐490854)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 490854+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 490854+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 399675,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐399675)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐399675)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 399675+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 399675+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sdcb-simdpaddleocr",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sdcb/SimdPaddleOCR",
+    "github": "sdcb/SimdPaddleOCR",
+    "github_stars": 500,
+    "name": {
+      "en": "sdcb/SimdPaddleOCR",
+      "zh-CN": "sdcb/SimdPaddleOCR (GitHub ⭐500)",
+      "zh-TW": "sdcb/SimdPaddleOCR (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。",
+      "zh-CN": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-prevalentware-opencode-goal-pl",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/prevalentWare/opencode-goal-plugin",
+    "github": "prevalentWare/opencode-goal-plugin",
+    "github_stars": 500,
+    "name": {
+      "en": "prevalentWare/opencode-goal-plugin",
+      "zh-CN": "prevalentWare/opencode-goal-plugin (GitHub ⭐500)",
+      "zh-TW": "prevalentWare/opencode-goal-plugin (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus.",
+      "zh-CN": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 499,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐499)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kaibush-grok-register",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/kaibush/grok-register",
+    "github": "kaibush/grok-register",
+    "github_stars": 499,
+    "name": {
+      "en": "kaibush/grok-register",
+      "zh-CN": "kaibush/grok-register (GitHub ⭐499)",
+      "zh-TW": "kaibush/grok-register (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件",
+      "zh-CN": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-godiao-dreamcoder",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/GoDiao/dreamcoder",
+    "github": "GoDiao/dreamcoder",
+    "github_stars": 499,
+    "name": {
+      "en": "GoDiao/dreamcoder",
+      "zh-CN": "GoDiao/dreamcoder (GitHub ⭐499)",
+      "zh-TW": "GoDiao/dreamcoder (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台",
+      "zh-CN": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5567,204 +5765,6 @@
       "en": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r",
       "zh-CN": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 开源项目",
       "zh-TW": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-xinian-dada-fuckmyshitmountain",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/XiNian-dada/Fuck_My_Shit_Mountain",
-    "github": "XiNian-dada/Fuck_My_Shit_Mountain",
-    "github_stars": 499,
-    "name": {
-      "en": "XiNian-dada/Fuck_My_Shit_Mountain",
-      "zh-CN": "XiNian-dada/Fuck_My_Shit_Mountain (GitHub ⭐499)",
-      "zh-TW": "XiNian-dada/Fuck_My_Shit_Mountain (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit.",
-      "zh-CN": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-pengchujin-livecanvas",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/pengchujin/livecanvas",
-    "github": "pengchujin/livecanvas",
-    "github_stars": 499,
-    "name": {
-      "en": "pengchujin/livecanvas",
-      "zh-CN": "pengchujin/livecanvas (GitHub ⭐499)",
-      "zh-TW": "pengchujin/livecanvas (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation.",
-      "zh-CN": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60831,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60831)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60831)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60831+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60831+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41620,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41620)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41620)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41620+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41620+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-beiyege-01-dsh-voice-ai-girlfr",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
-    "github": "beiyege-01/dsh-voice-ai-girlfriend",
-    "github_stars": 500,
-    "name": {
-      "en": "beiyege-01/dsh-voice-ai-girlfriend",
-      "zh-CN": "beiyege-01/dsh-voice-ai-girlfriend (GitHub ⭐500)",
-      "zh-TW": "beiyege-01/dsh-voice-ai-girlfriend (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。",
-      "zh-CN": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "语音 AI 女友（Voice AI girlfriend for DeepSeek Harness）：Whisper 语音输入 + Qwen3-TTS 声音克隆 + 句子级流式朗读 + 数字人动画窗。插话/排队双模式，说话即打断。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jev-chat-jev-chat-jarvis-mac",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/jev-chat/jev-chat-jarvis-mac",
-    "github": "jev-chat/jev-chat-jarvis-mac",
-    "github_stars": 500,
-    "name": {
-      "en": "jev-chat/jev-chat-jarvis-mac",
-      "zh-CN": "jev-chat/jev-chat-jarvis-mac (GitHub ⭐500)",
-      "zh-TW": "jev-chat/jev-chat-jarvis-mac (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。",
-      "zh-CN": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "聊天悬浮窗助手（macOS）：屏幕感知 + 本地小模型判断意图与风险，按话术生成回复候选。纯只读。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mabdulre9-electrical-engineeri",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/mabdulre9/electrical-engineering",
-    "github": "mabdulre9/electrical-engineering",
-    "github_stars": 500,
-    "name": {
-      "en": "mabdulre9/electrical-engineering",
-      "zh-CN": "mabdulre9/electrical-engineering (GitHub ⭐500)",
-      "zh-TW": "mabdulre9/electrical-engineering (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "🎓 Path to a free self-taught education in Electrical Engineering",
-      "zh-CN": "🎓 Path to a free self-taught education in Electrical Engineering | GitHub 500+ Stars 开源项目",
-      "zh-TW": "🎓 Path to a free self-taught education in Electrical Engineering | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-garnix-io-garnix-ci",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/garnix-io/garnix-ci",
-    "github": "garnix-io/garnix-ci",
-    "github_stars": 500,
-    "name": {
-      "en": "garnix-io/garnix-ci",
-      "zh-CN": "garnix-io/garnix-ci (GitHub ⭐500)",
-      "zh-TW": "garnix-io/garnix-ci (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "CI and hosting for nix-based, flakified github repos",
-      "zh-CN": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 开源项目",
-      "zh-TW": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-wanshuiyin-hero-anti-overdefen",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/wanshuiyin/HERO-Anti-OverDefense",
-    "github": "wanshuiyin/HERO-Anti-OverDefense",
-    "github_stars": 500,
-    "name": {
-      "en": "wanshuiyin/HERO-Anti-OverDefense",
-      "zh-CN": "wanshuiyin/HERO-Anti-OverDefense (GitHub ⭐500)",
-      "zh-TW": "wanshuiyin/HERO-Anti-OverDefense (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau",
-      "zh-CN": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 开源项目",
-      "zh-TW": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Clau | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

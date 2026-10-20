@@ -535,6 +535,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-dreamcoder.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-dreamcoder.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-dsh-voice-ai-girlfriend.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -961,6 +971,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-open-science.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-opencode-goal-plugin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-opencode-goal-plugin.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
