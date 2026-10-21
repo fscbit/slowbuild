@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60888,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60888)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60888)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60888+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60888+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41656,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41656)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41656)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-stanleynull-autohunter",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/StanleyNull/AutoHunter",
+    "github": "StanleyNull/AutoHunter",
+    "github_stars": 500,
+    "name": {
+      "en": "StanleyNull/AutoHunter",
+      "zh-CN": "StanleyNull/AutoHunter (GitHub ⭐500)",
+      "zh-TW": "StanleyNull/AutoHunter (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull",
+      "zh-CN": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull | GitHub 500+ Stars 开源项目",
+      "zh-TW": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-devcxl-mattpocock-skills-zh",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/devcxl/mattpocock-skills-zh",
+    "github": "devcxl/mattpocock-skills-zh",
+    "github_stars": 499,
+    "name": {
+      "en": "devcxl/mattpocock-skills-zh",
+      "zh-CN": "devcxl/mattpocock-skills-zh (GitHub ⭐499)",
+      "zh-TW": "devcxl/mattpocock-skills-zh (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步",
+      "zh-CN": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "A simple, fast and user-friendly alternative to 'find'",
       "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 开源项目",
       "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44509,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44509)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44509)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44509+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44509+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40910,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40910)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40910)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40910+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40910+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-shadcndashboard-shadcndashboar",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/shadcndashboard/shadcndashboard",
-    "github": "shadcndashboard/shadcndashboard",
-    "github_stars": 500,
-    "name": {
-      "en": "shadcndashboard/shadcndashboard",
-      "zh-CN": "shadcndashboard/shadcndashboard (GitHub ⭐500)",
-      "zh-TW": "shadcndashboard/shadcndashboard (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript.",
-      "zh-CN": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Free, open source admin dashboard built with React + vite, shadcn/ui, Tailwind CSS, and TypeScript. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-moonlit-pages-aigc-detector-re",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-    "github": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-    "github_stars": 499,
-    "name": {
-      "en": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-      "zh-CN": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐499)",
-      "zh-TW": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r",
-      "zh-CN": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

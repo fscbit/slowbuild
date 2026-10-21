@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 554839,
+    "stars": 555181,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-20T22:59:38Z"
+    "updated": "2026-10-21T22:56:59Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 521921,
+    "stars": 522366,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-20T22:59:16Z"
+    "updated": "2026-10-21T22:58:20Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 490854,
+    "stars": 491122,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-20T22:49:56Z"
+    "updated": "2026-10-21T22:40:34Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457579,
+    "stars": 457644,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-20T22:35:25Z"
+    "updated": "2026-10-21T22:28:33Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 399675,
+    "stars": 399746,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-20T22:57:50Z"
+    "updated": "2026-10-21T22:33:51Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60873,
+    "stars": 60888,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-20T22:43:33Z"
+    "updated": "2026-10-21T22:51:36Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44812,
+    "stars": 44823,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-20T21:45:52Z"
+    "updated": "2026-10-21T22:31:36Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44511,
+    "stars": 44515,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-20T20:28:59Z"
+    "updated": "2026-10-21T18:32:20Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41647,
+    "stars": 41656,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-20T22:38:54Z"
+    "updated": "2026-10-21T20:31:46Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40914,
+    "stars": 40923,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,70 +167,25 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-20T21:11:58Z"
+    "updated": "2026-10-21T22:19:33Z"
   },
   {
-    "name": "sdcb/SimdPaddleOCR",
-    "description": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库",
-    "url": "https://github.com/sdcb/SimdPaddleOCR",
+    "name": "StanleyNull/AutoHunter",
+    "description": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull",
+    "url": "https://github.com/StanleyNull/AutoHunter",
     "homepage": "",
     "stars": 500,
-    "language": "C#",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-20T08:05:55Z"
-  },
-  {
-    "name": "prevalentWare/opencode-goal-plugin",
-    "description": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus.",
-    "url": "https://github.com/prevalentWare/opencode-goal-plugin",
-    "homepage": "https://www.npmjs.com/package/@prevalentware/opencode-goal-plugin",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "agent",
-      "ai-agent",
-      "coding-agent",
-      "developer-tools",
-      "goal"
-    ],
-    "source": "new",
-    "updated": "2026-10-20T08:31:17Z"
-  },
-  {
-    "name": "appica-dev/appica-ui",
-    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-    "url": "https://github.com/appica-dev/appica-ui",
-    "homepage": "https://appica.dev/ui",
-    "stars": 499,
-    "language": "TypeScript",
-    "topics": [
-      "a11y",
-      "accessibility",
-      "base-ui",
-      "component-library",
-      "dark-mode"
-    ],
-    "source": "new",
-    "updated": "2026-10-20T06:06:16Z"
-  },
-  {
-    "name": "kaibush/grok-register",
-    "description": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件",
-    "url": "https://github.com/kaibush/grok-register",
-    "homepage": "https://linux.do",
-    "stars": 499,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-20T17:01:06Z"
+    "updated": "2026-10-21T20:28:34Z"
   },
   {
     "name": "GoDiao/dreamcoder",
     "description": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台",
     "url": "https://github.com/GoDiao/dreamcoder",
     "homepage": "https://godiao.github.io/dreamcoder/",
-    "stars": 499,
+    "stars": 500,
     "language": "TypeScript",
     "topics": [
       "ai-coding",
@@ -240,6 +195,34 @@
       "desktop-app"
     ],
     "source": "new",
-    "updated": "2026-10-20T20:39:08Z"
+    "updated": "2026-10-21T17:45:51Z"
+  },
+  {
+    "name": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "description": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin",
+    "url": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "homepage": "",
+    "stars": 499,
+    "language": "",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-19T09:35:00Z"
+  },
+  {
+    "name": "devcxl/mattpocock-skills-zh",
+    "description": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步",
+    "url": "https://github.com/devcxl/mattpocock-skills-zh",
+    "homepage": "",
+    "stars": 499,
+    "language": "Shell",
+    "topics": [
+      "ai-agent",
+      "chinese",
+      "prompt-engineering",
+      "skills",
+      "translation"
+    ],
+    "source": "new",
+    "updated": "2026-10-21T08:34:23Z"
   }
 ]
