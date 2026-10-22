@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44516,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44516)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44516)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40935,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40935)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40935)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nikgrbn-finder-menu",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/nikgrbn/finder-menu",
+    "github": "nikgrbn/finder-menu",
+    "github_stars": 500,
+    "name": {
+      "en": "nikgrbn/finder-menu",
+      "zh-CN": "nikgrbn/finder-menu (GitHub ⭐500)",
+      "zh-TW": "nikgrbn/finder-menu (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder",
+      "zh-CN": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cv-cat-catbus",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/cv-cat/catbus",
+    "github": "cv-cat/catbus",
+    "github_stars": 500,
+    "name": {
+      "en": "cv-cat/catbus",
+      "zh-CN": "cv-cat/catbus (GitHub ⭐500)",
+      "zh-TW": "cv-cat/catbus (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用",
+      "zh-CN": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-knowclip-ai-knowclip",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/KnowClip-ai/knowclip",
+    "github": "KnowClip-ai/knowclip",
+    "github_stars": 500,
+    "name": {
+      "en": "KnowClip-ai/knowclip",
+      "zh-CN": "KnowClip-ai/knowclip (GitHub ⭐500)",
+      "zh-TW": "KnowClip-ai/knowclip (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出",
+      "zh-CN": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-frank-quant-ai-trading-videos",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/frank-quant/ai-trading-videos",
+    "github": "frank-quant/ai-trading-videos",
+    "github_stars": 500,
+    "name": {
+      "en": "frank-quant/ai-trading-videos",
+      "zh-CN": "frank-quant/ai-trading-videos (GitHub ⭐500)",
+      "zh-TW": "frank-quant/ai-trading-videos (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "ai + quantative trading",
+      "zh-CN": "ai + quantative trading | GitHub 500+ Stars 开源项目",
+      "zh-TW": "ai + quantative trading | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。",
       "zh-CN": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 开源项目",
       "zh-TW": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-prevalentware-opencode-goal-pl",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/prevalentWare/opencode-goal-plugin",
-    "github": "prevalentWare/opencode-goal-plugin",
-    "github_stars": 500,
-    "name": {
-      "en": "prevalentWare/opencode-goal-plugin",
-      "zh-CN": "prevalentWare/opencode-goal-plugin (GitHub ⭐500)",
-      "zh-TW": "prevalentWare/opencode-goal-plugin (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus.",
-      "zh-CN": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "OpenCode goal plugin for Codex-style goal mode, /goal slash commands, persistent objectives, and AI coding agent focus. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-appica-dev-appica-ui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/appica-dev/appica-ui",
-    "github": "appica-dev/appica-ui",
-    "github_stars": 499,
-    "name": {
-      "en": "appica-dev/appica-ui",
-      "zh-CN": "appica-dev/appica-ui (GitHub ⭐499)",
-      "zh-TW": "appica-dev/appica-ui (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kaibush-grok-register",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/kaibush/grok-register",
-    "github": "kaibush/grok-register",
-    "github_stars": 499,
-    "name": {
-      "en": "kaibush/grok-register",
-      "zh-CN": "kaibush/grok-register (GitHub ⭐499)",
-      "zh-TW": "kaibush/grok-register (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件",
-      "zh-CN": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "GrokFree注册机 - 支持生成CPA、grok2api、sub2api格式的json鉴权文件 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-godiao-dreamcoder",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/GoDiao/dreamcoder",
-    "github": "GoDiao/dreamcoder",
-    "github_stars": 499,
-    "name": {
-      "en": "GoDiao/dreamcoder",
-      "zh-CN": "GoDiao/dreamcoder (GitHub ⭐499)",
-      "zh-TW": "GoDiao/dreamcoder (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台",
-      "zh-CN": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A locally run, multi-provider AI coding workspace · 本地运行、支持多家模型服务商的 AI 编程工作台 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 457522,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457522)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457522)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457522+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457522+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44799,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44799)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44799)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44799+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

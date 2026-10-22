@@ -345,6 +345,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-appica-ui.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-appica-ui.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-audar-asr-v1.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -431,6 +441,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-cap-cut-professional.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-catbus.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-catbus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
