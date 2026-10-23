@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 555479,
+    "stars": 555702,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-22T22:54:04Z"
+    "updated": "2026-10-23T22:59:18Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 523148,
+    "stars": 523637,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-22T22:56:19Z"
+    "updated": "2026-10-23T22:59:17Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 491409,
+    "stars": 491669,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-22T22:56:16Z"
+    "updated": "2026-10-23T22:55:21Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457720,
+    "stars": 457789,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-22T22:43:16Z"
+    "updated": "2026-10-23T22:50:22Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 399845,
+    "stars": 399926,
     "language": "Python",
     "topics": [
       "books",
@@ -82,14 +82,14 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-22T22:48:19Z"
+    "updated": "2026-10-23T22:51:03Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60895,
+    "stars": 60910,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-22T21:57:01Z"
+    "updated": "2026-10-23T22:55:23Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44837,
+    "stars": 44847,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-22T18:11:56Z"
+    "updated": "2026-10-23T22:53:47Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44516,
+    "stars": 44518,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-22T14:08:14Z"
+    "updated": "2026-10-23T22:56:18Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41673,
+    "stars": 41680,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-22T21:16:16Z"
+    "updated": "2026-10-23T22:56:47Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 40935,
+    "stars": 40949,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-22T21:27:21Z"
+    "updated": "2026-10-23T22:52:42Z"
   },
   {
     "name": "appica-dev/appica-ui",
@@ -187,58 +187,59 @@
     "updated": "2026-10-22T11:51:19Z"
   },
   {
-    "name": "nikgrbn/finder-menu",
-    "description": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder",
-    "url": "https://github.com/nikgrbn/finder-menu",
-    "homepage": "",
+    "name": "Nanako0129/syrtis",
+    "description": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude",
+    "url": "https://github.com/Nanako0129/syrtis",
+    "homepage": "https://syrtis.nyanako.com/",
     "stars": 500,
     "language": "Swift",
     "topics": [
-      "finder",
-      "finder-extension",
-      "macos",
-      "swift"
-    ],
-    "source": "new",
-    "updated": "2026-10-22T15:32:50Z"
-  },
-  {
-    "name": "cv-cat/catbus",
-    "description": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用",
-    "url": "https://github.com/cv-cat/catbus",
-    "homepage": "",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "ai-agent",
-      "bilibili",
+      "ai-usage",
       "claude-code",
-      "cli",
-      "crawler"
+      "codex",
+      "liquid-glass",
+      "macos"
     ],
     "source": "new",
-    "updated": "2026-10-22T16:13:00Z"
+    "updated": "2026-10-23T21:35:01Z"
   },
   {
-    "name": "KnowClip-ai/knowclip",
-    "description": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出",
-    "url": "https://github.com/KnowClip-ai/knowclip",
-    "homepage": "",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-22T15:48:47Z"
-  },
-  {
-    "name": "frank-quant/ai-trading-videos",
-    "description": "ai + quantative trading",
-    "url": "https://github.com/frank-quant/ai-trading-videos",
+    "name": "ChiefGyk3D/Clouds-Against-Humanity",
+    "description": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture ",
+    "url": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
     "homepage": "",
     "stars": 500,
     "language": "Python",
+    "topics": [
+      "aws",
+      "azure",
+      "cloud-computing",
+      "cloud-security",
+      "cybersecurity"
+    ],
+    "source": "new",
+    "updated": "2026-10-23T22:23:04Z"
+  },
+  {
+    "name": "Pikapika260214/rw-consulting-ppt",
+    "description": "Consulting deck skill with editable options for Codex",
+    "url": "https://github.com/Pikapika260214/rw-consulting-ppt",
+    "homepage": "",
+    "stars": 499,
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-22T22:24:25Z"
+    "updated": "2026-10-22T09:33:10Z"
+  },
+  {
+    "name": "soul-99/SU_IMD",
+    "description": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive a",
+    "url": "https://github.com/soul-99/SU_IMD",
+    "homepage": "",
+    "stars": 499,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-23T21:26:22Z"
   }
 ]

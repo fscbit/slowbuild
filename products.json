@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 457789,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44847,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44847)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44847)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 500,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nanako0129-syrtis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/Nanako0129/syrtis",
+    "github": "Nanako0129/syrtis",
+    "github_stars": 500,
+    "name": {
+      "en": "Nanako0129/syrtis",
+      "zh-CN": "Nanako0129/syrtis (GitHub ⭐500)",
+      "zh-TW": "Nanako0129/syrtis (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode",
+      "zh-CN": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 开源项目",
+      "zh-TW": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-chiefgyk3d-clouds-against-huma",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+    "github": "ChiefGyk3D/Clouds-Against-Humanity",
+    "github_stars": 500,
+    "name": {
+      "en": "ChiefGyk3D/Clouds-Against-Humanity",
+      "zh-CN": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)",
+      "zh-TW": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "zh-CN": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-pikapika260214-rw-consulting-p",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/Pikapika260214/rw-consulting-ppt",
+    "github": "Pikapika260214/rw-consulting-ppt",
+    "github_stars": 499,
+    "name": {
+      "en": "Pikapika260214/rw-consulting-ppt",
+      "zh-CN": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)",
+      "zh-TW": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Consulting deck skill with editable options for Codex",
+      "zh-CN": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-soul-99-suimd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/soul-99/SU_IMD",
+    "github": "soul-99/SU_IMD",
+    "github_stars": 499,
+    "name": {
+      "en": "soul-99/SU_IMD",
+      "zh-CN": "soul-99/SU_IMD (GitHub ⭐499)",
+      "zh-TW": "soul-99/SU_IMD (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc).",
+      "zh-CN": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Comfortably monitor your network traffic 🕵️‍♂️",
       "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 开源项目",
       "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-stanleynull-autohunter",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/StanleyNull/AutoHunter",
-    "github": "StanleyNull/AutoHunter",
-    "github_stars": 500,
-    "name": {
-      "en": "StanleyNull/AutoHunter",
-      "zh-CN": "StanleyNull/AutoHunter (GitHub ⭐500)",
-      "zh-TW": "StanleyNull/AutoHunter (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull",
-      "zh-CN": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull | GitHub 500+ Stars 开源项目",
-      "zh-TW": "自动化 SRC 漏洞挖掘系统：FOFA 资产测绘 + LLM 多 worker 自主挖掘/审核/情报沉淀。Powered By StanleyNull | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-devcxl-mattpocock-skills-zh",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/devcxl/mattpocock-skills-zh",
-    "github": "devcxl/mattpocock-skills-zh",
-    "github_stars": 499,
-    "name": {
-      "en": "devcxl/mattpocock-skills-zh",
-      "zh-CN": "devcxl/mattpocock-skills-zh (GitHub ⭐499)",
-      "zh-TW": "devcxl/mattpocock-skills-zh (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步",
-      "zh-CN": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Matt Pocock 技能集的中文翻译版 — 地道中文，原汁原味的技术术语。基于 mattpocock/skills 复刻。每日中午12点钟同步 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 554839,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐554839)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐554839)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 554839+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 554839+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 521921,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐521921)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐521921)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 521921+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 521921+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 490854,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐490854)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐490854)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 490854+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 490854+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 399675,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐399675)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐399675)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 399675+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 399675+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sdcb-simdpaddleocr",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sdcb/SimdPaddleOCR",
-    "github": "sdcb/SimdPaddleOCR",
-    "github_stars": 500,
-    "name": {
-      "en": "sdcb/SimdPaddleOCR",
-      "zh-CN": "sdcb/SimdPaddleOCR (GitHub ⭐500)",
-      "zh-TW": "sdcb/SimdPaddleOCR (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。",
-      "zh-CN": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "纯 C# PP-OCRv6 推理库：多平台手写 Kernel / GEMM 等算子、超高性能、低内存需求、超高准确率。 自带托管 ONNX 解释器，不依赖 Paddle Inference、ONNX Runtime 或 OpenCV 原生库。 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
