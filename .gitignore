@@ -10,3 +10,5 @@ backend/*.db
 backend/work/
 *.bak-*
 软件硬件产品方向计划.md
+shop.db
+orders.db
