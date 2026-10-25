@@ -1,1 +1,251 @@
-[]
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 556204,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-10-25T22:50:43Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 524645,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-10-25T22:58:54Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 492131,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-10-25T22:59:35Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 457918,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-10-25T22:28:45Z"
+  },
+  {
+    "name": "EbookFoundation/free-programming-books",
+    "description": ":books: Freely available programming books",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "homepage": "https://ebookfoundation.github.io/free-programming-books/",
+    "stars": 400101,
+    "language": "Python",
+    "topics": [
+      "books",
+      "education",
+      "hacktoberfest",
+      "list",
+      "resource"
+    ],
+    "source": "hot",
+    "updated": "2026-10-25T22:41:17Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 60937,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-10-25T22:39:48Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 44861,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-10-25T21:13:37Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44543,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-10-25T21:23:02Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 41693,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-10-25T22:50:38Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 40968,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-10-25T22:00:47Z"
+  },
+  {
+    "name": "CluvexStudio/ZedSecure",
+    "description": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConne",
+    "url": "https://github.com/CluvexStudio/ZedSecure",
+    "homepage": "",
+    "stars": 500,
+    "language": "Kotlin",
+    "topics": [
+      "android",
+      "proxy",
+      "shadowsocks",
+      "socks5",
+      "v2ray"
+    ],
+    "source": "new",
+    "updated": "2026-10-25T21:39:11Z"
+  },
+  {
+    "name": "Jia-Ethan/grok-keysmith",
+    "description": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall.",
+    "url": "https://github.com/Jia-Ethan/grok-keysmith",
+    "homepage": "https://github.com/Jia-Ethan/grok-keysmith/releases/latest",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "agents-md",
+      "cli",
+      "configuration-management",
+      "developer-tools",
+      "grok"
+    ],
+    "source": "new",
+    "updated": "2026-10-25T17:28:08Z"
+  },
+  {
+    "name": "VecSzn/PolyStrata",
+    "description": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5,",
+    "url": "https://github.com/VecSzn/PolyStrata",
+    "homepage": "",
+    "stars": 500,
+    "language": "C++",
+    "topics": [
+      "anthropic-api",
+      "cuda",
+      "gemma",
+      "gguf",
+      "glm"
+    ],
+    "source": "new",
+    "updated": "2026-10-25T22:54:10Z"
+  },
+  {
+    "name": "raymondchins/Bridgeplay",
+    "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
+    "url": "https://github.com/raymondchins/Bridgeplay",
+    "homepage": "https://bridgeplay.dev",
+    "stars": 500,
+    "language": "Scala",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-25T22:20:14Z"
+  },
+  {
+    "name": "EricTechPro/super-board",
+    "description": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install.",
+    "url": "https://github.com/EricTechPro/super-board",
+    "homepage": "https://erictechpro.github.io/super-board/",
+    "stars": 500,
+    "language": "HTML",
+    "topics": [
+      "agentic-coding",
+      "ai",
+      "ai-agents",
+      "automation",
+      "claude"
+    ],
+    "source": "new",
+    "updated": "2026-10-25T21:44:55Z"
+  }
+]

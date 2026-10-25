@@ -194,4 +194,27 @@
     <priority>0.5</priority>
   </url>
   <!-- AUTO-TOOL-POSTS-END -->
+
+  <!-- AUTO-TOOL-POSTS-START -->
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-grok-keysmith.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-grok-keysmith.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-super-board.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-super-board.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- AUTO-TOOL-POSTS-END -->
 </urlset>
