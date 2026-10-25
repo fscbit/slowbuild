@@ -6,3 +6,7 @@ test-almanac.js
 music-app/
 tiktok-素材/
 *.log
+backend/*.db
+backend/work/
+*.bak-*
+软件硬件产品方向计划.md
