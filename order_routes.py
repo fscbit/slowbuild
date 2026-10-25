@@ -21,6 +21,28 @@ SMTP_USER = "184723392@qq.com"
 SMTP_PASS = "tiabxxqucyhzbhbj"
 FROM_NAME = "SlowBuild"
 
+def _get_admin_password():
+    import json, os
+    cfg = BASE_DIR / "config.json"
+    if cfg.exists():
+        try:
+            with open(cfg, "r", encoding="utf-8") as f:
+                return json.load(f).get("admin_password", "slowbuild2026")
+        except:
+            pass
+    return os.environ.get("ADMIN_PASSWORD", "slowbuild2026")
+
+def _admin_required(f):
+    """订单管理接口鉴权：请求头 X-Admin-Password 必须匹配 admin_password"""
+    from functools import wraps
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        pw = request.headers.get("X-Admin-Password", "")
+        if not pw or pw != _get_admin_password():
+            return jsonify({"error": "未授权：密码错误"}), 401
+        return f(*args, **kwargs)
+    return wrapper
+
 def _load_products():
     import json
     with open(PRODUCTS_FILE, "r", encoding="utf-8") as f:
@@ -227,6 +249,7 @@ def register_order_routes(app):
         return "OK", 200
 
     @app.route("/api/order/<order_id>/confirm", methods=["POST"])
+    @_admin_required
     def confirm_order(order_id):
         conn = _get_db()
         order = conn.execute("SELECT * FROM orders WHERE id=?", (order_id,)).fetchone()
@@ -250,6 +273,7 @@ def register_order_routes(app):
         return jsonify({"ok": True, "order_id": order_id, "email_sent": ok, "email_error": err if not ok else None})
 
     @app.route("/api/order/<order_id>/resend", methods=["POST"])
+    @_admin_required
     def resend_email(order_id):
         conn = _get_db()
         order = conn.execute("SELECT * FROM orders WHERE id=?", (order_id,)).fetchone()
@@ -265,6 +289,7 @@ def register_order_routes(app):
         return jsonify({"ok": ok, "error": err if not ok else None})
 
     @app.route("/api/orders", methods=["GET"])
+    @_admin_required
     def list_orders():
         status = request.args.get("status", "")
         limit = int(request.args.get("limit", 100))
@@ -278,6 +303,7 @@ def register_order_routes(app):
         return jsonify([dict(r) for r in rows])
 
     @app.route("/api/order/<order_id>", methods=["GET"])
+    @_admin_required
     def get_order(order_id):
         conn = _get_db()
         order = conn.execute("SELECT * FROM orders WHERE id=?", (order_id,)).fetchone()
@@ -288,6 +314,7 @@ def register_order_routes(app):
         return jsonify({"order": dict(order)})
 
     @app.route("/api/order-stats", methods=["GET"])
+    @_admin_required
     def order_stats():
         conn = _get_db()
         total = conn.execute("SELECT COUNT(*) FROM orders").fetchone()[0]

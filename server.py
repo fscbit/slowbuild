@@ -500,6 +500,20 @@ def init_db():
 
 init_db()
 
+# ── Admin 鉴权 ──
+from functools import wraps
+
+def admin_required(f):
+    """admin 接口鉴权：请求头 X-Admin-Password 必须匹配配置的 admin_password"""
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        pw = request.headers.get("X-Admin-Password", "")
+        expected = get_config("admin_password", "slowbuild2026")
+        if not pw or pw != expected:
+            return jsonify({"error": "未授权：密码错误"}), 401
+        return f(*args, **kwargs)
+    return wrapper
+
 # ── 商品 CRUD ──
 
 def product_row_to_dict(row):
@@ -512,6 +526,7 @@ def product_row_to_dict(row):
     return d
 
 @app.route("/api/admin/products", methods=["GET"])
+@admin_required
 def admin_list_products():
     db = get_db()
     rows = db.execute("SELECT * FROM products ORDER BY updated_at DESC").fetchall()
@@ -519,6 +534,7 @@ def admin_list_products():
     return jsonify([product_row_to_dict(r) for r in rows])
 
 @app.route("/api/admin/products", methods=["POST"])
+@admin_required
 def admin_create_product():
     data = request.get_json(force=True)
     if not data.get("id"):
@@ -546,6 +562,7 @@ def admin_create_product():
     return jsonify({"ok": True, "id": data["id"]})
 
 @app.route("/api/admin/products/<pid>", methods=["PUT"])
+@admin_required
 def admin_update_product(pid):
     data = request.get_json(force=True)
     db = get_db()
@@ -573,6 +590,7 @@ def admin_update_product(pid):
     return jsonify({"ok": True})
 
 @app.route("/api/admin/products/<pid>", methods=["DELETE"])
+@admin_required
 def admin_delete_product(pid):
     db = get_db()
     db.execute("DELETE FROM products WHERE id=?", (pid,))
@@ -590,6 +608,7 @@ def course_row_to_dict(row):
     return d
 
 @app.route("/api/admin/courses", methods=["GET"])
+@admin_required
 def admin_list_courses():
     db = get_db()
     rows = db.execute("SELECT * FROM courses ORDER BY updated_at DESC").fetchall()
@@ -597,6 +616,7 @@ def admin_list_courses():
     return jsonify([course_row_to_dict(r) for r in rows])
 
 @app.route("/api/admin/courses", methods=["POST"])
+@admin_required
 def admin_create_course():
     data = request.get_json(force=True)
     if not data.get("id"):
@@ -623,6 +643,7 @@ def admin_create_course():
     return jsonify({"ok": True, "id": data["id"]})
 
 @app.route("/api/admin/courses/<cid>", methods=["PUT"])
+@admin_required
 def admin_update_course(cid):
     data = request.get_json(force=True)
     db = get_db()
@@ -648,6 +669,7 @@ def admin_update_course(cid):
     return jsonify({"ok": True})
 
 @app.route("/api/admin/courses/<cid>", methods=["DELETE"])
+@admin_required
 def admin_delete_course(cid):
     db = get_db()
     db.execute("DELETE FROM courses WHERE id=?", (cid,))
