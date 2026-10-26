@@ -111,8 +111,12 @@ tr.info td{background:var(--info)}
         <div class="file-list" id="fileList"></div>
       </div>
 
-      <div class="card" id="configCard" style="display:none">
+      <div class="card" id="configCard">
         <h2><span class="num">2</span> 核对设置</h2>
+
+        <div class="muted" id="configHint" style="background:#f0f5ff;border:1px solid #c7dcff;border-radius:8px;padding:10px 12px;margin-bottom:4px">
+          ⬆️ 请先完成上方「1 上传文件」：上传 Excel + 文件（zip/文件夹），下面的选项会自动加载。
+        </div>
 
         <label>主核对列（Excel 列名）</label>
         <select id="keyCol"></select>
@@ -323,6 +327,7 @@ function uploadAnalyze(){
       fillHeaders($('subCol'), d.headers, null);
       $('status').textContent = '✅ Excel ' + d.rows_count + ' 行 / 文件 ' + d.files_count + ' 个';
       $('configCard').style.display = 'block';
+      $('configHint').style.display = 'none';
       renderFileList(d.files);
       updatePreview();
     })
