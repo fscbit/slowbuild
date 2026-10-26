@@ -197,6 +197,26 @@
 
   <!-- AUTO-TOOL-POSTS-START -->
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-build-your-own-x.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-build-your-own-x.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-free-programming-books.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-free-programming-books.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-grok-keysmith.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
