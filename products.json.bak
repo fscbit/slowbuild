@@ -5443,20 +5443,284 @@
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
+    "icon": "🖥️",
     "price": 0,
     "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
     "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 456835,
+    "github_stars": 457789,
     "name": {
       "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐456835)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐456835)"
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)"
     },
     "desc": {
       "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 456835+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 456835+ Stars 開源項目"
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44847,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44847)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44847)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 500,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nanako0129-syrtis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/Nanako0129/syrtis",
+    "github": "Nanako0129/syrtis",
+    "github_stars": 500,
+    "name": {
+      "en": "Nanako0129/syrtis",
+      "zh-CN": "Nanako0129/syrtis (GitHub ⭐500)",
+      "zh-TW": "Nanako0129/syrtis (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode",
+      "zh-CN": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 开源项目",
+      "zh-TW": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-chiefgyk3d-clouds-against-huma",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
+    "github": "ChiefGyk3D/Clouds-Against-Humanity",
+    "github_stars": 500,
+    "name": {
+      "en": "ChiefGyk3D/Clouds-Against-Humanity",
+      "zh-CN": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)",
+      "zh-TW": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
+      "zh-CN": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-pikapika260214-rw-consulting-p",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/Pikapika260214/rw-consulting-ppt",
+    "github": "Pikapika260214/rw-consulting-ppt",
+    "github_stars": 499,
+    "name": {
+      "en": "Pikapika260214/rw-consulting-ppt",
+      "zh-CN": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)",
+      "zh-TW": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "Consulting deck skill with editable options for Codex",
+      "zh-CN": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 开源项目",
+      "zh-TW": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-soul-99-suimd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/soul-99/SU_IMD",
+    "github": "soul-99/SU_IMD",
+    "github_stars": 499,
+    "name": {
+      "en": "soul-99/SU_IMD",
+      "zh-CN": "soul-99/SU_IMD (GitHub ⭐499)",
+      "zh-TW": "soul-99/SU_IMD (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc).",
+      "zh-CN": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 开源项目",
+      "zh-TW": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44516,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44516)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44516)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 40935,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40935)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40935)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nikgrbn-finder-menu",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/nikgrbn/finder-menu",
+    "github": "nikgrbn/finder-menu",
+    "github_stars": 500,
+    "name": {
+      "en": "nikgrbn/finder-menu",
+      "zh-CN": "nikgrbn/finder-menu (GitHub ⭐500)",
+      "zh-TW": "nikgrbn/finder-menu (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder",
+      "zh-CN": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cv-cat-catbus",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/cv-cat/catbus",
+    "github": "cv-cat/catbus",
+    "github_stars": 500,
+    "name": {
+      "en": "cv-cat/catbus",
+      "zh-CN": "cv-cat/catbus (GitHub ⭐500)",
+      "zh-TW": "cv-cat/catbus (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用",
+      "zh-CN": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-knowclip-ai-knowclip",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/KnowClip-ai/knowclip",
+    "github": "KnowClip-ai/knowclip",
+    "github_stars": 500,
+    "name": {
+      "en": "KnowClip-ai/knowclip",
+      "zh-CN": "KnowClip-ai/knowclip (GitHub ⭐500)",
+      "zh-TW": "KnowClip-ai/knowclip (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出",
+      "zh-CN": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-frank-quant-ai-trading-videos",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/frank-quant/ai-trading-videos",
+    "github": "frank-quant/ai-trading-videos",
+    "github_stars": 500,
+    "name": {
+      "en": "frank-quant/ai-trading-videos",
+      "zh-CN": "frank-quant/ai-trading-videos (GitHub ⭐500)",
+      "zh-TW": "frank-quant/ai-trading-videos (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "ai + quantative trading",
+      "zh-CN": "ai + quantative trading | GitHub 500+ Stars 开源项目",
+      "zh-TW": "ai + quantative trading | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
@@ -5465,130 +5729,20 @@
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
+    "icon": "🎯",
     "price": 0,
     "buyLink": "https://github.com/sharkdp/bat",
     "github": "sharkdp/bat",
-    "github_stars": 60756,
+    "github_stars": 60888,
     "name": {
       "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60756)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60756)"
+      "zh-CN": "sharkdp/bat (GitHub ⭐60888)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60888)"
     },
     "desc": {
       "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60756+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60756+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zexadev-gemini-web2api-go",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/zexadev/gemini-web2api-go",
-    "github": "zexadev/gemini-web2api-go",
-    "github_stars": 500,
-    "name": {
-      "en": "zexadev/gemini-web2api-go",
-      "zh-CN": "zexadev/gemini-web2api-go (GitHub ⭐500)",
-      "zh-TW": "zexadev/gemini-web2api-go (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS",
-      "zh-CN": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Gemini web → OpenAI-compatible API, self-hosted, no API key. Reverse-proxies gemini.google.com into /v1/chat/completions: single Go binary, Chrome TLS | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-0xhype-hyperliquid-tracker",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/0xhype/hyperliquid-tracker",
-    "github": "0xhype/hyperliquid-tracker",
-    "github_stars": 499,
-    "name": {
-      "en": "0xhype/hyperliquid-tracker",
-      "zh-CN": "0xhype/hyperliquid-tracker (GitHub ⭐499)",
-      "zh-TW": "0xhype/hyperliquid-tracker (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Get notified when big trades happen on Hyperliquid.",
-      "zh-CN": "Get notified when big trades happen on Hyperliquid. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Get notified when big trades happen on Hyperliquid. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yuturuishi-rebucca",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/yuturuishi/rebucca",
-    "github": "yuturuishi/rebucca",
-    "github_stars": 499,
-    "name": {
-      "en": "yuturuishi/rebucca",
-      "zh-CN": "yuturuishi/rebucca (GitHub ⭐499)",
-      "zh-TW": "yuturuishi/rebucca (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。",
-      "zh-CN": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "rebucca · 多路视频接入与智能布控分析平台。支持 GB28181 / RTSP 等协议、YOLO 等小模型检测、OpenAI 兼容大模型复核、多边形布控区域与带截图的结构化报警。 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-orkas-ai-orkas-videostudio",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Orkas-AI/Orkas-VideoStudio",
-    "github": "Orkas-AI/Orkas-VideoStudio",
-    "github_stars": 499,
-    "name": {
-      "en": "Orkas-AI/Orkas-VideoStudio",
-      "zh-CN": "Orkas-AI/Orkas-VideoStudio (GitHub ⭐499)",
-      "zh-TW": "Orkas-AI/Orkas-VideoStudio (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file.",
-      "zh-CN": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Turn your coding agent into a video studio: describe a video in plain language, and your agent writes the timeline and produces the file. | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 398557,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐398557)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐398557)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 398557+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 398557+ Stars 開源項目"
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60888+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60888+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
@@ -5597,174 +5751,20 @@
     "id": "gh-gyulyvgc-sniffnet",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
+    "icon": "🔮",
     "price": 0,
     "buyLink": "https://github.com/GyulyVGC/sniffnet",
     "github": "GyulyVGC/sniffnet",
-    "github_stars": 41367,
+    "github_stars": 41656,
     "name": {
       "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41367)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41367)"
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41656)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41656)"
     },
     "desc": {
       "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41367+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41367+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-wasi-master-wmkeyboard",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/wasi-master/wmkeyboard",
-    "github": "wasi-master/wmkeyboard",
-    "github_stars": 500,
-    "name": {
-      "en": "wasi-master/wmkeyboard",
-      "zh-CN": "wasi-master/wmkeyboard (GitHub ⭐500)",
-      "zh-TW": "wasi-master/wmkeyboard (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem.",
-      "zh-CN": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A modern, privacy-first Android keyboard: offline intelligence, 350+ languages, themes, tools and an addon ecosystem. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-opencoredev-email-sdk",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/opencoredev/email-sdk",
-    "github": "opencoredev/email-sdk",
-    "github_stars": 500,
-    "name": {
-      "en": "opencoredev/email-sdk",
-      "zh-CN": "opencoredev/email-sdk (GitHub ⭐500)",
-      "zh-TW": "opencoredev/email-sdk (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "One simple SDK for transactional email across 23 adapters",
-      "zh-CN": "One simple SDK for transactional email across 23 adapters | GitHub 500+ Stars 开源项目",
-      "zh-TW": "One simple SDK for transactional email across 23 adapters | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 552011,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐552011)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐552011)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 552011+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 552011+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 516328,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐516328)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐516328)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 516328+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 516328+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-luovicter-collab-bilibinggo",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/luovicter-collab/bilibinggo",
-    "github": "luovicter-collab/bilibinggo",
-    "github_stars": 500,
-    "name": {
-      "en": "luovicter-collab/bilibinggo",
-      "zh-CN": "luovicter-collab/bilibinggo (GitHub ⭐500)",
-      "zh-TW": "luovicter-collab/bilibinggo (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Binggo · 开源 B站抽奖助手（哔哩哔哩抽奖工具）— 本机自动发现活动，一键/三连参与。",
-      "zh-CN": "Binggo · 开源 B站抽奖助手（哔哩哔哩抽奖工具）— 本机自动发现活动，一键/三连参与。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Binggo · 开源 B站抽奖助手（哔哩哔哩抽奖工具）— 本机自动发现活动，一键/三连参与。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-garnix-io-garnix-ci",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/garnix-io/garnix-ci",
-    "github": "garnix-io/garnix-ci",
-    "github_stars": 500,
-    "name": {
-      "en": "garnix-io/garnix-ci",
-      "zh-CN": "garnix-io/garnix-ci (GitHub ⭐500)",
-      "zh-TW": "garnix-io/garnix-ci (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "CI and hosting for nix-based, flakified github repos",
-      "zh-CN": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 开源项目",
-      "zh-TW": "CI and hosting for nix-based, flakified github repos | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yousuf-developer-viscose-carou",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Yousuf-developer/Viscose-carousel",
-    "github": "Yousuf-developer/Viscose-carousel",
-    "github_stars": 499,
-    "name": {
-      "en": "Yousuf-developer/Viscose-carousel",
-      "zh-CN": "Yousuf-developer/Viscose-carousel (GitHub ⭐499)",
-      "zh-TW": "Yousuf-developer/Viscose-carousel (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A wheel of work that never quite sets. Cards fuse as they meet, and draw into threads as they part.",
-      "zh-CN": "A wheel of work that never quite sets. Cards fuse as they meet, and draw into threads as they part. | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A wheel of work that never quite sets. Cards fuse as they meet, and draw into threads as they part. | GitHub 499+ Stars 開源項目"
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

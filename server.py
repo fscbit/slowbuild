@@ -1141,5 +1141,33 @@ if __name__ == "__main__":
 from order_routes import register_order_routes
 register_order_routes(app)
 
+# ── 文件名与 Excel 核对工具 ──
+from filecheck_routes import register_filecheck_routes
+register_filecheck_routes(app)
+
+# ── Excel 按列拆分 ──
+from split_routes import register_split_routes
+register_split_routes(app)
+
+# ── 按 Excel 清单批量重命名 ──
+from rename_routes import register_rename_routes
+register_rename_routes(app)
+
+# ── 两个 Excel 对比 ──
+from exceldiff_routes import register_exceldiff_routes
+register_exceldiff_routes(app)
+
+# ── 合并多个 CSV/Excel ──
+from merge_routes import register_merge_routes
+register_merge_routes(app)
+
+# ── 按列去重 ──
+from dedup_routes import register_dedup_routes
+register_dedup_routes(app)
+
+# ── Word 批量替换 ──
+from wordreplace_routes import register_wordreplace_routes
+register_wordreplace_routes(app)
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)

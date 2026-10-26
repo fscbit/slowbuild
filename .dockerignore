@@ -1,0 +1,10 @@
+.git
+.gitignore
+*.log
+__pycache__
+**/__pycache__
+*.pyc
+*.zip
+*.docx
+*.md
+*.bak*
