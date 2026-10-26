@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excel 填充 Word 文档</title>
+<style>
+:root{
+  --blue:#4472C4; --blue-d:#365a9c;
+  --bg:#f5f7fa; --card:#fff; --line:#e3e8ef;
+  --txt:#1f2937; --sub:#6b7280;
+  --ok:#C6EFCE; --ok-t:#2f7d32;
+  --warn:#FFEB9C; --warn-t:#8a6d00;
+  --err:#FFC7CE; --err-t:#a33232;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:10px}
+h1{font-size:22px;font-weight:700}
+h1 span{color:var(--blue)}
+.sub{color:var(--sub);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h2 .num{background:var(--blue);color:#fff;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;flex:none}
+label{display:block;font-size:13px;color:var(--sub);margin:10px 0 4px}
+select,input[type=text]{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none;background:#fff}
+select:focus,input:focus{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;border:none;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;transition:.15s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.drop{background:#fafbfd;border:2px dashed var(--line);border-radius:10px;padding:20px;text-align:center;cursor:pointer;transition:.15s;font-size:13px;color:var(--sub)}
+.drop:hover,.drop.drag{border-color:var(--blue);background:#f0f5ff}
+.drop .icon{font-size:26px;display:block;margin-bottom:6px}
+.drop.ready{border-style:solid;border-color:#9ecb9e;background:#f4fbf4}
+.muted{color:var(--sub);font-size:12px}
+.status{font-size:13px;color:var(--blue);margin-top:8px;min-height:20px}
+.hint{background:#f0f5ff;border:1px solid #c7dcff;border-radius:8px;padding:10px 12px;margin-bottom:4px;font-size:13px;color:#365a9c}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{background:#eef2f8;border-radius:14px;padding:4px 12px;font-size:12px;color:#374151;font-family:Consolas,monospace}
+.chip b{color:var(--blue)}
+.chip.miss{background:var(--err);color:var(--err-t)}
+.hidden{display:none}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.two-col{grid-template-columns:1fr}}
+.result-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>📝 <span>Excel 填充</span> Word 文档</h1>
+      <div class="sub">用 Excel 数据批量填充 Word 模板中的 <code>#列名#</code> 占位符</div>
+    </div>
+  </header>
+
+  <!-- 第1步：上传 -->
+  <div class="card">
+    <h2><span class="num">1</span> 上传文件</h2>
+    <div class="two-col">
+      <div>
+        <label>Excel 文件（第一行是列名）</label>
+        <div class="drop" id="dropExcel">
+          <span class="icon">📊</span>
+          <span id="excelLabel">点击选择 Excel</span>
+          <input type="file" id="excelInput" accept=".xlsx,.xlsm" class="hidden">
+        </div>
+      </div>
+      <div>
+        <label>Word 模板（含 #列名# 占位符）</label>
+        <div class="drop" id="dropTpl">
+          <span class="icon">📄</span>
+          <span id="tplLabel">点击选择 Word 模板</span>
+          <input type="file" id="tplInput" accept=".docx" class="hidden">
+        </div>
+      </div>
+    </div>
+    <div class="status" id="status"></div>
+    <div id="phBox" class="hidden" style="margin-top:10px">
+      <div class="muted" style="margin-bottom:6px">模板中的占位符（共 <span id="phCount">0</span> 个）：</div>
+      <div class="chips" id="phChips"></div>
+      <div class="muted" id="phMissHint" class="hidden" style="color:#a33232"></div>
+    </div>
+  </div>
+
+  <!-- 第2步：设置 -->
+  <div class="card" id="configCard">
+    <h2><span class="num">2</span> 填充设置</h2>
+    <div class="hint" id="configHint">⬆️ 请先完成上方「1 上传文件」，下面的选项会自动加载。</div>
+
+    <label>输出文件名用哪一列（默认第一列）</label>
+    <select id="nameCol"></select>
+
+    <label>第二段文件名列（可选，留空则只用上面一列）</label>
+    <select id="nameCol2"><option value="">（不使用）</option></select>
+
+    <div style="margin-top:14px">
+      <button class="btn btn-primary" id="btnRun">▶ 开始填充并打包</button>
+    </div>
+  </div>
+
+  <!-- 第3步：结果 -->
+  <div class="card hidden" id="resultCard">
+    <div class="result-row">
+      <h2 style="margin:0">填充结果</h2>
+      <a class="btn btn-primary" id="btnDownload" href="#" style="text-decoration:none">💾 下载结果 zip</a>
+    </div>
+    <div class="chips" id="statChips"></div>
+    <div class="muted" id="missingBox" class="hidden" style="color:#a33232"></div>
+  </div>
+</div>
+
+<script>
+var BACKEND = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+  ? '' : 'https://api.slowbuild.top';
+let JOB_ID = null;
+
+const $ = id => document.getElementById(id);
+
+$('dropExcel').addEventListener('click', ()=>$('excelInput').click());
+$('dropTpl').addEventListener('click', ()=>$('tplInput').click());
+$('excelInput').addEventListener('change', onPicked);
+$('tplInput').addEventListener('change', onPicked);
+
+['dropExcel','dropTpl'].forEach(id=>{
+  const el = $(id);
+  el.addEventListener('dragover', e=>{e.preventDefault(); el.classList.add('drag');});
+  el.addEventListener('dragleave', ()=>el.classList.remove('drag'));
+  el.addEventListener('drop', e=>{
+    e.preventDefault(); el.classList.remove('drag');
+    const f = e.dataTransfer.files[0];
+    if(!f) return;
+    if(id === 'dropExcel' && /\.(xlsx|xlsm)$/i.test(f.name)){
+      $('excelInput').files = e.dataTransfer.files; onPicked();
+    } else if(id === 'dropTpl' && /\.docx$/i.test(f.name)){
+      $('tplInput').files = e.dataTransfer.files; onPicked();
+    }
+  });
+});
+
+function onPicked(){
+  const ex = $('excelInput').files[0];
+  const tp = $('tplInput').files[0];
+  if(ex){ $('excelLabel').textContent = '📊 ' + ex.name; $('dropExcel').classList.add('ready'); }
+  if(tp){ $('tplLabel').textContent = '📄 ' + tp.name; $('dropTpl').classList.add('ready'); }
+  if(ex && tp) analyze();
+}
+
+function analyze(){
+  const fd = new FormData();
+  fd.append('excel', $('excelInput').files[0]);
+  fd.append('template', $('tplInput').files[0]);
+  $('status').textContent = '⏳ 正在读取 Excel 和模板...';
+  fetch(BACKEND + '/api/excelfill/analyze', {method:'POST', body:fd})
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.error){ $('status').textContent = '❌ ' + d.error; return; }
+      JOB_ID = d.job_id;
+      $('status').textContent = '✅ Excel ' + d.rows_count + ' 行，模板占位符 ' + d.placeholders.length + ' 个';
+
+      // 命名列下拉
+      fillSelect($('nameCol'), d.headers, d.guess_name_col);
+      fillSelect($('nameCol2'), d.headers, null);
+
+      // 占位符展示
+      $('phBox').classList.remove('hidden');
+      $('phCount').textContent = d.placeholders.length;
+      const chips = $('phChips'); chips.innerHTML = '';
+      const missing = d.placeholders.filter(p => {
+        const key = p.replace(/^[#＃]|[#＃]$/g, '').replace(/\s+/g,'');
+        return !d.headers.some(h => (h||'').replace(/[#＃]/g,'').trim() === key);
+      });
+      d.placeholders.forEach(p=>{
+        const c = document.createElement('span');
+        c.className = 'chip';
+        const key = p.replace(/^[#＃]|[#＃]$/g, '').replace(/\s+/g,'');
+        const isMiss = !d.headers.some(h => (h||'').replace(/[#＃]/g,'').trim() === key);
+        if(isMiss) c.classList.add('miss');
+        c.innerHTML = '<b>' + p + '</b>' + (isMiss ? ' ⚠️Excel无此列' : '');
+        chips.appendChild(c);
+      });
+      if(missing.length){
+        $('phMissHint').textContent = '⚠️ 有 ' + missing.length + ' 个占位符在 Excel 里找不到对应列，这些会原样保留不填充。';
+        $('phMissHint').classList.remove('hidden');
+      } else {
+        $('phMissHint').classList.add('hidden');
+      }
+
+      $('configHint').style.display = 'none';
+    })
+    .catch(e=>{ $('status').textContent = '❌ 请求失败: ' + e; });
+}
+
+function fillSelect(sel, values, val){
+  sel.innerHTML = '';
+  (values||[]).forEach(v=>{
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    if(v === val) o.selected = true;
+    sel.appendChild(o);
+  });
+  if(sel === $('nameCol2')){
+    const o = document.createElement('option');
+    o.value = ''; o.textContent = '（不使用）';
+    sel.insertBefore(o, sel.firstChild);
+    sel.value = '';
+  }
+}
+
+$('btnRun').addEventListener('click', ()=>{
+  if(!JOB_ID){ $('status').textContent = '请先上传 Excel 和模板'; return; }
+  const body = {
+    job_id: JOB_ID,
+    name_col: $('nameCol').value,
+    name_col2: $('nameCol2').value,
+  };
+  $('btnRun').disabled = true;
+  $('status').textContent = '⏳ 正在生成文档并打包...';
+  fetch(BACKEND + '/api/excelfill/run', {
+    method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)
+  })
+    .then(r=>r.json())
+    .then(d=>{
+      $('btnRun').disabled = false;
+      if(d.error){ $('status').textContent = '❌ ' + d.error; return; }
+      $('status').textContent = '✅ 完成';
+      $('resultCard').classList.remove('hidden');
+      $('statChips').innerHTML =
+        '<span class="chip">生成文档 <b>'+d.count+'</b> 个</span>'+
+        '<span class="chip">填充占位符 <b>'+d.filled.length+'</b> 种</span>';
+      if(d.missing.length){
+        $('missingBox').textContent = '⚠️ 以下占位符未填充（Excel 无对应列或值为空）：' + d.missing.join('、');
+        $('missingBox').classList.remove('hidden');
+      } else {
+        $('missingBox').classList.add('hidden');
+      }
+      $('btnDownload').href = BACKEND + '/api/excelfill/download/' + JOB_ID;
+      $('resultCard').scrollIntoView({behavior:'smooth'});
+    })
+    .catch(e=>{ $('btnRun').disabled = false; $('status').textContent = '❌ 请求失败: ' + e; });
+});
+</script>
+</body>
+</html>

@@ -1169,5 +1169,9 @@ register_dedup_routes(app)
 from wordreplace_routes import register_wordreplace_routes
 register_wordreplace_routes(app)
 
+# ── Excel 占位符填充 Word ──
+from excel_fill_routes import register_excel_fill_routes
+register_excel_fill_routes(app)
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=False)
