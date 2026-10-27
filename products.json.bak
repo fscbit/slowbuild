@@ -5440,6 +5440,204 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 556204,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐556204)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐556204)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 556204+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 556204+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 524645,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐524645)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐524645)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 524645+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 524645+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 492131,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐492131)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐492131)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 492131+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 492131+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ebookfoundation-free-programmi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
+    "github": "EbookFoundation/free-programming-books",
+    "github_stars": 400101,
+    "name": {
+      "en": "EbookFoundation/free-programming-books",
+      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐400101)",
+      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐400101)"
+    },
+    "desc": {
+      "en": ":books: Freely available programming books",
+      "zh-CN": ":books: Freely available programming books | GitHub 400101+ Stars 开源项目",
+      "zh-TW": ":books: Freely available programming books | GitHub 400101+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cluvexstudio-zedsecure",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/CluvexStudio/ZedSecure",
+    "github": "CluvexStudio/ZedSecure",
+    "github_stars": 500,
+    "name": {
+      "en": "CluvexStudio/ZedSecure",
+      "zh-CN": "CluvexStudio/ZedSecure (GitHub ⭐500)",
+      "zh-TW": "CluvexStudio/ZedSecure (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
+      "zh-CN": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jia-ethan-grok-keysmith",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Jia-Ethan/grok-keysmith",
+    "github": "Jia-Ethan/grok-keysmith",
+    "github_stars": 500,
+    "name": {
+      "en": "Jia-Ethan/grok-keysmith",
+      "zh-CN": "Jia-Ethan/grok-keysmith (GitHub ⭐500)",
+      "zh-TW": "Jia-Ethan/grok-keysmith (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall.",
+      "zh-CN": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-vecszn-polystrata",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/VecSzn/PolyStrata",
+    "github": "VecSzn/PolyStrata",
+    "github_stars": 500,
+    "name": {
+      "en": "VecSzn/PolyStrata",
+      "zh-CN": "VecSzn/PolyStrata (GitHub ⭐500)",
+      "zh-TW": "VecSzn/PolyStrata (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4,",
+      "zh-CN": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-raymondchins-bridgeplay",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/raymondchins/Bridgeplay",
+    "github": "raymondchins/Bridgeplay",
+    "github_stars": 500,
+    "name": {
+      "en": "raymondchins/Bridgeplay",
+      "zh-CN": "raymondchins/Bridgeplay (GitHub ⭐500)",
+      "zh-TW": "raymondchins/Bridgeplay (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
+      "zh-CN": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-erictechpro-super-board",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/EricTechPro/super-board",
+    "github": "EricTechPro/super-board",
+    "github_stars": 500,
+    "name": {
+      "en": "EricTechPro/super-board",
+      "zh-CN": "EricTechPro/super-board (GitHub ⭐500)",
+      "zh-TW": "EricTechPro/super-board (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install.",
+      "zh-CN": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5567,204 +5765,6 @@
       "en": "Consulting deck skill with editable options for Codex",
       "zh-CN": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 开源项目",
       "zh-TW": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-soul-99-suimd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/soul-99/SU_IMD",
-    "github": "soul-99/SU_IMD",
-    "github_stars": 499,
-    "name": {
-      "en": "soul-99/SU_IMD",
-      "zh-CN": "soul-99/SU_IMD (GitHub ⭐499)",
-      "zh-TW": "soul-99/SU_IMD (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc).",
-      "zh-CN": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 开源项目",
-      "zh-TW": "A powerful settings/ services manager and settings/ services hider (automated disable-enable settings) for restrictive apps (banking, payments...etc). | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44516,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44516)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44516)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44516+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 40935,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐40935)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐40935)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 40935+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nikgrbn-finder-menu",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/nikgrbn/finder-menu",
-    "github": "nikgrbn/finder-menu",
-    "github_stars": 500,
-    "name": {
-      "en": "nikgrbn/finder-menu",
-      "zh-CN": "nikgrbn/finder-menu (GitHub ⭐500)",
-      "zh-TW": "nikgrbn/finder-menu (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder",
-      "zh-CN": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Right-click menu for macOS Finder: New File, Open Terminal Here, Copy Path, Go to Parent Folder | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cv-cat-catbus",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/cv-cat/catbus",
-    "github": "cv-cat/catbus",
-    "github_stars": 500,
-    "name": {
-      "en": "cv-cat/catbus",
-      "zh-CN": "cv-cat/catbus (GitHub ⭐500)",
-      "zh-TW": "cv-cat/catbus (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用",
-      "zh-CN": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "一个命令操作小红书、抖音、TikTok、B 站、快手、微博、闲鱼、淘宝、京东、X：统一的命令与 JSON 输出，给人和 AI Agent 用 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-knowclip-ai-knowclip",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/KnowClip-ai/knowclip",
-    "github": "KnowClip-ai/knowclip",
-    "github_stars": 500,
-    "name": {
-      "en": "KnowClip-ai/knowclip",
-      "zh-CN": "KnowClip-ai/knowclip (GitHub ⭐500)",
-      "zh-TW": "KnowClip-ai/knowclip (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出",
-      "zh-CN": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "把直播、课程、演讲、口播等长视频自动切成精彩片段｜本地语音识别，音频不出本机；LLM 挑高光，批量导出 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-frank-quant-ai-trading-videos",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/frank-quant/ai-trading-videos",
-    "github": "frank-quant/ai-trading-videos",
-    "github_stars": 500,
-    "name": {
-      "en": "frank-quant/ai-trading-videos",
-      "zh-CN": "frank-quant/ai-trading-videos (GitHub ⭐500)",
-      "zh-TW": "frank-quant/ai-trading-videos (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "ai + quantative trading",
-      "zh-CN": "ai + quantative trading | GitHub 500+ Stars 开源项目",
-      "zh-TW": "ai + quantative trading | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60888,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60888)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60888)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60888+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60888+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41656,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41656)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41656)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41656+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

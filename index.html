@@ -259,6 +259,26 @@
     /* online convert cards — visually distinct */
     .online-convert-card{background:linear-gradient(135deg,var(--surface) 0%,#f0fdf4 100%);border-color:#86efac}
     .online-convert-card:hover{border-color:var(--accent)}
+    /* ☁️ Cloud / backend tools — prominent section */
+    .cloud-section{background:linear-gradient(135deg,#eff6ff 0%,#eefdf4 100%);border:1px solid #bfdbfe;border-radius:16px;padding:20px;margin:8px 0 24px;box-shadow:0 4px 18px rgba(37,99,235,.06)}
+    .cloud-section-head{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+    .cloud-title{font-size:1.08rem;font-weight:800;display:flex;align-items:center;gap:8px;letter-spacing:-.01em}
+    .cloud-badge{display:inline-block;font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:20px;background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;white-space:nowrap;box-shadow:0 2px 6px rgba(37,99,235,.28)}
+    .cloud-tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+    .cloud-tool-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px;cursor:pointer;transition:all .2s;box-shadow:0 1px 3px rgba(15,23,42,.04);display:flex;flex-direction:column;gap:7px}
+    .cloud-tool-card:hover{border-color:var(--accent);box-shadow:0 12px 30px rgba(37,99,235,.16);transform:translateY(-3px)}
+    .cloud-tool-head{display:flex;align-items:center;gap:10px}
+    .cloud-tool-head .c-icon{font-size:1.65rem;line-height:1}
+    .cloud-tool-head .c-name{font-size:.98rem;font-weight:700;flex:1}
+    .cloud-tool-card .c-badge{font-size:.62rem;font-weight:700;padding:2px 8px;border-radius:6px;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe;white-space:nowrap}
+    .cloud-tool-meta{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .cloud-tool-meta .meta-label{color:var(--accent);font-weight:600}
+    .cloud-tool-cta{font-size:.78rem;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:4px;margin-top:1px}
+    /* ⚡ JS / browser-only tools section */
+    .js-section{margin-top:4px}
+    .js-section-head{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+    .js-title{font-size:1.08rem;font-weight:800;display:flex;align-items:center;gap:8px;letter-spacing:-.01em}
+    .js-badge{display:inline-block;font-size:.68rem;font-weight:700;padding:3px 11px;border-radius:20px;background:var(--code-bg);color:var(--muted);border:1px solid var(--border);white-space:nowrap}
     /* Details expand */
     .tools-expand{margin-top:12px}
     .tools-expand summary{cursor:pointer;color:var(--accent);font-size:.85rem;font-weight:500;padding:8px 0}
@@ -386,69 +406,13 @@
     <h2 class="sec-title">🛠️ <span data-i18n="tools_head">Free Online Tools</span></h2>
     <p class="sec-sub" data-i18n="tools_head_sub">Runs in your browser. No upload. No signup.</p>
 
-    <!-- ☁️ 在线转换 — 不用下载，直接上传就能用 -->
-    <p class="online-label" style="margin:8px 0 6px;font-size:.8rem;color:var(--accent);font-weight:500">☁️ <span data-i18n="online_label">Online Convert — No install, just upload & use</span></p>
-    <div class="tool-grid-compact" style="margin-top:10px" id="onlineConvertGrid">
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">📄➡️📕</div>
-        <div class="name"><span data-i18n="script_word2pdf">Word → PDF</span></div>
+    <!-- ☁️ 云端处理工具（需要后台服务器）-->
+    <div class="cloud-section">
+      <div class="cloud-section-head">
+        <span class="cloud-title">☁️ <span data-i18n="cloud_head">云端处理工具</span></span>
+        <span class="cloud-badge" data-i18n="cloud_badge">需要服务器 · 上传即处理</span>
       </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">📊➡️📕</div>
-        <div class="name">Excel → PDF</div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">📊➡️📄</div>
-        <div class="name">Excel → CSV</div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">📽️➡️📕</div>
-        <div class="name">PPT → PDF</div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">🌐➡️📕</div>
-        <div class="name">HTML → PDF</div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">📕➡️📊</div>
-        <div class="name">PDF → Excel</div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">🧹</div>
-        <div class="name"><span data-i18n="script_dedup">Duplicate Finder</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="document.getElementById('onlineDetail').open=true;document.getElementById('onlineDetail').scrollIntoView({behavior:'smooth'})">
-        <div class="icon">🖼️</div>
-        <div class="name"><span data-i18n="script_extract_images">Image Lister</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/filecheck.html'" style="border-color:var(--accent)">
-        <div class="icon">📁</div>
-        <div class="name">文件名核对 <span style="font-size:.68rem;color:var(--muted)">Excel ↔ Files</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/split.html'">
-        <div class="icon">📊</div>
-        <div class="name">Excel 拆分 <span style="font-size:.68rem;color:var(--muted)">Split by Column</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/rename.html'">
-        <div class="icon">🏷️</div>
-        <div class="name">批量重命名 <span style="font-size:.68rem;color:var(--muted)">Batch Rename</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/exceldiff.html'">
-        <div class="icon">🔍</div>
-        <div class="name">Excel 对比 <span style="font-size:.68rem;color:var(--muted)">Compare 2 Files</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/merge.html'">
-        <div class="icon">➕</div>
-        <div class="name">合并表格 <span style="font-size:.68rem;color:var(--muted)">Merge Tables</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/dedup.html'">
-        <div class="icon">🧹</div>
-        <div class="name">按列去重 <span style="font-size:.68rem;color:var(--muted)">Dedup Rows</span></div>
-      </div>
-      <div class="tool-card-compact online-convert-card" onclick="location.href='/wordreplace.html'">
-        <div class="icon">📝</div>
-        <div class="name">Word 批量替换 <span style="font-size:.68rem;color:var(--muted)">Replace in .docx</span></div>
-      </div>
+      <div class="cloud-tool-grid" id="cloudToolGrid"><!-- filled by JS --></div>
     </div>
 
     <!-- Online Convert details (collapsible) -->
@@ -523,14 +487,18 @@
       <p style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:8px" data-i18n="online_note">⚠️ Files are deleted from server after 1 hour. This service runs on a personal VM — it may go offline sometimes.</p>
     </details>
 
-    <!-- Compact: 6 most used tools — 在线工具排后面 -->
-    <div class="tool-grid-compact" id="freeToolGrid"></div>
-
-    <!-- Expand: show all tools -->
-    <details class="tools-expand" id="toolsExpandDetails">
-      <summary data-i18n="tools_show_all">Show all 30+ tools →</summary>
-      <div class="tool-grid" id="toolGridFull" style="margin-top:12px"></div>
-    </details>
+    <!-- ⚡ 浏览器本地工具（纯JS，无需后台）-->
+    <div class="js-section">
+      <div class="js-section-head">
+        <span class="js-title">⚡ <span data-i18n="js_head">浏览器本地工具</span></span>
+        <span class="js-badge" data-i18n="js_badge">无需上传 · 即开即用</span>
+      </div>
+      <div class="tool-grid-compact" id="freeToolGrid"></div>
+      <details class="tools-expand" id="toolsExpandDetails">
+        <summary data-i18n="tools_show_all">Show all 30+ tools →</summary>
+        <div class="tool-grid" id="toolGridFull" style="margin-top:12px"></div>
+      </details>
+    </div>
   </section>
 
   <!-- ⑤ 高级付费工具 Premium Apps -->
@@ -697,6 +665,7 @@ var I18N = {
     hero_tools_btn: '🛠️ Browse Tools',
     blog_view_all: 'View All Posts →',
     tools_head: 'Free Online Tools', tools_head_sub: 'Runs in your browser. No upload. No signup.',
+    cloud_head: 'Cloud Tools', cloud_badge: 'Needs server · upload & process', js_head: 'Browser Tools', js_badge: 'No upload · instant use',
     tools_show_all: 'Show all 30+ tools →',
     premium_head: 'Premium Apps', premium_head_sub: 'Download, double-click, done. One purchase.',
     work_blog_head: 'Workplace Blog', work_blog_sub: 'Productivity tips · career insights · indie dev',
@@ -875,6 +844,7 @@ var I18N = {
     hero_tools_btn: '🛠️ 浏览工具',
     blog_view_all: '查看全部文章 →',
     tools_head: '免费在线工具', tools_head_sub: '浏览器本地运行，不上传，不注册。',
+    cloud_head: '云端处理工具', cloud_badge: '需要服务器 · 上传即处理', js_head: '浏览器本地工具', js_badge: '无需上传 · 即开即用',
     tools_show_all: '展开全部 30+ 工具 →',
     premium_head: '高级工具', premium_head_sub: '下载 → 双击 → 直接用。一次购买。',
     work_blog_head: '职场博客', work_blog_sub: '办公效率 · 职场心得 · 独立开发',
@@ -1052,6 +1022,7 @@ var I18N = {
     hero_tools_btn: '🛠️ 瀏覽工具',
     blog_view_all: '查看全部文章 →',
     tools_head: '免費線上工具', tools_head_sub: '瀏覽器本機運行，不上傳，不註冊。',
+    cloud_head: '雲端處理工具', cloud_badge: '需要伺服器 · 上傳即處理', js_head: '瀏覽器本機工具', js_badge: '無需上傳 · 即開即用',
     tools_show_all: '展開全部 30+ 工具 →',
     premium_head: '高級工具', premium_head_sub: '下載 → 雙擊 → 直接用。一次購買。',
     work_blog_head: '職場部落格', work_blog_sub: '辦公效率 · 職場心得 · 獨立開發',
@@ -1244,6 +1215,7 @@ function setLang(l) {
   applyI18n();
   renderToolCards();
   renderCompactTools();
+  renderCloudTools();
   renderScriptCards();
   renderShop();
   if (document.getElementById('page-tool').style.display !== 'none') renderToolContent(window._currentTool);
@@ -1278,6 +1250,101 @@ function renderCompactTools() {
   });
   var el = document.getElementById('freeToolGrid');
   if (el) el.innerHTML = html;
+}
+
+// ☁️ Cloud / backend tools data (needs server)
+var _CLOUD_TOOLS = [
+  {id:'word2pdf', icon:'📄➡️📕', act:'panel',
+    name:{en:'Word → PDF', zh:'Word → PDF'},
+    scene:{en:'Report archiving, contract PDF', zh:'报告归档、合同转PDF、文档标准化'},
+    usage:{en:'Upload .docx → LibreOffice → download PDF', zh:'上传 .docx → 服务器转换 → 下载 PDF'}},
+  {id:'excel2pdf', icon:'📊➡️📕', act:'panel',
+    name:{en:'Excel → PDF', zh:'Excel → PDF'},
+    scene:{en:'Spreadsheet export, finance archive', zh:'表格报表导出、财务表归档'},
+    usage:{en:'Upload .xls/.xlsx → convert → download PDF', zh:'上传 .xls/.xlsx → 转换 → 下载 PDF'}},
+  {id:'excel2csv', icon:'📊➡️📄', act:'panel',
+    name:{en:'Excel → CSV', zh:'Excel → CSV'},
+    scene:{en:'Data cleaning, cross-system import', zh:'数据清洗、跨系统导入'},
+    usage:{en:'Upload spreadsheet → extract CSV', zh:'上传表格 → 提取为 CSV'}},
+  {id:'ppt2pdf', icon:'📽️➡️📕', act:'panel',
+    name:{en:'PPT → PDF', zh:'PPT → PDF'},
+    scene:{en:'Slides archiving & sharing', zh:'演示文稿归档、打印分享'},
+    usage:{en:'Upload .ppt/.pptx → convert → PDF', zh:'上传 .ppt/.pptx → 转换 → PDF'}},
+  {id:'html2pdf', icon:'🌐➡️📕', act:'panel',
+    name:{en:'HTML → PDF', zh:'HTML → PDF'},
+    scene:{en:'Webpage archive, doc generation', zh:'网页存档、文档生成'},
+    usage:{en:'Upload .html → convert → PDF', zh:'上传 .html → 转换 → PDF'}},
+  {id:'pdf2excel', icon:'📕➡️📊', act:'panel',
+    name:{en:'PDF → Excel', zh:'PDF → Excel'},
+    scene:{en:'Extract tables for analysis', zh:'提取表格数据、数据分析'},
+    usage:{en:'Upload .pdf → extract tables → .xlsx', zh:'上传 .pdf → 提取表格 → 下载 xlsx'}},
+  {id:'filecheck', icon:'📁', act:'page', link:'/filecheck.html',
+    name:{en:'File ↔ Excel Check', zh:'文件名核对'},
+    scene:{en:'Batch cross-check files vs spreadsheet', zh:'文件与台账批量核对、缺失排查'},
+    usage:{en:'Upload Excel + folder → compare → report', zh:'上传 Excel + 文件夹 → 比对 → 导出报告'}},
+  {id:'wordreplace', icon:'📝', act:'page', link:'/wordreplace.html',
+    name:{en:'Word Batch Replace', zh:'Word 批量替换'},
+    scene:{en:'Contract/template placeholder fill', zh:'合同/模板批量套字、占位符填充'},
+    usage:{en:'Upload .docx + mapping table → replace', zh:'上传 .docx + 映射表 → 批量替换'}},
+  {id:'excelfill', icon:'📋', act:'page', link:'/excelfill.html',
+    name:{en:'Excel → Word Fill', zh:'Excel 填充 Word'},
+    scene:{en:'Generate Word docs from Excel rows', zh:'按 Excel 数据批量生成 Word 文档'},
+    usage:{en:'Upload template + data → generate per row', zh:'上传模板 + 数据表 → 逐行生成'}},
+  {id:'split', icon:'✂️', act:'page', link:'/split.html',
+    name:{en:'Excel Split', zh:'Excel 拆分'},
+    scene:{en:'Split big table by column', zh:'大表按列拆分、分部门下发'},
+    usage:{en:'Upload table → split by column → zip', zh:'上传表格 → 按列拆分 → 打包下载'}},
+  {id:'rename', icon:'🏷️', act:'page', link:'/rename.html',
+    name:{en:'Batch Rename', zh:'批量重命名'},
+    scene:{en:'Rename files by list', zh:'文件批量改名、按清单重命名'},
+    usage:{en:'Upload files + list → rename', zh:'上传文件/清单 → 批量重命名'}},
+  {id:'exceldiff', icon:'🔍', act:'page', link:'/exceldiff.html',
+    name:{en:'Excel Compare', zh:'Excel 对比'},
+    scene:{en:'Diff two spreadsheets', zh:'两表差异对比、版本核对'},
+    usage:{en:'Upload 2 tables → highlight diff', zh:'上传两个表格 → 高亮差异'}},
+  {id:'merge', icon:'➕', act:'page', link:'/merge.html',
+    name:{en:'Merge Tables', zh:'合并表格'},
+    scene:{en:'Combine multiple tables', zh:'多表合并、汇总数据'},
+    usage:{en:'Upload multiple tables → merge one', zh:'上传多个表格 → 合并成一个'}},
+  {id:'deduppage', icon:'🧹', act:'page', link:'/dedup.html',
+    name:{en:'Dedup Rows', zh:'按列去重'},
+    scene:{en:'Remove duplicate rows', zh:'数据清洗、去重复行'},
+    usage:{en:'Upload table → dedup by column', zh:'上传表格 → 按列去重'}},
+  {id:'dedup', icon:'🔍🧹', act:'panel',
+    name:{en:'Duplicate Finder', zh:'重复文件查找'},
+    scene:{en:'Find duplicate files', zh:'找出重复文件、清理磁盘'},
+    usage:{en:'Upload .zip → detect duplicates', zh:'上传 zip → 检测重复文件'}},
+  {id:'images', icon:'🖼️', act:'panel',
+    name:{en:'Image Lister', zh:'图片列表提取'},
+    scene:{en:'List all images in folders', zh:'提取文件夹所有图片清单'},
+    usage:{en:'Upload .zip → list images', zh:'上传 zip → 列出全部图片'}}
+];
+function openOnlinePanel() {
+  var d = document.getElementById('onlineDetail');
+  if (d) { d.open = true; d.scrollIntoView({behavior:'smooth'}); }
+}
+function renderCloudTools() {
+  var grid = document.getElementById('cloudToolGrid');
+  if (!grid) return;
+  var zh = (lang === 'zh-CN' || lang === 'zh-TW');
+  var html = '';
+  _CLOUD_TOOLS.forEach(function(t){
+    var name = zh ? t.name.zh : t.name.en;
+    var scene = zh ? t.scene.zh : t.scene.en;
+    var usage = zh ? t.usage.zh : t.usage.en;
+    var label = zh ? '云端' : 'Cloud';
+    var sceneLabel = zh ? '场景' : 'Scene';
+    var usageLabel = zh ? '用法' : 'How';
+    var cta = zh ? '立即使用' : 'Use now';
+    var onclick = t.act === 'panel' ? "openOnlinePanel()" : "location.href='"+t.link+"'";
+    html += '<div class="cloud-tool-card" onclick="'+onclick+'">'+
+      '<div class="cloud-tool-head"><span class="c-icon">'+t.icon+'</span><span class="c-name">'+name+'</span><span class="c-badge">☁️ '+label+'</span></div>'+
+      '<div class="cloud-tool-meta"><span class="meta-label">🎯 '+sceneLabel+'：</span>'+scene+'</div>'+
+      '<div class="cloud-tool-meta"><span class="meta-label">📖 '+usageLabel+'：</span>'+usage+'</div>'+
+      '<div class="cloud-tool-cta">'+cta+' →</div>'+
+      '</div>';
+  });
+  grid.innerHTML = html;
 }
 
 // Category tabs for Apps & Tools
