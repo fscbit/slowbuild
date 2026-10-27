@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 556446,
+    "stars": 556657,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-26T22:56:20Z"
+    "updated": "2026-10-27T22:52:15Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 525154,
+    "stars": 525714,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-26T22:59:58Z"
+    "updated": "2026-10-27T22:52:10Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 492425,
+    "stars": 492698,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-26T22:39:07Z"
+    "updated": "2026-10-27T22:55:46Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 457985,
+    "stars": 458049,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-26T22:51:52Z"
+    "updated": "2026-10-27T22:17:15Z"
   },
   {
     "name": "EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 400199,
+    "stars": 400300,
     "language": "Python",
     "topics": [
       "books",
@@ -82,6 +82,158 @@
       "resource"
     ],
     "source": "hot",
-    "updated": "2026-10-26T22:52:56Z"
+    "updated": "2026-10-27T22:48:23Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 60973,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-10-27T22:27:01Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 44873,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-10-27T22:28:34Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44558,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-10-27T21:30:39Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 41712,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-10-27T22:42:44Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 41017,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-10-27T22:14:41Z"
+  },
+  {
+    "name": "autonomous-ai/lampOS",
+    "description": "The open-source operating system for physical AI.",
+    "url": "https://github.com/autonomous-ai/lampOS",
+    "homepage": "www.autonomous.ai/lamp",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "agentic-ai",
+      "ai-agents",
+      "claude-code",
+      "embedded",
+      "llm"
+    ],
+    "source": "new",
+    "updated": "2026-10-27T09:40:19Z"
+  },
+  {
+    "name": "zwc456baby/my-tv-webview",
+    "description": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
+    "url": "https://github.com/zwc456baby/my-tv-webview",
+    "homepage": "",
+    "stars": 500,
+    "language": "Kotlin",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-27T17:17:33Z"
+  },
+  {
+    "name": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
+    "description": "Turn any agent into a life science expert with NVIDIA BioNeMo skills.",
+    "url": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-27T16:02:07Z"
+  },
+  {
+    "name": "zordhalo/runs-on.dev",
+    "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
+    "url": "https://github.com/zordhalo/runs-on.dev",
+    "homepage": "https://runs-on.dev",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "cloudflare",
+      "dev",
+      "developer",
+      "dns",
+      "domains"
+    ],
+    "source": "new",
+    "updated": "2026-10-27T22:15:59Z"
+  },
+  {
+    "name": "Jakubantalik/metal-fx",
+    "description": "Animated WebGL liquid-metal effect for React buttons and UI components",
+    "url": "https://github.com/Jakubantalik/metal-fx",
+    "homepage": "https://metal.jakubantalik.com",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-27T19:52:47Z"
   }
 ]

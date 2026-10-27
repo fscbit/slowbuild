@@ -5440,6 +5440,204 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 60973,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐60973)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐60973)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 60973+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 60973+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44558,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44558)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44558)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44558+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44558+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41712,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41712)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41712)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41712+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41712+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41017,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41017)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41017)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41017+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41017+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-autonomous-ai-lampos",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/autonomous-ai/lampOS",
+    "github": "autonomous-ai/lampOS",
+    "github_stars": 500,
+    "name": {
+      "en": "autonomous-ai/lampOS",
+      "zh-CN": "autonomous-ai/lampOS (GitHub ⭐500)",
+      "zh-TW": "autonomous-ai/lampOS (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "The open-source operating system for physical AI.",
+      "zh-CN": "The open-source operating system for physical AI. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "The open-source operating system for physical AI. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-zwc456baby-my-tv-webview",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/zwc456baby/my-tv-webview",
+    "github": "zwc456baby/my-tv-webview",
+    "github_stars": 500,
+    "name": {
+      "en": "zwc456baby/my-tv-webview",
+      "zh-CN": "zwc456baby/my-tv-webview (GitHub ⭐500)",
+      "zh-TW": "zwc456baby/my-tv-webview (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
+      "zh-CN": "我的电视 TV直播软件，极简页面支持收看国内电视直播 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "我的电视 TV直播软件，极简页面支持收看国内电视直播 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nvidia-bionemo-bionemo-agent-t",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
+    "github": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
+    "github_stars": 500,
+    "name": {
+      "en": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
+      "zh-CN": "NVIDIA-BioNeMo/bionemo-agent-toolkit (GitHub ⭐500)",
+      "zh-TW": "NVIDIA-BioNeMo/bionemo-agent-toolkit (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Turn any agent into a life science expert with NVIDIA BioNeMo skills.",
+      "zh-CN": "Turn any agent into a life science expert with NVIDIA BioNeMo skills. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Turn any agent into a life science expert with NVIDIA BioNeMo skills. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-zordhalo-runs-ondev",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/zordhalo/runs-on.dev",
+    "github": "zordhalo/runs-on.dev",
+    "github_stars": 500,
+    "name": {
+      "en": "zordhalo/runs-on.dev",
+      "zh-CN": "zordhalo/runs-on.dev (GitHub ⭐500)",
+      "zh-TW": "zordhalo/runs-on.dev (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
+      "zh-CN": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jakubantalik-metal-fx",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Jakubantalik/metal-fx",
+    "github": "Jakubantalik/metal-fx",
+    "github_stars": 500,
+    "name": {
+      "en": "Jakubantalik/metal-fx",
+      "zh-CN": "Jakubantalik/metal-fx (GitHub ⭐500)",
+      "zh-TW": "Jakubantalik/metal-fx (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Animated WebGL liquid-metal effect for React buttons and UI components",
+      "zh-CN": "Animated WebGL liquid-metal effect for React buttons and UI components | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Animated WebGL liquid-metal effect for React buttons and UI components | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5567,204 +5765,6 @@
       "en": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall.",
       "zh-CN": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 开源项目",
       "zh-TW": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-vecszn-polystrata",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/VecSzn/PolyStrata",
-    "github": "VecSzn/PolyStrata",
-    "github_stars": 500,
-    "name": {
-      "en": "VecSzn/PolyStrata",
-      "zh-CN": "VecSzn/PolyStrata (GitHub ⭐500)",
-      "zh-TW": "VecSzn/PolyStrata (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4,",
-      "zh-CN": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-raymondchins-bridgeplay",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/raymondchins/Bridgeplay",
-    "github": "raymondchins/Bridgeplay",
-    "github_stars": 500,
-    "name": {
-      "en": "raymondchins/Bridgeplay",
-      "zh-CN": "raymondchins/Bridgeplay (GitHub ⭐500)",
-      "zh-TW": "raymondchins/Bridgeplay (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
-      "zh-CN": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-erictechpro-super-board",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/EricTechPro/super-board",
-    "github": "EricTechPro/super-board",
-    "github_stars": 500,
-    "name": {
-      "en": "EricTechPro/super-board",
-      "zh-CN": "EricTechPro/super-board (GitHub ⭐500)",
-      "zh-TW": "EricTechPro/super-board (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install.",
-      "zh-CN": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Autonomous GitHub Project build → QA → review loop for Claude Code. One-line install. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 457789,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐457789)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 457789+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44847,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44847)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44847)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44847+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-appica-dev-appica-ui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/appica-dev/appica-ui",
-    "github": "appica-dev/appica-ui",
-    "github_stars": 500,
-    "name": {
-      "en": "appica-dev/appica-ui",
-      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
-      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nanako0129-syrtis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/Nanako0129/syrtis",
-    "github": "Nanako0129/syrtis",
-    "github_stars": 500,
-    "name": {
-      "en": "Nanako0129/syrtis",
-      "zh-CN": "Nanako0129/syrtis (GitHub ⭐500)",
-      "zh-TW": "Nanako0129/syrtis (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode",
-      "zh-CN": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 开源项目",
-      "zh-TW": "AI token usage & quota monitor for the macOS menu bar — native Swift, Liquid Glass, 3D contribution graph. Tracks Claude Code, Codex, Cursor, OpenCode | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-chiefgyk3d-clouds-against-huma",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/ChiefGyk3D/Clouds-Against-Humanity",
-    "github": "ChiefGyk3D/Clouds-Against-Humanity",
-    "github_stars": 500,
-    "name": {
-      "en": "ChiefGyk3D/Clouds-Against-Humanity",
-      "zh-CN": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)",
-      "zh-TW": "ChiefGyk3D/Clouds-Against-Humanity (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up.",
-      "zh-CN": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Learn cloud security by building it! An open-source homelab teaching Zero Trust, DevSecOps, IaC, and cloud architecture from the ground up. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-pikapika260214-rw-consulting-p",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/Pikapika260214/rw-consulting-ppt",
-    "github": "Pikapika260214/rw-consulting-ppt",
-    "github_stars": 499,
-    "name": {
-      "en": "Pikapika260214/rw-consulting-ppt",
-      "zh-CN": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)",
-      "zh-TW": "Pikapika260214/rw-consulting-ppt (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "Consulting deck skill with editable options for Codex",
-      "zh-CN": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 开源项目",
-      "zh-TW": "Consulting deck skill with editable options for Codex | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
