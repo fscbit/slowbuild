@@ -1254,9 +1254,41 @@ function renderCompactTools() {
 
 // ☁️ Cloud / backend tools data (needs server)
 var _CLOUD_TOOLS = [
+  {id:'wordreplace', icon:'📝', act:'page', link:'/wordreplace.html',
+    name:{en:'Word Batch Replace', zh:'Word 批量替换'},
+    scene:{en:'Contracts, notices, certificates — swap placeholders with real data', zh:'合同/通知书/证书：把模板里的姓名、日期、金额批量换成真实数据'},
+    usage:{en:'Upload .docx template + data → auto replace → download', zh:'上传 Word 模板 + 数据表 → 自动替换占位符 → 下载成品'}},
+  {id:'excelfill', icon:'📋', act:'page', link:'/excelfill.html',
+    name:{en:'Excel → Word Fill', zh:'Excel 批量生成 Word'},
+    scene:{en:'Generate one Word per row: certificates, invitations, badges', zh:'按名单批量出文件：证书、邀请函、工牌、通知书，一行一份 Word'},
+    usage:{en:'Upload template + Excel → generate per row', zh:'上传模板 + Excel 名单 → 逐行生成独立 Word 文档'}},
+  {id:'filecheck', icon:'📁', act:'page', link:'/filecheck.html',
+    name:{en:'File ↔ Excel Check', zh:'文件名核对'},
+    scene:{en:'Cross-check files against a checklist — find missing & extra', zh:'交文件前核对：照片/发票/合同和清单对不对得上，一键找缺失、多余的'},
+    usage:{en:'Upload Excel + folder → compare → report', zh:'上传清单 + 文件夹 → 自动比对 → 导出缺失/多余报告'}},
+  {id:'split', icon:'✂️', act:'page', link:'/split.html',
+    name:{en:'Excel Split', zh:'Excel 拆分'},
+    scene:{en:'Split one big table by column — by city, department, month', zh:'一张大表按列拆分：按城市/部门/月份拆成多份，分给不同人'},
+    usage:{en:'Upload table → split by column → download zip', zh:'上传表格 → 选列拆分 → 打包下载多个文件'}},
+  {id:'rename', icon:'🏷️', act:'page', link:'/rename.html',
+    name:{en:'Batch Rename', zh:'批量重命名'},
+    scene:{en:'Rename files by a list — photos, product images, invoices', zh:'按清单批量改文件名：照片按编号、产品图按 SKU、发票按单号'},
+    usage:{en:'Upload files + list → rename', zh:'上传文件 + 对照清单 → 一键批量改名'}},
+  {id:'exceldiff', icon:'🔍', act:'page', link:'/exceldiff.html',
+    name:{en:'Excel Compare', zh:'Excel 对比'},
+    scene:{en:'Diff two versions of a table — see what changed at a glance', zh:'两个版本表格对比：一眼看出改了哪些行、加了哪些数据'},
+    usage:{en:'Upload 2 tables → highlight differences', zh:'上传新旧两个表格 → 高亮差异行'}},
+  {id:'merge', icon:'➕', act:'page', link:'/merge.html',
+    name:{en:'Merge Tables', zh:'合并表格'},
+    scene:{en:'Combine multiple sheets into one master table', zh:'多份报表合并：把各门店/各部门的表合成一张总表'},
+    usage:{en:'Upload multiple tables → merge into one', zh:'上传多个表格 → 自动合并成一张'}},
+  {id:'deduppage', icon:'🧹', act:'page', link:'/dedup.html',
+    name:{en:'Dedup Rows', zh:'按列去重'},
+    scene:{en:'Clean duplicate rows from name/phone lists', zh:'名单去重：手机号、邮箱、客户名单一键去重复'},
+    usage:{en:'Upload table → dedup by column', zh:'上传表格 → 按列去重'}},
   {id:'word2pdf', icon:'📄➡️📕', act:'panel',
     name:{en:'Word → PDF', zh:'Word → PDF'},
-    scene:{en:'Report archiving, contract PDF', zh:'报告归档、合同转PDF、文档标准化'},
+    scene:{en:'Report archiving, contract PDF', zh:'报告归档、合同转 PDF、文档标准化'},
     usage:{en:'Upload .docx → LibreOffice → download PDF', zh:'上传 .docx → 服务器转换 → 下载 PDF'}},
   {id:'excel2pdf', icon:'📊➡️📕', act:'panel',
     name:{en:'Excel → PDF', zh:'Excel → PDF'},
@@ -1278,38 +1310,6 @@ var _CLOUD_TOOLS = [
     name:{en:'PDF → Excel', zh:'PDF → Excel'},
     scene:{en:'Extract tables for analysis', zh:'提取表格数据、数据分析'},
     usage:{en:'Upload .pdf → extract tables → .xlsx', zh:'上传 .pdf → 提取表格 → 下载 xlsx'}},
-  {id:'filecheck', icon:'📁', act:'page', link:'/filecheck.html',
-    name:{en:'File ↔ Excel Check', zh:'文件名核对'},
-    scene:{en:'Batch cross-check files vs spreadsheet', zh:'文件与台账批量核对、缺失排查'},
-    usage:{en:'Upload Excel + folder → compare → report', zh:'上传 Excel + 文件夹 → 比对 → 导出报告'}},
-  {id:'wordreplace', icon:'📝', act:'page', link:'/wordreplace.html',
-    name:{en:'Word Batch Replace', zh:'Word 批量替换'},
-    scene:{en:'Contract/template placeholder fill', zh:'合同/模板批量套字、占位符填充'},
-    usage:{en:'Upload .docx + mapping table → replace', zh:'上传 .docx + 映射表 → 批量替换'}},
-  {id:'excelfill', icon:'📋', act:'page', link:'/excelfill.html',
-    name:{en:'Excel → Word Fill', zh:'Excel 填充 Word'},
-    scene:{en:'Generate Word docs from Excel rows', zh:'按 Excel 数据批量生成 Word 文档'},
-    usage:{en:'Upload template + data → generate per row', zh:'上传模板 + 数据表 → 逐行生成'}},
-  {id:'split', icon:'✂️', act:'page', link:'/split.html',
-    name:{en:'Excel Split', zh:'Excel 拆分'},
-    scene:{en:'Split big table by column', zh:'大表按列拆分、分部门下发'},
-    usage:{en:'Upload table → split by column → zip', zh:'上传表格 → 按列拆分 → 打包下载'}},
-  {id:'rename', icon:'🏷️', act:'page', link:'/rename.html',
-    name:{en:'Batch Rename', zh:'批量重命名'},
-    scene:{en:'Rename files by list', zh:'文件批量改名、按清单重命名'},
-    usage:{en:'Upload files + list → rename', zh:'上传文件/清单 → 批量重命名'}},
-  {id:'exceldiff', icon:'🔍', act:'page', link:'/exceldiff.html',
-    name:{en:'Excel Compare', zh:'Excel 对比'},
-    scene:{en:'Diff two spreadsheets', zh:'两表差异对比、版本核对'},
-    usage:{en:'Upload 2 tables → highlight diff', zh:'上传两个表格 → 高亮差异'}},
-  {id:'merge', icon:'➕', act:'page', link:'/merge.html',
-    name:{en:'Merge Tables', zh:'合并表格'},
-    scene:{en:'Combine multiple tables', zh:'多表合并、汇总数据'},
-    usage:{en:'Upload multiple tables → merge one', zh:'上传多个表格 → 合并成一个'}},
-  {id:'deduppage', icon:'🧹', act:'page', link:'/dedup.html',
-    name:{en:'Dedup Rows', zh:'按列去重'},
-    scene:{en:'Remove duplicate rows', zh:'数据清洗、去重复行'},
-    usage:{en:'Upload table → dedup by column', zh:'上传表格 → 按列去重'}},
   {id:'dedup', icon:'🔍🧹', act:'panel',
     name:{en:'Duplicate Finder', zh:'重复文件查找'},
     scene:{en:'Find duplicate files', zh:'找出重复文件、清理磁盘'},
@@ -3087,7 +3087,16 @@ function copyPalette(){if(window._palette)navigator.clipboard.writeText(window._
 // ═══════════════════════════════════════════
 var SIDEBAR = {
   'en': [
-    {cat:'📝 Text', open:false, items:[
+        {cat:'⭐ Common Tools', open:true, items:[
+      {id:'wordreplace',icon:'📝',label:'Word Batch Replace',href:'/wordreplace.html'},
+      {id:'excelfill',icon:'📋',label:'Excel → Word',href:'/excelfill.html'},
+      {id:'filecheck',icon:'📁',label:'File ↔ Excel Check',href:'/filecheck.html'},
+      {id:'split',icon:'✂️',label:'Excel Split',href:'/split.html'},
+      {id:'merge',icon:'➕',label:'Merge Tables',href:'/merge.html'},
+      {id:'exceldiff',icon:'🔍',label:'Excel Compare',href:'/exceldiff.html'},
+      {id:'deduppage',icon:'🧹',label:'Dedup Rows',href:'/dedup.html'}
+    ]},
+{cat:'📝 Text', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON Formatter'},
       {id:'regex',icon:'🧵',label:'Regex Tester'},
       {id:'count',icon:'📊',label:'Word Counter'},
@@ -3139,7 +3148,16 @@ var SIDEBAR = {
     {type:'link',id:'about',icon:'📄',label:'About',action:function(){showPage('about')}}
   ],
   'zh-CN': [
-    {cat:'📝 文本工具', open:false, items:[
+        {cat:'⭐ 常用工具', open:true, items:[
+      {id:'wordreplace',icon:'📝',label:'Word 批量替换',href:'/wordreplace.html'},
+      {id:'excelfill',icon:'📋',label:'Excel 批量生成 Word',href:'/excelfill.html'},
+      {id:'filecheck',icon:'📁',label:'文件名核对',href:'/filecheck.html'},
+      {id:'split',icon:'✂️',label:'Excel 拆分',href:'/split.html'},
+      {id:'merge',icon:'➕',label:'合并表格',href:'/merge.html'},
+      {id:'exceldiff',icon:'🔍',label:'Excel 对比',href:'/exceldiff.html'},
+      {id:'deduppage',icon:'🧹',label:'按列去重',href:'/dedup.html'}
+    ]},
+{cat:'📝 文本工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
       {id:'regex',icon:'🧵',label:'正则表达式测试'},
       {id:'count',icon:'📊',label:'字数统计'},
@@ -3192,7 +3210,16 @@ var SIDEBAR = {
     {type:'link',id:'about',icon:'📄',label:'关于',action:function(){showPage('about')}}
   ],
   'zh-TW': [
-    {cat:'📝 文字工具', open:false, items:[
+        {cat:'⭐ 常用工具', open:true, items:[
+      {id:'wordreplace',icon:'📝',label:'Word 批次替換',href:'/wordreplace.html'},
+      {id:'excelfill',icon:'📋',label:'Excel 批次生成 Word',href:'/excelfill.html'},
+      {id:'filecheck',icon:'📁',label:'檔名核對',href:'/filecheck.html'},
+      {id:'split',icon:'✂️',label:'Excel 拆分',href:'/split.html'},
+      {id:'merge',icon:'➕',label:'合併表格',href:'/merge.html'},
+      {id:'exceldiff',icon:'🔍',label:'Excel 對比',href:'/exceldiff.html'},
+      {id:'deduppage',icon:'🧹',label:'按列去重',href:'/dedup.html'}
+    ]},
+{cat:'📝 文字工具', open:false, items:[
       {id:'json',icon:'{ }',label:'JSON 格式化'},
       {id:'regex',icon:'🧵',label:'正則表達式測試'},
       {id:'count',icon:'📊',label:'字數統計'},
@@ -3261,7 +3288,11 @@ function renderSidebar(){
       section.cat+'</div>';
     h += '<div class="sidebar-items'+(section.open===false?' hidden':'')+'" id="'+catId+'-items">';
     section.items.forEach(function(item){
-      h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
+      if(item.href){
+        h += '<a class="sidebar-link" href="'+item.href+'" onclick="closeSidebar();highlightSidebar(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
+      } else {
+        h += '<a class="sidebar-link" onclick="closeSidebar();highlightSidebar(\''+item.id+'\');showTool(\''+item.id+'\')" id="sblink-'+item.id+'"><span class="sicon">'+item.icon+'</span>'+item.label+'</a>';
+      }
     });
     h += '</div>';
   });
