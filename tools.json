@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 556657,
+    "stars": 556929,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-27T22:52:15Z"
+    "updated": "2026-10-28T22:46:27Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 525714,
+    "stars": 526295,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-27T22:52:10Z"
+    "updated": "2026-10-28T22:55:13Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 492698,
+    "stars": 493002,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-27T22:55:46Z"
+    "updated": "2026-10-28T22:59:59Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458049,
+    "stars": 458126,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,31 +65,31 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-27T22:17:15Z"
+    "updated": "2026-10-28T22:49:26Z"
   },
   {
-    "name": "EbookFoundation/free-programming-books",
-    "description": ":books: Freely available programming books",
-    "url": "https://github.com/EbookFoundation/free-programming-books",
-    "homepage": "https://ebookfoundation.github.io/free-programming-books/",
-    "stars": 400300,
-    "language": "Python",
+    "name": "morluto/rea",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "homepage": "https://rea.tools",
+    "stars": 402278,
+    "language": "TypeScript",
     "topics": [
-      "books",
-      "education",
-      "hacktoberfest",
-      "list",
-      "resource"
+      "agent-skills",
+      "ai-agents",
+      "binary-analysis",
+      "claude-code",
+      "cli"
     ],
     "source": "hot",
-    "updated": "2026-10-27T22:48:23Z"
+    "updated": "2026-10-28T22:59:03Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60973,
+    "stars": 60994,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-27T22:27:01Z"
+    "updated": "2026-10-28T22:28:30Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44873,
+    "stars": 44887,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-27T22:28:34Z"
+    "updated": "2026-10-28T21:35:12Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44558,
+    "stars": 44563,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-27T21:30:39Z"
+    "updated": "2026-10-28T14:21:43Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41712,
+    "stars": 41720,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-27T22:42:44Z"
+    "updated": "2026-10-28T17:48:38Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41017,
+    "stars": 41045,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,63 +167,59 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-27T22:14:41Z"
+    "updated": "2026-10-28T22:09:12Z"
   },
   {
-    "name": "autonomous-ai/lampOS",
-    "description": "The open-source operating system for physical AI.",
-    "url": "https://github.com/autonomous-ai/lampOS",
-    "homepage": "www.autonomous.ai/lamp",
+    "name": "Calcium-Ion/AstrLink",
+    "description": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy",
+    "url": "https://github.com/Calcium-Ion/AstrLink",
+    "homepage": "https://astrlink.com",
     "stars": 500,
-    "language": "Python",
+    "language": "Go",
     "topics": [
-      "agentic-ai",
-      "ai-agents",
-      "claude-code",
-      "embedded",
-      "llm"
+      "ai-gateway"
     ],
     "source": "new",
-    "updated": "2026-10-27T09:40:19Z"
+    "updated": "2026-10-28T19:07:15Z"
   },
   {
-    "name": "zwc456baby/my-tv-webview",
-    "description": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
-    "url": "https://github.com/zwc456baby/my-tv-webview",
-    "homepage": "",
-    "stars": 500,
-    "language": "Kotlin",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-27T17:17:33Z"
-  },
-  {
-    "name": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
-    "description": "Turn any agent into a life science expert with NVIDIA BioNeMo skills.",
-    "url": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
-    "homepage": "",
+    "name": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+    "description": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold",
+    "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+    "homepage": "https://mia-ai.net",
     "stars": 500,
     "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-27T16:02:07Z"
+    "updated": "2026-10-28T12:25:45Z"
   },
   {
-    "name": "zordhalo/runs-on.dev",
-    "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
-    "url": "https://github.com/zordhalo/runs-on.dev",
-    "homepage": "https://runs-on.dev",
+    "name": "HELPMEEADICE/BANDORI-PET-REV",
+    "description": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
+    "url": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+    "homepage": "",
     "stars": 500,
-    "language": "JavaScript",
+    "language": "Python",
     "topics": [
-      "cloudflare",
-      "dev",
-      "developer",
-      "dns",
-      "domains"
+      "ai-agent",
+      "ai-emotion",
+      "anime",
+      "bandori",
+      "bang-dream"
     ],
     "source": "new",
-    "updated": "2026-10-27T22:15:59Z"
+    "updated": "2026-10-28T15:51:58Z"
+  },
+  {
+    "name": "Jetsku/KytyPS5",
+    "description": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases.",
+    "url": "https://github.com/Jetsku/KytyPS5",
+    "homepage": "",
+    "stars": 500,
+    "language": "C++",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-28T22:27:44Z"
   },
   {
     "name": "Jakubantalik/metal-fx",

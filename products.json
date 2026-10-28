@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 458126,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458126)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458126)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458126+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458126+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 402278,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐402278)",
+      "zh-TW": "morluto/rea (GitHub ⭐402278)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 402278+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 402278+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44887,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44887)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44887)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44887+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44887+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-calcium-ion-astrlink",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Calcium-Ion/AstrLink",
+    "github": "Calcium-Ion/AstrLink",
+    "github_stars": 500,
+    "name": {
+      "en": "Calcium-Ion/AstrLink",
+      "zh-CN": "Calcium-Ion/AstrLink (GitHub ⭐500)",
+      "zh-TW": "Calcium-Ion/AstrLink (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection.",
+      "zh-CN": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-miaai-lab-glm-53-flash-exl3-2x",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+    "github": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+    "github_stars": 500,
+    "name": {
+      "en": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+      "zh-CN": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold (GitHub ⭐500)",
+      "zh-TW": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold",
+      "zh-CN": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold | GitHub 500+ Stars 开源项目",
+      "zh-TW": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-helpmeeadice-bandori-pet-rev",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+    "github": "HELPMEEADICE/BANDORI-PET-REV",
+    "github_stars": 500,
+    "name": {
+      "en": "HELPMEEADICE/BANDORI-PET-REV",
+      "zh-CN": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)",
+      "zh-TW": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
+      "zh-CN": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jetsku-kytyps5",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/Jetsku/KytyPS5",
+    "github": "Jetsku/KytyPS5",
+    "github_stars": 500,
+    "name": {
+      "en": "Jetsku/KytyPS5",
+      "zh-CN": "Jetsku/KytyPS5 (GitHub ⭐500)",
+      "zh-TW": "Jetsku/KytyPS5 (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases.",
+      "zh-CN": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
       "zh-CN": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 开源项目",
       "zh-TW": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jakubantalik-metal-fx",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Jakubantalik/metal-fx",
-    "github": "Jakubantalik/metal-fx",
-    "github_stars": 500,
-    "name": {
-      "en": "Jakubantalik/metal-fx",
-      "zh-CN": "Jakubantalik/metal-fx (GitHub ⭐500)",
-      "zh-TW": "Jakubantalik/metal-fx (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Animated WebGL liquid-metal effect for React buttons and UI components",
-      "zh-CN": "Animated WebGL liquid-metal effect for React buttons and UI components | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Animated WebGL liquid-metal effect for React buttons and UI components | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 556204,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐556204)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐556204)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 556204+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 556204+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 524645,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐524645)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐524645)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 524645+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 524645+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 492131,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐492131)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐492131)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 492131+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 492131+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ebookfoundation-free-programmi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/EbookFoundation/free-programming-books",
-    "github": "EbookFoundation/free-programming-books",
-    "github_stars": 400101,
-    "name": {
-      "en": "EbookFoundation/free-programming-books",
-      "zh-CN": "EbookFoundation/free-programming-books (GitHub ⭐400101)",
-      "zh-TW": "EbookFoundation/free-programming-books (GitHub ⭐400101)"
-    },
-    "desc": {
-      "en": ":books: Freely available programming books",
-      "zh-CN": ":books: Freely available programming books | GitHub 400101+ Stars 开源项目",
-      "zh-TW": ":books: Freely available programming books | GitHub 400101+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cluvexstudio-zedsecure",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/CluvexStudio/ZedSecure",
-    "github": "CluvexStudio/ZedSecure",
-    "github_stars": 500,
-    "name": {
-      "en": "CluvexStudio/ZedSecure",
-      "zh-CN": "CluvexStudio/ZedSecure (GitHub ⭐500)",
-      "zh-TW": "CluvexStudio/ZedSecure (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2",
-      "zh-CN": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Multi-core VPN client for Android and desktop: Xray, sing-box, Psiphon, Tor, DNS tunnels, WireGuard/AmneziaWG, OpenConnect, IKEv2 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jia-ethan-grok-keysmith",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Jia-Ethan/grok-keysmith",
-    "github": "Jia-Ethan/grok-keysmith",
-    "github_stars": 500,
-    "name": {
-      "en": "Jia-Ethan/grok-keysmith",
-      "zh-CN": "Jia-Ethan/grok-keysmith (GitHub ⭐500)",
-      "zh-TW": "Jia-Ethan/grok-keysmith (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall.",
-      "zh-CN": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
