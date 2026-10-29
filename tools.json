@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 556929,
+    "stars": 557359,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-28T22:46:27Z"
+    "updated": "2026-10-29T22:54:44Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 526295,
+    "stars": 526837,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-28T22:55:13Z"
+    "updated": "2026-10-29T22:56:35Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 493002,
+    "stars": 493258,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-28T22:59:59Z"
+    "updated": "2026-10-29T22:59:52Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458126,
+    "stars": 458191,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-28T22:49:26Z"
+    "updated": "2026-10-29T22:52:52Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 402278,
+    "stars": 407595,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +82,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-10-28T22:59:03Z"
+    "updated": "2026-10-29T23:00:01Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60994,
+    "stars": 60973,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-28T22:28:30Z"
+    "updated": "2026-10-29T21:49:47Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44887,
+    "stars": 44896,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-28T21:35:12Z"
+    "updated": "2026-10-29T22:16:40Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44563,
+    "stars": 44576,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-28T14:21:43Z"
+    "updated": "2026-10-29T22:08:21Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41720,
+    "stars": 41745,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-28T17:48:38Z"
+    "updated": "2026-10-29T22:57:27Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41045,
+    "stars": 41057,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,69 +167,79 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-28T22:09:12Z"
+    "updated": "2026-10-29T22:04:47Z"
   },
   {
-    "name": "Calcium-Ion/AstrLink",
-    "description": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy",
-    "url": "https://github.com/Calcium-Ion/AstrLink",
-    "homepage": "https://astrlink.com",
+    "name": "appica-dev/appica-ui",
+    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+    "url": "https://github.com/appica-dev/appica-ui",
+    "homepage": "https://appica.dev/ui",
     "stars": 500,
-    "language": "Go",
+    "language": "TypeScript",
     "topics": [
-      "ai-gateway"
+      "a11y",
+      "accessibility",
+      "base-ui",
+      "component-library",
+      "dark-mode"
     ],
     "source": "new",
-    "updated": "2026-10-28T19:07:15Z"
+    "updated": "2026-10-29T06:15:10Z"
   },
   {
-    "name": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
-    "description": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold",
-    "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
-    "homepage": "https://mia-ai.net",
-    "stars": 500,
-    "language": "Python",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-28T12:25:45Z"
-  },
-  {
-    "name": "HELPMEEADICE/BANDORI-PET-REV",
-    "description": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
-    "url": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+    "name": "zwc456baby/my-tv-webview",
+    "description": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
+    "url": "https://github.com/zwc456baby/my-tv-webview",
     "homepage": "",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "ai-agent",
-      "ai-emotion",
-      "anime",
-      "bandori",
-      "bang-dream"
-    ],
+    "language": "Kotlin",
+    "topics": [],
     "source": "new",
-    "updated": "2026-10-28T15:51:58Z"
+    "updated": "2026-10-29T15:00:22Z"
   },
   {
-    "name": "Jetsku/KytyPS5",
-    "description": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases.",
-    "url": "https://github.com/Jetsku/KytyPS5",
+    "name": "hopechen067/MapStage",
+    "description": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, pl",
+    "url": "https://github.com/hopechen067/MapStage",
+    "homepage": "https://hopechen067.github.io/MapStage/",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "agent-skill",
+      "antique-map",
+      "china",
+      "gis",
+      "historical-map"
+    ],
+    "source": "new",
+    "updated": "2026-10-29T16:17:29Z"
+  },
+  {
+    "name": "AIPMAndy/how-to-survive-unemployment",
+    "description": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook",
+    "url": "https://github.com/AIPMAndy/how-to-survive-unemployment",
+    "homepage": "https://aipmandy.github.io/how-to-survive-unemployment/",
+    "stars": 500,
+    "language": "HTML",
+    "topics": [
+      "career",
+      "career-guide",
+      "checklist",
+      "china",
+      "china-policy"
+    ],
+    "source": "new",
+    "updated": "2026-10-29T17:30:16Z"
+  },
+  {
+    "name": "1314521gjy/ninfer-fusion-kvmem",
+    "description": "",
+    "url": "https://github.com/1314521gjy/ninfer-fusion-kvmem",
     "homepage": "",
     "stars": 500,
     "language": "C++",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-28T22:27:44Z"
-  },
-  {
-    "name": "Jakubantalik/metal-fx",
-    "description": "Animated WebGL liquid-metal effect for React buttons and UI components",
-    "url": "https://github.com/Jakubantalik/metal-fx",
-    "homepage": "https://metal.jakubantalik.com",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-10-27T19:52:47Z"
+    "updated": "2026-10-29T22:20:44Z"
   }
 ]

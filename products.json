@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 557359,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐557359)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐557359)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 557359+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 557359+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 526837,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐526837)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐526837)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 526837+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 526837+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 493258,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐493258)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐493258)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 493258+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 493258+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 500,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hopechen067-mapstage",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/hopechen067/MapStage",
+    "github": "hopechen067/MapStage",
+    "github_stars": 500,
+    "name": {
+      "en": "hopechen067/MapStage",
+      "zh-CN": "hopechen067/MapStage (GitHub ⭐500)",
+      "zh-TW": "hopechen067/MapStage (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu",
+      "zh-CN": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu | GitHub 500+ Stars 开源项目",
+      "zh-TW": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aipmandy-how-to-survive-unempl",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/AIPMAndy/how-to-survive-unemployment",
+    "github": "AIPMAndy/how-to-survive-unemployment",
+    "github_stars": 500,
+    "name": {
+      "en": "AIPMAndy/how-to-survive-unemployment",
+      "zh-CN": "AIPMAndy/how-to-survive-unemployment (GitHub ⭐500)",
+      "zh-TW": "AIPMAndy/how-to-survive-unemployment (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook",
+      "zh-CN": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook | GitHub 500+ Stars 开源项目",
+      "zh-TW": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-1314521gjy-ninfer-fusion-kvmem",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/1314521gjy/ninfer-fusion-kvmem",
+    "github": "1314521gjy/ninfer-fusion-kvmem",
+    "github_stars": 500,
+    "name": {
+      "en": "1314521gjy/ninfer-fusion-kvmem",
+      "zh-CN": "1314521gjy/ninfer-fusion-kvmem (GitHub ⭐500)",
+      "zh-TW": "1314521gjy/ninfer-fusion-kvmem (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "1314521gjy/ninfer-fusion-kvmem - Open source tool",
+      "zh-CN": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A cat(1) clone with wings.",
       "zh-CN": "A cat(1) clone with wings. | GitHub 60973+ Stars 开源项目",
       "zh-TW": "A cat(1) clone with wings. | GitHub 60973+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44558,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44558)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44558)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44558+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44558+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41712,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41712)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41712)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41712+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41712+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41017,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41017)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41017)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41017+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41017+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-autonomous-ai-lampos",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/autonomous-ai/lampOS",
-    "github": "autonomous-ai/lampOS",
-    "github_stars": 500,
-    "name": {
-      "en": "autonomous-ai/lampOS",
-      "zh-CN": "autonomous-ai/lampOS (GitHub ⭐500)",
-      "zh-TW": "autonomous-ai/lampOS (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "The open-source operating system for physical AI.",
-      "zh-CN": "The open-source operating system for physical AI. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "The open-source operating system for physical AI. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zwc456baby-my-tv-webview",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/zwc456baby/my-tv-webview",
-    "github": "zwc456baby/my-tv-webview",
-    "github_stars": 500,
-    "name": {
-      "en": "zwc456baby/my-tv-webview",
-      "zh-CN": "zwc456baby/my-tv-webview (GitHub ⭐500)",
-      "zh-TW": "zwc456baby/my-tv-webview (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
-      "zh-CN": "我的电视 TV直播软件，极简页面支持收看国内电视直播 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "我的电视 TV直播软件，极简页面支持收看国内电视直播 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nvidia-bionemo-bionemo-agent-t",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit",
-    "github": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
-    "github_stars": 500,
-    "name": {
-      "en": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
-      "zh-CN": "NVIDIA-BioNeMo/bionemo-agent-toolkit (GitHub ⭐500)",
-      "zh-TW": "NVIDIA-BioNeMo/bionemo-agent-toolkit (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Turn any agent into a life science expert with NVIDIA BioNeMo skills.",
-      "zh-CN": "Turn any agent into a life science expert with NVIDIA BioNeMo skills. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Turn any agent into a life science expert with NVIDIA BioNeMo skills. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-zordhalo-runs-ondev",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/zordhalo/runs-on.dev",
-    "github": "zordhalo/runs-on.dev",
-    "github_stars": 500,
-    "name": {
-      "en": "zordhalo/runs-on.dev",
-      "zh-CN": "zordhalo/runs-on.dev (GitHub ⭐500)",
-      "zh-TW": "zordhalo/runs-on.dev (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
-      "zh-CN": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Grab your own cool 'runs-on.dev' subdomain to use for free forever. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
