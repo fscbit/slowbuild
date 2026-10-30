@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 557359,
+    "stars": 557634,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-29T22:54:44Z"
+    "updated": "2026-10-30T22:58:05Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 526837,
+    "stars": 527484,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-29T22:56:35Z"
+    "updated": "2026-10-30T22:58:56Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 493258,
+    "stars": 493543,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-29T22:59:52Z"
+    "updated": "2026-10-30T22:43:22Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458191,
+    "stars": 458246,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-29T22:52:52Z"
+    "updated": "2026-10-30T22:42:57Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 407595,
+    "stars": 412148,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +82,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-10-29T23:00:01Z"
+    "updated": "2026-10-30T22:59:59Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 60973,
+    "stars": 60987,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-29T21:49:47Z"
+    "updated": "2026-10-30T22:07:50Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44896,
+    "stars": 44909,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-29T22:16:40Z"
+    "updated": "2026-10-30T22:31:46Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44576,
+    "stars": 44587,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-29T22:08:21Z"
+    "updated": "2026-10-30T20:45:40Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41745,
+    "stars": 41772,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-29T22:57:27Z"
+    "updated": "2026-10-30T22:32:25Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41057,
+    "stars": 41070,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,79 +167,67 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-29T22:04:47Z"
+    "updated": "2026-10-30T22:26:28Z"
   },
   {
-    "name": "appica-dev/appica-ui",
-    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-    "url": "https://github.com/appica-dev/appica-ui",
-    "homepage": "https://appica.dev/ui",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "a11y",
-      "accessibility",
-      "base-ui",
-      "component-library",
-      "dark-mode"
-    ],
-    "source": "new",
-    "updated": "2026-10-29T06:15:10Z"
-  },
-  {
-    "name": "zwc456baby/my-tv-webview",
-    "description": "我的电视 TV直播软件，极简页面支持收看国内电视直播",
-    "url": "https://github.com/zwc456baby/my-tv-webview",
+    "name": "liuluhaixiu/DaVinci-AutoEdit-Agent",
+    "description": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill",
+    "url": "https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent",
     "homepage": "",
     "stars": 500,
-    "language": "Kotlin",
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-29T15:00:22Z"
+    "updated": "2026-10-30T07:10:39Z"
   },
   {
-    "name": "hopechen067/MapStage",
-    "description": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, pl",
-    "url": "https://github.com/hopechen067/MapStage",
-    "homepage": "https://hopechen067.github.io/MapStage/",
+    "name": "Glass-HQ/liquid-glass",
+    "description": "Liquid Glass materials for web and Electron, built with vgpu.",
+    "url": "https://github.com/Glass-HQ/liquid-glass",
+    "homepage": "https://liquid-glass.glassapp.dev",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-30T18:46:14Z"
+  },
+  {
+    "name": "OnlyTerp/opengrok",
+    "description": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof d",
+    "url": "https://github.com/OnlyTerp/opengrok",
+    "homepage": "https://github.com/OnlyTerp/opengrok#-quick-start",
     "stars": 500,
     "language": "JavaScript",
     "topics": [
-      "agent-skill",
-      "antique-map",
-      "china",
-      "gis",
-      "historical-map"
+      "ai-agents",
+      "grok",
+      "llm",
+      "model-router",
+      "openai-compatible"
     ],
     "source": "new",
-    "updated": "2026-10-29T16:17:29Z"
+    "updated": "2026-10-30T09:14:37Z"
   },
   {
-    "name": "AIPMAndy/how-to-survive-unemployment",
-    "description": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook",
-    "url": "https://github.com/AIPMAndy/how-to-survive-unemployment",
-    "homepage": "https://aipmandy.github.io/how-to-survive-unemployment/",
+    "name": "itechmeat/open-second-brain",
+    "description": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream p",
+    "url": "https://github.com/itechmeat/open-second-brain",
+    "homepage": "https://dark-factory.techmeat.dev",
     "stars": 500,
-    "language": "HTML",
-    "topics": [
-      "career",
-      "career-guide",
-      "checklist",
-      "china",
-      "china-policy"
-    ],
-    "source": "new",
-    "updated": "2026-10-29T17:30:16Z"
-  },
-  {
-    "name": "1314521gjy/ninfer-fusion-kvmem",
-    "description": "",
-    "url": "https://github.com/1314521gjy/ninfer-fusion-kvmem",
-    "homepage": "",
-    "stars": 500,
-    "language": "C++",
+    "language": "TypeScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-29T22:20:44Z"
+    "updated": "2026-10-30T16:17:58Z"
+  },
+  {
+    "name": "browser-use/open-duet",
+    "description": "Open Duet card feed: agents finish work, Magnus decides with one click",
+    "url": "https://github.com/browser-use/open-duet",
+    "homepage": "",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-10-30T17:20:25Z"
   }
 ]

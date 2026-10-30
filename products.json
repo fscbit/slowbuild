@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44587,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44587)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44587)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44587+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44587+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41772,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41772)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41772)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41772+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41772+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41070,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41070)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41070)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41070+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41070+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-liuluhaixiu-davinci-autoedit-a",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent",
+    "github": "liuluhaixiu/DaVinci-AutoEdit-Agent",
+    "github_stars": 500,
+    "name": {
+      "en": "liuluhaixiu/DaVinci-AutoEdit-Agent",
+      "zh-CN": "liuluhaixiu/DaVinci-AutoEdit-Agent (GitHub ⭐500)",
+      "zh-TW": "liuluhaixiu/DaVinci-AutoEdit-Agent (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill",
+      "zh-CN": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill | GitHub 500+ Stars 开源项目",
+      "zh-TW": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-glass-hq-liquid-glass",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Glass-HQ/liquid-glass",
+    "github": "Glass-HQ/liquid-glass",
+    "github_stars": 500,
+    "name": {
+      "en": "Glass-HQ/liquid-glass",
+      "zh-CN": "Glass-HQ/liquid-glass (GitHub ⭐500)",
+      "zh-TW": "Glass-HQ/liquid-glass (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Liquid Glass materials for web and Electron, built with vgpu.",
+      "zh-CN": "Liquid Glass materials for web and Electron, built with vgpu. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Liquid Glass materials for web and Electron, built with vgpu. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-onlyterp-opengrok",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/OnlyTerp/opengrok",
+    "github": "OnlyTerp/opengrok",
+    "github_stars": 500,
+    "name": {
+      "en": "OnlyTerp/opengrok",
+      "zh-CN": "OnlyTerp/opengrok (GitHub ⭐500)",
+      "zh-TW": "OnlyTerp/opengrok (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming",
+      "zh-CN": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-itechmeat-open-second-brain",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/itechmeat/open-second-brain",
+    "github": "itechmeat/open-second-brain",
+    "github_stars": 500,
+    "name": {
+      "en": "itechmeat/open-second-brain",
+      "zh-CN": "itechmeat/open-second-brain (GitHub ⭐500)",
+      "zh-TW": "itechmeat/open-second-brain (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections ",
+      "zh-CN": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-browser-use-open-duet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/browser-use/open-duet",
+    "github": "browser-use/open-duet",
+    "github_stars": 500,
+    "name": {
+      "en": "browser-use/open-duet",
+      "zh-CN": "browser-use/open-duet (GitHub ⭐500)",
+      "zh-TW": "browser-use/open-duet (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open Duet card feed: agents finish work, Magnus decides with one click",
+      "zh-CN": "Open Duet card feed: agents finish work, Magnus decides with one click | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open Duet card feed: agents finish work, Magnus decides with one click | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "1314521gjy/ninfer-fusion-kvmem - Open source tool",
       "zh-CN": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 开源项目",
       "zh-TW": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 458126,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458126)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458126)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458126+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458126+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 402278,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐402278)",
-      "zh-TW": "morluto/rea (GitHub ⭐402278)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 402278+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 402278+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44887,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44887)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44887)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44887+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44887+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-calcium-ion-astrlink",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Calcium-Ion/AstrLink",
-    "github": "Calcium-Ion/AstrLink",
-    "github_stars": 500,
-    "name": {
-      "en": "Calcium-Ion/AstrLink",
-      "zh-CN": "Calcium-Ion/AstrLink (GitHub ⭐500)",
-      "zh-TW": "Calcium-Ion/AstrLink (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection.",
-      "zh-CN": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A local AI gateway for AI agents, unifying your subscriptions and API providers with smart routing and on-device privacy protection. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-miaai-lab-glm-53-flash-exl3-2x",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
-    "github": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
-    "github_stars": 500,
-    "name": {
-      "en": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
-      "zh-CN": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold (GitHub ⭐500)",
-      "zh-TW": "MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold",
-      "zh-CN": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold | GitHub 500+ Stars 开源项目",
-      "zh-TW": "GLM-5.3-Flash EXL3 on 2x DGX Spark with TensorFold | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-helpmeeadice-bandori-pet-rev",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
-    "github": "HELPMEEADICE/BANDORI-PET-REV",
-    "github_stars": 500,
-    "name": {
-      "en": "HELPMEEADICE/BANDORI-PET-REV",
-      "zh-CN": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)",
-      "zh-TW": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
-      "zh-CN": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jetsku-kytyps5",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/Jetsku/KytyPS5",
-    "github": "Jetsku/KytyPS5",
-    "github_stars": 500,
-    "name": {
-      "en": "Jetsku/KytyPS5",
-      "zh-CN": "Jetsku/KytyPS5 (GitHub ⭐500)",
-      "zh-TW": "Jetsku/KytyPS5 (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases.",
-      "zh-CN": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Experimental KytyPS5 U59 with merged shader and renderer fixes; complete sanitized main history and Windows releases. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 60973,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐60973)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐60973)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 60973+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 60973+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
