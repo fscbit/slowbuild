@@ -5440,6 +5440,182 @@
     "category": "bundle"
   },
   {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 458323,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458323)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458323)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 415390,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐415390)",
+      "zh-TW": "morluto/rea (GitHub ⭐415390)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 415390+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 415390+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61002,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61002)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61002)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61002+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61002+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44916,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44916)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44916)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44916+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44916+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-unclecheng-li-deepsec",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/Unclecheng-li/DeepSec",
+    "github": "Unclecheng-li/DeepSec",
+    "github_stars": 500,
+    "name": {
+      "en": "Unclecheng-li/DeepSec",
+      "zh-CN": "Unclecheng-li/DeepSec (GitHub ⭐500)",
+      "zh-TW": "Unclecheng-li/DeepSec (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in",
+      "zh-CN": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in | GitHub 500+ Stars 开源项目",
+      "zh-TW": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-shirai91-nx2android",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/shirai91/nx2android",
+    "github": "shirai91/nx2android",
+    "github_stars": 500,
+    "name": {
+      "en": "shirai91/nx2android",
+      "zh-CN": "shirai91/nx2android (GitHub ⭐500)",
+      "zh-TW": "shirai91/nx2android (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A compatibility layer for porting Switch games to Android, one game at a time",
+      "zh-CN": "A compatibility layer for porting Switch games to Android, one game at a time | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A compatibility layer for porting Switch games to Android, one game at a time | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-heigeai-heige-codex-skin-studi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/HeiGeAi/heige-codex-skin-studio",
+    "github": "HeiGeAi/heige-codex-skin-studio",
+    "github_stars": 500,
+    "name": {
+      "en": "HeiGeAi/heige-codex-skin-studio",
+      "zh-CN": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)",
+      "zh-TW": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click",
+      "zh-CN": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 开源项目",
+      "zh-TW": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-helpmeeadice-bandori-pet-rev",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+    "github": "HELPMEEADICE/BANDORI-PET-REV",
+    "github_stars": 500,
+    "name": {
+      "en": "HELPMEEADICE/BANDORI-PET-REV",
+      "zh-CN": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)",
+      "zh-TW": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
+      "zh-CN": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5589,182 +5765,6 @@
       "en": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections ",
       "zh-CN": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 开源项目",
       "zh-TW": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-browser-use-open-duet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/browser-use/open-duet",
-    "github": "browser-use/open-duet",
-    "github_stars": 500,
-    "name": {
-      "en": "browser-use/open-duet",
-      "zh-CN": "browser-use/open-duet (GitHub ⭐500)",
-      "zh-TW": "browser-use/open-duet (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open Duet card feed: agents finish work, Magnus decides with one click",
-      "zh-CN": "Open Duet card feed: agents finish work, Magnus decides with one click | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open Duet card feed: agents finish work, Magnus decides with one click | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 557359,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐557359)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐557359)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 557359+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 557359+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 526837,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐526837)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐526837)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 526837+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 526837+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 493258,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐493258)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐493258)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 493258+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 493258+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-appica-dev-appica-ui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/appica-dev/appica-ui",
-    "github": "appica-dev/appica-ui",
-    "github_stars": 500,
-    "name": {
-      "en": "appica-dev/appica-ui",
-      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
-      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-hopechen067-mapstage",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/hopechen067/MapStage",
-    "github": "hopechen067/MapStage",
-    "github_stars": 500,
-    "name": {
-      "en": "hopechen067/MapStage",
-      "zh-CN": "hopechen067/MapStage (GitHub ⭐500)",
-      "zh-TW": "hopechen067/MapStage (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu",
-      "zh-CN": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu | GitHub 500+ Stars 开源项目",
-      "zh-TW": "MapStage: a narrative map stage for historical videos. MapLibre engine + agent skill, antique parchment look, routes, place names, seek(t) frame captu | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aipmandy-how-to-survive-unempl",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/AIPMAndy/how-to-survive-unemployment",
-    "github": "AIPMAndy/how-to-survive-unemployment",
-    "github_stars": 500,
-    "name": {
-      "en": "AIPMAndy/how-to-survive-unemployment",
-      "zh-CN": "AIPMAndy/how-to-survive-unemployment (GitHub ⭐500)",
-      "zh-TW": "AIPMAndy/how-to-survive-unemployment (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook",
-      "zh-CN": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook | GitHub 500+ Stars 开源项目",
-      "zh-TW": "被裁员/失业后怎么办：中国打工人失业自救手册｜N+1/2N、失业金、医保社保、公积金、求职与现金流，附政策原文并标注核验日期｜China layoff survival handbook | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-1314521gjy-ninfer-fusion-kvmem",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/1314521gjy/ninfer-fusion-kvmem",
-    "github": "1314521gjy/ninfer-fusion-kvmem",
-    "github_stars": 500,
-    "name": {
-      "en": "1314521gjy/ninfer-fusion-kvmem",
-      "zh-CN": "1314521gjy/ninfer-fusion-kvmem (GitHub ⭐500)",
-      "zh-TW": "1314521gjy/ninfer-fusion-kvmem (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "1314521gjy/ninfer-fusion-kvmem - Open source tool",
-      "zh-CN": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "1314521gjy/ninfer-fusion-kvmem - Open source tool | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

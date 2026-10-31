@@ -227,6 +227,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-deepsec.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-deepsec.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-free-programming-books.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -243,6 +253,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-grok-keysmith.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-heige-codex-skin-studio.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-heige-codex-skin-studio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
