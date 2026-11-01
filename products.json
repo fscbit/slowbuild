@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 558286,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐558286)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐558286)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 528682,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐528682)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐528682)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 528682+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 528682+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 494525,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐494525)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐494525)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 494525+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 494525+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-janderson1017-hiddify-manager",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/janderson1017/Hiddify-Manager",
+    "github": "janderson1017/Hiddify-Manager",
+    "github_stars": 500,
+    "name": {
+      "en": "janderson1017/Hiddify-Manager",
+      "zh-CN": "janderson1017/Hiddify-Manager (GitHub ⭐500)",
+      "zh-TW": "janderson1017/Hiddify-Manager (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy",
+      "zh-CN": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-woyun520-dsh-purge",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/WoYun520/dsh-purge",
+    "github": "WoYun520/dsh-purge",
+    "github_stars": 500,
+    "name": {
+      "en": "WoYun520/dsh-purge",
+      "zh-CN": "WoYun520/dsh-purge (GitHub ⭐500)",
+      "zh-TW": "WoYun520/dsh-purge (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。",
+      "zh-CN": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-neko3000-deepseek-whalechan",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/Neko3000/deepseek-whalechan",
+    "github": "Neko3000/deepseek-whalechan",
+    "github_stars": 500,
+    "name": {
+      "en": "Neko3000/deepseek-whalechan",
+      "zh-CN": "Neko3000/deepseek-whalechan (GitHub ⭐500)",
+      "zh-TW": "Neko3000/deepseek-whalechan (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit",
+      "zh-CN": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-botharness-deepseekbot",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/BotHarness/DeepSeekBot",
+    "github": "BotHarness/DeepSeekBot",
+    "github_stars": 500,
+    "name": {
+      "en": "BotHarness/DeepSeekBot",
+      "zh-CN": "BotHarness/DeepSeekBot (GitHub ⭐500)",
+      "zh-TW": "BotHarness/DeepSeekBot (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a",
+      "zh-CN": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-freecodecamp-freecodecamp",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
       "zh-CN": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 开源项目",
       "zh-TW": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44587,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44587)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44587)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44587+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44587+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41772,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41772)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41772)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41772+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41772+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41070,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41070)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41070)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41070+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41070+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-liuluhaixiu-davinci-autoedit-a",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent",
-    "github": "liuluhaixiu/DaVinci-AutoEdit-Agent",
-    "github_stars": 500,
-    "name": {
-      "en": "liuluhaixiu/DaVinci-AutoEdit-Agent",
-      "zh-CN": "liuluhaixiu/DaVinci-AutoEdit-Agent (GitHub ⭐500)",
-      "zh-TW": "liuluhaixiu/DaVinci-AutoEdit-Agent (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill",
-      "zh-CN": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill | GitHub 500+ Stars 开源项目",
-      "zh-TW": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-glass-hq-liquid-glass",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Glass-HQ/liquid-glass",
-    "github": "Glass-HQ/liquid-glass",
-    "github_stars": 500,
-    "name": {
-      "en": "Glass-HQ/liquid-glass",
-      "zh-CN": "Glass-HQ/liquid-glass (GitHub ⭐500)",
-      "zh-TW": "Glass-HQ/liquid-glass (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Liquid Glass materials for web and Electron, built with vgpu.",
-      "zh-CN": "Liquid Glass materials for web and Electron, built with vgpu. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Liquid Glass materials for web and Electron, built with vgpu. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-onlyterp-opengrok",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/OnlyTerp/opengrok",
-    "github": "OnlyTerp/opengrok",
-    "github_stars": 500,
-    "name": {
-      "en": "OnlyTerp/opengrok",
-      "zh-CN": "OnlyTerp/opengrok (GitHub ⭐500)",
-      "zh-TW": "OnlyTerp/opengrok (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming",
-      "zh-CN": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-itechmeat-open-second-brain",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/itechmeat/open-second-brain",
-    "github": "itechmeat/open-second-brain",
-    "github_stars": 500,
-    "name": {
-      "en": "itechmeat/open-second-brain",
-      "zh-CN": "itechmeat/open-second-brain (GitHub ⭐500)",
-      "zh-TW": "itechmeat/open-second-brain (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections ",
-      "zh-CN": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Local-first 🧠 memory for Hermes Agent that lives in your Obsidian vault and remembers project context. Nightly 😴 dream passes turn repeat corrections  | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

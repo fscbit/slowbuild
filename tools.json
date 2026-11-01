@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 557895,
+    "stars": 558286,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-10-31T22:55:17Z"
+    "updated": "2026-11-01T22:56:05Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 528018,
+    "stars": 528682,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-10-31T22:57:08Z"
+    "updated": "2026-11-01T22:55:15Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 493814,
+    "stars": 494525,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-10-31T22:55:16Z"
+    "updated": "2026-11-01T22:59:55Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458323,
+    "stars": 458371,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-10-31T23:00:00Z"
+    "updated": "2026-11-01T22:52:12Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 415390,
+    "stars": 418546,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +82,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-10-31T22:59:28Z"
+    "updated": "2026-11-01T22:59:47Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61002,
+    "stars": 61013,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-10-31T21:50:03Z"
+    "updated": "2026-11-01T22:37:21Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44916,
+    "stars": 44918,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-10-31T20:49:21Z"
+    "updated": "2026-11-01T21:31:04Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44590,
+    "stars": 44593,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-10-31T21:33:35Z"
+    "updated": "2026-11-01T19:53:02Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41795,
+    "stars": 41799,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-10-31T22:14:18Z"
+    "updated": "2026-11-01T19:30:15Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41080,
+    "stars": 41087,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,35 +167,29 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-10-31T19:19:27Z"
+    "updated": "2026-11-01T21:27:37Z"
   },
   {
-    "name": "Unclecheng-li/DeepSec",
-    "description": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing saf",
-    "url": "https://github.com/Unclecheng-li/DeepSec",
-    "homepage": "https://unclecheng-li.github.io/deepsec.com/",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "agent",
-      "ai",
-      "ai-agents",
-      "aisecurity",
-      "cybersecurity"
-    ],
-    "source": "new",
-    "updated": "2026-10-31T15:43:31Z"
-  },
-  {
-    "name": "shirai91/nx2android",
-    "description": "A compatibility layer for porting Switch games to Android, one game at a time",
-    "url": "https://github.com/shirai91/nx2android",
+    "name": "janderson1017/Hiddify-Manager",
+    "description": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent fil",
+    "url": "https://github.com/janderson1017/Hiddify-Manager",
     "homepage": "",
     "stars": 500,
-    "language": "C",
+    "language": "Python",
     "topics": [],
     "source": "new",
-    "updated": "2026-10-31T22:33:44Z"
+    "updated": "2026-11-01T19:09:53Z"
+  },
+  {
+    "name": "WoYun520/dsh-purge",
+    "description": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。",
+    "url": "https://github.com/WoYun520/dsh-purge",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-01T21:02:17Z"
   },
   {
     "name": "HeiGeAi/heige-codex-skin-studio",
@@ -215,37 +209,37 @@
     "updated": "2026-10-31T17:20:20Z"
   },
   {
-    "name": "OnlyTerp/opengrok",
-    "description": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof d",
-    "url": "https://github.com/OnlyTerp/opengrok",
-    "homepage": "https://github.com/OnlyTerp/opengrok#-quick-start",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [
-      "ai-agents",
-      "grok",
-      "llm",
-      "model-router",
-      "openai-compatible"
-    ],
-    "source": "new",
-    "updated": "2026-10-31T15:39:47Z"
-  },
-  {
-    "name": "HELPMEEADICE/BANDORI-PET-REV",
-    "description": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
-    "url": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
+    "name": "Neko3000/deepseek-whalechan",
+    "description": " Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset l",
+    "url": "https://github.com/Neko3000/deepseek-whalechan",
     "homepage": "",
     "stars": 500,
     "language": "Python",
     "topics": [
-      "ai-agent",
-      "ai-emotion",
-      "anime",
-      "bandori",
-      "bang-dream"
+      "claude-code",
+      "codex",
+      "comics",
+      "gemini",
+      "graphics"
     ],
     "source": "new",
-    "updated": "2026-10-31T21:23:29Z"
+    "updated": "2026-11-01T11:12:39Z"
+  },
+  {
+    "name": "BotHarness/DeepSeekBot",
+    "description": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with p",
+    "url": "https://github.com/BotHarness/DeepSeekBot",
+    "homepage": "https://tobs.app",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "agent-memory",
+      "ai-agent",
+      "bot-marketplace",
+      "deepseek",
+      "deepseek-bot"
+    ],
+    "source": "new",
+    "updated": "2026-11-01T21:15:50Z"
   }
 ]
