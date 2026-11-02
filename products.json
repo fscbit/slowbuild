@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44591,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44591)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44591)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44591+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44591+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 41818,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41818)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41818)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41818+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41818+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41100,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41100)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41100)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41100+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41100+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 500,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-floxu1-uac-sni-spoofer-windows",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/Floxu1/UAC-SNI-Spoofer-Windows",
+    "github": "Floxu1/UAC-SNI-Spoofer-Windows",
+    "github_stars": 500,
+    "name": {
+      "en": "Floxu1/UAC-SNI-Spoofer-Windows",
+      "zh-CN": "Floxu1/UAC-SNI-Spoofer-Windows (GitHub ⭐500)",
+      "zh-TW": "Floxu1/UAC-SNI-Spoofer-Windows (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control.",
+      "zh-CN": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nyankomintsu-world-execute-me-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/Nyankomintsu/world-execute-me-lyric-mv",
+    "github": "Nyankomintsu/world-execute-me-lyric-mv",
+    "github_stars": 500,
+    "name": {
+      "en": "Nyankomintsu/world-execute-me-lyric-mv",
+      "zh-CN": "Nyankomintsu/world-execute-me-lyric-mv (GitHub ⭐500)",
+      "zh-TW": "Nyankomintsu/world-execute-me-lyric-mv (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri",
+      "zh-CN": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri | GitHub 500+ Stars 开源项目",
+      "zh-TW": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jpter78-pokesurvivor",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/JPTER78/pokesurvivor",
+    "github": "JPTER78/pokesurvivor",
+    "github_stars": 500,
+    "name": {
+      "en": "JPTER78/pokesurvivor",
+      "zh-CN": "JPTER78/pokesurvivor (GitHub ⭐500)",
+      "zh-TW": "JPTER78/pokesurvivor (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro.",
+      "zh-CN": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 开源项目",
       "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 415390,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐415390)",
-      "zh-TW": "morluto/rea (GitHub ⭐415390)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 415390+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 415390+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 61002,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐61002)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐61002)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 61002+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 61002+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44916,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44916)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44916)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44916+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44916+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-unclecheng-li-deepsec",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Unclecheng-li/DeepSec",
-    "github": "Unclecheng-li/DeepSec",
-    "github_stars": 500,
-    "name": {
-      "en": "Unclecheng-li/DeepSec",
-      "zh-CN": "Unclecheng-li/DeepSec (GitHub ⭐500)",
-      "zh-TW": "Unclecheng-li/DeepSec (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in",
-      "zh-CN": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in | GitHub 500+ Stars 开源项目",
-      "zh-TW": "DeepSec — AI Security Offense & Defense Platform. Shield audits AI-generated code for hallucinated packages, missing safeguards & AI pattern errors in | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-shirai91-nx2android",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/shirai91/nx2android",
-    "github": "shirai91/nx2android",
-    "github_stars": 500,
-    "name": {
-      "en": "shirai91/nx2android",
-      "zh-CN": "shirai91/nx2android (GitHub ⭐500)",
-      "zh-TW": "shirai91/nx2android (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A compatibility layer for porting Switch games to Android, one game at a time",
-      "zh-CN": "A compatibility layer for porting Switch games to Android, one game at a time | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A compatibility layer for porting Switch games to Android, one game at a time | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-heigeai-heige-codex-skin-studi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/HeiGeAi/heige-codex-skin-studio",
-    "github": "HeiGeAi/heige-codex-skin-studio",
-    "github_stars": 500,
-    "name": {
-      "en": "HeiGeAi/heige-codex-skin-studio",
-      "zh-CN": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)",
-      "zh-TW": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click",
-      "zh-CN": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 开源项目",
-      "zh-TW": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-helpmeeadice-bandori-pet-rev",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/HELPMEEADICE/BANDORI-PET-REV",
-    "github": "HELPMEEADICE/BANDORI-PET-REV",
-    "github_stars": 500,
-    "name": {
-      "en": "HELPMEEADICE/BANDORI-PET-REV",
-      "zh-CN": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)",
-      "zh-TW": "HELPMEEADICE/BANDORI-PET-REV (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室",
-      "zh-CN": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "BandoriPet 是一个基于 Live2D 和 PySide6 的开源桌面宠物项目，支持 50+ 位 BanG Dream! 角色、3000+ 套服装，让你的桌面一秒变成 CiRCLE 排练室 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
