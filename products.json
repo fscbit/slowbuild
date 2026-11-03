@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 426884,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐426884)",
+      "zh-TW": "morluto/rea (GitHub ⭐426884)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61053,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61053)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61053)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61053+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61053+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 44936,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐44936)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐44936)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44936+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44936+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-heigeai-heige-codex-skin-studi",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/HeiGeAi/heige-codex-skin-studio",
+    "github": "HeiGeAi/heige-codex-skin-studio",
+    "github_stars": 500,
+    "name": {
+      "en": "HeiGeAi/heige-codex-skin-studio",
+      "zh-CN": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)",
+      "zh-TW": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click",
+      "zh-CN": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 开源项目",
+      "zh-TW": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-oxylabs-web-scraper-api",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/oxylabs/web-scraper-api",
+    "github": "oxylabs/web-scraper-api",
+    "github_stars": 500,
+    "name": {
+      "en": "oxylabs/web-scraper-api",
+      "zh-CN": "oxylabs/web-scraper-api (GitHub ⭐500)",
+      "zh-TW": "oxylabs/web-scraper-api (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re",
+      "zh-CN": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re | GitHub 500+ Stars 开源项目",
+      "zh-TW": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-minimax-ai-minimax-m3",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/MiniMax-AI/MiniMax-M3",
+    "github": "MiniMax-AI/MiniMax-M3",
+    "github_stars": 499,
+    "name": {
+      "en": "MiniMax-AI/MiniMax-M3",
+      "zh-CN": "MiniMax-AI/MiniMax-M3 (GitHub ⭐499)",
+      "zh-TW": "MiniMax-AI/MiniMax-M3 (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "MiniMax-AI/MiniMax-M3 - Open source tool",
+      "zh-CN": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 499+ Stars 开源项目",
+      "zh-TW": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jestions-dev-bluefatfish",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/Jestions-dev/BlueFatFish",
+    "github": "Jestions-dev/BlueFatFish",
+    "github_stars": 499,
+    "name": {
+      "en": "Jestions-dev/BlueFatFish",
+      "zh-CN": "Jestions-dev/BlueFatFish (GitHub ⭐499)",
+      "zh-TW": "Jestions-dev/BlueFatFish (GitHub ⭐499)"
+    },
+    "desc": {
+      "en": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。",
+      "zh-CN": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 开源项目",
+      "zh-TW": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Master programming by recreating your favorite technologies from scratch.",
       "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 开源项目",
       "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 528682,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐528682)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐528682)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 528682+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 528682+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 494525,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐494525)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐494525)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 494525+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 494525+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-janderson1017-hiddify-manager",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/janderson1017/Hiddify-Manager",
-    "github": "janderson1017/Hiddify-Manager",
-    "github_stars": 500,
-    "name": {
-      "en": "janderson1017/Hiddify-Manager",
-      "zh-CN": "janderson1017/Hiddify-Manager (GitHub ⭐500)",
-      "zh-TW": "janderson1017/Hiddify-Manager (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy",
-      "zh-CN": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-woyun520-dsh-purge",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/WoYun520/dsh-purge",
-    "github": "WoYun520/dsh-purge",
-    "github_stars": 500,
-    "name": {
-      "en": "WoYun520/dsh-purge",
-      "zh-CN": "WoYun520/dsh-purge (GitHub ⭐500)",
-      "zh-TW": "WoYun520/dsh-purge (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。",
-      "zh-CN": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "DeepSeek Harness 破甲 (mirror of mmparko/dsh-purge) — 全量镜像：全部分支/100 个 tag/完整提交历史。原作者署名见 README。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-neko3000-deepseek-whalechan",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/Neko3000/deepseek-whalechan",
-    "github": "Neko3000/deepseek-whalechan",
-    "github_stars": 500,
-    "name": {
-      "en": "Neko3000/deepseek-whalechan",
-      "zh-CN": "Neko3000/deepseek-whalechan (GitHub ⭐500)",
-      "zh-TW": "Neko3000/deepseek-whalechan (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit",
-      "zh-CN": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Keep Whale-chan consistently vivid in every generation: High-consistency character design specification, visual asset library, and agent creation suit | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-botharness-deepseekbot",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/BotHarness/DeepSeekBot",
-    "github": "BotHarness/DeepSeekBot",
-    "github_stars": 500,
-    "name": {
-      "en": "BotHarness/DeepSeekBot",
-      "zh-CN": "BotHarness/DeepSeekBot (GitHub ⭐500)",
-      "zh-TW": "BotHarness/DeepSeekBot (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a",
-      "zh-CN": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities a | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 458323,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458323)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458323)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458323+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

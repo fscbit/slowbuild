@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 558889,
+    "stars": 559381,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-02T22:50:05Z"
+    "updated": "2026-11-03T22:55:57Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 529660,
+    "stars": 530298,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-02T22:50:44Z"
+    "updated": "2026-11-03T22:58:04Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 495494,
+    "stars": 495849,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-02T22:56:25Z"
+    "updated": "2026-11-03T22:58:12Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458452,
+    "stars": 458505,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-02T22:59:46Z"
+    "updated": "2026-11-03T22:44:35Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 422713,
+    "stars": 426884,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +82,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-02T22:59:53Z"
+    "updated": "2026-11-03T22:59:06Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61034,
+    "stars": 61053,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-11-02T22:40:10Z"
+    "updated": "2026-11-03T22:36:08Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44932,
+    "stars": 44936,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-11-02T21:35:02Z"
+    "updated": "2026-11-03T20:53:57Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44591,
+    "stars": 44587,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-11-02T19:34:15Z"
+    "updated": "2026-11-03T22:16:53Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41818,
+    "stars": 41843,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-11-02T22:45:44Z"
+    "updated": "2026-11-03T22:50:24Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41100,
+    "stars": 41111,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,41 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-11-02T19:30:00Z"
-  },
-  {
-    "name": "appica-dev/appica-ui",
-    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-    "url": "https://github.com/appica-dev/appica-ui",
-    "homepage": "https://appica.dev/ui",
-    "stars": 500,
-    "language": "TypeScript",
-    "topics": [
-      "a11y",
-      "accessibility",
-      "base-ui",
-      "component-library",
-      "dark-mode"
-    ],
-    "source": "new",
-    "updated": "2026-11-02T16:46:04Z"
-  },
-  {
-    "name": "Floxu1/UAC-SNI-Spoofer-Windows",
-    "description": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy cont",
-    "url": "https://github.com/Floxu1/UAC-SNI-Spoofer-Windows",
-    "homepage": "https://floxu1.github.io/UAC-SNI-Spoofer-Windows/",
-    "stars": 500,
-    "language": "Python",
-    "topics": [
-      "desktop-app",
-      "proxy",
-      "pyside6",
-      "python",
-      "smart-routing"
-    ],
-    "source": "new",
-    "updated": "2026-11-02T14:47:22Z"
+    "updated": "2026-11-03T21:32:25Z"
   },
   {
     "name": "HeiGeAi/heige-codex-skin-studio",
@@ -221,31 +187,65 @@
     "updated": "2026-10-31T17:20:20Z"
   },
   {
-    "name": "Nyankomintsu/world-execute-me-lyric-mv",
-    "description": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prom",
-    "url": "https://github.com/Nyankomintsu/world-execute-me-lyric-mv",
-    "homepage": "https://www.bilibili.com/video/BV186pc65E68",
+    "name": "oxylabs/web-scraper-api",
+    "description": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and ",
+    "url": "https://github.com/oxylabs/web-scraper-api",
+    "homepage": "https://oxylabs.io/products/scraper-api/webs",
     "stars": 500,
-    "language": "JavaScript",
+    "language": "",
     "topics": [
-      "ai-generated",
-      "canvas",
-      "claude",
-      "claude-code",
-      "creative-coding"
+      "agent-browser",
+      "ai-search",
+      "data-extraction",
+      "firecrawl-alternative",
+      "javascript-rendering"
     ],
     "source": "new",
-    "updated": "2026-11-02T17:46:09Z"
+    "updated": "2026-11-03T17:31:04Z"
   },
   {
-    "name": "JPTER78/pokesurvivor",
-    "description": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro.",
-    "url": "https://github.com/JPTER78/pokesurvivor",
-    "homepage": "https://pokesurvivor.com",
-    "stars": 500,
-    "language": "HTML",
+    "name": "MiniMax-AI/MiniMax-M3",
+    "description": "",
+    "url": "https://github.com/MiniMax-AI/MiniMax-M3",
+    "homepage": "",
+    "stars": 499,
+    "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-11-02T20:05:45Z"
+    "updated": "2026-11-02T20:40:49Z"
+  },
+  {
+    "name": "appica-dev/appica-ui",
+    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+    "url": "https://github.com/appica-dev/appica-ui",
+    "homepage": "https://appica.dev/ui",
+    "stars": 499,
+    "language": "TypeScript",
+    "topics": [
+      "a11y",
+      "accessibility",
+      "base-ui",
+      "component-library",
+      "dark-mode"
+    ],
+    "source": "new",
+    "updated": "2026-11-03T03:23:03Z"
+  },
+  {
+    "name": "Jestions-dev/BlueFatFish",
+    "description": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。",
+    "url": "https://github.com/Jestions-dev/BlueFatFish",
+    "homepage": "",
+    "stars": 499,
+    "language": "JavaScript",
+    "topics": [
+      "browser-extension",
+      "chrome-extension",
+      "edge-addons",
+      "edge-extension",
+      "javascript"
+    ],
+    "source": "new",
+    "updated": "2026-11-03T22:26:03Z"
   }
 ]
