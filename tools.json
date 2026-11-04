@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 559381,
+    "stars": 559840,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-03T22:55:57Z"
+    "updated": "2026-11-04T22:57:36Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 530298,
+    "stars": 530946,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-03T22:58:04Z"
+    "updated": "2026-11-04T22:53:37Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 495849,
+    "stars": 496112,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-03T22:58:12Z"
+    "updated": "2026-11-04T22:54:36Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 458505,
+    "stars": 458547,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -65,14 +65,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-03T22:44:35Z"
+    "updated": "2026-11-04T22:49:55Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 426884,
+    "stars": 430703,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +82,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-03T22:59:06Z"
+    "updated": "2026-11-04T23:00:00Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61053,
+    "stars": 61078,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-11-03T22:36:08Z"
+    "updated": "2026-11-04T22:52:15Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 44936,
+    "stars": 44948,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-11-03T20:53:57Z"
+    "updated": "2026-11-04T21:27:59Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44587,
+    "stars": 44585,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-11-03T22:16:53Z"
+    "updated": "2026-11-04T18:21:36Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 41843,
+    "stars": 41862,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-11-03T22:50:24Z"
+    "updated": "2026-11-04T21:48:28Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41111,
+    "stars": 41116,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-11-03T21:32:25Z"
+    "updated": "2026-11-04T20:34:53Z"
   },
   {
     "name": "HeiGeAi/heige-codex-skin-studio",
@@ -185,6 +185,23 @@
     ],
     "source": "new",
     "updated": "2026-10-31T17:20:20Z"
+  },
+  {
+    "name": "oxynote/oxynote",
+    "description": "An open‑source technical wiki connected to the systems it describes",
+    "url": "https://github.com/oxynote/oxynote",
+    "homepage": "https://oxynote.io/",
+    "stars": 500,
+    "language": "Go",
+    "topics": [
+      "confluence-alternative",
+      "dashboard",
+      "incident-response",
+      "internal-documentation",
+      "knowledge-base"
+    ],
+    "source": "new",
+    "updated": "2026-11-04T21:53:22Z"
   },
   {
     "name": "oxylabs/web-scraper-api",
@@ -230,22 +247,5 @@
     ],
     "source": "new",
     "updated": "2026-11-03T03:23:03Z"
-  },
-  {
-    "name": "Jestions-dev/BlueFatFish",
-    "description": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。",
-    "url": "https://github.com/Jestions-dev/BlueFatFish",
-    "homepage": "",
-    "stars": 499,
-    "language": "JavaScript",
-    "topics": [
-      "browser-extension",
-      "chrome-extension",
-      "edge-addons",
-      "edge-extension",
-      "javascript"
-    ],
-    "source": "new",
-    "updated": "2026-11-03T22:26:03Z"
   }
 ]

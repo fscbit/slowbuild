@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 530946,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐530946)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐530946)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 530946+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 530946+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 496112,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐496112)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐496112)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 496112+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 496112+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 458547,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458547)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458547)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458547+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458547+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-oxynote-oxynote",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/oxynote/oxynote",
+    "github": "oxynote/oxynote",
+    "github_stars": 500,
+    "name": {
+      "en": "oxynote/oxynote",
+      "zh-CN": "oxynote/oxynote (GitHub ⭐500)",
+      "zh-TW": "oxynote/oxynote (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "An open‑source technical wiki connected to the systems it describes",
+      "zh-CN": "An open‑source technical wiki connected to the systems it describes | GitHub 500+ Stars 开源项目",
+      "zh-TW": "An open‑source technical wiki connected to the systems it describes | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-morluto-rea",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
       "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
       "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-floxu1-uac-sni-spoofer-windows",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/Floxu1/UAC-SNI-Spoofer-Windows",
-    "github": "Floxu1/UAC-SNI-Spoofer-Windows",
-    "github_stars": 500,
-    "name": {
-      "en": "Floxu1/UAC-SNI-Spoofer-Windows",
-      "zh-CN": "Floxu1/UAC-SNI-Spoofer-Windows (GitHub ⭐500)",
-      "zh-TW": "Floxu1/UAC-SNI-Spoofer-Windows (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control.",
-      "zh-CN": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Windows desktop app for SNI spoofing, smart routing, country-based configs, Xray integration, and live system proxy control. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nyankomintsu-world-execute-me-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Nyankomintsu/world-execute-me-lyric-mv",
-    "github": "Nyankomintsu/world-execute-me-lyric-mv",
-    "github_stars": 500,
-    "name": {
-      "en": "Nyankomintsu/world-execute-me-lyric-mv",
-      "zh-CN": "Nyankomintsu/world-execute-me-lyric-mv (GitHub ⭐500)",
-      "zh-TW": "Nyankomintsu/world-execute-me-lyric-mv (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri",
-      "zh-CN": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri | GitHub 500+ Stars 开源项目",
-      "zh-TW": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyri | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jpter78-pokesurvivor",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/JPTER78/pokesurvivor",
-    "github": "JPTER78/pokesurvivor",
-    "github_stars": 500,
-    "name": {
-      "en": "JPTER78/pokesurvivor",
-      "zh-CN": "JPTER78/pokesurvivor (GitHub ⭐500)",
-      "zh-TW": "JPTER78/pokesurvivor (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro.",
-      "zh-CN": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "PokéSurvivor: fan game bullet-heaven con sprites de Mundo Misterioso. Gratis y sin ánimo de lucro. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 558286,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐558286)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐558286)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 558286+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
