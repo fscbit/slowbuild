@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 560789,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐560789)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐560789)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 560789+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 560789+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aiblueprinthq-ai-blueprint",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/aiblueprinthq/ai-blueprint",
+    "github": "aiblueprinthq/ai-blueprint",
+    "github_stars": 500,
+    "name": {
+      "en": "aiblueprinthq/ai-blueprint",
+      "zh-CN": "aiblueprinthq/ai-blueprint (GitHub ⭐500)",
+      "zh-TW": "aiblueprinthq/ai-blueprint (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control.",
+      "zh-CN": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-shanselman-gputaskman",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/shanselman/gputaskman",
+    "github": "shanselman/gputaskman",
+    "github_stars": 500,
+    "name": {
+      "en": "shanselman/gputaskman",
+      "zh-CN": "shanselman/gputaskman (GitHub ⭐500)",
+      "zh-TW": "shanselman/gputaskman (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
+      "zh-CN": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-thusi-lab-gamescaling",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/THUSI-Lab/GameScaling",
+    "github": "THUSI-Lab/GameScaling",
+    "github_stars": 500,
+    "name": {
+      "en": "THUSI-Lab/GameScaling",
+      "zh-CN": "THUSI-Lab/GameScaling (GitHub ⭐500)",
+      "zh-TW": "THUSI-Lab/GameScaling (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face.",
+      "zh-CN": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。",
       "zh-CN": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 开源项目",
       "zh-TW": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44591,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44591)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44591)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44591+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44591+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 41818,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐41818)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐41818)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41818+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 41818+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41100,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41100)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41100)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41100+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41100+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-appica-dev-appica-ui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/appica-dev/appica-ui",
-    "github": "appica-dev/appica-ui",
-    "github_stars": 500,
-    "name": {
-      "en": "appica-dev/appica-ui",
-      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
-      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

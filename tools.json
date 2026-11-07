@@ -1,1 +1,239 @@
-[]
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 560789,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-11-07T22:55:46Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 533180,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-11-07T22:58:07Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 497010,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-11-07T22:58:22Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 458719,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-11-07T22:57:20Z"
+  },
+  {
+    "name": "morluto/rea",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "homepage": "https://rea.tools",
+    "stars": 440896,
+    "language": "TypeScript",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "android",
+      "claude-code",
+      "cli"
+    ],
+    "source": "hot",
+    "updated": "2026-11-07T22:59:32Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 61226,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-11-07T22:56:41Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 45113,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-11-07T22:36:38Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44588,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-11-07T20:27:50Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 41966,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-11-07T22:26:01Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 41153,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-11-07T20:20:01Z"
+  },
+  {
+    "name": "MiniMax-AI/MiniMax-M3",
+    "description": "",
+    "url": "https://github.com/MiniMax-AI/MiniMax-M3",
+    "homepage": "",
+    "stars": 500,
+    "language": "",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-05T21:06:27Z"
+  },
+  {
+    "name": "appica-dev/appica-ui",
+    "description": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+    "url": "https://github.com/appica-dev/appica-ui",
+    "homepage": "https://appica.dev/ui",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "a11y",
+      "accessibility",
+      "base-ui",
+      "component-library",
+      "dark-mode"
+    ],
+    "source": "new",
+    "updated": "2026-11-07T12:03:14Z"
+  },
+  {
+    "name": "aiblueprinthq/ai-blueprint",
+    "description": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control.",
+    "url": "https://github.com/aiblueprinthq/ai-blueprint",
+    "homepage": "https://ai-blueprint.dev",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-07T22:03:19Z"
+  },
+  {
+    "name": "shanselman/gputaskman",
+    "description": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows",
+    "url": "https://github.com/shanselman/gputaskman",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-07T22:58:04Z"
+  },
+  {
+    "name": "THUSI-Lab/GameScaling",
+    "description": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face.",
+    "url": "https://github.com/THUSI-Lab/GameScaling",
+    "homepage": "https://huggingface.co/THUSI-Lab/GameScaling",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "embodied-agent",
+      "game-agent",
+      "game-ai",
+      "mihoyo",
+      "scaling-laws"
+    ],
+    "source": "new",
+    "updated": "2026-11-07T13:11:21Z"
+  }
+]
