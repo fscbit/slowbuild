@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44586,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44586)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44586)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 42091,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐42091)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐42091)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42091+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42091+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41162,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41162)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41162)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41162+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41162+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-infini-ai-lab-hermit",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/Infini-AI-Lab/hermit",
+    "github": "Infini-AI-Lab/hermit",
+    "github_stars": 500,
+    "name": {
+      "en": "Infini-AI-Lab/hermit",
+      "zh-CN": "Infini-AI-Lab/hermit (GitHub ⭐500)",
+      "zh-TW": "Infini-AI-Lab/hermit (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A framework for continual learning and recursive self-improvement through harness adapter evolution.",
+      "zh-CN": "A framework for continual learning and recursive self-improvement through harness adapter evolution. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A framework for continual learning and recursive self-improvement through harness adapter evolution. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-yeje-cpu-talk-to-fengge",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/YeJe-cpu/talk-to-fengge",
+    "github": "YeJe-cpu/talk-to-fengge",
+    "github_stars": 500,
+    "name": {
+      "en": "YeJe-cpu/talk-to-fengge",
+      "zh-CN": "YeJe-cpu/talk-to-fengge (GitHub ⭐500)",
+      "zh-TW": "YeJe-cpu/talk-to-fengge (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency.",
+      "zh-CN": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-appica-dev-appica-ui",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/appica-dev/appica-ui",
+    "github": "appica-dev/appica-ui",
+    "github_stars": 500,
+    "name": {
+      "en": "appica-dev/appica-ui",
+      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
+      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
+      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 开源项目",
       "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 61053,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐61053)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐61053)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 61053+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 61053+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 44936,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐44936)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐44936)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 44936+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 44936+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-heigeai-heige-codex-skin-studi",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/HeiGeAi/heige-codex-skin-studio",
-    "github": "HeiGeAi/heige-codex-skin-studio",
-    "github_stars": 500,
-    "name": {
-      "en": "HeiGeAi/heige-codex-skin-studio",
-      "zh-CN": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)",
-      "zh-TW": "HeiGeAi/heige-codex-skin-studio (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click",
-      "zh-CN": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 开源项目",
-      "zh-TW": "给 Codex Desktop 一键换肤：OpenAI Codex / ChatGPT 桌面端主题工具，CDP 注入零修改应用，13 套内置预设（Miku / 原神 / 鸣潮 / 火影 / 恋与深空 / 龙珠 / 财神）+ 自定义图片取色，支持 macOS 与 Windows | One-click | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-oxylabs-web-scraper-api",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/oxylabs/web-scraper-api",
-    "github": "oxylabs/web-scraper-api",
-    "github_stars": 500,
-    "name": {
-      "en": "oxylabs/web-scraper-api",
-      "zh-CN": "oxylabs/web-scraper-api (GitHub ⭐500)",
-      "zh-TW": "oxylabs/web-scraper-api (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re",
-      "zh-CN": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re | GitHub 500+ Stars 开源项目",
-      "zh-TW": "All-in-one web scraping API for real-time, large-scale data extraction – proxies, CAPTCHA management, JS rendering, and parsing in a single request re | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-minimax-ai-minimax-m3",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/MiniMax-AI/MiniMax-M3",
-    "github": "MiniMax-AI/MiniMax-M3",
-    "github_stars": 499,
-    "name": {
-      "en": "MiniMax-AI/MiniMax-M3",
-      "zh-CN": "MiniMax-AI/MiniMax-M3 (GitHub ⭐499)",
-      "zh-TW": "MiniMax-AI/MiniMax-M3 (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "MiniMax-AI/MiniMax-M3 - Open source tool",
-      "zh-CN": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 499+ Stars 开源项目",
-      "zh-TW": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 499+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jestions-dev-bluefatfish",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/Jestions-dev/BlueFatFish",
-    "github": "Jestions-dev/BlueFatFish",
-    "github_stars": 499,
-    "name": {
-      "en": "Jestions-dev/BlueFatFish",
-      "zh-CN": "Jestions-dev/BlueFatFish (GitHub ⭐499)",
-      "zh-TW": "Jestions-dev/BlueFatFish (GitHub ⭐499)"
-    },
-    "desc": {
-      "en": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。",
-      "zh-CN": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 开源项目",
-      "zh-TW": "蓝色大肥鱼的新标签页：蓝底玩具箱 + 自定义壁纸/标签，纯本地，断网也能用。已上架 Microsoft Edge 加载项商店。 | GitHub 499+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
