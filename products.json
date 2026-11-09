@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61266,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61266)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61266)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61266+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61266+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 45129,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐45129)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐45129)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45129+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45129+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-minimax-ai-minimax-m3",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/MiniMax-AI/MiniMax-M3",
+    "github": "MiniMax-AI/MiniMax-M3",
+    "github_stars": 500,
+    "name": {
+      "en": "MiniMax-AI/MiniMax-M3",
+      "zh-CN": "MiniMax-AI/MiniMax-M3 (GitHub ⭐500)",
+      "zh-TW": "MiniMax-AI/MiniMax-M3 (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "MiniMax-AI/MiniMax-M3 - Open source tool",
+      "zh-CN": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-tobiaslee-rebuttal-skill",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/TobiasLee/Rebuttal-Skill",
+    "github": "TobiasLee/Rebuttal-Skill",
+    "github_stars": 500,
+    "name": {
+      "en": "TobiasLee/Rebuttal-Skill",
+      "zh-CN": "TobiasLee/Rebuttal-Skill (GitHub ⭐500)",
+      "zh-TW": "TobiasLee/Rebuttal-Skill (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "TobiasLee/Rebuttal-Skill - Open source tool",
+      "zh-CN": "TobiasLee/Rebuttal-Skill - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "TobiasLee/Rebuttal-Skill - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-linxidnju-opentag",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/linxidnju/OpenTag",
+    "github": "linxidnju/OpenTag",
+    "github_stars": 500,
+    "name": {
+      "en": "linxidnju/OpenTag",
+      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
+      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
+      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kijai-comfyui-solattntriton",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/kijai/ComfyUI-SolAttn_triton",
+    "github": "kijai/ComfyUI-SolAttn_triton",
+    "github_stars": 500,
+    "name": {
+      "en": "kijai/ComfyUI-SolAttn_triton",
+      "zh-CN": "kijai/ComfyUI-SolAttn_triton (GitHub ⭐500)",
+      "zh-TW": "kijai/ComfyUI-SolAttn_triton (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "kijai/ComfyUI-SolAttn_triton - Open source tool",
+      "zh-CN": "kijai/ComfyUI-SolAttn_triton - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "kijai/ComfyUI-SolAttn_triton - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-aykutsarac-jsoncrackcom",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
       "zh-CN": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 开源项目",
       "zh-TW": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-thusi-lab-gamescaling",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/THUSI-Lab/GameScaling",
-    "github": "THUSI-Lab/GameScaling",
-    "github_stars": 500,
-    "name": {
-      "en": "THUSI-Lab/GameScaling",
-      "zh-CN": "THUSI-Lab/GameScaling (GitHub ⭐500)",
-      "zh-TW": "THUSI-Lab/GameScaling (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face.",
-      "zh-CN": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds. Weights on Hugging Face. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 530946,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐530946)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐530946)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 530946+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 530946+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 496112,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐496112)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐496112)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 496112+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 496112+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 458547,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458547)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458547)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458547+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458547+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-oxynote-oxynote",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/oxynote/oxynote",
-    "github": "oxynote/oxynote",
-    "github_stars": 500,
-    "name": {
-      "en": "oxynote/oxynote",
-      "zh-CN": "oxynote/oxynote (GitHub ⭐500)",
-      "zh-TW": "oxynote/oxynote (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "An open‑source technical wiki connected to the systems it describes",
-      "zh-CN": "An open‑source technical wiki connected to the systems it describes | GitHub 500+ Stars 开源项目",
-      "zh-TW": "An open‑source technical wiki connected to the systems it describes | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 426884,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐426884)",
-      "zh-TW": "morluto/rea (GitHub ⭐426884)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 426884+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
