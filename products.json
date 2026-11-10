@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 534849,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐534849)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐534849)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 534849+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 534849+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 497928,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐497928)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐497928)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 497928+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 497928+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 458946,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458946)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458946)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458946+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458946+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 449830,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐449830)",
+      "zh-TW": "morluto/rea (GitHub ⭐449830)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency.",
       "zh-CN": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 开源项目",
       "zh-TW": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-appica-dev-appica-ui",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/appica-dev/appica-ui",
-    "github": "appica-dev/appica-ui",
-    "github_stars": 500,
-    "name": {
-      "en": "appica-dev/appica-ui",
-      "zh-CN": "appica-dev/appica-ui (GitHub ⭐500)",
-      "zh-TW": "appica-dev/appica-ui (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems.",
-      "zh-CN": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A beautifully styled UI component library for building accessible, modern web applications and scalable design systems. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 560789,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐560789)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐560789)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 560789+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 560789+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aiblueprinthq-ai-blueprint",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/aiblueprinthq/ai-blueprint",
-    "github": "aiblueprinthq/ai-blueprint",
-    "github_stars": 500,
-    "name": {
-      "en": "aiblueprinthq/ai-blueprint",
-      "zh-CN": "aiblueprinthq/ai-blueprint (GitHub ⭐500)",
-      "zh-TW": "aiblueprinthq/ai-blueprint (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control.",
-      "zh-CN": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A file-backed, spec-driven AI coding workflow framework for building real software while staying in control. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-shanselman-gputaskman",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/shanselman/gputaskman",
-    "github": "shanselman/gputaskman",
-    "github_stars": 500,
-    "name": {
-      "en": "shanselman/gputaskman",
-      "zh-CN": "shanselman/gputaskman (GitHub ⭐500)",
-      "zh-TW": "shanselman/gputaskman (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
-      "zh-CN": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA). | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
