@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 561867,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐561867)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐561867)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 561867+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 561867+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jxy333967-jianxunyun",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/jxy333967/jianxunyun",
+    "github": "jxy333967/jianxunyun",
+    "github_stars": 500,
+    "name": {
+      "en": "jxy333967/jianxunyun",
+      "zh-CN": "jxy333967/jianxunyun (GitHub ⭐500)",
+      "zh-TW": "jxy333967/jianxunyun (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "简讯云  最好的vpn服务",
+      "zh-CN": "简讯云  最好的vpn服务 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "简讯云  最好的vpn服务 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-archlizheng-aipm-wiki",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/archlizheng/AIPM-Wiki",
+    "github": "archlizheng/AIPM-Wiki",
+    "github_stars": 500,
+    "name": {
+      "en": "archlizheng/AIPM-Wiki",
+      "zh-CN": "archlizheng/AIPM-Wiki (GitHub ⭐500)",
+      "zh-TW": "archlizheng/AIPM-Wiki (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了",
+      "zh-CN": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-nv-tlabs-dvlt",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/nv-tlabs/dvlt",
+    "github": "nv-tlabs/dvlt",
+    "github_stars": 500,
+    "name": {
+      "en": "nv-tlabs/dvlt",
+      "zh-CN": "nv-tlabs/dvlt (GitHub ⭐500)",
+      "zh-TW": "nv-tlabs/dvlt (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction",
+      "zh-CN": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
       "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 开源项目",
       "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 42091,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐42091)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐42091)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42091+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42091+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41162,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41162)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41162)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41162+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41162+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-infini-ai-lab-hermit",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/Infini-AI-Lab/hermit",
-    "github": "Infini-AI-Lab/hermit",
-    "github_stars": 500,
-    "name": {
-      "en": "Infini-AI-Lab/hermit",
-      "zh-CN": "Infini-AI-Lab/hermit (GitHub ⭐500)",
-      "zh-TW": "Infini-AI-Lab/hermit (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A framework for continual learning and recursive self-improvement through harness adapter evolution.",
-      "zh-CN": "A framework for continual learning and recursive self-improvement through harness adapter evolution. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A framework for continual learning and recursive self-improvement through harness adapter evolution. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-yeje-cpu-talk-to-fengge",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/YeJe-cpu/talk-to-fengge",
-    "github": "YeJe-cpu/talk-to-fengge",
-    "github_stars": 500,
-    "name": {
-      "en": "YeJe-cpu/talk-to-fengge",
-      "zh-CN": "YeJe-cpu/talk-to-fengge (GitHub ⭐500)",
-      "zh-TW": "YeJe-cpu/talk-to-fengge (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency.",
-      "zh-CN": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Talk to 峰哥 — 克隆任何人的声音和性格，实时语音对话，工程延迟 < 1 秒 | Clone anyone's voice & personality for real-time conversation. < 1s engineering latency. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
