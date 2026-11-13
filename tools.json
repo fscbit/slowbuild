@@ -1,1 +1,245 @@
-[]
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 562341,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-11-13T22:55:50Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 536433,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-11-13T22:57:21Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 498778,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-11-13T22:52:54Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 459102,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-11-13T22:52:59Z"
+  },
+  {
+    "name": "morluto/rea",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "homepage": "https://rea.tools",
+    "stars": 457537,
+    "language": "TypeScript",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "android",
+      "claude-code",
+      "cli"
+    ],
+    "source": "hot",
+    "updated": "2026-11-13T22:58:44Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 61235,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-11-13T20:19:35Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 45052,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-11-13T21:30:01Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44594,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-11-13T20:30:07Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 42720,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-11-13T21:20:39Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 41255,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-11-13T22:29:34Z"
+  },
+  {
+    "name": "OpenBMB/MiniCPM-Desk-Pet",
+    "description": "a local-first desktop pet powered by MiniCPM5",
+    "url": "https://github.com/OpenBMB/MiniCPM-Desk-Pet",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-13T07:23:52Z"
+  },
+  {
+    "name": "Fisfzy/dsh-ego-browser",
+    "description": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、",
+    "url": "https://github.com/Fisfzy/dsh-ego-browser",
+    "homepage": "",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "agent-browser",
+      "browser-automation",
+      "cordis",
+      "deepseek-harness",
+      "dsh"
+    ],
+    "source": "new",
+    "updated": "2026-11-13T15:33:16Z"
+  },
+  {
+    "name": "ashayas/icloud-s3",
+    "description": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole.",
+    "url": "https://github.com/ashayas/icloud-s3",
+    "homepage": "",
+    "stars": 500,
+    "language": "Rust",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-12T18:15:58Z"
+  },
+  {
+    "name": "simonlin1212/investment-news",
+    "description": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI",
+    "url": "https://github.com/simonlin1212/investment-news",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "a-share",
+      "ai-agent",
+      "astock",
+      "china-stocks",
+      "claude"
+    ],
+    "source": "new",
+    "updated": "2026-11-12T11:28:22Z"
+  },
+  {
+    "name": "mhfed/vn-law-check",
+    "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cur",
+    "url": "https://github.com/mhfed/vn-law-check",
+    "homepage": "https://mhfed.github.io/vn-law-check/",
+    "stars": 500,
+    "language": "Shell",
+    "topics": [
+      "agent-md",
+      "agent-skills",
+      "claude-code",
+      "claude-plugin",
+      "claude-skills"
+    ],
+    "source": "new",
+    "updated": "2026-11-13T13:34:00Z"
+  }
+]

@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 42720,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐42720)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐42720)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42720+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42720+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41255,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41255)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41255)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41255+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41255+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-openbmb-minicpm-desk-pet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/OpenBMB/MiniCPM-Desk-Pet",
+    "github": "OpenBMB/MiniCPM-Desk-Pet",
+    "github_stars": 500,
+    "name": {
+      "en": "OpenBMB/MiniCPM-Desk-Pet",
+      "zh-CN": "OpenBMB/MiniCPM-Desk-Pet (GitHub ⭐500)",
+      "zh-TW": "OpenBMB/MiniCPM-Desk-Pet (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "a local-first desktop pet powered by MiniCPM5",
+      "zh-CN": "a local-first desktop pet powered by MiniCPM5 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "a local-first desktop pet powered by MiniCPM5 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-fisfzy-dsh-ego-browser",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/Fisfzy/dsh-ego-browser",
+    "github": "Fisfzy/dsh-ego-browser",
+    "github_stars": 500,
+    "name": {
+      "en": "Fisfzy/dsh-ego-browser",
+      "zh-CN": "Fisfzy/dsh-ego-browser (GitHub ⭐500)",
+      "zh-TW": "Fisfzy/dsh-ego-browser (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr",
+      "zh-CN": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr | GitHub 500+ Stars 开源项目",
+      "zh-TW": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-ashayas-icloud-s3",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/ashayas/icloud-s3",
+    "github": "ashayas/icloud-s3",
+    "github_stars": 500,
+    "name": {
+      "en": "ashayas/icloud-s3",
+      "zh-CN": "ashayas/icloud-s3 (GitHub ⭐500)",
+      "zh-TW": "ashayas/icloud-s3 (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole.",
+      "zh-CN": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-simonlin1212-investment-news",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/simonlin1212/investment-news",
+    "github": "simonlin1212/investment-news",
+    "github_stars": 500,
+    "name": {
+      "en": "simonlin1212/investment-news",
+      "zh-CN": "simonlin1212/investment-news (GitHub ⭐500)",
+      "zh-TW": "simonlin1212/investment-news (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g",
+      "zh-CN": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g | GitHub 500+ Stars 开源项目",
+      "zh-TW": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mhfed-vn-law-check",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/mhfed/vn-law-check",
+    "github": "mhfed/vn-law-check",
+    "github_stars": 500,
+    "name": {
+      "en": "mhfed/vn-law-check",
+      "zh-CN": "mhfed/vn-law-check (GitHub ⭐500)",
+      "zh-TW": "mhfed/vn-law-check (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
+      "zh-CN": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 开源项目",
       "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 61266,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐61266)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐61266)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 61266+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 61266+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 45129,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐45129)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐45129)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45129+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45129+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-minimax-ai-minimax-m3",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/MiniMax-AI/MiniMax-M3",
-    "github": "MiniMax-AI/MiniMax-M3",
-    "github_stars": 500,
-    "name": {
-      "en": "MiniMax-AI/MiniMax-M3",
-      "zh-CN": "MiniMax-AI/MiniMax-M3 (GitHub ⭐500)",
-      "zh-TW": "MiniMax-AI/MiniMax-M3 (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "MiniMax-AI/MiniMax-M3 - Open source tool",
-      "zh-CN": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "MiniMax-AI/MiniMax-M3 - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-tobiaslee-rebuttal-skill",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/TobiasLee/Rebuttal-Skill",
-    "github": "TobiasLee/Rebuttal-Skill",
-    "github_stars": 500,
-    "name": {
-      "en": "TobiasLee/Rebuttal-Skill",
-      "zh-CN": "TobiasLee/Rebuttal-Skill (GitHub ⭐500)",
-      "zh-TW": "TobiasLee/Rebuttal-Skill (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "TobiasLee/Rebuttal-Skill - Open source tool",
-      "zh-CN": "TobiasLee/Rebuttal-Skill - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "TobiasLee/Rebuttal-Skill - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-linxidnju-opentag",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚙️",
-    "price": 0,
-    "buyLink": "https://github.com/linxidnju/OpenTag",
-    "github": "linxidnju/OpenTag",
-    "github_stars": 500,
-    "name": {
-      "en": "linxidnju/OpenTag",
-      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
-      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
-      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kijai-comfyui-solattntriton",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/kijai/ComfyUI-SolAttn_triton",
-    "github": "kijai/ComfyUI-SolAttn_triton",
-    "github_stars": 500,
-    "name": {
-      "en": "kijai/ComfyUI-SolAttn_triton",
-      "zh-CN": "kijai/ComfyUI-SolAttn_triton (GitHub ⭐500)",
-      "zh-TW": "kijai/ComfyUI-SolAttn_triton (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "kijai/ComfyUI-SolAttn_triton - Open source tool",
-      "zh-CN": "kijai/ComfyUI-SolAttn_triton - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "kijai/ComfyUI-SolAttn_triton - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44586,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44586)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44586)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44586+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
