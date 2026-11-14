@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61259,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61259)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61259)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61259+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61259+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 45062,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐45062)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐45062)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45062+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45062+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44596,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44596)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44596)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44596+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44596+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-uclanlp-openvlharness",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/uclanlp/OpenVLHarness",
+    "github": "uclanlp/OpenVLHarness",
+    "github_stars": 500,
+    "name": {
+      "en": "uclanlp/OpenVLHarness",
+      "zh-CN": "uclanlp/OpenVLHarness (GitHub ⭐500)",
+      "zh-TW": "uclanlp/OpenVLHarness (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory",
+      "zh-CN": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-resistanceto-miniwatts",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚙️",
+    "price": 0,
+    "buyLink": "https://github.com/ResistanceTo/MiniWatts",
+    "github": "ResistanceTo/MiniWatts",
+    "github_stars": 500,
+    "name": {
+      "en": "ResistanceTo/MiniWatts",
+      "zh-CN": "ResistanceTo/MiniWatts (GitHub ⭐500)",
+      "zh-TW": "ResistanceTo/MiniWatts (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature ",
+      "zh-CN": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature  | GitHub 500+ Stars 开源项目",
+      "zh-TW": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches the cell, all 30 temperature  | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-gyulyvgc-sniffnet",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了",
       "zh-CN": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 开源项目",
       "zh-TW": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-nv-tlabs-dvlt",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/nv-tlabs/dvlt",
-    "github": "nv-tlabs/dvlt",
-    "github_stars": 500,
-    "name": {
-      "en": "nv-tlabs/dvlt",
-      "zh-CN": "nv-tlabs/dvlt (GitHub ⭐500)",
-      "zh-TW": "nv-tlabs/dvlt (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction",
-      "zh-CN": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Official implementation of Déjà View: Looping Transformers for Multi-View 3D Reconstruction | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 534849,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐534849)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐534849)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 534849+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 534849+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 497928,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐497928)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐497928)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 497928+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 497928+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 458946,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐458946)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐458946)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458946+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 458946+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 449830,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐449830)",
-      "zh-TW": "morluto/rea (GitHub ⭐449830)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 449830+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

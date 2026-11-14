@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 562341,
+    "stars": 562535,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-13T22:55:50Z"
+    "updated": "2026-11-14T22:58:37Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 536433,
+    "stars": 536925,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-13T22:57:21Z"
+    "updated": "2026-11-14T22:58:27Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 498778,
+    "stars": 499028,
     "language": "Python",
     "topics": [
       "api",
@@ -48,31 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-13T22:52:54Z"
-  },
-  {
-    "name": "freeCodeCamp/freeCodeCamp",
-    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "homepage": "https://contribute.freecodecamp.org",
-    "stars": 459102,
-    "language": "TypeScript",
-    "topics": [
-      "careers",
-      "certification",
-      "community",
-      "curriculum",
-      "d3"
-    ],
-    "source": "hot",
-    "updated": "2026-11-13T22:52:59Z"
+    "updated": "2026-11-14T22:57:43Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 457537,
+    "stars": 459761,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -82,14 +65,31 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-13T22:58:44Z"
+    "updated": "2026-11-14T22:59:02Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 459134,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-11-14T22:36:45Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61235,
+    "stars": 61259,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-11-13T20:19:35Z"
+    "updated": "2026-11-14T22:54:07Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 45052,
+    "stars": 45062,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-11-13T21:30:01Z"
+    "updated": "2026-11-14T21:39:57Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44594,
+    "stars": 44596,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-11-13T20:30:07Z"
+    "updated": "2026-11-14T21:25:30Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 42720,
+    "stars": 42784,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-11-13T21:20:39Z"
+    "updated": "2026-11-14T22:32:01Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41255,
+    "stars": 41264,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-11-13T22:29:34Z"
+    "updated": "2026-11-14T21:30:32Z"
   },
   {
     "name": "OpenBMB/MiniCPM-Desk-Pet",
@@ -178,35 +178,24 @@
     "language": "JavaScript",
     "topics": [],
     "source": "new",
-    "updated": "2026-11-13T07:23:52Z"
+    "updated": "2026-11-14T11:30:31Z"
   },
   {
-    "name": "Fisfzy/dsh-ego-browser",
-    "description": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、",
-    "url": "https://github.com/Fisfzy/dsh-ego-browser",
-    "homepage": "",
+    "name": "uclanlp/OpenVLHarness",
+    "description": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory",
+    "url": "https://github.com/uclanlp/OpenVLHarness",
+    "homepage": "https://openvlharness.github.io/",
     "stars": 500,
-    "language": "TypeScript",
+    "language": "Python",
     "topics": [
-      "agent-browser",
-      "browser-automation",
-      "cordis",
-      "deepseek-harness",
-      "dsh"
+      "agent-harness",
+      "agent-skills",
+      "agentic-ai",
+      "ai-agents",
+      "coding-agent"
     ],
     "source": "new",
-    "updated": "2026-11-13T15:33:16Z"
-  },
-  {
-    "name": "ashayas/icloud-s3",
-    "description": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole.",
-    "url": "https://github.com/ashayas/icloud-s3",
-    "homepage": "",
-    "stars": 500,
-    "language": "Rust",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-11-12T18:15:58Z"
+    "updated": "2026-11-14T21:02:40Z"
   },
   {
     "name": "simonlin1212/investment-news",
@@ -241,5 +230,22 @@
     ],
     "source": "new",
     "updated": "2026-11-13T13:34:00Z"
+  },
+  {
+    "name": "ResistanceTo/MiniWatts",
+    "description": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches",
+    "url": "https://github.com/ResistanceTo/MiniWatts",
+    "homepage": "",
+    "stars": 500,
+    "language": "Swift",
+    "topics": [
+      "battery",
+      "battery-monitor",
+      "charging",
+      "ios",
+      "ios-app"
+    ],
+    "source": "new",
+    "updated": "2026-11-14T17:47:02Z"
   }
 ]
