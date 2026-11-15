@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 562535,
+    "stars": 562849,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-14T22:58:37Z"
+    "updated": "2026-11-15T22:58:10Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 536925,
+    "stars": 537479,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-14T22:58:27Z"
+    "updated": "2026-11-15T22:59:47Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 499028,
+    "stars": 499291,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-14T22:57:43Z"
+    "updated": "2026-11-15T22:58:19Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 459761,
+    "stars": 461857,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -65,14 +65,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-14T22:59:02Z"
+    "updated": "2026-11-15T22:59:59Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 459134,
+    "stars": 459176,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -82,14 +82,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-14T22:36:45Z"
+    "updated": "2026-11-15T21:15:22Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61259,
+    "stars": 61275,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-11-14T22:54:07Z"
+    "updated": "2026-11-15T21:40:27Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 45062,
+    "stars": 45069,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,14 +116,14 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-11-14T21:39:57Z"
+    "updated": "2026-11-15T21:06:52Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
     "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
     "url": "https://github.com/AykutSarac/jsoncrack.com",
     "homepage": "https://jsoncrack.com/",
-    "stars": 44596,
+    "stars": 44598,
     "language": "TypeScript",
     "topics": [
       "csv",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-11-14T21:25:30Z"
+    "updated": "2026-11-15T20:44:46Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 42784,
+    "stars": 42839,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-11-14T22:32:01Z"
+    "updated": "2026-11-15T22:41:14Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41264,
+    "stars": 41273,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,85 +167,79 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-11-14T21:30:32Z"
+    "updated": "2026-11-15T16:00:36Z"
   },
   {
-    "name": "OpenBMB/MiniCPM-Desk-Pet",
-    "description": "a local-first desktop pet powered by MiniCPM5",
-    "url": "https://github.com/OpenBMB/MiniCPM-Desk-Pet",
+    "name": "jmanico/grim-prompter",
+    "description": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced thre",
+    "url": "https://github.com/jmanico/grim-prompter",
     "homepage": "",
     "stars": 500,
-    "language": "JavaScript",
-    "topics": [],
+    "language": "",
+    "topics": [
+      "ai-agents",
+      "appsec",
+      "claude-code",
+      "codex",
+      "linddun"
+    ],
     "source": "new",
-    "updated": "2026-11-14T11:30:31Z"
+    "updated": "2026-11-15T20:20:50Z"
   },
   {
-    "name": "uclanlp/OpenVLHarness",
-    "description": "Official Code for OpenVLHarness: Real-World Visual Agentic Tool‑Use with Multimodal Memory",
-    "url": "https://github.com/uclanlp/OpenVLHarness",
-    "homepage": "https://openvlharness.github.io/",
+    "name": "v1ktorrr0x/antigravity-filter-bypass",
+    "description": "",
+    "url": "https://github.com/v1ktorrr0x/antigravity-filter-bypass",
+    "homepage": "",
     "stars": 500,
     "language": "Python",
-    "topics": [
-      "agent-harness",
-      "agent-skills",
-      "agentic-ai",
-      "ai-agents",
-      "coding-agent"
-    ],
+    "topics": [],
     "source": "new",
-    "updated": "2026-11-14T21:02:40Z"
+    "updated": "2026-11-15T20:41:09Z"
   },
   {
-    "name": "simonlin1212/investment-news",
-    "description": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI",
-    "url": "https://github.com/simonlin1212/investment-news",
+    "name": "ShuaiMXu/happyhands",
+    "description": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results",
+    "url": "https://github.com/ShuaiMXu/happyhands",
+    "homepage": "https://happyhands.cc",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "ai-assisted-development",
+      "coding-agents",
+      "design-review",
+      "design-systems",
+      "developer-tools"
+    ],
+    "source": "new",
+    "updated": "2026-11-15T14:57:57Z"
+  },
+  {
+    "name": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "description": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin",
+    "url": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "homepage": "",
+    "stars": 500,
+    "language": "",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-15T22:48:59Z"
+  },
+  {
+    "name": "linxidnju/OpenTag",
+    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
+    "url": "https://github.com/linxidnju/OpenTag",
     "homepage": "",
     "stars": 500,
     "language": "JavaScript",
     "topics": [
-      "a-share",
-      "ai-agent",
-      "astock",
-      "china-stocks",
-      "claude"
+      "agent-gateway",
+      "ai-agents",
+      "automation",
+      "claude",
+      "claude-code"
     ],
     "source": "new",
-    "updated": "2026-11-12T11:28:22Z"
-  },
-  {
-    "name": "mhfed/vn-law-check",
-    "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cur",
-    "url": "https://github.com/mhfed/vn-law-check",
-    "homepage": "https://mhfed.github.io/vn-law-check/",
-    "stars": 500,
-    "language": "Shell",
-    "topics": [
-      "agent-md",
-      "agent-skills",
-      "claude-code",
-      "claude-plugin",
-      "claude-skills"
-    ],
-    "source": "new",
-    "updated": "2026-11-13T13:34:00Z"
-  },
-  {
-    "name": "ResistanceTo/MiniWatts",
-    "description": "An iPhone battery, charging and thermal instrument built on private iOS APIs — real charger watts, what actually reaches",
-    "url": "https://github.com/ResistanceTo/MiniWatts",
-    "homepage": "",
-    "stars": 500,
-    "language": "Swift",
-    "topics": [
-      "battery",
-      "battery-monitor",
-      "charging",
-      "ios",
-      "ios-app"
-    ],
-    "source": "new",
-    "updated": "2026-11-14T17:47:02Z"
+    "updated": "2026-11-09T22:01:34Z"
   }
 ]

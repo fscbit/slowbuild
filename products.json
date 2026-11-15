@@ -5440,6 +5440,204 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 537479,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐537479)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐537479)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 537479+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 537479+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 499291,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐499291)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐499291)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 499291+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 499291+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 461857,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐461857)",
+      "zh-TW": "morluto/rea (GitHub ⭐461857)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 461857+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 461857+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 459176,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐459176)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐459176)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459176+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459176+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-jmanico-grim-prompter",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/jmanico/grim-prompter",
+    "github": "jmanico/grim-prompter",
+    "github_stars": 500,
+    "name": {
+      "en": "jmanico/grim-prompter",
+      "zh-CN": "jmanico/grim-prompter (GitHub ⭐500)",
+      "zh-TW": "jmanico/grim-prompter (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29",
+      "zh-CN": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-v1ktorrr0x-antigravity-filter-",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/v1ktorrr0x/antigravity-filter-bypass",
+    "github": "v1ktorrr0x/antigravity-filter-bypass",
+    "github_stars": 500,
+    "name": {
+      "en": "v1ktorrr0x/antigravity-filter-bypass",
+      "zh-CN": "v1ktorrr0x/antigravity-filter-bypass (GitHub ⭐500)",
+      "zh-TW": "v1ktorrr0x/antigravity-filter-bypass (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "v1ktorrr0x/antigravity-filter-bypass - Open source tool",
+      "zh-CN": "v1ktorrr0x/antigravity-filter-bypass - Open source tool | GitHub 500+ Stars 开源项目",
+      "zh-TW": "v1ktorrr0x/antigravity-filter-bypass - Open source tool | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-shuaimxu-happyhands",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/ShuaiMXu/happyhands",
+    "github": "ShuaiMXu/happyhands",
+    "github_stars": 500,
+    "name": {
+      "en": "ShuaiMXu/happyhands",
+      "zh-CN": "ShuaiMXu/happyhands (GitHub ⭐500)",
+      "zh-TW": "ShuaiMXu/happyhands (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha.",
+      "zh-CN": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-moonlit-pages-aigc-detector-re",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "github": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+    "github_stars": 500,
+    "name": {
+      "en": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
+      "zh-CN": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐500)",
+      "zh-TW": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r",
+      "zh-CN": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 500+ Stars 开源项目",
+      "zh-TW": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-linxidnju-opentag",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/linxidnju/OpenTag",
+    "github": "linxidnju/OpenTag",
+    "github_stars": 500,
+    "name": {
+      "en": "linxidnju/OpenTag",
+      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
+      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
+      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5567,204 +5765,6 @@
       "en": "Comfortably monitor your network traffic 🕵️‍♂️",
       "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42720+ Stars 开源项目",
       "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 42720+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41255,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41255)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41255)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41255+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41255+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-openbmb-minicpm-desk-pet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/OpenBMB/MiniCPM-Desk-Pet",
-    "github": "OpenBMB/MiniCPM-Desk-Pet",
-    "github_stars": 500,
-    "name": {
-      "en": "OpenBMB/MiniCPM-Desk-Pet",
-      "zh-CN": "OpenBMB/MiniCPM-Desk-Pet (GitHub ⭐500)",
-      "zh-TW": "OpenBMB/MiniCPM-Desk-Pet (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "a local-first desktop pet powered by MiniCPM5",
-      "zh-CN": "a local-first desktop pet powered by MiniCPM5 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "a local-first desktop pet powered by MiniCPM5 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-fisfzy-dsh-ego-browser",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/Fisfzy/dsh-ego-browser",
-    "github": "Fisfzy/dsh-ego-browser",
-    "github_stars": 500,
-    "name": {
-      "en": "Fisfzy/dsh-ego-browser",
-      "zh-CN": "Fisfzy/dsh-ego-browser (GitHub ⭐500)",
-      "zh-TW": "Fisfzy/dsh-ego-browser (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr",
-      "zh-CN": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr | GitHub 500+ Stars 开源项目",
-      "zh-TW": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chr | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-ashayas-icloud-s3",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/ashayas/icloud-s3",
-    "github": "ashayas/icloud-s3",
-    "github_stars": 500,
-    "name": {
-      "en": "ashayas/icloud-s3",
-      "zh-CN": "ashayas/icloud-s3 (GitHub ⭐500)",
-      "zh-TW": "ashayas/icloud-s3 (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole.",
-      "zh-CN": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "An S3-compatible object store backed by iCloud Shared Photo Albums. Quota policy: Apple's Shared Album loophole. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-simonlin1212-investment-news",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/simonlin1212/investment-news",
-    "github": "simonlin1212/investment-news",
-    "github_stars": 500,
-    "name": {
-      "en": "simonlin1212/investment-news",
-      "zh-CN": "simonlin1212/investment-news (GitHub ⭐500)",
-      "zh-TW": "simonlin1212/investment-news (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g",
-      "zh-CN": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g | GitHub 500+ Stars 开源项目",
-      "zh-TW": "为 A股投资者打造的全球产业链资讯看板 · 12 大赛道一一对应 A股板块(半导体/AI/机器人/新能源车…)，覆盖 100+ 权威源，用你自己的大模型每日提炼中文「今日要点」+ 翻译 · 本地运行、零 API key · Local AI news dashboard tracking the g | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mhfed-vn-law-check",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/mhfed/vn-law-check",
-    "github": "mhfed/vn-law-check",
-    "github_stars": 500,
-    "name": {
-      "en": "mhfed/vn-law-check",
-      "zh-CN": "mhfed/vn-law-check (GitHub ⭐500)",
-      "zh-TW": "mhfed/vn-law-check (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
-      "zh-CN": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 561867,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐561867)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐561867)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 561867+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 561867+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jxy333967-jianxunyun",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/jxy333967/jianxunyun",
-    "github": "jxy333967/jianxunyun",
-    "github_stars": 500,
-    "name": {
-      "en": "jxy333967/jianxunyun",
-      "zh-CN": "jxy333967/jianxunyun (GitHub ⭐500)",
-      "zh-TW": "jxy333967/jianxunyun (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "简讯云  最好的vpn服务",
-      "zh-CN": "简讯云  最好的vpn服务 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "简讯云  最好的vpn服务 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-archlizheng-aipm-wiki",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/archlizheng/AIPM-Wiki",
-    "github": "archlizheng/AIPM-Wiki",
-    "github_stars": 500,
-    "name": {
-      "en": "archlizheng/AIPM-Wiki",
-      "zh-CN": "archlizheng/AIPM-Wiki (GitHub ⭐500)",
-      "zh-TW": "archlizheng/AIPM-Wiki (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了",
-      "zh-CN": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "🧱 AI 产品经理入门知识库:面试题库 · AI 基础 · 案例拆解 · 学习路线 | 无论是零基础转行还是持续进步,一个仓库就够了 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
