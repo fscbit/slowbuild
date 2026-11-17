@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 563456,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-11-17T22:57:56Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 538526,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-11-17T22:59:43Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 499857,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-11-17T22:41:27Z"
+  },
+  {
+    "name": "morluto/rea",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "homepage": "https://rea.tools",
+    "stars": 466210,
+    "language": "TypeScript",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "android",
+      "claude-code",
+      "cli"
+    ],
+    "source": "hot",
+    "updated": "2026-11-17T22:59:48Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 459266,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-11-17T22:58:49Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 61295,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-11-17T21:29:40Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 45093,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-11-17T20:06:09Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44601,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-11-17T17:36:59Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 43030,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-11-17T22:15:22Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 41300,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-11-17T22:57:05Z"
+  },
+  {
+    "name": "parthh01/sphinx",
+    "description": "You can outsource your thinking, but not your understanding. A hook for agent-assisted development that quizzes you on t",
+    "url": "https://github.com/parthh01/sphinx",
+    "homepage": "https://sphinx-six-theta.vercel.app",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-17T15:57:14Z"
+  },
+  {
+    "name": "unclebob/uml-viewer",
+    "description": "Live Quil UML class-diagram viewer driven by EDN",
+    "url": "https://github.com/unclebob/uml-viewer",
+    "homepage": "",
+    "stars": 500,
+    "language": "Clojure",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-17T17:29:14Z"
+  },
+  {
+    "name": "kydlikebtc/awesome-grokbot",
+    "description": "1894 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a",
+    "url": "https://github.com/kydlikebtc/awesome-grokbot",
+    "homepage": "https://kydlikebtc.github.io/awesome-grokbot/",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "agents",
+      "ai-agents",
+      "ai-tools",
+      "awesome",
+      "awesome-list"
+    ],
+    "source": "new",
+    "updated": "2026-11-17T05:31:21Z"
+  },
+  {
+    "name": "linxidnju/OpenTag",
+    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
+    "url": "https://github.com/linxidnju/OpenTag",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "agent-gateway",
+      "ai-agents",
+      "automation",
+      "claude",
+      "claude-code"
+    ],
+    "source": "new",
+    "updated": "2026-11-09T22:01:34Z"
+  },
+  {
+    "name": "quer3q/ps5-dump-forge",
+    "description": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
+    "url": "https://github.com/quer3q/ps5-dump-forge",
+    "homepage": "",
+    "stars": 500,
+    "language": "Rust",
+    "topics": [
+      "homebrew",
+      "ps5"
+    ],
+    "source": "new",
+    "updated": "2026-11-17T21:46:33Z"
+  }
+]
