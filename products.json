@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61303,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61303)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61303)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61303+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61303+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 45103,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐45103)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐45103)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45103+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45103+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44601,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44601)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44601)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44601+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44601+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 43084,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐43084)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐43084)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43084+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43084+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-wallechfox-offline-pdf-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/wallechfox/offline-pdf-tools",
+    "github": "wallechfox/offline-pdf-tools",
+    "github_stars": 500,
+    "name": {
+      "en": "wallechfox/offline-pdf-tools",
+      "zh-CN": "wallechfox/offline-pdf-tools (GitHub ⭐500)",
+      "zh-TW": "wallechfox/offline-pdf-tools (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃",
+      "zh-CN": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-25cloud-turaidc",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/25Cloud/TuraIDC",
+    "github": "25Cloud/TuraIDC",
+    "github_stars": 500,
+    "name": {
+      "en": "25Cloud/TuraIDC",
+      "zh-CN": "25Cloud/TuraIDC (GitHub ⭐500)",
+      "zh-TW": "25Cloud/TuraIDC (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统",
+      "zh-CN": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-immaghzbad-aetherst",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/immaghzbad/AetherST",
+    "github": "immaghzbad/AetherST",
+    "github_stars": 500,
+    "name": {
+      "en": "immaghzbad/AetherST",
+      "zh-CN": "immaghzbad/AetherST (GitHub ⭐500)",
+      "zh-TW": "immaghzbad/AetherST (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D",
+      "zh-CN": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "A collective list of free APIs",
       "zh-CN": "A collective list of free APIs | GitHub 499291+ Stars 开源项目",
       "zh-TW": "A collective list of free APIs | GitHub 499291+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 461857,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐461857)",
-      "zh-TW": "morluto/rea (GitHub ⭐461857)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 461857+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 461857+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 459176,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐459176)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐459176)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459176+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459176+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-jmanico-grim-prompter",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/jmanico/grim-prompter",
-    "github": "jmanico/grim-prompter",
-    "github_stars": 500,
-    "name": {
-      "en": "jmanico/grim-prompter",
-      "zh-CN": "jmanico/grim-prompter (GitHub ⭐500)",
-      "zh-TW": "jmanico/grim-prompter (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29",
-      "zh-CN": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-v1ktorrr0x-antigravity-filter-",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/v1ktorrr0x/antigravity-filter-bypass",
-    "github": "v1ktorrr0x/antigravity-filter-bypass",
-    "github_stars": 500,
-    "name": {
-      "en": "v1ktorrr0x/antigravity-filter-bypass",
-      "zh-CN": "v1ktorrr0x/antigravity-filter-bypass (GitHub ⭐500)",
-      "zh-TW": "v1ktorrr0x/antigravity-filter-bypass (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "v1ktorrr0x/antigravity-filter-bypass - Open source tool",
-      "zh-CN": "v1ktorrr0x/antigravity-filter-bypass - Open source tool | GitHub 500+ Stars 开源项目",
-      "zh-TW": "v1ktorrr0x/antigravity-filter-bypass - Open source tool | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-shuaimxu-happyhands",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/ShuaiMXu/happyhands",
-    "github": "ShuaiMXu/happyhands",
-    "github_stars": 500,
-    "name": {
-      "en": "ShuaiMXu/happyhands",
-      "zh-CN": "ShuaiMXu/happyhands (GitHub ⭐500)",
-      "zh-TW": "ShuaiMXu/happyhands (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha.",
-      "zh-CN": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, AI-assisted UI design review for coding agents. Inspect screenshots, scope code changes and compare results in a local workbench. Alpha. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-moonlit-pages-aigc-detector-re",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-    "github": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-    "github_stars": 500,
-    "name": {
-      "en": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill",
-      "zh-CN": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐500)",
-      "zh-TW": "Moonlit-Pages/AIGC-Detector-Rewriter-Skill (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r",
-      "zh-CN": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A conservative AIGC detector-informed thesis rewriting skill for English and Chinese academic writing. Supports Turnitin AI, CNKI AIGC, minimal-edit r | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-linxidnju-opentag",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/linxidnju/OpenTag",
-    "github": "linxidnju/OpenTag",
-    "github_stars": 500,
-    "name": {
-      "en": "linxidnju/OpenTag",
-      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
-      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
-      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
