@@ -5440,6 +5440,50 @@
     "category": "bundle"
   },
   {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 469923,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐469923)",
+      "zh-TW": "morluto/rea (GitHub ⭐469923)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 469923+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 469923+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 459352,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐459352)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐459352)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459352+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459352+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-bat",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5721,50 +5765,6 @@
       "en": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
       "zh-CN": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | GitHub 500+ Stars 开源项目",
       "zh-TW": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 537479,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐537479)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐537479)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 537479+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 537479+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 499291,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐499291)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐499291)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 499291+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 499291+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

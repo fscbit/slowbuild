@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 563704,
+    "stars": 563953,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-18T22:56:17Z"
+    "updated": "2026-11-19T22:54:01Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 539007,
+    "stars": 539514,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-18T22:59:59Z"
+    "updated": "2026-11-19T22:56:00Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 500067,
+    "stars": 500314,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-18T22:45:27Z"
+    "updated": "2026-11-19T22:55:37Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 468199,
+    "stars": 469923,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -65,14 +65,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-18T22:57:54Z"
+    "updated": "2026-11-19T22:59:42Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 459301,
+    "stars": 459352,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -82,152 +82,6 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-18T22:36:29Z"
-  },
-  {
-    "name": "sharkdp/bat",
-    "description": "A cat(1) clone with wings.",
-    "url": "https://github.com/sharkdp/bat",
-    "homepage": "",
-    "stars": 61303,
-    "language": "Rust",
-    "topics": [
-      "cli",
-      "command-line",
-      "git",
-      "hacktoberfest",
-      "rust"
-    ],
-    "source": "tool",
-    "updated": "2026-11-18T22:35:38Z"
-  },
-  {
-    "name": "sharkdp/fd",
-    "description": "A simple, fast and user-friendly alternative to 'find'",
-    "url": "https://github.com/sharkdp/fd",
-    "homepage": "",
-    "stars": 45103,
-    "language": "Rust",
-    "topics": [
-      "cli",
-      "command-line",
-      "filesystem",
-      "hacktoberfest",
-      "regex"
-    ],
-    "source": "tool",
-    "updated": "2026-11-18T19:39:45Z"
-  },
-  {
-    "name": "AykutSarac/jsoncrack.com",
-    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
-    "url": "https://github.com/AykutSarac/jsoncrack.com",
-    "homepage": "https://jsoncrack.com/",
-    "stars": 44601,
-    "language": "TypeScript",
-    "topics": [
-      "csv",
-      "diagrams",
-      "graph",
-      "json",
-      "nextjs"
-    ],
-    "source": "tool",
-    "updated": "2026-11-18T02:09:10Z"
-  },
-  {
-    "name": "GyulyVGC/sniffnet",
-    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
-    "url": "https://github.com/GyulyVGC/sniffnet",
-    "homepage": "https://sniffnet.app",
-    "stars": 43084,
-    "language": "Rust",
-    "topics": [
-      "app",
-      "application",
-      "cybersecurity",
-      "gui",
-      "iced"
-    ],
-    "source": "tool",
-    "updated": "2026-11-18T22:07:57Z"
-  },
-  {
-    "name": "CorentinTh/it-tools",
-    "description": "Collection of handy online tools for developers, with great UX. ",
-    "url": "https://github.com/CorentinTh/it-tools",
-    "homepage": "https://it-tools.tech",
-    "stars": 41307,
-    "language": "Vue",
-    "topics": [
-      "converter",
-      "developer-productivity",
-      "developer-tools",
-      "frontend",
-      "javascript"
-    ],
-    "source": "tool",
-    "updated": "2026-11-18T21:40:17Z"
-  },
-  {
-    "name": "parthh01/sphinx",
-    "description": "You can outsource your thinking, but not your understanding. A hook for agent-assisted development that quizzes you on t",
-    "url": "https://github.com/parthh01/sphinx",
-    "homepage": "https://sphinx-six-theta.vercel.app",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-11-17T15:57:14Z"
-  },
-  {
-    "name": "linxidnju/OpenTag",
-    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
-    "url": "https://github.com/linxidnju/OpenTag",
-    "homepage": "",
-    "stars": 500,
-    "language": "JavaScript",
-    "topics": [
-      "agent-gateway",
-      "ai-agents",
-      "automation",
-      "claude",
-      "claude-code"
-    ],
-    "source": "new",
-    "updated": "2026-11-09T22:01:34Z"
-  },
-  {
-    "name": "wallechfox/offline-pdf-tools",
-    "description": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开",
-    "url": "https://github.com/wallechfox/offline-pdf-tools",
-    "homepage": "",
-    "stars": 500,
-    "language": "HTML",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-11-18T01:38:24Z"
-  },
-  {
-    "name": "25Cloud/TuraIDC",
-    "description": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统",
-    "url": "https://github.com/25Cloud/TuraIDC",
-    "homepage": "https://docs.turaidc.com",
-    "stars": 500,
-    "language": "PHP",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-11-18T22:52:43Z"
-  },
-  {
-    "name": "immaghzbad/AetherST",
-    "description": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCK",
-    "url": "https://github.com/immaghzbad/AetherST",
-    "homepage": "",
-    "stars": 500,
-    "language": "Kotlin",
-    "topics": [],
-    "source": "new",
-    "updated": "2026-11-18T18:01:59Z"
+    "updated": "2026-11-19T22:57:35Z"
   }
 ]
