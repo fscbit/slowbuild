@@ -337,6 +337,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-hotclip.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-hotclip.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-how-to-survive-unemployment.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -423,6 +433,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-runs-ondev.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-sophon-realtime.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-sophon-realtime.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

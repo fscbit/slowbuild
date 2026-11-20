@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sindresorhus-awesome",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/sindresorhus/awesome",
+    "github": "sindresorhus/awesome",
+    "github_stars": 540005,
+    "name": {
+      "en": "sindresorhus/awesome",
+      "zh-CN": "sindresorhus/awesome (GitHub ⭐540005)",
+      "zh-TW": "sindresorhus/awesome (GitHub ⭐540005)"
+    },
+    "desc": {
+      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
+      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 540005+ Stars 开源项目",
+      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 540005+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-public-apis-public-apis",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/public-apis/public-apis",
+    "github": "public-apis/public-apis",
+    "github_stars": 500487,
+    "name": {
+      "en": "public-apis/public-apis",
+      "zh-CN": "public-apis/public-apis (GitHub ⭐500487)",
+      "zh-TW": "public-apis/public-apis (GitHub ⭐500487)"
+    },
+    "desc": {
+      "en": "A collective list of free APIs",
+      "zh-CN": "A collective list of free APIs | GitHub 500487+ Stars 开源项目",
+      "zh-TW": "A collective list of free APIs | GitHub 500487+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-xixihhhh-hotclip",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/xixihhhh/hotclip",
+    "github": "xixihhhh/hotclip",
+    "github_stars": 500,
+    "name": {
+      "en": "xixihhhh/hotclip",
+      "zh-CN": "xixihhhh/hotclip (GitHub ⭐500)",
+      "zh-TW": "xixihhhh/hotclip (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10",
+      "zh-CN": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-adventists-ai-sophon-realtime",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/adventists-ai/sophon-realtime",
+    "github": "adventists-ai/sophon-realtime",
+    "github_stars": 500,
+    "name": {
+      "en": "adventists-ai/sophon-realtime",
+      "zh-CN": "adventists-ai/sophon-realtime (GitHub ⭐500)",
+      "zh-TW": "adventists-ai/sophon-realtime (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon",
+      "zh-CN": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-galaxygeneralrobotics-humanoid",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/GalaxyGeneralRobotics/Humanoid-GPT",
+    "github": "GalaxyGeneralRobotics/Humanoid-GPT",
+    "github_stars": 500,
+    "name": {
+      "en": "GalaxyGeneralRobotics/Humanoid-GPT",
+      "zh-CN": "GalaxyGeneralRobotics/Humanoid-GPT (GitHub ⭐500)",
+      "zh-TW": "GalaxyGeneralRobotics/Humanoid-GPT (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Official implementation of AstraBrain-WBC 0.5",
+      "zh-CN": "Official implementation of AstraBrain-WBC 0.5 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Official implementation of AstraBrain-WBC 0.5 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cvg-vidmap",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/cvg/vidmap",
+    "github": "cvg/vidmap",
+    "github_stars": 500,
+    "name": {
+      "en": "cvg/vidmap",
+      "zh-CN": "cvg/vidmap (GitHub ⭐500)",
+      "zh-TW": "cvg/vidmap (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026)",
+      "zh-CN": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026) | GitHub 500+ Stars 开源项目",
+      "zh-TW": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026) | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-linxidnju-opentag",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/linxidnju/OpenTag",
+    "github": "linxidnju/OpenTag",
+    "github_stars": 500,
+    "name": {
+      "en": "linxidnju/OpenTag",
+      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
+      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
+      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-morluto-rea",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统",
       "zh-CN": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 开源项目",
       "zh-TW": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-immaghzbad-aetherst",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/immaghzbad/AetherST",
-    "github": "immaghzbad/AetherST",
-    "github_stars": 500,
-    "name": {
-      "en": "immaghzbad/AetherST",
-      "zh-CN": "immaghzbad/AetherST (GitHub ⭐500)",
-      "zh-TW": "immaghzbad/AetherST (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D",
-      "zh-CN": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Advanced Multi-Protocol VPN Client for Android (MASQUE, WireGuard, Gool, Zero Trust) powered by Aether Core and HEV SOCKS5 engine. High performance, D | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-codecrafters-io-build-your-own",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
-    "github": "codecrafters-io/build-your-own-x",
-    "github_stars": 563456,
-    "name": {
-      "en": "codecrafters-io/build-your-own-x",
-      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐563456)",
-      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐563456)"
-    },
-    "desc": {
-      "en": "Master programming by recreating your favorite technologies from scratch.",
-      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 563456+ Stars 开源项目",
-      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 563456+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-corentinth-it-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/CorentinTh/it-tools",
-    "github": "CorentinTh/it-tools",
-    "github_stars": 41300,
-    "name": {
-      "en": "CorentinTh/it-tools",
-      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41300)",
-      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41300)"
-    },
-    "desc": {
-      "en": "Collection of handy online tools for developers, with great UX.",
-      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41300+ Stars 开源项目",
-      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41300+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-parthh01-sphinx",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/parthh01/sphinx",
-    "github": "parthh01/sphinx",
-    "github_stars": 500,
-    "name": {
-      "en": "parthh01/sphinx",
-      "zh-CN": "parthh01/sphinx (GitHub ⭐500)",
-      "zh-TW": "parthh01/sphinx (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "You can outsource your thinking, but not your understanding. A hook for agent-assisted development that quizzes you on the changes before you push to ",
-      "zh-CN": "You can outsource your thinking, but not your understanding. A hook for agent-assisted development that quizzes you on the changes before you push to  | GitHub 500+ Stars 开源项目",
-      "zh-TW": "You can outsource your thinking, but not your understanding. A hook for agent-assisted development that quizzes you on the changes before you push to  | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-unclebob-uml-viewer",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/unclebob/uml-viewer",
-    "github": "unclebob/uml-viewer",
-    "github_stars": 500,
-    "name": {
-      "en": "unclebob/uml-viewer",
-      "zh-CN": "unclebob/uml-viewer (GitHub ⭐500)",
-      "zh-TW": "unclebob/uml-viewer (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Live Quil UML class-diagram viewer driven by EDN",
-      "zh-CN": "Live Quil UML class-diagram viewer driven by EDN | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Live Quil UML class-diagram viewer driven by EDN | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kydlikebtc-awesome-grokbot",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/kydlikebtc/awesome-grokbot",
-    "github": "kydlikebtc/awesome-grokbot",
-    "github_stars": 500,
-    "name": {
-      "en": "kydlikebtc/awesome-grokbot",
-      "zh-CN": "kydlikebtc/awesome-grokbot (GitHub ⭐500)",
-      "zh-TW": "kydlikebtc/awesome-grokbot (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "1894 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a search",
-      "zh-CN": "1894 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a search | GitHub 500+ Stars 开源项目",
-      "zh-TW": "1894 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a search | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-quer3q-ps5-dump-forge",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/quer3q/ps5-dump-forge",
-    "github": "quer3q/ps5-dump-forge",
-    "github_stars": 500,
-    "name": {
-      "en": "quer3q/ps5-dump-forge",
-      "zh-CN": "quer3q/ps5-dump-forge (GitHub ⭐500)",
-      "zh-TW": "quer3q/ps5-dump-forge (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
-      "zh-CN": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

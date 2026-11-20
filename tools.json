@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 563953,
+    "stars": 564150,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-19T22:54:01Z"
+    "updated": "2026-11-20T22:37:21Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 539514,
+    "stars": 540005,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-19T22:56:00Z"
+    "updated": "2026-11-20T22:53:53Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 500314,
+    "stars": 500487,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-19T22:55:37Z"
+    "updated": "2026-11-20T22:45:59Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 469923,
+    "stars": 471427,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -65,14 +65,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-19T22:59:42Z"
+    "updated": "2026-11-20T22:59:17Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 459352,
+    "stars": 459396,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -82,6 +82,164 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-19T22:57:35Z"
+    "updated": "2026-11-20T22:17:44Z"
+  },
+  {
+    "name": "sharkdp/bat",
+    "description": "A cat(1) clone with wings.",
+    "url": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "stars": 61334,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "git",
+      "hacktoberfest",
+      "rust"
+    ],
+    "source": "tool",
+    "updated": "2026-11-20T22:38:59Z"
+  },
+  {
+    "name": "sharkdp/fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "url": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "stars": 45138,
+    "language": "Rust",
+    "topics": [
+      "cli",
+      "command-line",
+      "filesystem",
+      "hacktoberfest",
+      "regex"
+    ],
+    "source": "tool",
+    "updated": "2026-11-20T22:32:21Z"
+  },
+  {
+    "name": "AykutSarac/jsoncrack.com",
+    "description": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and",
+    "url": "https://github.com/AykutSarac/jsoncrack.com",
+    "homepage": "https://jsoncrack.com/",
+    "stars": 44601,
+    "language": "TypeScript",
+    "topics": [
+      "csv",
+      "diagrams",
+      "graph",
+      "json",
+      "nextjs"
+    ],
+    "source": "tool",
+    "updated": "2026-11-20T16:58:12Z"
+  },
+  {
+    "name": "GyulyVGC/sniffnet",
+    "description": "Comfortably monitor your network traffic 🕵️‍♂️",
+    "url": "https://github.com/GyulyVGC/sniffnet",
+    "homepage": "https://sniffnet.app",
+    "stars": 43167,
+    "language": "Rust",
+    "topics": [
+      "app",
+      "application",
+      "cybersecurity",
+      "gui",
+      "iced"
+    ],
+    "source": "tool",
+    "updated": "2026-11-20T22:10:48Z"
+  },
+  {
+    "name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX. ",
+    "url": "https://github.com/CorentinTh/it-tools",
+    "homepage": "https://it-tools.tech",
+    "stars": 41318,
+    "language": "Vue",
+    "topics": [
+      "converter",
+      "developer-productivity",
+      "developer-tools",
+      "frontend",
+      "javascript"
+    ],
+    "source": "tool",
+    "updated": "2026-11-20T22:01:02Z"
+  },
+  {
+    "name": "xixihhhh/hotclip",
+    "description": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-so",
+    "url": "https://github.com/xixihhhh/hotclip",
+    "homepage": "https://xixihhhh.github.io/hotclip/",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "ai",
+      "ai-clip-generator",
+      "auto-subtitles",
+      "bilibili",
+      "claude-skill"
+    ],
+    "source": "new",
+    "updated": "2026-11-20T22:34:16Z"
+  },
+  {
+    "name": "adventists-ai/sophon-realtime",
+    "description": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac ",
+    "url": "https://github.com/adventists-ai/sophon-realtime",
+    "homepage": "https://www.adventists.ai/#sophon-realtime",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "apple-silicon",
+      "full-duplex",
+      "livekit",
+      "macos",
+      "mlx"
+    ],
+    "source": "new",
+    "updated": "2026-11-20T22:47:14Z"
+  },
+  {
+    "name": "GalaxyGeneralRobotics/Humanoid-GPT",
+    "description": "Official implementation of AstraBrain-WBC 0.5",
+    "url": "https://github.com/GalaxyGeneralRobotics/Humanoid-GPT",
+    "homepage": "https://qizekun.github.io/Humanoid-GPT/",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-19T15:15:13Z"
+  },
+  {
+    "name": "cvg/vidmap",
+    "description": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026)",
+    "url": "https://github.com/cvg/vidmap",
+    "homepage": "https://cvg.github.io/vidmap/",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-19T23:03:49Z"
+  },
+  {
+    "name": "linxidnju/OpenTag",
+    "description": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP ag",
+    "url": "https://github.com/linxidnju/OpenTag",
+    "homepage": "",
+    "stars": 500,
+    "language": "JavaScript",
+    "topics": [
+      "agent-gateway",
+      "ai-agents",
+      "automation",
+      "claude",
+      "claude-code"
+    ],
+    "source": "new",
+    "updated": "2026-11-09T22:01:34Z"
   }
 ]
