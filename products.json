@@ -5440,6 +5440,116 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 564465,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐564465)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐564465)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 564465+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 564465+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41323,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41323)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41323)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41323+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41323+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-datawhalechina-learn-world-mod",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/datawhalechina/learn-world-model",
+    "github": "datawhalechina/learn-world-model",
+    "github_stars": 500,
+    "name": {
+      "en": "datawhalechina/learn-world-model",
+      "zh-CN": "datawhalechina/learn-world-model (GitHub ⭐500)",
+      "zh-TW": "datawhalechina/learn-world-model (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Learn everything about world model",
+      "zh-CN": "Learn everything about world model | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Learn everything about world model | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-neural-maze-production-ocr-cou",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/neural-maze/production-ocr-course",
+    "github": "neural-maze/production-ocr-course",
+    "github_stars": 500,
+    "name": {
+      "en": "neural-maze/production-ocr-course",
+      "zh-CN": "neural-maze/production-ocr-course (GitHub ⭐500)",
+      "zh-TW": "neural-maze/production-ocr-course (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes.",
+      "zh-CN": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-thebiggavin-marketingdashboard",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/theBigGavin/marketingdashboard",
+    "github": "theBigGavin/marketingdashboard",
+    "github_stars": 500,
+    "name": {
+      "en": "theBigGavin/marketingdashboard",
+      "zh-CN": "theBigGavin/marketingdashboard (GitHub ⭐500)",
+      "zh-TW": "theBigGavin/marketingdashboard (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i",
+      "zh-CN": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i | GitHub 500+ Stars 开源项目",
+      "zh-TW": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5655,116 +5765,6 @@
       "en": "A cat(1) clone with wings.",
       "zh-CN": "A cat(1) clone with wings. | GitHub 61303+ Stars 开源项目",
       "zh-TW": "A cat(1) clone with wings. | GitHub 61303+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🛠️",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 45103,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐45103)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐45103)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45103+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45103+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44601,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44601)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44601)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44601+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44601+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 43084,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐43084)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐43084)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43084+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43084+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-wallechfox-offline-pdf-tools",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/wallechfox/offline-pdf-tools",
-    "github": "wallechfox/offline-pdf-tools",
-    "github_stars": 500,
-    "name": {
-      "en": "wallechfox/offline-pdf-tools",
-      "zh-CN": "wallechfox/offline-pdf-tools (GitHub ⭐500)",
-      "zh-TW": "wallechfox/offline-pdf-tools (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃",
-      "zh-CN": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "一套纯离线运行的 PDF 处理工具集，共40余项功能，1个网页文件。包含合并、拆分（支持页码范围/固定页数/单页/奇偶拆分）、旋转、删除、PDF 转图片、图片转 PDF、页面可视化重排、对开页切分、交替合并。无需安装软件，无需上传文件，打开浏览器就能用。所有操作都在你的设备上完成，文件绝不外传。通吃 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-25cloud-turaidc",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/25Cloud/TuraIDC",
-    "github": "25Cloud/TuraIDC",
-    "github_stars": 500,
-    "name": {
-      "en": "25Cloud/TuraIDC",
-      "zh-CN": "25Cloud/TuraIDC (GitHub ⭐500)",
-      "zh-TW": "25Cloud/TuraIDC (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统",
-      "zh-CN": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "TuraIDC - Next-generation IDC cloud service management & billing system 图拉云业务/财务系统 —— 新一代的IDC云服务经营系统 | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
