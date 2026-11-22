@@ -5440,6 +5440,138 @@
     "category": "bundle"
   },
   {
+    "id": "gh-sharkdp-fd",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/fd",
+    "github": "sharkdp/fd",
+    "github_stars": 45162,
+    "name": {
+      "en": "sharkdp/fd",
+      "zh-CN": "sharkdp/fd (GitHub ⭐45162)",
+      "zh-TW": "sharkdp/fd (GitHub ⭐45162)"
+    },
+    "desc": {
+      "en": "A simple, fast and user-friendly alternative to 'find'",
+      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45162+ Stars 开源项目",
+      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45162+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-aykutsarac-jsoncrackcom",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
+    "github": "AykutSarac/jsoncrack.com",
+    "github_stars": 44603,
+    "name": {
+      "en": "AykutSarac/jsoncrack.com",
+      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44603)",
+      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44603)"
+    },
+    "desc": {
+      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
+      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44603+ Stars 开源项目",
+      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44603+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-gyulyvgc-sniffnet",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/GyulyVGC/sniffnet",
+    "github": "GyulyVGC/sniffnet",
+    "github_stars": 43235,
+    "name": {
+      "en": "GyulyVGC/sniffnet",
+      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐43235)",
+      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐43235)"
+    },
+    "desc": {
+      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
+      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43235+ Stars 开源项目",
+      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43235+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-agentsope-skillalchemy",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/agentsope/SkillAlchemy",
+    "github": "agentsope/SkillAlchemy",
+    "github_stars": 500,
+    "name": {
+      "en": "agentsope/SkillAlchemy",
+      "zh-CN": "agentsope/SkillAlchemy (GitHub ⭐500)",
+      "zh-TW": "agentsope/SkillAlchemy (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "From thought to skill. From signal to structure.",
+      "zh-CN": "From thought to skill. From signal to structure. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "From thought to skill. From signal to structure. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kairothq-claude-photo-sorter",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/kairothq/claude-photo-sorter",
+    "github": "kairothq/claude-photo-sorter",
+    "github_stars": 500,
+    "name": {
+      "en": "kairothq/claude-photo-sorter",
+      "zh-CN": "kairothq/claude-photo-sorter (GitHub ⭐500)",
+      "zh-TW": "kairothq/claude-photo-sorter (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard.",
+      "zh-CN": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-cristicretu-diri",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/cristicretu/diri",
+    "github": "cristicretu/diri",
+    "github_stars": 500,
+    "name": {
+      "en": "cristicretu/diri",
+      "zh-CN": "cristicretu/diri (GitHub ⭐500)",
+      "zh-TW": "cristicretu/diri (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place.",
+      "zh-CN": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5633,138 +5765,6 @@
       "en": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon",
       "zh-CN": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 开源项目",
       "zh-TW": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-galaxygeneralrobotics-humanoid",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/GalaxyGeneralRobotics/Humanoid-GPT",
-    "github": "GalaxyGeneralRobotics/Humanoid-GPT",
-    "github_stars": 500,
-    "name": {
-      "en": "GalaxyGeneralRobotics/Humanoid-GPT",
-      "zh-CN": "GalaxyGeneralRobotics/Humanoid-GPT (GitHub ⭐500)",
-      "zh-TW": "GalaxyGeneralRobotics/Humanoid-GPT (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Official implementation of AstraBrain-WBC 0.5",
-      "zh-CN": "Official implementation of AstraBrain-WBC 0.5 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Official implementation of AstraBrain-WBC 0.5 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cvg-vidmap",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/cvg/vidmap",
-    "github": "cvg/vidmap",
-    "github_stars": 500,
-    "name": {
-      "en": "cvg/vidmap",
-      "zh-CN": "cvg/vidmap (GitHub ⭐500)",
-      "zh-TW": "cvg/vidmap (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026)",
-      "zh-CN": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026) | GitHub 500+ Stars 开源项目",
-      "zh-TW": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion (ECCV 2026) | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-linxidnju-opentag",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/linxidnju/OpenTag",
-    "github": "linxidnju/OpenTag",
-    "github_stars": 500,
-    "name": {
-      "en": "linxidnju/OpenTag",
-      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
-      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
-      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-morluto-rea",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🖥️",
-    "price": 0,
-    "buyLink": "https://github.com/morluto/rea",
-    "github": "morluto/rea",
-    "github_stars": 469923,
-    "name": {
-      "en": "morluto/rea",
-      "zh-CN": "morluto/rea (GitHub ⭐469923)",
-      "zh-TW": "morluto/rea (GitHub ⭐469923)"
-    },
-    "desc": {
-      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 469923+ Stars 开源项目",
-      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 469923+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-freecodecamp-freecodecamp",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
-    "github": "freeCodeCamp/freeCodeCamp",
-    "github_stars": 459352,
-    "name": {
-      "en": "freeCodeCamp/freeCodeCamp",
-      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐459352)",
-      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐459352)"
-    },
-    "desc": {
-      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459352+ Stars 开源项目",
-      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459352+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 61303,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐61303)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐61303)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 61303+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 61303+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
