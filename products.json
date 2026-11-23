@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-morluto-rea",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/morluto/rea",
+    "github": "morluto/rea",
+    "github_stars": 475518,
+    "name": {
+      "en": "morluto/rea",
+      "zh-CN": "morluto/rea (GitHub ⭐475518)",
+      "zh-TW": "morluto/rea (GitHub ⭐475518)"
+    },
+    "desc": {
+      "en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "zh-CN": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 475518+ Stars 开源项目",
+      "zh-TW": "Reverse engineer anything with agents, from app behavior down to native binaries. | GitHub 475518+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-freecodecamp-freecodecamp",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "github": "freeCodeCamp/freeCodeCamp",
+    "github_stars": 459538,
+    "name": {
+      "en": "freeCodeCamp/freeCodeCamp",
+      "zh-CN": "freeCodeCamp/freeCodeCamp (GitHub ⭐459538)",
+      "zh-TW": "freeCodeCamp/freeCodeCamp (GitHub ⭐459538)"
+    },
+    "desc": {
+      "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459538+ Stars 开源项目",
+      "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459538+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sharkdp-bat",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/sharkdp/bat",
+    "github": "sharkdp/bat",
+    "github_stars": 61393,
+    "name": {
+      "en": "sharkdp/bat",
+      "zh-CN": "sharkdp/bat (GitHub ⭐61393)",
+      "zh-TW": "sharkdp/bat (GitHub ⭐61393)"
+    },
+    "desc": {
+      "en": "A cat(1) clone with wings.",
+      "zh-CN": "A cat(1) clone with wings. | GitHub 61393+ Stars 开源项目",
+      "zh-TW": "A cat(1) clone with wings. | GitHub 61393+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-linxidnju-opentag",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/linxidnju/OpenTag",
+    "github": "linxidnju/OpenTag",
+    "github_stars": 500,
+    "name": {
+      "en": "linxidnju/OpenTag",
+      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
+      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
+      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-mokeaigc-mokeaigc-work-v25",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/MOKEAIGC/MOKEAIGC-work-V25",
+    "github": "MOKEAIGC/MOKEAIGC-work-V25",
+    "github_stars": 500,
+    "name": {
+      "en": "MOKEAIGC/MOKEAIGC-work-V25",
+      "zh-CN": "MOKEAIGC/MOKEAIGC-work-V25 (GitHub ⭐500)",
+      "zh-TW": "MOKEAIGC/MOKEAIGC-work-V25 (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。",
+      "zh-CN": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-google-deepmind-detectorscope",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/google-deepmind/detectorscope",
+    "github": "google-deepmind/detectorscope",
+    "github_stars": 500,
+    "name": {
+      "en": "google-deepmind/detectorscope",
+      "zh-CN": "google-deepmind/detectorscope (GitHub ⭐500)",
+      "zh-TW": "google-deepmind/detectorscope (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026)",
+      "zh-CN": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-edisonmbli-refactoring-ui-skil",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "⚡",
+    "price": 0,
+    "buyLink": "https://github.com/edisonmbli/refactoring-ui-skill",
+    "github": "edisonmbli/refactoring-ui-skill",
+    "github_stars": 500,
+    "name": {
+      "en": "edisonmbli/refactoring-ui-skill",
+      "zh-CN": "edisonmbli/refactoring-ui-skill (GitHub ⭐500)",
+      "zh-TW": "edisonmbli/refactoring-ui-skill (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene",
+      "zh-CN": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sharkdp-fd",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Collection of handy online tools for developers, with great UX.",
       "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41323+ Stars 开源项目",
       "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41323+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-datawhalechina-learn-world-mod",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/datawhalechina/learn-world-model",
-    "github": "datawhalechina/learn-world-model",
-    "github_stars": 500,
-    "name": {
-      "en": "datawhalechina/learn-world-model",
-      "zh-CN": "datawhalechina/learn-world-model (GitHub ⭐500)",
-      "zh-TW": "datawhalechina/learn-world-model (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Learn everything about world model",
-      "zh-CN": "Learn everything about world model | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Learn everything about world model | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-neural-maze-production-ocr-cou",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/neural-maze/production-ocr-course",
-    "github": "neural-maze/production-ocr-course",
-    "github_stars": 500,
-    "name": {
-      "en": "neural-maze/production-ocr-course",
-      "zh-CN": "neural-maze/production-ocr-course (GitHub ⭐500)",
-      "zh-TW": "neural-maze/production-ocr-course (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes.",
-      "zh-CN": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Build, deploy, and scale a production-grade OCR pipeline using Rust, vLLM, Redis, KEDA, and Kubernetes. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-thebiggavin-marketingdashboard",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/theBigGavin/marketingdashboard",
-    "github": "theBigGavin/marketingdashboard",
-    "github_stars": 500,
-    "name": {
-      "en": "theBigGavin/marketingdashboard",
-      "zh-CN": "theBigGavin/marketingdashboard (GitHub ⭐500)",
-      "zh-TW": "theBigGavin/marketingdashboard (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i",
-      "zh-CN": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i | GitHub 500+ Stars 开源项目",
-      "zh-TW": "面向金融与产业研究的一屏式实时行情大屏：A股/港股/美股指数、大宗商品、美债收益率、板块热点、主力资金流、7×24 快讯、产业链自选股、AI 大模型 Token 追踪。A real-time market research cockpit on a single screen: CN/HK/US i | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sindresorhus-awesome",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/sindresorhus/awesome",
-    "github": "sindresorhus/awesome",
-    "github_stars": 540005,
-    "name": {
-      "en": "sindresorhus/awesome",
-      "zh-CN": "sindresorhus/awesome (GitHub ⭐540005)",
-      "zh-TW": "sindresorhus/awesome (GitHub ⭐540005)"
-    },
-    "desc": {
-      "en": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin",
-      "zh-CN": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 540005+ Stars 开源项目",
-      "zh-TW": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existin | GitHub 540005+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-public-apis-public-apis",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/public-apis/public-apis",
-    "github": "public-apis/public-apis",
-    "github_stars": 500487,
-    "name": {
-      "en": "public-apis/public-apis",
-      "zh-CN": "public-apis/public-apis (GitHub ⭐500487)",
-      "zh-TW": "public-apis/public-apis (GitHub ⭐500487)"
-    },
-    "desc": {
-      "en": "A collective list of free APIs",
-      "zh-CN": "A collective list of free APIs | GitHub 500487+ Stars 开源项目",
-      "zh-TW": "A collective list of free APIs | GitHub 500487+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-xixihhhh-hotclip",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/xixihhhh/hotclip",
-    "github": "xixihhhh/hotclip",
-    "github_stars": 500,
-    "name": {
-      "en": "xixihhhh/hotclip",
-      "zh-CN": "xixihhhh/hotclip (GitHub ⭐500)",
-      "zh-TW": "xixihhhh/hotclip (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10",
-      "zh-CN": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "免费开源的 AI 剪辑 / 直播切片工具:长视频、直播回放、播客一键切成爆款竖屏短视频,直发抖音/快手/B站/小红书/视频号——AI 找高光金句、弹幕热度进爆点判断、自动加字幕、横屏转竖屏,本地运行无水印不上传 | Free open-source Opus Clip alternative, 10 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-adventists-ai-sophon-realtime",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/adventists-ai/sophon-realtime",
-    "github": "adventists-ai/sophon-realtime",
-    "github_stars": 500,
-    "name": {
-      "en": "adventists-ai/sophon-realtime",
-      "zh-CN": "adventists-ai/sophon-realtime (GitHub ⭐500)",
-      "zh-TW": "adventists-ai/sophon-realtime (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon",
-      "zh-CN": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open full-duplex voice models that hear your tone and speak with one. One GPU with vLLM-Omni, or fully offline on a Mac with MLX. Zero-shot voice clon | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

@@ -267,6 +267,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-detectorscope.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-detectorscope.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-dsh-ego-browser.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -433,6 +443,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-rea.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-refactoring-ui-skill.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-refactoring-ui-skill.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

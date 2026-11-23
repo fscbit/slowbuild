@@ -4,7 +4,7 @@
     "description": "Master programming by recreating your favorite technologies from scratch.",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "homepage": "https://codecrafters.io",
-    "stars": 564737,
+    "stars": 565007,
     "language": "Markdown",
     "topics": [
       "awesome-list",
@@ -14,14 +14,14 @@
       "tutorial-exercises"
     ],
     "source": "hot",
-    "updated": "2026-11-22T22:51:45Z"
+    "updated": "2026-11-23T22:51:15Z"
   },
   {
     "name": "sindresorhus/awesome",
     "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
     "url": "https://github.com/sindresorhus/awesome",
     "homepage": "",
-    "stars": 541082,
+    "stars": 541638,
     "language": "",
     "topics": [
       "awesome",
@@ -31,14 +31,14 @@
       "unicorns"
     ],
     "source": "hot",
-    "updated": "2026-11-22T22:56:30Z"
+    "updated": "2026-11-23T22:57:58Z"
   },
   {
     "name": "public-apis/public-apis",
     "description": "A collective list of free APIs",
     "url": "https://github.com/public-apis/public-apis",
     "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
-    "stars": 500850,
+    "stars": 501042,
     "language": "Python",
     "topics": [
       "api",
@@ -48,14 +48,14 @@
       "free"
     ],
     "source": "hot",
-    "updated": "2026-11-22T22:52:49Z"
+    "updated": "2026-11-23T22:49:23Z"
   },
   {
     "name": "morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "url": "https://github.com/morluto/rea",
     "homepage": "https://rea.tools",
-    "stars": 474028,
+    "stars": 475518,
     "language": "TypeScript",
     "topics": [
       "agent-skills",
@@ -65,14 +65,14 @@
       "cli"
     ],
     "source": "hot",
-    "updated": "2026-11-22T22:58:30Z"
+    "updated": "2026-11-23T22:58:25Z"
   },
   {
     "name": "freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "homepage": "https://contribute.freecodecamp.org",
-    "stars": 459498,
+    "stars": 459538,
     "language": "TypeScript",
     "topics": [
       "careers",
@@ -82,14 +82,14 @@
       "d3"
     ],
     "source": "hot",
-    "updated": "2026-11-22T22:44:38Z"
+    "updated": "2026-11-23T21:34:47Z"
   },
   {
     "name": "sharkdp/bat",
     "description": "A cat(1) clone with wings.",
     "url": "https://github.com/sharkdp/bat",
     "homepage": "",
-    "stars": 61373,
+    "stars": 61393,
     "language": "Rust",
     "topics": [
       "cli",
@@ -99,14 +99,14 @@
       "rust"
     ],
     "source": "tool",
-    "updated": "2026-11-22T21:00:47Z"
+    "updated": "2026-11-23T21:31:02Z"
   },
   {
     "name": "sharkdp/fd",
     "description": "A simple, fast and user-friendly alternative to 'find'",
     "url": "https://github.com/sharkdp/fd",
     "homepage": "",
-    "stars": 45162,
+    "stars": 45169,
     "language": "Rust",
     "topics": [
       "cli",
@@ -116,7 +116,7 @@
       "regex"
     ],
     "source": "tool",
-    "updated": "2026-11-22T18:50:52Z"
+    "updated": "2026-11-23T19:34:19Z"
   },
   {
     "name": "AykutSarac/jsoncrack.com",
@@ -133,14 +133,14 @@
       "nextjs"
     ],
     "source": "tool",
-    "updated": "2026-11-22T21:26:12Z"
+    "updated": "2026-11-23T14:51:45Z"
   },
   {
     "name": "GyulyVGC/sniffnet",
     "description": "Comfortably monitor your network traffic 🕵️‍♂️",
     "url": "https://github.com/GyulyVGC/sniffnet",
     "homepage": "https://sniffnet.app",
-    "stars": 43235,
+    "stars": 43262,
     "language": "Rust",
     "topics": [
       "app",
@@ -150,14 +150,14 @@
       "iced"
     ],
     "source": "tool",
-    "updated": "2026-11-22T21:46:24Z"
+    "updated": "2026-11-23T21:52:37Z"
   },
   {
     "name": "CorentinTh/it-tools",
     "description": "Collection of handy online tools for developers, with great UX. ",
     "url": "https://github.com/CorentinTh/it-tools",
     "homepage": "https://it-tools.tech",
-    "stars": 41335,
+    "stars": 41340,
     "language": "Vue",
     "topics": [
       "converter",
@@ -167,7 +167,7 @@
       "javascript"
     ],
     "source": "tool",
-    "updated": "2026-11-22T20:29:49Z"
+    "updated": "2026-11-23T15:06:19Z"
   },
   {
     "name": "datawhalechina/learn-world-model",
@@ -182,7 +182,7 @@
       "world-model"
     ],
     "source": "new",
-    "updated": "2026-11-21T13:16:11Z"
+    "updated": "2026-11-23T12:53:17Z"
   },
   {
     "name": "linxidnju/OpenTag",
@@ -202,48 +202,48 @@
     "updated": "2026-11-09T22:01:34Z"
   },
   {
-    "name": "agentsope/SkillAlchemy",
-    "description": "From thought to skill. From signal to structure.",
-    "url": "https://github.com/agentsope/SkillAlchemy",
+    "name": "MOKEAIGC/MOKEAIGC-work-V25",
+    "description": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。",
+    "url": "https://github.com/MOKEAIGC/MOKEAIGC-work-V25",
     "homepage": "",
     "stars": 500,
-    "language": "Python",
-    "topics": [
-      "agent-skill",
-      "agent-skills",
-      "ai-agent",
-      "llm-agent",
-      "skill-acquisition"
-    ],
-    "source": "new",
-    "updated": "2026-11-22T07:19:20Z"
-  },
-  {
-    "name": "kairothq/claude-photo-sorter",
-    "description": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live",
-    "url": "https://github.com/kairothq/claude-photo-sorter",
-    "homepage": "",
-    "stars": 500,
-    "language": "Python",
+    "language": "",
     "topics": [],
     "source": "new",
-    "updated": "2026-11-22T19:39:22Z"
+    "updated": "2026-11-23T18:30:35Z"
   },
   {
-    "name": "cristicretu/diri",
-    "description": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one plac",
-    "url": "https://github.com/cristicretu/diri",
-    "homepage": "https://diri.sh",
+    "name": "google-deepmind/detectorscope",
+    "description": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026)",
+    "url": "https://github.com/google-deepmind/detectorscope",
+    "homepage": "https://aclanthology.org/2026.emnlp-main.762/",
     "stars": 500,
-    "language": "Rust",
+    "language": "Python",
     "topics": [
-      "claude-code",
-      "codex",
-      "coding-agents",
-      "gpui",
-      "rust"
+      "ai-text-detection",
+      "explainable-ai",
+      "interpretability",
+      "mechanistic-interpretability",
+      "sparse-autoencoders"
     ],
     "source": "new",
-    "updated": "2026-11-21T01:01:43Z"
+    "updated": "2026-11-23T08:07:50Z"
+  },
+  {
+    "name": "edisonmbli/refactoring-ui-skill",
+    "description": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tr",
+    "url": "https://github.com/edisonmbli/refactoring-ui-skill",
+    "homepage": "https://www.refactoringui.com",
+    "stars": 500,
+    "language": "Python",
+    "topics": [
+      "ai-agent",
+      "claude-code",
+      "claude-skill",
+      "design-system",
+      "design-tokens"
+    ],
+    "source": "new",
+    "updated": "2026-11-23T18:52:33Z"
   }
 ]
