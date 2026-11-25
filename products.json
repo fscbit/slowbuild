@@ -5440,6 +5440,160 @@
     "category": "bundle"
   },
   {
+    "id": "gh-codecrafters-io-build-your-own",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔮",
+    "price": 0,
+    "buyLink": "https://github.com/codecrafters-io/build-your-own-x",
+    "github": "codecrafters-io/build-your-own-x",
+    "github_stars": 565536,
+    "name": {
+      "en": "codecrafters-io/build-your-own-x",
+      "zh-CN": "codecrafters-io/build-your-own-x (GitHub ⭐565536)",
+      "zh-TW": "codecrafters-io/build-your-own-x (GitHub ⭐565536)"
+    },
+    "desc": {
+      "en": "Master programming by recreating your favorite technologies from scratch.",
+      "zh-CN": "Master programming by recreating your favorite technologies from scratch. | GitHub 565536+ Stars 开源项目",
+      "zh-TW": "Master programming by recreating your favorite technologies from scratch. | GitHub 565536+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-corentinth-it-tools",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/CorentinTh/it-tools",
+    "github": "CorentinTh/it-tools",
+    "github_stars": 41361,
+    "name": {
+      "en": "CorentinTh/it-tools",
+      "zh-CN": "CorentinTh/it-tools (GitHub ⭐41361)",
+      "zh-TW": "CorentinTh/it-tools (GitHub ⭐41361)"
+    },
+    "desc": {
+      "en": "Collection of handy online tools for developers, with great UX.",
+      "zh-CN": "Collection of handy online tools for developers, with great UX. | GitHub 41361+ Stars 开源项目",
+      "zh-TW": "Collection of handy online tools for developers, with great UX. | GitHub 41361+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-kevinrivm-vocero-crm",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🚀",
+    "price": 0,
+    "buyLink": "https://github.com/kevinrivm/vocero-crm",
+    "github": "kevinrivm/vocero-crm",
+    "github_stars": 500,
+    "name": {
+      "en": "kevinrivm/vocero-crm",
+      "zh-CN": "kevinrivm/vocero-crm (GitHub ⭐500)",
+      "zh-TW": "kevinrivm/vocero-crm (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "CRM de WhatsApp open source y self-hosted con agente de IA y Laboratorio de auto-evaluacion",
+      "zh-CN": "CRM de WhatsApp open source y self-hosted con agente de IA y Laboratorio de auto-evaluacion | GitHub 500+ Stars 开源项目",
+      "zh-TW": "CRM de WhatsApp open source y self-hosted con agente de IA y Laboratorio de auto-evaluacion | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hidemebr-sambatu",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/HideMeBr/SambaTu",
+    "github": "HideMeBr/SambaTu",
+    "github_stars": 500,
+    "name": {
+      "en": "HideMeBr/SambaTu",
+      "zh-CN": "HideMeBr/SambaTu (GitHub ⭐500)",
+      "zh-TW": "HideMeBr/SambaTu (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Versão Brasileira da famosa RockYou. Nesta lista de senhas existem senhas 100% brasileiras que estavam em vazamentos, logs de infostealer, etc.",
+      "zh-CN": "Versão Brasileira da famosa RockYou. Nesta lista de senhas existem senhas 100% brasileiras que estavam em vazamentos, logs de infostealer, etc. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Versão Brasileira da famosa RockYou. Nesta lista de senhas existem senhas 100% brasileiras que estavam em vazamentos, logs de infostealer, etc. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-6-robot-jie3dnav",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🖥️",
+    "price": 0,
+    "buyLink": "https://github.com/6-robot/jie_3d_nav",
+    "github": "6-robot/jie_3d_nav",
+    "github_stars": 500,
+    "name": {
+      "en": "6-robot/jie_3d_nav",
+      "zh-CN": "6-robot/jie_3d_nav (GitHub ⭐500)",
+      "zh-TW": "6-robot/jie_3d_nav (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "一套基于 ROS 2 Humble 的 3D 导航系统，通过 Web 界面交互。本系统已在智元科技 D1 机器狗以及留形科技 Odin 1 空间定位模组上测试通过。",
+      "zh-CN": "一套基于 ROS 2 Humble 的 3D 导航系统，通过 Web 界面交互。本系统已在智元科技 D1 机器狗以及留形科技 Odin 1 空间定位模组上测试通过。 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "一套基于 ROS 2 Humble 的 3D 导航系统，通过 Web 界面交互。本系统已在智元科技 D1 机器狗以及留形科技 Odin 1 空间定位模组上测试通过。 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-hy4ri-hermes-mobile",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🛠️",
+    "price": 0,
+    "buyLink": "https://github.com/Hy4ri/hermes-mobile",
+    "github": "Hy4ri/hermes-mobile",
+    "github_stars": 500,
+    "name": {
+      "en": "Hy4ri/hermes-mobile",
+      "zh-CN": "Hy4ri/hermes-mobile (GitHub ⭐500)",
+      "zh-TW": "Hy4ri/hermes-mobile (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Native Android app for your Hermes Agent",
+      "zh-CN": "Native Android app for your Hermes Agent | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Native Android app for your Hermes Agent | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-thesysdev-opendashboards",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🎯",
+    "price": 0,
+    "buyLink": "https://github.com/thesysdev/opendashboards",
+    "github": "thesysdev/opendashboards",
+    "github_stars": 500,
+    "name": {
+      "en": "thesysdev/opendashboards",
+      "zh-CN": "thesysdev/opendashboards (GitHub ⭐500)",
+      "zh-TW": "thesysdev/opendashboards (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Open Source Claude Dashboards",
+      "zh-CN": "Open Source Claude Dashboards | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Open Source Claude Dashboards | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-sindresorhus-awesome",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5611,160 +5765,6 @@
       "en": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026)",
       "zh-CN": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 开源项目",
       "zh-TW": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-edisonmbli-refactoring-ui-skil",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/edisonmbli/refactoring-ui-skill",
-    "github": "edisonmbli/refactoring-ui-skill",
-    "github_stars": 500,
-    "name": {
-      "en": "edisonmbli/refactoring-ui-skill",
-      "zh-CN": "edisonmbli/refactoring-ui-skill (GitHub ⭐500)",
-      "zh-TW": "edisonmbli/refactoring-ui-skill (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene",
-      "zh-CN": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Unofficial Claude Skill derived from the book Refactoring UI — a design rulebook and diagnostic layer for web UI. 151 tracked rules, design token gene | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-fd",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "📦",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/fd",
-    "github": "sharkdp/fd",
-    "github_stars": 45162,
-    "name": {
-      "en": "sharkdp/fd",
-      "zh-CN": "sharkdp/fd (GitHub ⭐45162)",
-      "zh-TW": "sharkdp/fd (GitHub ⭐45162)"
-    },
-    "desc": {
-      "en": "A simple, fast and user-friendly alternative to 'find'",
-      "zh-CN": "A simple, fast and user-friendly alternative to 'find' | GitHub 45162+ Stars 开源项目",
-      "zh-TW": "A simple, fast and user-friendly alternative to 'find' | GitHub 45162+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-aykutsarac-jsoncrackcom",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/AykutSarac/jsoncrack.com",
-    "github": "AykutSarac/jsoncrack.com",
-    "github_stars": 44603,
-    "name": {
-      "en": "AykutSarac/jsoncrack.com",
-      "zh-CN": "AykutSarac/jsoncrack.com (GitHub ⭐44603)",
-      "zh-TW": "AykutSarac/jsoncrack.com (GitHub ⭐44603)"
-    },
-    "desc": {
-      "en": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs.",
-      "zh-CN": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44603+ Stars 开源项目",
-      "zh-TW": "✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML and CSV into interactive graphs. | GitHub 44603+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-gyulyvgc-sniffnet",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "💡",
-    "price": 0,
-    "buyLink": "https://github.com/GyulyVGC/sniffnet",
-    "github": "GyulyVGC/sniffnet",
-    "github_stars": 43235,
-    "name": {
-      "en": "GyulyVGC/sniffnet",
-      "zh-CN": "GyulyVGC/sniffnet (GitHub ⭐43235)",
-      "zh-TW": "GyulyVGC/sniffnet (GitHub ⭐43235)"
-    },
-    "desc": {
-      "en": "Comfortably monitor your network traffic 🕵️‍♂️",
-      "zh-CN": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43235+ Stars 开源项目",
-      "zh-TW": "Comfortably monitor your network traffic 🕵️‍♂️ | GitHub 43235+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-agentsope-skillalchemy",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/agentsope/SkillAlchemy",
-    "github": "agentsope/SkillAlchemy",
-    "github_stars": 500,
-    "name": {
-      "en": "agentsope/SkillAlchemy",
-      "zh-CN": "agentsope/SkillAlchemy (GitHub ⭐500)",
-      "zh-TW": "agentsope/SkillAlchemy (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "From thought to skill. From signal to structure.",
-      "zh-CN": "From thought to skill. From signal to structure. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "From thought to skill. From signal to structure. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-kairothq-claude-photo-sorter",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "⚡",
-    "price": 0,
-    "buyLink": "https://github.com/kairothq/claude-photo-sorter",
-    "github": "kairothq/claude-photo-sorter",
-    "github_stars": 500,
-    "name": {
-      "en": "kairothq/claude-photo-sorter",
-      "zh-CN": "kairothq/claude-photo-sorter (GitHub ⭐500)",
-      "zh-TW": "kairothq/claude-photo-sorter (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard.",
-      "zh-CN": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Point Claude at your camera roll: it sorts photos and videos into folders, finds duplicates, and plays it back on a live localhost dashboard. | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-cristicretu-diri",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🚀",
-    "price": 0,
-    "buyLink": "https://github.com/cristicretu/diri",
-    "github": "cristicretu/diri",
-    "github_stars": 500,
-    "name": {
-      "en": "cristicretu/diri",
-      "zh-CN": "cristicretu/diri (GitHub ⭐500)",
-      "zh-TW": "cristicretu/diri (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place.",
-      "zh-CN": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place. | GitHub 500+ Stars 开源项目",
-      "zh-TW": "The best way to work with coding agents. Run fifty in parallel, let them spawn each other, review everything in one place. | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"

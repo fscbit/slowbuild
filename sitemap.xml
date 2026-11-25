@@ -347,6 +347,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.slowbuild.top/blog/tool-hermes-mobile.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-hermes-mobile.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.slowbuild.top/blog/tool-hotclip.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -393,6 +403,16 @@
   </url>
   <url>
     <loc>https://www.slowbuild.top/blog/en/tool-marketingdashboard.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/tool-opendashboards.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.slowbuild.top/blog/en/tool-opendashboards.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
