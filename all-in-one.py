@@ -108,6 +108,45 @@ def fetch_v2ex():
 
 
 # ══════════════════════════════════════════
+# 申论素材（人民网频道首页 HTML，实时）
+# ══════════════════════════════════════════
+
+def fetch_people_html(channel):
+    """人民网频道首页 HTML 抓取，channel ∈ opinion(时评)/theory(理论)/society(社会)"""
+    items = []
+    try:
+        r = http(f"http://{channel}.people.com.cn/")
+        r.encoding = r.apparent_encoding or "utf-8"
+        pat = rf'<a[^>]+href="(http://{channel}\.people\.com\.cn/n1/\d{{4}}/\d{{4}}/[^"]+)"[^>]*>([^<]{{6,}})</a>'
+        seen = set()
+        for href, t in re.findall(pat, r.text, re.DOTALL):
+            title = html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+            if not title or title in seen or len(title) < 8:
+                continue
+            seen.add(title)
+            info = ""
+            m = re.search(r"/n1/(\d{4})/(\d{4})/", href)
+            if m:
+                info = f"{m.group(1)}-{m.group(2)[:2]}-{m.group(2)[2:]}"
+            items.append({"title": title, "url": href, "info": info})
+            if len(items) >= 10:
+                break
+    except Exception as e:
+        print(f"  ❌ 人民网{channel}: {e}")
+    return items
+
+
+def fetch_shenlun_opinion():
+    """人民时评/观点 —— 申论大作文范文标杆"""
+    return fetch_people_html("opinion")
+
+
+def fetch_shenlun_theory():
+    """理论文章 —— 申论理论素材"""
+    return fetch_people_html("theory")
+
+
+# ══════════════════════════════════════════
 # 海外趋势
 # ══════════════════════════════════════════
 
@@ -203,14 +242,19 @@ def tbl(title, items, color="#0366d6"):
     {rows}</table>"""
 
 
-def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto):
+def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory):
     up = "".join(f"<span style='margin-right:16px'>{'🟢' if s['ok'] else '🔴'} {s['name']} ({s['ms']}ms)</span>" for s in sites)
-    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)
+    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)+len(opinion)+len(theory)
 
     return f"""
     <html><body style="font-family:Arial;max-width:720px;margin:0 auto;padding:16px">
     <h2>🔥 slowbuild 灵感日报 | {now}</h2>
     <p style='color:#888;font-size:13px'>{up}<br>共抓取 <b>{total}</b> 条灵感素材</p>
+
+    <hr style='border:0;border-top:2px solid #0a9d6e;margin:12px 0'>
+    <h3 style='color:#0a9d6e'>📝 申论素材（人民网）</h3>
+    {tbl("🗞️ 人民时评 / 观点", opinion, "#0a9d6e")}
+    {tbl("📖 理论文章", theory, "#c0392b")}
 
     <hr style='border:0;border-top:2px solid #e36209;margin:12px 0'>
     <h3 style='color:#e36209'>🇨🇳 国内热搜</h3>
@@ -261,10 +305,15 @@ def main():
     print(f"[海外] Dev.to...")
     devto = fetch_devto()
 
-    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto)
+    print(f"[申论] 人民时评/观点...")
+    opinion = fetch_shenlun_opinion()
+    print(f"[申论] 理论文章...")
+    theory = fetch_shenlun_theory()
+
+    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory)
     ok = send(f"🔥 slowbuild 灵感日报 - {now}", html)
     status = "✅" if ok else "❌"
-    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} Reddit{len(reddit)} HN{len(hn)} Dev{len(devto)}")
+    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} Reddit{len(reddit)} HN{len(hn)} Dev{len(devto)} | 申论观点{len(opinion)} 理论{len(theory)}")
 
 
 if __name__ == "__main__":
