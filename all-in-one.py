@@ -146,6 +146,46 @@ def fetch_shenlun_theory():
     return fetch_people_html("theory")
 
 
+def fetch_hebei_gov():
+    """河北省政府网 —— 河北政策要闻（河北申论高频：政策/政府工作报告/党代会）"""
+    items = []
+    try:
+        r = http("http://www.hebei.gov.cn/")
+        r.encoding = r.apparent_encoding or "utf-8"
+        seen = set()
+        for href, t in re.findall(r'<a[^>]+href="(/columns/[^"]+?\.html)"[^>]*\stitle="([^"]+)"', r.text, re.DOTALL):
+            title = html.unescape(t).strip()
+            if not title or title in seen or len(title) < 8:
+                continue
+            seen.add(title)
+            items.append({"title": title, "url": "http://www.hebei.gov.cn" + href, "info": ""})
+            if len(items) >= 10:
+                break
+    except Exception as e:
+        print(f"  ❌ 河北省政府网: {e}")
+    return items
+
+
+def fetch_hebei_gcdy():
+    """河北共产党员网 —— 河北党建/基层/治理要闻（河北申论出题偏好）"""
+    items = []
+    try:
+        r = http("http://www.hebgcdy.com/")
+        r.encoding = r.apparent_encoding or "utf-8"
+        seen = set()
+        for href, t in re.findall(r'<a[^>]+href="(//www\.hebgcdy\.com/[^"]+?\.s?html)"[^>]*\stitle="([^"]+)"', r.text, re.DOTALL):
+            title = html.unescape(t).strip()
+            if not title or title in seen or len(title) < 8:
+                continue
+            seen.add(title)
+            items.append({"title": title, "url": "http:" + href, "info": ""})
+            if len(items) >= 10:
+                break
+    except Exception as e:
+        print(f"  ❌ 河北共产党员网: {e}")
+    return items
+
+
 # ══════════════════════════════════════════
 # 海外趋势
 # ══════════════════════════════════════════
@@ -242,9 +282,9 @@ def tbl(title, items, color="#0366d6"):
     {rows}</table>"""
 
 
-def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory):
+def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory, hebei_gov, hebei_gcdy):
     up = "".join(f"<span style='margin-right:16px'>{'🟢' if s['ok'] else '🔴'} {s['name']} ({s['ms']}ms)</span>" for s in sites)
-    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)+len(opinion)+len(theory)
+    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)+len(opinion)+len(theory)+len(hebei_gov)+len(hebei_gcdy)
 
     return f"""
     <html><body style="font-family:Arial;max-width:720px;margin:0 auto;padding:16px">
@@ -252,9 +292,11 @@ def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, op
     <p style='color:#888;font-size:13px'>{up}<br>共抓取 <b>{total}</b> 条灵感素材</p>
 
     <hr style='border:0;border-top:2px solid #0a9d6e;margin:12px 0'>
-    <h3 style='color:#0a9d6e'>📝 申论素材（人民网）</h3>
+    <h3 style='color:#0a9d6e'>📝 申论素材</h3>
+    {tbl("🏛️ 河北政府要闻", hebei_gov, "#c0392b")}
+    {tbl("🚩 河北党建 / 基层", hebei_gcdy, "#d35400")}
     {tbl("🗞️ 人民时评 / 观点", opinion, "#0a9d6e")}
-    {tbl("📖 理论文章", theory, "#c0392b")}
+    {tbl("📖 理论文章", theory, "#7d3c98")}
 
     <hr style='border:0;border-top:2px solid #e36209;margin:12px 0'>
     <h3 style='color:#e36209'>🇨🇳 国内热搜</h3>
@@ -309,11 +351,15 @@ def main():
     opinion = fetch_shenlun_opinion()
     print(f"[申论] 理论文章...")
     theory = fetch_shenlun_theory()
+    print(f"[申论] 河北政府要闻...")
+    hebei_gov = fetch_hebei_gov()
+    print(f"[申论] 河北党建/基层...")
+    hebei_gcdy = fetch_hebei_gcdy()
 
-    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory)
+    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory, hebei_gov, hebei_gcdy)
     ok = send(f"🔥 slowbuild 灵感日报 - {now}", html)
     status = "✅" if ok else "❌"
-    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} Reddit{len(reddit)} HN{len(hn)} Dev{len(devto)} | 申论观点{len(opinion)} 理论{len(theory)}")
+    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} Reddit{len(reddit)} HN{len(hn)} Dev{len(devto)} | 申论:观点{len(opinion)} 理论{len(theory)} 河北政府{len(hebei_gov)} 河北党建{len(hebei_gcdy)}")
 
 
 if __name__ == "__main__":
