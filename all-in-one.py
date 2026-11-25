@@ -186,6 +186,72 @@ def fetch_hebei_gcdy():
     return items
 
 
+def fetch_generic(url, base, limit=8):
+    """通用新闻抓取：优先 <a ... title="标题">，回退 <a>标题</a>；自动补全链接"""
+    items = []
+    try:
+        r = http(url)
+        r.encoding = r.apparent_encoding or "utf-8"
+        ms = re.findall(r'<a[^>]+href="([^"]+)"[^>]*\stitle="([^"]+)"', r.text, re.DOTALL)
+        if len(ms) < 5:
+            ms = re.findall(r'<a[^>]+href="([^"]+)"[^>]*>([^<]{10,})</a>', r.text, re.DOTALL)
+        fw = ["举报", "版权", "登录", "注册", "English", "广告", "网站地图", "联系", "投稿", "关于我们"]
+        seen = set()
+        for href, t in ms:
+            title = html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+            if not title or title in seen or len(title) < 8:
+                continue
+            if any(k in title for k in fw):
+                continue
+            if href.startswith("//"):
+                href = "http:" + href
+            elif href.startswith("http"):
+                pass
+            elif href.startswith("/"):
+                href = base + href
+            else:
+                if not href or href.startswith(("#", "javascript", "mailto")):
+                    continue
+                href = base.rstrip("/") + "/" + href
+            seen.add(title)
+            items.append({"title": title, "url": href, "info": ""})
+            if len(items) >= limit:
+                break
+    except Exception as e:
+        print(f"  ❌ {url}: {e}")
+    return items
+
+
+def fetch_qiushi():
+    """求是网 —— 理论深度、热点剖析（大作文拔高）"""
+    return fetch_generic("http://www.qstheory.cn/", "http://www.qstheory.cn")
+
+
+def fetch_govcn():
+    """中国政府网 —— 宏观政策、政府工作报告"""
+    return fetch_generic("http://www.gov.cn/", "http://www.gov.cn")
+
+
+def fetch_rmlt():
+    """人民论坛网 —— 申论大作文绝佳素材"""
+    return fetch_generic("http://www.rmlt.com.cn/", "http://www.rmlt.com.cn")
+
+
+def fetch_gmw():
+    """光明网 —— 经济/科技/生态类素材"""
+    return fetch_generic("https://www.gmw.cn/", "https://www.gmw.cn")
+
+
+def fetch_youth():
+    """中国青年网 —— 青年/基层/河北雄安话题"""
+    return fetch_generic("http://www.youth.cn/", "http://www.youth.cn")
+
+
+def fetch_news_comments():
+    """新华网评 —— 短评，规范词/分论点积累"""
+    return fetch_generic("http://www.news.cn/comments/", "http://www.news.cn")
+
+
 # ══════════════════════════════════════════
 # 海外趋势
 # ══════════════════════════════════════════
@@ -282,9 +348,10 @@ def tbl(title, items, color="#0366d6"):
     {rows}</table>"""
 
 
-def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory, hebei_gov, hebei_gcdy):
+def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, shenlun):
     up = "".join(f"<span style='margin-right:16px'>{'🟢' if s['ok'] else '🔴'} {s['name']} ({s['ms']}ms)</span>" for s in sites)
-    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)+len(opinion)+len(theory)+len(hebei_gov)+len(hebei_gcdy)
+    total = len(baidu)+len(weibo)+len(zhihu)+len(bili)+len(v2ex)+len(ph)+len(reddit)+len(hn)+len(devto)+sum(len(b[1]) for b in shenlun)
+    shenlun_html = "".join(tbl(title, items, color) for title, items, color in shenlun)
 
     return f"""
     <html><body style="font-family:Arial;max-width:720px;margin:0 auto;padding:16px">
@@ -292,11 +359,8 @@ def build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, op
     <p style='color:#888;font-size:13px'>{up}<br>共抓取 <b>{total}</b> 条灵感素材</p>
 
     <hr style='border:0;border-top:2px solid #0a9d6e;margin:12px 0'>
-    <h3 style='color:#0a9d6e'>📝 申论素材</h3>
-    {tbl("🏛️ 河北政府要闻", hebei_gov, "#c0392b")}
-    {tbl("🚩 河北党建 / 基层", hebei_gcdy, "#d35400")}
-    {tbl("🗞️ 人民时评 / 观点", opinion, "#0a9d6e")}
-    {tbl("📖 理论文章", theory, "#7d3c98")}
+    <h3 style='color:#0a9d6e'>📝 申论素材（河北本地 + 党媒评论 + 理论政策）</h3>
+    {shenlun_html}
 
     <hr style='border:0;border-top:2px solid #e36209;margin:12px 0'>
     <h3 style='color:#e36209'>🇨🇳 国内热搜</h3>
@@ -347,19 +411,36 @@ def main():
     print(f"[海外] Dev.to...")
     devto = fetch_devto()
 
-    print(f"[申论] 人民时评/观点...")
-    opinion = fetch_shenlun_opinion()
-    print(f"[申论] 理论文章...")
-    theory = fetch_shenlun_theory()
-    print(f"[申论] 河北政府要闻...")
+    print(f"[申论] 抓取 10 个源...")
     hebei_gov = fetch_hebei_gov()
-    print(f"[申论] 河北党建/基层...")
     hebei_gcdy = fetch_hebei_gcdy()
+    youth = fetch_youth()
+    opinion = fetch_shenlun_opinion()
+    news_comments = fetch_news_comments()
+    theory = fetch_shenlun_theory()
+    qiushi = fetch_qiushi()
+    govcn = fetch_govcn()
+    rmlt = fetch_rmlt()
+    gmw = fetch_gmw()
 
-    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, opinion, theory, hebei_gov, hebei_gcdy)
+    shenlun = [
+        ("🏛️ 河北政府要闻", hebei_gov, "#c0392b"),
+        ("🚩 河北党建 / 基层", hebei_gcdy, "#d35400"),
+        ("🌱 中国青年网（含雄安）", youth, "#27ae60"),
+        ("🗞️ 人民时评 / 观点", opinion, "#0a9d6e"),
+        ("✍️ 新华网评", news_comments, "#2980b9"),
+        ("📖 理论文章", theory, "#7d3c98"),
+        ("🔴 求是网", qiushi, "#8e44ad"),
+        ("🏛️ 中国政府网", govcn, "#16a085"),
+        ("💬 人民论坛网", rmlt, "#c0392b"),
+        ("💡 光明网", gmw, "#f39c12"),
+    ]
+
+    html = build(now, sites, baidu, weibo, zhihu, bili, v2ex, ph, reddit, hn, devto, shenlun)
     ok = send(f"🔥 slowbuild 灵感日报 - {now}", html)
     status = "✅" if ok else "❌"
-    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} Reddit{len(reddit)} HN{len(hn)} Dev{len(devto)} | 申论:观点{len(opinion)} 理论{len(theory)} 河北政府{len(hebei_gov)} 河北党建{len(hebei_gcdy)}")
+    sl = " ".join(f"{name.replace(' ','')}{len(items)}" for name, items, _ in shenlun)
+    print(f"{status} 完成 | 百度{len(baidu)} 微博{len(weibo)} 知乎{len(zhihu)} B站{len(bili)} V2EX{len(v2ex)} | PH{len(ph)} HN{len(hn)} Dev{len(devto)} | 申论 {sl}")
 
 
 if __name__ == "__main__":
