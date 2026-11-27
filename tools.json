@@ -1,1 +1,156 @@
-[]
+[
+  {
+    "name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "homepage": "https://codecrafters.io",
+    "stars": 565987,
+    "language": "Markdown",
+    "topics": [
+      "awesome-list",
+      "free",
+      "programming",
+      "tutorial-code",
+      "tutorial-exercises"
+    ],
+    "source": "hot",
+    "updated": "2026-11-27T22:56:26Z"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chanc",
+    "url": "https://github.com/sindresorhus/awesome",
+    "homepage": "",
+    "stars": 543939,
+    "language": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "lists",
+      "resources",
+      "unicorns"
+    ],
+    "source": "hot",
+    "updated": "2026-11-27T22:58:51Z"
+  },
+  {
+    "name": "public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "url": "https://github.com/public-apis/public-apis",
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
+    "stars": 501821,
+    "language": "Python",
+    "topics": [
+      "api",
+      "apis",
+      "dataset",
+      "development",
+      "free"
+    ],
+    "source": "hot",
+    "updated": "2026-11-27T22:54:49Z"
+  },
+  {
+    "name": "morluto/rea",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "url": "https://github.com/morluto/rea",
+    "homepage": "https://rea.tools",
+    "stars": 481091,
+    "language": "TypeScript",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "android",
+      "claude-code",
+      "cli"
+    ],
+    "source": "hot",
+    "updated": "2026-11-27T22:59:59Z"
+  },
+  {
+    "name": "freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "homepage": "https://contribute.freecodecamp.org",
+    "stars": 459696,
+    "language": "TypeScript",
+    "topics": [
+      "careers",
+      "certification",
+      "community",
+      "curriculum",
+      "d3"
+    ],
+    "source": "hot",
+    "updated": "2026-11-27T22:53:26Z"
+  },
+  {
+    "name": "walidboulanouar/awesome-jev-use-cases",
+    "description": "Awesome list of TypeSafe AI Jev use cases: 74 demos ranked by likes, 150+ GitHub repos, limits, cost and API examples. C",
+    "url": "https://github.com/walidboulanouar/awesome-jev-use-cases",
+    "homepage": "https://ayautomate.com/jev-builds",
+    "stars": 500,
+    "language": "",
+    "topics": [
+      "ai-guardrails",
+      "ai-router",
+      "awesome",
+      "awesome-list",
+      "classification"
+    ],
+    "source": "new",
+    "updated": "2026-11-27T17:53:30Z"
+  },
+  {
+    "name": "SebasKitten/Grand-V",
+    "description": "GTA V reverse engineered to run natviely in an chromium based web browser, Using WebaAssembly and WebGPU,",
+    "url": "https://github.com/SebasKitten/Grand-V",
+    "homepage": "",
+    "stars": 500,
+    "language": "Rust",
+    "topics": [
+      "gaming"
+    ],
+    "source": "new",
+    "updated": "2026-11-27T11:48:37Z"
+  },
+  {
+    "name": "wushuai0802/myfinder-device-battery",
+    "description": "macOS-style mouse and headset battery indicator card for Windows and MyDockFinder (ATK Mouse & HyperX Headset)",
+    "url": "https://github.com/wushuai0802/myfinder-device-battery",
+    "homepage": "",
+    "stars": 500,
+    "language": "Python",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-27T16:30:27Z"
+  },
+  {
+    "name": "HideMeBr/SambaTu",
+    "description": "Versão Brasileira da famosa RockYou. Nesta lista de senhas existem senhas 100% brasileiras que estavam em vazamentos, lo",
+    "url": "https://github.com/HideMeBr/SambaTu",
+    "homepage": "",
+    "stars": 500,
+    "language": "",
+    "topics": [],
+    "source": "new",
+    "updated": "2026-11-25T18:33:27Z"
+  },
+  {
+    "name": "GeminiLight/SocialCoach",
+    "description": "Your personal EQ coach. Build social skills and learn to handle conflict through realistic role-play and personalized fe",
+    "url": "https://github.com/GeminiLight/SocialCoach",
+    "homepage": "https://tianfu.wang/SocialCoach/",
+    "stars": 500,
+    "language": "TypeScript",
+    "topics": [
+      "ai-in-education",
+      "communication-skills",
+      "conflict-resolution",
+      "llm",
+      "personalized-learning"
+    ],
+    "source": "new",
+    "updated": "2026-11-27T16:02:42Z"
+  }
+]

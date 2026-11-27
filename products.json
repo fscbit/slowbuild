@@ -5440,6 +5440,94 @@
     "category": "bundle"
   },
   {
+    "id": "gh-walidboulanouar-awesome-jev-us",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "🔧",
+    "price": 0,
+    "buyLink": "https://github.com/walidboulanouar/awesome-jev-use-cases",
+    "github": "walidboulanouar/awesome-jev-use-cases",
+    "github_stars": 500,
+    "name": {
+      "en": "walidboulanouar/awesome-jev-use-cases",
+      "zh-CN": "walidboulanouar/awesome-jev-use-cases (GitHub ⭐500)",
+      "zh-TW": "walidboulanouar/awesome-jev-use-cases (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Awesome list of TypeSafe AI Jev use cases: 74 demos ranked by likes, 150+ GitHub repos, limits, cost and API examples. CC0",
+      "zh-CN": "Awesome list of TypeSafe AI Jev use cases: 74 demos ranked by likes, 150+ GitHub repos, limits, cost and API examples. CC0 | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Awesome list of TypeSafe AI Jev use cases: 74 demos ranked by likes, 150+ GitHub repos, limits, cost and API examples. CC0 | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-sebaskitten-grand-v",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/SebasKitten/Grand-V",
+    "github": "SebasKitten/Grand-V",
+    "github_stars": 500,
+    "name": {
+      "en": "SebasKitten/Grand-V",
+      "zh-CN": "SebasKitten/Grand-V (GitHub ⭐500)",
+      "zh-TW": "SebasKitten/Grand-V (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "GTA V reverse engineered to run natviely in an chromium based web browser, Using WebaAssembly and WebGPU,",
+      "zh-CN": "GTA V reverse engineered to run natviely in an chromium based web browser, Using WebaAssembly and WebGPU, | GitHub 500+ Stars 开源项目",
+      "zh-TW": "GTA V reverse engineered to run natviely in an chromium based web browser, Using WebaAssembly and WebGPU, | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-wushuai0802-myfinder-device-ba",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "💡",
+    "price": 0,
+    "buyLink": "https://github.com/wushuai0802/myfinder-device-battery",
+    "github": "wushuai0802/myfinder-device-battery",
+    "github_stars": 500,
+    "name": {
+      "en": "wushuai0802/myfinder-device-battery",
+      "zh-CN": "wushuai0802/myfinder-device-battery (GitHub ⭐500)",
+      "zh-TW": "wushuai0802/myfinder-device-battery (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "macOS-style mouse and headset battery indicator card for Windows and MyDockFinder (ATK Mouse & HyperX Headset)",
+      "zh-CN": "macOS-style mouse and headset battery indicator card for Windows and MyDockFinder (ATK Mouse & HyperX Headset) | GitHub 500+ Stars 开源项目",
+      "zh-TW": "macOS-style mouse and headset battery indicator card for Windows and MyDockFinder (ATK Mouse & HyperX Headset) | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
+    "id": "gh-geminilight-socialcoach",
+    "type": "digital",
+    "image": "https://www.slowbuild.top/images/default-tool.png",
+    "icon": "📦",
+    "price": 0,
+    "buyLink": "https://github.com/GeminiLight/SocialCoach",
+    "github": "GeminiLight/SocialCoach",
+    "github_stars": 500,
+    "name": {
+      "en": "GeminiLight/SocialCoach",
+      "zh-CN": "GeminiLight/SocialCoach (GitHub ⭐500)",
+      "zh-TW": "GeminiLight/SocialCoach (GitHub ⭐500)"
+    },
+    "desc": {
+      "en": "Your personal EQ coach. Build social skills and learn to handle conflict through realistic role-play and personalized feedback.",
+      "zh-CN": "Your personal EQ coach. Build social skills and learn to handle conflict through realistic role-play and personalized feedback. | GitHub 500+ Stars 开源项目",
+      "zh-TW": "Your personal EQ coach. Build social skills and learn to handle conflict through realistic role-play and personalized feedback. | GitHub 500+ Stars 開源項目"
+    },
+    "category": "github-tools",
+    "source": "auto"
+  },
+  {
     "id": "gh-codecrafters-io-build-your-own",
     "type": "digital",
     "image": "https://www.slowbuild.top/images/default-tool.png",
@@ -5677,94 +5765,6 @@
       "en": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
       "zh-CN": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459538+ Stars 开源项目",
       "zh-TW": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. | GitHub 459538+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-sharkdp-bat",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/sharkdp/bat",
-    "github": "sharkdp/bat",
-    "github_stars": 61393,
-    "name": {
-      "en": "sharkdp/bat",
-      "zh-CN": "sharkdp/bat (GitHub ⭐61393)",
-      "zh-TW": "sharkdp/bat (GitHub ⭐61393)"
-    },
-    "desc": {
-      "en": "A cat(1) clone with wings.",
-      "zh-CN": "A cat(1) clone with wings. | GitHub 61393+ Stars 开源项目",
-      "zh-TW": "A cat(1) clone with wings. | GitHub 61393+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-linxidnju-opentag",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔧",
-    "price": 0,
-    "buyLink": "https://github.com/linxidnju/OpenTag",
-    "github": "linxidnju/OpenTag",
-    "github_stars": 500,
-    "name": {
-      "en": "linxidnju/OpenTag",
-      "zh-CN": "linxidnju/OpenTag (GitHub ⭐500)",
-      "zh-TW": "linxidnju/OpenTag (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol",
-      "zh-CN": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Open-source, channel-native agent gateway for Slack. Route team threads to Claude Code, Codex, OpenCode, Docker, HTTP agents, and custom CLIs with pol | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-mokeaigc-mokeaigc-work-v25",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🔮",
-    "price": 0,
-    "buyLink": "https://github.com/MOKEAIGC/MOKEAIGC-work-V25",
-    "github": "MOKEAIGC/MOKEAIGC-work-V25",
-    "github_stars": 500,
-    "name": {
-      "en": "MOKEAIGC/MOKEAIGC-work-V25",
-      "zh-CN": "MOKEAIGC/MOKEAIGC-work-V25 (GitHub ⭐500)",
-      "zh-TW": "MOKEAIGC/MOKEAIGC-work-V25 (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。",
-      "zh-CN": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。 | GitHub 500+ Stars 开源项目",
-      "zh-TW": "MOKEAIGC V25 · 世界观与视觉风格导演。将灵感或参考图转化为连贯的世界设定、生物设计与同场景多构图，交付中英双语静帧图像提示词。内置 65 项视觉选项，支持先选一种风格、自定义风格，或跳过选择直接开始。 | GitHub 500+ Stars 開源項目"
-    },
-    "category": "github-tools",
-    "source": "auto"
-  },
-  {
-    "id": "gh-google-deepmind-detectorscope",
-    "type": "digital",
-    "image": "https://www.slowbuild.top/images/default-tool.png",
-    "icon": "🎯",
-    "price": 0,
-    "buyLink": "https://github.com/google-deepmind/detectorscope",
-    "github": "google-deepmind/detectorscope",
-    "github_stars": 500,
-    "name": {
-      "en": "google-deepmind/detectorscope",
-      "zh-CN": "google-deepmind/detectorscope (GitHub ⭐500)",
-      "zh-TW": "google-deepmind/detectorscope (GitHub ⭐500)"
-    },
-    "desc": {
-      "en": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026)",
-      "zh-CN": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 开源项目",
-      "zh-TW": "Build AI text detectors whose decisions are mechanistically grounded and human-auditable (EMNLP 2026) | GitHub 500+ Stars 開源項目"
     },
     "category": "github-tools",
     "source": "auto"
